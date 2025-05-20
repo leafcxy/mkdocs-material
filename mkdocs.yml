@@ -99,10 +99,10 @@ plugins:
   - minify:
       minify_html: true
 
-# Hooks
-hooks:
-  - overrides/hooks/shortcodes.py
-  - overrides/hooks/translations.py
+# # Hooks
+# hooks:
+#   - overrides/hooks/shortcodes.py
+#   - overrides/hooks/translations.py
 
 # Additional configuration
 extra:

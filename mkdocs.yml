@@ -23,8 +23,8 @@ site_name: Material for MkDocs
 site_url: https://leafcxy.github.io/mkdocs-material/
 site_author: leafcxy
 site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, in 60+ languages, for all devices
+  用Markdown编写文档,并在
+  分钟-可搜索、可定制,支持60多种语言,适用于所有设备
 
 # Repository
 repo_name: leafcxy/mkdocs-material
@@ -37,6 +37,7 @@ copyright: Copyright &copy; 2016 - 2025 leafcxy
 theme:
   name: material
   custom_dir: overrides
+  language: zh
   features:
     - announce.dismiss
     - content.action.edit

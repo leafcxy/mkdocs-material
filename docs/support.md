@@ -1,56 +1,56 @@
-# Support
+# 支持
 
-At the heart of Material for MkDocs is an open and supportive community dedicated
-to freely sharing knowledge and insights. We strive to offer support to this
-community, balancing our development efforts with the need to address community
-questions effectively.
+MkDocs Material的核心是一个开放和支持性的社区，致力于
+自由分享知识和见解。我们努力为此提供支持
+社区，平衡我们的发展努力与解决社区问题的需要
+有效提问。
 
-In order to streamline communication and direct you to the most appropriate
-support channel, we've outlined our support structure below.
+为了简化沟通，并引导您找到最合适的
+支持渠道，我们在下面概述了我们的支持结构。
 
-## Sponsoring support
+## 赞助支持
 
-If you have questions about Insiders or are considering becoming a sponsor,
-@katharinalisalin is here to help. She handles all non-technical
-sponsorship-related inquiries and is happy to provide the guidance you need.
-Feel free to contact her at sponsors@squidfunk.com.
+如果您对Insiders有疑问或正在考虑成为赞助商，
+@katharinalisalin是来帮忙的。她处理所有非技术
+我们很乐意为您提供所需的指导。
+请随时通过以下方式联系她sponsors@squidfunk.com.
 
-## Technical support
+## 技术支持
 
-We are committed to providing technical support, ensuring all interactions
-remain transparent and accessible. Our primary channels for technical inquiries,
-therefore, are [our discussion board] and [our issue tracker] which are open to
-the entire community.
+我们致力于提供技术支持，确保所有互动
+保持透明和可访问性。我们技术咨询的主要渠道，
+因此，[our discussion board]和[our issue tracker]是否对
+整个社区。
 
   [our discussion board]: #discussion-board
   [our issue tracker]: #issue-tracker
 
 
-### Discussion board
+### 讨论板
 
-Our [discussion board] serves as the primary point of contact for technical
-discussions, supported by both our community and our [Community Experts]. We
-encourage searching the board for existing answers before posting new questions.
+我们的[discussion board]是技术人员的主要联系点
+讨论，由我们的社区和我们的[Community Experts]支持。我们
+鼓励在发布新问题之前在板上搜索现有答案。
 
-Direct support, particularly for core feature-related queries, is actively
-provided here, whereas customization tips are often sourced from and shared by
-our amazing community.
+直接支持，特别是与核心功能相关的查询，正在积极进行中
+此处提供，而定制提示通常来源于并由以下人员共享
+我们令人惊叹的社区。
 
   [Community Experts]: insiders/community-experts-program/index.md
   [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
 
-### Issue Tracker
+### 问题追踪
 
-For [reporting bugs] or submitting [change requests], our [issue tracker] offers
-a transparent platform for community contributions. We encourage reporting bugs
-found in the Insiders edition and in the community edition with the help of [our
-contributing guides] through the public [issue tracker], mindful of not
-disclosing the private Insiders' source code in line with our [fair use
-policy].
+对于[reporting bugs]或提交[change requests]，我们的[issue tracker]提供
+一个透明的社区贡献平台。我们鼓励报告错误
+在[我们的
+通过公众[issue tracker]提供指南，注意不要
+根据我们的[fair use policy]披露私人内幕人士的源代码
+政策。
 
-This transparent approach ensures that solutions can benefit the entire
-community and feature requests can get upvoted by the community which will
-affect the speed of its development.
+这种透明的方法确保解决方案能够使整个
+社区和功能请求可以得到社区的支持，社区将
+影响其发展速度。
 
   [reporting bugs]: contributing/reporting-a-bug.md
   [change requests]: contributing/requesting-a-change.md
@@ -59,9 +59,9 @@ affect the speed of its development.
   [public issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
   [fair use policy]: ./insiders/license.md/#fair-use-policy
 
-### Prioritized support
+### 优先支持
 
-Organizational sponsors at "The Organization" tier or higher are entitled to
-prioritized bug support. While we cannot guarantee immediate resolution, as
-some problems are harder to fix than others, it ensures that your issues are
-addressed with urgency.
+“本组织”级别或更高级别的组织赞助商有权
+优先bug支持。虽然我们不能保证立即解决
+有些问题比其他问题更难解决，它确保了你的问题
+紧急处理。

@@ -1,31 +1,31 @@
-# How to upgrade
+# 如何升级
 
-Upgrade to the latest version with:
+使用升级至最新版本:
 
 ```
 pip install --upgrade --force-reinstall mkdocs-material
 ```
 
-Show the currently installed version with:
+显示当前安装的版本:
 
 ```
 pip show mkdocs-material
 ```
 
-## Upgrading from 8.x to 9.x
+## 从8.x升级到9.x
 
-This major release includes a brand new search implementation that is faster
-and allows for rich previews, advanced tokenization and better highlighting.
-It was available as part of Insiders for over a year, and now that the funding
-goal was hit, makes its way into the community edition.
+此主要版本包括一个全新的搜索实现，速度更快
+并允许丰富的预览、高级标记化和更好的突出显示。
+它作为Insiders的一部分已经存在了一年多，现在资金
+目标实现了，进入了社区版。
 
-### Changes to `mkdocs.yml`
+### 更改 `mkdocs.yml`
 
 #### `content.code.copy`
 
-The copy-to-clipboard buttons are now opt-in and can be enabled or disabled
-per block. If you wish to enable them for all code blocks, add the following
-lines to `mkdocs.yml`:
+复制到剪贴板按钮现在是可选的，可以启用或禁用
+每个区块。如果要为所有代码块启用它们，请添加以下内容
+指向`mkdocs.yml`的行：
 
 ``` yaml
 theme:
@@ -35,9 +35,9 @@ theme:
 
 #### `content.action.*`
 
-A "view source" button can be shown next to the "edit this page" button, both
-of which must now be explicitly enabled. Add the following lines to
-`mkdocs.yml`:
+“查看源代码”按钮可以显示在“编辑此页面”按钮旁边，两者
+现在必须明确启用该功能。将以下行添加到
+`mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -48,8 +48,8 @@ theme:
 
 #### `navigation.footer`
 
-The _previous_ and _next_ buttons in the footer are now opt-in. If you wish to
-keep them for your documentation, add the following lines to `mkdocs.yml`:
+页脚中的_prevous_和_next_按钮现在是可选的。如果你想
+将它们保留在文档中，将以下行添加到`mkdocs.yml`中：
 
 ``` yaml
 theme:
@@ -59,15 +59,15 @@ theme:
 
 #### `theme.language`
 
-The Korean and Norwegian language codes were renamed, as they were non-standard:
+韩语和挪威语代码被重新命名，因为它们是非标准的：
 
-- `kr` to `ko`
-- `no` to `nb`
+- `kr` 切换到 `ko`
+- `no` 切换到 `nb`
 
 #### `feedback.ratings`
 
-The old, nameless placeholders were removed (after being deprecated for several
-months). Make sure to switch to the new named placeholders `{title}` and `{url}`:
+旧的、无名的占位符被删除了（在被弃用了几个占位符之后
+月）。确保切换到新的命名占位符“{title}”和“{url}”：
 
 ```
 https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
@@ -75,19 +75,19 @@ https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
 
 ### Changes to `*.html` files
 
-The templates have undergone a series of changes. If you have customized
-Material for MkDocs with theme extension, be sure to incorporate the latest
-changes into your templates. A good starting point is to [inspect the diff].
+模板经历了一系列更改。如果你有定制
+带有主题扩展的MkDocs材料，一定要包含最新的
+更改模板。一个好的起点是[检查差异]。
 
-!!! warning "Built-in plugins not working after upgrade?"
+！！！警告“升级后内置插件不工作？”
 
-    If one of the built-in plugins (search or tags) doesn't work anymore without
-    any apparent error or cause, it is very likely related to custom overrides.
-    [MkDocs 1.4.1] and above allow themes to namespace built-in plugins, which
-    Material for MkDocs 9 now does in order to allow authors to use third-party
-    plugins with the same name as built-in plugins. Search your overrides for
-    [`"in config.plugins"`][in config.plugins] and add the `material/` namespace.
-    Affected partials:
+    如果其中一个内置插件（搜索或标签）在没有
+    任何明显的错误或原因，都很可能与自定义覆盖有关。
+    [MkDocs 1.4.1]及以上版本允许主题为内置插件命名
+    Material for MkDocs 9现在允许作者使用第三方
+    与内置插件同名的插件。在覆盖项中搜索
+    [`"in config.plugins"`][in config.plugins]并添加`material/`命名空间。
+    受影响的部分：
 
     - [`content.html`][content.html]
     - [`header.html`][header.html]
@@ -102,33 +102,33 @@ changes into your templates. A good starting point is to [inspect the diff].
 
 ### What's new?
 
-- Added support for code annotations
-- Added support for anchor tracking
-- Added support for version warning
-- Added `copyright` partial for easier override
-- Removed deprecated content tabs legacy implementation
-- Removed deprecated `seealso` admonition type
-- Removed deprecated `site_keywords` setting (unsupported by MkDocs)
-- Removed deprecated prebuilt search index support
-- Removed deprecated web app manifest – use customization
-- Removed `extracopyright` variable – use new `copyright` partial
-- Removed Disqus integration – use customization
-- Switched to `:is()` selectors for simple selector lists
-- Switched autoprefixer from `last 4 years` to `last 2 years`
-- Improved CSS overall to match modern standards
-- Improved CSS variable semantics for fonts
-- Improved extensibility by restructuring partials
-- Improved handling of `details` when printing
-- Improved keyboard navigation for footnotes
-- Fixed #3214: Search highlighting breaks site when empty
+- 添加了对代码注释的支持
+- 增加了对锚点跟踪的支持
+- 增加了对版本警告的支持
+- 添加了`copyright`部分，便于覆盖
+- 删除了过时的内容选项卡旧版实现
+- 删除了弃用的`seealso`警告类型
+- 删除了弃用的`site_keywords`设置（MkDocs不支持）
+- 删除了已弃用的预构建搜索索引支持
+- 删除了弃用的web应用程序清单-使用自定义
+- 删除了`extracopyright`变量——使用新的`copyright`部分
+- 删除Disqus集成-使用自定义
+- 切换到简单选择器列表的`:is()`选择器
+- 将autoprefixer从`last 4 years`切换到`last 2 years`
+- 全面改进CSS以符合现代标准
+- 改进了字体的CSS变量语义
+- 通过重组部分来提高可扩展性
+- 改进打印时对`details`的处理
+- 改进了脚注的键盘导航
+- 修复#3214:搜索突出显示会在网站为空时中断网站
 
 ### Changes to `mkdocs.yml`
 
 #### `pymdownx.tabbed`
 
-Support for the legacy style of the [Tabbed] extension was dropped in favor
-of the new, alternate implementation which has [better behavior on mobile
-viewports]:
+放弃了对[Tabbed]扩展的传统风格的支持，转而支持
+新的替代实现在移动设备上具有更好的性能
+视口]：
 
 === "8.x"
 
@@ -150,9 +150,9 @@ viewports]:
 
 #### `pymdownx.superfences`
 
-The `*-experimental` suffix must be removed from the [custom fence][SuperFences]
-class property, which is used to target code blocks to be rendered as [diagrams]
-using [Mermaid.js]:
+必须从[custom fence][SuperFences]中删除`*-experimental`后缀
+类属性，用于将代码块定位为[diagrams]
+使用[Meamaid.js]：
 
 === "8.x"
 
@@ -182,9 +182,9 @@ using [Mermaid.js]:
 
 #### `google_analytics`
 
-This option was [deprecated in MkDocs 1.2.0], as the implementation of a
-JavaScript-based analytics integration is the responsibility of a theme.
-The following lines must be changed:
+此选项[在MkDocs 1.2.0中已弃用]，作为
+基于JavaScript的分析集成是一个主题的责任。
+必须更改以下行：
 
 === "8.x"
 
@@ -203,17 +203,17 @@ The following lines must be changed:
       - auto
     ```
 
-  [deprecated in MkDocs 1.2.0]: https://www.mkdocs.org/about/release-notes/#backward-incompatible-changes-in-12
+  [在MkDocs 1.2.0中已弃用]: https://www.mkdocs.org/about/release-notes/#backward-incompatible-changes-in-12
 
-### Changes to `*.html` files { data-search-exclude }
+### 对`*.html`文件的更改{data-search-exclude}
 
-The templates have undergone a set of changes to make them future-proof. If
-you've used theme extension to override a block or template, make sure that it
-matches the new structure:
+模板经过了一系列更改，使其经得起未来考验。如果
+您已使用主题扩展来覆盖块或模板，请确保它
+匹配新结构：
 
-- If you've overridden a __block__, check `base.html` for potential changes
-- If you've overridden a __template__, check the respective `*.html` file for
-  potential changes
+- 如果你已经覆盖了 __block__ ，请检查`base.html`以了解潜在的更改
+- 如果你覆盖了 __template__ ，请检查相应的`*.html`文件
+  潜在变化
 
 === ":octicons-file-code-16: `base.html`"
 
@@ -530,23 +530,23 @@ matches the new structure:
     +</div>
     ```
 
-## Upgrading from 6.x to 7.x
+## 从6.x升级到7.x
 
-### What's new?
+### 有什么新鲜事吗？
 
-- Added support for deploying multiple versions
-- Added support for integrating a language selector
-- Added support for rendering admonitions as inline blocks
-- Rewrite of the underlying reactive architecture
-- Removed Webpack in favor of reactive build strategy (–480 dependencies)
-- Fixed keyboard navigation for code blocks after content tabs switch
+- 增加了对部署多个版本的支持
+- 添加了对集成语言选择器的支持
+- 添加了对将警告呈现为内联块的支持
+- 重写底层反应式架构
+- 删除Webpack，转而采用响应式构建策略（-480个依赖项）
+- 修复了内容选项卡切换后代码块的键盘导航问题
 
-### Changes to `mkdocs.yml`
+### 更改 `mkdocs.yml`
 
 #### `extra.version.method`
 
-The versioning method configuration was renamed to `extra.version.provider` to
-allow for different versioning strategies in the future:
+版本控制方法配置已重命名为`extra.version.provider`
+允许未来采用不同的版本控制策略：
 
 === "7.x"
 
@@ -564,15 +564,15 @@ allow for different versioning strategies in the future:
         method: mike
     ```
 
-### Changes to `*.html` files { data-search-exclude }
+### 对`*.html`文件的更改{ data-search-exclude }
 
-The templates have undergone a set of changes to make them future-proof. If
-you've used theme extension to override a block or template, make sure that it
-matches the new structure:
+模板经过了一系列更改，使其经得起未来考验。如果
+您已使用主题扩展来覆盖块或模板，请确保它
+匹配新结构：
 
-- If you've overridden a __block__, check `base.html` for potential changes
-- If you've overridden a __template__, check the respective `*.html` file for
-  potential changes
+- 如果你已经覆盖了 __block__ ，请检查`base.html`以了解潜在的更改
+- 如果你覆盖了 __template__ ，请检查相应的`*.html`文件
+  潜在变化
 
 === ":octicons-file-code-16: `base.html`"
 
@@ -833,31 +833,31 @@ matches the new structure:
            {% endfor %}
     ```
 
-## Upgrading from 5.x to 6.x
+## 从5.x升级到6.x
 
-### What's new?
+### 有什么新鲜事吗？
 
-- Improved search result look and feel
-- Improved search result stability while typing
-- Improved search result grouping (pages + headings)
-- Improved search result relevance and scoring
-- Added display of missing query terms to search results
-- Reduced size of vendor bundle by 25% (84kb → 67kb)
-- Reduced size of the Docker image to improve CI build performance
-- Removed hero partial in favor of custom implementation
-- Removed deprecated front matter features
+- 改进了搜索结果的外观和感觉
+- 键入时提高了搜索结果的稳定性
+- 改进了搜索结果分组（页面+标题）
+- 提高了搜索结果的相关性和评分
+- 在搜索结果中添加了缺失查询词的显示
+- 供应商捆绑包的大小减少了25%（84kb→ 67kb)
+- 减小Docker镜像的大小以提高CI构建性能
+- 删除英雄部分，支持自定义实现
+- 删除了已弃用的前端功能
 
-### Changes to `mkdocs.yml`
+### 更改 `mkdocs.yml`
 
-Following is a list of changes that need to be made to `mkdocs.yml`. Note that
-you only have to adjust the value if you defined it, so if your configuration
-does not contain the key, you can skip it.
+以下是需要对`mkdocs.yml`进行的更改列表。注意
+如果您定义了该值，则只需调整它，因此如果您的配置
+不包含密钥，可以跳过它。
 
 #### `theme.features`
 
-All feature flags that can be set from `mkdocs.yml`, like [tabs] and
-[instant loading], are now prefixed with the name of the component or
-function they apply to, e.g. `navigation.*`:
+所有可以从`mkdocs.yml`设置的功能标志，如[tabs]和
+[instant loading]，现在前缀为组件的名称或
+它们所应用的功能，例如`navigation.*`：
 
 === "6.x"
 
@@ -880,15 +880,15 @@ function they apply to, e.g. `navigation.*`:
   [tabs]: setup/setting-up-navigation.md#navigation-tabs
   [instant loading]: setup/setting-up-navigation.md#instant-loading
 
-### Changes to `*.html` files { data-search-exclude }
+### 对`*.html`文件的更改{ data-search-exclude }
 
-The templates have undergone a set of changes to make them future-proof. If
-you've used theme extension to override a block or template, make sure that it
-matches the new structure:
+模板经过了一系列更改，使其经得起未来考验。如果
+您已使用主题扩展来覆盖块或模板，请确保它
+匹配新结构：
 
-- If you've overridden a __block__, check `base.html` for potential changes
-- If you've overridden a __template__, check the respective `*.html` file for
-  potential changes
+- 如果你已经覆盖了 __block__ ，请检查`base.html`以了解潜在的更改
+- 如果你覆盖了 __template__ ，请检查相应的`*.html`文件
+  潜在变化
 
 === ":octicons-file-code-16: `base.html`"
 
@@ -1098,39 +1098,39 @@ matches the new structure:
     -</a>
     ```
 
-## Upgrading from 4.x to 5.x
+## 从4.x升级到5.x
 
-### What's new?
+### 有什么新鲜事吗？
 
-- Reactive architecture – try `#!js app.dialog$.next("Hi!")` in the console
-- [Instant loading] – make Material behave like a Single Page Application
-- Improved CSS customization with [CSS variables] – set your brand's colors
-- Improved CSS resilience, e.g. proper sidebar locking for customized headers
-- Improved [icon integration] and configuration – now including over 5k icons
-- Added possibility to use any icon for logo, repository and social links
-- Search UI does not freeze anymore (moved to web worker)
-- Search index built only once when using instant loading
-- Improved extensible keyboard handling
-- Support for [prebuilt search indexes]
-- Support for displaying stars and forks for GitLab repositories
-- Support for scroll snapping of sidebars and search results
-- Reduced HTML and CSS footprint due to deprecation of Internet Explorer support
-- Slight facelifting of some UI elements (admonitions, tables, ...)
+- 反应式架构——试试`#!js app.dialog$.next("Hi!")`在控制台中
+- [Instant loading] – 使Material表现得像单页应用程序
+- 使用[CSS variables]改进CSS自定义-设置品牌的颜色
+- 提高了CSS的弹性，例如对自定义标题进行适当的侧边栏锁定
+- 改进了[icon integration]和配置-现在包括超过5k个图标
+- 添加了使用任何图标作为徽标、存储库和社交链接的可能性
+- 搜索UI不再冻结（移动到web worker）
+- 使用即时加载时只构建一次搜索索引
+- 改进了可扩展键盘处理
+- 支持[prebuilt search indexes]
+- 支持显示GitLab存储库的stars和forks
+- 支持侧边栏和搜索结果的滚动捕捉
+- 由于不再支持Internet Explorer，减少了HTML和CSS的占用空间
+- 一些UI元素（警告、表格等）略有改进
 
   [CSS variables]: setup/changing-the-colors.md#custom-colors
   [icon integration]: reference/icons-emojis.md#search
   [prebuilt search indexes]: plugins/search.md
 
-### Changes to `mkdocs.yml`
+### 更改 `mkdocs.yml`
 
-Following is a list of changes that need to be made to `mkdocs.yml`. Note that
-you only have to adjust the value if you defined it, so if your configuration
-does not contain the key, you can skip it.
+以下是需要对`mkdocs.yml`进行的更改列表。注意
+如果您定义了该值，则只需调整它，因此如果您的配置
+不包含密钥，可以跳过它。
 
 #### `theme.feature`
 
-Optional features like [tabs] and [instant loading] are now implemented as
-flags and can be enabled by listing them in `mkdocs.yml` under `theme.features`:
+[tabs]和[instant loading]等可选功能现在实现为
+标志，可以通过在`theme.features`下的`mkdocs.yml`中列出它们来启用：
 
 === "5.x"
 
@@ -1151,8 +1151,8 @@ flags and can be enabled by listing them in `mkdocs.yml` under `theme.features`:
 
 #### `theme.logo.icon`
 
-The logo icon configuration was centralized under `theme.icon.logo` and can now
-be set to any of the [icons bundled with the theme][icon integration]:
+徽标图标配置集中在`theme.icon.logo`下，现在可以
+设置为[icons bundled with the theme][icon integration]中的任何一个：
 
 === "5.x"
 
@@ -1172,8 +1172,8 @@ be set to any of the [icons bundled with the theme][icon integration]:
 
 #### `extra.repo_icon`
 
-The repo icon configuration was centralized under `theme.icon.repo` and can now
-be set to any of the [icons bundled with the theme][icon integration]:
+repo图标配置集中在`theme.icon.repo`下，现在可以
+设置为[icons bundled with the theme][icon integration]中的任何一个：
 
 === "5.x"
 
@@ -1192,9 +1192,9 @@ be set to any of the [icons bundled with the theme][icon integration]:
 
 #### `extra.search.*`
 
-Search is now configured as part of the [plugin options]. Note that the
-search languages must now be listed as an array of strings and the `tokenizer`
-was renamed to `separator`:
+搜索现在已配置为[plugin options]的一部分。请注意
+搜索语言现在必须以字符串数组和“标记器”的形式列出`
+已重命名为`separator`：
 
 === "5.x"
 
@@ -1221,8 +1221,8 @@ was renamed to `separator`:
 
 #### `extra.social.*`
 
-Social links stayed in the same place, but the `type` key was renamed to `icon`
-in order to match the new way of specifying which icon to be used:
+社交链接保持不变，但`type`键被重命名为`icon`
+为了匹配指定要使用哪个图标的新方式：
 
 === "5.x"
 
@@ -1242,15 +1242,15 @@ in order to match the new way of specifying which icon to be used:
           link: https://github.com/squidfunk
     ```
 
-### Changes to `*.html` files { data-search-exclude }
+### 对`*.html`文件的更改{ data-search-exclude }
 
-The templates have undergone a set of changes to make them future-proof. If
-you've used theme extension to override a block or template, make sure that it
-matches the new structure:
+模板经过了一系列更改，使其经得起未来考验。如果
+您已使用主题扩展来覆盖块或模板，请确保它
+匹配新结构：
 
-- If you've overridden a __block__, check `base.html` for potential changes
-- If you've overridden a __template__, check the respective `*.html` file for
-  potential changes
+- 如果你已经覆盖了 __block__ ，请检查`base.html`以了解潜在的更改
+- 如果你覆盖了 __template__ ，请检查相应的`*.html`文件
+  潜在变化
 
 === ":octicons-file-code-16: `base.html`"
 
@@ -1941,25 +1941,25 @@ matches the new structure:
      </nav>
     ```
 
-## Upgrading from 3.x to 4.x
+## 从3.x升级到4.x
 
-### What's new?
+### 有什么新鲜事吗？
 
-Material for MkDocs 4 fixes incorrect layout on Chinese systems. The fix
-includes a mandatory change of the base font-size from `10px` to `20px` which
-means all `rem` values needed to be updated. Within the theme, `px` to `rem`
-calculation is now encapsulated in a new function called `px2rem` which is part
-of the SASS code base.
+MkDocs 4的Material修复了中国系统上的错误布局。修复
+包括将基本字体大小从`10px`强制更改为`20px`
+表示需要更新的所有`rem` 值。在主题中，从`px`到`rem`
+计算现在被封装在一个名为`px2rem`的新函数中，该函数是
+SASS代码库。
 
-If you use Material for MkDocs with custom CSS that is based on `rem` values,
-note that those values must now be divided by 2. Now, `1.0rem` doesn't map to
-`10px`, but `20px`. To learn more about the problem and implications, please
-refer to #911 in which the problem was discovered and fixed.
+如果你使用基于`rem` 值的自定义CSS的MkDocs材质，
+请注意，这些值现在必须除以2。现在，`1.0rem`不能映射到
+`10px`，但`20px`。要了解有关问题和影响的更多信息，请
+请参阅发现并修复问题的#911。
 
-### Changes to `mkdocs.yml`
+### 更改 `mkdocs.yml`
 
-None.
+没有。
 
-### Changes to `*.html` files
+### 对`*.html`文件的更改
 
-None.
+没有。

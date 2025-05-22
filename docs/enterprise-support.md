@@ -2,31 +2,31 @@
 status: new
 ---
 
-# Enterprise Feedback
+# 企业反馈
 
-We highly value the insights of our enterprise users, and we're eager to hear
-from you. Your feedback is immensely valuable to us. If you're utilizing
-Material for MkDocs in an enterprise context and would like to share your
-experiences with us, we'd love to connect and discuss:
+我们高度重视企业用户的见解，我们渴望听到
+从你。您的反馈对我们来说非常有价值。如果您正在使用
+MkDocs在企业环境中的材料，并希望分享您的
+与我们的经验，我们很乐意联系和讨论：
 
-- What you are building with it
-- What aspects you like about it
-- What challenges you are facing
-- What could be improved
+- 你正在用它构建什么
+- 你喜欢它的哪些方面
+- 你面临的挑战是什么
+- 有什么可以改进的
 
-## Let's Connect
+## 让我们连接
 
-To schedule a convenient appointment, please reach out to us via email at
-contact@squidfunk.com and provide us with the following details:
+如需安排方便的预约，请通过电子邮件联系我们：
+contact@squidfunk.com并向我们提供以下详细信息：
 
-- Your company's name
-- How you are using Material for MkDocs
-- Any specific questions or topics you'd like to address
+- 贵公司名称
+- 如何使用Material for MkDocs
+- 您想解决的任何具体问题或主题
 
-Once we have this information, we'll promptly get in touch with you to arrange
-a 30-minute call. Please note that this call is exclusively intended for
-enterprise users and is not meant for technical support. Instead, it's an
-opportunity for us to engage in a casual conversation to better understand your
-unique needs.
+一旦我们得到这些信息，我们会及时与您联系安排
+30分钟的通话。请注意，此电话仅适用于
+企业用户，不用于技术支持。相反，它是一个
+我们有机会进行一次随意的交谈，以更好地了解您的
+独特的需求。
 
-We look forward to our discussion!
+我们期待着我们的讨论！

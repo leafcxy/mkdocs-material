@@ -1,28 +1,28 @@
-# Getting started
+# 开始
 
-Material for MkDocs is a powerful documentation framework on top of [MkDocs],
-a static site generator for project documentation.[^1] If you're familiar with
-Python, you can install Material for MkDocs with [`pip`][pip], the Python
-package manager. If not, we recommend using [`docker`][docker].
+Material for MkDocs是[MkDocs]之上的一个强大的文档框架，
+用于项目文档的静态站点生成器。[^1]如果你熟悉
+Python，你可以用[`pip`][pip]安装MkDocs的Material，Python
+包管理器。如果没有，我们建议使用[`docker`][docker]。
 
   [^1]:
-    In 2016, Material for MkDocs started out as a simple theme for MkDocs, but
-    over the course of several years, it's now much more than that – with the
-    many built-in plugins, settings, and countless customization abilities,
-    Material for MkDocs is now one of the simplest and most powerful frameworks
-    for creating documentation for your project.
+    2016年，Material for MkDocs开始是一个简单的MkDocs主题，但
+    在几年的时间里，现在的情况远不止如此——
+    许多内置插件、设置和无数自定义功能，
+    Material for MkDocs现在是最简单、最强大的框架之一
+    为您的项目创建文档。
 
   [MkDocs]: https://www.mkdocs.org
   [pip]: #with-pip
   [docker]: #with-docker
 
-## Installation
+## 安装
 
 ### with pip <small>recommended</small> { #with-pip data-toc-label="with pip" }
 
-Material for MkDocs is published as a [Python package] and can be installed with
-`pip`, ideally by using a [virtual environment]. Open up a terminal and install
-Material for MkDocs with:
+Material for MkDocs以[Python package]的形式发布，可以安装
+`pip`，理想情况下是通过使用[virtual environment]。打开终端并安装
+Material for MkDocs，包括：
 
 === "Latest"
 
@@ -36,13 +36,13 @@ Material for MkDocs with:
     pip install mkdocs-material=="9.*" # (1)!
     ```
 
-    1.  Material for MkDocs uses [semantic versioning][^2], which is why it's a
-        good idea to limit upgrades to the current major version.
+    1.  Material for MkDocs使用[semantic versioning][^2]，这就是为什么它是一个
+        将升级限制在当前主要版本是个好主意。
 
-        This will make sure that you don't accidentally [upgrade to the next
-        major version], which may include breaking changes that silently corrupt
-        your site. Additionally, you can use `pip freeze` to create a lockfile,
-        so builds are reproducible at all times:
+        这将确保您不会意外[升级到下一个
+        主要版本]，其中可能包括破坏那些默默破坏的更改
+        您的网站。此外，你可以使用`pip freeze`来创建一个锁文件，
+        因此，构建在任何时候都是可重复的：
 
         ```
         pip freeze > requirements.txt
@@ -55,21 +55,21 @@ Material for MkDocs with:
         ```
 
   [^2]:
-    Note that improvements of existing features are sometimes released as
-    patch releases, like for example improved rendering of content tabs, as
-    they're not considered to be new features.
+    请注意，现有功能的改进有时会发布为
+    补丁发布，例如改进内容选项卡的呈现，如
+    它们不被认为是新功能。
 
-This will automatically install compatible versions of all dependencies:
-[MkDocs], [Markdown], [Pygments] and [Python Markdown Extensions]. Material for
-MkDocs always strives to support the latest versions, so there's no need to
-install those packages separately.
+这将自动安装所有依赖项的兼容版本：
+[MkDocs], [Markdown], [Pygments]和[Python Markdown Extensions]。Material for MkDocs
+始终致力于支持最新版本，因此没有必要
+单独安装这些软件包。
 
 ---
 
 :fontawesome-brands-youtube:{ style="color: #EE0F0F" }
 __[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
-27m – Learn how to create and host a documentation site using Material for
-MkDocs on GitHub Pages in a step-by-step guide.
+27m – 了解如何使用Material for MkDocs创建和托管文档网站
+GitHub Pages上的分步指南。
 
   [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=xlABhbnNrfI
 
@@ -77,10 +77,10 @@ MkDocs on GitHub Pages in a step-by-step guide.
 
 !!! tip
 
-    If you don't have prior experience with Python, we recommend reading
-    [Using Python's pip to Manage Your Projects' Dependencies], which is a
-    really good introduction on the mechanics of Python package management and
-    helps you troubleshoot if you run into errors.
+    如果你之前没有Python的经验，我们建议你阅读
+    [Using Python's pip to Manage Your Projects' Dependencies]，这是一个
+    对Python包管理机制和
+    帮助您在遇到错误时进行故障排除。
 
   [Python package]: https://pypi.org/project/mkdocs-material/
   [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
@@ -93,9 +93,9 @@ MkDocs on GitHub Pages in a step-by-step guide.
 
 ### with docker
 
-The official [Docker image] is a great way to get up and running in a few
-minutes, as it comes with all dependencies pre-installed. Open up a terminal
-and pull the image with:
+官方的[Docker image]是一个很好的启动和运行方式
+分钟，因为它预装了所有依赖项。打开终端
+并使用以下命令拉取图像：
 
 === "Latest"
 
@@ -109,11 +109,11 @@ and pull the image with:
     docker pull squidfunk/mkdocs-material:9
     ```
 
-The `mkdocs` executable is provided as an entry point and `serve` is the
-default command. If you're not familiar with Docker don't worry, we have you
-covered in the following sections.
+`mkdocs`可执行文件作为入口点提供，`serve`是
+默认命令。如果你不熟悉Docker，别担心，我们有你
+将在以下章节中介绍。
 
-The following plugins are bundled with the Docker image:
+以下插件与Docker镜像捆绑在一起：
 
 - [mkdocs-minify-plugin]
 - [mkdocs-redirects]
@@ -124,20 +124,20 @@ The following plugins are bundled with the Docker image:
 
 ???+ warning
 
-    The Docker container is intended for local previewing purposes only and
-    is not suitable for deployment. This is because the web server used by
-    MkDocs for live previews is not designed for production use and may have
-    security vulnerabilities.
+    Docker容器仅用于本地预览目的
+    不适合部署。这是因为使用的web服务器
+    用于实时预览的MkDocs不是为生产使用而设计的，可能具有
+    安全漏洞。
 
-??? question "How to add plugins to the Docker image?"
+??? question "如何向Docker镜像添加插件？"
 
-    Material for MkDocs only bundles selected plugins in order to keep the size
-    of the official image small. If the plugin you want to use is not included,
-    you can add them easily:
+    Material for MkDocs仅捆绑选定的插件以保持大小
+    官方形象较小。如果您要使用的插件未包含在内，
+    您可以轻松添加它们：
 
     === "Material for MkDocs"
 
-        Create a `Dockerfile` and extend the official image:
+        创建一个`Dockerfile`并扩展官方镜像：
 
         ``` Dockerfile title="Dockerfile"
         FROM squidfunk/mkdocs-material
@@ -147,35 +147,35 @@ The following plugins are bundled with the Docker image:
 
     === "Insiders"
 
-        Clone or fork the Insiders repository, and create a file called
-        `user-requirements.txt` in the root of the repository. Then, add the
-        plugins that should be installed to the file, e.g.:
+        Clone or fork Insiders存储库，并创建一个名为
+        `user-requirements.txt`存储库根目录中。然后，添加
+        应安装到文件中的插件，例如：
 
         ``` txt title="user-requirements.txt"
         mkdocs-macros-plugin
         mkdocs-glightbox
         ```
 
-    Next, build the image with the following command:
+    接下来，使用以下命令构建映像：
 
     ```
     docker build -t squidfunk/mkdocs-material .
     ```
 
-    The new image will have additional packages installed and can be used
-    exactly like the official image.
+    新映像将安装其他软件包，可以使用
+    就像官方形象一样。
 
 ### with git
 
-Material for MkDocs can be directly used from [GitHub] by cloning the
-repository into a subfolder of your project root which might be useful if you
-want to use the very latest version:
+Material for MkDocs 可以通过克隆直接从[GitHub]使用
+将存储库放入项目根目录的子文件夹中，如果您
+想要使用最新版本：
 
 ```
 git clone https://github.com/squidfunk/mkdocs-material.git
 ```
 
-Next, install the theme and its dependencies with:
+接下来，使用以下命令安装主题及其依赖项：
 
 ```
 pip install -e mkdocs-material

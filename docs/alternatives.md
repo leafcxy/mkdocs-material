@@ -1,33 +1,33 @@
-# Alternatives
+# 选择
 
-There are tons of static site generators and themes out there and choosing the
-right one for your tech stack is a tough decision. If you're unsure if Material
-for MkDocs is the right solution for you, this section should help you evaluate
-alternative solutions.
+有很多静态网站生成器和主题，可以选择
+为你的技术栈选择一个合适的是一个艰难的决定。如果你不确定材料
+因为MkDocs是适合您的解决方案，本节应该帮助您评估
+替代解决方案。
 
 ## Docusaurus
 
-[Docusaurus] by Facebook is a very popular documentation generator and a good
-choice if you or your company are already using [React] to build your site.
-It will generate a [single page application] which is fundamentally different
-from the site Material for MkDocs generates for you.
+Facebook的[Docusaurus]是一个非常受欢迎的文档生成器，也是一个很好的
+如果您或您的公司已经在使用[React]构建您的网站，请选择。
+它将生成一个从根本上不同的[单页应用程序]
+从为您生成的Material for MkDocs网站。
 
-__Advantages__
+__优势__
 
-- Very powerful, customizable and extendable
-- Provides many components that aid in technical writing
-- Large and rich ecosystem, backed by Facebook
+- 非常强大、可定制和可扩展
+- 提供许多有助于技术写作的组件
+- 庞大而丰富的生态系统，由Facebook支持
 
-__Challenges__
+__挑战__
 
-- High learning curve, JavaScript knowledge mandatory
-- JavaScript ecosystem is very volatile, rather high maintenance
-- More time needed to get up and running
+- 学习曲线高，必须具备JavaScript知识
+- JavaScript生态系统非常不稳定，维护成本很高
+- 需要更多的时间来起床和跑步
 
-While [Docusaurus] is one of the best choices when it comes to documentation
-sites that output a single page application, there are many more solutions,
-including [Docz], [Gatsby], [Vuepress] and [Docsify] that approach
-this problem similarly.
+当涉及到文档时，[Docusaurus]是最佳选择之一
+输出单个页面应用程序的网站，还有更多的解决方案，
+包括[Docz]、[Gatsby]、[Vuepress]和[Docsify]这种方法
+这个问题类似。
 
   [Docusaurus]: https://docusaurus.io/
   [React]: https://reactjs.org/
@@ -39,49 +39,49 @@ this problem similarly.
 
 ## Jekyll
 
-[Jekyll] is probably one of the most mature and widespread static site
-generators and is written in [Ruby]. It is not specifically geared towards
-technical project documentation and has many themes to choose from, which
-can be challenging.
+[Jekyll]可能是最成熟和最广泛的静态网站之一
+生成器，用[Ruby]编写。它不是专门针对
+技术项目文档，有许多主题可供选择，其中
+可能具有挑战性。
 
-__Advantages__
+__优势__
 
-- Battle-tested, rich ecosystem, many themes to choose from
-- Brings great capabilities for blogging  (permalinks, tags, etc.)
-- Generates a SEO-friendly site, similar to Material for MkDocs
+- 久经考验，丰富的生态系统，许多主题可供选择
+- 为博客带来强大的功能（永久链接、标签等）
+- 生成一个SEO友好的网站，类似于Material for MkDocs
 
-__Challenges__
+__挑战__
 
-- Not specifically geared towards technical project documentation
-- Limited Markdown capabilities, not as advanced as Python Markdown
-- More time needed to get up and running
+- 不专门针对技术项目文档
+- Markdown功能有限，不如Python Markdown高级
+- 需要更多的时间来起床和跑步
 
   [Jekyll]: https://jekyllrb.com/
   [Ruby]: https://www.ruby-lang.org/de/
 
 ## Sphinx
 
-[Sphinx] is an alternative static site generator specifically geared towards
-generating reference documentation, offering powerful capabilities that are
-lacking in MkDocs. It uses [reStructured text], a format similar to Markdown,
-which some users find harder to use.
+[Shinx]是一个专门针对以下对象的替代静态站点生成器
+生成参考文档，提供以下强大功能
+缺少MkDocs。它使用[reStructured text]，一种类似于Markdown的格式，
+一些用户发现更难使用。
 
-__Advantages__
+__优势__
 
-- Very powerful, customizable and extendable
-- Generates reference documentation from [Python docstrings]
-- Large and rich ecosystem, used by many Python projects
+- 非常强大、可定制和可扩展
+- 从[Python docstrings]生成参考文档
+- 庞大而丰富的生态系统，被许多Python项目使用
 
-__Challenges__
+__挑战__
 
-- High learning curve, [reStructured text] syntax might be challenging
-- Search is less powerful than the one provided by MkDocs
-- More time needed to get up and running
+- 学习曲线高，[reStructured text]语法可能具有挑战性
+- 搜索功能不如MkDocs提供的强大
+- 需要更多的时间来起床和跑步
 
-If you're considering using Sphinx because you need to generate reference
-documentation, you should give [mkdocstrings] a try – an actively maintained
-and popular framework building on top of MkDocs, implementing Sphinx-like
-functionality.
+如果您正在考虑使用Sphinx，因为您需要生成引用
+文档，你应该试试[mkdocstrings]——一个积极维护的
+基于MkDocs构建的流行框架，实现了类似Sphinx的
+功能。
 
   [Sphinx]: https://www.sphinx-doc.org/
   [reStructured text]: https://en.wikipedia.org/wiki/ReStructuredText
@@ -90,23 +90,23 @@ functionality.
 
 ## GitBook
 
-[GitBook] offers a hosted documentation solution that generates a beautiful and
-functional site from Markdown files in your GitHub repository. However, it was
-once Open Source, but turned into a closed source solution some time ago.
+[GitBook]提供了一个托管文档解决方案，可以生成美观且
+GitHub存储库中Markdown文件的功能站点。然而，事实的确如此
+曾经是开源的，但不久前变成了闭源解决方案。
 
-__Advantages__
+__优势__
 
-- Hosted solution, minimal technical knowledge required
-- Custom domains, authentication and other enterprise features
-- Great collaboration features for teams
+- 托管解决方案，所需技术知识最少
+- 自定义域、身份验证和其他企业功能
+- 团队协作功能强大
 
-__Challenges__
+__挑战__
 
-- Closed source, not free for proprietary projects
-- Limited Markdown capabilities, not as advanced as Python Markdown
-- Many Open Source projects moved away from GitBook
+- 闭源代码，专有项目不免费
+- Markdown功能有限，不如Python Markdown高级
+- 许多开源项目从GitBook转移
 
-Many users switched from [GitBook] to Material for MkDocs, as they want to keep
-control and ownership of their documentation, favoring an Open Source solution.
+许多用户从[GitBook]切换到Material for MkDocs，因为他们想保留
+控制和拥有他们的文档，支持开源解决方案。
 
   [GitBook]: https://www.gitbook.com/

@@ -1,14 +1,14 @@
-# Creating your site
+# 创建您的网站
 
-After you've [installed] Material for MkDocs, you can bootstrap your project
-documentation using the `mkdocs` executable. Go to the directory where you want
-your project to be located and enter:
+[installed] Material for MkDocs后，您可以引导您的项目
+使用`mkdocs`可执行文件的文档。转到所需的目录
+您的项目将被定位并输入：
 
 ```
 mkdocs new .
 ```
 
-Alternatively, if you're running Material for MkDocs from within Docker, use:
+或者，如果你在Docker中运行Material for MkDocs，请使用：
 
 === "Unix, Powershell"
 
@@ -22,7 +22,7 @@ Alternatively, if you're running Material for MkDocs from within Docker, use:
     docker run --rm -it -v "%cd%":/docs squidfunk/mkdocs-material new .
     ```
 
-This will create the following structure:
+这将创建以下结构：
 
 ``` { .sh .no-copy }
 .
@@ -33,11 +33,11 @@ This will create the following structure:
 
   [installed]: getting-started.md
 
-## Configuration
+## 配置
 
-### Minimal configuration
+### 最小配置
 
-Simply set the `site_name` and add the following lines to `mkdocs.yml` to enable the theme:
+只需设置`site_name`并将以下行添加到`mkdocs.yml`中即可启用主题：
 
 ``` yaml hl_lines="2-5"
 site_name: My site
@@ -46,26 +46,26 @@ theme:
   name: material
 ```
 
-The `site_url` setting is important for a number of reasons.
-By default, MkDocs will assume that your site is hosted at the root of
-your domain. This is not the case, for example, when [publishing to GitHub
-pages] - unless you use a custom domain. Another reason is that some of the
-plugins require the `site_url` to be set, so you should always do this.
+`site_url`设置很重要，原因有很多。
+默认情况下，MkDocs将假设您的网站托管在
+您的域名。例如，当[publishing to GitHub pages]时，情况并非如此
+页面-除非您使用自定义域。另一个原因是，一些
+插件需要设置`site_url`，所以你应该始终这样做。
 
   [publishing to GitHub pages]: publishing-your-site.md#github-pages
   [installation methods]: getting-started.md#installation
 
-???+ tip "Recommended: [configuration validation and auto-complete]"
+???+ tip "建议: [configuration validation and auto-complete]"
 
-    In order to minimize friction and maximize productivity, Material for MkDocs
-    provides its own [schema.json][^1] for `mkdocs.yml`. If your editor supports
-    YAML schema validation, it's definitely recommended to set it up:
+    为了最大限度地减少摩擦并提高生产率，Material for MkDocs
+    为`mkdocs.yml`提供了自己的[schema.json][^1]。如果你的编辑器支持
+    YAML模式验证，强烈建议进行设置：
 
     === "Visual Studio Code"
 
-        1.  Install [`vscode-yaml`][vscode-yaml] for YAML language support.
-        2.  Add the schema under the `yaml.schemas` key in your user or
-            workspace [`settings.json`][settings.json]:
+        1.  安装[`vscode-yaml`][vscode-yaml]以获得yaml语言支持。
+        2.  在用户的`yaml.schemas`键下添加模式，或
+            工作区[`settings.json`][settings.json]：
 
             ``` json
             {
@@ -84,24 +84,24 @@ plugins require the `site_url` to be set, so you should always do this.
             }
             ```
 
-            1.  This setting is necessary if you plan to use [icons and emojis],
-                or Visual Studio Code will show errors on certain lines.
+            1.  如果您计划使用[图标和表情符号]，则此设置是必要的，
+                或者Visual Studio代码将在某些行上显示错误。
 
     === "Other"
 
-        1.  Ensure your editor of choice has support for YAML schema validation.
-        2.  Add the following lines at the top of `mkdocs.yml`:
+        1.  确保您选择的编辑器支持YAML模式验证。
+        2.  在`mkdocs.yml`的顶部添加以下行：
 
             ``` yaml
             # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
             ```
 
   [^1]:
-    If you're a MkDocs plugin or Markdown extension author and your project
-    works with Material for MkDocs, you're very much invited to contribute a
-    schema for your [extension] or [plugin] as part of a pull request on GitHub.
-    If you already have a schema defined, or wish to self-host your schema to
-    reduce duplication, you can add it via [$ref].
+    如果你是MkDocs插件或Markdown扩展的作者，并且你的项目
+    与MkDocs的Material合作，我们诚挚地邀请您贡献
+    作为GitHub上pull请求的一部分，您的[extension]或[plugin]的模式。
+    如果您已经定义了架构，或者希望将架构自托管到
+    减少重复，您可以通过[$ref]添加它。
 
   [configuration validation and auto-complete]: https://x.com/squidfunk/status/1487746003692400642
   [schema.json]: schema.json
@@ -112,11 +112,11 @@ plugins require the `site_url` to be set, so you should always do this.
   [$ref]: https://json-schema.org/understanding-json-schema/structuring.html#ref
   [icons and emojis]: reference/icons-emojis.md
 
-### Advanced configuration
+### 高级配置
 
-Material for MkDocs comes with many configuration options. The setup section
-explains in great detail how to configure and customize colors, fonts, icons
-and much more:
+Material for MkDocs有许多配置选项。设置部分
+详细解释了如何配置和自定义颜色、字体、图标
+还有更多：
 
 <div class="mdx-columns" markdown>
 
@@ -141,9 +141,9 @@ and much more:
 
 </div>
 
-Furthermore, see the list of supported [Markdown extensions] that are natively
-integrated with Material for MkDocs, delivering an unprecedented low-effort
-technical writing experience.
+此外，请参阅本机支持的[Markdown extensions]列表
+与Material for MkDocs集成，实现了前所未有的低成本
+技术写作经验。
 
   [Changing the colors]: setup/changing-the-colors.md
   [Changing the fonts]: setup/changing-the-fonts.md
@@ -165,10 +165,10 @@ technical writing experience.
   [Building an optimized site]: setup/building-an-optimized-site.md
   [Markdown extensions]: setup/extensions/index.md
 
-## Templates
+## 模板
 
-If you want to jump start a new project, you can use one of our growing
-collection of templates:
+如果你想启动一个新项目，你可以使用我们不断增长的
+模板集合：
 
 <div class="grid cards" markdown>
 
@@ -189,26 +189,26 @@ collection of templates:
 [blog-template]: https://github.com/mkdocs-material/create-blog
 [social-cards-template]: https://github.com/mkdocs-material/create-social-cards
 
-## Previewing as you write
+## 写作时预览
 
-MkDocs includes a live preview server, so you can preview your changes as you
-write your documentation. The server will automatically rebuild the site upon
-saving. Start it with:
+MkDocs包括一个实时预览服务器，因此您可以在使用时预览您的更改
+写你的文件。服务器将在以下情况下自动重建站点
+储蓄。从以下内容开始：
 
 ``` sh
 mkdocs serve # (1)!
 ```
 
-1.  If you have a large documentation project, it might take minutes until
-    MkDocs has rebuilt all pages for you to preview. If you're only interested
-    in the current page, the [`--dirtyreload`][--dirtyreload] flag will make
-    rebuilds much faster:
+1.  如果您有一个大型文档项目，可能需要几分钟的时间，直到
+    MkDocs已重建所有页面供您预览。如果你只感兴趣
+    在当前页面中，[`--dirtyreload`][--dirtyleroad]标志将使
+    重建速度更快：
 
     ```
     mkdocs serve --dirtyreload
     ```
 
-If you're running Material for MkDocs from within Docker, use:
+如果你在Docker中运行Material for MkDocs，请使用：
 
 === "Unix, Powershell"
 
@@ -222,7 +222,7 @@ If you're running Material for MkDocs from within Docker, use:
     docker run --rm -it -p 8000:8000 -v "%cd%":/docs squidfunk/mkdocs-material
     ```
 
-Point your browser to [localhost:8000][live preview] and you should see:
+将浏览器指向[localhost:8000][live preview]，您应该看到：
 
 [![Creating your site]][Creating your site]
 
@@ -230,16 +230,16 @@ Point your browser to [localhost:8000][live preview] and you should see:
   [live preview]: http://localhost:8000
   [Creating your site]: assets/screenshots/creating-your-site.png
 
-## Building your site
+## 构建您的网站
 
-When you're finished editing, you can build a static site from your Markdown
-files with:
+编辑完成后，您可以从Markdown构建一个静态网站
+文件包含：
 
 ```
 mkdocs build
 ```
 
-If you're running Material for MkDocs from within Docker, use:
+如果你在Docker中运行Material for MkDocs，请使用：
 
 === "Unix, Powershell"
 
@@ -253,17 +253,17 @@ If you're running Material for MkDocs from within Docker, use:
     docker run --rm -it -v "%cd%":/docs squidfunk/mkdocs-material build
     ```
 
-The contents of this directory make up your project documentation. There's no
-need for operating a database or server, as it is completely self-contained.
-The site can be hosted on [GitHub Pages], [GitLab Pages], a CDN of your choice
-or your private web space.
+此目录的内容构成了您的项目文档。没有
+需要操作数据库或服务器，因为它是完全独立的。
+该网站可以托管在[GitHub Pages]、[GitLab Pages]上，这是您选择的CDN
+或您的私人网络空间。
 
   [GitHub Pages]: publishing-your-site.md#github-pages
   [GitLab pages]: publishing-your-site.md#gitlab-pages
 
-If you intend to distribute your documentation as a set of files to be
-read from a local filesystem rather than a web server (such as in a
-`.zip` file), please read the notes about [building for offline
+如果您打算将文档作为一组文件分发给
+从本地文件系统而不是web服务器读取（例如在
+`.zip`文件），请阅读以下注意事项[building for offline
 usage].
 
   [building for offline usage]: setup/building-for-offline-usage.md

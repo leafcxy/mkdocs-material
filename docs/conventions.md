@@ -1,94 +1,94 @@
-# Conventions
+# 约定
 
-This section explains several conventions used in this documentation.
+本节解释了本文档中使用的几个约定。
 
-## Symbols
+## 符号
 
-This documentation use some symbols for illustration purposes. Before you read
-on, please make sure you've made yourself familiar with the following list of
-conventions:
+本文档使用一些符号进行说明。在阅读之前
+请确保您已熟悉以下列表
+习俗：
 
-### <!-- md:sponsors --> – Sponsors only { data-toc-label="Sponsors only" }
+### <!-- md:sponsors --> – 仅限赞助商 { data-toc-label="Sponsors only" }
 
-The pumping heart symbol denotes that a specific feature or behavior is only
-available to sponsors via [Insiders]. Make sure that you have access to
-[Insiders] if you want to use the feature.
+跳动的心脏符号表示特定的特征或行为只是
+赞助商可以通过[Insiders]获得。确保您有权访问
+[Insiders]如果你想使用该功能。
 
-### <!-- md:version --> – Version { data-toc-label="Version" }
+### <!-- md:version --> – 版本 { data-toc-label="Version" }
 
-The tag symbol in conjunction with a version number denotes when a specific
-feature or behavior was added. Make sure you're at least on this version
-if you want to use it.
+标签符号与版本号一起表示特定的
+添加了特征或行为。确保您至少使用此版本
+如果你想使用它。
 
-### <!-- md:version insiders- --> – Version (Insiders)  { data-toc-label="Version (Insiders)" }
+### <!-- md:version insiders- --> – 版本 (Insiders)  { data-toc-label="Version (Insiders)" }
 
-The tag symbol with a heart in conjunction with a version number denotes that a
-specific feature or behavior was added to the [Insiders] version of Material for
-MkDocs.
+带有心形和版本号的标签符号表示
+特定功能或行为已添加到[Insiders]版本的Material中
+MkDocs。
 
-### <!-- md:default --> – Default value { #default data-toc-label="Default value" }
+### <!-- md:default --> – 默认值 { #default data-toc-label="Default value" }
 
-Some properties in `mkdocs.yml` have default values for when the author does not
-explicitly define them. The default value of the property is always included.
+`mkdocs.yml`中的某些属性在作者不使用时具有默认值
+明确地定义它们。属性的默认值始终包含在内。
 
-#### <!-- md:default computed --> – Default value is computed { #default data-toc-label="is computed" }
+#### <!-- md:default computed --> – 计算默认值 { #default data-toc-label="is computed" }
 
-Some default values are not set to static values but computed from other values,
-like the site language, repository provider, or other settings.
+一些默认值不是设置为静态值，而是根据其他值计算的，
+如网站语言、存储库提供商或其他设置。
 
-#### <!-- md:default none --> – Default value is empty { #default data-toc-label="is empty" }
+#### <!-- md:default none --> – 默认值为空 { #default data-toc-label="is empty" }
 
-Some properties do not contain default values. This means that the functionality
-that is associated with them is not available unless explicitly enabled.
+某些属性不包含默认值。这意味着功能
+除非明确启用，否则与它们关联的内容不可用。
 
-### <!-- md:flag metadata --> – Metadata property { #metadata data-toc-label="Metadata property" }
+### <!-- md:flag metadata --> – 元数据属性 { #metadata data-toc-label="Metadata property" }
 
-This symbol denotes that the thing described is a metadata property, which can
-be used in Markdown documents as part of the front matter definition.
+此符号表示所描述的内容是元数据属性，它可以
+可以在Markdown文档中用作前台定义的一部分。
 
-### <!-- md:flag multiple --> – Multiple instances { #multiple-instances data-toc-label="Multiple instances" }
+### <!-- md:flag multiple --> – 多个实例 { #multiple-instances data-toc-label="Multiple instances" }
 
-This symbol denotes that the plugin supports multiple instances, i.e, that it
-can be used multiple times in the `plugins` setting in `mkdocs.yml`.
+此符号表示插件支持多个实例，即
+可以在`mkdocs.yml`的`plugins`设置中多次使用。
 
-### <!-- md:feature --> – Optional feature { #feature data-toc-label="Optional feature" }
+### <!-- md:feature --> – 可选功能 { #feature data-toc-label="Optional feature" }
 
-Most of the features are hidden behind feature flags, which means they must
-be explicitly enabled via `mkdocs.yml`. This allows for the existence of
-potentially orthogonal features.
+大多数功能都隐藏在功能标志后面，这意味着它们必须
+可以通过`mkdocs.yml`显式启用。这允许存在
+潜在的正交特征。
 
-### <!-- md:flag experimental --> – Experimental { data-toc-label="Experimental" }
+### <!-- md:flag experimental --> – 实验的 { data-toc-label="Experimental" }
 
-Some newer features are still considered experimental, which means they might
-(although rarely) change at any time, including their complete removal (which
-hasn't happened yet).
+一些新功能仍被认为是实验性的，这意味着它们可能
+（尽管很少）随时变化，包括完全移除（
+尚未发生）。
 
-### <!-- md:plugin --> – Plugin { data-toc-label="Plugin" }
+### <!-- md:plugin --> – 插件 { data-toc-label="Plugin" }
 
-Several features are implemented through MkDocs excellent plugin architecture,
-some of which are built-in and distributed with Material for MkDocs, so no
-installation is required.
+通过MkDocs优秀的插件架构实现了几个功能，
+其中一些是内置的，并与Material for MkDocs一起分发，所以没有
+需要安装。
 
-### <!-- md:extension --> – Markdown extension { data-toc-label="Markdown extension" #extension }
+### <!-- md:extension --> – Markdown扩展名 { data-toc-label="Markdown extension" #extension }
 
-This symbol denotes that the thing described is a Markdown extension, which can
-be enabled in `mkdocs.yml` and adds additional functionality to the Markdown
-parser.
+此符号表示所描述的内容是Markdown扩展，它可以
+在`mkdocs.yml`中启用，并为Markdown添加额外功能
+解析器。
 
-### <!-- md:flag required --> – Required value { #required data-toc-label="Required value" }
+### <!-- md:flag required --> – 要求的值 { #required data-toc-label="Required value" }
 
-Some (very few in fact) properties or settings are required, which means the
-authors must explicitly define them.
+需要一些（实际上很少）属性或设置，这意味着
+作者必须明确地定义它们。
 
-### <!-- md:flag customization --> – Customization { #customization data-toc-label="Customization" }
+### <!-- md:flag customization --> – 自定义 { #customization data-toc-label="Customization" }
 
-This symbol denotes that the thing described is a customization that must be
-added by the author.
+此符号表示所描述的内容是一种定制，必须
+由作者补充。
 
-### <!-- md:utility --> – Utility { data-toc-label="Utility" }
+### <!-- md:utility --> – 实用 { data-toc-label="Utility" }
 
-Besides plugins, there are some utilities that build on top of MkDocs in order
-to provide extended functionality, like for example support for versioning.
+除了插件，还有一些基于MkDocs构建的实用程序
+提供扩展功能，例如支持版本控制。
 
   [Insiders]: insiders/index.md
 

@@ -1,32 +1,32 @@
-# Navigation, authors, and pagination
+# 导航、作者和分页
 
-The Blog plugin provides blog-style navigation with a reverse-chronological
-index page and an archive organized by year by default. This tutorial shows
-how you can configure details of the default navigation, configure authors, and
-add more navigation options using categories and the [Tags plugin].
+博客插件提供博客风格的导航，具有逆时间顺序
+默认情况下，索引页和按年份组织的存档。本教程显示
+如何配置默认导航的详细信息、配置作者以及
+使用类别和[Tags plugin]添加更多导航选项。
 
 [Tags plugin]: ../../plugins/tags.md
 
-__Time required:__ typically 30 minutes
+__所需时间:__ 通常为30分钟
 
 ## Integrating navigation
 
-So far, you have let the Blog plugin and MkDocs worry about navigation. For some
-use cases, this might be enough and it is simply sufficient to not declare a
-`nav` section in the `mkdocs.yml`.
+到目前为止，您已经让博客插件和MkDocs担心导航问题。对于一些
+用例，这可能就足够了，不声明一个
+`mkdocs.yml`中的`nav`部分。
 
-However, you may want to integrate a blog with other content and a navigation
-structure that you have defined in the `nav` section of the configuration.
-In such cases, you need to provide a place where the Blog plugin should
-attach the blog navigation to the rest of the navigation structure.
+但是，您可能希望将博客与其他内容和导航集成在一起
+您在配置的`nav`部分定义的结构。
+在这种情况下，你需要提供一个博客插件应该放置的地方
+将博客导航附加到导航结构的其余部分。
 
-!!! example "Integrate with site navigation"
+!!! example "与网站导航集成"
 
-    Add the following to your `mkdocs.yml` to see how the Blog plugin can
-    integrate the blog navigation with the overall navigation structure.
-    Note that the only thing you need to specify at this point is the
-    index page for the blog and its path must match the `blog_dir` setting,
-    which is `blog` by default:
+    将以下内容添加到您的`mkdocs.yml`中，以了解博客插件如何
+    将博客导航与整体导航结构整合。
+    请注意，此时您需要指定的唯一内容是
+    博客的索引页及其路径必须与`blog_dir`设置匹配，
+    默认情况下为`blog`：
 
     ```yaml hl_lines="5 6"
     nav:
@@ -37,9 +37,9 @@ attach the blog navigation to the rest of the navigation structure.
          - blog/index.md
     ```
 
-    You will notice that "Blog" is duplicated in the navigation structure. To
-    avoid this, you can use the `navigation.indexes` feature to make the blog
-    index the section index page for the blog:
+    您会注意到"Blog"在导航结构中是重复的。向
+    为了避免这种情况，您可以使用`navigation.indexes`功能来创建博客
+    为博客的部分索引页面建立索引：
 
     ```yaml hl_lines="3 4"
     theme:
@@ -48,45 +48,45 @@ attach the blog navigation to the rest of the navigation structure.
         - navigation.indexes
     ```
 
-!!! tip "Stand-alone blog"
+!!! tip "独立博客"
 
-    If what you need is a stand-alone blog instead of one that is integrated with
-    a larger site, this can be done by using the `blog_dir` configuration option.
-    To see how this is done, see [setting up a blog].
-    The rest of the tutorial assumes that you are integrating the blog with
-    a wider site.
+    如果你需要的是一个独立的博客，而不是一个与
+    对于更大的网站，这可以通过使用`blog_dir`配置选项来完成。
+    要了解如何做到这一点，请参阅[setting up a blog]。
+    本教程的其余部分假设您正在将博客与
+    更宽的网站。
 
 [Setting up a blog]: ../../setup/setting-up-a-blog.md#blog-only
 
-!!! tip "Adding pages"
+!!! tip "添加页面"
 
-    You can add additional pages to the blog section by putting them into
-    `docs/blog` (and adding them to the navigation). The blog archive will be
-    added to the navigation after these pages.
+    您可以将其他页面添加到博客部分，方法是将它们放入
+    `docs/blog`（并将其添加到导航中）。博客档案将
+    添加到这些页面之后的导航中。
 
-## Configuring the archive
+## 配置存档
 
-By default, the blog archive lists posts by year only. If you want to add
-listings by month, you can configure the date format for the archive.
+默认情况下，博客存档仅按年份列出帖子。如果你想添加
+按月列出，您可以配置存档的日期格式。
 
-!!! example "Organize posts by month"
+!!! example "按月组织岗位"
 
-    Add the following to your `mkdocs.yml` to get a listing with the month
-    name (in the language selected in the theme options):
+    将以下内容添加到您的`mkdocs.yml`中，以获取月份列表
+    名称（使用主题选项中选择的语言）：
 
     ```yaml hl_lines="2"
     - blog:
         archive_date_format: MMMM yyyy
     ```
 
-    If you do not want the full month name, you can make the date
-    configuration `MM/yyyy`, for example.
+    如果你不想要完整的月份名称，你可以指定日期
+    例如，配置“MM/yyyy”。
 
-    If you want to add the day, you can add a placeholder for them.
-    For example, to get an American-style output, make it `MM/dd/yyyy`.
-    For the plugin to sort the blog posts by the full date, you will
-    also need to set the `archive_url_date_format` to include the month
-    and day, so make it `MM/dd/yyyy` as well.
+    如果你想添加日期，你可以为它们添加一个占位符。
+    例如，要获得美式输出，请将其设置为`MM/dd/yyyy`。
+    对于按完整日期对博客文章进行排序的插件，您将
+    还需要设置`archive_url_date_format`以包含月份
+    还有日期，所以也把它改为`MM/dd/yyyy`。
 
 ## Using categories
 

@@ -1,23 +1,23 @@
-# Custom cards
+# 自定义卡片
 
-The Insiders Edition allows you to define custom layouts for your social cards
-to suit your specific needs if the configuration options are not enough.
-For example, you may want to define a social card to advertise a new release
-of your product. It should have an icon indicating a launch announcement as
-well as the version number of the release on the card.
+Insiders Edition允许您为社交卡定义自定义布局
+如果配置选项不够，则可以满足您的特定需求。
+例如，您可能想定义一张社交卡来宣传新版本
+您的产品。它应该有一个图标，表示发布公告
+以及卡上发布的版本号。
 
-## Setup
+## 安装
 
-You can either design a custom layout from scratch or use an existing layout
-as the basis that you add to or otherwise modify. In this tutorial, you will
-use the default layout as the basis.
+您可以从头开始设计自定义布局，也可以使用现有布局
+作为您添加或以其他方式修改的基础。在本教程中，您将
+使用默认布局作为基础。
 
-!!! example "Copy default layout to customize <!-- md:sponsors -->"
+!!! example "复制默认布局以进行自定义 <!-- md:sponsors -->"
 
-    Copy the default social card layout from your installation of Material
-    for MkDocs to a new directory `layouts`. The instructions below assume you
-    are in your project root and have a virtual environment within this. The
-    path on your machine, of course, may differ.
+    从安装的Material复制默认社交卡布局
+    将MkDocs添加到新目录`layouts`。以下说明假设您
+    位于您的项目根目录中，并在其中拥有一个虚拟环境。这个
+    当然，您机器上的路径可能会有所不同。
 
     ```
     $ mkdir layouts
@@ -25,9 +25,9 @@ use the default layout as the basis.
       layouts/release.yml
     ```
 
-    Before customizing the social cards, you need to tell the plugin where to
-    find them as well as tell MkDocs to watch for any changes. Add the following
-    to the plugin configuration in your `mkdocs.yml`:
+    在自定义社交卡之前，您需要告诉插件在哪里
+    找到它们，并告诉MkDocs注意任何变化。添加以下内容
+    转到`mkdocs.yml`中的插件配置：
 
     ``` yaml hl_lines="2-6"
     plugins:
@@ -38,24 +38,24 @@ use the default layout as the basis.
       - layouts
     ```
 
-Have a look at the contents of `release.yml`. You will see that there are:
+请查看`release.yml`的内容。您将看到：
 
-* a number of definitions of content pulled from the site,
-* definitions of tags that end up in the `meta` elements in the page header
-  of each page,
-* a specification that consists of a number of layers that the social plugin
-  applies on top of each other in the order in which they are defined.
+* 从网站提取的内容的多个定义，
+* 最终出现在页眉中的`meta`元素中的标签的定义
+  每一页，
+* 由社交插件的多个层组成的规范
+  按照定义的顺序相互叠加。
 
-## Define page metadata
+## 定义页面元数据
 
-In the following, you will add a version number to the social card. This
-assumes you have a changelog page with information about each release.
-Add the version number of the latest version to the page header (so it does
-not need to be parsed out of the Markdown content):
+在下面，您将向社交卡添加版本号。这
+假设您有一个包含每个版本信息的更改日志页面。
+将最新版本的版本号添加到页眉中（确实如此
+不需要从Markdown内容中解析出来）：
 
-!!! example "Defining the release data <!-- md:sponsors -->"
+!!! example "定义发布数据 <!-- md:sponsors -->"
 
-    Create a page `docs/changelog.md` with the following content:
+    创建一个包含以下内容的页面`docs/changelog.md`：
 
     ```yaml
     ---
@@ -70,16 +70,16 @@ not need to be parsed out of the Markdown content):
     # Releases
     ```
 
-## Extract page metadata
+## 提取页面元数据
 
-With the data defined in the page header, you can now add code to the layout
-that pulls it out and makes it available to render later on. This is to separate
-the data manipulation from the actual layout instructions and so make the
-layout file easier to read.
+使用页眉中定义的数据，您现在可以向布局中添加代码
+将其拉出，以便稍后渲染。这是为了分离
+从实际布局指令中操作数据，从而使
+布局文件更易于阅读。
 
-!!! example "Adding data definitions"
+!!! example "添加数据定义"
 
-    Add the following at the top of the layout file:
+    在布局文件的顶部添加以下内容：
 
     ```yaml hl_lines="2-9"
     definitions:
@@ -91,19 +91,19 @@ layout file easier to read.
         {%- endif -%}
     ```
 
-The code presented here checks whether the page header contains the necessary
-entries and spits out a message to the social card if not. Unfortunately, there
-is no straightforward way to raise an exception or log an error, so the messages
-merely appear in the social card produced.
+此处显示的代码检查页眉是否包含必要的
+如果没有，则输入并向社交卡发送消息。不幸的是，那里
+并不是引发异常或记录错误的直接方法，因此消息
+仅仅出现在社交卡上。
 
-## Add release version layer
+## 添加发布版本层
 
-The next step is to use these data definitions in a new layer and add it to the
-ones already present.
+下一步是在新图层中使用这些数据定义，并将其添加到
+已经存在的。
 
-!!! example "Render release version"
+!!! example "渲染发布版本"
 
-    Finally, add the following to end of the custom layout:
+    最后，将以下内容添加到自定义布局的末尾：
 
     ```yaml
       - size: { width: 990, height: 50 }
@@ -114,29 +114,29 @@ ones already present.
           color: *color
     ```
 
-You should now see the social plugin use the custom layout on the changelog page
-you set up.
+现在，您应该看到社交插件在更改日志页面上使用了自定义布局
+你设置。
 
-## Adjust layout
+## 调整布局
 
-Finally, the rocket icon used for the changelog page is not quite in the right
-position. Find the please where the `page_icon` variable is used to create the
-page icon layer and adjust the horizontal position to 600 instead of 800.
+最后，用于更改日志页面的火箭图标不太正确
+位置。请找到`page_icon`变量用于创建
+页面图标层，并将水平位置调整为600而不是800。
 
-!!! tip "Debugging layout files"
+!!! tip "调试布局文件"
 
-    Should you find that your layouts are causing your MkDocs build to fail,
-    there are a number of things you can do:
+    如果你发现你的布局导致你的MkDocs构建失败，
+    你可以做很多事情：
 
-    1. Run Mkdocs with the `--verbose` option to get more detailed reporting.
-    2. Comment out things you recently added or that you suspect are the cause
-    3. Install the `jinja2` command-line tool with `pip install Jinja2` and
-       run it over your layout file, for example: `jinja2 event.yml`.
+    1. 使用`--verbose`选项运行Mkdocs以获得更详细的报告。
+    2. 评论你最近添加的内容或你怀疑是原因所在的内容
+    3. 使用`pip Install jinja2`安装`jinja2`命令行工具
+       在布局文件上运行它，例如：`jinja2-event.yml`。
 
-## What's next?
+## 接下来是什么？
 
-If you do not have a blog yet, why not check out the
-[blog tutorials](../index.md#blogs) and learn how to set one up? The social
-plugin will help you draw attention to your posts on social media.
+如果你还没有博客，为什么不看看
+[blog tutorials](../index.md#blogs)并学习如何设置？社会
+插件将帮助您吸引人们对您在社交媒体上发布的帖子的关注。
 
-Check out the [other tutorials](../index.md) we have prepared for you.
+查看我们为您准备的[other tutorials](../index.md)。

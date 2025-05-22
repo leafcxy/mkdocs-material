@@ -1,28 +1,28 @@
-# Basic social cards
+# 基本社交卡
 
-Social cards are images that other systems such as social media can display as
-a preview for content linked to. It is easy to get started with the social
-plugin, true to the motto of Material with MkDocs: "batteries included."
+社交卡是其他系统（如社交媒体）可以显示的图像
+链接到的内容预览。很容易开始使用社交媒体
+插件，忠实于Material with MkDocs的座右铭：“包括电池。”
 
-## Basics
+## 基本需要
 
-Before you start, there are just a couple of [dependencies to install]. These
-are libraries for image processing that the plugin needs to produce the social
-cards, as well as their Python bindings.
+在开始之前，只有几个[dependencies to install]。这些
+是插件生成社交媒体所需的图像处理库
+卡片，以及它们的Python绑定。
 
 [dependencies to install]: https://squidfunk.github.io/mkdocs-material/plugins/requirements/image-processing/
 
-With those prerequisites met, it is simply a matter of activating the plugin,
-which will:
+满足这些先决条件后，只需激活插件即可，
+这将：
 
-* produce the social cards as PNG images for each page in your site;
-* create meta data in the headers of your site's pages that will provide
-  social media systems with key information and tell them how to find the
-  social card image.
+* 为您网站的每个页面制作PNG格式的社交卡片；
+* 在网站页面的标题中创建元数据，以提供
+  社交媒体系统提供关键信息，并告诉他们如何找到
+  社交卡图片。
 
-!!! example "Add social cards"
+!!! example "添加社交卡"
 
-    Simply add the social plugin to your list of plugins:
+    只需将社交插件添加到您的插件列表中：
 
     ```yaml hl_lines="3"
         plugins:
@@ -31,25 +31,25 @@ which will:
             - ...
     ```
 
-Now, when you run `mkdocs build` and look at the `site` directory, you will
-see that it contains subfolders under `assets/images/social` that reflect
-the structure of your Markdown files. Each page has a corresponding PNG file
-that contains the social card image.
+现在，当您运行`mkdocs-build`并查看`site`目录时，您将
+请查看它在 `assets/images/social`下包含反映以下内容的子文件夹
+Markdown文件的结构。每个页面都有一个对应的PNG文件
+其中包含社交卡图像。
 
-Have a look at the generated HTML and you will see the metadata produced in
-the `head` element, including one entry that points to the image.
+查看生成的HTML，您将看到在中生成的元数据
+`head`元素，包括一个指向图像的条目。
 
-## Background color
+## 背景颜色
 
-The social plugin has configuration options for changing aspects such as colors,
-images, fonts, logos, the title, even the description. You can configure them
-for all social cards in the `mkdocs.yml` and, in the Insiders Edition, they can
-be overridden in the page header for individual pages.
+社交插件具有用于改变方面的配置选项，
+图像、字体、徽标、标题，甚至描述。您可以对其进行配置
+对于`mkdocs.yml`和Insiders Edition中的所有社交卡，他们可以
+在单个页面的页眉中被覆盖。
 
-!!! example "Change the background color"
+!!! example "更改背景颜色"
 
-    To change the background color to an attention-grabbing hot pink,
-    you might add:
+    为了将背景颜色更改为引人注目的艳粉色，
+    您可以添加：
 
     ```yaml hl_lines="4-5"
     plugins:
@@ -59,19 +59,19 @@ be overridden in the page header for individual pages.
             background_color: "#ff1493"
     ```
 
-## Logos
+## 标识
 
-By default, the plugin uses the logo that you set for the whole site, either
-through the `theme.logo` or the `theme.icon.logo` setting. The difference
-between the two is that the `theme.icon.logo` version will directly embed the
-logo's SVG code into the HTML, allowing it to inherit CSS color settings. When
-you use `theme.logo`, the Material includes the logo as an image.
+默认情况下，插件使用您为整个网站设置的徽标，或者
+通过`theme.logo`或 `theme.icon.logo`设置。差异
+两者之间的区别在于 `theme.icon.logo`版本将直接嵌入
+将徽标的SVG代码转换为HTML，使其能够继承CSS颜色设置。什么时候
+如果您使用`theme.logo`，则材料将徽标作为图像包含在内。
 
-You can set your own logo specific for the social cards as well. The path used
-is relative to your project root and needs to point to an SVG file or a pixel
-image. It should be rectangular and have a transparent background.
+您也可以为社交卡设置自己的徽标。使用的路径
+与项目根相关，需要指向SVG文件或像素
+图像。它应该是矩形的，有透明的背景。
 
-!!! example "Set your own logo"
+!!! example "设置自己的徽标"
 
     ```yaml hl_lines="3-4"
     plugins:
@@ -80,18 +80,18 @@ image. It should be rectangular and have a transparent background.
           logo: docs/assets/images/ourlogo.png
     ```
 
-## Background images
+## 背景图像
 
-In addition to adding your own logo, the most impactful way to personalize your
-social cards is to add a background image instead of the default solid color
-background. Make sure you choose one that will contrast well with the other
-elements of the card.
+除了添加自己的徽标外，最有影响力的个性化方式是
+社交卡将添加背景图像，而不是默认的纯色
+背景确保你选择了一个能与另一个形成鲜明对比的
+卡片的元素。
 
-Also, the background color gets rendered *on top of* the background image,
-allowing you to use a transparent color to tint an image. To use just the image,
-use the color value `transparent`.
+此外背景颜色被渲染在背景图像的顶部，
+允许您使用透明颜色为图像着色。为了仅使用图像，
+使用颜色值`transparent`。
 
-!!! example "Add background image"
+!!! example "添加背景图像"
 
     ```yaml hl_lines="4 5"
     plugins:
@@ -101,40 +101,40 @@ use the color value `transparent`.
           background_color: transparent
     ```
 
-The path to the background image is resolved from the root of your project,
-so this is where you should make the `layouts` directory and place the
-background image. The default site of the social cards included with the plugin
-is 1200x630 pixels, so choose an image that size or one that scales well to it.
+背景图像的路径是从项目的根解析的，
+因此，您应该在这里创建`layouts`目录并放置
+背景图像。插件中包含的社交卡的默认网站
+是1200x630像素，因此请选择一个大小合适的图像或一个缩放良好的图像。
 
-## Additional layouts and styles 
+## 其他布局和样式
 
 <!-- md:sponsors -->
 
-The Insiders Edition provides additional layouts as well as the option to
-configure different styles for different (kinds of) pages.
+Insiders Edition提供了额外的布局以及以下选项
+为不同（类型）的页面配置不同的样式。
 
-The Insiders Edition comes with a number of additional layouts for the social
-cards. For example, the `default/variant` layout adds a page icon to the card.
-You can use this to distinguish social cards visually, depending on what kind
-of page you are sharing.
+Insiders Edition为社交媒体提供了许多额外的布局
+卡。例如，`default/variant`布局在卡片上添加了一个页面图标。
+您可以使用此功能直观地区分社交卡，具体取决于哪种类型
+您正在共享的页面。
 
-For example, imagine you have a set of pages that advertise events and you want
-to include a calendar icon as a visual indication that a card advertises an
-event. In the following, you will set up a directory for event pages and use
-the meta plugin to assign them a calendar icon.
+例如，假设你有一组宣传活动的页面，你想要
+包括日历图标作为卡片广告的视觉指示
+活动。在下面，您将为事件页面设置一个目录并使用
+元插件为他们分配一个日历图标。
 
-!!! example "Social cards for event pages"
+!!! example "活动页面社交卡"
 
-    First, create a directory in your `docs` directory to hold the event pages:
+    首先，在`docs`目录中创建一个目录来保存事件页面：
 
     ```
     $ mkdir docs/events
     ```
 
-    Then, add a file `.meta.yml` inside this new directory with settings for
-    the page icon and a hot pink background color that will stand out on
-    social media. Note that you can override the background image by setting it
-    to `null` here since it is not visible anyway because of the opaque coloring.
+    然后，在这个新目录中添加一个文件`.meta.yml`，并设置
+    页面图标和醒目的粉红色背景色
+    社会化媒体。请注意，您可以通过设置来覆盖背景图像
+    此处为`null`，因为由于不透明的颜色，它无论如何都不可见。
 
     ```yaml
     ---
@@ -146,11 +146,11 @@ the meta plugin to assign them a calendar icon.
     ---
     ```
 
-    Now add a page within the `docs/events` directoy. It does not need to have
-    any special content, just a top level header.
+    现在在`docs/events`目录中添加一个页面。它不需要有
+    任何特殊内容，只要一个顶级标题。
 
-    To turn on the `default/variant` layout in `mkdocs.yml`, add the
-    `cards_layout` option and also add the meta plugin:
+    要在`mkdocs.yml`中启用`default/variat`布局，请添加
+    `cards_layout选项，并添加元插件：
 
     ```yaml
     plugins:
@@ -159,31 +159,31 @@ the meta plugin to assign them a calendar icon.
           cards_layout: default/variant
     ```
 
-    After running `mkdocs build`, you can see that the social card at
-    `site/assets/images/social/events/index.png` features the page icon.
+    运行`mkdocs-build`后，您可以在以下位置看到社交卡
+    `site/assets/images/social/events/index.png`具有页面图标。
 
-Note that the icon will also appear next to the navigation element for the
-page. If that is not what you want then you will need to modify the social
-card template to gets its icons from another source. You can learn how to
-do this in the [custom social cards tutorial](custom.md).
+请注意，该图标也将出现在导航元素旁边
+页面。如果这不是你想要的，那么你需要修改社交
+卡片模板从其他来源获取图标。你可以学习如何
+在[custom social cards tutorial](custom.md)中执行此操作。
 
-## Per-page settings 
+## Per-page设置
 
 <!-- md:sponsors -->
 
-With the Insiders Edition, you can customize the card layout for each
-page by adding settings to the page header. You have effectively done this
-in the previous exercise, but using the meta plugin to affect a whole set of
-pages.
+使用Insiders Edition，您可以自定义每个卡的布局
+通过在页眉中添加设置来创建页面。你有效地做到了这一点
+在前面的练习中，但使用meta插件来影响一整套
+页。
 
-Say that in addition to regular events you also have the odd webinar and
-for this you want to set a different icon and also set the description to
-indicate that the event is part of the webinar series.
+说除了常规活动外，你还有奇怪的网络研讨会和
+为此，您需要设置一个不同的图标，并将描述设置为
+表明该活动是网络研讨会系列的一部分。
 
-!!! example "Override card style in page header"
+!!! example "覆盖页眉中的卡片样式"
 
-    Add the following to the top of the page in `docs/events` or create a new
-    one:
+    将以下内容添加到“docs/events”页面的顶部，或创建一个新的
+    一：
 
     ```yaml
     ---
@@ -194,14 +194,14 @@ indicate that the event is part of the webinar series.
     ---
     ```
 
-## What's next?
+## 接下来是什么？
 
-With the Insiders Edition, you can also define custom layouts if the
-configuration options introduced above as not enough to meet your needs.
-Continue to the [custom social cards tutorial](custom.md) if you want to
-find out how to do this.
+使用Insiders Edition，如果满足以下条件，您还可以定义自定义布局
+上面介绍的配置选项不足以满足您的需求。
+如果你想继续 [custom social cards tutorial](custom.md)
+找出如何做到这一点。
 
-Social cards are particularly useful for blog posts. If you have a blog,
-you need to do nothing more than to turn on both plugins to create social cards
-to advertise your latest blog posts. If you do not have one yet but would like
-to, why not check out the [blog tutorials](../index.md#blogs)?
+社交卡片对于博客文章特别有用。如果你有博客，
+您只需打开两个插件即可创建社交卡
+为你最新的博客帖子做广告。如果你还没有，但想
+到，为什么不看看[blog tutorials](../index.md#blogs)呢？

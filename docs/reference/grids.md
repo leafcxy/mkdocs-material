@@ -2,13 +2,18 @@
 icon: material/view-grid-plus
 ---
 
-# 网格
+# Grids
 
-Material for MkDocs 让你可以轻松地将内容分区排列为网格，将传达相似含义或同等重要性的区块分组。网格非常适合用于构建索引页，能够简要展示文档某一大部分的概览。
+Material for MkDocs makes it easy to arrange sections into grids, grouping
+blocks that convey similar meaning or are of equal importance. Grids are just
+perfect for building index pages that show a brief overview of a large section
+of your documentation.
 
-## 配置
+## Configuration
 
-此配置启用网格功能，允许将相同或不同类型的区块排列为矩形。将以下内容添加到 `mkdocs.yml`：
+This configuration enables the use of grids, allowing to bring blocks of
+identical or different types into a rectangular shape. Add the following lines
+to `mkdocs.yml`:
 
 ``` yaml
 markdown_extensions: # (1)!
@@ -16,9 +21,10 @@ markdown_extensions: # (1)!
   - md_in_html
 ```
 
-1.  请注意，下面部分示例使用了[图标和表情]，需要[单独配置]。
+1.  Note that some of the examples listed below use [icons and emojis], which
+    have to be [configured separately].
 
-查看更多配置选项：
+See additional configuration options:
 
 - [Attribute Lists]
 - [Markdown in HTML]
@@ -28,34 +34,40 @@ markdown_extensions: # (1)!
   [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
   [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
 
-## 使用方法
+## Usage
 
-网格有两种类型：[卡片网格]，每个元素都包裹在悬浮时会浮起的卡片中；[通用网格]，可以将任意区块元素排列为矩形。
+Grids come in two flavors: [card grids], which wrap each element in a card that
+levitates on hover, and [generic grids], which allow to arrange arbitrary block
+elements in a rectangular shape.
 
   [card grids]: #using-card-grids
   [generic grids]: #using-generic-grids
 
-### 使用卡片网格
+### Using card grids
 
 <!-- md:version 9.5.0 -->
 <!-- md:flag experimental -->
 
-卡片网格会用漂亮的悬浮卡片包裹每个网格项，鼠标悬停时会浮起。它们有两种略有不同的语法：[列表语法]和[区块语法]，以适应不同的使用场景。
+Card grids wrap each grid item with a beautiful hover card that levitates on
+hover. They come in two slightly different syntaxes: [list] and [block syntax],
+adding support for distinct use cases.
 
   [list]: #list-syntax
   [block syntax]: #block-syntax
 
-#### 列表语法
+#### List syntax
 
-列表语法本质上是[卡片网格]的快捷方式，由一个带有 `grid` 和 `cards` 类的 `div` 包裹的无序（或有序）列表组成：
+The list syntax is essentially a shortcut for [card grids], and consists of an
+unordered (or ordered) list wrapped by a `div` with both, the `grid` and `cards`
+classes:
 
-``` html title="卡片网格"
+``` html title="Card grid"
 <div class="grid cards" markdown>
 
-- :fontawesome-brands-html5: __HTML__ 用于内容和结构
-- :fontawesome-brands-js: __JavaScript__ 用于交互
-- :fontawesome-brands-css3: __CSS__ 用于文本溢出盒子
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... 啊？
+- :fontawesome-brands-html5: __HTML__ for content and structure
+- :fontawesome-brands-js: __JavaScript__ for interactivity
+- :fontawesome-brands-css3: __CSS__ for text running out of boxes
+- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
 
 </div>
 ```
@@ -63,50 +75,53 @@ markdown_extensions: # (1)!
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
-- :fontawesome-brands-html5: __HTML__ 用于内容和结构
-- :fontawesome-brands-js: __JavaScript__ 用于交互
-- :fontawesome-brands-css3: __CSS__ 用于文本溢出盒子
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... 啊？
+- :fontawesome-brands-html5: __HTML__ for content and structure
+- :fontawesome-brands-js: __JavaScript__ for interactivity
+- :fontawesome-brands-css3: __CSS__ for text running out of boxes
+- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
 
   </div>
 </div>
 
-列表元素可以包含任意 Markdown，只要外层 `div` 定义了 `markdown` 属性。下面是一个更复杂的示例，包含图标和链接：
+List elements can contain arbitrary Markdown, as long as the surrounding `div`
+defines the `markdown` attribute. Following is a more complex example, which
+includes icons and links:
 
-``` html title="卡片网格，复杂示例"
+``` html title="Card grid, complex example"
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __5 分钟快速上手__
+-   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
 
     ---
 
-    使用 [`mkdocs-material`](#) 和 [`pip`](#) 安装，几分钟即可开始使用
+    Install [`mkdocs-material`](#) with [`pip`](#) and get up
+    and running in minutes
 
-    [:octicons-arrow-right-24: 快速开始](#)
+    [:octicons-arrow-right-24: Getting started](#)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __就是 Markdown__
-
-    ---
-
-    专注于内容，生成响应式且可搜索的静态站点
-
-    [:octicons-arrow-right-24: 参考文档](#)
-
--   :material-format-font:{ .lg .middle } __量身定制__
+-   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
 
     ---
 
-    只需几行代码即可更改颜色、字体、语言、图标、Logo 等
+    Focus on your content and generate a responsive and searchable static site
 
-    [:octicons-arrow-right-24: 个性化定制](#)
+    [:octicons-arrow-right-24: Reference](#)
 
--   :material-scale-balance:{ .lg .middle } __开源 MIT__
+-   :material-format-font:{ .lg .middle } __Made to measure__
 
     ---
 
-    Material for MkDocs 采用 MIT 许可协议，并在 [GitHub] 上开源
+    Change the colors, fonts, language, icons, logo and more with a few lines
 
-    [:octicons-arrow-right-24: 许可证](#)
+    [:octicons-arrow-right-24: Customization](#)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
 
 </div>
 ```
@@ -114,42 +129,46 @@ markdown_extensions: # (1)!
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __5 分钟快速上手__
+-   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
 
     ---
 
-    使用 [`mkdocs-material`][mkdocs-material] 和 [`pip`][pip] 安装，几分钟即可开始使用
+    Install [`mkdocs-material`][mkdocs-material] with [`pip`][pip] and get up
+    and running in minutes
 
-    [:octicons-arrow-right-24: 快速开始][getting started]
+    [:octicons-arrow-right-24: Getting started][getting started]
 
--   :fontawesome-brands-markdown:{ .lg .middle } __就是 Markdown__
-
-    ---
-
-    专注于内容，生成响应式且可搜索的静态站点
-
-    [:octicons-arrow-right-24: 参考文档][reference]
-
--   :material-format-font:{ .lg .middle } __量身定制__
+-   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
 
     ---
 
-    只需几行代码即可更改颜色、字体、语言、图标、Logo 等
+    Focus on your content and generate a responsive and searchable static site
 
-    [:octicons-arrow-right-24: 个性化定制][customization]
+    [:octicons-arrow-right-24: Reference][reference]
 
--   :material-scale-balance:{ .lg .middle } __开源 MIT__
+-   :material-format-font:{ .lg .middle } __Made to measure__
 
     ---
 
-    Material for MkDocs 采用 MIT 许可协议，并在 [GitHub] 上开源
+    Change the colors, fonts, language, icons, logo and more with a few lines
 
-    [:octicons-arrow-right-24: 许可证][license]
+    [:octicons-arrow-right-24: Customization][customization]
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License][license]
 
   </div>
 </div>
 
-如果空间不足以并排显示网格项，项目会拉伸至视口的全部宽度，例如在移动端视口下。如果空间充足，网格会以 3 项及以上的形式排列，例如[隐藏两侧边栏]时。
+If there's insufficient space to render grid items next to each other, the items
+will stretch to the full width of the viewport, e.g. on mobile viewports. If
+there's more space available, grids will render in items of 3 and more, e.g.
+when [hiding both sidebars].
 
   [mkdocs-material]: https://pypistats.org/packages/mkdocs-material
   [pip]: ../getting-started.md#with-pip
@@ -160,23 +179,25 @@ markdown_extensions: # (1)!
   [GitHub]: https://github.com/squidfunk/mkdocs-material
   [hiding both sidebars]: ../setup/setting-up-navigation.md#hiding-the-sidebars
 
-#### 区块语法
+#### Block syntax
 
-区块语法允许将卡片与其他元素__一起__排列为网格，如[通用网格]一节所述。只需在 `grid` 内的任意区块元素上添加 `card` 类即可：
+The block syntax allows for arranging cards in grids __together with other
+elements__, as explained in the section on [generic grids]. Just add the `card`
+class to any block element inside a `grid`:
 
-``` html title="卡片网格，区块"
+``` html title="Card grid, blocks"
 <div class="grid" markdown>
 
-:fontawesome-brands-html5: __HTML__ 用于内容和结构
+:fontawesome-brands-html5: __HTML__ for content and structure
 { .card }
 
-:fontawesome-brands-js: __JavaScript__ 用于交互
+:fontawesome-brands-js: __JavaScript__ for interactivity
 { .card }
 
-:fontawesome-brands-css3: __CSS__ 用于文本溢出盒子
+:fontawesome-brands-css3: __CSS__ for text running out of boxes
 { .card }
 
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... 啊？
+> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
 
 </div>
 ```
@@ -184,52 +205,56 @@ markdown_extensions: # (1)!
 <div class="result" markdown>
   <div class="grid" markdown>
 
-:fontawesome-brands-html5: __HTML__ 用于内容和结构
+:fontawesome-brands-html5: __HTML__ for content and structure
 { .card }
 
-:fontawesome-brands-js: __JavaScript__ 用于交互
+:fontawesome-brands-js: __JavaScript__ for interactivity
 { .card }
 
-:fontawesome-brands-css3: __CSS__ 用于文本溢出盒子
+:fontawesome-brands-css3: __CSS__ for text running out of boxes
 { .card }
 
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... 啊？
+> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
 
   </div>
 </div>
 
-虽然这种语法一开始看起来有些冗长，但上面的例子展示了卡片网格现在可以与其他元素混合，并且这些元素也会拉伸到网格中。
+While this syntax may seem unnecessarily verbose at first, the previous example
+shows how card grids can now be mixed with other elements that will also stretch
+to the grid.
 
-### 使用通用网格
+### Using generic grids
 
 <!-- md:version 9.5.0 -->
 <!-- md:flag experimental -->
 
-通用网格允许将任意区块元素排列为网格，包括[警告块]、[代码块]、[内容标签页]等。只需用带有 `grid` 类的 `div` 包裹一组区块即可：
+Generic grids allow for arranging arbitrary block elements in a grid, including
+[admonitions], [code blocks], [content tabs] and more. Just wrap a set of blocks
+by using a `div` with the `grid` class:
 
-``` html title="通用网格"
+```` html title="Generic grid"
 <div class="grid" markdown>
 
-=== "无序列表"
+=== "Unordered list"
 
     * Sed sagittis eleifend rutrum
     * Donec vitae suscipit est
     * Nulla tempor lobortis orci
 
-=== "有序列表"
+=== "Ordered list"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
 
-``` title="内容标签页"
-=== "无序列表"
+``` title="Content tabs"
+=== "Unordered list"
 
     * Sed sagittis eleifend rutrum
     * Donec vitae suscipit est
     * Nulla tempor lobortis orci
 
-=== "有序列表"
+=== "Ordered list"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
@@ -237,31 +262,31 @@ markdown_extensions: # (1)!
 ```
 
 </div>
-```
+````
 
 <div class="result" markdown>
   <div class="grid" markdown>
 
-=== "无序列表"
+=== "Unordered list"
 
     * Sed sagittis eleifend rutrum
     * Donec vitae suscipit est
     * Nulla tempor lobortis orci
 
-=== "有序列表"
+=== "Ordered list"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
 
-``` title="内容标签页"
-=== "无序列表"
+``` title="Content tabs"
+=== "Unordered list"
 
     * Sed sagittis eleifend rutrum
     * Donec vitae suscipit est
     * Nulla tempor lobortis orci
 
-=== "有序列表"
+=== "Ordered list"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
@@ -270,8 +295,6 @@ markdown_extensions: # (1)!
 
   </div>
 </div>
-
-通用网格会自动调整其布局以适应可用空间，就像[卡片网格]一样。如果空间不足，网格项会垂直堆叠；如果空间充足，它们会水平排列。网格项的数量和大小会自动调整，以充分利用可用空间。
 
   [admonitions]: admonitions.md
   [code blocks]: code-blocks.md

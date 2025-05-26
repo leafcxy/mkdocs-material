@@ -1,25 +1,34 @@
-# 参考
+# Reference
 
-Material for MkDocs 包含许多出色的功能，使技术写作成为一种愉快的活动。本文档的这一部分解释了如何设置页面，并展示了可以直接在 Markdown 文件中使用的所有可用示例。
+Material for MkDocs is packed with many great features that make technical
+writing a joyful activity. This section of the documentation explains how to set up
+a page, and showcases all available specimen that can be used directly from
+within Markdown files.
 
-## 配置
+## Configuration
 
-## 使用方法
+## Usage
 
-### 设置页面 `title`
+### Setting the page `title`
 
-每个页面都有一个指定的标题，用于导航侧边栏、[社交卡片]和其他地方。虽然 MkDocs 尝试通过[四步流程]自动确定页面的标题，但也可以通过前置元数据 `title` 属性显式设置标题：
+Each page has a designated title, which is used in the navigation sidebar, for
+[social cards] and in other places. While MkDocs attempts to automatically
+determine the title of a page in a [four step process], the title can also be
+explicitly set with the front matter `title` property:
 
 ``` yaml
 ---
 title: Lorem ipsum dolor sit amet # (1)!
 ---
 
-# 页面标题
+# Page title
 ...
 ```
 
-1.  这一行将生成的页面的 HTML 文档 [`head`][head] 中的 [`title`][title] 设置为给定值。请注意，通过 [`site_name`][site_name] 设置的站点标题会附加一个破折号。
+1.  This line sets the [`title`][title] inside the HTML document's
+    [`head`][head] for the generated page to the given value. Note that the
+    site title, which is set via [`site_name`][site_name], is appended with a
+    dash.
 
   [social cards]: ../setup/setting-up-social-cards.md
   [four step process]: https://www.mkdocs.org/user-guide/writing-your-docs/#meta-data
@@ -27,43 +36,51 @@ title: Lorem ipsum dolor sit amet # (1)!
   [head]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
   [site_name]: https://www.mkdocs.org/user-guide/configuration/#site_name
 
-### 设置页面 `description`
+### Setting the page `description`
 
-Markdown 文件可以包含一个描述，该描述会添加到页面的 `meta` 标签中，也用于[社交卡片]。如果作者没有为 Markdown 文件明确定义描述，最好在 `mkdocs.yml` 中设置一个 [`site_description`][site_description] 作为后备值：
+A Markdown file can include a description that is added to the `meta` tags of
+a page, and is also used for [social cards]. It's a good idea to set a
+[`site_description`][site_description] in `mkdocs.yml` as a fallback value if
+the author does not explicitly define a description for a Markdown file:
 
 ``` yaml
 ---
 description: Nullam urna elit, malesuada eget finibus ut, ac tortor. # (1)!
 ---
 
-# 页面标题
+# Page title
 ...
 ```
 
-1.  这一行将当前页面的文档 `head` 中包含描述的 `meta` 标签设置为提供的值。
+1.  This line sets the `meta` tag containing the description inside the
+    document `head` for the current page to the provided value.
 
   [site_description]: https://www.mkdocs.org/user-guide/configuration/#site_description
 
-### 设置页面 `icon`
+### Setting the page `icon`
 
 <!-- md:version 9.2.0 -->
 <!-- md:flag experimental -->
 
-可以为每个页面分配一个图标，然后将其作为导航侧边栏的一部分渲染，如果启用的话，也可以作为[导航标签]的一部分。使用前置元数据 `icon` 属性引用图标，在 Markdown 文件顶部添加以下行：
+An icon can be assigned to each page, which is then rendered as part of the
+navigation sidebar, as well as [navigation tabs], if enabled. Use the front
+matter `icon` property to reference an icon, adding the following lines at the
+top of a Markdown file:
 
 ``` yaml
 ---
 icon: material/emoticon-happy # (1)!
 ---
 
-# 页面标题
+# Page title
 ...
 ```
 
-1.  输入几个关键词，使用我们的[图标搜索]找到完美的图标，然后点击短代码将其复制到剪贴板：
+1.  Enter a few keywords to find the perfect icon using our [icon search] and
+    click on the shortcode to copy it to your clipboard:
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
-      <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="搜索图标" data-mdx-component="iconsearch-query" value="emoticon happy" />
+      <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="Search icon" data-mdx-component="iconsearch-query" value="emoticon happy" />
       <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result" data-mdx-mode="file">
         <div class="mdx-iconsearch-result__meta"></div>
         <ol class="mdx-iconsearch-result__list"></ol>
@@ -74,13 +91,15 @@ icon: material/emoticon-happy # (1)!
   [icon search]: icons-emojis.md#search
   [navigation tabs]: ../setup/setting-up-navigation.md#navigation-tabs
 
-### 设置页面 `status`
+### Setting the page `status`
 
 <!-- md:version 9.2.0 -->
 <!-- md:flag experimental -->
 <!-- md:example page-status -->
 
-可以为每个页面分配一个状态，然后将其作为导航侧边栏的一部分显示。首先，通过将以下内容添加到 `mkdocs.yml` 来将状态标识符与描述关联：
+A status can be assigned to each page, which is then displayed as part of the
+navigation sidebar. First, associate a status identifier with a description by
+adding the following to `mkdocs.yml`:
 
 ``` yaml
 extra:
@@ -88,7 +107,9 @@ extra:
     <identifier>: <description> # (1)!
 ```
 
-1.  标识符只能包含字母数字字符，以及破折号和下划线。例如，如果您有一个状态 `Recently added`，您可以设置 `new` 作为标识符：
+1.  The identifier can only include alphanumeric characters, as well as dashes
+    and underscores. For example, if you have a status `Recently added`, you can
+    set `new` as an identifier:
 
     ``` yaml
     extra:
@@ -96,58 +117,69 @@ extra:
         new: Recently added
     ```
 
-现在可以通过前置元数据 `status` 属性设置页面状态。例如，您可以通过在 Markdown 文件顶部添加以下行来将页面标记为 `new`：
+The page status can now be set with the front matter `status` property. For
+example, you can mark a page as `new` with the following lines at the top of a
+Markdown file:
 
 ``` yaml
 ---
 status: new
 ---
 
-# 页面标题
+# Page title
 ...
 ```
 
-以下状态标识符已经定义：
+The following status identifiers are already defined:
 
 - :material-alert-decagram: – `new`
 - :material-trash-can: – `deprecated`
 
-您可以以这种方式定义自定义页面状态，但如果您希望它使用默认图标以外的图标，您还需要在 `extra.css` 中配置它。我们有一个[自定义页面状态示例]可以帮助您入门。
+You can define a custom page status this way but if you want it to
+have an icon other than the default one you need to also configure
+that in your `extra.css`. We have an [example for a custom
+page status] to get you started.
 
 [example for a custom page status]: https://mkdocs-material.github.io/examples/page-status/
 
-### 设置页面 `subtitle`
+### Setting the page `subtitle`
 
 <!-- md:version 9.6.0 -->
 <!-- md:flag experimental -->
 
-每个页面都可以定义一个副标题，然后通过使用前置元数据 `subtitle` 属性将其作为导航侧边栏的一部分渲染在标题下方，添加以下行：
+Each page can define a subtitle, which is then rendered below the title as part
+of the navigation sidebar by using the front matter `subtitle` property, and
+adding the following lines:
 
 ``` yaml
 ---
 subtitle: Nullam urna elit, malesuada eget finibus ut, ac tortor
 ---
 
-# 页面标题
+# Page title
 ...
 ```
 
-### 设置页面 `template`
+### Setting the page `template`
 
-如果您使用[主题扩展]并在 `overrides` 目录中创建了新的页面模板，您可以为特定页面启用它。在 Markdown 文件顶部添加以下行：
+If you're using [theme extension] and created a new page template in the
+`overrides` directory, you can enable it for a specific page. Add the following
+lines at the top of a Markdown file:
 
 ``` yaml
 ---
 template: custom.html
 ---
 
-# 页面标题
+# Page title
 ...
 ```
 
-??? question "如何为整个文件夹设置页面模板？"
+??? question "How to set a page template for an entire folder?"
 
-    借助[内置元数据插件]，您可以通过在相应文件夹中创建 `.meta.yml` 文件来为整个部分和所有嵌套页面设置自定义模板，内容如下：
+    With the help of the [built-in meta plugin], you can set a custom template
+    for an entire section and all nested pages, by creating a `.meta.yml` file
+    in the corresponding folder with the following content:
 
     ``` yaml
     template: custom.html
@@ -156,13 +188,15 @@ template: custom.html
   [theme extension]: ../customization.md#extending-the-theme
   [built-in meta plugin]: ../plugins/meta.md
 
-## 自定义
+## Customization
 
-### 在模板中使用元数据
+### Using metadata in templates
 
-#### :material-check-all: 在所有页面上
+#### :material-check-all: on all pages
 
-为了向文档添加自定义 `meta` 标签，您可以[扩展主题][theme extension]并[覆盖 `extrahead` 块][overriding blocks]，例如，通过 `robots` 属性为搜索引擎添加索引策略：
+In order to add custom `meta` tags to your document, you can [extend the theme
+][theme extension] and [override the `extrahead` block][overriding blocks],
+e.g. to add indexing policies for search engines via the `robots` property:
 
 ``` html
 {% extends "base.html" %}
@@ -174,9 +208,11 @@ template: custom.html
 
   [overriding blocks]: ../customization.md#overriding-blocks
 
-#### :material-check: 在单个页面上
+#### :material-check: on a single page
 
-如果您想在单个页面上设置 `meta` 标签，或者想为不同页面设置不同的值，您可以在模板覆盖中使用 `page.meta` 对象，例如：
+If you want to set a `meta` tag on a single page, or want to set different
+values for different pages, you can use the `page.meta` object inside your
+template override, e.g.:
 
 ``` html
 {% extends "base.html" %}
@@ -190,7 +226,9 @@ template: custom.html
 {% endblock %}
 ```
 
-您现在可以像 [`title`][title] 和 [`description`][description] 一样使用 `robots` 来设置值。请注意，在这种情况下，模板定义了一个 `else` 分支，如果没有给出值，它将设置一个默认值。
+You can now use `robots` exactly like [`title`][title] and
+[`description`][description] to set values. Note that in this case, the
+template defines an `else` branch, which would set a default if none was given.
 
   [title]: #setting-the-page-title
   [description]: #setting-the-page-description

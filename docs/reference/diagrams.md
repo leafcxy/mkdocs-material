@@ -2,17 +2,22 @@
 icon: material/graph-outline
 ---
 
-# 图表
+# Diagrams
 
-图表有助于传达不同技术组件之间的复杂关系和相互联系，是项目文档的重要补充。Material for MkDocs 集成了 [Mermaid.js]，这是一个非常流行且灵活的图表绘制解决方案。
+Diagrams help to communicate complex relationships and interconnections between
+different technical components, and are a great addition to project
+documentation. Material for MkDocs integrates with [Mermaid.js], a very
+popular and flexible solution for drawing diagrams.
 
   [Mermaid.js]: https://mermaid.js.org/
 
-## 配置
+## Configuration
 
 <!-- md:version 8.2.0 -->
 
-此配置启用了对 [Mermaid.js] 图表的原生支持。当页面包含 `mermaid` 代码块时，Material for MkDocs 将自动初始化 JavaScript 运行时：
+This configuration enables native support for [Mermaid.js] diagrams. Material
+for MkDocs will automatically initialize the JavaScript runtime when a page 
+includes a `mermaid` code block:
 
 ``` yaml
 markdown_extensions:
@@ -23,34 +28,40 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 ```
 
-无需进一步配置。与自定义集成相比的优势：
+No further configuration is necessary. Advantages over a custom integration:
 
-- [x] 无需额外工作即可与[即时加载]配合使用
-- [x] 图表自动使用在 `mkdocs.yml` 中定义的字体和颜色[^1]
-- [x] 可以通过[额外样式表]自定义字体和颜色
-- [x] 支持亮色和暗色方案 – _在此页面上试试！_
+- [x] Works with [instant loading] without any additional effort
+- [x] Diagrams automatically use fonts and colors defined in `mkdocs.yml`[^1]
+- [x] Fonts and colors can be customized with [additional style sheets]
+- [x] Support for both, light and dark color schemes – _try it on this page!_
 
   [^1]:
-    虽然所有 [Mermaid.js] 功能都应该开箱即用，但 Material for MkDocs 目前只会为流程图、时序图、类图、状态图和实体关系图调整字体和颜色。有关为什么目前没有为所有图表实现这一点的更多信息，请参阅[其他图表]部分。
+    While all [Mermaid.js] features should work out-of-the-box, Material for
+    MkDocs will currently only adjust the fonts and colors for flowcharts,
+    sequence diagrams, class diagrams, state diagrams and entity relationship 
+    diagrams. See the section on [other diagrams] for more information why this
+    is currently not implemented for all diagrams.
 
   [instant loading]: ../setup/setting-up-navigation.md#instant-loading
   [additional style sheets]: ../customization.md#additional-css
   [other diagrams]: #other-diagram-types
 
-## 使用方法
+## Usage
 
-### 使用流程图
+### Using flowcharts
 
-[流程图]是表示工作流或过程的图表。步骤被渲染为各种类型的节点，并通过边连接，描述步骤的必要顺序：
+[Flowcharts] are diagrams that represent workflows or processes. The steps
+are rendered as nodes of various kinds and are connected by edges, describing
+the necessary order of steps:
 
-```` markdown title="流程图"
+```` markdown title="Flow chart"
 ``` mermaid
 graph LR
-  A[开始] --> B{错误？};
-  B -->|是| C[嗯...];
-  C --> D[调试];
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
   D --> B;
-  B ---->|否| E[耶！];
+  B ---->|No| E[Yay!];
 ```
 ````
 
@@ -58,33 +69,35 @@ graph LR
 
 ``` mermaid
 graph LR
-  A[开始] --> B{错误？};
-  B -->|是| C[嗯...];
-  C --> D[调试];
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
   D --> B;
-  B ---->|否| E[耶！];
+  B ---->|No| E[Yay!];
 ```
 
 </div>
 
   [Flowcharts]: https://mermaid.js.org/syntax/flowchart.html
 
-### 使用时序图
+### Using sequence diagrams
 
-[时序图]描述了特定场景中多个对象或参与者之间的顺序交互，包括这些参与者之间交换的消息：
+[Sequence diagrams] describe a specific scenario as sequential interactions 
+between multiple objects or actors, including the messages that are exchanged
+between those actors:
 
-```` markdown title="时序图"
+```` markdown title="Sequence diagram"
 ``` mermaid
 sequenceDiagram
   autonumber
-  Alice->>John: 你好 John，你好吗？
-  loop 健康检查
-      John->>John: 与疑病症作斗争
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+      John->>John: Fight against hypochondria
   end
-  Note right of John: 理性思考！
-  John-->>Alice: 很好！
-  John->>Bob: 你呢？
-  Bob-->>John: 非常好！
+  Note right of John: Rational thoughts!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
 ```
 ````
 
@@ -93,25 +106,27 @@ sequenceDiagram
 ``` mermaid
 sequenceDiagram
   autonumber
-  Alice->>John: 你好 John，你好吗？
-  loop 健康检查
-      John->>John: 与疑病症作斗争
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+      John->>John: Fight against hypochondria
   end
-  Note right of John: 理性思考！
-  John-->>Alice: 很好！
-  John->>Bob: 你呢？
-  Bob-->>John: 非常好！
+  Note right of John: Rational thoughts!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
 ```
 
 </div>
 
   [Sequence diagrams]: https://mermaid.js.org/syntax/sequenceDiagram.html
 
-### 使用状态图
+### Using state diagrams
 
-[状态图]是描述系统行为的绝佳工具，将其分解为有限数量的状态，以及这些状态之间的转换：
+[State diagrams] are a great tool to describe the behavior of a system,
+decomposing it into a finite number of states, and transitions between those
+states:
 
-```` markdown title="状态图"
+```` markdown title="State diagram"
 ``` mermaid
 stateDiagram-v2
   state fork_state <<fork>>
@@ -147,11 +162,13 @@ stateDiagram-v2
 
   [State diagrams]: https://mermaid.js.org/syntax/stateDiagram.html
 
-### 使用类图
+### Using class diagrams
 
-[类图]是面向对象编程的核心，通过将实体建模为类及其之间的关系来描述系统的结构：
+[Class diagrams] are central to object oriented programming, describing the
+structure of a system by modelling entities as classes and relationships between
+them:
 
-```` markdown title="类图"
+```` markdown title="Class diagram"
 ``` mermaid
 classDiagram
   Person <|-- Student
@@ -217,11 +234,13 @@ classDiagram
 
   [Class diagrams]: https://mermaid.js.org/syntax/classDiagram.html
 
-### 使用实体关系图
+### Using entity-relationship diagrams
 
-[实体关系图]由实体类型组成，并指定实体之间存在的关系。它描述了特定知识领域中相互关联的事物：
+An [entity-relationship diagram] is composed of entity types and specifies
+relationships that exist between entities. It describes inter-related things in
+a specific domain of knowledge:
 
-```` markdown title="实体关系图"
+```` markdown title="Entity-relationship diagram"
 ``` mermaid
 erDiagram
   CUSTOMER ||--o{ ORDER : places
@@ -230,6 +249,7 @@ erDiagram
     string name
     int pricePerUnit
   }
+  CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 ````
 
@@ -243,20 +263,23 @@ erDiagram
     string name
     int pricePerUnit
   }
+  CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
 </div>
 
-  [Entity-relationship diagrams]: https://mermaid.js.org/syntax/entityRelationshipDiagram.html
+  [entity-relationship diagram]: https://mermaid.js.org/syntax/entityRelationshipDiagram.html
 
-### 其他图表类型
+### Other diagram types
 
-[Mermaid.js] 支持更多图表类型，如甘特图、饼图、用户旅程图等。虽然这些图表类型在 Material for MkDocs 中也能正常工作，但目前不会自动调整字体和颜色以匹配主题。
+Besides the diagram types listed above, [Mermaid.js] provides support for
+[pie charts], [gantt charts], [user journeys], [git graphs] and
+[requirement diagrams], all of which are not officially supported by Material
+for MkDocs. Those diagrams should still work as advertised by [Mermaid.js], but
+we don't consider them a good choice, mostly as they don't work well on mobile.
 
-这是因为这些图表类型使用 SVG 渲染，而不是 HTML 和 CSS，这使得它们更难与主题集成。如果您想使用这些图表类型，您需要：
-
-1. 在 [Mermaid.js 配置]中定义自定义主题
-2. 通过[额外样式表]覆盖默认样式
-
-  [Mermaid.js configuration]: https://mermaid.js.org/config/theming.html
-  [additional style sheets]: ../customization.md#additional-css
+  [pie charts]: https://mermaid.js.org/syntax/pie.html
+  [gantt charts]: https://mermaid.js.org/syntax/gantt.html
+  [user journeys]: https://mermaid.js.org/syntax/userJourney.html
+  [git graphs]: https://mermaid.js.org/syntax/gitgraph.html
+  [requirement diagrams]: https://mermaid.js.org/syntax/requirementDiagram.html

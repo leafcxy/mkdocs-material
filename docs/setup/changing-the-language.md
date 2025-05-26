@@ -1,47 +1,59 @@
-# 更改语言
+# Changing the language
 
-Material for MkDocs 支持国际化（i18n），并为 60 多种语言提供模板变量和标签的翻译。此外，如果可用，网站搜索可以配置为使用特定语言的词干提取器。
+Material for MkDocs supports internationalization (i18n) and provides
+translations for template variables and labels in 60+ languages. Additionally,
+the site search can be configured to use a language-specific stemmer, if
+available.
 
-## 配置
+## Configuration
 
-### 网站语言
+### Site language
 
 <!-- md:version 1.12.0 -->
 <!-- md:default `en` -->
 
-您可以在 `mkdocs.yml` 中设置网站语言：
+You can set the site language in `mkdocs.yml` with:
 
 ``` yaml
 theme:
   language: en # (1)!
 ```
 
-1.  HTML5 只允许为每个文档设置[单一语言]，这就是为什么
-    Material for MkDocs 只支持为整个项目设置规范语言，即每个 `mkdocs.yml` 一个。
+1.  HTML5 only allows to set a [single language per document], which is why
+    Material for MkDocs only supports setting a canonical language for the
+    entire project, i.e. one per `mkdocs.yml`.
 
-    构建多语言文档最简单的方法是为每种语言在子文件夹中创建一个项目，然后使用[语言选择器]将这些项目相互链接。
+    The easiest way to build a multi-language documentation is to create one
+    project in a subfolder per language, and then use the [language selector]
+    to interlink those projects.
 
-支持以下语言：
+The following languages are supported:
 
 <!-- hooks/translations.py -->
 
-请注意，由于默认 slug 函数的工作方式，某些语言会产生不可读的锚点链接。考虑使用[支持 Unicode 的 slug 函数]。
+Note that some languages will produce unreadable anchor links due to the way
+the default slug function works. Consider using a [Unicode-aware slug function].
 
-!!! tip "缺少翻译？帮助我们，只需 5 分钟"
+!!! tip "Translations missing? Help us out, it takes only 5 minutes"
 
-    Material for MkDocs 依靠外部贡献来添加和更新其支持的 60 多种语言的翻译。如果您的语言显示某些翻译缺失，请点击链接添加它们。如果您的语言不在列表中，请点击此处[添加新语言]。
+    Material for MkDocs relies on outside contributions for adding and updating
+    translations for the more than 60 languages it supports. If your language
+    shows that some translations are missing, click on the link to add them. If
+    your language is not in the list, click here to [add a new language].
 
-  [单一语言]: https://www.w3.org/International/questions/qa-html-language-declarations.en#attributes
-  [语言选择器]: #site-language-selector
-  [支持 Unicode 的 slug 函数]: extensions/python-markdown.md#+toc.slugify
-  [添加新语言]: https://github.com/squidfunk/mkdocs-material/issues/new?template=04-add-a-translation.yml&title=Add+translations+for+...
+  [single language per document]: https://www.w3.org/International/questions/qa-html-language-declarations.en#attributes
+  [language selector]: #site-language-selector
+  [Unicode-aware slug function]: extensions/python-markdown.md#+toc.slugify
+  [add a new language]: https://github.com/squidfunk/mkdocs-material/issues/new?template=04-add-a-translation.yml&title=Add+translations+for+...
 
-### 网站语言选择器
+### Site language selector
 
 <!-- md:version 7.0.0 -->
 <!-- md:default none -->
 
-如果您的文档有多种语言版本，可以在页眉中添加指向这些语言的语言选择器。可以通过 `mkdocs.yml` 定义替代语言。
+If your documentation is available in multiple languages, a language selector
+pointing to those languages can be added to the header. Alternate languages
+can be defined via `mkdocs.yml`.
 
 ``` yaml
 extra:
@@ -54,38 +66,46 @@ extra:
       lang: de
 ```
 
-1.  请注意，这必须是一个绝对链接。如果包含域名部分，则按原样使用。否则，将 `mkdocs.yml` 中设置的 [`site_url`][site_url] 的域名部分添加到链接前面。
+1.  Note that this must be an absolute link. If it includes a domain part, it's
+    used as defined. Otherwise the domain part of the [`site_url`][site_url] as
+    set in `mkdocs.yml` is prepended to the link.
 
-每个替代语言可以使用以下属性：
+The following properties are available for each alternate language:
 
 <!-- md:option alternate.name -->
 
 :   <!-- md:default none --> <!-- md:flag required -->
-    此属性的值在语言选择器中用作语言名称，必须设置为非空字符串。
+    This value of this property is used inside the language selector as the
+    name of the language and must be set to a non-empty string.
 
 <!-- md:option alternate.link -->
 
 :   <!-- md:default none --> <!-- md:flag required -->
-    此属性必须设置为绝对链接，也可以指向不一定由 MkDocs 生成的另一个域或子域。
+    This property must be set to an absolute link, which might also point to
+    another domain or subdomain not necessarily generated with MkDocs.
 
 <!-- md:option alternate.lang -->
 
 :   <!-- md:default none --> <!-- md:flag required -->
-    此属性必须包含 [ISO 639-1 语言代码]，用于链接的 `hreflang` 属性，通过搜索引擎提高可发现性。
+    This property must contain an [ISO 639-1 language code] and is used for
+    the `hreflang` attribute of the link, improving discoverability via search
+    engines.
 
-[![语言选择器预览]][Language selector preview]
+[![Language selector preview]][Language selector preview]
 
   [site_url]: https://www.mkdocs.org/user-guide/configuration/#site_url
-  [ISO 639-1 语言代码]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+  [ISO 639-1 language code]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   [Language selector preview]: ../assets/screenshots/language-selection.png
 
-#### 停留在当前页面
+#### Stay on page
 
 <!-- md:sponsors -->
 <!-- md:version insiders-4.47.0 -->
 <!-- md:flag experimental -->
 
-[Insiders] 改进了在语言之间切换时的用户体验，例如，如果语言 `en` 和 `de` 包含具有相同路径名称的页面，用户将停留在当前页面：
+[Insiders] improves the user experience when switching between languages, e.g.,
+if language `en` and `de` contain a page with the same path name, the user will
+stay on the current page:
 
 === "Insiders"
 
@@ -103,23 +123,27 @@ extra:
     docs.example.com/en/bar/ -> docs.example.com/de/
     ```
 
-无需配置。我们正在努力改进 2024 年的多语言支持，包括在未来使语言之间的切换更加无缝。
+No configuration is necessary. We're working hard on improving multi-language
+support in 2024, including making switching between languages even more seamless
+in the future.
 
   [Insiders]: ../insiders/index.md
 
-### 方向性
+### Directionality
 
 <!-- md:version 2.5.0 -->
 <!-- md:default computed -->
 
-虽然许多语言是从左到右（`ltr`）阅读的，但 Material for MkDocs 也支持从右到左（`rtl`）的方向性，这是从所选语言推断出来的，但也可以通过以下方式设置：
+While many languages are read `ltr` (left-to-right), Material for MkDocs also
+supports `rtl` (right-to-left) directionality which is deduced from the
+selected language, but can also be set with:
 
 ``` yaml
 theme:
   direction: ltr
 ```
 
-点击一个方块来更改方向性：
+Click on a tile to change the directionality:
 
 <div class="mdx-switch">
   <button data-md-dir="ltr"><code>ltr</code></button>
@@ -138,34 +162,39 @@ theme:
   })
 </script>
 
-## 自定义
+## Customization
 
-### 自定义翻译
+### Custom translations
 
-如果您想自定义某种语言的一些翻译，只需按照[主题扩展]指南在 `overrides` 文件夹中创建一个新的部分。然后，导入该语言的[翻译]作为后备，只调整您想要覆盖的部分：
+If you want to customize some of the translations for a language, just follow
+the guide on [theme extension] and create a new partial in the `overrides`
+folder. Then, import the [translations] of the language as a fallback and only
+adjust the ones you want to override:
 
 === ":octicons-file-code-16: `overrides/partials/languages/custom.html`"
 
     ``` html
-    <!-- 导入语言翻译和后备翻译 -->
+    <!-- Import translations for language and fallback -->
     {% import "partials/languages/de.html" as language %}
     {% import "partials/languages/en.html" as fallback %} <!-- (1)! -->
 
-    <!-- 定义自定义翻译 -->
+    <!-- Define custom translations -->
     {% macro override(key) %}{{ {
       "source.file.date.created": "Erstellt am", <!-- (2)! -->
       "source.file.date.updated": "Aktualisiert am"
     }[key] }}{% endmacro %}
 
-    <!-- 重新导出翻译 -->
+    <!-- Re-export translations -->
     {% macro t(key) %}{{
       override(key) or language.t(key) or fallback.t(key)
     }}{% endmacro %}
     ```
 
-    1.  请注意，`en` 必须始终用作后备语言，因为它是默认主题语言。
+    1.  Note that `en` must always be used as a fallback language, as it's the
+        default theme language.
 
-    2.  查看[可用语言列表]，选择您想要为您的语言覆盖的翻译并在此处添加。
+    2.  Check the [list of available languages], pick the translation you want
+        to override for your language and add them here.
 
 === ":octicons-file-code-16: `mkdocs.yml`"
 
@@ -174,6 +203,6 @@ theme:
       language: custom
     ```
 
-  [主题扩展]: ../customization.md#extending-the-theme
-  [翻译]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/
-  [可用语言列表]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/
+  [theme extension]: ../customization.md#extending-the-theme
+  [translations]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/
+  [list of available languages]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/

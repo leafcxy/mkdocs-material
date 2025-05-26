@@ -1,16 +1,23 @@
 # 自定义
 
-项目文件与项目本身和 Material for MkDocs 一样多样化，是让它看起来很漂亮的一个很好的起点。然而，在编写文档时，您可能会遇到一些小的调整以保持品牌风格。
+项目文件与项目本身和材料一样多样化
+MkDocs是让它看起来很漂亮的一个很好的起点。然而，正如你
+编写文档时，您可能会遇到一些小的调整
+保持品牌风格所必需的。
 
-## 添加资源
+## 添加assets
 
-[MkDocs] 提供了多种自定义主题的方法。要对 Material for MkDocs 进行细微调整，您只需将 CSS 和 JavaScript 文件添加到 `docs` 目录。
+[MkDocs]提供了多种自定义主题的方法。为了做一些
+对Material for MkDocs进行了细微调整，您只需将CSS和JavaScript文件添加到
+`docs`目录。
 
   [MkDocs]: https://www.mkdocs.org
 
-### 添加 CSS
+### 添加CSS
 
-如果你想调整一些颜色或改变某些元素的间距，可以在单独的样式表中执行此操作。最简单的方法是在 `docs` 目录中创建一个新的样式表文件：
+如果你想调整一些颜色或改变某些元素的间距，
+您可以在单独的样式表中执行此操作。最简单的方法是创建一个
+`docs`目录中的新样式表文件：
 
 ``` { .sh .no-copy }
 .
@@ -20,16 +27,17 @@
 └─ mkdocs.yml
 ```
 
-然后，在 `mkdocs.yml` 中添加以下行：
+然后，在`mkdocs.yml`中添加以下行：
 
 ``` yaml
 extra_css:
   - stylesheets/extra.css
 ```
 
-### 添加 JavaScript
+### 添加JavaScript
 
-如果你想集成另一个语法高亮或添加一些自定义逻辑，在 `docs` 目录中创建一个新的 JavaScript 文件：
+如果你想集成另一个语法高亮显示或添加一些自定义逻辑
+你的主题，在`docs`目录中创建一个新的JavaScript文件：
 
 ``` { .sh .no-copy }
 .
@@ -39,37 +47,50 @@ extra_css:
 └─ mkdocs.yml
 ```
 
-然后，在 `mkdocs.yml` 中添加以下行：
+然后，在`mkdocs.yml`中添加以下行：
 
 ``` yaml
 extra_javascript:
   - javascripts/extra.js
 ```
 
-??? tip "如何与第三方 JavaScript 库集成"
+??? tip "如何与第三方JavaScript库集成"
 
-    您可能只想在浏览器完全加载页面后运行 JavaScript 代码。这意味着需要在 Material for MkDocs 导出的 `document$` observable 上安装订阅事件的回调函数。如果您正在使用 [instant loading]，使用 `document$` observable 尤其重要，因为它不会导致页面在浏览器中刷新——但可观察对象上的订阅者会被通知。
+    您可能只想运行JavaScript代码
+    一旦浏览器完全加载页面。这意味着
+    在上安装订阅事件的回调函数
+    由Material for MkDocs导出的`document$`observable。
+    如果您有以下情况，使用`document$`observable尤其重要
+    正在使用[instant loading]，因为它不会产生页面
+    在浏览器中刷新-但可观察对象上的订阅者将
+    通知。
 
     ``` javascript
     document$.subscribe(function() {
-      console.log("在这里初始化第三方库")
+      console.log("Initialize third-party libraries here")
     })
     ```
 
-    `document$` 是一个 [RxJS Observable]，你可以多次调用 `subscribe()` 方法附加不同的功能。
+    `document$` 是一个[RxJS Observable]，你可以调用`subscribe()`
+    方法任意次数附加不同的功能。
 
   [instant loading]: setup/setting-up-navigation.md/#instant-loading
   [RxJS Observable]: https://rxjs.dev/api/index/class/Observable
 
 ## 扩展主题
 
-如果你想更改 HTML 源代码（例如添加或删除某些部分），你可以扩展主题。MkDocs 支持 [主题扩展][theme extension]，这是一种简单的方式来覆盖 Material for MkDocs 的部分内容，无需从 git 分叉。这确保了你可以更容易地更新到最新版本。
+如果你想更改HTML源代码（例如添加或删除某些部分），你可以
+扩展主题。MkDocs支持[theme extension]，这是一种简单的覆盖方式
+MkDocs的部分材料，无需从git分叉。这确保了您
+可以更容易地更新到最新版本。
 
   [theme extension]: https://www.mkdocs.org/user-guide/customizing-your-theme/#using-the-theme-custom_dir
 
 ### 设置和主题结构
 
-像往常一样在 `mkdocs.yml` 中为 Material for MkDocs 启用，并创建一个新文件夹用于 `overrides`，你可以用 [`custom_dir`][custom_dir] 设置引用它：
+像往常一样在`MkDocs.yml`中为Material for MkDocs启用，并创建一个新文件夹
+对于`overrides`，您可以使用[`custom_dir`][custom_dir]引用它
+设置：
 
 ``` yaml
 theme:
@@ -79,16 +100,22 @@ theme:
 
 !!! warning "主题扩展先决条件"
 
-    由于 [`custom_dir`][custom_dir] 设置用于主题扩展流程，Material for MkDocs 需要通过 `pip` 安装并通过 `mkdocs.yml` 中的 [`name`][name] 设置引用。当从 git 克隆时将无法工作。
+    由于[`custom_dir`][custom_dir]设置用于主题扩展
+    流程，Material for MkDocs需要通过`pip`安装并引用
+    使用`mkdocs.yml`中的[`name`][name]设置。当以下情况发生时，它将无法工作
+    从git克隆。
 
-`overrides` 目录中的结构必须反映原始主题的目录结构，因为 `overrides` 目录中的任何文件都会替换原始主题中同名的文件。此外，额外的资源也可以放在 `overrides` 目录中：
+`overrides`目录中的结构必须反映目录结构
+因为`overrides`目录中的任何文件都将替换原始主题
+与原始主题同名的文件。此外，进一步
+资产也可以放在`overrides`目录中：
 
 ``` { .sh .no-copy }
 .
 ├─ .icons/                             # 捆绑图标集
 ├─ assets/
 │  ├─ images/                          # 图像和图标
-│  ├─ javascripts/                     # JavaScript 文件
+│  ├─ javascripts/                     # JavaScript文件
 │  └─ stylesheets/                     # 样式表
 ├─ partials/
 │  ├─ integrations/                    # 第三方集成
@@ -123,7 +150,7 @@ theme:
 │  ├─ toc.html                         # 目录
 │  ├─ toc-item.html                    # 目录项目
 │  └─ top.html                         # 返回顶部按钮
-├─ 404.html                            # 404 错误页面
+├─ 404.html                            # 404错误页面
 ├─ base.html                           # 基础模板
 ├─ blog.html                           # 博客索引页
 ├─ blog-archive.html                   # 博客存档索引页
@@ -135,9 +162,12 @@ theme:
   [custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
   [name]: https://www.mkdocs.org/user-guide/configuration/#name
 
-### 覆盖部分
+### Overriding部分
 
-为了覆盖一个部分，我们可以用同名文件替换它以及在 "overrides" 目录中的位置。例如，替换原始的 `footer.html` partial，在 `overrides` 中创建一个新的 `footer.html` partial：
+为了覆盖一个部分，我们可以用同名文件替换它
+以及“override”目录中的位置。例如，替换原来的
+`footer.html `partial，在`override`中创建一个新的`footer.html`partial
+目录：
 
 ``` { .sh .no-copy }
 .
@@ -147,11 +177,15 @@ theme:
 └─ mkdocs.yml
 ```
 
-MkDocs 现在将在渲染主题时使用新的片段。这可以应用于任何文件。
+MkDocs现在将在渲染主题时使用新的片段。这是可以做到的
+任何文件。
 
-### 覆盖块 <small>推荐</small> { #overriding-blocks data-toc-label="Overriding blocks" }
+### Overriding blocks <small>recommended</small> { #overriding-blocks data-toc-label="Overriding blocks" }
 
-除了覆盖部分之外，还可以覆盖（和扩展）模板块，这些块在模板内定义并特定于包装特性。要设置块覆盖，请在 `overrides` 目录内创建一个 `main.html` 文件：
+除了覆盖部分之外，还可以覆盖（和扩展）
+模板块，在模板内定义并特定于包装
+特征。为了设置块覆盖，请在内部创建一个`main.html `文件
+`override`目录：
 
 ``` { .sh .no-copy }
 .
@@ -160,7 +194,7 @@ MkDocs 现在将在渲染主题时使用新的片段。这可以应用于任何�
 └─ mkdocs.yml
 ```
 
-然后，例如，要覆盖网站标题，请在 `main.html` 中添加以下内容：
+然后，例如，要覆盖网站标题，请在`main.html `中添加以下行：
 
 ``` html
 {% extends "base.html" %}
@@ -170,7 +204,10 @@ MkDocs 现在将在渲染主题时使用新的片段。这可以应用于任何�
 {% endblock %}
 ```
 
-如果你打算向块中 __添加__ 某些内容，而不是替换为新内容，在块内使用 `{{ super() }}` 来包含原始块内容。这在添加第三方脚本到文档时特别有用。
+如果你打算向块中 __add__ 某个东西，而不是替换它
+对于新内容，在块内使用`{{ super() }}`来包含
+原始块内容。这在添加第三方时特别有用
+将脚本添加到文档中，例如。
 
 ``` html
 {% extends "base.html" %}
@@ -184,30 +221,33 @@ MkDocs 现在将在渲染主题时使用新的片段。这可以应用于任何�
 
 主题提供了以下模板块：
 
-| 块名              | 用途                                         |
-| :---------------- | :-------------------------------------------- |
-| `analytics`       | 包裹 Google Analytics 集成                   |
-| `announce`        | 包裹公告栏                                   |
-| `config`          | 包裹 JavaScript 应用配置                     |
-| `container`       | 包裹主内容容器                               |
-| `content`         | 包裹主内容                                   |
-| `extrahead`       | 空块，用于添加自定义 meta 标签                |
-| `fonts`           | 包裹字体定义                                 |
-| `footer`          | 包裹带有导航和版权的页脚                     |
-| `header`          | 包裹固定头部栏                               |
-| `hero`            | 包裹 hero teaser（如有）                      |
-| `htmltitle`       | 包裹 `<title>` 标签                          |
-| `libs`            | 包裹 JavaScript 库（头部）                   |
-| `outdated`        | 包裹版本警告                                 |
-| `scripts`         | 包裹 JavaScript 应用（页脚）                 |
-| `site_meta`       | 包裹文档头部的 meta 标签                     |
-| `site_nav`        | 包裹站点导航和目录                           |
-| `styles`          | 包裹样式表（也包括额外资源）                 |
-| `tabs`            | 包裹选项卡导航（如有）                        |
+| Block name        | Purpose                                         |
+| :---------------- | :---------------------------------------------- |
+| `analytics`       | Wraps the Google Analytics integration          |
+| `announce`        | Wraps the announcement bar                      |
+| `config`          | Wraps the JavaScript application config         |
+| `container`       | Wraps the main content container                |
+| `content`         | Wraps the main content                          |
+| `extrahead`       | Empty block to add custom meta tags             |
+| `fonts`           | Wraps the font definitions                      |
+| `footer`          | Wraps the footer with navigation and copyright  |
+| `header`          | Wraps the fixed header bar                      |
+| `hero`            | Wraps the hero teaser (if available)            |
+| `htmltitle`       | Wraps the `<title>` tag                         |
+| `libs`            | Wraps the JavaScript libraries (header)         |
+| `outdated`        | Wraps the version warning                       |
+| `scripts`         | Wraps the JavaScript application (footer)       |
+| `site_meta`       | Wraps the meta tags in the document head        |
+| `site_nav`        | Wraps the site navigation and table of contents |
+| `styles`          | Wraps the style sheets (also extra sources)     |
+| `tabs`            | Wraps the tabs navigation (if available)        |
 
 ## 主题开发
 
-Material for MkDocs 基于 [TypeScript]、[RxJS] 和 [SASS] 构建，并使用精简、定制的构建流程将所有内容整合在一起。[^1] 如果你想做出更根本的更改，可能需要直接在主题源代码中调整并重新编译。
+Material for MkDocs基于[TypeScript]、[RxJS]和[SASS]构建，以及
+使用精益、定制的构建流程将所有内容整合在一起。[^1]如果你愿意
+为了做出更根本的改变，可能有必要做出调整
+直接在主题的源代码中重新编译它。
 
   [^1]:
     之前<!-- md:version 7.0.0 -->构建基于Webpack，结果
@@ -358,5 +398,5 @@ npm run build # (1)!
 
 这将触发所有样式的生产级编译和缩小
 工作表和JavaScript文件。命令退出后，编译的文件为
-位于"material"目录中。运行`mkdocs build`时，您应该
+位于“`material`目录中。运行`mkdocs build`时，您应该
 现在查看对原始主题的更改。

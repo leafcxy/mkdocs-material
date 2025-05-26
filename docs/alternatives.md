@@ -1,24 +1,33 @@
 # 选择
 
-有很多静态网站生成器和主题可供选择，为您的技术栈选择一个合适的解决方案是一个艰难的决定。如果您不确定 Material for MkDocs 是否适合您的需求，本节应该帮助您评估替代解决方案。
+有很多静态网站生成器和主题，可以选择
+为你的技术栈选择一个合适的是一个艰难的决定。如果你不确定材料
+因为MkDocs是适合您的解决方案，本节应该帮助您评估
+替代解决方案。
 
 ## Docusaurus
 
-Facebook 的 [Docusaurus] 是一个非常受欢迎的文档生成器，如果您或您的公司已经在使用 [React] 构建网站，这是一个很好的选择。它将生成一个从根本上不同的[单页应用程序]，与 Material for MkDocs 生成的网站不同。
+Facebook的[Docusaurus]是一个非常受欢迎的文档生成器，也是一个很好的
+如果您或您的公司已经在使用[React]构建您的网站，请选择。
+它将生成一个从根本上不同的[单页应用程序]
+从为您生成的Material for MkDocs网站。
 
 __优势__
 
 - 非常强大、可定制和可扩展
 - 提供许多有助于技术写作的组件
-- 庞大而丰富的生态系统，由 Facebook 支持
+- 庞大而丰富的生态系统，由Facebook支持
 
 __挑战__
 
-- 学习曲线高，必须具备 JavaScript 知识
-- JavaScript 生态系统非常不稳定，维护成本很高
-- 需要更多的时间来启动和运行
+- 学习曲线高，必须具备JavaScript知识
+- JavaScript生态系统非常不稳定，维护成本很高
+- 需要更多的时间来起床和跑步
 
-当涉及到文档时，[Docusaurus] 是输出单页应用程序网站的最佳选择之一，还有其他类似的解决方案，包括 [Docz]、[Gatsby]、[Vuepress] 和 [Docsify]。
+当涉及到文档时，[Docusaurus]是最佳选择之一
+输出单个页面应用程序的网站，还有更多的解决方案，
+包括[Docz]、[Gatsby]、[Vuepress]和[Docsify]这种方法
+这个问题类似。
 
   [Docusaurus]: https://docusaurus.io/
   [React]: https://reactjs.org/
@@ -30,40 +39,49 @@ __挑战__
 
 ## Jekyll
 
-[Jekyll] 可能是最成熟和最广泛使用的静态网站生成器之一，使用 [Ruby] 编写。它不是专门针对技术项目文档设计的，有许多主题可供选择，这可能具有挑战性。
+[Jekyll]可能是最成熟和最广泛的静态网站之一
+生成器，用[Ruby]编写。它不是专门针对
+技术项目文档，有许多主题可供选择，其中
+可能具有挑战性。
 
 __优势__
 
 - 久经考验，丰富的生态系统，许多主题可供选择
 - 为博客带来强大的功能（永久链接、标签等）
-- 生成一个 SEO 友好的网站，类似于 Material for MkDocs
+- 生成一个SEO友好的网站，类似于Material for MkDocs
 
 __挑战__
 
 - 不专门针对技术项目文档
-- Markdown 功能有限，不如 Python Markdown 高级
-- 需要更多的时间来启动和运行
+- Markdown功能有限，不如Python Markdown高级
+- 需要更多的时间来起床和跑步
 
   [Jekyll]: https://jekyllrb.com/
   [Ruby]: https://www.ruby-lang.org/de/
 
 ## Sphinx
 
-[Sphinx] 是一个专门针对生成参考文档的替代静态站点生成器，提供了一些 Material for MkDocs 所缺少的强大功能。它使用 [reStructured text]，一种类似于 Markdown 的格式，一些用户发现更难使用。
+[Shinx]是一个专门针对以下对象的替代静态站点生成器
+生成参考文档，提供以下强大功能
+缺少MkDocs。它使用[reStructured text]，一种类似于Markdown的格式，
+一些用户发现更难使用。
 
 __优势__
 
 - 非常强大、可定制和可扩展
-- 从 [Python docstrings] 生成参考文档
-- 庞大而丰富的生态系统，被许多 Python 项目使用
+- 从[Python docstrings]生成参考文档
+- 庞大而丰富的生态系统，被许多Python项目使用
 
 __挑战__
 
-- 学习曲线高，[reStructured text] 语法可能具有挑战性
-- 搜索功能不如 MkDocs 提供的强大
-- 需要更多的时间来启动和运行
+- 学习曲线高，[reStructured text]语法可能具有挑战性
+- 搜索功能不如MkDocs提供的强大
+- 需要更多的时间来起床和跑步
 
-如果您正在考虑使用 Sphinx 来生成参考文档，您应该试试 [mkdocstrings] —— 一个积极维护的基于 MkDocs 构建的流行框架，实现了类似 Sphinx 的功能。
+如果您正在考虑使用Sphinx，因为您需要生成引用
+文档，你应该试试[mkdocstrings]——一个积极维护的
+基于MkDocs构建的流行框架，实现了类似Sphinx的
+功能。
 
   [Sphinx]: https://www.sphinx-doc.org/
   [reStructured text]: https://en.wikipedia.org/wiki/ReStructuredText
@@ -72,7 +90,9 @@ __挑战__
 
 ## GitBook
 
-[GitBook] 提供了一个托管文档解决方案，可以从 GitHub 仓库中的 Markdown 文件生成美观且功能强大的站点。然而，它曾经是开源的，但不久前变成了闭源解决方案。
+[GitBook]提供了一个托管文档解决方案，可以生成美观且
+GitHub存储库中Markdown文件的功能站点。然而，事实的确如此
+曾经是开源的，但不久前变成了闭源解决方案。
 
 __优势__
 
@@ -83,9 +103,10 @@ __优势__
 __挑战__
 
 - 闭源代码，专有项目不免费
-- Markdown 功能有限，不如 Python Markdown 高级
-- 许多开源项目从 GitBook 转移
+- Markdown功能有限，不如Python Markdown高级
+- 许多开源项目从GitBook转移
 
-许多用户从 [GitBook] 切换到 Material for MkDocs，因为他们想要保留对文档的控制权，并支持开源解决方案。
+许多用户从[GitBook]切换到Material for MkDocs，因为他们想保留
+控制和拥有他们的文档，支持开源解决方案。
 
   [GitBook]: https://www.gitbook.com/

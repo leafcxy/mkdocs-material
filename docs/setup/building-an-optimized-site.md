@@ -1,62 +1,108 @@
-# 构建优化站点
+# Building an optimized site
 
-Material for MkDocs 提供了多种功能，以优化您的文档站点，提高加载速度和用户体验。通过配置优化设置，您可以确保文档的高效访问。
+Material for MkDocs, by default, allows to build optimized sites that rank great
+on search engines, load fast (even on slow networks), and work perfectly without
+JavaScript. Additionally, the [built-in optimize plugin] adds support for
+further useful automatic optimization techniques.
 
-## 配置
+  [built-in optimize plugin]: #built-in-optimize-plugin
 
-### 优化设置
+## Configuration
 
-<!-- md:version 0.1.0 -->
-<!-- md:default none -->
+### Built-in projects plugin
 
-在 `mkdocs.yml` 中配置优化设置，以提高站点的性能：
+<!-- md:sponsors -->
+<!-- md:version insiders-4.38.0 -->
+<!-- md:plugin [projects] – built-in -->
+<!-- md:flag experimental -->
 
-``` yaml
-theme:
-  features:
-    - optimize
-```
-
-- `optimize`: 启用优化功能，以提高站点的加载速度和性能。
-
-### 自定义优化
-
-<!-- md:version 0.1.0 -->
-<!-- md:default none -->
-
-您可以为优化设置自定义配置。在 `mkdocs.yml` 中配置优化设置：
+The built-in projects plugin allows to split your documentation into multiple
+distinct MkDocs projects, __build them concurrently__ and
+__serve them together__. Add the following to `mkdocs.yml`:
 
 ``` yaml
-theme:
-  features:
-    - optimize
-  optimize:
-    minify: true
-    compress: true
+plugins:
+  - projects
 ```
 
-- `optimize.minify`: 启用代码压缩功能，以减少文件大小。
-- `optimize.compress`: 启用文件压缩功能，以提高加载速度。
+For a list of all settings, please consult the [plugin documentation].
 
-## 使用
+  [projects]: ../plugins/projects.md
+  [plugin documentation]: ../plugins/projects.md
 
-### 添加优化设置
+??? info "Use cases for the projects plugin"
 
-在 `mkdocs.yml` 中添加优化设置，以提高站点的性能。您可以根据需要启用代码压缩和文件压缩功能。
+    Ideal use cases for the projects plugin are:
 
-### 查看优化设置
+    - Building a multi-language site
+    - Building a blog alongside your documentation
+    - Splitting large code bases for better performance
 
-一旦配置了优化设置，您可以通过浏览器查看站点的加载速度和性能。优化后的站点将更快地加载，提供更好的用户体验。
+    Note that the plugin is currently experimental. We're releasing it early,
+    so that we can improve it together with our users and make it even more
+    powerful as we discover new use cases.
 
-## 自定义
-
-### 自定义优化设置
+#### Scope
 
 <!-- md:version 8.0.0 -->
-<!-- md:flag customization -->
+<!-- md:default none -->
 
-如需自定义和覆盖[优化配置]，请[扩展主题]并[覆盖 `optimize.html` partial][覆盖 partials]，该 partial 通常包含 `mkdocs.yml` 中设置的 optimize 属性。
+There might be a use case, where you want to share user-level settings like
+the selected [color palette], or [cookie consent] across all projects. To do
+so, add the following lines to `mkdocs.yml`:
 
-  [优化配置]: #optimization-configuration
-  [扩展主题]: ../customization.md#extending-the-theme
-  [覆盖 partials]: ../customization.md#overriding-partials
+``` yaml
+extra:
+  scope: /
+```
+
+!!! example "How it works"
+
+    Suppose you have this site structure:
+    ```
+    .
+    └── /
+        ├── subsite-a/
+        ├── subsite-b/
+        └── subsite-c/
+    ```
+    By default, each site will have its own scope (`/subsite-a/`, `/subsite-b/`,
+    `/subsite-c/`). To modify this behaviour, add the following lines to
+    `mkdocs.yml`:
+
+    ``` yaml
+    extra:
+      scope: /
+    ```
+
+    By setting it to `/`, it should allow you to share the following preferences
+    across the main site and all subsites:
+
+    - [Cookie consent][cookie consent]
+    - [Linking of content tabs, i.e. active tab]
+    - [Color palette][color palette]
+
+  [Scope support]: https://github.com/squidfunk/mkdocs-material/releases/tag/8.0.0
+  [cookie consent]: ../setup/ensuring-data-privacy.md#cookie-consent
+  [Linking of content tabs, i.e. active tab]: ../reference/content-tabs.md
+  [color palette]: ../setup/changing-the-colors.md#color-palette
+
+### Built-in optimize plugin
+
+<!-- md:sponsors -->
+<!-- md:version insiders-4.29.0 -->
+<!-- md:plugin [optimize] – built-in -->
+<!-- md:flag experimental -->
+
+The built-in optimize plugin automatically identifies and optimizes all media
+files as part of the build using compression and conversion techniques. Add
+the following lines to `mkdocs.yml`:
+
+``` yaml
+plugins:
+  - optimize
+```
+
+For a list of all settings, please consult the [plugin documentation][optimize].
+
+  [optimize]: ../plugins/optimize.md

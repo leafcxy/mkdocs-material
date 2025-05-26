@@ -6,4 +6,4 @@ social:
     title: Documentation that simply works
 ---
 
-欢迎使用 Material for MkDocs。
+Welcome to Material for MkDocs.

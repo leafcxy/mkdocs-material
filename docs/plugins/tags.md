@@ -1,43 +1,56 @@
 ---
-title: 内置标签插件
+title: Built-in tags plugin
 icon: material/tag-text
 ---
 
-# 内置标签插件
+# Built-in tags plugin
 
-标签插件为使用标签对页面进行分类提供了一流的支持，使相关页面可以分组并通过搜索和专用标签索引被发现。如果您的文档很大，标签可以帮助更快地发现相关信息。
+The tags plugin adds first-class support for categorizing pages with the use
+of tags, adding the possibility to group related pages and make them
+discoverable via search and dedicated tags indexes. If your documentation is
+large, tags can help to discover relevant information faster.
 
-## 目标
+## Objective
 
-### 工作原理
+### How it works
 
-该插件扫描所有页面的[`tags`][meta.tags]元数据属性，并生成标签索引，这是一个标签及其出现页面的倒排列表。标签索引可以位于[`nav`][mkdocs.nav]中的任何位置，为项目添加标签时提供最大的灵活性。
+The plugin scans all pages for the [`tags`][meta.tags] metadata property and
+generates a tags index, which is an inverted list of tags and the pages they
+appear on. The tags index can be located anywhere in the [`nav`][mkdocs.nav],
+allowing for maximum flexibility when adding tags to your project.
 
-### 何时使用
+### When to use it
 
-如果您想为项目添加一个或多个标签索引，标签插件是一个完美的选择，因为它使这个过程变得非常简单。此外，它与 Material for MkDocs 提供的其他几个[内置插件]完美集成：
+If you want to add one or multiple tags indexes to your project, the tags
+plugin is a perfect choice as it makes this process ridiculously simple.
+Additionally, it integrates perfectly with several of the other
+[built-in plugins] that Material for MkDocs offers:
 
 <div class="grid cards" markdown>
 
--   :material-file-tree: &nbsp; __[内置元数据插件][meta]__
+-   :material-file-tree: &nbsp; __[Built-in meta plugin][meta]__
 
     ---
 
-    元数据插件可以确保项目的子部分使用[特定标签][meta.tags]进行注释，这样在添加页面时就不会忘记它们。
+    The meta plugin makes it possible to ensure that subsections of your
+    project are annotated with [specific tags][meta.tags], so they can't be
+    forgotten when adding pages.
 
     ---
 
-    __简化不同子部分中标签的组织和管理__
+    __Simpler organization and management of tags in different subsections__
 
--   :material-newspaper-variant-outline: &nbsp; __[内置博客插件][blog]__
-
-    ---
-
-    标签插件允许在项目中同时为帖子和页面添加分类，以提高它们的可发现性并将帖子与文档连接起来。
+-   :material-newspaper-variant-outline: &nbsp; __[Built-in blog plugin][blog]__
 
     ---
 
-    __您的文档标签系统与博客集成__
+    The tags plugin allows to categorize posts alongside with pages in your
+    project, to improve their discoverability and connect posts to your
+    documentation.
+
+    ---
+
+    __Your documentation's tag system integrates with your blog__
 
 </div>
 
@@ -45,26 +58,29 @@ icon: material/tag-text
   [blog]: blog.md
   [built-in plugins]: index.md
 
-## 配置
+## Configuration
 
 <!-- md:version 8.2.0 -->
 <!-- md:plugin [tags] – built-in -->
 <!-- md:flag multiple -->
 
-与所有[内置插件]一样，开始使用标签插件非常简单。只需在 `mkdocs.yml` 中添加以下行，然后开始使用[标签][meta.tags]对页面进行分类：
+As with all [built-in plugins], getting started with the tags plugin is
+straightforward. Just add the following lines to `mkdocs.yml`, and start using
+[tags][meta.tags] to categorize your pages:
 
 ``` yaml
 plugins:
   - tags
 ```
 
-标签插件已内置到 Material for MkDocs 中，无需安装。
+The tags plugin is built into Material for MkDocs and doesn't need to be
+installed.
 
   [tags]: tags.md
 
-### 常规设置
+### General
 
-以下设置可用：
+The following settings are available:
 
 ---
 
@@ -73,7 +89,9 @@ plugins:
 <!-- md:version 9.1.7 -->
 <!-- md:default `true` -->
 
-使用此设置在[构建项目]时启用或禁用插件。通常不需要指定此设置，但如果您想禁用插件，请使用：
+Use this setting to enable or disable the plugin when [building your project].
+It's normally not necessary to specify this setting, but if you want to disable
+the plugin, use:
 
 ``` yaml
 plugins:
@@ -83,9 +101,9 @@ plugins:
 
   [building your project]: ../creating-your-site.md#building-your-site
 
-### 标签
+### Tags
 
-以下标签设置可用：
+The following settings are available for tags:
 
 ---
 
@@ -94,7 +112,9 @@ plugins:
 <!-- md:version 9.3.2 -->
 <!-- md:default `true` -->
 
-使用此设置启用或禁用标签的渲染。插件仍然会从所有页面提取标签，例如，用于[导出标签]而不渲染它们。可以通过以下方式禁用渲染：
+Use this setting to enable or disable rendering of tags. The plugin still
+extracts tags from all pages, e.g., for [exporting tags] without rendering them.
+Rendering can be disabled with:
 
 ``` yaml
 plugins:
@@ -102,7 +122,8 @@ plugins:
       tags: false
 ```
 
-如果启用了[`export_only`][config.export_only]，此设置会自动禁用。
+This setting is automatically disabled if [`export_only`][config.export_only]
+is enabled.
 
   [exporting tags]: #export
 
@@ -113,13 +134,19 @@ plugins:
 <!-- md:version 8.2.0 -->
 <!-- md:default none -->
 
-!!! warning "此设置已弃用"
+!!! warning "This setting is deprecated"
 
-    从版本 <!-- md:version 9.6.0 --> 开始，此设置已弃用，因为此版本包含__标签插件的完全重写__，比之前的版本更强大。现在可以在任何页面上使用标签[列表]。
+    As of version <!-- md:version 9.6.0 -->, this setting is deprecated, as this
+    version ships a __ground up rewrite of the tags plugin__ which is much more
+    powerful than the previous version. Tags [listings] can be used on any page
+    now.
 
 <div style="opacity: 0.5" markdown>
 
-使用此设置指定标签索引的位置，这是用于渲染所有标签及其关联页面列表的页面。如果指定了此设置，标签将变为可点击的，指向标签索引中的相应部分：
+Use this setting to specify the location of the tags index, which is the page
+used to render a list of all tags and their associated pages. If this setting is
+specified, tags become clickable, pointing to the corresponding section in the
+tags index:
 
 ``` yaml
 plugins:
@@ -127,9 +154,11 @@ plugins:
       tags_file: tags.md
 ```
 
-包含标签索引的页面可以在 `mkdocs.yml` 的[`nav`][mkdocs.nav]部分的任何位置链接。此设置不是必需的 - 只有在您想要有标签索引时才应使用它。
+The page holding the tags index can be linked anywhere in the [`nav`][mkdocs.nav]
+section of `mkdocs.yml`. This setting is not required – you should only use it
+if you want to have a tags index.
 
-提供的路径从[`docs`目录][mkdocs.docs_dir]解析。
+The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
 
 </div>
 
@@ -142,7 +171,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default [`pymdownx.slugs.slugify`][pymdownx.slugs.slugify] -->
 
-使用此设置更改从帖子标题生成 URL 兼容的 slug 的函数。默认情况下，使用[Python Markdown Extensions]的[`slugify`][pymdownx.slugs.slugify]函数，如下所示：
+Use this setting to change the function for generating URL-compatible slugs
+from post titles. By default, the [`slugify`][pymdownx.slugs.slugify] function
+from [Python Markdown Extensions] is used as follows:
 
 ``` yaml
 plugins:
@@ -152,7 +183,9 @@ plugins:
           case: lower
 ```
 
-默认配置支持 Unicode，应该能为所有语言生成良好的 slug。当然，您也可以提供自定义的 slug 生成函数以获得更精细的控制。
+The default configuration is Unicode-aware and should produce good slugs for all
+languages. Of course, you can also provide a custom slugification function for
+more granular control.
 
   [pymdownx.slugs.slugify]: https://github.com/facelessuser/pymdown-extensions/blob/01c91ce79c91304c22b4e3d7a9261accc931d707/pymdownx/slugs.py#L59-L65
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/extras/slugs/
@@ -164,7 +197,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `-` -->
 
-使用此设置更改作为[`tags_slugify`][config.tags_slugify]一部分设置的 slug 生成函数的分隔符。虽然默认是连字符，但可以设置为任何字符串，例如 `_`：
+Use this setting to change the separator that is passed to the slugification
+function set as part of [`tags_slugify`][config.tags_slugify]. While the default
+is a hyphen, it can be set to any string, e.g., `_`:
 
 ``` yaml
 plugins:
@@ -179,7 +214,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `tag:{slug}` -->
 
-使用此设置更改生成标签 slug 时使用的格式字符串。最好用使它们唯一的字符串作为标签 slug 的前缀，默认为：
+Use this setting to change the format string that is used when generating tag
+slugs. It is a good idea to prefix tag slugs with a string that makes them
+unique, the default being:
 
 ``` yaml
 plugins:
@@ -187,9 +224,9 @@ plugins:
       tags_slugify_format: "tag:{slug}"
 ```
 
-以下占位符可用：
+The following placeholders are available:
 
-- `slug` – 标签 slug，使用[`tags_slugify`][config.tags_slugify]进行 slug 化
+- `slug` – Tag slug, slugified with [`tags_slugify`][config.tags_slugify]
 
 ---
 
@@ -200,7 +237,9 @@ plugins:
 <!-- md:default `false` -->
 <!-- md:flag experimental -->
 
-使用此设置启用标签层次结构支持（嵌套标签，例如 `foo/bar`）。如果您打算创建标签的层次结构列表，可以在 `mkdocs.yml` 中启用此设置：
+Use this setting to enable support for tag hierarchies (nested tags, e.g.,
+`foo/bar`). If you intend to create hierarchical listings of tags, you can
+enable this setting in `mkdocs.yml` with:
 
 ``` yaml
 plugins:
@@ -217,7 +256,9 @@ plugins:
 <!-- md:default `/` -->
 <!-- md:flag experimental -->
 
-使用此设置更改创建标签层次结构时使用的分隔符。默认情况下，标签用正斜杠 `/` 分隔，但可以将其更改为任何字符串，例如 `.：
+Use this setting to change the separator that is used when creating tag
+hierarchies. By default, tags are separated by a forward slash `/`, but you
+can change this to any string, e.g., `.`:
 
 ``` yaml
 plugins:
@@ -232,7 +273,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `material.plugins.tags.tag_name` -->
 
-使用此设置指定自定义函数以比较标签。默认情况下，标签比较是区分大小写的，但可以使用 `tag_name_casefold` 进行不区分大小写的比较：
+Use this setting to specify a custom function for comparing tags. By default,
+tag comparison is case-sensitive, but you can use `tag_name_casefold` for
+case-insensitive comparison:
 
 ``` yaml
 plugins:
@@ -240,7 +283,9 @@ plugins:
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
 ```
 
-您也可以定义自己的比较函数，该函数必须返回一个字符串或数字，表示用于排序的标签，并在[`tags_sort_by`][config.tags_sort_by]中引用它。
+You can also define your own comparison function, which must return a string
+or number representing the tag, that is used for sorting, and reference it in
+[`tags_sort_by`][config.tags_sort_by].
 
 ---
 
@@ -249,7 +294,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `false` -->
 
-使用此设置反转标签比较时的顺序。默认情况下，标签按升序排序，但可以通过以下方式反转排序：
+Use this setting to reverse the order in which tags are sorted when comparing
+them. By default, tags are sorted in ascending order, but you can reverse
+ordering as follows:
 
 ``` yaml
 plugins:
@@ -264,7 +311,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default [`tags`][meta.tags] -->
 
-使用此设置更改插件使用的 front matter 属性名称。通常不需要更改此设置，但如果您想更改它，可以使用：
+Use this setting to change the name of the front matter property that is used by
+the plugin. It is normally not necessary to change this setting, but if you want
+to change it, you can use:
 
 ``` yaml
 plugins:
@@ -279,7 +328,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `tags` -->
 
-使用此设置更改插件使用的模板变量名称。通常不需要更改此设置，但如果您想更改它，可以使用：
+Use this setting to change the name of the template variable that is used by
+the plugin. It is normally not necessary to change this setting, but if you want
+to change it, you can use:
 
 ``` yaml
 plugins:
@@ -294,7 +345,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default none -->
 
-插件允许检查标签是否符合预定义列表，以防止拼写错误或确保标签不是任意添加的。使用以下方法指定要允许的标签：
+The plugin allows to check tags against a predefined list, in order to catch
+typos or make sure that tags are not arbitrarily added. Specify the tags you
+want to allow with:
 
 ``` yaml
 plugins:
@@ -305,11 +358,13 @@ plugins:
         - CSS
 ```
 
-如果页面引用列表中不存在的标签，插件会停止构建。页面可以通过使用[`tags`][meta.tags]元数据属性分配标签。
+The plugin stops the build if a page references a tag that is not part of
+this list. Pages can be assigned to tags by using the [`tags`][meta.tags]
+metadata property.
 
-### 列表配置
+### Listings
 
-以下设置可用于列表：
+The following settings are available for listings:
 
 ---
 
@@ -318,7 +373,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `true` -->
 
-使用此设置启用或禁用列表。通常不需要更改此设置，因为列表完全由内联注释生成，但可以通过以下方式禁用：
+Use this setting to enable or disable listings. It is normally not necessary to
+change this setting, as listings are created entirely by inline comments, but
+you can disable them if necessary with:
 
 ``` yaml
 plugins:
@@ -326,7 +383,8 @@ plugins:
       listings: false
 ```
 
-此设置自动禁用，如果启用了[`export_only`][config.export_only]。
+This setting is automatically disabled if [`export_only`][config.export_only]
+is enabled.
 
   [exporting tags]: #export
 
@@ -337,7 +395,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default none -->
 
-使用此定义列表配置，然后可以在列表中使用自定义标识符引用列表：
+Use this define listing configurations that you can then reference in listings
+with a custom identifier. Sharing configurations is a good idea, especially
+when you have many tag listings:
 
 ``` yaml
 plugins:
@@ -348,13 +408,13 @@ plugins:
           exclude: Internal
 ```
 
-然后，只需引用列表标识符：
+Then, just reference the listing identifier:
 
 ``` html
 <!-- material/tags custom-id -->
 ```
 
-请参阅[列表部分]以获取所有可用设置的列表。
+See the [listings section] for a list of all available settings.
 
   [listings section]: #listing-configuration
 
@@ -365,9 +425,11 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `material.plugins.tags.item_title` -->
 
-使用此设置指定自定义函数以比较列表项。默认情况下，项目按其标题排序，但可以通过以下配置更改排序标准：
+Use this setting to specify a custom function for comparing listing items. By
+default, items are ordered by their titles, but you can change the sorting
+criterion with the following configuration:
 
-=== "按项目标题排序"
+=== "Sort by item title"
 
     ``` yaml
     plugins:
@@ -375,7 +437,7 @@ plugins:
           listings_sort_by: !!python/name:material.plugins.tags.item_title
     ```
 
-=== "按项目 URL 排序"
+=== "Sort by item URL"
 
     ``` yaml
     plugins:
@@ -383,7 +445,9 @@ plugins:
           listings_sort_by: !!python/name:material.plugins.tags.item_url
     ```
 
-您也可以定义自己的比较函数，该函数必须返回一个字符串或数字，表示用于排序的项目，并在[`listings_sort_by`][config.listings_sort_by]中引用它。
+You can also define your own comparison function, which must return a string
+or number representing the item, that is used for sorting, and reference it in
+[`listings_sort_by`][config.listings_sort_by].
 
 ---
 
@@ -392,7 +456,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `false` -->
 
-使用此设置反转项目比较时的顺序。默认情况下，项目按升序排序，但可以通过以下方式反转排序：
+Use this setting to reverse the order in which items are sorted when comparing
+them. By default, items are sorted in ascending order, but you can reverse
+ordering as follows:
 
 ``` yaml
 plugins:
@@ -407,7 +473,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `material.plugins.tags.tag_name` -->
 
-使用此设置指定自定义函数以比较列表中的标签。默认情况下，标签比较是区分大小写的，但可以使用 `tag_name_casefold` 进行不区分大小写的比较：
+Use this setting to specify a custom function for comparing tags in listings. By
+default, tag comparison is case-sensitive, but you can use `tag_name_casefold`
+for case-insensitivity:
 
 ``` yaml
 plugins:
@@ -415,7 +483,9 @@ plugins:
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
 ```
 
-您也可以定义自己的比较函数，该函数必须返回一个字符串或数字，表示用于排序的标签，并在[`tags_sort_by`][config.tags_sort_by]中引用它。
+You can also define your own comparison function, which must return a string
+or number representing the tag, that is used for sorting, and reference it in
+[`tags_sort_by`][config.tags_sort_by].
 
 ---
 
@@ -424,7 +494,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `false` -->
 
-使用此设置反转标签比较时的顺序。默认情况下，标签按升序排序，但可以通过以下方式反转排序：
+Use this setting to reverse the order in which tags are sorted when comparing
+them. By default, tags are sorted in ascending order, but you can reverse
+ordering as follows:
 
 ``` yaml
 plugins:
@@ -439,7 +511,9 @@ plugins:
 <!-- md:version 9.6.0 -->
 <!-- md:default `material/tags` -->
 
-使用此设置更改插件在处理页面时查找的指令名称。如果您想使用比 `material/tags` 更短的指令，可以使用：
+Use this setting to change the name of the directive the plugin will look for
+when processing pages. If you want to use a shorter directive than
+`material/tags`, you could use:
 
 ``` yaml
 plugins:
@@ -447,7 +521,7 @@ plugins:
       listings_directive: $tags
 ```
 
-使用此设置，列表必须像这样引用：
+Using this setting, listings must now be referenced as such:
 
 ``` html
 <!-- $tags { include: [foo, bar] } -->
@@ -461,7 +535,9 @@ plugins:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:default `true` -->
 
-使用此设置启用或禁用标签在目录中显示。如果您不希望标签在目录中显示，可以通过以下方式禁用此行为：
+Use this setting to enable or disable tags showing up in the table of contents.
+If you don't want tags to show up in the table of contents, you can disable this
+behavior with:
 
 ``` yaml
 plugins:
@@ -469,9 +545,9 @@ plugins:
       listings_toc: false
 ```
 
-### 阴影标签
+### Shadow tags
 
-以下设置可用于阴影标签：
+The following settings are available for shadow tags:
 
 ---
 
@@ -481,9 +557,11 @@ plugins:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:default `false` -->
 
-使用此设置指定插件是否应在页面和列表中包括阴影标签，这可能对部署预览很有用：
+Use this setting to specify whether the plugin should include shadow tags on
+pages and in listings when [building your project], which might be useful for
+deploy previews:
 
-=== "显示阴影标签"
+=== "Show shadow tags"
 
     ``` yaml
     plugins:
@@ -491,7 +569,7 @@ plugins:
           shadow: true
     ```
 
-=== "隐藏阴影标签"
+=== "Hide shadow tags"
 
     ``` yaml
     plugins:
@@ -507,7 +585,9 @@ plugins:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:default `true` -->
 
-使用此设置控制插件是否应在页面和列表中包括阴影标签，当[预览您的网站]时。如果您不希望在预览时包括它们，请使用：
+Use this setting to control whether the plugin should include shadow tags on
+pages and in listings when [previewing your site]. If you don't wish to include
+them when previewing, use:
 
 ``` yaml
 plugins:
@@ -525,7 +605,9 @@ plugins:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:default none -->
 
-插件允许指定预定义的阴影标签列表，这些标签可以包括和排除使用[`shadow`][config.shadow]设置构建。阴影标签必须指定为列表：
+The plugin allows to specify a predefined list of shadow tags which can be
+included and excluded from builds by using the [`shadow`][config.shadow]
+setting. Shadow tags must be specified as a list:
 
 ``` yaml
 plugins:
@@ -543,7 +625,9 @@ plugins:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:default none -->
 
-使用此设置指定一个字符串，该字符串将检查为每个标签的前缀。如果标签以该字符串开头，则标记为阴影标签。一个常见做法是使用 `_` 作为前缀：
+Use this setting to specify a string that is checked as a prefix for each tag.
+If the tag starts with this string, the tag is marked as a shadow tag. A common
+practice is to use `_` as a prefix:
 
 ``` yaml
 plugins:
@@ -559,7 +643,9 @@ plugins:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:default none -->
 
-使用此设置指定一个字符串，该字符串将检查为每个标签的后缀。如果标签以该字符串结尾，则标记为阴影标签。一个选项可以是使用 `Internal` 作为后缀：
+Use this setting to specify a string that is checked as a suffix for each tag.
+If the tag ends with this string, the tag is marked as a shadow tag. One option
+can be to use `Internal` as a suffix:
 
 
 ``` yaml
@@ -568,9 +654,9 @@ plugins:
       shadow_tags_suffix: Internal
 ```
 
-### 导出
+### Export
 
-以下设置可用于导出：
+The following settings are available for exporting:
 
 ---
 
@@ -580,7 +666,9 @@ plugins:
 <!-- md:version insiders-4.49.0 -->
 <!-- md:default `true` -->
 
-使用此设置控制插件是否在您的[`site`目录][mkdocs.site_dir]中创建 `tags.json` 文件，该文件可以被其他插件和项目消耗：
+Use this setting to control whether the plugin creates a `tags.json` file
+inside your [`site` directory][mkdocs.site_dir], which can then be consumed by
+other plugins and projects:
 
 ``` yaml
 plugins:
@@ -596,7 +684,9 @@ plugins:
 <!-- md:version insiders-4.49.0 -->
 <!-- md:default `tags.json` -->
 
-使用此设置更改导出标签存储的文件路径。通常不需要更改此设置，但如果需要，可以使用：
+Use this setting to change the path of the file where the exported tags are
+stored. It's normally not necessary to change this setting, but if you need to,
+use:
 
 ``` yaml
 plugins:
@@ -604,7 +694,7 @@ plugins:
       export_file: tags.json
 ```
 
-提供的路径从[`site`目录][mkdocs.site_dir]解析。
+The provided path is resolved from the [`site` directory][mkdocs.site_dir].
 
 ---
 
@@ -614,7 +704,9 @@ plugins:
 <!-- md:version insiders-4.49.0 -->
 <!-- md:default `false` -->
 
-此设置仅出于方便提供，以通过单个设置（例如使用环境变量）禁用标签和列表的渲染，同时保持导出功能：
+This setting is solely provided for convenience to disable the rendering of tags
+and listings with a single setting (e.g. by using an environment variable),
+while keeping the export functionality:
 
 ``` yaml
 plugins:
@@ -622,13 +714,14 @@ plugins:
       export_only: true
 ```
 
-这将自动禁用[`tags`][config.tags]和[`listings`][config.listings]设置。
+This will automatically disable the [`tags`][config.tags] and
+[`listings`][config.listings] settings.
 
-## 用法
+## Usage
 
-### 元数据
+### Metadata
 
-以下属性可用：
+The following properties are available:
 
 ---
 
@@ -638,7 +731,9 @@ plugins:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-使用此属性将页面与一个或多个标签关联，使页面出现在生成的标签索引中。标签定义为字符串列表（允许使用空格）：
+Use this property to associate a page with one or more tags, making the page
+appear in the generated tags index. Tags are defined as a list of strings
+(whitespaces are allowed):
 
 ``` yaml
 ---
@@ -652,13 +747,17 @@ tags:
 ...
 ```
 
-如果您希望防止在分配标签时意外拼写页面，可以在 `mkdocs.yml` 中使用[`tags_allowed`][config.tags_allowed]设置设置预定义的允许标签列表。
+If you want to prevent accidental typos when assigning tags to pages, you can
+set a predefined list of allowed tags in `mkdocs.yml` by using the
+[`tags_allowed`][config.tags_allowed] setting.
 
-### 列表配置
+### Listing configuration
 
-列表配置控制哪些标签包含在或排除在列表中，以及列表是否仅考虑当前范围中的页面。此外，列表可以覆盖一些全局配置值。
+The listings configuration controls which tags are included in or excluded from
+a listing and whether a listing only includes pages in the current scope.
+Furthermore, listings can override some values from the global configuration.
 
-以下设置可用：
+The following settings are available:
 
 ---
 
@@ -667,15 +766,17 @@ tags:
 <!-- md:version 9.6.0 -->
 <!-- md:default `false` -->
 
-此设置指定列表是否应仅考虑页面，这些页面位于页面文档的当前子部分中：
+This setting specifies whether the listing should only consider pages that are
+within the current subsection of the documentation of the page the listing is
+embedded in:
 
-=== "内联用法"
+=== "Inline usage"
 
     ``` html
     <!-- material/tags { scope: true } -->
     ```
 
-=== "在 `mkdocs.yml` 中用法"
+=== "Usage in `mkdocs.yml`"
 
     ``` yaml
     plugins:
@@ -685,7 +786,7 @@ tags:
               scope: false
     ```
 
-    然后，只需引用列表标识符：
+    Then, just reference the listing identifier:
 
     ``` html
     <!-- material/tags custom-id -->
@@ -699,15 +800,17 @@ tags:
 <!-- md:version insiders-4.49.0 -->
 <!-- md:default computed -->
 
-此设置指定列表是否应包括阴影标签，这允许覆盖全局[`shadow`][config.shadow]设置，按列表基础：
+This setting specifies whether the listing should include shadow tags, which
+allows to override the global [`shadow`][config.shadow] setting on a per-listing
+basis:
 
-=== "内联用法"
+=== "Inline usage"
 
     ``` html
     <!-- material/tags { shadow: true } -->
     ```
 
-=== "在 `mkdocs.yml` 中用法"
+=== "Usage in `mkdocs.yml`"
 
     ``` yaml
     plugins:
@@ -717,7 +820,7 @@ tags:
               shadow: true
     ```
 
-    然后，只需引用列表标识符：
+    Then, just reference the listing identifier:
 
     ``` html
     <!-- material/tags custom-id -->
@@ -731,15 +834,17 @@ tags:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:default [`listings_toc`][config.listings_toc] -->
 
-此设置指定列表是否应在目录中渲染标签，允许覆盖全局[`listings_toc`][config.listings_toc]设置，按列表基础：
+This setting specifies whether the listing should render tags inside the table
+of contents, allowing to override the global [`listings_toc`][config.listings_toc]
+setting on a per-listing basis:
 
-=== "内联用法"
+=== "Inline usage"
 
     ``` html
     <!-- material/tags { toc: true } -->
     ```
 
-=== "在 `mkdocs.yml` 中用法"
+=== "Usage in `mkdocs.yml`"
 
     ``` yaml
     plugins:
@@ -749,7 +854,7 @@ tags:
               toc: true
     ```
 
-    然后，只需引用列表标识符：
+    Then, just reference the listing identifier:
 
     ``` html
     <!-- material/tags custom-id -->
@@ -762,15 +867,17 @@ tags:
 <!-- md:version 9.6.0 -->
 <!-- md:default none -->
 
-使用此设置指定哪些标签应包含在列表中。每个包含此设置中一个标签的页面，都会列在相应的标签下：
+Use this setting to specify which tags should be included in the listing. Each
+page that features a tag that is part of this setting, is listed under the
+respective tag:
 
-=== "内联用法"
+=== "Inline usage"
 
     ``` html
     <!-- material/tags { include: [foo, bar] } -->
     ```
 
-=== "在 `mkdocs.yml` 中用法"
+=== "Usage in `mkdocs.yml`"
 
     ``` yaml
     plugins:
@@ -782,13 +889,13 @@ tags:
                 - bar
     ```
 
-    然后，只需引用列表标识符：
+    Then, just reference the listing identifier:
 
     ``` html
     <!-- material/tags custom-id -->
     ```
 
-如果此设置为空，则包括所有标签和页面。
+If this setting is left empty, all tags and pages are included.
 
 ---
 
@@ -797,15 +904,17 @@ tags:
 <!-- md:version 9.6.0 -->
 <!-- md:default none -->
 
-使用此设置指定哪些标签不应包含在列表中。每个包含此设置中一个标签的页面，都会从列表中完全排除：
+Use this setting to specify which tags should be excluded from the listing. Each
+page that features a tag that is part of this setting, is excluded from the
+listing entirely:
 
-=== "内联用法"
+=== "Inline usage"
 
     ``` html
     <!-- material/tags { exclude: [foo, bar] } -->
     ```
 
-=== "在 `mkdocs.yml` 中用法"
+=== "Usage in `mkdocs.yml`"
 
     ``` yaml
     plugins:
@@ -817,14 +926,16 @@ tags:
                 - bar
     ```
 
-    然后，只需引用列表标识符：
+    Then, just reference the listing identifier:
 
     ``` html
     <!-- material/tags custom-id -->
     ```
 
-如果此设置为空，则不包括任何标签或页面。
+If this setting is left empty, no tags or pages are excluded.
 
-## 限制
+## Limitations
 
-标签插件的实现由于 MkDocs 架构而复杂。特别地，标签列表标记不能出现在代码块中。有关技术细节，请参考 #8114。
+The implementation of the tags plugin is tricky due to MkDocs architecture.
+Notably, tag listing markers cannot appear within code blocks. For technical
+details, refer to #8114.

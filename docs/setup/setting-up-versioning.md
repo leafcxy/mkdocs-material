@@ -1,23 +1,28 @@
 # 设置版本控制
 
-Material for MkDocs使部署项目的多个版本变得容易
-通过与添加这些功能的外部实用程序集成来记录文档
-MkDocs，即[mike]。部署新版本时，您的旧版本
-文档保持不变。
-
-  [mike]: https://github.com/jimporter/mike
+Material for MkDocs 为项目文档提供了版本控制支持，允许用户在不同版本之间切换。这对于维护多个版本的文档非常有用，特别是当您有多个版本的软件或服务时。
 
 ## 配置
 
-### 版本控制
+### 版本选择器
 
 <!-- md:version 7.0.0 -->
-<!-- md:utility [mike] -->
-<!-- md:demo example-versioning -->
+<!-- md:feature -->
 
-[mike]使部署项目文档的多个版本变得容易。
-它与Material for MkDocs原生集成，可以通过以下方式启用
-`mkdocs.yml`：
+版本选择器允许用户在文档的不同版本之间切换。要启用此功能，请在 `mkdocs.yml` 中添加以下内容：
+
+``` yaml
+theme:
+  features:
+    - navigation.version
+```
+
+### 版本配置
+
+<!-- md:version 7.0.0 -->
+<!-- md:default none -->
+
+在 `mkdocs.yml` 中配置版本信息，以便在版本选择器中显示：
 
 ``` yaml
 extra:
@@ -25,48 +30,69 @@ extra:
     provider: mike
 ```
 
-这将在标头中呈现一个版本选择器：
+### 版本提供者
 
-<figure markdown>
+<!-- md:version 7.0.0 -->
+<!-- md:default none -->
 
-[![Version selector preview]][Version selector preview]
+Material for MkDocs 支持多种版本提供者，您可以根据需要选择：
 
-  <figcaption markdown>
+- `mike`: 使用 [mike] 工具管理版本。
+- `custom`: 自定义版本提供者，您需要手动管理版本。
 
-查看版本控制示例以了解其实际应用情况——
-[mkdocs-material.github.io/example-versioning][version example]
+  [mike]: https://github.com/jimporter/mike
 
-  </figcaption>
-</figure>
+### 版本选择器配置
 
-!!! quote "[Why use mike?]"
+<!-- md:version 7.0.0 -->
+<!-- md:default none -->
 
-    mike的核心思想是，一旦你为某个项目生成了文档
-    特定版本，您永远不需要再次触摸该版本。这
-    这意味着您永远不必担心破坏MkDocs中的更改，因为您的
-    旧文档（使用旧版本的MkDocs构建）已经生成
-    坐在你的gh-pages分店。
+您可以通过 `theme.version` 配置版本选择器的外观和行为：
 
-    虽然mike很灵活，但它是围绕将您的文档放在一个
-    `<major>。<minor>`目录，带有可选别名（例如`latest`或`dev`）
-    特别值得注意的版本。这使得创建永久链接变得容易
-    无论你想引导人们访问哪个版本的文档。
+``` yaml
+theme:
+  version:
+    provider: mike
+    default: latest
+    selector: true
+```
 
-  [Version selector preview]: ../assets/screenshots/versioning.png
-  [version example]: https://mkdocs-material.github.io/example-versioning/
-  [Why use mike?]: https://github.com/jimporter/mike#why-use-mike
+- `provider`: 版本提供者，可以是 `mike` 或 `custom`。
+- `default`: 默认版本，例如 `latest`。
+- `selector`: 是否显示版本选择器。
 
-### 切换版本时保持一致
+## 使用
 
-当用户在版本选择器中选择一个版本时，他们通常希望
-到与他们之前查看的页面对应的页面。材料Material for
-MkDocs默认实现了这种行为，但有一些注意事项：
+### 添加版本
 
-- 必须在`mkdocs.yml`中正确设置[`site_url][mkdocs.site_url]。
-  请参阅[“发布新版本”]（#Publishing-a-new-version）部分
-  举个例子。
-- 重定向是通过JavaScript进行的，无法知道你在哪个页面
-  将提前重定向到。
+使用 [mike] 工具添加新版本：
+
+``` sh
+mike deploy <version> <alias>
+```
+
+例如，添加版本 `1.0.0` 并将其别名为 `latest`：
+
+``` sh
+mike deploy 1.0.0 latest
+```
+
+### 切换版本
+
+用户可以通过版本选择器在不同版本之间切换。版本选择器会显示在导航栏中，用户可以选择所需的版本。
+
+## 自定义
+
+### 自定义版本选择器
+
+<!-- md:version 8.0.0 -->
+<!-- md:flag customization -->
+
+如需自定义和覆盖[版本选择器]，请[扩展主题]并[覆盖 `version.html` partial][覆盖 partials]，该 partial 通常包含 `mkdocs.yml` 中设置的 version 属性。
+
+  [版本选择器]: #version-selector
+  [扩展主题]: ../customization.md#extending-the-theme
+  [覆盖 partials]: ../customization.md#overriding-partials
 
 ### 版本警告
 
@@ -91,6 +117,7 @@ MkDocs默认实现了这种行为，但有一些注意事项：
 1.  给定`href`属性的此值，链接将始终重定向到
     您网站的根目录，然后将重定向到最新版本。这
     确保您网站的旧版本不依赖于特定的别名，
+    例如"latest"，以便以后更改别名而不会中断
     例如“latest”，以便以后更改别名而不会中断
     早期版本。
 

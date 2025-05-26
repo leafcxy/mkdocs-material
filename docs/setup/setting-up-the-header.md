@@ -1,12 +1,9 @@
-# 设置标题
+# 设置页眉
 
-Material for MkDocs标题可以定制，以显示公告栏
-滚动时消失，并提供一些进一步配置的选项。
-它还包括[search bar]和一个显示项目的位置
-[git repository]，如这些专门指南中所解释的。
+Material for MkDocs 的页眉可以自定义，支持显示公告栏、滚动时自动隐藏，并提供进一步的配置选项。它还包括[搜索栏]和显示项目[git 仓库]的位置，详见相关专门指南。
 
-  [search bar]: setting-up-site-search.md
-  [git repository]: adding-a-git-repository.md
+  [搜索栏]: setting-up-site-search.md
+  [git 仓库]: adding-a-git-repository.md
 
 ## 配置
 
@@ -15,9 +12,7 @@ Material for MkDocs标题可以定制，以显示公告栏
 <!-- md:version 6.2.0 -->
 <!-- md:feature -->
 
-启用自动隐藏后，当
-用户滚动超过某个阈值，为内容留下更多空间。添加
-将以下行转换为`mkdocs.yml`：
+启用自动隐藏后，当用户滚动超过某个阈值时，页眉会自动隐藏，为内容留出更多空间。在 `mkdocs.yml` 中添加如下内容：
 
 ``` yaml
 theme:
@@ -30,22 +25,18 @@ theme:
 <!-- md:version 5.0.0 -->
 <!-- md:flag customization -->
 
-MkDocs的材料包括一个公告栏，这是一个完美的地方
-向用户显示项目新闻或其他重要信息。当用户
-滚动过标题，栏将自动消失。为了添加
-公告栏，[extend the theme]和[override the `announce`
-block][overriding blocks]，默认为空：
+Material for MkDocs 包含一个公告栏，非常适合向用户显示项目新闻或其他重要信息。当用户滚动过页眉时，公告栏会自动消失。要添加公告栏，请[扩展主题]并[覆盖 `announce` 块][覆盖块]，默认内容为空：
 
 ``` html
 {% extends "base.html" %}
 
 {% block announce %}
-  <!-- Add announcement here, including arbitrary HTML -->
+  <!-- 在此处添加公告内容，可包含任意 HTML -->
 {% endblock %}
 ```
 
-  [extend the theme]: ../customization.md#extending-the-theme
-  [overriding blocks]: ../customization.md#overriding-blocks
+  [扩展主题]: ../customization.md#extending-the-theme
+  [覆盖块]: ../customization.md#overriding-blocks
 
 #### 标记为已读
 
@@ -53,9 +44,7 @@ block][overriding blocks]，默认为空：
 <!-- md:feature -->
 <!-- md:flag experimental -->
 
-为了呈现可标记为已阅读的临时公告
-用户，可以包括一个按钮来取消当前的公告。添加
-将以下行转换为`mkdocs.yml`：
+为临时公告栏添加"标记为已读"按钮，用户点击后可关闭当前公告。在 `mkdocs.yml` 中添加如下内容：
 
 ``` yaml
 theme:
@@ -63,10 +52,8 @@ theme:
     - announce.dismiss
 ```
 
-当用户点击按钮时，当前公告将被取消，不会
-再次显示，直到公告的内容发生变化。这已经处理好了
-自动。
+用户点击按钮后，当前公告会被关闭，直到公告内容发生变化才会再次显示。这一切都已自动处理。
 
-[Scroll to the top of this page][top] to see it in action.
+[滚动到本页顶部][top]查看实际效果。
 
   [top]: #

@@ -1,41 +1,24 @@
 ---
-title: Built-in social plugin
+title: 内置社交插件
 icon: material/share-circle
 ---
 
-# Built-in social plugin
+# 内置社交插件
 
-The social plugin automatically and intelligently generates beautiful and highly
-customizable social cards in different [layouts][default layouts] for each page
-of your project, rendering as preview images whenever you or somebody else share
-a link to your project on social media.
+社交插件自动且智能地为项目的每个页面生成美观且高度可定制的社交卡片，采用不同的[布局][default layouts]。当您或他人在社交媒体上分享项目链接时，这些卡片会作为预览图片显示。
 
-## Objective
+## 目标
 
-### How it works
+### 工作原理
 
-The plugin automatically generates a customizable social card for each page
-of your project, which appears as a preview image when sharing a link to your
-project on social media, without the use of external services and just
-[a single line of configuration][configuration].
+该插件自动为项目的每个页面生成可定制的社交卡片，当在社交媒体上分享项目链接时，这些卡片会作为预览图片显示，无需使用外部服务，只需[一行配置][configuration]。
 
-With the use of an efficient [image processing] library, the plugin allows to
-define [custom layouts] for social cards, which can be adapted to match your
-project's style and branding. While it would technically be much simpler to
-generate social cards by using a web browser and an automation framework like
-[Puppeteer][^1], it would add further liabilities to your toolchain, with the
-potential to make build pipelines more complex, much more resource intense,
-and significantly slower.
+通过使用高效的[图像处理]库，该插件允许为社交卡片定义[自定义布局]，可以适应项目的风格和品牌。虽然从技术上讲，使用网页浏览器和自动化框架（如[Puppeteer][^1]）生成社交卡片会更简单，但这会给您的工具链增加更多责任，可能会使构建管道更复杂、更耗费资源，并且显著更慢。
 
   [^1]:
-    [GitHub wrote in their blog] that they use [Puppeteer] to generate social
-    card images for repositories, issues, commits, discussions, and basically
-    everything else that appear as preview images when shared on social media.
+    [GitHub 在他们的博客中写道]，他们使用 [Puppeteer] 为仓库、问题、提交、讨论以及基本上所有在社交媒体上分享时显示为预览图片的内容生成社交卡片图片。
 
-The generated social cards are [cached] and stored in the
-[`site` directory][mkdocs.site_dir], and thus self-hosted, ensuring that your
-project doesn't depend on external services. In order to generate social cards
-images, a few [dependencies] need to be available on your system.
+生成的社交卡片会被[缓存]并存储在[`site`目录][mkdocs.site_dir]中，因此是自托管的，确保您的项目不依赖外部服务。为了生成社交卡片图片，您的系统上需要有一些[依赖项]。
 
   [configuration]: #configuration
   [image processing]: requirements/image-processing.md
@@ -45,42 +28,33 @@ images, a few [dependencies] need to be available on your system.
   [cached]: #caching
   [dependencies]: #configuration
 
-### When to use it
+### 何时使用
 
-There's one particular case when we don't recommend to use the plugin: when you
-build [offline-capable documentation] to offer it as a download. Otherwise, it
-always makes sense to enable the plugin, as links to your documentation shared
-on social media will appear much more appealing.
+有一个特定情况我们不建议使用该插件：当您构建[支持离线的文档]以提供下载时。否则，启用该插件总是有意义的，因为在社交媒体上分享的文档链接会显得更有吸引力。
 
-Even more interestingly, the plugin can be combined with other built-in plugins
-that Material for MkDocs offers, in order to create sophisticated build
-pipelines tailored to your project:
+更有趣的是，该插件可以与 Material for MkDocs 提供的其他内置插件结合使用，以创建适合您项目的复杂构建管道：
 
 <div class="grid cards" markdown>
 
--   :material-newspaper-variant-outline: &nbsp; __[Built-in blog plugin][blog]__
+-   :material-newspaper-variant-outline: &nbsp; __[内置博客插件][blog]__
 
     ---
 
-    The social plugin automatically generates beautiful and customizable
-    social cards for each post and page, showing as previews on social media.
+    社交插件自动为每个帖子和页面生成美观且可定制的社交卡片，在社交媒体上显示为预览。
 
     ---
 
-    __Links to your blog render beautiful social cards when shared on social media__
+    __在社交媒体上分享时，您的博客链接会渲染出美观的社交卡片__
 
--   :material-file-tree: &nbsp; __[Built-in meta plugin][meta]__
-
-    ---
-
-    The meta plugin can be used to [change the layout][meta.social.cards_layout]
-    for social cards or [change specific layout options]
-    [meta.social.cards_layout_options] like [background][option.background_color]
-    or [color][option.color] for a subset of pages.
+-   :material-file-tree: &nbsp; __[内置元数据插件][meta]__
 
     ---
 
-    __Your documentation can use completely different social cards per section__
+    元数据插件可用于[更改社交卡片的布局][meta.social.cards_layout]或[更改特定布局选项][meta.social.cards_layout_options]，如[背景][option.background_color]或[颜色][option.color]，适用于部分页面。
+
+    ---
+
+    __您的文档可以为每个部分使用完全不同的社交卡片__
 
 </div>
 
@@ -88,35 +62,29 @@ pipelines tailored to your project:
   [blog]: blog.md
   [meta]: meta.md
 
-## Configuration
+## 配置
 
 <!-- md:version 8.5.0 -->
 <!-- md:plugin [social] – built-in -->
 <!-- md:flag multiple -->
 <!-- md:flag experimental -->
 
-In order to get started with the social plugin, just add the following lines to
-`mkdocs.yml`, and observe how Material for MkDocs generates beautiful social
-cards for you:
+要开始使用社交插件，只需在 `mkdocs.yml` 中添加以下行，观察 Material for MkDocs 如何为您生成美观的社交卡片：
 
 ``` yaml
 plugins:
   - social
 ```
 
-The social plugin is built into Material for MkDocs and doesn't need to be
-installed.
+社交插件已内置到 Material for MkDocs 中，无需安装。
 
-However, in order to generate social card images, it's necessary to install the
-dependencies for [image processing], if they're not already available on your
-system. The linked guide includes instructions for several operating systems
-and mentions some alternative environments.
+但是，为了生成社交卡片图片，如果您的系统上还没有[图像处理]的依赖项，则需要安装它们。链接的指南包含了几个操作系统的说明，并提到了一些替代环境。
 
   [social]: social.md
 
-### General
+### 常规设置
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -125,9 +93,7 @@ The following settings are available:
 <!-- md:version 8.5.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-If you want to disable the plugin, e.g., for local builds, you can use an
-[environment variable][mkdocs.env] in `mkdocs.yml`:
+使用此设置在[构建项目]时启用或禁用插件。如果您想禁用插件，例如，对于本地构建，您可以在 `mkdocs.yml` 中使用[环境变量][mkdocs.env]：
 
 ``` yaml
 plugins:
@@ -135,7 +101,7 @@ plugins:
       enabled: !ENV [CI, false]
 ```
 
-This configuration enables the plugin only during continuous integration (CI).
+此配置仅在持续集成（CI）期间启用插件。
 
   [building your project]: ../creating-your-site.md#building-your-site
 
@@ -147,9 +113,7 @@ This configuration enables the plugin only during continuous integration (CI).
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default available CPUs - 1 -->
 
-With more CPUs available, the plugin can do more work in parallel, and thus
-complete social card generation faster. If you want to disable concurrent
-processing completely, use:
+随着可用 CPU 数量的增加，插件可以并行完成更多工作，从而更快地完成社交卡片生成。如果您想完全禁用并发处理，请使用：
 
 ``` yaml
 plugins:
@@ -157,16 +121,13 @@ plugins:
       concurrency: 1
 ```
 
-By default, the plugin uses all available CPUs - 1 with a minimum of 1.
+默认情况下，插件使用所有可用的 CPU - 1，最小值为 1。
 
-### Caching
+### 缓存
 
-The plugin implements an [intelligent caching] mechanism, ensuring that social
-cards are only regenerated when their contents change or they're not already
-contained in the cache. If any of the variables used in a layout changes, the
-plugin detects it and regenerates the social card.
+该插件实现了[智能缓存]机制，确保社交卡片仅在其内容更改或缓存中不存在时才重新生成。如果布局中使用的任何变量发生变化，插件会检测到并重新生成社交卡片。
 
-The following settings are available for caching:
+以下缓存设置可用：
 
   [intelligent caching]: requirements/caching.md
 
@@ -178,10 +139,7 @@ The following settings are available for caching:
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `true` -->
 
-Use this setting to instruct the plugin to bypass the cache, in order to
-re-generate social cards for all pages, even though the cache may not be stale.
-It's normally not necessary to specify this setting, except for when debugging
-the plugin itself. Caching can be disabled with:
+使用此设置指示插件绕过缓存，以便为所有页面重新生成社交卡片，即使缓存可能不是过期的。通常不需要指定此设置，除非在调试插件本身时。可以通过以下方式禁用缓存：
 
 ``` yaml
 plugins:
@@ -196,9 +154,7 @@ plugins:
 <!-- md:version 8.5.0 -->
 <!-- md:default `.cache/plugin/social` -->
 
-It is normally not necessary to specify this setting, except for when you want
-to change the path within your root directory where social card images are
-cached. If you want to change it, use:
+通常不需要指定此设置，除非您想更改根目录中缓存社交卡片图片的路径。如果要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -206,15 +162,13 @@ plugins:
       cache_dir: my/custom/dir
 ```
 
-If you're using [multiple instances] of the plugin, it can be a good idea to
-set different cache directories for both instances, so that they don't interfere
-with each other.
+如果您使用插件的[多个实例]，为两个实例设置不同的缓存目录可能是个好主意，这样它们就不会相互干扰。
 
   [multiple instances]: index.md#multiple-instances
 
-### Logging
+### 日志
 
-The following settings are available for logging:
+以下日志设置可用：
 
 ---
 
@@ -224,9 +178,7 @@ The following settings are available for logging:
 <!-- md:version insiders-4.40.2 -->
 <!-- md:default `true` -->
 
-Use this setting to control whether the plugin should only log errors when
-generating social cards without terminating the build, e.g., invalid references
-to icons. To terminate the build, use:
+使用此设置控制插件是否应该只记录错误而不终止构建，例如，无效的图标引用。要终止构建，请使用：
 
 ``` yaml
 plugins:
@@ -242,9 +194,7 @@ plugins:
 <!-- md:version insiders-4.40.2 -->
 <!-- md:default `warn` -->
 
-Use this setting to control the log level that the plugin should employ when
-encountering errors, which requires that the [`log`][config.log] setting is
-enabled. The following log levels are available:
+使用此设置控制插件在遇到错误时应采用的日志级别，这需要启用[`log`][config.log]设置。以下日志级别可用：
 
 === "`warn`"
 

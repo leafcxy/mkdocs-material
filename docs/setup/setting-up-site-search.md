@@ -3,48 +3,39 @@ search:
   boost: 1.05
 ---
 
-# Setting up site search
+# 设置站内搜索
 
-Material for MkDocs provides an excellent client-side search implementation,
-omitting the need for the integration of third-party services, which might
-not be compliant with privacy regulations. Moreover, search even works
-[offline], allowing users to download your documentation.
+Material for MkDocs 提供了优秀的客户端搜索实现，无需集成可能不符合隐私法规的第三方服务。此外，搜索甚至支持[离线]，允许用户下载您的文档。
 
-  [offline]: building-for-offline-usage.md
+  [离线]: building-for-offline-usage.md
 
-## Configuration
+## 配置
 
-### Built-in search plugin
+### 内置搜索插件
 
 <!-- md:version 0.1.0 -->
 <!-- md:plugin -->
 
-The built-in search plugin integrates seamlessly with Material for MkDocs,
-adding multilingual client-side search with [lunr] and [lunr-languages]. It's
-enabled by default, but must be re-added to `mkdocs.yml` when other plugins
-are used:
+内置搜索插件与 Material for MkDocs 无缝集成，添加了基于 [lunr] 和 [lunr-languages] 的多语言客户端搜索。它默认启用，但当使用其他插件时，必须在 `mkdocs.yml` 中重新添加：
 
 ``` yaml
 plugins:
   - search
 ```
 
-For a list of all settings, please consult the [plugin documentation].
+所有设置请参阅[插件文档]。
 
-  [plugin documentation]: ../plugins/search.md
-
+  [插件文档]: ../plugins/search.md
   [lunr]: https://lunrjs.com
   [lunr-languages]: https://github.com/MihaiValentin/lunr-languages
 
-### Search suggestions
+### 搜索建议
 
 <!-- md:version 7.2.0 -->
 <!-- md:feature -->
 <!-- md:flag experimental -->
 
-When search suggestions are enabled, the search will display the likeliest
-completion for the last word which can be accepted with the ++arrow-right++ key.
-Add the following lines to `mkdocs.yml`:
+启用搜索建议后，搜索会为最后一个单词显示最可能的补全，按 ++arrow-right++ 键可接受。将以下内容添加到 `mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -52,20 +43,17 @@ theme:
     - search.suggest
 ```
 
-Searching for [:octicons-search-24: search su][Search suggestions example]
-yields ^^search suggestions^^ as a suggestion.
+搜索 [:octicons-search-24: search su][搜索建议示例] 会建议 ^^search suggestions^^。
 
-  [Search suggestions example]: ?q=search+su
+  [搜索建议示例]: ?q=search+su
 
-### Search highlighting
+### 搜索高亮
 
 <!-- md:version 7.2.0 -->
 <!-- md:feature -->
 <!-- md:flag experimental -->
 
-When search highlighting is enabled and a user clicks on a search result,
-Material for MkDocs will highlight all occurrences after following the link.
-Add the following lines to `mkdocs.yml`:
+启用搜索高亮后，用户点击搜索结果后，Material for MkDocs 会高亮所有出现的内容。将以下内容添加到 `mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -73,19 +61,16 @@ theme:
     - search.highlight
 ```
 
-Searching for [:octicons-search-24: code blocks][Search highlighting example]
-highlights all occurrences of both terms.
+搜索 [:octicons-search-24: code blocks][搜索高亮示例] 会高亮所有相关词。
 
-  [Search highlighting example]: ../reference/code-blocks.md?h=code+blocks
+  [搜索高亮示例]: ../reference/code-blocks.md?h=code+blocks
 
-### Search sharing
+### 搜索分享
 
 <!-- md:version 7.2.0 -->
 <!-- md:feature -->
 
-When search sharing is activated, a :material-share-variant: share button is
-rendered next to the reset button, which allows to deep link to the current
-search query and result. Add the following lines to `mkdocs.yml`:
+启用搜索分享后，重置按钮旁会显示 :material-share-variant: 分享按钮，可深度链接到当前搜索查询和结果。将以下内容添加到 `mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -93,21 +78,18 @@ theme:
     - search.share
 ```
 
-When a user clicks the share button, the URL is automatically copied to the
-clipboard.
+用户点击分享按钮后，URL 会自动复制到剪贴板。
 
-## Usage
+## 使用
 
-### Search boosting
+### 搜索权重提升
 
 <!-- md:version 8.3.0 -->
 <!-- md:flag metadata -->
 
-Pages can be boosted in search with the front matter `search.boost` property,
-which will make them rank higher. Add the following lines at the top of a
-Markdown file:
+页面可通过 front matter 的 `search.boost` 属性提升在搜索中的排名。在 Markdown 文件顶部添加如下内容：
 
-=== ":material-arrow-up-circle: Rank up"
+=== ":material-arrow-up-circle: 提升排名"
 
     ``` yaml
     ---
@@ -115,14 +97,13 @@ Markdown file:
       boost: 2 # (1)!
     ---
 
-    # Page title
+    # 页面标题
     ...
     ```
 
-    1.  :woman_in_lotus_position: When boosting pages, be gentle and start with
-        __low values__.
+    1.  :woman_in_lotus_position: 提升页面时请温和，__建议使用较低的值__。
 
-=== ":material-arrow-down-circle: Rank down"
+=== ":material-arrow-down-circle: 降低排名"
 
     ``` yaml
     ---
@@ -130,19 +111,17 @@ Markdown file:
       boost: 0.5
     ---
 
-    # Page title
+    # 页面标题
     ...
     ```
 
-### Search exclusion
+### 搜索排除
 
 <!-- md:version 9.0.0 -->
 <!-- md:flag metadata -->
 <!-- md:flag experimental -->
 
-Pages can be excluded from search with the front matter `search.exclude`
-property, removing them from the index. Add the following lines at the top of a
-Markdown file:
+页面可通过 front matter 的 `search.exclude` 属性从搜索中排除。在 Markdown 文件顶部添加如下内容：
 
 ``` yaml
 ---
@@ -150,28 +129,26 @@ search:
   exclude: true
 ---
 
-# Page title
+# 页面标题
 ...
 ```
 
-#### Excluding sections
+#### 排除章节
 
-When [Attribute Lists] is enabled, specific sections of pages can be excluded
-from search by adding the `data-search-exclude` pragma after a Markdown
-heading:
+启用 [Attribute Lists] 后，可通过在 Markdown 标题后添加 `data-search-exclude` 标记来排除页面的特定章节：
 
 === ":octicons-file-code-16: `docs/page.md`"
 
     ``` markdown
-    # Page title
+    # 页面标题
 
     ## Section 1
 
-    The content of this section is included
+    本节内容会被包含
 
     ## Section 2 { data-search-exclude }
 
-    The content of this section is excluded
+    本节内容会被排除
     ```
 
 === ":octicons-codescan-16: `search_index.json`"
@@ -196,20 +173,18 @@ heading:
 
   [Attribute Lists]: extensions/python-markdown.md#attribute-lists
 
-#### Excluding blocks
+#### 排除块
 
-When [Attribute Lists] is enabled, specific sections of pages can be excluded
-from search by adding the `data-search-exclude` pragma after a Markdown
-inline- or block-level element:
+启用 [Attribute Lists] 后，可通过在 Markdown 行内或块级元素后添加 `data-search-exclude` 标记来排除页面的特定内容块：
 
 === ":octicons-file-code-16: `docs/page.md`"
 
     ``` markdown
-    # Page title
+    # 页面标题
 
-    The content of this block is included
+    本块内容会被包含
 
-    The content of this block is excluded
+    本块内容会被排除
     { data-search-exclude }
     ```
 

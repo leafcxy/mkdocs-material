@@ -2,18 +2,13 @@
 icon: material/alert-outline
 ---
 
-# Admonitions
+# 警告块
 
-Admonitions, also known as _call-outs_, are an excellent choice for including
-side content without significantly interrupting the document flow. Material for
-MkDocs provides several different types of admonitions and allows for the
-inclusion and nesting of arbitrary content.
+警告块，也称为_提示框_，是在不显著中断文档流程的情况下包含侧边内容的绝佳选择。Material for MkDocs 提供了几种不同类型的警告块，并允许包含和嵌套任意内容。
 
-## Configuration
+## 配置
 
-This configuration enables admonitions, allows to make them collapsible and to
-nest arbitrary content inside admonitions. Add the following lines to
-`mkdocs.yml`:
+此配置启用了警告块，允许使它们可折叠并在警告块内嵌套任意内容。将以下行添加到 `mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -22,7 +17,7 @@ markdown_extensions:
   - pymdownx.superfences
 ```
 
-See additional configuration options:
+查看更多配置选项：
 
 - [Admonition]
 - [Details]
@@ -32,13 +27,11 @@ See additional configuration options:
   [Details]: ../setup/extensions/python-markdown-extensions.md#details
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
 
-### Admonition icons
+### 警告块图标
 
 <!-- md:version 8.3.0 -->
 
-Each of the supported admonition types has a distinct icon, which can be changed
-to any icon bundled with the theme, or even a [custom icon]. Add the following
-lines to `mkdocs.yml`:
+每种支持的警告块类型都有一个独特的图标，可以更改为主题中包含的任何图标，甚至是[自定义图标]。将以下行添加到 `mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -47,18 +40,17 @@ theme:
       <type>: <icon> # (1)!
 ```
 
-1.  Enter a few keywords to find the perfect icon using our [icon search] and
-    click on the shortcode to copy it to your clipboard:
+1.  输入几个关键词，使用我们的[图标搜索]找到完美的图标，然后点击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
-      <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="Search icon" data-mdx-component="iconsearch-query" value="alert" />
+      <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="搜索图标" data-mdx-component="iconsearch-query" value="alert" />
       <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result" data-mdx-mode="file">
         <div class="mdx-iconsearch-result__meta"></div>
         <ol class="mdx-iconsearch-result__list"></ol>
       </div>
     </div>
 
-??? example "Expand to show alternate icon sets"
+??? example "展开以显示替代图标集"
 
     === ":octicons-mark-github-16: Octicons"
 
@@ -105,13 +97,11 @@ theme:
   [supported types]: #supported-types
   [icon search]: icons-emojis.md#search
 
-## Usage
+## 使用方法
 
-Admonitions follow a simple syntax: a block starts with `!!!`, followed by a
-single keyword used as a [type qualifier]. The content of the block follows on
-the next line, indented by four spaces:
+警告块遵循简单的语法：块以 `!!!` 开始，后跟一个用作[类型限定符]的关键字。块的内容在下一行，缩进四个空格：
 
-``` markdown title="Admonition"
+``` markdown title="警告块"
 !!! note
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -131,13 +121,11 @@ the next line, indented by four spaces:
 
   [type qualifier]: #supported-types
 
-### Changing the title
+### 更改标题
 
-By default, the title will equal the type qualifier in titlecase. However, it
-can be changed by adding a quoted string containing valid Markdown (including
-links, formatting, ...) after the type qualifier:
+默认情况下，标题将等于类型限定符的大写形式。但是，可以通过在类型限定符后添加包含有效 Markdown（包括链接、格式化等）的引号字符串来更改它：
 
-``` markdown title="Admonition with custom title"
+``` markdown title="带自定义标题的警告块"
 !!! note "Phasellus posuere in sem ut cursus"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -155,19 +143,18 @@ links, formatting, ...) after the type qualifier:
 
 </div>
 
-### Nested admonitions
+### 嵌套警告块
 
-You can also include nested admonitions in your documentation. To do this, you
-can use your existing admonitions and indent the desired ones:
+您还可以在文档中包含嵌套的警告块。为此，您可以使用现有的警告块并缩进所需的警告块：
 
-``` markdown title="Nested Admonition"
-!!! note "Outer Note"
+``` markdown title="嵌套警告块"
+!!! note "外部提示"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
     
-    !!! note "Inner Note"
+    !!! note "内部提示"
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
         nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
@@ -176,26 +163,24 @@ can use your existing admonitions and indent the desired ones:
 
 <div class="result" markdown>
 
-!!! note "Outer Note"
+!!! note "外部提示"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
     
-    !!! note "Inner Note"
+    !!! note "内部提示"
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
         nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
         massa, nec semper lorem quam in massa.
 </div>
 
-### Removing the title
+### 移除标题
 
-Similar to [changing the title], the icon and title can be omitted entirely by
-adding an empty string directly after the type qualifier. Note that this will
-not work for [collapsible blocks]:
+与[更改标题]类似，可以通过在类型限定符后直接添加空字符串来完全省略图标和标题。请注意，这不适用于[可折叠块]：
 
-``` markdown title="Admonition without title"
+``` markdown title="无标题的警告块"
 !!! note ""
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -216,13 +201,11 @@ not work for [collapsible blocks]:
   [changing the title]: #changing-the-title
   [collapsible blocks]: #collapsible-blocks
 
-### Collapsible blocks
+### 可折叠块
 
-When [Details] is enabled and an admonition block is started with `???` instead
-of `!!!`, the admonition is rendered as an expandable block with a small toggle
-on the right side:
+当启用 [Details] 并且警告块以 `???` 而不是 `!!!` 开始时，警告块将渲染为可展开的块，右侧有一个小切换按钮：
 
-``` markdown title="Admonition, collapsible"
+``` markdown title="可折叠的警告块"
 ??? note
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -240,9 +223,9 @@ on the right side:
 
 </div>
 
-Adding a `+` after the `???` token renders the block expanded:
+在 `???` 标记后添加 `+` 会使块默认展开：
 
-``` markdown title="Admonition, collapsible and initially expanded"
+``` markdown title="可折叠且默认展开的警告块"
 ???+ note
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -311,114 +294,162 @@ prior to the content block you want to place them beside. If there's
 insufficient space to render the admonition next to the block, the admonition
 will stretch to the full width of the viewport, e.g., on mobile viewports.
 
-### Supported types
+### 支持的类型
 
-Following is a list of type qualifiers provided by Material for MkDocs, whereas
-the default type, and thus fallback for unknown type qualifiers, is `note`[^1]:
+Material for MkDocs 支持以下警告块类型：
 
-  [^1]:
-    Previously, some of the supported types defined more than one qualifier.
-    For example, authors could use `summary` or `tldr` as alternative qualifiers
-    to render an [`abstract`](#+type:abstract) admonition. As this increased the
-    size of the CSS that is shipped with Material for MkDocs, the additional
-    type qualifiers are now all deprecated and will be removed in the next major
-    version. This will also be mentioned in the upgrade guide.
+| 类型 | 描述 |
+|:----|:-----|
+| `note` | 用于提供补充信息 |
+| `abstract` | 用于提供摘要或概述 |
+| `info` | 用于提供信息性内容 |
+| `tip` | 用于提供提示和技巧 |
+| `success` | 用于提供成功信息 |
+| `question` | 用于提供问题和答案 |
+| `warning` | 用于提供警告信息 |
+| `failure` | 用于提供失败信息 |
+| `danger` | 用于提供危险信息 |
+| `bug` | 用于提供错误信息 |
+| `example` | 用于提供示例 |
+| `quote` | 用于提供引用 |
 
-<!-- md:option type:note -->
+### 自定义样式
 
-:   !!! note
+您可以通过在 `mkdocs.yml` 中添加以下行来自定义警告块的样式：
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+``` yaml
+theme:
+  name: material
+  features:
+    - admonition
+  palette:
+    primary: indigo
+    accent: indigo
+  icon:
+    admonition:
+      note: material/note
+      abstract: material/abstract
+      info: material/info
+      tip: material/tip
+      success: material/success
+      question: material/question
+      warning: material/warning
+      failure: material/failure
+      danger: material/danger
+      bug: material/bug
+      example: material/example
+      quote: material/quote
+```
 
-<!-- md:option type:abstract -->
+### 自定义颜色
 
-:   !!! abstract
+您可以通过在 `mkdocs.yml` 中添加以下行来自定义警告块的颜色：
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+``` yaml
+theme:
+  name: material
+  features:
+    - admonition
+  palette:
+    primary: indigo
+    accent: indigo
+  icon:
+    admonition:
+      note: material/note
+      abstract: material/abstract
+      info: material/info
+      tip: material/tip
+      success: material/success
+      question: material/question
+      warning: material/warning
+      failure: material/failure
+      danger: material/danger
+      bug: material/bug
+      example: material/example
+      quote: material/quote
+  admonition:
+    note: indigo
+    abstract: blue
+    info: cyan
+    tip: teal
+    success: green
+    question: purple
+    warning: amber
+    failure: red
+    danger: deep-orange
+    bug: brown
+    example: deep-purple
+    quote: grey
+```
 
-<!-- md:option type:info -->
+### 自定义图标
 
-:   !!! info
+您可以通过在 `mkdocs.yml` 中添加以下行来自定义警告块的图标：
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+``` yaml
+theme:
+  name: material
+  features:
+    - admonition
+  palette:
+    primary: indigo
+    accent: indigo
+  icon:
+    admonition:
+      note: material/note
+      abstract: material/abstract
+      info: material/info
+      tip: material/tip
+      success: material/success
+      question: material/question
+      warning: material/warning
+      failure: material/failure
+      danger: material/danger
+      bug: material/bug
+      example: material/example
+      quote: material/quote
+```
 
-<!-- md:option type:tip -->
+### 自定义标题
 
-:   !!! tip
+您可以通过在 `mkdocs.yml` 中添加以下行来自定义警告块的标题：
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:success -->
-
-:   !!! success
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:question -->
-
-:   !!! question
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:warning -->
-
-:   !!! warning
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:failure -->
-
-:   !!! failure
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:danger -->
-
-:   !!! danger
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:bug -->
-
-:   !!! bug
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:example -->
-
-:   !!! example
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:quote -->
-
-:   !!! quote
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+``` yaml
+theme:
+  name: material
+  features:
+    - admonition
+  palette:
+    primary: indigo
+    accent: indigo
+  icon:
+    admonition:
+      note: material/note
+      abstract: material/abstract
+      info: material/info
+      tip: material/tip
+      success: material/success
+      question: material/question
+      warning: material/warning
+      failure: material/failure
+      danger: material/danger
+      bug: material/bug
+      example: material/example
+      quote: material/quote
+  admonition:
+    note: 注意
+    abstract: 摘要
+    info: 信息
+    tip: 提示
+    success: 成功
+    question: 问题
+    warning: 警告
+    failure: 失败
+    danger: 危险
+    bug: 错误
+    example: 示例
+    quote: 引用
+```
 
 ## Customization
 

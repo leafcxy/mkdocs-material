@@ -1,11 +1,8 @@
 # 设置标签
 
-MkDocs的材料增加了对带有标签的页面分类的一流支持，
-这增加了与组相关的页面的可能性，并使其可被发现
-通过搜索和专用的[tags index]。如果您的文档很大，请标记
-可以帮助更快地发现相关信息。
+Material for MkDocs 为页面分类提供了标签支持，增加了相关页面分组和通过搜索及专用[标签索引]发现的可能性。如果您的文档较大，标签可以帮助更快地发现相关信息。
 
-  [tags index]: #adding-a-tags-index
+  [标签索引]: #adding-a-tags-index
 
 ## 配置
 
@@ -14,9 +11,7 @@ MkDocs的材料增加了对带有标签的页面分类的一流支持，
 <!-- md:version 8.2.0 -->
 <!-- md:plugin -->
 
-内置的标签插件增加了对任何带有标签的页面进行分类的能力
-作为页面首页的一部分。为了添加对标签的支持，请添加
-将以下行添加到`mkdocs.yml`：
+内置标签插件增加了对任何带有标签的页面进行分类的能力。要添加标签支持，请在 `mkdocs.yml` 中添加以下行：
 
 ``` yaml
 plugins:
@@ -25,7 +20,7 @@ plugins:
 
 有关所有设置的列表，请参阅[插件文档]。
 
-  [plugin documentation]: ../plugins/tags.md
+  [插件文档]: ../plugins/tags.md
 
 #### 高级设置
 
@@ -33,28 +28,24 @@ plugins:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:flag experimental -->
 
-以下高级设置目前保留给我们的[赞助商]
-[内部人士]。它们完全是可选的，只会添加额外的功能
-标签插件：
+以下高级设置目前保留给我们的[赞助商][内部人士]。它们完全是可选的，只会为标签插件添加额外功能：
 
 <!-- - [`listings_layout`][config.listings_layout] -->
 - [`listings_toc`][config.listings_toc]
 
 我们将在不久的将来在此处添加更多设置。
 
-  [Insiders]: ../insiders/index.md
+  [内部人士]: ../insiders/index.md
   [config.listings_layout]: ../plugins/tags.md#config.listings_layout
   [config.listings_toc]: ../plugins/tags.md#config.listings_toc
 
-### 标记图标和标识符
+### 标签图标和标识符
 
 <!-- md:version 8.5.0 -->
 <!-- md:flag experimental -->
 <!-- md:example tags-with-icons -->
 
-每个标签都可以与一个图标相关联，然后在标签内呈现。
-在将图标分配给标签之前，将每个标签与唯一的标识符相关联，
-在`mkdocs.yml`中添加以下内容：
+每个标签都可以与一个图标关联，然后在标签内呈现。在将图标分配给标签之前，将每个标签与唯一标识符关联，在 `mkdocs.yml` 中添加以下内容：
 
 ``` yaml
 extra:
@@ -62,9 +53,7 @@ extra:
     <tag>: <identifier> # (1)!
 ```
 
-1.  标识符只能包含字母数字字符以及破折号
-    和下划线。例如，如果你有一个标签“兼容性”，你可以
-    将“compat”设置为标识符：
+1.  标识符只能包含字母数字字符以及破折号和下划线。例如，如果您有一个标签"兼容性"，可以将"compat"设置为标识符：
 
     ``` yaml
     extra:
@@ -72,14 +61,11 @@ extra:
         Compatibility: compat
     ```
 
-    Identifiers can be reused between tags. Tags which are not explicitly
-    associated will use the default tag icon which is :material-pound:
+    标识符可以在标签之间重复使用。未明确关联的标签将使用默认标签图标 :material-pound:。
 
-Next, each identifier can be associated with an icon, even a [custom icon], by
-adding the following lines to `mkdocs.yml` under the `theme.icon` configuration
-setting:
+接下来，每个标识符可以与一个图标关联，甚至可以是[自定义图标]，通过在 `theme.icon` 配置设置下添加以下行到 `mkdocs.yml`：
 
-=== "Tag icon"
+=== "标签图标"
 
     ``` yaml
     theme:
@@ -88,18 +74,17 @@ setting:
           <identifier>: <icon> # (1)!
     ```
 
-    1.  Enter a few keywords to find the perfect icon using our [icon search] and
-        click on the shortcode to copy it to your clipboard:
+    1.  输入几个关键字，使用我们的[图标搜索]找到合适的图标，然后点击短代码复制：
 
         <div class="mdx-iconsearch" data-mdx-component="iconsearch">
-          <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="Search icon" data-mdx-component="iconsearch-query" value="tag" />
+          <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="搜索图标" data-mdx-component="iconsearch-query" value="tag" />
           <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result" data-mdx-mode="file">
             <div class="mdx-iconsearch-result__meta"></div>
             <ol class="mdx-iconsearch-result__list"></ol>
           </div>
         </div>
 
-=== "Tag default icon"
+=== "标签默认图标"
 
     ``` yaml
     theme:
@@ -108,7 +93,7 @@ setting:
           default: <icon>
     ```
 
-??? example "Expand to inspect example"
+??? example "展开查看示例"
 
     ``` yaml
     theme:
@@ -124,8 +109,8 @@ setting:
         CSS: css
     ```
 
-  [custom icon]: changing-the-logo-and-icons.md#additional-icons
-  [icon search]: ../reference/icons-emojis.md#search
+  [自定义图标]: changing-the-logo-and-icons.md#additional-icons
+  [图标搜索]: ../reference/icons-emojis.md#search
 
 ## 使用
 
@@ -134,9 +119,7 @@ setting:
 <!-- md:version 8.2.0 -->
 <!-- md:example tags -->
 
-When the [built-in tags plugin] is enabled, tags can be added for a document
-with the front matter `tags` property. Add the following lines at the top of a
-Markdown file:
+启用[内置标签插件]后，可以通过 front matter 的 `tags` 属性为文档添加标签。在 Markdown 文件顶部添加以下行：
 
 ``` sh
 ---
@@ -149,14 +132,11 @@ tags:
 ...
 ```
 
-The page will now render with those tags above the main headline and within the
-search preview, which now allows to __find pages by tags__.
+页面现在会在主标题上方和搜索预览中显示这些标签，允许__通过标签查找页面__。
 
-??? question "How to set tags for an entire folder?"
+??? question "如何为整个文件夹设置标签？"
 
-    With the help of the [built-in meta plugin], you can ensure that tags are
-    set for an entire section and all nested pages, by creating a `.meta.yml`
-    file in the corresponding folder with the following content:
+    借助[内置元数据插件]，您可以通过在相应文件夹中创建 `.meta.yml` 文件来确保为整个部分和所有嵌套页面设置标签，内容如下：
 
     ``` yaml
     tags:
@@ -165,90 +145,72 @@ search preview, which now allows to __find pages by tags__.
       - CSS
     ```
 
-    The tags set in `.meta.yml` are merged and deduplicated with the tags
-    defined for a page, which means you can define common tags in `.meta.yml`
-    and then add specific tags for each page. The tags in `.meta.yml` are
-    appended.
+    `.meta.yml` 中设置的标签会与页面定义的标签合并并去重，这意味着您可以在 `.meta.yml` 中定义通用标签，然后为每个页面添加特定标签。`.meta.yml` 中的标签会被追加。
 
-  [built-in tags plugin]: ../plugins/tags.md
-  [built-in meta plugin]: ../plugins/meta.md
+  [内置标签插件]: ../plugins/tags.md
+  [内置元数据插件]: ../plugins/meta.md
 
 ### 添加标签索引
 
 <!-- md:version 8.2.0 -->
 <!-- md:example tags -->
 
-The [built-in tags plugin] allows to define a file to render a tags index,
-which can be any page that is part of the `nav` section. To add a tags index,
-create a page, e.g. `tags.md`:
+[内置标签插件]允许定义文件来呈现标签索引，该文件可以是 `nav` 部分中的任何页面。要添加标签索引，创建一个页面，例如 `tags.md`：
 
 ``` markdown
-# Tags
+# 标签
 
-Following is a list of relevant tags:
+以下是相关标签列表：
 
 <!-- material/tags -->
 ```
 
-The tags marker specifies the position of the tags index, i.e. it is
-replaced with the actual tags index when the page is rendered. You can include
-arbitrary content before and after the marker:
+标签标记指定标签索引的位置，即在页面呈现时替换为实际标签索引。您可以在标记前后包含任意内容：
 
-[![Tags index][tags index enabled]][tags index enabled]
+[![标签索引][标签索引已启用]][标签索引已启用]
 
-  [tags index enabled]: ../assets/screenshots/tags-index.png
+  [标签索引已启用]: ../assets/screenshots/tags-index.png
 
 ### 高级功能
 
-[Insiders] ships a __ground up rewrite of the tags plugin__ which is infinitely
-more powerful than the current version in the community edition. It allows
-for an arbitrary number of tags indexes (listings), [scoped listings],
-[shadow tags], [nested tags], and much more.
+[内部人士]提供了__标签插件的完全重写版本__，比社区版当前版本功能更强大。它允许任意数量的标签索引（列表）、[作用域列表]、[影子标签]、[嵌套标签]等。
 
-  [scoped listings]: #scoped-listings
-  [shadow tags]: #shadow-tags
-  [nested tags]: #nested-tags
+  [作用域列表]: #scoped-listings
+  [影子标签]: #shadow-tags
+  [嵌套标签]: #nested-tags
 
 #### 可配置列表
 
 <!-- md:version 9.6.0 -->
 <!-- md:flag experimental -->
 
-Listings can be configured in `mkdocs.yml` or directly at the location of the
-marker that you position in a Markdown document. Some examples:
+列表可以在 `mkdocs.yml` 中配置，或直接在您放置在 Markdown 文档中的标记位置配置。一些示例：
 
-- __Use [scoped listings]__: limit the tags index to pages that are on the same
-  level of the subsection of the documentation the page is in:
+- __使用[作用域列表]__：将标签索引限制为与页面所在文档子部分同级别的页面：
 
     ``` html
     <!-- material/tags { scope: true } -->
     ```
 
-- __List only specific tags__: limit the tags index to a single or multiple
-  selected tags, e.g., `Foo` and `Bar`, excluding all other tags:
+- __仅列出特定标签__：将标签索引限制为单个或多个选定标签，例如 `Foo` 和 `Bar`，排除所有其他标签：
 
     ``` html
     <!-- material/tags { include: [Foo, Bar] } -->
     ```
 
-- __Exclude pages with specific tags__: don't include pages that are tagged
-  with specific tags, e.g. `Internal`. This can be any tag, including a shadow
-  tag:
+- __排除带有特定标签的页面__：不包含带有特定标签的页面，例如 `Internal`。这可以是任何标签，包括影子标签：
 
     ``` html
     <!-- material/tags { exclude: [Internal] } -->
     ```
 
-- __Enable or disable tags inside the table of contents__: specify whether the
-  table of contents lists all tags under the nearest headline:
+- __启用或禁用目录中的标签__：指定目录是否在最近标题下列出所有标签：
 
     ``` html
     <!-- material/tags { toc: false } -->
     ```
 
-See the [listing configuration] for all options.
-
-  [listing configuration]: ../plugins/tags.md#listing-configuration
+请参阅[列表配置]了解所有选项。
 
 #### 范围列表
 
@@ -256,16 +218,13 @@ See the [listing configuration] for all options.
 <!-- md:version insiders-4.48.0 -->
 <!-- md:flag experimental -->
 
-If your documentation is large, you might want to consider using scoped listings
-which will only include pages that are on the same level or below the page
-containing the listing. Just use:
+如果您的文档是大的，您可能想要考虑使用作用域列表，它将只包括与列表所在页面同级别的页面或以下页面。只需使用：
 
 ``` html
 <!-- material/tags { scope: true } -->
 ```
 
-If you plan to use multiple scoped indexes, it's a good idea to define a
-listing configuration in `mkdocs.yml`, which you can then reference by its id:
+如果您计划使用多个作用域索引，这是一个好主意，在 `mkdocs.yml` 中定义一个列表配置，然后通过其 id 引用它：
 
 ``` yaml
 plugins:
@@ -275,7 +234,7 @@ plugins:
           scope: true
 ```
 
-You can now use:
+您现在可以使用：
 
 ``` html
 <!-- material/tags scoped -->
@@ -287,9 +246,7 @@ You can now use:
 <!-- md:version insiders-4.48.0 -->
 <!-- md:flag experimental -->
 
-Shadow tags are tags that are solely meant to organization, which can be
-included or excluded for rendering with a simple flag. They can be enumerated
-in the [`shadow_tags`][config.shadow_tags] setting:
+阴影标签是仅用于组织目的的标签，可以通过简单标志包括或排除渲染。它们可以在 [`shadow_tags`][config.shadow_tags] 设置中枚举：
 
 ``` yaml
 plugins:
@@ -299,9 +256,7 @@ plugins:
         - Internal
 ```
 
-If a document is tagged with `Draft`, the tag will only be rendered if
-[`shadow`][config.shadow] setting is enabled, and excluded when it is disabled.
-This is an excellent opportunity for using tags for structuring.
+如果文档被标记为 `Draft`，标签将仅在 [`shadow`][config.shadow] 设置启用时渲染，并在禁用时排除。这是一个很好的机会，可以使用标签进行结构化。
 
   [config.shadow]: ../plugins/tags.md#config.shadow
   [config.shadow_tags]: ../plugins/tags.md#config.shadow_tags
@@ -312,10 +267,8 @@ This is an excellent opportunity for using tags for structuring.
 <!-- md:version insiders-4.48.0 -->
 <!-- md:flag experimental -->
 
-[Insiders] ships support for nested tags. The
-[`tags_hierarchy_separator`][config.tags_hierarchy_separator] allows to create
-hierarchies of tags, e.g., `Foo/Bar`. Nested tags will be rendered as children
-of the parent tag:
+[内部人士]提供了对嵌套标签的支持。
+[`tags_hierarchy_separator`][config.tags_hierarchy_separator] 允许创建标签层次结构，例如 `Foo/Bar`。嵌套标签将作为父标签的子标签呈现：
 
 ``` yaml
 plugins:
@@ -327,9 +280,7 @@ plugins:
 
 ### 隐藏页面上的标签
 
-While the tags are rendered above the main headline, sometimes, it might be
-desirable to hide them for a specific page, which can be achieved with the
-front matter `hide` property:
+虽然标签在主标题上方呈现，有时，为特定页面隐藏它们可能是可取的，可以通过 front matter 的 `hide` 属性实现：
 
 ``` yaml
 ---

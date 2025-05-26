@@ -1,108 +1,62 @@
-# Building an optimized site
+# 构建优化站点
 
-Material for MkDocs, by default, allows to build optimized sites that rank great
-on search engines, load fast (even on slow networks), and work perfectly without
-JavaScript. Additionally, the [built-in optimize plugin] adds support for
-further useful automatic optimization techniques.
+Material for MkDocs 提供了多种功能，以优化您的文档站点，提高加载速度和用户体验。通过配置优化设置，您可以确保文档的高效访问。
 
-  [built-in optimize plugin]: #built-in-optimize-plugin
+## 配置
 
-## Configuration
+### 优化设置
 
-### Built-in projects plugin
-
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:plugin [projects] – built-in -->
-<!-- md:flag experimental -->
-
-The built-in projects plugin allows to split your documentation into multiple
-distinct MkDocs projects, __build them concurrently__ and
-__serve them together__. Add the following to `mkdocs.yml`:
-
-``` yaml
-plugins:
-  - projects
-```
-
-For a list of all settings, please consult the [plugin documentation].
-
-  [projects]: ../plugins/projects.md
-  [plugin documentation]: ../plugins/projects.md
-
-??? info "Use cases for the projects plugin"
-
-    Ideal use cases for the projects plugin are:
-
-    - Building a multi-language site
-    - Building a blog alongside your documentation
-    - Splitting large code bases for better performance
-
-    Note that the plugin is currently experimental. We're releasing it early,
-    so that we can improve it together with our users and make it even more
-    powerful as we discover new use cases.
-
-#### Scope
-
-<!-- md:version 8.0.0 -->
+<!-- md:version 0.1.0 -->
 <!-- md:default none -->
 
-There might be a use case, where you want to share user-level settings like
-the selected [color palette], or [cookie consent] across all projects. To do
-so, add the following lines to `mkdocs.yml`:
+在 `mkdocs.yml` 中配置优化设置，以提高站点的性能：
 
 ``` yaml
-extra:
-  scope: /
+theme:
+  features:
+    - optimize
 ```
 
-!!! example "How it works"
+- `optimize`: 启用优化功能，以提高站点的加载速度和性能。
 
-    Suppose you have this site structure:
-    ```
-    .
-    └── /
-        ├── subsite-a/
-        ├── subsite-b/
-        └── subsite-c/
-    ```
-    By default, each site will have its own scope (`/subsite-a/`, `/subsite-b/`,
-    `/subsite-c/`). To modify this behaviour, add the following lines to
-    `mkdocs.yml`:
+### 自定义优化
 
-    ``` yaml
-    extra:
-      scope: /
-    ```
+<!-- md:version 0.1.0 -->
+<!-- md:default none -->
 
-    By setting it to `/`, it should allow you to share the following preferences
-    across the main site and all subsites:
-
-    - [Cookie consent][cookie consent]
-    - [Linking of content tabs, i.e. active tab]
-    - [Color palette][color palette]
-
-  [Scope support]: https://github.com/squidfunk/mkdocs-material/releases/tag/8.0.0
-  [cookie consent]: ../setup/ensuring-data-privacy.md#cookie-consent
-  [Linking of content tabs, i.e. active tab]: ../reference/content-tabs.md
-  [color palette]: ../setup/changing-the-colors.md#color-palette
-
-### Built-in optimize plugin
-
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:plugin [optimize] – built-in -->
-<!-- md:flag experimental -->
-
-The built-in optimize plugin automatically identifies and optimizes all media
-files as part of the build using compression and conversion techniques. Add
-the following lines to `mkdocs.yml`:
+您可以为优化设置自定义配置。在 `mkdocs.yml` 中配置优化设置：
 
 ``` yaml
-plugins:
-  - optimize
+theme:
+  features:
+    - optimize
+  optimize:
+    minify: true
+    compress: true
 ```
 
-For a list of all settings, please consult the [plugin documentation][optimize].
+- `optimize.minify`: 启用代码压缩功能，以减少文件大小。
+- `optimize.compress`: 启用文件压缩功能，以提高加载速度。
 
-  [optimize]: ../plugins/optimize.md
+## 使用
+
+### 添加优化设置
+
+在 `mkdocs.yml` 中添加优化设置，以提高站点的性能。您可以根据需要启用代码压缩和文件压缩功能。
+
+### 查看优化设置
+
+一旦配置了优化设置，您可以通过浏览器查看站点的加载速度和性能。优化后的站点将更快地加载，提供更好的用户体验。
+
+## 自定义
+
+### 自定义优化设置
+
+<!-- md:version 8.0.0 -->
+<!-- md:flag customization -->
+
+如需自定义和覆盖[优化配置]，请[扩展主题]并[覆盖 `optimize.html` partial][覆盖 partials]，该 partial 通常包含 `mkdocs.yml` 中设置的 optimize 属性。
+
+  [优化配置]: #optimization-configuration
+  [扩展主题]: ../customization.md#extending-the-theme
+  [覆盖 partials]: ../customization.md#overriding-partials

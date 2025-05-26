@@ -1,23 +1,23 @@
-# Setting up the header
+# 设置标题
 
-Material for MkDocs' header can be customized to show an announcement bar that
-disappears upon scrolling, and provides some options for further configuration.
-It also includes the [search bar] and a place to display your project's
-[git repository], as explained in those dedicated guides.
+Material for MkDocs标题可以定制，以显示公告栏
+滚动时消失，并提供一些进一步配置的选项。
+它还包括[search bar]和一个显示项目的位置
+[git repository]，如这些专门指南中所解释的。
 
   [search bar]: setting-up-site-search.md
   [git repository]: adding-a-git-repository.md
 
-## Configuration
+## 配置
 
-### Automatic hiding
+### 自动隐藏
 
 <!-- md:version 6.2.0 -->
 <!-- md:feature -->
 
-When autohiding is enabled, the header is automatically hidden when the
-user scrolls past a certain threshold, leaving more space for content. Add the
-following lines to `mkdocs.yml`:
+启用自动隐藏后，当
+用户滚动超过某个阈值，为内容留下更多空间。添加
+将以下行转换为`mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -25,16 +25,16 @@ theme:
     - header.autohide
 ```
 
-### Announcement bar
+### 公告栏
 
 <!-- md:version 5.0.0 -->
 <!-- md:flag customization -->
 
-Material for MkDocs includes an announcement bar, which is the perfect place to
-display project news or other important information to the user. When the user
-scrolls past the header, the bar will automatically disappear. In order to add
-an announcement bar, [extend the theme] and [override the `announce`
-block][overriding blocks], which is empty by default:
+MkDocs的材料包括一个公告栏，这是一个完美的地方
+向用户显示项目新闻或其他重要信息。当用户
+滚动过标题，栏将自动消失。为了添加
+公告栏，[extend the theme]和[override the `announce`
+block][overriding blocks]，默认为空：
 
 ``` html
 {% extends "base.html" %}
@@ -47,15 +47,15 @@ block][overriding blocks], which is empty by default:
   [extend the theme]: ../customization.md#extending-the-theme
   [overriding blocks]: ../customization.md#overriding-blocks
 
-#### Mark as read
+#### 标记为已读
 
 <!-- md:version 8.4.0 -->
 <!-- md:feature -->
 <!-- md:flag experimental -->
 
-In order to render temporary announcements that can be marked as read by the
-user, a button to dismiss the current announcement can be included. Add the
-following lines to `mkdocs.yml`:
+为了呈现可标记为已阅读的临时公告
+用户，可以包括一个按钮来取消当前的公告。添加
+将以下行转换为`mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -63,9 +63,9 @@ theme:
     - announce.dismiss
 ```
 
-When the user clicks the button, the current announcement is dismissed and not
-displayed again until the content of the announcement changes. This is handled
-automatically.
+当用户点击按钮时，当前公告将被取消，不会
+再次显示，直到公告的内容发生变化。这已经处理好了
+自动。
 
 [Scroll to the top of this page][top] to see it in action.
 

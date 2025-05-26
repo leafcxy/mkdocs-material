@@ -1,20 +1,20 @@
-# Setting up the footer
+# 设置页脚
 
-The footer of your project documentation is a great place to add links to
-websites or platforms you or your company are using as additional marketing
-channels, e.g. :fontawesome-brands-mastodon:{ style="color: #5A4CE0" } or
-:fontawesome-brands-youtube:{ style="color: #EE0F0F" }, which you can easily
-configure via `mkdocs.yml`.
+项目文档的页脚是添加链接的好地方
+您或您的公司用作额外营销的网站或平台
+渠道，例如：fontawesome品牌乳齿象：{ style="color: #5A4CE0" }或
+：fontawesome brands youtube:{ style="color: #EE0F0F" }，您可以轻松访问
+通过`mkdocs.yml`进行配置。
 
-## Configuration
+## 配置
 
-### Navigation
+### 导航
 
 <!-- md:version 9.0.0 -->
 <!-- md:feature -->
 
-The footer can include links to the previous and next page of the current page.
-If you wish to enable this behavior, add the following lines to `mkdocs.yml`:
+页脚可以包含指向当前页面上一页和下一页的链接。
+如果要启用此行为，请在`mkdocs.yml`中添加以下行：
 
 ``` yaml
 theme:
@@ -22,14 +22,14 @@ theme:
     - navigation.footer
 ```
 
-### Social links
+### 社交链接
 
 <!-- md:version 1.0.0 -->
 <!-- md:default none -->
 
-Social links are rendered next to the copyright notice as part of the
-footer of your project documentation. Add a list of social links in `mkdocs.yml`
-with:
+社交链接作为版权声明的一部分显示在版权声明旁边
+项目文档的页脚。在`mkdocs.yml`中添加社交链接列表
+与：
 
 ``` yaml
 extra:
@@ -38,8 +38,8 @@ extra:
       link: https://fosstodon.org/@squidfunk
 ```
 
-1.  Enter a few keywords to find the perfect icon using our [icon search] and
-    click on the shortcode to copy it to your clipboard:
+1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+    单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
       <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="Search icon" data-mdx-component="iconsearch-query" value="mastodon" />
@@ -49,13 +49,13 @@ extra:
       </div>
     </div>
 
-The following properties are available for each link:
+每个链接都有以下属性：
 
 <!-- md:option social.icon -->
 
 :   <!-- md:default none --> <!-- md:flag required -->
-    This property must contain a valid path to any icon bundled with the theme,
-    or the build will not succeed. Some popular choices:
+    此属性必须包含指向与主题绑定的任何图标的有效路径，
+    否则构建将不会成功。一些流行的选择：
 
     * :fontawesome-brands-github: – `fontawesome/brands/github`
     * :fontawesome-brands-gitlab: – `fontawesome/brands/gitlab`
@@ -73,8 +73,8 @@ The following properties are available for each link:
 <!-- md:option social.link -->
 
 :   <!-- md:default none --> <!-- md:flag required -->
-    This property must be set to a relative or absolute URL including the URI
-    scheme. All URI schemes are supported, including `mailto` and `bitcoin`:
+    此属性必须设置为包含URI的相对或绝对URL
+    方案。支持所有URI方案，包括“mailto”和“bitcoin”：
 
     === ":fontawesome-brands-mastodon: Mastodon"
 
@@ -97,8 +97,8 @@ The following properties are available for each link:
 <!-- md:option social.name -->
 
 :   <!-- md:default _domain name from_ `link`_, if available_ -->
-    This property is used as the link's `title` attribute and can be set to a
-    discernable name to improve accessibility:
+    此属性用作链接的“title”属性，可以设置为
+    可辨别的名称，以提高可访问性：
 
     ``` yaml
     extra:
@@ -111,54 +111,54 @@ The following properties are available for each link:
   [icon search]: ../reference/icons-emojis.md#search
   [rel=me]: https://docs.joinmastodon.org/user/profile/#verification
 
-### Copyright notice
+### 版权声明
 
 <!-- md:version 0.1.0 -->
 <!-- md:default none -->
 
-A custom copyright banner can be rendered as part of the footer, which is
-displayed next to the social links. It can be defined as part of `mkdocs.yml`:
+自定义版权横幅可以作为页脚的一部分呈现，即
+显示在社交链接旁边。它可以被定义为“mkdocs.yml”的一部分：
 
 ``` yaml
 copyright: Copyright &copy; 2016 - 2020 Martin Donath
 ```
 
-### Generator notice
+### 发电机通知
 
 <!-- md:version 7.3.0 -->
 <!-- md:default `true` -->
 
-The footer displays a _Made with Material for MkDocs_ notice to denote how
-the site was generated. The notice can be removed with the following option
-via `mkdocs.yml`:
+页脚显示了一个_Made with Material for MkDocs_通知，表示如何
+该网站已生成。可以通过以下选项删除通知
+通过`mkdocs.yml`：
 
 ``` yaml
 extra:
   generator: false
 ```
 
-!!! info "Please read this before removing the generator notice"
+!!! info "请在删除发电机通知之前阅读此内容"
 
-    The subtle __Made with Material for MkDocs__ hint in the footer is one of
-    the reasons why this project is so popular, as it tells the user how the
-    site is generated, helping new users to discover this project. Before
-    removing please consider that you're enjoying the benefits of @squidfunk's
-    work for free, as this project is Open Source and has a permissive license.
-    Thousands of hours went into this project, most of them
-    without any financial return.
+    页脚中微妙的__Made with Material for MkDocs__提示是
+    这个项目如此受欢迎的原因，因为它告诉用户
+    生成网站，帮助新用户发现此项目。之前
+    删除请考虑您正在享受@squidfunk的好处
+    免费工作，因为这个项目是开源的，有许可证。
+    这个项目花了数千个小时，其中大部分
+    没有任何经济回报。
 
     Thus, if you remove this notice, please consider [sponsoring][Insiders] the
     project. __Thank you__ :octicons-heart-fill-24:{ .mdx-heart .mdx-insiders }
 
   [Insiders]: ../insiders/index.md
 
-## Usage
+## 使用
 
-### Hiding prev/next links
+### 隐藏上一页/下一页链接
 
-The footer navigation showing links to the previous and next page can be hidden
-with the front matter `hide` property. Add the following lines at the top of a
-Markdown file:
+显示上一页和下一页链接的页脚导航可以隐藏
+具有前体“隐藏”属性。在a的顶部添加以下行
+Markdown文件：
 
 ``` yaml
 ---
@@ -170,9 +170,9 @@ hide:
 ...
 ```
 
-## Customization
+## 自定义
 
-### Custom copyright
+### 自定义版权
 
 <!-- md:version 8.0.0 -->
 <!-- md:flag customization -->

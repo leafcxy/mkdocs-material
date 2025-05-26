@@ -88,21 +88,21 @@ __所需时间:__ 通常为30分钟
     还需要设置`archive_url_date_format`以包含月份
     还有日期，所以也把它改为`MM/dd/yyyy`。
 
-## Using categories
+## 使用类别
 
-Categories are a way to make blog posts accessible by topic while retaining
-the navigation structure based on chronology within each category listing.
-Use them when there is a limited set of non-overlapping categories that
-you can sort your posts into.
+分类是一种让博客文章按主题访问的方式，同时保留
+导航结构基于每个类别列表中的时间顺序。
+当存在一组有限的非重叠类别时使用它们
+你可以把你的帖子分类。
 
-Categories appear in the main navigation, so are directly accessible from there.
-This implies that there are relatively few categories as otherwise the
-`categories` section in your main navigation will become too crowded.
+类别显示在主导航中，因此可以从那里直接访问。
+这意味着类别相对较少，否则
+主导航中的`categories`部分将变得过于拥挤。
 
 
-!!! example "Add a category"
+!!! example "添加类别"
 
-    Add a category to your first blog post by adding it to the page header:
+    通过将类别添加到页眉，将其添加到您的第一篇博客文章中：
 
     ``` hl_lines="4 5""
     ---
@@ -113,27 +113,27 @@ This implies that there are relatively few categories as otherwise the
     ---
     ```
 
-    Now that the blog post has been categorised, `Holidays` appears under
-    `Categories` in the main navigation and the blog post appears in the
-    index page for this category.
+    现在博客文章已经分类，`Holidays`出现在
+    主导航中的`Categories`和博客文章出现在
+    此类别的索引页。
 
 
-!!! tip "Single or multiple categories?"
+!!! tip "单一类别还是多个类别？"
 
-    While it is traditionally the case that a blog post would belong to only
-    one category, Material for MkDocs actually allows you to assign more
-    than one. While this gives you a degree of freedom, you should
-    probably not use this too much, not least because you can use tags to
-    deal with multiple classifications. We will cover them in the next step.
+    虽然传统上一篇博客文章只属于
+    一个类别，Material for MkDocs实际上允许您分配更多
+    不止一个。虽然这给了你一定程度的自由，但你应该
+    可能不要过多使用它，尤其是因为你可以使用标签
+    处理多种分类。我们将在下一步介绍它们。
 
-Material allows you to control which categories blog authors can use. You
-declare them in the `mkdocs.yml`. This way you can make sure everyone sticks
-to agreed categories and that the plugin detects typos.
+材料允许您控制博客作者可以使用的类别。你
+在`mkdocs.yml`中声明它们。这样你就可以确保每个人都坚持下去
+根据商定的类别，插件可以检测拼写错误。
 
-!!! example "Control your categories"
+!!! example "控制你的类别"
 
-    Add a `categories_allowed` entry to the configuration of the Blog plugin
-    with the entries "Holidays" and "News":
+    在博客插件的配置中添加一个`categories_allowed`条目
+    条目"Holidays"和"News"：
 
     ```yaml hl_lines="5-7"
     plugins:
@@ -145,26 +145,26 @@ to agreed categories and that the plugin detects typos.
             - News
     ```
 
-    Now, when you add a category to a blog post that does not match one of these
-    two, you should get a build error.
+    现在，当你在博客文章中添加一个与以下内容不匹配的类别时
+    第二，你应该得到一个构建错误。
 
-## Using tags
+## 使用标签
 
-The [Tags plugin] provides another way to classify blog posts and to make
-them accessible independently of the main navigation structure. Tags are useful
-for making related content easily discoverable even if it is in different parts
-of the navigation hierarchy.
+[Tags plugin]提供了另一种对博客文章进行分类和制作的方法
+它们可以独立于主导航结构访问。标签很有用
+使相关内容即使在不同部分也易于发现
+导航层次结构。
 
 [Tags plugin]: https://squidfunk.github.io/mkdocs-material/plugins/tags/
 
-You may have a tutorial like this one as well as a more comprehensive setup guide
-and reference documentation. Adding the same tag to all three shows that they
-are related. As you will see, it is possible to navigate from a tagged page to
-the tag index and, from there, to other pages that carry the same tag.
+您可能有这样的教程以及更全面的设置指南
+以及参考文件。向所有三个添加相同的标签表明它们
+是相关的。正如您将看到的，可以从标记的页面导航到
+标签索引，并从那里指向携带相同标签的其他页面。
 
-!!! example "Enable the plugin and add tags"
+!!! example "启用插件并添加标签"
 
-    First, you need to add the plugin to your `mkdocs.yml`:
+    首先，您需要将插件添加到您的`mkdocs.yml`中：
 
     ```yaml hl_lines="8"
     plugins:
@@ -177,7 +177,7 @@ the tag index and, from there, to other pages that carry the same tag.
       - tags
     ```
 
-    Once this is done, you can add tags to posts in the page header:
+    完成此操作后，您可以在页眉中为帖子添加标签：
 
     ``` hl_lines="9-12""
     ---
@@ -195,23 +195,23 @@ the tag index and, from there, to other pages that carry the same tag.
     ---
     ```
 
-You should see the tags that you defined at the top of the post. However, at the
-moment that is it. While the blog plugin automatically creates an index page for
-categories, the tags plugin does not do the same for tags. This is because the
-tags plugin is not specific for blogs. You can use it for any site content, so
-it is not obvious were the tag index should go.
+您应该在帖子顶部看到您定义的标签。然而，在
+就这样。而博客插件会自动为
+类别，标签插件对标签不做同样的事情。这是因为
+tags插件不是博客专用的。您可以将其用于任何网站内容，因此
+标签索引是否应该删除尚不清楚。
 
-You can configure a basic tag index using the public version of Material for
-MkDocs. The Insider Edition supports this as well, of course, but also provides
-an alternative index mechanism that allows for an arbitrary number of tag
-indexes, scoped listings, shadow tags, nested tags, and much more.
+您可以使用Material的公共版本为配置基本标记索引
+MkDocs。当然，Insider Edition也支持这一点，但也提供
+一种允许任意数量标签的替代索引机制
+索引、作用域列表、阴影标签、嵌套标签等等。
 
-!!! example "Adding a tags index"
+!!! example "添加标签索引"
     === "Basic tag index"
 
-        To configure a tag index using the public version, add a `tags_file` entry
-        to your configuration of the tags plugin and configure it in your `nav`
-        section. Remember to add a colon at the end of the existing `tags` entry.
+        要使用公共版本配置标记索引，请添加`tags_file`条目
+        转到标签插件的配置，并在nav中进行配置`
+        部分。记住在现有的“标签”条目末尾添加一个冒号。
 
         ```yaml hl_lines="8-9 17"
         plugins:
@@ -233,41 +233,41 @@ indexes, scoped listings, shadow tags, nested tags, and much more.
                 - Tags: blog/tags.md
         ```
 
-        The tag index will be appended to the configured page, which you should
-        now create at the location specified.
+        标签索引将附加到配置的页面上，您应该
+        现在在指定位置创建。
 
-        Note that you can put the tag index page anywhere in your primary
-        navigation, so if you are using tags elsewhere instead of just in your
-        blog then you may want to have the tag index outside the blog section
-        of the navigation.
+        请注意，您可以将标记索引页放在主目录中的任何位置
+        导航，所以如果你在其他地方使用标签，而不仅仅是在你的
+        blog，那么您可能希望在blog部分之外有标签索引
+        导航。
 
 
-    === "Insider Edition"
+    === "内幕版"
 
-        To add a tag index, you add a placeholder in a Markdown file to tell
-        the plugin to insert an index at that point. This means that you
-        can add content before and after the index. Crucially, you can add
-        placeholders in multiple pages, each with a configuration of what
-        subset of tags should be displayed in the index.
+        要添加标签索引，您需要在Markdown文件中添加一个占位符来告诉
+        在该点插入索引的插件。这意味着你
+        可以在索引前后添加内容。至关重要的是，您可以添加
+        多个页面中的占位符，每个页面都有一个配置
+        标签的子集应显示在索引中。
 
-        The simplest index page looks like this. Create it under `docs/tags.md`.
+        最简单的索引页看起来像这样。在`docs/tags.md`下创建它。
 
         ```markdown
         # Tag index
         <!-- material/tags -->
         ```
 
-        Now, you may want to keep the tags for your blog separate from tags
-        you use in the rest of your page. You can achieve this by assigning
-        the tag index a scope. Put the following under `docs/blog/tags.md`:
+        现在，您可能希望将博客的标签与标签分开
+        您可以在页面的其余部分使用。您可以通过分配来实现这一点
+        标签索引一个作用域。将以下内容放在`docs/blog/tags.md`下：
 
         ```markdown
         # Tag index  for the blog
         <!-- material/tags { scope: true } -->
         ```
 
-        You now have two index pages: one covers the whole site and one
-        covers only the blog. Add both to the navigation:
+        您现在有两个索引页面：一个覆盖整个网站，另一个
+        只覆盖博客。将两者添加到导航中：
 
         ```yaml
         nav:
@@ -278,23 +278,23 @@ indexes, scoped listings, shadow tags, nested tags, and much more.
                 - blog/tags.md
         ```
 
-        The tags plugin in the Insider Edition is an incredibly powerful tool
-        and we can only scratch the surface of what is possible with it. If you
-        want to explore more after you have worked for this part of the tutorial,
-        have a look at the [tags plugin reference].
+        Insider Edition中的标签插件是一个非常强大的工具
+        我们只能触及它可能的表面。如果你
+        在完成本教程的这一部分后，您想探索更多内容，
+        请查看[tags plugin reference]。
 
 [tags plugin reference]: ../../plugins/tags.md
 
-## Defining authors
+## 定义作者
 
-If your blog has more than one author then you may want to identify the author
-for each blog post. The blog plugin allows you to create a file that contains
-the author information and to then reference the authors of a particular post in
-the page header.
+如果你的博客有不止一个作者，那么你可能想确定作者
+对于每一篇博客文章。博客插件允许您创建一个包含以下内容的文件
+作者信息，然后参考特定帖子的作者
+页面标题。
 
-!!! example "Create author info"
+!!! example "创建作者信息"
 
-    Create a file `docs/blog/.authors.yml` with this content:
+    创建一个文件`docs/blog/.orges.yml`，其中包含以下内容：
 
     ```yaml
     authors:
@@ -308,7 +308,7 @@ the page header.
         avatar: https://github.com/squidfunk.png
     ```
 
-    and then add a line to the header of the first post:
+    然后在第一篇帖子的标题中添加一行：
 
 
     ```hl_lines="5-6"
@@ -321,15 +321,15 @@ the page header.
     ---
     ```
 
-    Note that `authors` is a list, so you can specify multiple authors.
+    请注意，`authors`是一个列表，因此您可以指定多个作者。
 
-With the Insiders edition, you can create custom author index pages that
-can highlight the contributions of an author as well as provide additional
-information about them.
+使用Insiders版本，您可以创建自定义作者索引页面
+可以突出作者的贡献，并提供额外的
+关于他们的信息。
 
-!!! example "Add author page <!-- md:sponsors -->"
+!!! example "添加作者页面 <!-- md:sponsors -->"
 
-    First, you need to enable author profiles in the `mkdocs.yml`:
+    首先，您需要在`mkdocs.yml`中启用作者配置文件：
 
     ```yaml hl_lines="8"
     plugins:
@@ -342,13 +342,13 @@ information about them.
           authors_profiles: true
     ```
 
-    Check your blog to see that there is now an extra entry in the main
-    navigation next to `archive` and `categories` that lists the authors and
-    their contributions.
+    检查你的博客，看看主目录中现在有一个额外的条目
+    `archive`和`categories`旁边的导航，列出作者和
+    他们的贡献。
 
-    To customize the author page, you can create a page that overrides the one
-    generated by default. First, create the `author` directory that the profile
-    pages will live in:
+    要自定义作者页面，您可以创建一个覆盖该页面的页面
+    默认生成。首先，创建配置文件所在的`author`目录
+    页面将位于：
 
     ```hl_lines="3"
     docs
@@ -361,7 +361,7 @@ information about them.
     └── index.md
     ```
 
-    Then create a page `docs/blog/author/team.md`:
+    然后创建一个页面`docs/blog/owner/team.md`：
 
     ```
     # The Material Team
@@ -370,20 +370,20 @@ information about them.
     not outright fun! Here are some of the things we have blogged about:
     ```
 
-    As you can see, the author index gets appended to the content you have
-    written in the Markdown file.
+    如您所见，作者索引将附加到您所拥有的内容上
+    写在Markdown文件中。
 
-## Pagination
+## 分页
 
-Once your blog starts growing, you may not want to pay attention to the number
-of posts displayed per page. By default, the plugin displays up to 10 posts on
-the index pages. You can change this number separately for the main index,
-the archive index pages, and the category index pages.
+一旦你的博客开始增长，你可能不想关注这个数字
+每页显示的帖子数量。默认情况下，该插件在上最多显示10个帖子
+索引页面。您可以单独更改主索引的此数字，
+归档索引页面和类别索引页面。
 
-!!! example "Changing pagination"
+!!! example "更改分页"
 
-    Add five more blog posts, then set the pagination setting to show five per
-    page only:
+    再添加五篇博客文章，然后将分页设置为每篇显示五篇
+    仅限页面：
 
     ```yaml hl_lines="7"
     - blog:
@@ -395,10 +395,10 @@ the archive index pages, and the category index pages.
         pagination_per_page: 5
     ```
 
-    You will see that the pagination setting for archive and category pages
-    are inherited from the setting you added. If you want to have different
-    settings for the different index pages, you can specify each setting
-    separately:
+    您将看到存档和类别页面的分页设置
+    继承自您添加的设置。如果你想有不同的
+    不同索引页的设置，您可以指定每个设置
+    单独：
 
     ```yaml
     - blog:
@@ -412,18 +412,18 @@ the archive index pages, and the category index pages.
         categories_pagination_per_page: 10
     ```
 
-## Blog table of contents
+## 博客目录
 
-Another thing you may want to do once you have a large enough number of posts
-is to turn on the function that produces a table of contents for the blog
-index pages, giving your readers the opportunity to quickly scan the content
-of each page for something that interests them without having to scroll
-(assuming that the number of post per page is not too big).
+一旦你有足够多的帖子，你可能想做的另一件事
+是打开为博客生成目录的功能
+索引页面，让读者有机会快速浏览内容
+无需滚动，即可在每页上找到他们感兴趣的内容
+（假设每页的帖子数量不太大）。
 
-!!! example "Turn on the table of contents feature"
+!!! example "打开目录功能"
 
-    To produce a table of contents for the blog index pages, add the following
-    to the configuration of the blog plugin:
+    要为博客索引页生成目录，请添加以下内容
+    博客插件的配置：
 
     ```yaml hl_lines="2"
     - blog:
@@ -432,23 +432,23 @@ of each page for something that interests them without having to scroll
         # ...
     ```
 
-## Custom slugs
+## 定制蛞蝓
 
-If, for some reason, you are not happy with the way that Material for MkDocs
-turns headings into slugs, you can create your own slugify function or you
-can manually define a slug for a specific post.
+如果出于某种原因，您对Material for MkDocs方式不满意
+将标题转换为slugs，您可以创建自己的slugify函数，或者
+可以手动为特定帖子定义一个slug。
 
-!!! example "Slugify function"
+!!! example "Slugify功能"
 
-    To define your own slugify function, you need to write a Python function
-    that converts text into a slug given additional arguments from the
-    configuration. You also need to write a function that returns that
-    function.
+    要定义自己的slugify函数，您需要编写一个Python函数
+    在给定来自的额外参数的情况下，将文本转换为slug
+    配置。你还需要编写一个函数来返回
+    功能。
 
-    Say you want to define two slugify functions that you can switch between.
-    The first one returns a slug similar to what the default slugify function
-    produces. The second one cuts the result of that up into words and returns
-    a slug based on a maximum of five of them:
+    假设你想定义两个可以切换的slugify函数。
+    第一个函数返回一个类似于默认slugify函数的slug
+    生产。第二个将结果切割成文字并返回
+    基于最多五个的蛞蝓：
 
     ```python
     import re, functools, unicodedata
@@ -474,9 +474,9 @@ can manually define a slug for a specific post.
             return functools.partial(_make_slug_short, **kwargs)
         return functools.partial(_make_slug, **kwargs)
     ```
-    Save this code in `ext/slugs.py` and also add an (empty) `__init__.py`
-    file to indicate that the directory is a module. Now you can configure
-    your custom slugify code like this:
+    将此代码保存在`ext/slugs.py `中，并添加一个（空）`__init__.py`
+    文件，以指示该目录是一个模块。现在您可以配置
+    您的自定义slugify代码如下：
 
     ```yaml hl_lines="4-6"
     plugins:
@@ -487,19 +487,19 @@ can manually define a slug for a specific post.
             short: true
     ```
 
-    Change the heading of a blog post to be longer than five words and observe
-    how the slugify function shortens the URL. Change the `short` attribute to
-    `false` and you can turn this off again.
+    将博客文章的标题改为五个字以上，并观察
+    slugify函数如何缩短URL。将“short”属性更改为
+    `false，你可以再次关闭它。
 
-If you want to influence the slug only for a single blog post, you can define
-it manually by specifying it in the header of the post. Note that this is meant
-as a last resort option. Specifying a custom slug manually for every post would
-be tedious.
+如果你只想对一篇博客文章施加影响，你可以定义
+通过在帖子的标题中手动指定它。请注意，这是指
+作为最后的选择。为每个帖子手动指定一个自定义slug
+乏味。
 
-!!! example "Manually define slug"
+!!! example "手动定义slug"
 
-    If, for example, you wanted the slug to be 'ny-eve'  instead of the somewhat
-    lengthy 'happy-new-years-eve', you could add the following:
+    例如，如果你想让蛞蝓变成“ny-eve”而不是“something”
+    漫长的“新年快乐夜”，你可以添加以下内容：
 
     ```hl_lines="7"
     ---
@@ -512,14 +512,14 @@ be tedious.
     ---
     ```
 
-    The URL for this post should now be
+    此帖子的URL现在应该是
     `http://localhost:8000/blog/2023/01/31/ny-eve/`.
 
-## What's next?
+## 接下来是什么？
 
-You may want to increase engagement with your blog by allowing people to
-subscribe to an RSS feed, by providing links to your social media profiles, by
-providing share and like buttons, or by setting up a comment system.
-The [engagement and dissemination tutorial] walks you through setting these up.
+你可能想通过允许人们
+通过提供指向您的社交媒体个人资料的链接，订阅RSS提要
+提供分享和点赞按钮或通过设置评论系统。
+[engagement and dissemination tutorial]将引导您完成这些设置。
 
 [engagement and dissemination tutorial]: engage.md

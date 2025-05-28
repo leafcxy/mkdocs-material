@@ -1,25 +1,25 @@
-# Changing the colors
+# 更改颜色
 
-As any proper Material Design implementation, Material for MkDocs supports
-Google's original [color palette], which can be easily configured through
-`mkdocs.yml`. Furthermore, colors can be customized with a few lines of CSS to
-fit your brand's identity by using [CSS variables][custom colors].
+作为任何适当的材料设计实施，MkDocs材料支持
+谷歌的原始[调色板]，可以通过以下方式轻松配置
+`mkdocs.yml`。此外，颜色可以通过几行CSS进行定制
+通过使用[CSS变量][自定义颜色]来适应您的品牌标识。
 
   [color palette]: http://www.materialui.co/colors
   [custom colors]: #custom-colors
 
-## Configuration
+## 配置
 
-### Color palette
+### 调色板
 
-#### Color scheme
+#### 配色方案
 
 <!-- md:version 5.2.0 -->
 <!-- md:default `default` -->
 
-Material for MkDocs supports two color schemes: a __light mode__, which is just
-called `default`, and a __dark mode__, which is called `slate`. The color scheme
-can be set via `mkdocs.yml`:
+MkDocs的材质支持两种配色方案：一种是__light模式__，它只是
+称为“默认”，以及一个名为“板岩”的__dark模式。配色方案
+可以通过`mkdocs.yml`进行设置：
 
 ``` yaml
 theme:
@@ -27,7 +27,7 @@ theme:
     scheme: default
 ```
 
-Click on a tile to change the color scheme:
+单击互动程序以更改配色方案：
 
 <div class="mdx-switch">
   <button data-md-color-scheme="default"><code>default</code></button>
@@ -50,14 +50,14 @@ Click on a tile to change the color scheme:
   })
 </script>
 
-#### Primary color
+#### 原色
 
 <!-- md:version 0.2.0 -->
 <!-- md:default `indigo` -->
 
-The primary color is used for the header, the sidebar, text links and several
-other components. In order to change the primary color, set the following value
-in `mkdocs.yml` to a valid color name:
+主色用于标题、侧边栏、文本链接和几个
+其他组件。要更改原色，请设置以下值
+在`mkdocs.yml`中设置一个有效的颜色名称：
 
 ``` yaml
 theme:

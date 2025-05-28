@@ -1,22 +1,22 @@
-# Changing the logo and icons
+# 更改徽标和图标
 
-When installing Material for MkDocs, you immediately get access to _over 8,000
-icons_ ready to be used for customization of specific parts of the theme and/or
-when writing your documentation in Markdown. Not enough? You can also add
-[additional icons] with minimal effort.
+安装MkDocs材料时，您可以立即访问8000多个
+icons _可用于定制主题的特定部分和/或
+在Markdown中编写文档时。不够？您还可以添加
+[附加图标]只需最小的努力。
 
   [additional icons]: #additional-icons
 
-## Configuration
+## 配置
 
-### Logo
+### 标志
 
 <!-- md:version 0.1.0 -->
 <!-- md:default `material/library` -->
 
-The logo can be changed to a user-provided image (any type, incl. `*.png` and
-`*.svg`) located in the `docs` folder, or to any icon bundled with the theme.
-Add the following lines to `mkdocs.yml`:
+徽标可以更改为用户提供的图像（任何类型，包括“*.png”和
+`*.svg），或与主题捆绑在一起的任何图标。
+将以下行添加到`mkdocs.yml`中：
 
 === ":octicons-image-16: Image"
 
@@ -46,22 +46,22 @@ Add the following lines to `mkdocs.yml`:
 
   [icon search]: ../reference/icons-emojis.md#search
 
-Normally, the logo in the header and sidebar links to the homepage of the
-documentation, which is the same as `site_url`. This behavior can be changed
-with the following configuration:
+通常，标题和侧边栏中的徽标链接到
+文档，与“site_url”相同。此行为可以更改
+具有以下配置：
 
 ``` yaml
 extra:
   homepage: https://example.com
 ```
 
-### Favicon
+### 图标
 
 <!-- md:version 0.1.0 -->
 <!-- md:default [`assets/images/favicon.png`][Favicon default] -->
 
-The favicon can be changed to a path pointing to a user-provided image, which
-must be located in the `docs` folder. Add the following lines to `mkdocs.yml`:
+favicon可以更改为指向用户提供的图像的路径
+必须位于“文档”文件夹中。将以下行添加到`mkdocs.yml`中：
 
 ``` yaml
 theme:
@@ -70,12 +70,12 @@ theme:
 
   [Favicon default]: https://github.com/squidfunk/mkdocs-material/blob/master/material/templates/assets/images/favicon.png
 
-### Site icons
+### 网站图标
 
 [:octicons-tag-24: 9.2.0][Site icon support]
 
-Most icons you see on your site, such as navigation icons, can also be changed. For example,
-to change the navigation arrows in the footer, add the following lines to `mkdocs.yml`:
+您在网站上看到的大多数图标，如导航图标，也可以更改。例如，
+要更改页脚中的导航箭头，请在`mkdocs.yml`中添加以下行：
 
 ```yaml
 theme:
@@ -84,7 +84,7 @@ theme:
     next: fontawesome/solid/angle-right
 ```
 
-The following is a complete list of customizable icons used by the theme:
+以下是主题使用的可自定义图标的完整列表：
 
 | Icon name    | Purpose                                                                       |
 |:-------------|:------------------------------------------------------------------------------|
@@ -105,15 +105,15 @@ The following is a complete list of customizable icons used by the theme:
 
   [Site icon support]: https://github.com/squidfunk/mkdocs-material/releases/tag/9.2.0
 
-## Customization
+## 自定义
 
-### Additional icons
+### 其他图标
 
-In order to use custom icons, [extend the theme] and create a new folder named
-`.icons` in the [`custom_dir`][custom_dir] you want to use for overrides.
-Next, add your `*.svg` icons into a subfolder of the `.icons` folder. Let's say
-you downloaded and unpacked the [Bootstrap] icon set, and want to add it to
-your project documentation. The structure of your project should look like this:
+为了使用自定义图标，[扩展主题]并创建一个名为的新文件夹
+`要用于覆盖的[custom_dir][custom_dir]中的.icons。
+接下来，将您的`*.svg`图标添加到`.icons`文件夹的子文件夹中。比如说
+您下载并解压缩了[Bootstrap]图标集，并希望将其添加到
+您的项目文档。项目的结构应该如下：
 
 ``` { .sh .no-copy }
 .
@@ -124,7 +124,7 @@ your project documentation. The structure of your project should look like this:
 └─ mkdocs.yml
 ```
 
-Then, add the following lines to `mkdocs.yml`:
+然后，在`mkdocs.yml`中添加以下行：
 
 ``` yaml
 markdown_extensions:
@@ -136,13 +136,13 @@ markdown_extensions:
           - overrides/.icons
 ```
 
-You can now use all :fontawesome-brands-bootstrap: Bootstrap icons anywhere in
-Markdown files, as well as everywhere icons can be used in `mkdocs.yml`.
-However, note that the syntaxes are slightly different:
+现在，您可以在任何地方使用所有：fontawesome brands bootstrap：bootstrap图标
+Markdown文件以及任何地方的图标都可以在`mkdocs.yml`中使用。
+但是，请注意，语法略有不同：
 
-- __Using icons in configuration__: take the path of the `*.svg` icon file
-  starting at the `.icons` folder and drop the file extension, e.g. for
-  `.icons/bootstrap/envelope-paper.svg`, use:
+- __在configuration__中使用图标：采用`*.svg`图标文件的路径
+  从“.icons”文件夹开始，删除文件扩展名，例如for
+  `.icons/bootstrap/信封纸.svg，使用：
 
     ``` yaml
     theme:
@@ -150,15 +150,15 @@ However, note that the syntaxes are slightly different:
         logo: bootstrap/envelope-paper
     ```
 
-- __Using icons in Markdown files__: additionally to taking the path from the
-  `.icons` folder as noted above, replace all `/` with `-` and enclose the icon
-  shortcode in two colons:
+- __在Markdown文件中使用图标__：除了从
+  `如上所述，将.icons文件夹中的所有“/”替换为“-”，并将图标括起来
+  用两个冒号表示的短代码：
 
     ```
     :bootstrap-envelope-paper:
     ```
 
-For further notes on icon usage, please consult the [icon reference].
+有关图标使用的更多说明，请参阅[图标参考]。
 
   [extend the theme]: ../customization.md#extending-the-theme
   [custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir

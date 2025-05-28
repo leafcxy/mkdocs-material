@@ -1,24 +1,24 @@
-# Setup
+# 安装
 
-Material for MkDocs offers a wide range of options for customizing your
-documentation. In this section, we will explain how you can create a meaningful
-structure for your site, change the look and feel, add a blog and comment system,
-and build a highly optimized site.
+MkDocs材料提供了广泛的选项，用于定制您的
+文档。在本节中，我们将解释如何创建一个有意义的
+为您的网站构建结构，改变外观和感觉，添加博客和评论系统，
+并构建一个高度优化的网站。
 
-## Site structure
+## 站点结构
 
-Set up and customize the structure of your documentation by configuring the
-header and footer to your taste, choosing among many modes of navigation,
-setting up site search, and more.
+通过配置来设置和自定义文档的结构
+根据您的喜好选择页眉和页脚，在多种导航模式中进行选择，
+设置网站搜索等。
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-earth-americas: __[Language]__ – Choose out of the 60+ supported languages or add a new one
-- :material-page-layout-sidebar-left: __[Navigation]__ – Create a clear, concise, and comprehensive navigation structure
-- :material-page-layout-header: __[Header]__ – Customize the behavior of the header, add an announcement bar
-- :material-page-layout-footer: __[Footer]__ – Add links to your social media profiles or websites in the footer
-- :material-tab-search: __[Search]__ – Set up and configure search, running entirely in the user's browser
-- :material-tag-plus-outline: __[Tags]__ – Categorize your pages with tags and group related pages
+- :fontawesome-solid-earth-americas: __[Language]__ – 从支持的60多种语言中选择或添加一种新语言
+- :material-page-layout-sidebar-left: __[Navigation]__ – 创建清晰、简洁、全面的导航结构
+- :material-page-layout-header: __[Header]__ – 自定义标题的行为，添加公告栏
+- :material-page-layout-footer: __[Footer]__ – 在页脚中添加指向您的社交媒体个人资料或网站的链接
+- :material-tab-search: __[Search]__ – 设置和配置搜索，完全在用户的浏览器中运行
+- :material-tag-plus-outline: __[Tags]__ – 使用标签和组相关页面对页面进行分类
 
 </div>
 
@@ -30,18 +30,18 @@ setting up site search, and more.
   [Tags]: setting-up-tags.md
 
 
-## Appearance
+## 外貌
 
-Match your brand's colors, fonts, icons, logo, and more with a few lines of
-configuration – Material for MkDocs makes it easy to extend the basic
-configuration or alter the appearance.
+用几行文字匹配你的品牌的颜色、字体、图标、徽标等
+配置–MkDocs的材料使扩展基本功能变得容易
+配置或更改外观。
 
 <div class="grid cards" markdown>
 
-- :material-brush-variant: __[Colors]__ – Change colors with an existing color palette or customize with CSS
-- :material-format-font: __[Fonts]__ – Choose among 1,000 Google Fonts or load self-hosted fonts
-- :material-google-downasaur: __[Logo & Icons]__ – Change the logo, use any of the 8,000+ icons, or add new ones
-- :material-cards-variant: __[Social Cards]__ – Automatically create social media previews when sharing links
+- :material-brush-variant: __[Colors]__ – 使用现有调色板更改颜色或使用CSS进行自定义
+- :material-format-font: __[Fonts]__ – 从1000种谷歌字体中选择或加载自托管字体
+- :material-google-downasaur: __[Logo & Icons]__ – 更改徽标，使用8000多个图标中的任何一个，或添加新图标
+- :material-cards-variant: __[Social Cards]__ – 共享链接时自动创建社交媒体预览
 
 </div>
 
@@ -50,17 +50,17 @@ configuration or alter the appearance.
   [Logo & Icons]: changing-the-logo-and-icons.md
   [Social Cards]: setting-up-social-cards.md
 
-## Content
+## 所容纳之物
 
-Create a blog, integrate a comment system, connect a git repository, and set up
-versioned documentation that matches your project's versioning methodology.
+创建博客，集成评论系统，连接git存储库，并设置
+与项目版本控制方法相匹配的版本化文档。
 
 <div class="grid cards" markdown>
 
-- :material-book-open-outline: __[Blog]__ – Set up a standalone blog or host it alongside your documentation
-- :material-comment-text-outline: __[Comment System]__ – Add a third-party comment system on any page or footer
-- :octicons-versions-16: __[Versioning]__ – Deploy multiple versions by integrating with external utilities
-- :octicons-repo-16: __[Repository]__ – Connect your documentation to your git repository
+- :material-book-open-outline: __[Blog]__ – 设置一个独立的博客或将其与文档放在一起
+- :material-comment-text-outline: __[Comment System]__ – 在任何页面或页脚上添加第三方评论系统
+- :octicons-versions-16: __[Versioning]__ – 通过与外部实用程序集成部署多个版本
+- :octicons-repo-16: __[Repository]__ – 将文档连接到git存储库
 
 </div>
 
@@ -69,18 +69,18 @@ versioned documentation that matches your project's versioning methodology.
   [Versioning]: setting-up-versioning.md
   [Repository]: adding-a-git-repository.md
 
-## Optimization
+## 优化
 
-Add site analytics and build an optimized site by adding automatic image
-compression, complying with GDPR data privacy regulations, and making it
-offline-capable.
+添加网站分析，并通过添加自动图像构建优化的网站
+压缩，遵守GDPR数据隐私法规，并使其
+离线功能。
 
 <div class="grid cards" markdown>
 
-- :material-google-analytics: __[Site analytics]__ – Learn how your users experience your documentation
-- :material-screwdriver: __[Optimized site]__ – Create optimized sites that rank great on search engines
-- :octicons-lock-16: __[Data Privacy]__ – Ensure compliance with data privacy regulations
-- :octicons-cloud-offline-16: __[Offline usage]__ – Build an online and offline-capable documentation
+- :material-google-analytics: __[Site analytics]__ – 了解您的用户如何体验您的文档
+- :material-screwdriver: __[Optimized site]__ – 创建在搜索引擎上排名靠前的优化网站
+- :octicons-lock-16: __[Data Privacy]__ – 确保遵守数据隐私法规
+- :octicons-cloud-offline-16: __[Offline usage]__ – 构建具有在线和离线功能的文档
 
 </div>
 

@@ -3,48 +3,48 @@ search:
   boost: 1.05
 ---
 
-# Setting up site search
+# 设置网站搜索
 
-Material for MkDocs provides an excellent client-side search implementation,
-omitting the need for the integration of third-party services, which might
-not be compliant with privacy regulations. Moreover, search even works
-[offline], allowing users to download your documentation.
+Material for MkDocs提供了一个出色的客户端搜索实现，
+省略了集成第三方服务的需要，这可能
+不符合隐私法规。此外，搜索甚至有效
+[offline]，允许用户下载您的文档。
 
   [offline]: building-for-offline-usage.md
 
-## Configuration
+## 配置
 
-### Built-in search plugin
+### 内置搜索插件
 
 <!-- md:version 0.1.0 -->
 <!-- md:plugin -->
 
-The built-in search plugin integrates seamlessly with Material for MkDocs,
-adding multilingual client-side search with [lunr] and [lunr-languages]. It's
-enabled by default, but must be re-added to `mkdocs.yml` when other plugins
-are used:
+内置的搜索插件与Material for MkDocs无缝集成，
+使用[lunr]和[lunr语言]添加多语言客户端搜索。it is 的常用口语形式
+默认情况下启用，但当其他插件出现时，必须重新添加到“mkdocs.yml”中
+使用：
 
 ``` yaml
 plugins:
   - search
 ```
 
-For a list of all settings, please consult the [plugin documentation].
+有关所有设置的列表，请参阅[plugin documentation]。
 
   [plugin documentation]: ../plugins/search.md
 
   [lunr]: https://lunrjs.com
   [lunr-languages]: https://github.com/MihaiValentin/lunr-languages
 
-### Search suggestions
+### 搜索建议
 
 <!-- md:version 7.2.0 -->
 <!-- md:feature -->
 <!-- md:flag experimental -->
 
-When search suggestions are enabled, the search will display the likeliest
-completion for the last word which can be accepted with the ++arrow-right++ key.
-Add the following lines to `mkdocs.yml`:
+启用搜索建议后，搜索将显示最有可能的
+最后一个单词的完成，可以用++右箭头++键接受。
+将以下行添加到`mkdocs.yml`中：
 
 ``` yaml
 theme:
@@ -52,20 +52,20 @@ theme:
     - search.suggest
 ```
 
-Searching for [:octicons-search-24: search su][Search suggestions example]
-yields ^^search suggestions^^ as a suggestion.
+正在搜索[：octicons-search-24:search-su][Search suggestions example]
+生成^^搜索建议^^作为建议。
 
   [Search suggestions example]: ?q=search+su
 
-### Search highlighting
+### 搜索突出显示
 
 <!-- md:version 7.2.0 -->
 <!-- md:feature -->
 <!-- md:flag experimental -->
 
-When search highlighting is enabled and a user clicks on a search result,
-Material for MkDocs will highlight all occurrences after following the link.
-Add the following lines to `mkdocs.yml`:
+当启用搜索突出显示并且用户点击搜索结果时，
+点击链接后，Material for MkDocs将突出显示所有事件。
+将以下行添加到`mkdocs.yml`中：
 
 ``` yaml
 theme:
@@ -73,19 +73,19 @@ theme:
     - search.highlight
 ```
 
-Searching for [:octicons-search-24: code blocks][Search highlighting example]
-highlights all occurrences of both terms.
+搜索 [:octicons-search-24: code blocks][Search highlighting example]
+突出显示这两个术语的所有出现。
 
   [Search highlighting example]: ../reference/code-blocks.md?h=code+blocks
 
-### Search sharing
+### 搜索共享
 
 <!-- md:version 7.2.0 -->
 <!-- md:feature -->
 
-When search sharing is activated, a :material-share-variant: share button is
-rendered next to the reset button, which allows to deep link to the current
-search query and result. Add the following lines to `mkdocs.yml`:
+当搜索共享被激活时，一个：material share变体：共享按钮是
+在重置按钮旁边呈现，允许深度链接到当前
+搜索查询和结果。将以下行添加到`mkdocs.yml`中：
 
 ``` yaml
 theme:
@@ -93,19 +93,19 @@ theme:
     - search.share
 ```
 
-When a user clicks the share button, the URL is automatically copied to the
-clipboard.
+当用户单击共享按钮时，URL会自动复制到
+剪贴板。
 
-## Usage
+## 使用
 
-### Search boosting
+### 搜索增强
 
 <!-- md:version 8.3.0 -->
 <!-- md:flag metadata -->
 
-Pages can be boosted in search with the front matter `search.boost` property,
-which will make them rank higher. Add the following lines at the top of a
-Markdown file:
+页面可以在搜索中使用“search.boost”属性进行增强，
+这将使他们排名更高。在a的顶部添加以下行
+Markdown文件：
 
 === ":material-arrow-up-circle: Rank up"
 
@@ -134,15 +134,15 @@ Markdown file:
     ...
     ```
 
-### Search exclusion
+### 搜索排除
 
 <!-- md:version 9.0.0 -->
 <!-- md:flag metadata -->
 <!-- md:flag experimental -->
 
-Pages can be excluded from search with the front matter `search.exclude`
-property, removing them from the index. Add the following lines at the top of a
-Markdown file:
+可以使用“search.exclude”作为标题将页面排除在搜索之外`
+属性，将其从索引中删除。在a的顶部添加以下行
+Markdown文件：
 
 ``` yaml
 ---
@@ -154,11 +154,11 @@ search:
 ...
 ```
 
-#### Excluding sections
+#### 不包括章节
 
-When [Attribute Lists] is enabled, specific sections of pages can be excluded
-from search by adding the `data-search-exclude` pragma after a Markdown
-heading:
+启用[Attribute Lists]时，可以排除页面的特定部分
+通过在Markdown后添加“数据搜索排除”语法来进行搜索
+标题：
 
 === ":octicons-file-code-16: `docs/page.md`"
 
@@ -196,11 +196,11 @@ heading:
 
   [Attribute Lists]: extensions/python-markdown.md#attribute-lists
 
-#### Excluding blocks
+#### 不包括区块
 
-When [Attribute Lists] is enabled, specific sections of pages can be excluded
-from search by adding the `data-search-exclude` pragma after a Markdown
-inline- or block-level element:
+启用[Attribute Lists]时，可以排除页面的特定部分
+通过在Markdown后添加“数据搜索排除”语法来进行搜索
+内联或块级元素：
 
 === ":octicons-file-code-16: `docs/page.md`"
 

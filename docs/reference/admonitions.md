@@ -2,18 +2,18 @@
 icon: material/alert-outline
 ---
 
-# Admonitions
+# 警告
 
-Admonitions, also known as _call-outs_, are an excellent choice for including
-side content without significantly interrupting the document flow. Material for
-MkDocs provides several different types of admonitions and allows for the
-inclusion and nesting of arbitrary content.
+警告，也称为全面警告，是包括以下内容的绝佳选择
+而不会显著中断文档流。材料用于
+MkDocs提供了几种不同类型的警告，并允许
+包含和嵌套任意内容。
 
-## Configuration
+## 配置
 
-This configuration enables admonitions, allows to make them collapsible and to
-nest arbitrary content inside admonitions. Add the following lines to
-`mkdocs.yml`:
+此配置启用警告，允许将其折叠并
+在警告中嵌套任意内容。将以下行添加到
+`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -22,7 +22,7 @@ markdown_extensions:
   - pymdownx.superfences
 ```
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [Admonition]
 - [Details]
@@ -32,13 +32,13 @@ See additional configuration options:
   [Details]: ../setup/extensions/python-markdown-extensions.md#details
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
 
-### Admonition icons
+### 警告图标
 
 <!-- md:version 8.3.0 -->
 
-Each of the supported admonition types has a distinct icon, which can be changed
-to any icon bundled with the theme, or even a [custom icon]. Add the following
-lines to `mkdocs.yml`:
+每种支持的警告类型都有一个不同的图标，可以更改
+任何与主题捆绑在一起的图标，甚至是[自定义图标]。添加以下内容
+指向`mkdocs.yml`的行：
 
 ``` yaml
 theme:
@@ -47,8 +47,8 @@ theme:
       <type>: <icon> # (1)!
 ```
 
-1.  Enter a few keywords to find the perfect icon using our [icon search] and
-    click on the shortcode to copy it to your clipboard:
+1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+    单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
       <input class="md-input md-input--stretch mdx-iconsearch__input" placeholder="Search icon" data-mdx-component="iconsearch-query" value="alert" />
@@ -58,7 +58,7 @@ theme:
       </div>
     </div>
 
-??? example "Expand to show alternate icon sets"
+??? example "展开以显示备选图标集"
 
     === ":octicons-mark-github-16: Octicons"
 
@@ -105,11 +105,11 @@ theme:
   [supported types]: #supported-types
   [icon search]: icons-emojis.md#search
 
-## Usage
+## 使用
 
-Admonitions follow a simple syntax: a block starts with `!!!`, followed by a
-single keyword used as a [type qualifier]. The content of the block follows on
-the next line, indented by four spaces:
+警告遵循一个简单的语法：块以`！！！开头！！！`，然后是a
+用作[类型限定符]的单个关键字。该块的内容如下
+下一行，缩进四个空格：
 
 ``` markdown title="Admonition"
 !!! note
@@ -131,11 +131,11 @@ the next line, indented by four spaces:
 
   [type qualifier]: #supported-types
 
-### Changing the title
+### 更改标题
 
-By default, the title will equal the type qualifier in titlecase. However, it
-can be changed by adding a quoted string containing valid Markdown (including
-links, formatting, ...) after the type qualifier:
+默认情况下，标题将等于标题中的类型限定符。然而，它
+可以通过添加包含有效Markdown的引号字符串（包括
+链接、格式化、。..）在类型限定符之后：
 
 ``` markdown title="Admonition with custom title"
 !!! note "Phasellus posuere in sem ut cursus"
@@ -155,10 +155,10 @@ links, formatting, ...) after the type qualifier:
 
 </div>
 
-### Nested admonitions
+### 嵌套的警告
 
-You can also include nested admonitions in your documentation. To do this, you
-can use your existing admonitions and indent the desired ones:
+您还可以在文档中包含嵌套的警告。要做到这一点，你
+可以使用现有的警告并缩进所需的警告：
 
 ``` markdown title="Nested Admonition"
 !!! note "Outer Note"
@@ -189,11 +189,11 @@ can use your existing admonitions and indent the desired ones:
         massa, nec semper lorem quam in massa.
 </div>
 
-### Removing the title
+### 删除标题
 
-Similar to [changing the title], the icon and title can be omitted entirely by
-adding an empty string directly after the type qualifier. Note that this will
-not work for [collapsible blocks]:
+与[更改标题]类似，图标和标题可以通过以下方式完全省略
+在类型限定符后直接添加空字符串。请注意，这将
+不适用于[可折叠块]：
 
 ``` markdown title="Admonition without title"
 !!! note ""
@@ -216,11 +216,11 @@ not work for [collapsible blocks]:
   [changing the title]: #changing-the-title
   [collapsible blocks]: #collapsible-blocks
 
-### Collapsible blocks
+### 可折叠砌块
 
-When [Details] is enabled and an admonition block is started with `???` instead
-of `!!!`, the admonition is rendered as an expandable block with a small toggle
-on the right side:
+启用[详细信息]并以“？？”开头警告块时？？？`相反
+的！！！`，警告被呈现为一个带有小切换的可扩展块
+在右侧：
 
 ``` markdown title="Admonition, collapsible"
 ??? note
@@ -260,11 +260,11 @@ Adding a `+` after the `???` token renders the block expanded:
 
 </div>
 
-### Inline blocks
+### 内联块
 
-Admonitions can also be rendered as inline blocks (e.g., for sidebars), placing
-them to the right using the `inline` + `end` modifiers, or to the left using
-only the `inline` modifier:
+警告也可以呈现为内联块（例如，用于侧边栏），放置
+使用“inline”+“end”修饰符将它们向右移动，或使用
+只有`inline`修饰符：
 
 === ":octicons-arrow-right-16: inline end"
 
@@ -306,23 +306,23 @@ only the `inline` modifier:
 
     Use `inline` to align to the left (right for rtl languages).
 
-__Important__: admonitions that use the `inline` modifiers _must_ be declared
-prior to the content block you want to place them beside. If there's
-insufficient space to render the admonition next to the block, the admonition
-will stretch to the full width of the viewport, e.g., on mobile viewports.
+__重要事项__: 使用内联修饰符_must_的警告必须声明
+在内容块之前，您要将它们放在旁边。如果有
+没有足够的空间在块旁边显示警告，警告
+将拉伸到视口的整个宽度，例如在移动视口上。
 
-### Supported types
+### 支持的类型
 
-Following is a list of type qualifiers provided by Material for MkDocs, whereas
-the default type, and thus fallback for unknown type qualifiers, is `note`[^1]:
+以下是Material为MkDocs提供的类型限定符列表，而
+默认类型，也就是未知类型限定符的回退，是`note`[^1]：
 
   [^1]:
-    Previously, some of the supported types defined more than one qualifier.
-    For example, authors could use `summary` or `tldr` as alternative qualifiers
-    to render an [`abstract`](#+type:abstract) admonition. As this increased the
-    size of the CSS that is shipped with Material for MkDocs, the additional
-    type qualifiers are now all deprecated and will be removed in the next major
-    version. This will also be mentioned in the upgrade guide.
+    以前，一些支持的类型定义了多个限定符。
+    例如，作者可以使用“summary”或“tldr”作为替代限定词
+    呈现[抽象]（#+类型：抽象）警告。随着这一增长
+    MkDocs材料附带的CSS大小，额外
+    类型限定符现在都已弃用，并将在下一个主要版本中删除
+    版本。这也将在升级指南中提及。
 
 <!-- md:option type:note -->
 
@@ -420,12 +420,12 @@ the default type, and thus fallback for unknown type qualifiers, is `note`[^1]:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-## Customization
+## 自定义
 
-### Classic admonitions
+### 经典训诫
 
-Prior to version <!-- md:version 8.5.6 -->, admonitions had a slightly
-different appearance:
+在版本<！--md:版本8.5.6-->，警告有点
+不同外观：
 
 !!! classic "Note"
 
@@ -433,8 +433,8 @@ different appearance:
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-If you want to restore this appearance, add the following CSS to an
-[additional style sheet]:
+如果要恢复此外观，请将以下CSS添加到
+[附加样式表]：
 
 <style>
   .md-typeset .admonition.classic {
@@ -460,11 +460,11 @@ If you want to restore this appearance, add the following CSS to an
       - stylesheets/extra.css
     ```
 
-### Custom admonitions
+### 自定义警告
 
-If you want to add a custom admonition type, all you need is a color and an
-`*.svg` icon. Copy the icon's code from the [`.icons`][custom icons] folder
-and add the following CSS to an [additional style sheet]:
+如果你想添加自定义警告类型，你只需要一种颜色和
+`*.svg图标。从[`.icons`][custom-icons]文件夹复制图标的代码
+并将以下CSS添加到[附加样式表]中：
 
 <style>
   :root {
@@ -515,7 +515,7 @@ and add the following CSS to an [additional style sheet]:
       - stylesheets/extra.css
     ```
 
-After applying the customization, you can use the custom admonition type:
+应用自定义后，您可以使用自定义警告类型：
 
 ``` markdown title="Admonition with custom type"
 !!! pied-piper "Pied Piper"

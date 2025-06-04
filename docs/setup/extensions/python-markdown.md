@@ -1,29 +1,29 @@
 # Python Markdown
 
-Material for MkDocs supports a large number of [Python Markdown] extensions,
-which is part of what makes it so attractive for technical writing. Following
-is a list of all supported extensions, linking to the relevant sections of the
-reference for which features they need to be enabled.
+MkDocs的材料支持大量的[Python Markdown]扩展，
+这也是它对技术写作如此有吸引力的部分原因。下列的
+是所有支持的扩展的列表，链接到
+参考需要启用哪些功能。
 
   [Python Markdown]: https://python-markdown.github.io/
 
-## Supported extensions
+## 支持的扩展
 
-### Abbreviations
+### 缩写
 
 <!-- md:version 1.0.0 -->
 <!-- md:extension [abbr][Abbreviations] -->
 
-The [Abbreviations] extension adds the ability to add a small tooltip to an
-element, by wrapping it with an `abbr` tag. Only plain text (no markup) is
-supported. Enable it via `mkdocs.yml`:
+[缩写]扩展增加了向
+元素，通过用`abbr`标签包裹它。只有纯文本（无标记）
+支持。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - abbr
 ```
 
-No configuration options are available. See reference for usage:
+没有可用的配置选项。使用方法见参考：
 
 - [Adding abbreviations]
 - [Adding a glossary]
@@ -32,21 +32,21 @@ No configuration options are available. See reference for usage:
   [Adding abbreviations]: ../../reference/tooltips.md#adding-abbreviations
   [Adding a glossary]: ../../reference/tooltips.md#adding-a-glossary
 
-### Admonition
+### 告诫
 
 <!-- md:version 0.1.0 -->
 <!-- md:extension [admonition][Admonition] -->
 
-The [Admonition] extension adds support for admonitions, more commonly known as
-_call-outs_, which can be defined in Markdown by using a simple syntax. Enable
-it via `mkdocs.yml`:
+[Admonition]扩展增加了对警告的支持，通常称为
+_call-outs_，可以使用简单的语法在Markdown中定义。使能够
+通过`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
   - admonition
 ```
 
-No configuration options are available. See reference for usage:
+没有可用的配置选项。使用方法见参考：
 
 - [Adding admonitions]
 - [Changing the title]
@@ -59,21 +59,21 @@ No configuration options are available. See reference for usage:
   [Removing the title]: ../../reference/admonitions.md#removing-the-title
   [Supported types]: ../../reference/admonitions.md#supported-types
 
-### Attribute Lists
+### 属性列表
 
 <!-- md:version 0.1.0 -->
 <!-- md:extension [attr_list][Attribute Lists] -->
 
-The [Attribute Lists] extension allows to add HTML attributes and CSS classes
-to [almost every][Attribute Lists limitations] Markdown inline- and block-level
-element with a special syntax. Enable it via `mkdocs.yml`:
+[Attribute Lists]扩展允许添加HTML属性和CSS类
+到[几乎所有][属性列表限制]Markdown内联和块级别
+具有特殊语法的元素。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - attr_list
 ```
 
-No configuration options are available. See reference for usage:
+没有可用的配置选项。使用方法见参考：
 
 - [Using annotations]
 - [Using grids]
@@ -94,21 +94,21 @@ No configuration options are available. See reference for usage:
   [Image alignment]: ../../reference/images.md#image-alignment
   [Image lazy-loading]: ../../reference/images.md#image-lazy-loading
 
-### Definition Lists
+### 定义列表
 
 <!-- md:version 1.1.0 -->
 <!-- md:extension [def_list][Definition Lists] -->
 
-The [Definition Lists] extension adds the ability to add definition lists (more
-commonly known as [description lists] – `dl` in HTML) via Markdown to a
-document. Enable it via `mkdocs.yml`:
+[Definition Lists]扩展增加了添加定义列表的能力（更多
+通常称为[描述列表]-HTML中的“dl”）通过Markdown转换为
+文件。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - def_list
 ```
 
-No configuration options are available. See reference for usage:
+没有可用的配置选项。使用方法见参考：
 
 - [Using definition lists]
 
@@ -116,20 +116,20 @@ No configuration options are available. See reference for usage:
   [description lists]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
   [Using definition lists]: ../../reference/lists.md#using-definition-lists
 
-### Footnotes
+### 脚注
 
 <!-- md:version 1.0.0 -->
 <!-- md:extension [footnotes][Footnotes] -->
 
-The [Footnotes] extension allows to define inline footnotes, which are then
-rendered below all Markdown content of a document. Enable it via `mkdocs.yml`:
+[Footnotes]扩展允许定义内联脚注，然后
+在文档的所有Markdown内容下方呈现。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - footnotes
 ```
 
-No configuration options are supported. See reference for usage:
+不支持任何配置选项。使用方法见参考：
 
 - [Adding footnote references]
 - [Adding footnote content]
@@ -138,27 +138,27 @@ No configuration options are supported. See reference for usage:
   [Adding footnote references]: ../../reference/footnotes.md#adding-footnote-references
   [Adding footnote content]: ../../reference/footnotes.md#adding-footnote-content
 
-### Markdown in HTML
+### HTML中的Markdown
 
 <!-- md:version 0.1.0 -->
 <!-- md:extension [md_in_html][Markdown in HTML] -->
 
-The [Markdown in HTML] extension allows for writing Markdown inside of HTML,
-which is useful for wrapping Markdown content with custom elements. Enable it
-via `mkdocs.yml`:
+[Markdown in HTML]扩展允许在HTML中编写Markdown，
+这对于用自定义元素包装Markdown内容非常有用。启用它
+通过`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
   - md_in_html
 ```
 
-> By default, Markdown ignores any content within a raw HTML block-level
-> element. With the `md_in_html` extension enabled, the content of a raw HTML
-> block-level element can be parsed as Markdown by including a `markdown`
-> attribute on the opening tag. The `markdown` attribute will be stripped from
-> the output, while all other attributes will be preserved.
+> 默认情况下，Markdown忽略原始HTML块级别内的任何内容
+> 元素。启用“md_in_html”扩展后，原始html的内容
+> 通过包含“Markdown”，块级元素可以被解析为Markdown`
+> 开始标记上的属性。`markdown`属性将被删除
+> 输出，而所有其他属性将被保留。
 
-No configuration options are available. See reference for usage:
+没有可用的配置选项。使用方法见参考：
 
 - [Using annotations]
 - [Using grids]
@@ -169,14 +169,14 @@ No configuration options are available. See reference for usage:
   [Using grids]: ../../reference/grids.md#usage
   [Image captions]: ../../reference/images.md#image-captions
 
-### Table of Contents
+### 目录
 
 <!-- md:version 0.1.0 -->
 <!-- md:extension [toc][Table of Contents] -->
 
-The [Table of Contents] extension automatically generates a table of contents
-from a document, which Material for MkDocs will render as part of the resulting
-page. Enable it via `mkdocs.yml`:
+[目录]扩展会自动生成目录
+从文档中，MkDocs的材料将作为结果的一部分呈现
+页面。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
@@ -184,14 +184,14 @@ markdown_extensions:
       permalink: true
 ```
 
-The following configuration options are supported:
+支持以下配置选项：
 
 <!-- md:option toc.title -->
 
 :   <!-- md:version 7.3.5 --> <!-- md:default computed --> –
-    This option sets the title of the table of contents in the right navigation
-    sidebar, which is normally automatically sourced from the translations for
-    the [site language] as set in `mkdocs.yml`:
+    此选项在右侧导航中设置目录的标题
+    侧边栏，通常自动来源于以下内容的翻译
+    在`mkdocs.yml`中设置的[站点语言]：
 
     ``` yaml
     markdown_extensions:
@@ -201,10 +201,10 @@ The following configuration options are supported:
 
 <!-- md:option toc.permalink -->
 
-:   <!-- md:default `false` --> This option adds an anchor link
-    containing the paragraph symbol `¶` or another custom symbol at the end of
-    each headline, exactly like on the page you're currently viewing, which
-    Material for MkDocs will make appear on hover:
+:   <!-- md:default `false` --> 此选项添加锚链接
+    在末尾包含段落符号“¶”或其他自定义符号
+    每个标题，与您当前查看的页面完全相同
+    MkDocs的材料将在鼠标悬停时显示：
 
     === "¶"
 
@@ -224,10 +224,10 @@ The following configuration options are supported:
 
 <!-- md:option toc.permalink_title -->
 
-:   <!-- md:default `Permanent link` --> This option sets the
-    title of the anchor link which is shown on hover and read by screen readers.
-    For accessibility reasons, it might be beneficial to change it to a more
-    discernable name, stating that the anchor links to the section itself:
+:   <!-- md:default `Permanent link` --> 此选项设置
+    悬停时显示并由屏幕阅读器读取的锚链接的标题。
+    出于可访问性的原因，将其更改为更易于访问的版本可能是有益的
+    可辨别的名称，说明锚点链接到该部分本身：
 
     ``` yaml
     markdown_extensions:
@@ -237,10 +237,10 @@ The following configuration options are supported:
 
 <!-- md:option toc.slugify -->
 
-:   <!-- md:default `toc.slugify` --> This option allows for
-    customization of the slug function. For some languages, the default may not
-    produce good and readable identifiers – consider using another slug function
-    like for example those from [Python Markdown Extensions][Slugs]:
+:   <!-- md:default `toc.slugify` --> 此选项允许
+    slug功能的定制。对于某些语言，默认值可能不是
+    生成良好且可读的标识符——考虑使用另一个slug函数
+    例如[Python Markdown扩展][Slugs]中的那些：
 
     === "Unicode"
 
@@ -262,10 +262,10 @@ The following configuration options are supported:
 
 <!-- md:option toc.toc_depth -->
 
-:   <!-- md:default `6` --> Define the range of levels to be
-    included in the table of contents. This may be useful for project
-    documentation with deeply structured headings to decrease the length of the
-    table of contents, or to remove the table of contents altogether:
+:   <!-- md:default `6` --> 定义要设置的级别范围
+    包括在目录中。这可能对项目有用
+    具有深度结构化标题的文档，以缩短文档的长度
+    目录，或完全删除目录：
 
     === "Hide levels 4-6"
 
@@ -283,9 +283,9 @@ The following configuration options are supported:
               toc_depth: 0
         ```
 
-The other configuration options of this extension are not officially supported
-by Material for MkDocs, which is why they may yield unexpected results. Use
-them at your own risk.
+此扩展的其他配置选项不受官方支持
+MkDocs的材料，这就是为什么它们可能会产生意想不到的结果。使用
+他们的风险由你自己承担。
 
   [Table of Contents]: https://python-markdown.github.io/extensions/toc/
   [site language]: ../changing-the-language.md#site-language
@@ -296,16 +296,16 @@ them at your own risk.
 <!-- md:version 0.1.0 -->
 <!-- md:extension [tables][Tables] -->
 
-The [Tables] extension adds the ability to create tables in Markdown by using a
-simple syntax. Enable it via `mkdocs.yml` (albeit it should be enabled by
-default):
+[Tables]扩展通过使用
+简单的语法。通过`mkdocs.yml`启用它（尽管它应该通过以下方式启用
+默认值）：
 
 ``` yaml
 markdown_extensions:
   - tables
 ```
 
-No configuration options are available. See reference for usage:
+没有可用的配置选项。使用方法见参考：
 
 - [Using data tables]
 - [Column alignment]
@@ -314,20 +314,20 @@ No configuration options are available. See reference for usage:
   [Using data tables]: ../../reference/data-tables.md#usage
   [Column alignment]: ../../reference/data-tables.md#column-alignment
 
-## Superseded extensions
+## 被取代的扩展
 
-The following [Python Markdown] extensions are not (or might not be) supported
-anymore, and are therefore not recommended for use. Instead, the alternatives
-should be considered.
+不支持（或可能不支持）以下[Python Markdown]扩展
+不再推荐使用。相反，替代方案
+应当予以考虑。
 
 ### Fenced Code Blocks
 
 <!-- md:version 0.1.0 -->
 <!-- md:extension [fenced_code_blocks][Fenced Code Blocks] -->
 
-Superseded by [SuperFences]. This extension might still work, but the
-[SuperFences] extension is superior in many ways, as it allows for arbitrary
-nesting, and is therefore recommended.
+被[超级围栏]取代。这个扩展可能仍然有效，但
+[SuperFences]扩展在许多方面都是优越的，因为它允许任意
+嵌套，因此建议。
 
   [Fenced Code Blocks]: https://python-markdown.github.io/extensions/fenced_code_blocks/
   [SuperFences]: https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
@@ -337,9 +337,9 @@ nesting, and is therefore recommended.
 <!-- md:version 0.1.0 -->
 <!-- md:extension [codehilite][CodeHilite] -->
 
-Superseded by [Highlight]. Support for CodeHilite was dropped in
-<!-- md:version 6.0.0 -->, as [Highlight] has a better integration with other
-essential extensions like [SuperFences] and [InlineHilite].
+被[突出显示]取代。对CodeHilite的支持已于年终止
+<！--md:version6.0.0-->，因为[Highlight]与其他工具有更好的集成
+基本扩展，如[超级围栏]和[内联Hilite]。
 
   [CodeHilite]: https://python-markdown.github.io/extensions/code_hilite/
   [CodeHilite support]: https://github.com/squidfunk/mkdocs-material/releases/tag/0.1.0

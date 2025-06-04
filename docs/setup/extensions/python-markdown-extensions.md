@@ -1,31 +1,31 @@
-# Python Markdown Extensions
+# Python Markdown扩展
 
-The [Python Markdown Extensions] package is an excellent collection of
-additional extensions perfectly suited for advanced technical writing. Material
-for MkDocs lists this package as an explicit dependency, so it's automatically
-installed with a supported version.
+[Python Markdown Extensions]包是一个出色的集合
+额外的扩展非常适合高级技术写作。材料
+对于MkDocs，它将此包列为显式依赖项，因此它会自动
+已安装受支持的版本。
 
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
 
-## Supported extensions
+## 支持的扩展
 
-In general, all extensions that are part of [Python Markdown Extensions] should
-work with Material for MkDocs. The following list includes all extensions that
-are natively supported, meaning they work without any further adjustments.
+一般来说，所有属于[Python Markdown extensions]的扩展都应该
+使用MkDocs的材料。以下列表包括所有扩展
+是原生支持的，这意味着它们无需任何进一步调整即可工作。
 
 ### Arithmatex
 
 <!-- md:version 1.0.0 -->
 <!-- md:extension [pymdownx.arithmatex][Arithmatex] -->
 
-The [Arithmatex] extension allows for rendering of block and inline block
-equations and integrates seamlessly with [MathJax][^1] – a library for
-mathematical typesetting. Enable it via `mkdocs.yml`:
+[Athmetex]扩展允许渲染块和内联块
+方程式，并与[MathJax][^1]无缝集成——一个用于
+数学排版。通过`mkdocs.yml`启用它：
 
   [^1]:
-    Other libraries like [KaTeX] are also supported and can be integrated with
-    some additional effort. See the [Arithmatex documentation on KaTeX] for
-    further guidance, as this is beyond the scope of Material for MkDocs.
+    其他库（如[KaTeX]）也受支持，可以与
+    一些额外的努力。请参阅[KaTeX上的Arithmatex文档]
+    进一步的指导，因为这超出了MkDocs材料的范围。
 
 ``` yaml
 markdown_extensions:
@@ -33,9 +33,9 @@ markdown_extensions:
       generic: true
 ```
 
-Besides enabling the extension in `mkdocs.yml`, a MathJax configuration and
-the JavaScript runtime need to be included, which can be done with a few lines
-of [additional JavaScript]:
+除了在`mkdocs.yml`中启用扩展之外，还有MathJax配置和
+需要包含JavaScript运行时，这可以用几行代码完成
+[附加JavaScript]：
 
 === ":octicons-file-code-16: `docs/javascripts/mathjax.js`"
 
@@ -61,7 +61,7 @@ of [additional JavaScript]:
     })
     ```
 
-    1. This integrates MathJax with [instant loading]
+    1. 这将MathJax与[即时加载]集成在一起
 
 
 === ":octicons-file-code-16: `mkdocs.yml`"
@@ -72,11 +72,11 @@ of [additional JavaScript]:
       - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
     ```
 
-The other configuration options of this extension are not officially supported
-by Material for MkDocs, which is why they may yield unexpected results. Use
-them at your own risk.
+此扩展的其他配置选项不受官方支持
+MkDocs的材料，这就是为什么它们可能会产生意想不到的结果。使用
+他们的风险由你自己承担。
 
-See reference for usage:
+使用方法见参考：
 
 - [Using block syntax]
 - [Using inline block syntax]
@@ -95,18 +95,18 @@ See reference for usage:
 <!-- md:version 0.1.0 -->
 <!-- md:extension [pymdownx.betterem][BetterEm] -->
 
-The [BetterEm] extension improves the detection of Markup to emphasize text
-in Markdown using special characters, i.e. for `**bold**` and `_italic_`
-formatting. Enable it via `mkdocs.yml`:
+[BetterEm]扩展改进了标记的检测，以强调文本
+在Markdown中使用特殊字符，即“**bold**”和“_italic”_`
+格式化。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.betterem
 ```
 
-The configuration options of this extension are not specific to Material for
-MkDocs, as they only impact the Markdown parsing stage. See the [BetterEm
-documentation][BetterEm] for more information.
+此扩展的配置选项并不特定于材质
+MkDocs，因为它们只影响Markdown解析阶段。请参阅[BetterEm
+文档][BetterEm]了解更多信息。
 
   [BetterEm]: https://facelessuser.github.io/pymdown-extensions/extensions/betterem/
 
@@ -115,17 +115,17 @@ documentation][BetterEm] for more information.
 <!-- md:version 1.0.0 -->
 <!-- md:extension [pymdownx.blocks.caption][Caption] -->
 
-The [Caption] extension adds the ability to add captions to any Markdown block,
-including images, tables, and code blocks. Enable it via `mkdocs.yml`:
+[Caption]扩展增加了向任何Markdown块添加标题的能力，
+包括图像、表格和代码块。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.blocks.caption
 ```
 
-The configuration options of this extension are not specific to Material for
-MkDocs, as they only impact the Markdown parsing stage. See the [Caption
-documentation][Caption] for more information.
+此扩展的配置选项并不特定于材质
+MkDocs，因为它们只影响Markdown解析阶段。请参阅[标题
+文档][标题]了解更多信息。
 
   [Caption]: https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/
 
@@ -134,9 +134,9 @@ documentation][Caption] for more information.
 <!-- md:version 1.0.0 -->
 <!-- md:extension [pymdownx.caret][Caret] -->
 
-The [Caret], [Mark] and [Tilde] extensions add the ability to highlight text
-and define sub- and superscript using a simple syntax. Enable them together
-via `mkdocs.yml`:
+[Caret]、[Mark]和[Tilde]扩展增加了突出显示文本的功能
+并使用简单的语法定义子和上标。让他们在一起
+通过`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -145,11 +145,11 @@ markdown_extensions:
   - pymdownx.tilde
 ```
 
-The configuration options of this extension are not specific to Material for
-MkDocs, as they only impact the Markdown parsing stage. See the [Caret], [Mark]
-and [Tilde documentation][Tilde] for guidance.
+此扩展的配置选项并不特定于材质
+MkDocs，因为它们只影响Markdown解析阶段。参见[注意事项]，[标记]
+以及[Tilde文档][Tilde]以获取指导。
 
-See reference for usage:
+使用方法见参考：
 
 - [Highlighting text]
 - [Sub- and superscripts]
@@ -165,22 +165,22 @@ See reference for usage:
 <!-- md:version 1.0.0 -->
 <!-- md:extension [pymdownx.critic][Critic] -->
 
-The [Critic] extension allows for the usage of [Critic Markup] to highlight
-added, deleted or updated sections in a document, i.e. for tracking changes in
-Markdown syntax. Enable it via `mkdocs.yml`:
+[Critic]扩展允许使用[Critic Markup]来突出显示
+在文档中添加、删除或更新部分，即用于跟踪
+Markdown语法。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.critic
 ```
 
-The following configuration options are supported:
+支持以下配置选项：
 
 <!-- md:option pymdownx.critic.mode -->
 
-:   <!-- md:default `view` --> This option defines how the markup
-    should be parsed, i.e. whether to just `view` all suggested changes, or
-    alternatively `accept` or `reject` them:
+:   <!-- md:default `view` --> 此选项定义标记的方式
+    应该被解析，即是否只“查看”所有建议的更改，或者
+    或者“接受”或“拒绝”它们：
 
     === "View changes"
 
@@ -206,7 +206,7 @@ The following configuration options are supported:
               mode: reject
         ```
 
-See reference for usage:
+使用方法见参考：
 
 - [Highlighting changes]
 
@@ -219,16 +219,16 @@ See reference for usage:
 <!-- md:version 1.9.0 -->
 <!-- md:extension [pymdownx.details][Details] -->
 
-The [Details] extension supercharges the [Admonition] extension, making the
-resulting _call-outs_ collapsible, allowing them to be opened and closed by the
-user. Enable it via `mkdocs.yml`:
+[详细信息]扩展增强了[警告]扩展，使
+由此产生的全面折叠，允许它们被打开和关闭
+用户。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.details
 ```
 
-No configuration options are available. See reference for usage:
+没有可用的配置选项。使用方法见参考：
 
 - [Collapsible blocks]
 
@@ -241,8 +241,8 @@ No configuration options are available. See reference for usage:
 <!-- md:version 1.0.0 -->
 <!-- md:extension [pymdownx.emoji][Emoji] -->
 
-The [Emoji] extension automatically inlines bundled and custom icons and emojis
-in `*.svg` file format into the resulting HTML page. Enable it via `mkdocs.yml`:
+表情符号扩展自动内联捆绑的和自定义的图标和表情
+将`*.svg`文件格式转换为生成的HTML页面。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
@@ -251,17 +251,17 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 ```
 
-1.  [Python Markdown Extensions] uses the `pymdownx` namespace, but in order to
-    support the inlining of icons, the `materialx` namespace must be used, as it
-    extends the functionality of `pymdownx`.
+1.  [Python Markdown扩展]使用“pymdownx”命名空间，但为了
+    支持图标内联，必须使用`materialx`命名空间，因为它
+    扩展了pymdownx的功能。
 
-The following configuration options are supported:
+支持以下配置选项：
 
 <!-- md:option pymdownx.emoji.emoji_index -->
 
-:   <!-- md:default `emojione` --> This option defines which set
-    of emojis is used for rendering. Note that the use of `emojione` is not
-    recommended due to [restrictions in licensing][Emoji index]:
+:   <!-- md:default `emojione` --> 此选项定义了哪个集合
+    emojis用于渲染。请注意，使用“emojione”不是
+    由于[许可限制][表情符号索引]而推荐：
 
     ``` yaml
     markdown_extensions:
@@ -271,9 +271,9 @@ The following configuration options are supported:
 
 <!-- md:option pymdownx.emoji.emoji_generator -->
 
-:   <!-- md:default `to_png` --> This option defines how the
-    resolved emoji or icon shortcode is render. Note that icons can only be
-    used together with the `to_svg` configuration:
+:   <!-- md:default `to_png` --> 此选项定义了如何
+    解析的表情符号或图标快捷代码被渲染。请注意，图标只能
+    与`to_svg`配置一起使用：
 
     ``` yaml
     markdown_extensions:
@@ -283,9 +283,9 @@ The following configuration options are supported:
 
 <!-- md:option pymdownx.emoji.options.custom_icons -->
 
-:   <!-- md:default none --> This option allows to list folders
-    with additional icon sets to be used in Markdown or `mkdocs.yml`, which is
-    explained in more detail in the [icon customization guide]:
+:   <!-- md:default none --> 此选项允许列出文件夹
+    在Markdown或`mkdocs.yml`中使用额外的图标集，即
+    在[图标定制指南]中有更详细的解释：
 
     ``` yaml
     markdown_extensions:
@@ -297,11 +297,11 @@ The following configuration options are supported:
               - overrides/.icons
     ```
 
-The other configuration options of this extension are not officially supported
-by Material for MkDocs, which is why they may yield unexpected results. Use
-them at your own risk.
+此扩展的其他配置选项不受官方支持
+MkDocs的材料，这就是为什么它们可能会产生意想不到的结果。使用
+他们的风险由你自己承担。
 
-See reference for usage:
+使用方法见参考：
 
 - [Using emojis]
 - [Using icons]
@@ -319,10 +319,10 @@ See reference for usage:
 <!-- md:version 5.0.0 -->
 <!-- md:extension [pymdownx.highlight][Highlight] -->
 
-The [Highlight] extension adds support for syntax highlighting of code blocks
-(with the help of [SuperFences][pymdownx.superfences]) and inline code blocks
-(with the help of [InlineHilite][pymdownx.inlinehilite]). Enable it via
-`mkdocs.yml`:
+[Highlight]扩展增加了对代码块语法高亮显示的支持
+（借助[SuperFence][pymdownx.superfaces]）和内联代码块
+（借助[InlineHilite][pymdownx.InlineHilite]）。通过启用它
+`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -331,17 +331,17 @@ markdown_extensions:
   - pymdownx.superfences # (1)!
 ```
 
-1.  [Highlight] is used by the [SuperFences][pymdownx.superfences] extension to
-    perform syntax highlighting on code blocks, not the other way round, which
-    is why this extension also needs to be enabled.
+1.  [Highlight]由[SuperFences][pymdownx.superfaces]扩展用于
+    对代码块执行语法高亮显示，而不是相反，这
+    这就是为什么还需要启用此扩展。
 
-The following configuration options are supported:
+支持以下配置选项：
 
 <!-- md:option pymdownx.highlight.use_pygments -->
 
-:   <!-- md:default `true` --> This option allows to control
-    whether highlighting should be carried out during build time using
-    [Pygments] or in the browser with a JavaScript syntax highlighter:
+:   <!-- md:default `true` --> 此选项允许控制
+    是否应在构建时使用高亮显示
+    [Pygages]或在浏览器中使用JavaScript语法高亮显示：
 
     === "Pygments"
 
@@ -360,9 +360,9 @@ The following configuration options are supported:
               use_pygments: false
         ```
 
-        As an example, [Highlight.js], a JavaScript syntax highlighter, can be
-        integrated with some [additional JavaScript] and an [additional style
-        sheet] in `mkdocs.yml`:
+        例如，[Highlight.js]是一个JavaScript语法高亮显示工具，可以
+        与一些[额外的JavaScript]和[额外的样式]集成
+        `mkdocs.yml`中的表格]：
 
         === ":octicons-file-code-16: `docs/javascripts/highlight.js`"
 
@@ -382,18 +382,18 @@ The following configuration options are supported:
               - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
             ```
 
-        Note that [Highlight.js] has no affiliation with the
-        [Highlight][pymdownx.highlight] extension.
+        请注意，[Highlight.js]与
+        [Highlight][pymdownx.Highlight]扩展名。
 
-    All following configuration options are only compatible with build-time
-    syntax highlighting using [Pygments], so they don't apply if `use_pygments`
-    is set to `false`.
+    以下所有配置选项仅与构建时兼容
+    使用[Pygges]突出显示语法，因此如果`use_Pygments，则不适用`
+    设置为“false”。
 
 <!-- md:option pymdownx.highlight.pygments_lang_class -->
 
-:   <!-- md:default `false` --> This option instructs [Pygments]
-    to add a CSS class to identify the language of the code block, which is
-    essential for custom annotation markers to function:
+:   <!-- md:default `false` --> 此选项指示[Pygages]
+    添加一个CSS类来标识代码块的语言，即
+    自定义注释标记正常工作所必需的：
 
 ``` yaml
 markdown_extensions:
@@ -403,9 +403,9 @@ markdown_extensions:
 
 <!-- md:option pymdownx.highlight.auto_title -->
 
-:   <!-- md:default `false` --> This option will automatically
-    add a [title] to all code blocks that shows the name of the language being
-    used, e.g. `Python` is printed for a `py` block:
+:   <!-- md:default `false` --> 此选项将自动
+    在所有代码块中添加一个[title]，显示所使用语言的名称
+    例如，`Python`是为`py`块打印的：
 
     ``` yaml
     markdown_extensions:
@@ -415,11 +415,11 @@ markdown_extensions:
 
 <!-- md:option pymdownx.highlight.linenums -->
 
-:   <!-- md:default `false` --> This option will add line numbers
-    to _all_ code blocks. If you wish to add line numbers to _some_, but not all
-    code blocks, consult the section on [adding line numbers][Adding line
-    numbers] in the code block reference, which also contains some tips on
-    working with line numbers:
+:   <!-- md:default `false` --> 此选项将添加行号
+    到所有代码块。如果你想在_some_中添加行号，但不是全部
+    代码块，请参阅[添加行号][添加行]一节
+    代码块参考中的数字]，其中还包含一些提示
+    使用行号：
 
     ``` yaml
     markdown_extensions:
@@ -429,10 +429,10 @@ markdown_extensions:
 
 <!-- md:option pymdownx.highlight.linenums_style -->
 
-:   <!-- md:default `table` --> The [Highlight] extension
-    provides three ways to add line numbers, two of which are supported by
-    Material for MkDocs. While `table` wraps a code block in a `<table>`
-    element, `pymdownx-inline` renders line numbers as part of the line itself:
+:   <!-- md:default `table` --> [Highlight]扩展
+    提供了三种添加行号的方法，其中两种方法由支持
+    MkDocs的材料。而`table`将代码块包装在`<table>中`
+    元素“pymdownx inline”将行号呈现为行本身的一部分：
 
     ``` yaml
     markdown_extensions:
@@ -440,17 +440,17 @@ markdown_extensions:
           linenums_style: pymdownx-inline
     ```
 
-    Note that `inline` will put line numbers next to the actual code, which
-    means that they will be included when selecting text with the cursor or
-    copying a code block to the clipboard. Thus, the usage of either `table`
-    or `pymdownx-inline` is recommended.
+    请注意，`inline`将把行号放在实际代码旁边，这
+    意味着在用光标选择文本时，它们将被包括在内，或者
+    将代码块复制到剪贴板。因此，无论是“表”的使用`
+    或者建议使用“pymdownx内联”。
 
 <!-- md:option pymdownx.highlight.anchor_linenums -->
 
 :   <!-- md:version 8.1.0 --> :octicons-milestone-24:
-    Default: `false` – If a code blocks contains line numbers, enabling this
-    setting will wrap them with anchor links, so they can be hyperlinked and
-    shared more easily:
+    默认值：“false”-如果代码块包含行号，则启用此选项
+    设置将用锚链接包裹它们，这样它们就可以被超链接
+    更容易分享：
 
     ``` yaml
     markdown_extensions:
@@ -460,9 +460,9 @@ markdown_extensions:
 
 <!-- md:option pymdownx.highlight.line_spans -->
 
-:   <!-- md:default none --> When this option is set, each
-    line of a code block is wrapped in a `span`, which is essential for features
-    like line highlighting to work correctly:
+:   <!-- md:default none --> 设置此选项后，每个
+    代码块的行被包裹在“span”中，这对功能至关重要
+    如线条高亮显示以正确工作：
 
     ``` yaml
     markdown_extensions:
@@ -470,11 +470,11 @@ markdown_extensions:
           line_spans: __span
     ```
 
-The other configuration options of this extension are not officially supported
-by Material for MkDocs, which is why they may yield unexpected results. Use
-them at your own risk.
+此扩展的其他配置选项不受官方支持
+MkDocs的材料，这就是为什么它们可能会产生意想不到的结果。使用
+他们的风险由你自己承担。
 
-See reference for usage:
+使用方法见参考：
 
 - [Using code blocks]
 - [Adding a title]
@@ -501,9 +501,9 @@ See reference for usage:
 <!-- md:version 5.0.0 -->
 <!-- md:extension [pymdownx.inlinehilite][InlineHilite] -->
 
-The [InlineHilite] extension add support for syntax highlighting of inline code
-blocks. It's built on top of the [Highlight][pymdownx.highlight] extension, from
-which it sources its configuration. Enable it via `mkdocs.yml`:
+[InlineHilite]扩展增加了对内联代码语法高亮显示的支持
+阻碍。它建立在[Highlight][pymdownx.Highlight]扩展之上，从
+其来源于其配置。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
@@ -511,12 +511,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
 ```
 
-The configuration options of this extension are not specific to Material for
-MkDocs, as they only impact the Markdown parsing stage. The only exception is
-the [`css_class`][InlineHilite options] option, which must not be changed. See the
-[InlineHilite documentation][InlineHilite] for guidance.
+此扩展的配置选项并不特定于材质
+MkDocs，因为它们只影响Markdown解析阶段。唯一的例外是
+[`css_class`][InlineHilite options]选项，不得更改。请参阅
+[内联Hilite文档][内联Hilite]以获取指导。
 
-See reference for usage:
+使用方法见参考：
 
 - [Highlighting inline code blocks]
 
@@ -530,20 +530,20 @@ See reference for usage:
 <!-- md:version 1.0.0 -->
 <!-- md:extension [pymdownx.keys][Keys] -->
 
-The [Keys] extension adds a simple syntax to allow for the rendering of keyboard
-keys and combinations, e.g. ++ctrl+alt+del++. Enable it via `mkdocs.yml`:
+[Keys]扩展添加了一个简单的语法，允许渲染键盘
+例如++ctrl+alt+del++。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.keys
 ```
 
-The configuration options of this extension are not specific to Material for
-MkDocs, as they only impact the Markdown parsing stage. The only exception is
-the [`class`][Keys options] option, which must not be changed. See the
-[Keys documentation][Keys] for more information.
+此扩展的配置选项并不特定于材质
+MkDocs，因为它们只影响Markdown解析阶段。唯一的例外是
+[`class`][Keys-options]选项，不得更改。请参阅
+[密钥文档][密钥]了解更多信息。
 
-See reference for usage:
+使用方法见参考：
 
 - [Adding keyboard keys]
 
@@ -556,18 +556,18 @@ See reference for usage:
 <!-- md:version 0.1.0 -->
 <!-- md:extension [pymdownx.smartsymbols][SmartSymbols] -->
 
-The [SmartSymbols] extension converts some sequences of characters into their
-corresponding symbols, e.g. copyright symbols or fractions. Enable it via
-`mkdocs.yml`:
+[SmartSymbols]扩展将某些字符序列转换为
+例如版权符号或分数。通过启用它
+`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.smartsymbols
 ```
 
-The configuration options of this extension are not specific to Material for
-MkDocs, as they only impact the Markdown parsing stage. See the [SmartSymbols
-documentation][SmartSymbols] for guidance.
+此扩展的配置选项并不特定于材质
+MkDocs，因为它们只影响Markdown解析阶段。请参阅[SmartSymbols
+文档][SmartSymbols]以获取指导。
 
   [SmartSymbols]: https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
 
@@ -576,20 +576,20 @@ documentation][SmartSymbols] for guidance.
 <!-- md:version 0.1.0 -->
 <!-- md:extension [pymdownx.snippets][Snippets] -->
 
-The [Snippets] extension adds the ability to embed content from arbitrary files
-into a document, including other documents or source files, by using a simple
-syntax. Enable it via `mkdocs.yml`:
+[Snippets]扩展增加了从任意文件嵌入内容的能力
+通过使用简单的
+语法。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.snippets
 ```
 
-The configuration options of this extension are not specific to Material for
-MkDocs, as they only impact the Markdown parsing stage. See the [Snippets
-documentation][Snippets] for more information.
+此扩展的配置选项并不特定于材质
+MkDocs，因为它们只影响Markdown解析阶段。请参阅[片段
+文档][片段]了解更多信息。
 
-See reference for usage:
+使用方法见参考：
 
 - [Adding a glossary]
 - [Embedding external files]
@@ -603,22 +603,22 @@ See reference for usage:
 <!-- md:version 0.1.0 -->
 <!-- md:extension [pymdownx.superfences][SuperFences] -->
 
-The [SuperFences] extension allows for arbitrary nesting of code and content
-blocks inside each other, including admonitions, tabs, lists and all other
-elements. Enable it via `mkdocs.yml`:
+[SuperFences]扩展允许任意嵌套代码和内容
+相互之间的块，包括警告、标签、列表和所有其他
+元素。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
   - pymdownx.superfences
 ```
 
-The following configuration options are supported:
+支持以下配置选项：
 
 <!-- md:option pymdownx.superfences.custom_fences -->
 
-:   <!-- md:default none --> This option allows to define a
-    handler for custom fences, e.g. to preserve the definitions of [Mermaid.js]
-    diagrams to be interpreted in the browser:
+:   <!-- md:default none --> 此选项允许定义
+    自定义围栏的处理程序，例如保留[Meamaid.js]的定义
+    要在浏览器中解释的图表：
 
     ``` yaml
     markdown_extensions:
@@ -629,15 +629,15 @@ The following configuration options are supported:
               format: !!python/name:pymdownx.superfences.fence_code_format
     ```
 
-    Note that this will primarily prevent syntax highlighting from being
-    applied. See the reference on [diagrams] to learn how Mermaid.js is
-    integrated with Material for MkDocs.
+    请注意，这将主要防止语法高亮显示
+    应用。请参阅[图表]上的参考，了解Mermaid.js是如何工作的
+    与MkDocs材料集成。
 
-The other configuration options of this extension are not officially supported
-by Material for MkDocs, which is why they may yield unexpected results. Use
-them at your own risk.
+此扩展的其他配置选项不受官方支持
+MkDocs的材料，这就是为什么它们可能会产生意想不到的结果。使用
+他们的风险由你自己承担。
 
-See reference for usage:
+使用方法见参考：
 
 - [Using annotations]
 - [Using code blocks]
@@ -665,9 +665,9 @@ See reference for usage:
 <!-- md:version 5.0.0 -->
 <!-- md:extension [pymdownx.tabbed][Tabbed] -->
 
-The [Tabbed] extension allows the usage of content tabs, a simple way to group
-related content and code blocks under accessible tabs. Enable it via
-`mkdocs.yml`:
+[Tabbed]扩展允许使用内容选项卡，这是一种简单的分组方式
+可访问选项卡下的相关内容和代码块。通过启用它
+`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -675,14 +675,14 @@ markdown_extensions:
       alternate_style: true
 ```
 
-The following configuration options are supported:
+支持以下配置选项：
 
 <!-- md:option pymdownx.tabbed.alternate_style -->
 
 :   <!-- md:version 7.3.1 --> <!-- md:default `false` -->
-    <!-- md:flag required -->  This option enables the content tabs
-    [alternate style], which has [better behavior on mobile viewports], and is
-    the only supported style:
+    <!-- md:flag required -->  此选项启用内容选项卡
+    [替代样式]，它在移动视口上具有更好的行为，并且
+    唯一支持的样式：
 
     ``` yaml
     markdown_extensions:
@@ -692,9 +692,9 @@ The following configuration options are supported:
 
 <!-- md:option pymdownx.tabbed.combine_header_slug -->
 
-:   <!-- md:default `false` --> This option enables the content tabs'
-    [`combine_header_slug` style] flag, which prepends the id of the header to
-    the id of the tab:
+:   <!-- md:default `false` --> 此选项启用内容选项卡'
+    [`combine_header_slug`style]标志，它将标头的id添加到
+    选项卡的id：
 
     ``` yaml
     markdown_extensions:
@@ -704,10 +704,10 @@ The following configuration options are supported:
 
 <!-- md:option pymdownx.tabbed.slugify -->
 
-:   <!-- md:default `None` --> This option allows for
-    customization of the slug function. For some languages, the default may not
-    produce good and readable identifiers – consider using another slug function
-    like for example those from [Python Markdown Extensions][Slugs]:
+:   <!-- md:default `None` --> 此选项允许
+    slug功能的定制。对于某些语言，默认值可能不是
+    生成良好且可读的标识符——考虑使用另一个slug函数
+    例如[Python Markdown扩展][Slugs]中的那些：
 
     === "Unicode"
 
@@ -727,11 +727,11 @@ The following configuration options are supported:
               slugify: !!python/object/apply:pymdownx.slugs.slugify {}
         ```
 
-The other configuration options of this extension are not officially supported
-by Material for MkDocs, which is why they may yield unexpected results. Use
-them at your own risk.
+此扩展的其他配置选项不受官方支持
+MkDocs的材料，这就是为什么它们可能会产生意想不到的结果。使用
+他们的风险由你自己承担。
 
-See reference for usage:
+使用方法见参考：
 
 - [Grouping code blocks]
 - [Grouping other content]
@@ -751,9 +751,9 @@ See reference for usage:
 <!-- md:version 1.0.0 -->
 <!-- md:extension [pymdownx.tasklist][Tasklist] -->
 
-The [Tasklist] extension allows for the usage of [GitHub Flavored Markdown]
-inspired [task lists][Tasklist specification], following the same syntactical
-conventions. Enable it via `mkdocs.yml`:
+[Tasklist]扩展允许使用[GitHub风味Markdown]
+受启发的[任务列表][任务列表规范]，遵循相同的语法
+习俗。通过`mkdocs.yml`启用它：
 
 ``` yaml
 markdown_extensions:
@@ -761,13 +761,13 @@ markdown_extensions:
       custom_checkbox: true
 ```
 
-The following configuration options are supported:
+支持以下配置选项：
 
 <!-- md:option pymdownx.tasklist.custom_checkbox -->
 
-:   <!-- md:default `false` --> This option toggles the rendering
-    style of checkboxes, replacing native checkbox styles with beautiful icons,
-    and is therefore recommended:
+:   <!-- md:default `false` --> 此选项可切换渲染
+    复选框的样式，用漂亮的图标替换原生复选框样式，
+    因此建议：
 
     ``` yaml
     markdown_extensions:
@@ -777,9 +777,9 @@ The following configuration options are supported:
 
 <!-- md:option pymdownx.tasklist.clickable_checkbox -->
 
-:   <!-- md:default `false` --> This option toggles whether
-    checkboxes are clickable. As the state is not persisted, the use of this
-    option is _rather discouraged_ from a user experience perspective:
+:   <!-- md:default `false` --> 此选项切换是否
+    复选框是可点击的。由于状态不持久，因此使用此
+    从用户体验的角度来看，选项是_rather discused_：
 
     ``` yaml
     markdown_extensions:
@@ -787,11 +787,11 @@ The following configuration options are supported:
           clickable_checkbox: true
     ```
 
-The other configuration options of this extension are not officially supported
-by Material for MkDocs, which is why they may yield unexpected results. Use
-them at your own risk.
+此扩展的其他配置选项不受官方支持
+MkDocs的材料，这就是为什么它们可能会产生意想不到的结果。使用
+他们的风险由你自己承担。
 
-See reference for usage:
+使用方法见参考：
 
 - [Using task lists]
 

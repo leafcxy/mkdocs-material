@@ -2,22 +2,22 @@
 title: Extensions
 ---
 
-# Extensions
+# 扩展
 
-Markdown is a very small language with a kind-of reference implementation called
-[John Gruber's Markdown]. [Python Markdown] and [Python Markdown Extensions]
-are two packages that enhance the Markdown writing experience, adding useful
-syntax extensions for technical writing.
+Markdown是一种非常小的语言，有一种参考实现，称为
+[约翰·格鲁伯的Markdown]。[Python Markdown]和[Python Markdown扩展]
+是两个增强Markdown写作体验的包，增加了有用的
+技术写作的语法扩展。
 
   [John Gruber's Markdown]: https://daringfireball.net/projects/markdown/
   [Python Markdown]: python-markdown.md
   [Python Markdown Extensions]: python-markdown-extensions.md
 
-## Supported extensions
+## 支持的扩展
 
-The following extensions are all supported by Material for MkDocs and therefore
-strongly recommended. Click on each extension to learn about its purpose and
-configuration:
+以下扩展都由Material for MkDocs支持，因此
+强烈推荐。点击每个扩展以了解其目的和
+配置：
 
 <div class="mdx-columns" markdown>
 
@@ -67,19 +67,19 @@ configuration:
   [Tables]: python-markdown.md#tables
   [Tasklist]: python-markdown-extensions.md#tasklist
 
-## Configuration
+## 配置
 
-Extensions are configured as part of `mkdocs.yml` – the MkDocs configuration
-file. The following sections contain two example configurations to bootstrap
-your documentation project.
+扩展配置为“mkdocs.yml”的一部分，即mkdocs配置
+文件。以下部分包含引导的两个示例配置
+您的文档项目。
 
   [overview]: #advanced-configuration
 
-### Minimal configuration
+### 最小配置
 
-This configuration is a good starting point for when you're using Material for
-MkDocs for the first time. The best idea is to explore the [reference], and
-gradually add what you want to use:
+当您使用Material时，此配置是一个很好的起点
+首次使用MkDocs。最好的办法是探索[参考]，以及
+逐步添加您想要使用的内容：
 
 ``` yaml
 markdown_extensions:
@@ -95,10 +95,10 @@ markdown_extensions:
 
   [reference]: ../../reference/index.md
 
-### Recommended configuration
+### 推荐配置
 
-This configuration enables all Markdown-related features of Material for MkDocs
-and is great for experienced users bootstrapping a new documentation project:
+此配置启用了MkDocs Material的所有Markdown相关功能
+对于有经验的用户来说，引导一个新的文档项目非常有用：
 
 ``` yaml
 markdown_extensions:

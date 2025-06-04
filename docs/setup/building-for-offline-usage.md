@@ -1,52 +1,52 @@
-# Building for offline usage
+# 为离线使用而构建
 
-If you want to ship your documentation together with your product, MkDocs has
-you covered – with support from themes, [MkDocs] allows for building
-offline-capable documentation. Notably, Material for MkDocs offers offline
-support for many of its features.
+如果您想将文档与产品一起发货，MkDocs有
+你涵盖了——在主题的支持下，[MkDocs]允许构建
+离线功能文档。值得注意的是，Material for MkDocs提供离线
+支持其许多功能。
 
   [MkDocs]: https://www.mkdocs.org
 
-## Configuration
+## 配置
 
-### Built-in offline plugin
+### 内置离线插件
 
 <!-- md:version 9.0.0 -->
 <!-- md:plugin [offline] – built-in -->
 
-The built-in offline plugin makes sure that the [site search] works when you
-distribute the contents of your [site directory] as a download. Simply add
-the following lines to `mkdocs.yml`:
+内置的离线插件确保[网站搜索]在您
+将[站点目录]的内容作为下载分发。只需添加
+将以下行添加到`mkdocs.yml`：
 
 ``` yaml
 plugins:
   - offline
 ```
 
-For a list of all settings, please consult the [plugin documentation].
+有关所有设置的列表，请参阅[插件文档]。
 
   [offline]: ../plugins/offline.md
   [plugin documentation]: ../plugins/offline.md
 
-!!! tip "Automatically bundle all external assets"
+!!! tip "自动捆绑所有外部资产"
 
-    The [built-in privacy plugin] makes it easy to use external assets
-    while building documentation for offline usage, as it will automatically
-    download all external assets to distribute them with your documentation.
+    [内置隐私插件]使使用外部资产变得容易
+    在构建离线使用的文档时，因为它会自动
+    下载所有外部资产，并将其与您的文档一起分发。
 
   [site search]: setting-up-site-search.md
   [site directory]: https://www.mkdocs.org/user-guide/configuration/#site_dir
   [built-in privacy plugin]:../plugins/privacy.md
 
-#### Limitations
+#### 局限性
 
-Material for MkDocs offers many interactive features, some of which will not
-work from the file system due to the restrictions of modern browsers: all
-features that use the `fetch` API will error.
+MkDocs的材料提供了许多交互功能，其中一些功能不会
+由于现代浏览器的限制，从文件系统工作：全部
+使用“fetch”API的功能将出错。
 
-Thus, when building for offline usage, make sure to disable the following
-configuration settings: [instant loading], [site analytics], [git repository],
-[versioning] and [comment systems].
+因此，在构建离线使用时，请确保禁用以下功能
+配置设置：[即时加载]，[站点分析]，[git仓库]，
+[版本控制]和[评论系统]。
 
   [Instant loading]: setting-up-navigation.md#instant-loading
   [Site analytics]: setting-up-site-analytics.md

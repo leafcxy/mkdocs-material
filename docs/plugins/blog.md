@@ -3,31 +3,31 @@ title: Built-in blog plugin
 icon: material/newspaper-variant-outline
 ---
 
-# Built-in blog plugin
+# 内置博客插件
 
-The blog plugin makes it very easy to build a blog, either as a sidecar to
-your documentation or as the main thing. Focus on your content while the plugin
-does all the heavy lifting, generating a view of all latest posts, [archive] and
-[category] pages, configurable [pagination] and much more.
+博客插件使构建博客变得非常容易，无论是作为sidecar还是
+您的文档或作为主要内容。在插件运行期间，专注于您的内容
+完成所有繁重的工作，生成所有最新帖子的视图，[存档]和
+[类别]页面，可配置[分页]等等。
 
   [archive]: #archive
   [category]: #categories
   [pagination]: #pagination
 
-## Objective
+## 客观的
 
-### How it works
+### 工作原理
 
-The plugin scans the configured [`posts` directory][config.post_dir] for
-`.md` files from which paginated views[^1] are automatically generated. If not
-configured otherwise, the plugin expects that your project has the following
-directory layout, and will create any missing directories or files for you:
+该插件扫描已配置的[“posts”目录][config.post_dir]以查找
+`.md文件，从中自动生成分页视图[^1]。如果没有
+否则，插件会要求您的项目具有以下内容
+目录布局，并将为您创建任何缺失的目录或文件：
 
   [^1]:
-    Views are pages that are automatically generated, i.e., the entry point to
-    your blog listing all latest posts, as well as [archive] and [category]
-    pages that list all posts associated with them through [metadata] in
-    chronological order.
+    视图是自动生成的页面，即
+    您的博客列出了所有最新帖子，以及[存档]和[类别]
+    通过[元数据]列出与其关联的所有帖子的页面
+    时间顺序。
 
 ``` { .sh .no-copy }
 .
@@ -38,22 +38,22 @@ directory layout, and will create any missing directories or files for you:
 └─ mkdocs.yml
 ```
 
-The `index.md` file in the [`blog` directory][config.blog_dir] is the entry
-point to your blog – a paginated view listing all posts in reverse chronological
-order. Besides that, the plugin supports automatically creating [archive] and
-[category] pages that list a subset of posts for a time interval or category.
+[`blog`目录][config.blog_dir]中的`index.md`文件是条目
+指向你的博客——一个按时间倒序列出所有帖子的分页视图
+订单。除此之外，该插件还支持自动创建[存档]和
+[category]页面列出了某个时间间隔或类别的帖子子集。
 
-[Post URLs][config.post_url_format] are completely configurable, no matter if
-you want your URLs to include the post's date or not. Rendered dates always
-display in the locale of the [site language] of your project. Like in other
-static blog frameworks, posts can be annotated with a variety of [metadata],
-allowing for easy integration with other [built-in plugins], e.g., the
-[social] and [tags] plugin.
+[Post url][config.Post_url_format]是完全可配置的，无论是否
+您是否希望您的URL包含帖子的日期。始终呈现日期
+以项目的[站点语言]的区域设置显示。就像在其他
+静态博客框架、帖子可以用各种[元数据]进行注释，
+允许与其他[内置插件]轻松集成，例如
+[社交]和[标签]插件。
 
-Posts can be organized in nested folders with a directory layout that suits your
-specific needs, and can make use of all components and syntax that Material for
-MkDocs offers, including [admonitions], [annotations], [code blocks],
-[content tabs], [diagrams], [icons], [math], and more.
+帖子可以组织在嵌套文件夹中，目录布局适合您的
+根据特定需求，可以使用该材料的所有组件和语法
+MkDocs提供，包括[警告]、[注释]、[代码块]，
+[内容选项卡]、[图表]、[图标]、[数学]等。
 
   [metadata]: #metadata
   [built-in plugins]: index.md
@@ -67,12 +67,12 @@ MkDocs offers, including [admonitions], [annotations], [code blocks],
   [icons]: ../reference/icons-emojis.md
   [math]: ../reference/math.md
 
-### When to use it
+### 何时使用
 
-If you want to add a blog to your project, or migrate from another blog
-framework to Material for MkDocs because of its excellent technical writing
-capabilities, this plugin is a great choice, as it integrates perfectly with
-many other built-in plugins:
+如果你想在项目中添加一个博客，或者从另一个博客迁移
+MkDocs的Material框架，因为它具有出色的技术写作能力
+功能，这个插件是一个不错的选择，因为它与
+许多其他内置插件：
 
 <div class="grid cards" markdown>
 
@@ -80,9 +80,9 @@ many other built-in plugins:
 
     ---
 
-    The meta plugin makes it easy to apply [metadata] to a subset of posts,
-    including authors, tags, categories, draft status, as well as social card
-    layouts.
+    元插件使将[元数据]应用于帖子子集变得容易，
+    包括作者、标签、类别、草稿状态以及社交卡
+    布局。
 
     ---
 
@@ -92,8 +92,8 @@ many other built-in plugins:
 
     ---
 
-    The social plugin automatically generates beautiful and customizable
-    social cards for each post and page, showing as previews on social media.
+    社交插件会自动生成美观且可定制的内容
+    每个帖子和页面的社交卡片，在社交媒体上作为预览显示。
 
     ---
 
@@ -104,9 +104,9 @@ many other built-in plugins:
 
     ---
 
-    The optimize plugin automatically identifies and optimizes all media files
-    that you reference in your project by using compression and conversion
-    techniques.
+    优化插件自动识别并优化所有媒体文件
+    通过使用压缩和转换在项目中引用
+    技术。
 
     ---
 
@@ -116,9 +116,9 @@ many other built-in plugins:
 
     ---
 
-    The tags plugin allows to categorize posts alongside with pages in your
-    project, to improve their discoverability and connect posts to your
-    documentation.
+    标签插件允许将帖子与页面一起分类
+    项目，以提高其可发现性，并将帖子连接到您的
+    文档。
 
     ---
 
@@ -131,37 +131,37 @@ many other built-in plugins:
   [optimize]: optimize.md
   [tags]: tags.md
 
-## Configuration
+## 配置
 
 <!-- md:version 9.2.0 -->
 <!-- md:plugin [blog] – built-in -->
 <!-- md:flag multiple -->
 <!-- md:flag experimental -->
 
-As with all [built-in plugins], getting started with the blog plugin is
-straightforward. Just add the following lines to `mkdocs.yml`, and you can
-start writing your first post:
+与所有[内置插件]一样，开始使用博客插件是
+直截了当。只需将以下行添加到`mkdocs.yml`中，您就可以
+开始写你的第一篇文章：
 
 ``` yaml
 plugins:
   - blog
 ```
 
-The blog plugin is built into Material for MkDocs and doesn't need to be
-installed.
+博客插件内置于MkDocs的Material中，不需要
+安装。
 
   [blog]: blog.md
   [built-in plugins]: index.md
 
-### Navigation
+### 导航
 
-If you do not have site navigation configured in your `mkdocs.yml` then there is
-nothing more to do. The blog [archive] and [category] pages will automatically
-appear underneath the automatically generated navigation.
+如果您的`mkdocs.yml`中没有配置站点导航，那么有
+无需更多操作。博客[存档]和[类别]页面将自动
+显示在自动生成的导航下方。
 
-If you do have a navigation structure defined then you will need to specify
-where the blog should appear in this. Create a [navigation section with an index
-page] for the blog:
+如果您确实定义了导航结构，则需要指定
+博客应该出现在哪里。创建一个带有索引的导航部分
+博客的页面]：
 
 ```yaml
 theme:
@@ -174,17 +174,17 @@ nav:
     - blog/index.md
 ```
 
-The [archive] and [category] pages will appear within that section as
-subsections beneath pages in the blog section. In this case, they would appear
-after `index.md`. The path to the `index.md` file must match
-[blog_dir][config.blog_dir]. This means that you can name the blog navigation
-entry anything you like: 'Blog' or 'News' or perhaps 'Tips'.
+[存档]和[类别]页面将显示在该部分中
+博客部分页面下方的子部分。在这种情况下，他们会出现
+在`index.md`之后。“index.md”文件的路径必须匹配
+[blog_dir][config.blog_dir]。这意味着您可以命名博客导航
+输入任何你喜欢的东西：“博客”或“新闻”，或者“提示”。
 
 [navigation section with an index page]: ../setup/setting-up-navigation.md#section-index-pages
 
-### General
+### 一般的
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -193,9 +193,9 @@ The following settings are available:
 <!-- md:version 9.2.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-It's normally not necessary to specify this setting, but if you want to disable
-the plugin, use:
+使用此设置可在[构建项目]时启用或禁用插件。
+通常不需要指定此设置，但如果要禁用
+插件，使用：
 
 ``` yaml
 plugins:
@@ -212,9 +212,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `blog` -->
 
-Use this setting to change the path where your blog is located in the
-[`docs` directory][mkdocs.docs_dir]. The path is included in the generated
-URLs as a prefix for all posts and views. You can change it with:
+使用此设置更改您的博客在
+[文档目录][mkdocs.docs_dir]。路径包含在生成的
+URL作为所有帖子和视图的前缀。您可以通过以下方式进行更改：
 
 === "Documentation + Blog"
 
@@ -232,7 +232,7 @@ URLs as a prefix for all posts and views. You can change it with:
           blog_dir: .
     ```
 
-The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
+提供的路径是从[`docs`目录][mkdocs.docs_dir]解析的。
 
 ---
 
@@ -241,9 +241,9 @@ The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
 <!-- md:version 9.2.0 -->
 <!-- md:default `false` -->
 
-Use this setting to leverage the table of contents to display post titles in
-views. This might be useful, if your post excerpts are rather long. If you want
-to enable it, use:
+使用此设置可利用目录在中显示帖子标题
+意见。如果你的帖子摘录很长，这可能会很有用。如果你想要我
+要启用它，请使用：
 
 ``` yaml
 plugins:
@@ -251,9 +251,9 @@ plugins:
       blog_toc: true
 ```
 
-### Posts
+### 贴子
 
-The following settings are available for posts:
+以下设置可用于帖子：
 
 ---
 
@@ -262,9 +262,9 @@ The following settings are available for posts:
 <!-- md:version 9.2.0 -->
 <!-- md:default `{blog}/posts` -->
 
-Use this setting to change the folder where your posts are located. It's
-normally not necessary to change this setting, but if you want to rename the
-folder or change its file system location, use:
+使用此设置更改帖子所在的文件夹。它是
+通常不需要更改此设置，但如果要重命名
+文件夹或更改其文件系统位置，使用：
 
 ``` yaml
 plugins:
@@ -272,15 +272,15 @@ plugins:
       post_dir: "{blog}/articles"
 ```
 
-Note that the [`posts` directory][config.post_dir] is solely used for post
-organization – it is not included in post URLs, since they are automatically
-and comfortably generated by this plugin.
+请注意，[`posts`目录][config.post_dir]仅用于post
+组织-它不包含在帖子URL中，因为它们是自动的
+并且由该插件轻松生成。
 
-The following placeholders are available:
+以下占位符可用：
 
 - `blog` – [`blog` directory][config.blog_dir]
 
-The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
+提供的路径是从[`docs`目录][mkdocs.docs_dir]解析的。
 
 ---
 
@@ -289,9 +289,9 @@ The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
 <!-- md:version 9.2.0 -->
 <!-- md:default `long` -->
 
-Use this setting to change the date format of posts. This plugin uses [babel]
-to render dates in the configured [site language]. You can use [babel]'s
-[pattern syntax] or the following shortcodes:
+使用此设置可更改帖子的日期格式。此插件使用[babel]
+以配置的[站点语言]呈现日期。你可以用babel
+[模式语法]或以下简码：
 
 === "Monday, January 31, 2024"
 
@@ -325,8 +325,8 @@ to render dates in the configured [site language]. You can use [babel]'s
           post_date_format: short
     ```
 
-Note that depending on the [site language], results might look different for
-other languages.
+请注意，根据[网站语言]的不同，结果可能会有所不同
+其他语言。
 
   [babel]: https://pypi.org/project/Babel/
   [site language]: ../setup/changing-the-language.md#site-language
@@ -339,9 +339,9 @@ other languages.
 <!-- md:version 9.2.0 -->
 <!-- md:default `yyyy/MM/dd` -->
 
-Use this setting to change the date format used in post URLs. The format string
-must adhere to [babel]'s [pattern syntax] and should not contain whitespace.
-Some popular choices:
+使用此设置可更改帖子URL中使用的日期格式。格式字符串
+必须遵循[babel]的[pattern语法]，并且不应包含空格。
+一些流行的选择：
 
 === ":material-link: blog/2024/01/31/:material-dots-horizontal:/"
 
@@ -367,9 +367,9 @@ Some popular choices:
           post_url_date_format: yyyy
     ```
 
-If you want to remove the date from post URLs, e.g., when your blog features
-mostly evergreen content, you can remove the `date` placeholder from the
-[`post_url_format`][config.post_url_format] format string.
+如果你想从帖子URL中删除日期，例如，当你的博客功能
+主要是常青内容，您可以从
+[`post_url_format`][config.post_url_fformat]格式字符串。
 
 ---
 
@@ -378,9 +378,9 @@ mostly evergreen content, you can remove the `date` placeholder from the
 <!-- md:version 9.2.0 -->
 <!-- md:default `{date}/{slug}` -->
 
-Use this setting to change the format string that is used when generating post
-URLs. You can freely combine placeholders, and join them with slashes or other
-characters:
+使用此设置更改生成帖子时使用的格式字符串
+URL。您可以自由组合占位符，并用斜线或其他符号将其连接起来
+字符：
 
 === ":material-link: blog/2024/:material-dots-horizontal:/"
 
@@ -398,16 +398,16 @@ characters:
           post_url_format: "{slug}"
     ```
 
-The following placeholders are available:
+以下占位符可用：
 
 - `categories` – Post categories, slugified with [`categories_slugify`][config.categories_slugify]
 - `date` – Post date, formatted with [`post_url_date_format`][config.post_url_date_format]
 - `slug` – Post title, slugified with [`post_slugify`][config.post_slugify], or explicitly set via [`slug`][meta.slug] metadata property
 - `file` – Post filename without `.md` file extension
 
-If you remove the `date` placeholder, make sure that post URLs don't collide
-with URLs of other pages hosted under the [`blog` directory][config.blog_dir],
-as this leads to undefined behavior.
+如果删除“日期”占位符，请确保帖子URL不会冲突
+其中其他页面的URL托管在[“blog”目录][config.blog_dir]下，
+因为这会导致未定义的行为。
 
 ---
 
@@ -416,9 +416,9 @@ as this leads to undefined behavior.
 <!-- md:version 9.2.0 -->
 <!-- md:default `1` -->
 
-Use this setting to set an upper bound for the number of categories included in
-post URLs if the `categories` placeholder is part of [`post_url_format`]
-[config.post_url_format] and the post defines categories:
+使用此设置为中包含的类别数量设置上限
+如果“类别”占位符是[“post_url_format”]的一部分，则发布url
+[config.post_url_format]，帖子定义了类别：
 
 ``` yaml
 plugins:
@@ -427,7 +427,7 @@ plugins:
       post_url_max_categories: 2
 ```
 
-If more than one category is given, they are joined with `/` after slugifying.
+如果给出了多个类别，则在行贿后用“/”连接。
 
 ---
 
@@ -436,9 +436,9 @@ If more than one category is given, they are joined with `/` after slugifying.
 <!-- md:version 9.2.0 -->
 <!-- md:default [`pymdownx.slugs.slugify`][pymdownx.slugs.slugify] -->
 
-Use this setting to change the function for generating URL-compatible slugs
-from post titles. By default, the [`slugify`][pymdownx.slugs.slugify] function
-from [Python Markdown Extensions] is used as follows:
+使用此设置更改生成与URL兼容的slug的功能
+从帖子标题。默认情况下，['slugify][pymdownx.slugs.slugify]函数
+[Python Markdown扩展]的用法如下：
 
 ``` yaml
 plugins:
@@ -448,9 +448,9 @@ plugins:
           case: lower
 ```
 
-The default configuration is Unicode-aware and should produce good slugs for all
-languages. Of course, you can also provide a custom slugification function for
-more granular control.
+默认配置支持Unicode，应该能为所有人生成良好的slug
+语言。当然，您还可以为以下对象提供自定义的slugif功能
+更精细的控制。
 
   [pymdownx.slugs.slugify]: https://github.com/facelessuser/pymdown-extensions/blob/01c91ce79c91304c22b4e3d7a9261accc931d707/pymdownx/slugs.py#L59-L65
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/extras/slugs/
@@ -462,9 +462,9 @@ more granular control.
 <!-- md:version 9.2.0 -->
 <!-- md:default `-` -->
 
-Use this setting to change the separator that is passed to the slugification
-function set as part of [`post_slugify`][config.post_slugify]. While the default
-is a hyphen, it can be set to any string, e.g., `_`:
+使用此设置更改传递给slugif的分隔符
+函数集为[`post_slugify`]的一部分[config.post_slugify]。虽然默认
+是连字符，可以设置为任何字符串，例如“_”：
 
 ``` yaml
 plugins:
@@ -479,9 +479,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `optional` -->
 
-By default, the plugin makes [post excerpts](../setup/setting-up-a-blog.md#adding-an-excerpt)
-optional. When a post doesn't define an excerpt, views include the entire post.
-This setting can be used to make post excerpts required:
+默认情况下，插件会制作[帖子摘录]（../setup/setup-a-blog.md#添加摘录）
+可选。当一篇帖子没有定义摘录时，视图包括整个帖子。
+此设置可用于制作所需的帖子摘录：
 
 === "Optional"
 
@@ -499,9 +499,9 @@ This setting can be used to make post excerpts required:
           post_excerpt: required
     ```
 
-When post excerpts are required, posts without excerpt separators raise an
-error. Thus, this setting is useful when you want to make sure that all posts
-have excerpts defined.
+当需要帖子摘录时，没有摘录分隔符的帖子会引发
+错误。因此，当您想确保所有帖子
+已定义摘录。
 
 ---
 
@@ -510,10 +510,10 @@ have excerpts defined.
 <!-- md:version 9.2.0 -->
 <!-- md:default `1` -->
 
-Use this setting to set an upper bound for the number of authors rendered in
-post excerpts. While each post may be written by multiple authors, this setting
-allows to limit the display to just a few or even a single author, or disable
-authors in post excerpts:
+使用此设置为中呈现的作者数量设置上限
+发布摘录。虽然每篇文章可能由多位作者撰写，但这种设置
+允许将显示限制为少数甚至单个作者，或禁用
+文章摘录中的作者：
 
 === "Render up to 2 authors"
 
@@ -531,7 +531,7 @@ authors in post excerpts:
           post_excerpt_max_authors: 0
     ```
 
-This only applies to post excerpts in views. Posts always render all authors.
+这仅适用于观点中的帖子摘录。帖子总是呈现所有作者。
 
 ---
 
@@ -540,10 +540,10 @@ This only applies to post excerpts in views. Posts always render all authors.
 <!-- md:version 9.2.0 -->
 <!-- md:default `5` -->
 
-Use this setting to set an upper bound for the number of categories rendered in
-post excerpts. While each post may be assigned to multiple categories, this
-setting allows to limit the display to just a few or even a single category, or
-disable categories in post excerpts:
+使用此设置为中呈现的类别数量设置上限
+发布摘录。虽然每个帖子可能被分配到多个类别，但这
+设置允许将显示限制为几个甚至单个类别，或
+禁用帖子摘录中的类别：
 
 === "Render up to 2 categories"
 
@@ -561,7 +561,7 @@ disable categories in post excerpts:
           post_excerpt_max_categories: 0
     ```
 
-This only applies to post excerpts in views. Posts always render all categories.
+这仅适用于观点中的帖子摘录。帖子总是呈现所有类别。
 
 ---
 
@@ -570,9 +570,9 @@ This only applies to post excerpts in views. Posts always render all categories.
 <!-- md:version 9.2.0 -->
 <!-- md:default <code>&lt;!-- more --&gt;</code> -->
 
-Use this setting to set the separator the plugin will look for in a post's
-content when generating post excerpts. All content __before__ the separator is
-considered to be part of the excerpt:
+使用此设置设置插件将在帖子中查找的分隔符
+生成帖子摘录时的内容。所有内容__before _分隔符为
+被认为是摘录的一部分：
 
 ``` yaml
 plugins:
@@ -580,7 +580,7 @@ plugins:
       post_excerpt_separator: <!-- more -->
 ```
 
-It is common practice to use an HTML comment as a separator.
+通常的做法是使用HTML注释作为分隔符。
 
 ---
 
@@ -589,9 +589,9 @@ It is common practice to use an HTML comment as a separator.
 <!-- md:version 9.2.0 -->
 <!-- md:default `true` -->
 
-Use this setting to control whether the plugin should automatically compute the
-reading time of a post, which is then rendered in post excerpts, as well as in
-posts themselves:
+使用此设置控制插件是否应自动计算
+帖子的阅读时间，然后以帖子摘录的形式呈现，以及
+发布自己：
 
 ``` yaml
 plugins:
@@ -599,13 +599,13 @@ plugins:
       post_readtime: false
 ```
 
-!!! warning "Chinese, Japanese and Korean characters"
+!!! warning "汉字、日文和韩文"
 
-    Reading time computation currently does not take segmentation of Chinese,
-    Japanese and Korean characters into account. This means that the reading
-    time for posts in these languages may be inaccurate. We're planning on
-    adding support in the future. In the meantime, please use the `readtime`
-    front matter property to set the reading time.
+    阅读时间计算目前不采用中文分词，
+    考虑到日文和韩文字符。这意味着阅读
+    用这些语言发帖的时间可能不准确。我们正在计划
+    在未来增加支持。与此同时，请使用“阅读时间”`
+    front matter属性用于设置读取时间。
 
 ---
 
@@ -614,9 +614,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `265` -->
 
-Use this setting to change the number of words that a reader is expected to read
-per minute when computing the reading time of a post. If you want to fine-tune
-it, use:
+使用此设置更改读者应阅读的字数
+在计算帖子的阅读时间时，每分钟。如果你想微调
+它，使用：
 
 ``` yaml
 plugins:
@@ -624,14 +624,14 @@ plugins:
       post_readtime_words_per_minute: 300
 ```
 
-A reading time of 265 words per minute is considered to be the
-[average reading time of an adult].
+每分钟265个单词的阅读时间被认为是
+[成年人的平均阅读时间]。
 
   [average reading time of an adult]: https://help.medium.com/hc/en-us/articles/214991667-Read-time
 
-### Archive
+### 档案
 
-The following settings are available for archive pages:
+以下设置可用于存档页面：
 
 ---
 
@@ -640,9 +640,9 @@ The following settings are available for archive pages:
 <!-- md:version 9.2.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable archive pages. An archive page shows all
-posts for a specific interval (e.g. year, month, etc.) in reverse order. If you
-want to disable archive pages, use:
+使用此设置启用或禁用存档页面。存档页面显示所有
+按相反顺序发布特定时间间隔（例如年、月等）的帖子。如果你
+要禁用存档页面，请使用：
 
 ``` yaml
 plugins:
@@ -657,9 +657,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default computed -->
 
-Use this setting to change the title of the archive section the plugin adds to
-the navigation. If this setting is omitted, it's sourced from the translations.
-If you want to change it, use:
+使用此设置更改插件添加到的存档部分的标题
+导航。如果省略此设置，则其来源于翻译。
+如果你想更改它，请使用：
 
 ``` yaml
 plugins:
@@ -674,8 +674,8 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `yyyy` -->
 
-Use this setting to change the date format used for archive page titles. The
-format string must adhere to [babel]'s [pattern syntax]. Some popular choices:
+使用此设置可更改用于存档页面标题的日期格式。这个
+格式字符串必须遵循[babel]的[模式语法]。一些流行的选择：
 
 === "2024"
 
@@ -693,8 +693,8 @@ format string must adhere to [babel]'s [pattern syntax]. Some popular choices:
           archive_date_format: MMMM yyyy
     ```
 
-Note that depending on the [site language], results might look different for
-other languages.
+请注意，根据[网站语言]的不同，结果可能会有所不同
+其他语言。
 
 ---
 
@@ -703,9 +703,9 @@ other languages.
 <!-- md:version 9.2.0 -->
 <!-- md:default `yyyy` -->
 
-Use this setting to change the date format used for archive page URLs. The
-format string must adhere to [babel]'s [pattern syntax] and should not contain
-whitespace. Some popular choices:
+使用此设置可更改用于存档页面URL的日期格式
+格式字符串必须遵循[babel]的[pattern语法]，并且不应包含
+空白。一些流行的选择：
 
 === ":material-link: blog/archive/2024/"
 
@@ -730,9 +730,9 @@ whitespace. Some popular choices:
 <!-- md:version 9.2.0 -->
 <!-- md:default `archive/{date}` -->
 
-Use this setting to change the format string that is used when generating
-archive page URLs. You can freely combine placeholders, and join them with
-slashes or other characters:
+使用此设置更改生成时使用的格式字符串
+存档页面URL。您可以自由组合占位符，并将其与
+斜线或其他字符：
 
 === ":material-link: blog/archive/2024/"
 
@@ -750,7 +750,7 @@ slashes or other characters:
           archive_url_format: "{date}"
     ```
 
-The following placeholders are available:
+以下占位符可用：
 
 - `date` – Archive date, formatted with [`archive_url_date_format`][config.archive_url_date_format]
 
@@ -762,9 +762,9 @@ The following placeholders are available:
 <!-- md:version insiders-4.44.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable pagination for archive pages. The value
-of this setting is inherited from [`pagination`][config.pagination], unless it's
-explicitly set. To disable pagination, use:
+使用此设置可启用或禁用存档页面的分页。价值
+此设置的值继承自[`pagination][config.pagination]，除非它是
+明确设置。要禁用分页，请使用：
 
 ``` yaml
 plugins:
@@ -780,9 +780,9 @@ plugins:
 <!-- md:version insiders-4.44.0 -->
 <!-- md:default `10` -->
 
-Use this setting to change the number of posts rendered per archive page. The
-value of this setting is inherited from [`pagination_per_page`]
-[config.pagination_per_page], unless it's explicitly set. To change it, use:
+使用此设置可更改每个存档页面呈现的帖子数量。这个
+此设置的值继承自[“pagination_per_page”]
+[config.pagion_per_page]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -797,9 +797,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `false` -->
 
-Use this setting to leverage the table of contents to display post titles on all
-archive pages. The value of this setting is inherited from [`blog_toc`]
-[config.blog_toc], unless it's explicitly set. To change it, use
+使用此设置可利用目录显示所有帖子的标题
+存档页面。此设置的值继承自[`blog_toc`]
+[config.blog_toc]，除非明确设置。要更改它，请使用
 
 ``` yaml
 plugins:
@@ -807,9 +807,9 @@ plugins:
       archive_toc: true
 ```
 
-### Categories
+### 类别
 
-The following settings are available for category pages:
+以下设置可用于类别页面：
 
 ---
 
@@ -818,9 +818,9 @@ The following settings are available for category pages:
 <!-- md:version 9.2.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable category pages. A category page shows all
-posts for a specific category in reverse chronological order. If you want to
-disable category pages, use:
+使用此设置启用或禁用类别页面。类别页面显示所有
+按时间倒序排列特定类别的帖子。如果你想
+禁用类别页面，使用：
 
 ``` yaml
 plugins:
@@ -835,9 +835,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default computed -->
 
-Use this setting to change the title of the category section the plugin adds to
-the navigation. If this setting is omitted, it's sourced from the translations.
-If you want to change it, use:
+使用此设置更改插件添加到的类别部分的标题
+导航。如果省略此设置，则其来源于翻译。
+如果你想更改它，请使用：
 
 ``` yaml
 plugins:
@@ -852,9 +852,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `category/{slug}` -->
 
-Use this setting to change the format string that is used when generating
-category page URLs. You can freely combine placeholders, and join them with
-slashes or other characters:
+使用此设置更改生成时使用的格式字符串
+类别页面URL。您可以自由组合占位符，并将其与
+斜线或其他字符：
 
 === ":material-link: blog/category/:material-dots-horizontal:/"
 
@@ -872,9 +872,9 @@ slashes or other characters:
           categories_url_format: "{slug}"
     ```
 
-The following placeholders are available:
+以下占位符可用：
 
-- `slug` – Category, slugified with [`categories_slugify`][config.categories_slugify]
+- `slug `–类别，用[`categories_slugify`][config.categories_shugify]分隔
 
 ---
 
@@ -883,9 +883,9 @@ The following placeholders are available:
 <!-- md:version 9.2.0 -->
 <!-- md:default [`pymdownx.slugs.slugify`][pymdownx.slugs.slugify] -->
 
-Use this setting to change the function for generating URL-compatible slugs
-from categories. By default, the [`slugify`][pymdownx.slugs.slugify] function
-from [Python Markdown Extensions] is used as follows:
+使用此设置更改生成与URL兼容的slug的功能
+从类别。默认情况下，['slugify][pymdownx.slugs.slugify]函数
+[Python Markdown扩展]的用法如下：
 
 ``` yaml
 plugins:
@@ -895,9 +895,9 @@ plugins:
           case: lower
 ```
 
-The default configuration is Unicode-aware and should produce good slugs for all
-languages. Of course, you can also provide a custom slugification function for
-more granular control.
+默认配置支持Unicode，应该能为所有人生成良好的slug
+语言。当然，您还可以为以下对象提供自定义的slugif功能
+更精细的控制。
 
 ---
 
@@ -906,9 +906,9 @@ more granular control.
 <!-- md:version 9.2.0 -->
 <!-- md:default `-` -->
 
-Use this setting to change the separator that is passed to the slugification
-function set as part of [`categories_slugify`][config.categories_slugify]. While
-the default is a hyphen, it can be set to any string, e.g., `_`:
+使用此设置更改传递给slugif的分隔符
+函数集为[类别_插件]的一部分[配置.类别_插件]。与…同时
+默认值是连字符，可以设置为任何字符串，例如“_”：
 
 ``` yaml
 plugins:
@@ -924,9 +924,9 @@ plugins:
 <!-- md:version insiders-4.45.0 -->
 <!-- md:default `material.plugins.blog.view_name` -->
 
-Use this setting to specify a custom function for sorting categories. For
-example, if you want to sort categories by the number of posts they contain,
-use the following configuration:
+使用此设置可指定用于排序类别的自定义函数。给
+例如，如果你想按类别包含的帖子数量对类别进行排序，
+使用以下配置：
 
 ``` yaml
 plugins:
@@ -934,9 +934,9 @@ plugins:
       categories_sort_by: !!python/name:material.plugins.blog.view_post_count
 ```
 
-Don't forget to enable [`categories_sort_reverse`][config.categories_sort_reverse].
-You can define your own comparison function, which must return something
-that can be compared while sorting, i.e., a string or number.
+别忘了启用[`categories_sort_reverse][config.categories_sort _reverse]。
+您可以定义自己的比较函数，该函数必须返回一些值
+可以在排序时进行比较，即字符串或数字。
 
 ---
 
@@ -946,9 +946,9 @@ that can be compared while sorting, i.e., a string or number.
 <!-- md:version insiders-4.45.0 -->
 <!-- md:default `false` -->
 
-Use this setting to reverse the order in which categories are sorted. By
-default, categories are sorted in ascending order, but you can reverse ordering
-as follows:
+使用此设置可颠倒类别的排序顺序。By
+默认情况下，类别按升序排序，但您可以颠倒顺序
+如下：
 
 ``` yaml
 plugins:
@@ -963,9 +963,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default none -->
 
-The plugin allows to check categories against a predefined list, in order to
-catch typos or make sure that categories are not arbitrarily added. Specify the
-categories you want to allow with:
+该插件允许根据预定义列表检查类别，以便
+捕捉拼写错误或确保类别不是任意添加的。指定
+您希望允许的类别：
 
 ``` yaml
 plugins:
@@ -975,9 +975,9 @@ plugins:
         - Performance
 ```
 
-The plugin stops the build if a post references a category that is not part of
-this list. Posts can be assigned to categories by using the [`categories`]
-[meta.categories] metadata property.
+如果帖子引用的类别不属于
+这个列表。可以使用[“类别”]将帖子分配到类别中
+[meta.classes]元数据属性。
 
 ---
 
@@ -987,9 +987,9 @@ this list. Posts can be assigned to categories by using the [`categories`]
 <!-- md:version insiders-4.44.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable pagination for category pages. The value
-of this setting is inherited from [`pagination`][config.pagination], unless it's
-explicitly set. To disable pagination, use:
+使用此设置可启用或禁用类别页面的分页。价值
+此设置的值继承自[`pagination][config.pagination]，除非它是
+明确设置。要禁用分页，请使用：
 
 ``` yaml
 plugins:
@@ -1005,9 +1005,9 @@ plugins:
 <!-- md:version insiders-4.44.0 -->
 <!-- md:default `10` -->
 
-Use this setting to change the number of posts rendered per category page. The
-value of this setting is inherited from [`pagination_per_page`]
-[config.pagination_per_page], unless it's explicitly set. To change it, use:
+使用此设置可更改每个类别页面呈现的帖子数量。这个
+此设置的值继承自[“pagination_per_page”]
+[config.pagion_per_page]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -1022,9 +1022,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `false` -->
 
-Use this setting to leverage the table of contents to display post titles on all
-category pages. The value of this setting is inherited from [`blog_toc`]
-[config.blog_toc], unless it's explicitly set. To change it, use:
+使用此设置可利用目录显示所有帖子的标题
+类别页面。此设置的值继承自[`blog_toc`]
+[config.blog_toc]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -1032,9 +1032,9 @@ plugins:
       categories_toc: true
 ```
 
-### Authors
+### 作者
 
-The following settings are available for authors:
+作者可以使用以下设置：
 
 ---
 
@@ -1043,9 +1043,9 @@ The following settings are available for authors:
 <!-- md:version 9.2.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable post authors. If this setting is enabled,
-the plugin will look for a file named [`.authors.yml`][config.authors_file] and
-render authors in posts and views. Disable this behavior with:
+使用此设置启用或禁用文章作者。如果启用了该设置，
+该插件将查找一个名为[`.orges.yml`][config.authors_file]的文件
+在帖子和视图中呈现作者。通过以下方式禁用此行为：
 
 ``` yaml
 plugins:
@@ -1060,9 +1060,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `{blog}/.authors.yml` -->
 
-Use this setting to change the path of the file where the author information for
-your posts resides. It's normally not necessary to change this setting, but if
-you need to, use:
+使用此设置可更改其中包含作者信息的文件的路径
+你的帖子驻留。通常不需要更改此设置，但如果
+您需要使用：
 
 ``` yaml
 plugins:
@@ -1070,11 +1070,11 @@ plugins:
       authors_file: "{blog}/.authors.yml"
 ```
 
-The following placeholders are available:
+以下占位符可用：
 
-- `blog` – [`blog` directory][config.blog_dir]
+- `blog`–[blog`目录][config.blog_dir]
 
-The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
+提供的路径是从[`docs`目录][mkdocs.docs_dir]解析的。
 
 !!! info "Format of author information"
 
@@ -1090,11 +1090,11 @@ The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
         url: url            # Author website URL
     ```
 
-    Note that `<author>` must be set to an identifier for associating authors
-    with posts, e.g., a GitHub username like `squidfunk`. This identifier can
-    then be used in the [`authors`][meta.authors] metadata property of
-    a post. Multiple authors are supported. As an example, see
-    [the `.authors.yml` file][.authors.yml] we're using for our blog.
+    请注意，“<author>”必须设置为用于关联作者的标识符
+    带有帖子，例如GitHub用户名“squidfunk”。此标识符可以
+    然后在[作者][元作者]元数据属性中使用
+    一篇帖子。支持多个作者。例如，请参见
+    [我们博客使用的`.orges.yml`文件][.orges.ymml]。
 
   [.authors.yml]: https://github.com/squidfunk/mkdocs-material/blob/master/docs/blog/.authors.yml
 
@@ -1106,9 +1106,9 @@ The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
 <!-- md:version insiders-4.46.0 -->
 <!-- md:default `false` -->
 
-Use this setting to enable or disable automatically generated author profiles.
-An author profile shows all posts by an author in reverse chronological order.
-You can enable author profiles with:
+使用此设置启用或禁用自动生成的作者配置文件。
+作者简介按时间倒序显示作者的所有帖子。
+您可以通过以下方式启用作者配置文件：
 
 ``` yaml
 plugins:
@@ -1124,9 +1124,9 @@ plugins:
 <!-- md:version insiders-4.46.0 -->
 <!-- md:default computed -->
 
-Use this setting to change the title of the authors section the plugin adds to
-the navigation. If this setting is omitted, it's sourced from the translations.
-If you want to change it, use:
+使用此设置更改插件添加到的作者部分的标题
+导航。如果省略此设置，则其来源于翻译。
+如果你想更改它，请使用：
 
 ``` yaml
 plugins:
@@ -1142,9 +1142,9 @@ plugins:
 <!-- md:version insiders-4.46.0 -->
 <!-- md:default `author/{slug}` -->
 
-Use this setting to change the format string that is used when generating
-author profile URLs. You can freely combine placeholders, and join them with
-slashes or other characters:
+使用此设置更改生成时使用的格式字符串
+作者配置文件URL。您可以自由组合占位符，并将其与
+斜线或其他字符：
 
 === ":material-link: blog/author/:material-dots-horizontal:/"
 
@@ -1164,8 +1164,8 @@ slashes or other characters:
 
 The following placeholders are available:
 
-- `slug` – Author slug or identifier from [`authors_file`][config.authors_file]
-- `name` – Author name from [`authors_file`][config.authors_file]
+- `slug` – 来自[`authors_file][config.authors_file]的作者段符或标识符
+- `name` – 来自[`authors_file][config.authors_file]的作者名称
 
 ---
 
@@ -1175,9 +1175,9 @@ The following placeholders are available:
 <!-- md:version insiders-4.46.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable pagination for author profiles. The value
-of this setting is inherited from [`pagination`][config.pagination], unless it's
-explicitly set. To disable pagination, use:
+使用此设置可启用或禁用作者配置文件的分页。价值
+此设置的值继承自[`pagination][config.pagination]，除非它是
+明确设置。要禁用分页，请使用：
 
 ``` yaml
 plugins:
@@ -1193,9 +1193,9 @@ plugins:
 <!-- md:version insiders-4.46.0 -->
 <!-- md:default `10` -->
 
-Use this setting to change the number of posts rendered per archive page. The
-value of this setting is inherited from [`pagination_per_page`]
-[config.pagination_per_page], unless it's explicitly set. To change it, use:
+使用此设置可更改每个存档页面呈现的帖子数量。这个
+此设置的值继承自[“pagination_per_page”]
+[config.pagion_per_page]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -1211,9 +1211,9 @@ plugins:
 <!-- md:version insiders-4.46.0 -->
 <!-- md:default `false` -->
 
-Use this setting to leverage the table of contents to display post titles on all
-author profiles. The value of this setting is inherited from [`blog_toc`]
-[config.blog_toc], unless it's explicitly set. To change it, use:
+使用此设置可利用目录显示所有帖子的标题
+作者简介。此设置的值继承自[`blog_toc`]
+[config.blog_toc]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -1221,9 +1221,9 @@ plugins:
       authors_profiles_toc: true
 ```
 
-### Pagination
+### 分页
 
-The following settings are available for pagination:
+以下设置可用于分页：
 
 ---
 
@@ -1232,9 +1232,9 @@ The following settings are available for pagination:
 <!-- md:version 9.2.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable pagination in views – generated pages
-that show posts or subsets of posts in reverse chronological order. If you want
-to disable pagination, use:
+使用此设置在视图生成的页面中启用或禁用分页
+按逆时间顺序显示帖子或帖子子集。如果你想要我
+要禁用分页，请使用：
 
 ``` yaml
 plugins:
@@ -1249,9 +1249,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `10` -->
 
-Use this setting to change the number of posts rendered per page. If you have
-rather long post excerpts, it can be a good idea to reduce the number of posts
-per page:
+使用此设置可更改每页呈现的帖子数量。如果你有
+相当长的帖子摘录，减少帖子数量可能是个好主意
+每页：
 
 ``` yaml
 plugins:
@@ -1266,9 +1266,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `page/{page}` -->
 
-Use this setting to change the format string that is used when generating
-paginated view URLs. You can freely combine placeholders, and join them with
-slashes or other characters:
+使用此设置更改生成时使用的格式字符串
+分页视图URL。您可以自由组合占位符，并用
+斜线或其他字符：
 
 === ":material-link: blog/page/n/"
 
@@ -1297,9 +1297,9 @@ The following placeholders are available:
 <!-- md:version 9.2.0 -->
 <!-- md:default `~2~` -->
 
-The plugin uses the [paginate] module to generate the pagination markup using a
-special syntax. Use this setting to customize how pagination is constructed.
-Some popular choices:
+使用此设置更改生成时使用的格式字符串
+分页视图URL。您可以自由组合占位符，并用
+斜线或其他字符：
 
 === "1 2 3 .. n"
 
@@ -1349,9 +1349,9 @@ The following placeholders are supported by [paginate]:
 <!-- md:version 9.2.0 -->
 <!-- md:default `false` -->
 
-Use this setting to control whether pagination should be automatically disabled
-when the view only consists of a single page. If you want to always render
-pagination, use:
+使用此设置可控制是否应自动禁用分页
+当视图仅由单个页面组成时。如果你想一直渲染
+分页，使用：
 
 ``` yaml
 plugins:
@@ -1366,9 +1366,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `false` -->
 
-Use this setting to enable or disable persistence of content, i.e., if paginated
-views should also display the content of their containing view. If you want to
-enable this behavior, use:
+使用此设置启用或禁用内容的持久性，即如果分页
+视图还应显示其包含的视图的内容。如果你愿意
+启用此行为，请使用：
 
 ``` yaml
 plugins:
@@ -1378,7 +1378,7 @@ plugins:
 
 ### Drafts
 
-The following settings are available for drafts:
+以下设置可用于草稿：
 
 ---
 
@@ -1387,9 +1387,9 @@ The following settings are available for drafts:
 <!-- md:version 9.2.0 -->
 <!-- md:default `false` -->
 
-Rendering [draft posts][meta.draft] can be useful in deploy previews. Use this
-setting to specify whether the plugin should include posts marked as drafts when
-[building your project]:
+渲染[草稿帖子][元草稿]在部署预览中很有用。使用这个
+设置以指定插件在以下情况下是否应包含标记为草稿的帖子
+[构建您的项目]：
 
 === "Render drafts"
 
@@ -1414,9 +1414,9 @@ setting to specify whether the plugin should include posts marked as drafts when
 <!-- md:version 9.2.0 -->
 <!-- md:default `true` -->
 
-Use this setting to control whether the plugin should include posts marked as
-drafts when [previewing your site]. If you don't wish to include draft posts
-when previewing, use:
+使用此设置控制插件是否应包含标记为的帖子
+[预览网站]时的草稿。如果你不想包括草稿帖子
+预览时，使用：
 
 ``` yaml
 plugins:
@@ -1433,9 +1433,9 @@ plugins:
 <!-- md:version 9.2.0 -->
 <!-- md:default `false` -->
 
-The plugin can automatically mark posts with future dates as drafts. When the
-date is past today, the post is automatically included when
-[building your project], unless explicitly marked as draft:
+该插件可以自动将带有未来日期的帖子标记为草稿。当
+日期已过今天，当
+[构建你的项目]，除非明确标记为草稿：
 
 ``` yaml
 plugins:
@@ -1443,16 +1443,16 @@ plugins:
       draft_if_future_date: true
 ```
 
-## Usage
+## 使用
 
-### Metadata
+### 元数据
 
-Posts can define a handful of metadata properties that specify how the plugin
-renders them, in which views they are integrated, and how they are linked to
-each other. The metadata of each post is validated against a schema to allow for
-a quicker discovery of syntax errors.
+帖子可以定义一些元数据属性，指定插件的方式
+呈现它们，在哪些视图中集成它们，以及它们如何链接到
+彼此。每个帖子的元数据都会根据模式进行验证，以允许
+更快地发现语法错误。
 
-The following properties are available:
+以下属性可用：
 
 ---
 
@@ -1462,9 +1462,9 @@ The following properties are available:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-Use this property to associate a post with [authors] by providing a list of
-identifiers as defined in the [`authors_file`][config.authors_file]. If an
-author can't be resolved, the plugin will terminate with an error:
+使用此属性通过提供以下列表将帖子与[作者]相关联
+标识符如[`authors_file][config.authors_file]中所定义。如果A
+无法解析作者，插件将终止并显示错误：
 
 ``` yaml
 ---
@@ -1489,9 +1489,9 @@ authors:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-Use this property to associate a post with one or more [categories][category],
-making the post a part of the generated category page. Categories are defined
-as a list of strings (whitespaces are allowed):
+使用此属性将帖子与一个或多个[类别][类别]相关联，
+使帖子成为生成的类别页面的一部分。类别已定义
+作为字符串列表（允许使用空格）：
 
 ``` yaml
 ---
@@ -1504,9 +1504,9 @@ categories:
 ...
 ```
 
-If you want to prevent accidental typos assigning categories to posts, you
-can set a predefined list of allowed categories in `mkdocs.yml` by using
-the [`categories_allowed`][config.categories_allowed] setting.
+如果你想防止为帖子分配类别时出现意外拼写错误，你
+可以使用以下命令在“mkdocs.yml”中设置预定义的允许类别列表
+[`categories_allowed][config.categories_alowed]设置。
 
 ---
 
@@ -1516,9 +1516,9 @@ the [`categories_allowed`][config.categories_allowed] setting.
 <!-- md:flag metadata -->
 <!-- md:flag required -->
 
-Use this property to specify a post's date. Note that this property is required,
-which means the build fails when it's not set. Additional dates can be set by
-using a slightly different syntax:
+使用此属性指定帖子的日期。注意，该属性是必需的，
+这意味着构建在未设置时失败。其他日期可以通过以下方式设置
+使用稍微不同的语法：
 
 === "Date"
 
@@ -1559,13 +1559,13 @@ using a slightly different syntax:
     ...
     ```
 
-    1.  The blog plugin validates all dates and allows to format them with
-        [babel]'s [pattern syntax] in templates. When using theme extension,
-        authors can add custom dates to templates.
+    1.  博客插件验证所有日期，并允许使用
+        模板中的[babel]的[模式语法]。当使用主题扩展时，
+        作者可以将自定义日期添加到模板中。
 
-        This was first requested in #5733.
+        这是在#5733中首次提出的要求。
 
-The following date formats are supported:
+支持以下日期格式：
 
 - `2024-01-31`
 - `2024-01-31T12:00:00`
@@ -1578,9 +1578,9 @@ The following date formats are supported:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-Use this property to mark a post as draft. The plugin allows to include or
-exclude posts marked as drafts when [building your project] using the
-[`draft`][config.draft] setting. Mark a post as draft with:
+使用此属性将帖子标记为草稿。该插件允许包含或
+使用[构建项目]时排除标记为草稿的帖子
+[草稿][配置草稿]设置。将帖子标记为草稿：
 
 ``` yaml
 ---
@@ -1601,9 +1601,9 @@ draft: true
 <!-- md:default `false` -->
 <!-- md:flag experimental -->
 
-Use this property to pin a post to the top of a view. In case multiple posts are
-pinned, the pinned posts are sorted by descending order and appear before all
-other posts. Pin a post with:
+使用此属性将柱子固定到视图的顶部。如果有多个帖子
+固定后，固定的帖子按降序排列，出现在所有帖子之前
+其他帖子。在柱子上钉上：
 
 ``` yaml
 ---
@@ -1624,9 +1624,9 @@ pin: true
 <!-- md:default none -->
 <!-- md:flag experimental -->
 
-Use this property to define a list of links that are rendered in the sidebar of
-a post. The property follows the same syntax as [`nav`][mkdocs.nav] in
-`mkdocs.yml`, supporting sections and even anchors:
+使用此属性定义在侧边栏中呈现的链接列表
+一篇帖子。该属性遵循与中的[`nav`][mkdocs.nav]相同的语法
+`mkdocs.yml`，支持部分甚至锚点：
 
 === "Links"
 
@@ -1671,10 +1671,10 @@ a post. The property follows the same syntax as [`nav`][mkdocs.nav] in
     ...
     ```
 
-    1.  If a link defines an anchor, the plugin resolves the anchor from the
-        linked page and sets the anchor title as a [subtitle].
+    1.  如果链接定义了锚点，则插件会从以下位置解析锚点
+        链接页面，并将锚点标题设置为[字幕]。
 
-All relative links are resolved from the [`docs` directory][mkdocs.docs_dir].
+所有相关链接都是从[`docs`目录][mkdocs.docs_dir]解析的。
 
   [subtitle]: ../reference/index.md#setting-the-page-subtitle
 
@@ -1686,9 +1686,9 @@ All relative links are resolved from the [`docs` directory][mkdocs.docs_dir].
 <!-- md:flag metadata -->
 <!-- md:default computed -->
 
-Use this property to explicitly set the reading time of a post in minutes. When
-[`post_readtime`][config.post_readtime] is enabled, the plugin computes the
-reading time of a post, which can be overridden with:
+使用此属性显式设置帖子的阅读时间（分钟）。什么时候？
+启用[`post_readtime`][config.post_readtime]后，插件将计算
+帖子的阅读时间，可以用以下命令覆盖：
 
 ``` yaml
 ---
@@ -1707,9 +1707,9 @@ readtime: 15
 <!-- md:flag metadata -->
 <!-- md:default computed -->
 
-Use this property to explicitly set the slug of a post. By default, the slug of
-a post is automatically computed by the [`post_slugify`][config.post_slugify]
-function from the post's title, which can be overridden with:
+使用此属性可以显式设置帖子的slug。默认情况下，slug
+帖子由[`post_slugify][config.post_sluglify]自动计算
+可以用以下命令覆盖帖子标题中的函数：
 
 ``` yaml
 ---
@@ -1724,13 +1724,13 @@ Slugs are passed to [`post_url_format`][config.post_url_format].
 
 ---
 
-!!! question "Missing something?"
+!!! question "缺少什么？"
 
-    When setting up your blog or migrating from another blog framework, you
-    might discover that you're missing specific functionality – we're happy to
-    consider adding it to the plugin! You can [open a discussion] to
-    ask a question, or create a [change request] on our [issue tracker], so we
-    can find out if it might be a good fit for the plugin.
+    在设置博客或从其他博客框架迁移时，您
+    可能会发现您缺少特定功能–我们很乐意
+    考虑将其添加到插件中！你可以[展开讨论]
+    在我们的[问题跟踪器]上提出问题或创建[更改请求]，因此我们
+    可以找出它是否适合该插件。
 
   [open a discussion]: https://github.com/squidfunk/mkdocs-material/discussions
   [change request]: ../contributing/requesting-a-change.md

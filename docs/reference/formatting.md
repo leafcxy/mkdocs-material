@@ -2,20 +2,20 @@
 icon: material/format-font
 ---
 
-# Formatting
+# 格式化
 
-Material for MkDocs provides support for several HTML elements that can be used
-to highlight sections of a document or apply specific formatting. Additionally,
-[Critic Markup] is supported, adding the ability to display suggested changes
-for a document.
+MkDocs的材料为可以使用的几个HTML元素提供了支持
+突出显示文档的某些部分或应用特定格式。另外，
+支持[批评标记]，增加了显示建议更改的能力
+对于一份文件。
 
   [Critic Markup]: https://github.com/CriticMarkup/CriticMarkup-toolkit
 
-## Configuration
+## 配置
 
-This configuration enables support for keyboard keys, tracking changes in
-documents, defining sub- and superscript and highlighting text. Add the
-following lines to `mkdocs.yml`:
+此配置支持键盘按键，跟踪
+文档，定义子和上标并突出显示文本。添加
+将以下行转换为`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -26,7 +26,7 @@ markdown_extensions:
   - pymdownx.tilde
 ```
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [Critic]
 - [Caret, Mark & Tilde]
@@ -36,12 +36,12 @@ See additional configuration options:
   [Caret, Mark & Tilde]: ../setup/extensions/python-markdown-extensions.md#caret-mark-tilde
   [Keys]: ../setup/extensions/python-markdown-extensions.md#keys
 
-## Usage
+## 使用
 
-### Highlighting changes
+### 突出显示更改
 
-When [Critic] is enabled, [Critic Markup] can be used, which adds the ability to
-highlight suggested changes, as well as add inline comments to a document:
+启用[Critic]后，可以使用[Critic Markup]，这增加了以下功能
+突出显示建议的更改，并在文档中添加内联注释：
 
 ``` title="Text with suggested changes"
 Text can be {--deleted--} and replacement text {++added++}. This can also be
@@ -76,7 +76,7 @@ Text can be <del class="critic">deleted</del> and replacement text
 
 </div>
 
-### Highlighting text
+### 突出显示文本
 
 When [Caret, Mark & Tilde] are enabled, text can be highlighted with a simple
 syntax, which is more convenient that directly using the corresponding
@@ -100,7 +100,7 @@ syntax, which is more convenient that directly using the corresponding
   [ins]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
   [del]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
 
-### Sub- and superscripts
+### 副标题和上标
 
 When [Caret & Tilde][Caret, Mark & Tilde] are enabled, text can be sub- and
 superscripted with a simple syntax, which is more convenient than directly
@@ -121,7 +121,7 @@ using the corresponding [`sub`][sub] and [`sup`][sup] HTML tags:
   [sub]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
   [sup]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
 
-### Adding keyboard keys
+### 添加键盘按键
 
 When [Keys] is enabled, keyboard keys can be rendered with a simple syntax.
 Consult the [Python Markdown Extensions] documentation to learn about all

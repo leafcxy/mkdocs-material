@@ -2,39 +2,39 @@
 icon: material/format-align-bottom
 ---
 
-# Footnotes
+# 脚注
 
-Footnotes are a great way to add supplemental or additional information to a
-specific word, phrase or sentence without interrupting the flow of a document.
-Material for MkDocs provides the ability to define, reference and render
-footnotes.
+脚注是向文档添加补充或附加信息的好方法
+特定的单词、短语或句子，而不会中断文档的流程。
+MkDocs的材料提供了定义、参考和呈现的能力
+脚注。
 
-## Configuration
+## 配置
 
-This configuration adds the ability to define inline footnotes, which are then
-rendered below all Markdown content of a document. Add the following lines to
-`mkdocs.yml`:
+此配置增加了定义内联脚注的能力，然后
+在文档的所有Markdown内容下方呈现。将以下行添加到
+`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
   - footnotes
 ```
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [Footnotes]
 
   [Footnotes]: ../setup/extensions/python-markdown.md#footnotes
 
-### Footnote tooltips
+### 脚注工具提示
 
 <!-- md:sponsors -->
 <!-- md:version insiders-4.51.0 -->
 <!-- md:flag experimental -->
 
-[Insiders] allows to render footnotes as inline tooltips, so the user can read
-the footnote without leaving the context of the document. Footnote tooltips can
-be enabled in `mkdocs.yml` with:
+[Insiders]允许将脚注呈现为内联工具提示，以便用户可以阅读
+脚注没有脱离文档的上下文。脚注工具提示可以
+在`mkdocs.yml`中启用：
 
 ``` yaml
 theme:
@@ -42,19 +42,19 @@ theme:
     - content.footnote.tooltips
 ```
 
-__Footnote tooltips are enabled on our documentation__, so to try it out, you
-can just hover or focus any footnote on this page or any other page of our
-documentation.
+__我们的文档__上启用了脚注工具提示，所以要尝试一下，你
+可以将任何脚注悬停或聚焦在本页或我们的任何其他页面上
+文档。
 
   [Insiders]: ../insiders/index.md
 
-## Usage
+## 使用
 
-### Adding footnote references
+### 添加脚注引用
 
-A footnote reference must be enclosed in square brackets and must start with a
-caret `^`, directly followed by an arbitrary identifier, which is similar to
-the standard Markdown link syntax.
+脚注引用必须括在方括号内，并且必须以
+插入符号“^”，后面紧跟一个任意标识符，类似于
+标准Markdown链接语法。
 
 ``` title="Text with footnote references"
 Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
@@ -66,16 +66,16 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 
 </div>
 
-### Adding footnote content
+### 添加脚注内容
 
-The footnote content must be declared with the same identifier as the reference.
-It can be inserted at an arbitrary position in the document and is always
-rendered at the bottom of the page. Furthermore, a backlink to the footnote
-reference is automatically added.
+脚注内容必须使用与引用相同的标识符声明。
+它可以插入文档中的任意位置，并且始终
+呈现在页面底部。此外，脚注的反向链接
+引用会自动添加。
 
-#### on a single line
+#### 在一条线上
 
-Short footnotes can be written on the same line:
+简短的脚注可以写在同一行上：
 
 ``` title="Footnote"
 [^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -89,9 +89,9 @@ Short footnotes can be written on the same line:
 
   [^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-#### on multiple lines
+#### 在多条线上
 
-Paragraphs can be written on the next line and must be indented by four spaces:
+段落可以写在下一行，并且必须缩进四个空格：
 
 ``` title="Footnote"
 [^2]:

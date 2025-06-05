@@ -2,13 +2,13 @@
 icon: material/alphabet-greek
 ---
 
-# Math
+# 数学
 
-[MathJax] and [KaTeX] are two popular libraries for displaying
-mathematical content in browsers. Although both libraries offer similar
-functionality, they use different syntaxes and have different configuration
-options. This documentation site provides information on how to integrate them
-with Material for MkDocs easily.
+[MathJax]和[KaTeX]是两个流行的库，用于显示
+浏览器中的数学内容。尽管这两个库提供了类似的功能
+功能，它们使用不同的语法并具有不同的配置
+选项。本文档网站提供有关如何集成它们的信息
+轻松使用MkDocs材料。
 
   [MathJax]: https://www.mathjax.org/
   [LaTeX]: https://en.wikibooks.org/wiki/LaTeX/Mathematics
@@ -17,17 +17,17 @@ with Material for MkDocs easily.
   [KaTeX]: https://katex.org/
 
 
-## Configuration
+## 配置
 
-The following configuration enables support for rendering block and
-inline block equations using [MathJax] and [KaTeX].
+以下配置支持渲染块和
+使用[MathJax]和[KaTeX]的内联块方程。
 
 ### MathJax
 
-[MathJax] is a powerful and flexible library that supports multiple input formats,
-such as [LaTeX], [MathML], [AsciiMath], as well as various output formats like
-HTML, SVG, MathML. To use MathJax within your project, add the following lines
-to your `mkdocs.yml`.
+[MathJax]是一个强大而灵活的库，支持多种输入格式，
+例如[LaTeX]、[MathML]、[AsciiMath]，以及各种输出格式，如
+HTML、SVG、MathML。要在项目中使用MathJax，请添加以下行
+到你的mkdocs.yml。
 
 === ":octicons-file-code-16: `docs/javascripts/mathjax.js`"
 
@@ -67,7 +67,7 @@ to your `mkdocs.yml`.
       - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
     ```
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [Arithmatex]
 
@@ -92,9 +92,9 @@ See additional configuration options:
 
 ### KaTeX
 
-[KaTeX] is a lightweight library that focuses on speed and simplicity. It
-supports a subset of LaTeX syntax and can render math to HTML and SVG. To use
-[KaTeX] within your project, add the following lines to your `mkdocs.yml`.
+[KaTeX]是一个轻量级的库，专注于速度和简单性。它
+支持LaTeX语法的一个子集，可以将数学渲染为HTML和SVG。使用
+[KaTeX]在您的项目中，将以下行添加到您的`mkdocs.yml`中。
 
 === ":octicons-file-code-16: `docs/javascripts/katex.js`"
 
@@ -129,12 +129,12 @@ supports a subset of LaTeX syntax and can render math to HTML and SVG. To use
       - https://unpkg.com/katex@0/dist/katex.min.css
     ```
 
-## Usage
+## 使用
 
-### Using block syntax
+### 使用块语法
 
-Blocks must be enclosed in `#!latex $$...$$` or `#!latex \[...\]` on separate
-lines:
+块必须用`#！乳胶$$。..$$或#！单独使用乳胶
+线：
 
 ``` latex title="block syntax"
 $$
@@ -150,7 +150,7 @@ $$
 
 </div>
 
-### Using inline block syntax
+### 使用内联块语法
 
 Inline blocks must be enclosed in `#!latex $...$` or `#!latex \(...\)`:
 
@@ -168,31 +168,31 @@ that $f(a)=f(b)$.
 
 </div>
 
-## Comparing MathJax and KaTeX
+## MathJax和KaTeX的比较
 
-When deciding between MathJax and KaTeX, there are several key factors to
-consider:
+在MathJax和KaTeX之间做出选择时，有几个关键因素
+考虑：
 
-- __Speed__: KaTeX is generally faster than MathJax. If your site requires
-  rendering large quantities of complex equations quickly, KaTeX may be the
-  better choice.
+- __速度__:KaTeX通常比MathJax快。如果您的网站需要
+  快速渲染大量复杂的方程，KaTeX可能是
+  更好的选择。
 
-- __Syntax Support__: MathJax supports a wider array of LaTeX commands and can
-  process a variety of mathematical markup languages (like AsciiMath and MathML).
-  If you need advanced LaTeX features, MathJax may be more suitable.
+- __语法支持__:MathJax支持更广泛的LaTeX命令，可以
+  处理各种数学标记语言（如AsciiMath和MathML）。
+  如果你需要高级LaTeX功能，MathJax可能更合适。
 
-- __Output Format__: Both libraries support HTML and SVG outputs. However,
-  MathJax also offers MathML output, which can be essential for accessibility,
-  as it is readable by screen readers.
+- __输出格式__：这两个库都支持HTML和SVG输出。然而，
+  MathJax还提供MathML输出，这对可访问性至关重要，
+  因为它可以被屏幕阅读器读取。
 
-- __Configurability__: MathJax provides a range of configuration options,
-  allowing for more precise control over its behavior. If you have specific
-  rendering requirements, MathJax might be a more flexible choice.
+- __可配置性__：MathJax提供了一系列配置选项，
+  从而允许对其行为进行更精确的控制。如果你有具体的
+  根据渲染要求，MathJax可能是一个更灵活的选择。
 
-- __Browser Support__: While both libraries work well in modern browsers,
-  MathJax has broader compatibility with older browsers. If your audience uses a
-  variety of browsers, including older ones, MathJax might be a safer option.
+- __浏览器支持__：虽然这两个库在现代浏览器中都运行良好，
+  MathJax与旧浏览器具有更广泛的兼容性。如果你的听众使用
+  对于各种浏览器，包括较旧的浏览器，MathJax可能是一个更安全的选择。
 
-In summary, KaTeX shines with its speed and simplicity, whereas MathJax offers
-more features and better compatibility at the expense of speed. The choice
-between the two will largely depend on your specific needs and constraints.
+总之，KaTeX以其速度和简单性而闻名，而MathJax则提供
+以牺牲速度为代价，提供更多功能和更好的兼容性。选择
+两者之间的差异在很大程度上取决于你的具体需求和限制。

@@ -1,30 +1,30 @@
-# Built-in plugins
+# 内置插件
 
-Material for MkDocs started out as a theme for [MkDocs][mkdocs], but has since
-evolved into a full-fledged framework for building and maintaining documentation.
-The theme is still the core of the project, but it's now accompanied by a
-growing number of complementary built-in plugins.
+MkDocs的材料最初是[MkDocs][MkDocs]的主题，但后来
+发展成为一个用于构建和维护文档的成熟框架。
+主题仍然是该项目的核心，但现在伴随着
+越来越多的互补内置插件。
 
-We strive to make those plugins as modular and generic as possible, so that they
-can be used in a wide variety of projects and use cases. By providing useful
-default settings, we also try to make them as easy to use as possible, so that
-you can get started quickly, tweaking their settings later on. When
-developing built-in plugins, we always adhere to the following design principles:
+我们努力使这些插件尽可能模块化和通用化，以便它们
+可用于各种各样的项目和用例。通过提供有用的
+默认设置，我们还试图使它们尽可能易于使用，以便
+你可以快速开始，稍后调整他们的设置
+在开发内置插件时，我们始终坚持以下设计原则：
 
-- **Modularity:** Built-in plugins are designed to be modular, so that they can
-  be easily combined to implement sophisticated pipelines. For example, the
-  [offline], [optimize] and [privacy] plugins can be used together to build
-  truly [offline-capable documentation].
+- **模块化：**内置插件设计为模块化，因此它们可以
+  易于组合以实现复杂的管道。例如
+  [离线]、[优化]和[隐私]插件可以一起使用来构建
+  真正的[离线功能文档]。
 
-- **Interoperability:** Built-in plugins are designed to be as compatible as
-  possible, so they can be used in combination with other plugins, including
-  third-party plugins. We strive to make it simple to integrate with the vast
-  ecosystem that has evolved around [MkDocs][mkdocs].
+- **互操作性：**内置插件的设计与
+  可能，因此它们可以与其他插件结合使用，包括
+  第三方插件。我们努力使其易于与庞大的
+  围绕[MkDocs][MkDocs]发展起来的生态系统。
 
-- **Performance:** Built-in plugins are designed to be as fast and
-  memory-efficient as possible, so that they don't unnecessarily slow down
-  builds. This is particularly important for large documentation projects with
-  thousands of pages.
+- **性能：**内置插件的设计速度和
+  尽可能提高内存效率，这样它们就不会不必要地变慢
+  建筑。这对于具有以下功能的大型文档项目尤为重要
+  数千页。
 
   [mkdocs]: https://www.mkdocs.org/
   [design principles]: ../design-principles.md
@@ -32,12 +32,12 @@ developing built-in plugins, we always adhere to the following design principles
 
 ## Categories
 
-### Management
+### 管理
 
-The following plugins greatly improve the authoring experience when working on
-documentation projects by providing better management capabilities, from the
-management of plugins, multiple projects, and metadata, to the creation of
-minimal reproductions for bug reports:
+以下插件极大地改善了工作时的创作体验
+通过提供更好的管理能力，从
+管理插件、多个项目和元数据，以创建
+错误报告的最小复制：
 
 <div class="grid cards" markdown>
 
@@ -45,9 +45,9 @@ minimal reproductions for bug reports:
 
     ---
 
-    The group plugin allows to group plugins into logical units to conditionally
-    enable or disable them for specific environments with the use of
-    [environment variables][mkdocs.env].
+    组插件允许将插件有条件地分组到逻辑单元中
+    使用以下命令为特定环境启用或禁用它们
+    [环境变量][mkdocs.env]。
 
     ---
 
@@ -57,9 +57,9 @@ minimal reproductions for bug reports:
 
     ---
 
-    The meta plugin makes it easy to manage metadata (front matter) for all
-    pages in a folder, so a certain subset of pages uses specific tags or a
-    custom template.
+    元插件使管理所有人的元数据（前端内容）变得容易
+    文件夹中的页面，因此某些页面子集使用特定的标签或
+    自定义模板。
 
     ---
 
@@ -69,8 +69,8 @@ minimal reproductions for bug reports:
 
     ---
 
-    The projects plugin allows to split your main project into multiple distinct
-    projects, build them concurrently and preview them together as one.
+    项目插件允许将您的主项目拆分为多个不同的
+    项目，同时构建它们并将它们作为一个整体一起预览。
 
     ---
 
@@ -80,14 +80,14 @@ minimal reproductions for bug reports:
 
     ---
 
-    The info plugin is a small and useful utility that helps to create
-    self-contained minimal reproductions, so we maintainers can fix reported
-    bugs more quickly.
+    info插件是一个小而有用的实用程序，有助于创建
+    自包含的最小复制，因此我们维护人员可以修复报告
+    bug更快。
 
     ---
 
-    __Your bug reports are of the highest quality, so we can fix them as fast as
-    possible__
+    __您的错误报告质量最高，因此我们可以尽快修复它们
+    可能的__
 
 
 </div>
@@ -97,12 +97,12 @@ minimal reproductions for bug reports:
   [meta]: meta.md
   [projects]: projects.md
 
-### Optimization
+### 优化
 
-The following plugins are designed to help you build optimized documentation,
-making it more accessible to your users through faster loading times, better
-search engine rankings, beautiful preview images on social media, and GDPR
-compliance with a few lines of configuration:
+以下插件旨在帮助您构建优化的文档，
+通过更快的加载时间，更好地让用户更容易访问它
+搜索引擎排名、社交媒体上精美的预览图片和GDPR
+符合几行配置：
 
 <div class="grid cards" markdown>
 
@@ -110,22 +110,22 @@ compliance with a few lines of configuration:
 
     ---
 
-    The social plugin automatically generates beautiful and customizable
-    social cards for each page of your documentation, showing as previews on
-    social media.
+    社交插件会自动生成美观且可定制的内容
+    文档每一页的社交卡片，以预览形式显示在
+    社会化媒体。
 
     ---
 
-    __Links to your site render beautiful social cards when shared on social
-    media__
+    __当在社交媒体上分享时，指向您网站的链接会呈现美丽的社交卡片
+    媒体__
 
 -   :material-rabbit: &nbsp; __[Built-in optimize plugin][optimize]__
 
     ---
 
-    The optimize plugin automatically identifies and optimizes all media files
-    that you reference in your project by using compression and conversion
-    techniques.
+    优化插件自动识别并优化所有媒体文件
+    通过使用压缩和转换在项目中引用
+    技术。
 
     ---
 
@@ -135,9 +135,9 @@ compliance with a few lines of configuration:
 
     ---
 
-    The privacy plugin downloads external assets automatically for easy
-    self-hosting, allowing for GDPR compliance with a single line of
-    configuration.
+    隐私插件自动下载外部资产，方便
+    自托管，允许符合GDPR的单行
+    配置。
 
     ---
 
@@ -147,9 +147,9 @@ compliance with a few lines of configuration:
 
     ---
 
-    The offline plugin adds support for building [offline-capable documentation],
-    so you can distribute the [`site` directory][mkdocs.site_dir] as a `.zip`
-    file that can be downloaded.
+    离线插件增加了对构建[离线功能文档]的支持，
+    因此，您可以将[`site`目录][mkdocs.site_dir]作为`.zip分发`
+    可以下载的文件。
 
     ---
 
@@ -162,12 +162,12 @@ compliance with a few lines of configuration:
   [privacy]: privacy.md
   [social]: social.md
 
-### Content
+### 所容纳之物
 
-The following plugins are designed to help you set up a blog, provide search
-functionality to your users, add tags to pages and posts, and use the same
-typesetting capabilities in specific parts of the documentation exactly as in
-the main content:
+以下插件旨在帮助您设置博客，提供搜索
+为用户提供功能，为页面和帖子添加标签，并使用相同的功能
+文档特定部分的排版功能与
+主要内容：
 
 <div class="grid cards" markdown>
 
@@ -175,9 +175,9 @@ the main content:
 
     ---
 
-    The blog plugin adds first-class support for blogging to Material for
-    MkDocs, either as a sidecar to your documentation or as a standalone
-    installation.
+    博客插件为Material for添加了一流的博客支持
+    MkDocs，既可以作为文档的侧车，也可以作为独立的
+    安装。
 
     ---
 
@@ -187,9 +187,9 @@ the main content:
 
     ---
 
-    The search plugin adds a search bar to the header, allowing users to search
-    the entire documentation, so it's easier for them to find what they're
-    looking for.
+    搜索插件在标题中添加了一个搜索栏，允许用户搜索
+    整个文档，这样他们更容易找到它们是什么
+    寻找。
 
     ---
 
@@ -200,9 +200,9 @@ the main content:
 
     ---
 
-    The tags plugin adds first-class support for categorizing pages with tags,
-    adding the ability to group related pages to improve the discovery of
-    related content.
+    标签插件添加了对带有标签的页面进行分类的一流支持，
+    添加对相关页面进行分组的功能，以提高对
+    相关内容。
 
     ---
 
@@ -212,8 +212,8 @@ the main content:
 
     ---
 
-    The typeset plugin allows to preserve the enriched presentation of titles
-    and headlines within the navigation and table of contents.
+    排版插件允许保留标题的丰富呈现
+    以及导航和目录中的标题。
 
     ---
 
@@ -226,14 +226,14 @@ the main content:
   [tags]: tags.md
   [typeset]: typeset.md
 
-## Architecture
+## 结构
 
-### Multiple instances
+### 多个实例
 
-Several built-in plugins have support for multiple instances, which means that
-they can be used multiple times in the same configuration file, allowing to
-fine-tune behavior for separate sections of your project. Currently, the
-following plugins have support for multiple instances:
+几个内置插件支持多个实例，这意味着
+它们可以在同一配置文件中多次使用，从而允许
+为项目的不同部分微调行为。目前
+以下插件支持多个实例：
 
 <div class="mdx-columns" markdown>
 

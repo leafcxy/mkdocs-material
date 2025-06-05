@@ -2,18 +2,18 @@
 icon: material/tooltip-plus
 ---
 
-# Tooltips
+# 工具提示
 
-Technical documentation often incurs the usage of many acronyms, which may
-need additional explanation, especially for new user of your project. For these
-matters, Material for MkDocs uses a combination of Markdown extensions to
-enable site-wide glossaries.
+技术文档中经常使用许多缩写词，这可能
+需要额外的解释，特别是对于项目的新用户。对于这些
+重要的是，MkDocs的Material使用Markdown扩展的组合来
+启用全站术语表。
 
-## Configuration
+## 配置
 
-This configuration enables abbreviations and allows to build a simple
-project-wide glossary, sourcing definitions from a central location. Add the
-following line to `mkdocs.yml`:
+此配置支持缩写，并允许构建一个简单的
+项目范围内的术语表，从中心位置获取定义。添加
+以下行指向`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -22,7 +22,7 @@ markdown_extensions:
   - pymdownx.snippets
 ```
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [Abbreviations]
 - [Attribute Lists]
@@ -32,14 +32,14 @@ See additional configuration options:
   [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
   [Snippets]: ../setup/extensions/python-markdown-extensions.md#snippets
 
-### Improved tooltips
+### 改进的工具提示
 
 <!-- md:version 9.5.0 -->
 <!-- md:flag experimental -->
 
-When improved tooltips are enabled, Material for MkDocs replaces the browser's
-rendering logic for `title` attribute with beautiful little tooltips.
-Add the following lines to `mkdocs.yml`:
+启用改进的工具提示后，MkDocs材质将取代浏览器的
+使用漂亮的小工具提示渲染“title”属性的逻辑。
+将以下行添加到`mkdocs.yml`中：
 
 ``` yaml
 theme:
@@ -47,19 +47,19 @@ theme:
     - content.tooltips
 ```
 
-Now, tooltips will be rendered for the following elements:
+现在，将为以下元素呈现工具提示：
 
-- __Content__ – elements with a `title`, permalinks and code copy button
-- __Header__ – home button, header title, color palette switch and repository link
-- __Navigation__ – links that are shortened with ellipsis, i.e. `...`
+- __Content__ – 带有“标题”、永久链接和代码复制按钮的元素
+- __Header__ – 主页按钮、标题标题、调色板开关和存储库链接
+- __Navigation__ – 用省略号缩短的链接，即“”。..`
 
-## Usage
+## 使用
 
-### Adding tooltips
+### 添加工具提示
 
-The [Markdown syntax] allows to specify a `title` for each link, which will
-render as a beautiful tooltip when [improved tooltips] are enabled. Add a
-tooltip to a link with the following lines:
+Markdown语法允许为每个链接指定一个“标题”，这将
+启用[改进的工具提示]时，渲染为漂亮的工具提示。添加a
+工具提示指向包含以下行的链接：
 
 ``` markdown title="Link with tooltip, inline syntax"
 [Hover me](https://example.com "I'm a tooltip!")
@@ -101,11 +101,11 @@ extension:
   [Markdown syntax]: https://daringfireball.net/projects/markdown/syntax#link
   [improved tooltips]: #improved-tooltips
 
-### Adding abbreviations
+### 添加缩写
 
-Abbreviations can be defined by using a special syntax similar to URLs and
-[footnotes], starting with a `*` and immediately followed by the term or
-acronym to be associated in square brackets:
+缩写可以通过使用类似于URL和
+[脚注]，以“*”开头，紧随其后的是术语或
+首字母缩略词应放在方括号内：
 
 ``` markdown title="Text with abbreviations"
 The HTML specification is maintained by the W3C.
@@ -125,17 +125,17 @@ The HTML specification is maintained by the W3C.
 
   [footnotes]: footnotes.md
 
-### Adding a glossary
+### 添加术语表
 
-The [Snippets] extension can be used to implement a simple glossary by moving
-all abbreviations in a dedicated file[^1], and [auto-append] this file to all
-pages with the following configuration:
+[Snippets]扩展可用于通过移动来实现简单的术语表
+专用文件[^1]中的所有缩写，以及[自动附加]此文件到所有
+具有以下配置的页面：
 
   [^1]:
-    It's highly recommended to put the Markdown file containing the
-    abbreviations outside of the `docs` folder (here, a folder with the name
-    `includes` is used), as MkDocs might otherwise complain about an
-    unreferenced file.
+    强烈建议将包含
+    “docs”文件夹外的缩写（这里是一个名为的文件夹
+    `includes被使用），否则MkDocs可能会抱怨
+    未引用的文件。
 
 === ":octicons-file-code-16: `includes/abbreviations.md`"
 
@@ -157,9 +157,9 @@ pages with the following configuration:
 
 !!! tip
 
-    When using a dedicated file outside of the `docs` folder, add the parent directory to the list
-    of `watch` folders so that when the glossary file is updated, the project is automatically
-    reloaded when running `mkdocs serve`.
+    当使用“docs”文件夹之外的专用文件时，将父目录添加到列表中
+    “watch”文件夹，以便在更新术语表文件时，项目会自动
+    运行`mkdocs-serve`时重新加载。
 
     ```` yaml
     watch:

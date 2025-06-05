@@ -2,37 +2,37 @@
 icon: material/table-edit
 ---
 
-# Data tables
+# 数据表
 
-Material for MkDocs defines default styles for data tables – an excellent way
-of rendering tabular data in project documentation. Furthermore, customizations
-like [sortable tables] can be achieved with a third-party library and some
-[additional JavaScript].
+MkDocs的材质定义了数据表的默认样式——这是一种很好的方式
+在项目文档中呈现表格数据。此外，定制
+例如[可排序表]可以通过第三方库和一些
+[附加JavaScript]。
 
   [sortable tables]: #sortable-tables
   [additional JavaScript]: ../customization.md#additional-javascript
 
-## Configuration
+## 配置
 
-This configuration enables Markdown table support, which should normally be
-enabled by default, but to be sure, add the following lines to `mkdocs.yml`:
+此配置启用Markdown表支持，通常应该是
+默认情况下已启用，但请确保在`mkdocs.yml`中添加以下行：
 
 ``` yaml
 markdown_extensions:
   - tables
 ```
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [Tables]
 
   [Tables]: ../setup/extensions/python-markdown.md#tables
 
-## Usage
+## 使用
 
-Data tables can be used at any position in your project documentation and can
-contain arbitrary Markdown, including inline code blocks, as well as [icons and
-emojis]:
+数据表可以在项目文档的任何位置使用，并且可以
+包含任意Markdown，包括内联代码块，以及[图标和
+表情符号]：
 
 ``` markdown title="Data table"
 | Method      | Description                          |
@@ -54,11 +54,11 @@ emojis]:
 
   [icons and emojis]: icons-emojis.md
 
-### Column alignment
+### 列对齐
 
-If you want to align a specific column to the `left`, `center` or `right`, you
-can use the [regular Markdown syntax] placing `:` characters at the beginning
-and/or end of the divider.
+如果你想将特定列与“左”、“中”或“右”对齐，你
+可以使用[常规Markdown语法]在开头放置“：”字符
+和/或分隔器的末端。
 
 === "Left"
 
@@ -122,13 +122,13 @@ and/or end of the divider.
 
   [regular Markdown syntax]: https://www.markdownguide.org/extended-syntax/#tables
 
-## Customization
+## 自定义
 
-### Sortable tables
+### 可排序表
 
-If you want to make data tables sortable, you can add [tablesort], which is
-natively integrated with Material for MkDocs and will also work with [instant
-loading] via [additional JavaScript]:
+如果你想让数据表可排序，你可以添加[tablesort]，它是
+与Material for MkDocs原生集成，也可与[instant
+通过[附加JavaScript]加载]：
 
 === ":octicons-file-code-16: `docs/javascripts/tablesort.js`"
 
@@ -149,8 +149,8 @@ loading] via [additional JavaScript]:
       - javascripts/tablesort.js
     ```
 
-After applying the customization, data tables can be sorted by clicking on a
-column:
+应用自定义后，可以通过单击
+列：
 
 ``` markdown title="Data table, columns sortable"
 | Method      | Description                          |
@@ -170,9 +170,9 @@ column:
 
 </div>
 
-Note that [tablesort] provides alternative comparison implementations like
-numbers, filesizes, dates and month names. See the [tablesort documentation]
-[tablesort] for more information.
+请注意，[tableort]提供了其他比较实现，如
+数字、文件大小、日期和月份名称。请参阅[表格文档]
+[表格]了解更多信息。
 
 <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
 <script>
@@ -183,9 +183,9 @@ numbers, filesizes, dates and month names. See the [tablesort documentation]
   [tablesort]: http://tristen.ca/tablesort/demo/
   [instant loading]: ../setup/setting-up-navigation.md#instant-loading
 
-### Import table from file
+### 从文件导入表
 
-The plugin [mkdocs-table-reader-plugin][table-reader-docs] allows you to
-import data from a CSV or Excel file.
+插件[mkdocs表阅读器插件][表阅读器文档]允许您
+从CSV或Excel文件导入数据。
 
   [table-reader-docs]: https://timvink.github.io/mkdocs-table-reader-plugin/

@@ -2,18 +2,18 @@
 icon: material/view-grid-plus
 ---
 
-# Grids
+# 网格
 
-Material for MkDocs makes it easy to arrange sections into grids, grouping
-blocks that convey similar meaning or are of equal importance. Grids are just
-perfect for building index pages that show a brief overview of a large section
-of your documentation.
+MkDocs的材料使将部分排列成网格、分组变得容易
+传达相似含义或同等重要的块。网格只是
+非常适合构建显示大部分简要概述的索引页面
+您的文档。
 
-## Configuration
+## 配置
 
-This configuration enables the use of grids, allowing to bring blocks of
-identical or different types into a rectangular shape. Add the following lines
-to `mkdocs.yml`:
+这种配置允许使用网格，允许将块
+将相同或不同类型的形状转换为矩形。添加以下行
+转到`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions: # (1)!
@@ -21,10 +21,10 @@ markdown_extensions: # (1)!
   - md_in_html
 ```
 
-1.  Note that some of the examples listed below use [icons and emojis], which
-    have to be [configured separately].
+1.  请注意，下面列出的一些示例使用了[图标和表情符号]
+    必须[单独配置]。
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [Attribute Lists]
 - [Markdown in HTML]
@@ -34,32 +34,32 @@ See additional configuration options:
   [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
   [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
 
-## Usage
+## 使用
 
-Grids come in two flavors: [card grids], which wrap each element in a card that
-levitates on hover, and [generic grids], which allow to arrange arbitrary block
-elements in a rectangular shape.
+网格有两种类型：[卡片网格]，它将每个元素包裹在一张卡片中
+悬停时悬浮，以及[通用网格]，允许排列任意块
+矩形形状的元素。
 
   [card grids]: #using-card-grids
   [generic grids]: #using-generic-grids
 
-### Using card grids
+### 使用卡片网格
 
 <!-- md:version 9.5.0 -->
 <!-- md:flag experimental -->
 
-Card grids wrap each grid item with a beautiful hover card that levitates on
-hover. They come in two slightly different syntaxes: [list] and [block syntax],
-adding support for distinct use cases.
+卡片网格用一张漂亮的悬浮卡片包裹每个网格项目
+悬停。它们有两种稍微不同的语法：[list]和[block syntax]，
+添加对不同用例的支持。
 
   [list]: #list-syntax
   [block syntax]: #block-syntax
 
-#### List syntax
+#### 列表语法
 
-The list syntax is essentially a shortcut for [card grids], and consists of an
-unordered (or ordered) list wrapped by a `div` with both, the `grid` and `cards`
-classes:
+列表语法本质上是[卡片网格]的快捷方式，由
+无序（或有序）列表，由一个带有“网格”和“卡片”的“div”包裹`
+类别：
 
 ``` html title="Card grid"
 <div class="grid cards" markdown>
@@ -83,9 +83,9 @@ classes:
   </div>
 </div>
 
-List elements can contain arbitrary Markdown, as long as the surrounding `div`
-defines the `markdown` attribute. Following is a more complex example, which
-includes icons and links:
+列表元素可以包含任意的Markdown，只要周围的`div`
+定义`markdown`属性。下面是一个更复杂的例子
+包括图标和链接：
 
 ``` html title="Card grid, complex example"
 <div class="grid cards" markdown>
@@ -165,10 +165,10 @@ includes icons and links:
   </div>
 </div>
 
-If there's insufficient space to render grid items next to each other, the items
-will stretch to the full width of the viewport, e.g. on mobile viewports. If
-there's more space available, grids will render in items of 3 and more, e.g.
-when [hiding both sidebars].
+如果没有足够的空间来渲染彼此相邻的网格项
+将拉伸到视口的整个宽度，例如在移动视口上。如果
+有更多可用空间，网格将以3个或更多项目呈现，例如。
+当[隐藏两个侧边栏]时。
 
   [mkdocs-material]: https://pypistats.org/packages/mkdocs-material
   [pip]: ../getting-started.md#with-pip
@@ -179,11 +179,11 @@ when [hiding both sidebars].
   [GitHub]: https://github.com/squidfunk/mkdocs-material
   [hiding both sidebars]: ../setup/setting-up-navigation.md#hiding-the-sidebars
 
-#### Block syntax
+#### 块语法
 
-The block syntax allows for arranging cards in grids __together with other
-elements__, as explained in the section on [generic grids]. Just add the `card`
-class to any block element inside a `grid`:
+块语法允许将卡片与其他卡片一起排列在网格中
+elements_，如[通用网格]一节所述。只需添加“卡”`
+类到“网格”内的任何块元素：
 
 ``` html title="Card grid, blocks"
 <div class="grid" markdown>
@@ -219,18 +219,18 @@ class to any block element inside a `grid`:
   </div>
 </div>
 
-While this syntax may seem unnecessarily verbose at first, the previous example
-shows how card grids can now be mixed with other elements that will also stretch
-to the grid.
+虽然这种语法起初可能看起来不必要地冗长，但前面的示例
+显示了卡网格现在如何与其他也会拉伸的元素混合
+到电网。
 
-### Using generic grids
+### 使用通用网格
 
 <!-- md:version 9.5.0 -->
 <!-- md:flag experimental -->
 
-Generic grids allow for arranging arbitrary block elements in a grid, including
-[admonitions], [code blocks], [content tabs] and more. Just wrap a set of blocks
-by using a `div` with the `grid` class:
+通用网格允许在网格中排列任意块元素，包括
+[警告]、[代码块]、[内容选项卡]等。只需包裹一组积木
+通过在`grid `类中使用`div`：
 
 ```` html title="Generic grid"
 <div class="grid" markdown>

@@ -3,62 +3,62 @@ title: Built-in group plugin
 icon: material/format-list-group
 ---
 
-# Built-in group plugin
+# 内置群组插件
 
-The group plugin allows to group plugins into logical units to conditionally
-enable or disable them for specific environments with the use of
-[environment variables][mkdocs.env], e.g., to only enable a subset of
-plugins when [building your project] during continuous integration (CI).
+组插件允许将插件有条件地分组到逻辑单元中
+使用以下命令为特定环境启用或禁用它们
+[环境变量][mkdocs.env]，例如，仅启用
+在持续集成（CI）期间[构建项目]时使用插件。
 
   [building your project]: ../creating-your-site.md#building-your-site
 
 ## Objective
 
-### How it works
+### 工作原理
 
-The plugin conditionally and lazily loads all plugins that are part of a group
-if and only if the group is enabled, which means that the plugin doesn't add any
-overhead when the group is disabled. It also means that the grouped plugins
-only need to be installed when the group is enabled.
+该插件有条件地延迟加载属于某个组的所有插件
+if and only if组已启用，这意味着插件不会添加任何
+禁用组时的开销。这也意味着分组插件
+仅在启用组时才需要安装。
 
-The plugins that are part of the group are executed in the same order as if
-they were defined at the top-level in the list of [`plugins`][mkdocs.plugins].
-Thus, order is preserved and deterministic.
+属于该组的插件以相同的顺序执行，就像
+它们是在[`plugins][mkdocs.plugins]列表的顶层定义的。
+因此，秩序得以保留和确定。
 
-### When to use it
+### 何时使用
 
-Whenever you're using multiple plugins that are only required in specific
-environments, e.g., when building your project during continuous integration
-(CI), the plugin is the perfect utility for making configuration simpler, as it
-removes the need for splitting configuration into multiple files.
+每当您使用仅在特定情况下需要的多个插件时
+环境，例如在持续集成期间构建项目时
+（CI），该插件是使配置更简单的完美工具，因为它
+消除了将配置拆分为多个文件的需要。
 
-It can be used with any built-in or third-party plugin.
+它可以与任何内置或第三方插件一起使用。
 
-## Configuration
+## 配置
 
 <!-- md:version 9.3.0 -->
 <!-- md:plugin [group] – built-in -->
 <!-- md:flag multiple -->
 <!-- md:flag experimental -->
 
-As with all [built-in plugins], getting started with the group plugin is
-straightforward. Just add the following lines to `mkdocs.yml`, and start
-splitting plugins into logical units:
+与所有[内置插件]一样，开始使用组插件是
+直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
+将插件拆分为逻辑单元：
 
 ``` yaml
 plugins:
   - group
 ```
 
-The group plugin is built into Material for MkDocs and doesn't need to be
-installed.
+组插件内置于MkDocs的Material中，不需要
+安装。
 
   [group]: group.md
   [built-in plugins]: index.md
 
-### General
+### 一般的
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -67,9 +67,9 @@ The following settings are available:
 <!-- md:version 9.3.0 -->
 <!-- md:default `false` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-The plugin behaves differently than all other built-in plugins – __it is
-disabled by default__. To enable a group, use:
+使用此设置可在[构建项目]时启用或禁用插件。
+该插件的行为与所有其他内置插件不同——它是
+默认禁用__。要启用组，请使用：
 
 ``` yaml
 plugins:
@@ -77,8 +77,8 @@ plugins:
       enabled: !ENV CI # (1)!
 ```
 
-1.  If you only want to use the group plugin for better organization and
-    always want to enable the plugins that are part of it, use:
+1.  如果你只想使用组插件来更好地组织和
+    总是想启用其中的插件，请使用：
 
     ``` yaml
     plugins:
@@ -86,12 +86,12 @@ plugins:
           enabled: true
     ```
 
-The decision to disable the plugin by default was made to simplify the usage
-of environment variables, as it removes the need to provide a default value for
-an environment variable.
+默认情况下禁用插件的决定是为了简化使用
+环境变量，因为它消除了为提供默认值的需要
+环境变量。
 
-Now, when [building your project], you can enable a group by setting the
-[environment variable][mkdocs.env]:
+现在，在[构建项目]时，您可以通过设置
+[环境变量][mkdocs.env]：
 
 ``` sh
 CI=true mkdocs build
@@ -106,9 +106,9 @@ CI=true mkdocs build
 <!-- md:version 9.3.0 -->
 <!-- md:default none -->
 
-Use this setting to list the plugins that are part of the group. The syntax is
-exactly the same as for the [`plugins`][mkdocs.plugins] setting, so you can
-simply copy the list of plugins that you want to group, e.g:
+使用此设置列出属于该组的插件。语法是
+与[`plugins][mkdocs.plugins]设置完全相同，因此您可以
+只需复制您要分组的插件列表，例如：
 
 ``` yaml
 plugins:
@@ -118,4 +118,4 @@ plugins:
         - minify
 ```
 
-The plugins mentioned here are just used for illustration purposes.
+这里提到的插件仅用于说明目的。

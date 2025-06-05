@@ -2,18 +2,18 @@
 icon: material/tab
 ---
 
-# Content tabs
+# 内容选项卡
 
-Sometimes, it's desirable to group alternative content under different tabs,
-e.g. when describing how to access an API from different languages or
-environments. Material for MkDocs allows for beautiful and functional tabs,
-grouping code blocks and other content.
+有时，人们希望将替代内容分组到不同的标签下，
+例如，当描述如何从不同语言访问API时，或者
+环境。MkDocs的材料允许使用美观实用的选项卡，
+对代码块和其他内容进行分组。
 
-## Configuration
+## 配置
 
-This configuration enables content tabs, and allows to nest arbitrary content
-inside content tabs, including code blocks and ... more content tabs! Add the
-following lines to `mkdocs.yml`:
+此配置启用内容选项卡，并允许嵌套任意内容
+内容选项卡内部，包括代码块和。..更多内容标签！添加
+将以下行转换为`mkdocs.yml`：
 
 ``` yaml
 markdown_extensions:
@@ -22,7 +22,7 @@ markdown_extensions:
       alternate_style: true
 ```
 
-See additional configuration options:
+请参阅其他配置选项：
 
 - [SuperFences]
 - [Tabbed]
@@ -30,14 +30,14 @@ See additional configuration options:
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
   [Tabbed]: ../setup/extensions/python-markdown-extensions.md#tabbed
 
-### Anchor links
+### 锚链接
 
 <!-- md:version 9.5.0 -->
 <!-- md:flag experimental -->
 
-In order to link to content tabs and share them more easily, an anchor link is
-automatically added to each content tab, which you can copy via right click or
-open in a new tab:
+为了链接到内容选项卡并更容易地共享它们，锚链接是
+自动添加到每个内容选项卡中，您可以通过右键单击或
+在新选项卡中打开：
 
 === "Open me in a new tab ..."
 
@@ -45,15 +45,15 @@ open in a new tab:
 
 === "... or even me"
 
-You can copy the link of the tab and create a link on the same or any other
-page. For example, you can [jump to the third tab above this paragraph][tab_1]
-or to the [publishing guide for Insiders][tab_2].
+您可以复制选项卡的链接，并在相同或任何其他选项卡上创建链接
+页面。例如，您可以[跳转到本段上方的第三个选项卡][tab_1]
+或访问[内幕人士发布指南][tab_2]。
 
-!!! tip "Readable anchor links"
+!!! tip "可读锚链接"
 
-    [Python Markdown Extensions] 9.6 adds support for [slugification] of
-    content tabs, which produces nicer looking and more readable anchor links.
-    Enable the slugify function with the following lines:
+    [Python Markdown扩展]9.6增加了对[slugification]的支持
+    内容标签，它可以生成更美观、更易读的锚链接。
+    使用以下行启用slugify功能：
 
     ``` yaml
     markdown_extensions:
@@ -63,21 +63,21 @@ or to the [publishing guide for Insiders][tab_2].
               case: lower
     ```
 
-    Fore more information, please [see the extension guide][slugification].
+    如需了解更多信息，请[参阅扩展指南][取消订阅]。
 
   [tab_1]: #anchor-links--or-even-me
   [tab_2]: ../publishing-your-site.md#with-github-actions-insiders
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
   [slugification]: ../setup/extensions/python-markdown-extensions.md#+pymdownx.tabbed.slugify
 
-### Linked content tabs
+### 链接内容选项卡
 
 <!-- md:version 8.3.0 -->
 <!-- md:feature -->
 
-When enabled, all content tabs across the whole documentation site will be
-linked and switch to the same label when the user clicks on a tab. Add the
-following lines to `mkdocs.yml`:
+启用后，整个文档站点上的所有内容选项卡都将
+当用户单击选项卡时，链接并切换到同一标签。添加
+将以下行转换为`mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -85,10 +85,10 @@ theme:
     - content.tabs.link
 ```
 
-Content tabs are linked based on their label, not offset. This means that all
-tabs with the same label will be activated when a user clicks a content tab
-regardless of order inside a container. Furthermore, this feature is fully
-integrated with [instant loading] and persisted across page loads.
+内容选项卡是基于其标签链接的，而不是偏移。这意味着所有
+当用户单击内容选项卡时，具有相同标签的选项卡将被激活
+无论集装箱内的顺序如何。此外，此功能完全
+与[即时加载]集成，并在页面加载过程中保持不变。
 
 === "Feature enabled"
 
@@ -102,15 +102,15 @@ integrated with [instant loading] and persisted across page loads.
   [Linked content tabs enabled]: ../assets/screenshots/content-tabs-link.png
   [Linked content tabs disabled]: ../assets/screenshots/content-tabs.png
 
-## Usage
+## 使用
 
-### Grouping code blocks
+### 分组代码块
 
-Code blocks are one of the primary targets to be grouped, and can be considered
-a special case of content tabs, as tabs with a single code block are always
-rendered without horizontal spacing:
+代码块是要分组的主要目标之一，可以考虑
+内容选项卡的一种特殊情况，因为具有单个代码块的选项卡总是
+无水平间距渲染：
 
-``` title="Content tabs with code blocks"
+``` title="带有代码块的内容选项卡"
 === "C"
 
     ``` c
@@ -160,11 +160,11 @@ rendered without horizontal spacing:
 
 </div>
 
-### Grouping other content
+### 分组其他内容
 
-When a content tab contains more than one code block, it is rendered with
-horizontal spacing. Vertical spacing is never added, but can be achieved
-by nesting tabs in other blocks:
+当内容选项卡包含多个代码块时，将使用以下方式呈现
+水平间距。垂直间距永远不会增加，但可以实现
+通过在其他块中嵌套选项卡：
 
 ``` title="Content tabs"
 === "Unordered list"
@@ -196,13 +196,13 @@ by nesting tabs in other blocks:
 
 </div>
 
-### Embedded content
+### 嵌入式内容
 
-When [SuperFences] is enabled, content tabs can contain arbitrary nested
-content, including further content tabs, and can be nested in other blocks like
-[admonitions] or blockquotes:
+启用[SuperFences]后，内容选项卡可以包含任意嵌套
+内容，包括其他内容选项卡，可以嵌套在其他块中，如
+[警告]或blockquotes：
 
-``` title="Content tabs in admonition"
+``` title="警告中的内容选项卡"
 !!! example
 
     === "Unordered List"

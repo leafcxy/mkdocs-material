@@ -3,12 +3,12 @@ title: Built-in info plugin
 icon: material/information
 ---
 
-# Built-in info plugin
+# 内置信息插件
 
-The info plugin is a utility that is solely intended to create self-contained
-[minimal reproductions] as `.zip` files when [reporting bugs] or proposing
-[change requests], making communication between us maintainers and you much
-easier, as we have a common ground to work on.
+info插件是一个专门用于创建自包含的实用程序
+[报告错误]或提出建议时，将[最小复制]作为“.zip”文件
+[变更请求]，使我们维护人员和您之间的沟通更加紧密
+更容易，因为我们有共同点要努力。
 
   [minimal reproductions]: ../guides/creating-a-reproduction.md
   [reporting bugs]: ../contributing/reporting-a-bug.md
@@ -16,56 +16,56 @@ easier, as we have a common ground to work on.
 
 ## Objective
 
-### How it works
+### 工作原理
 
-The plugin helps you to prepare a minimal reproduction by collecting the
-necessary information about the environment and configuration of your project.
-This makes it easier for us to fix bugs, as it requires that you
-[upgrade to the latest version] and [remove your customizations].
+该插件通过收集
+有关项目环境和配置的必要信息。
+这使我们更容易修复错误，因为它需要您
+[升级到最新版本]和[删除您的自定义设置]。
 
-When following these principles, you can be confident that you don't report a
-bug that has already been fixed in a subsequent release, or which is caused by
-one of your customizations. Even more importantly, you actively help
-us to fix the bug as quickly as possible.
+遵循这些原则时，您可以确信您不会报告
+已在后续版本中修复的错误，或由以下原因引起的错误
+您的自定义项之一。更重要的是，你积极帮助
+我们尽快修复这个bug。
 
-The output of the plugin is a `.zip` file that you can share with us maintainers.
+插件的输出是一个“.zip”文件，您可以与我们的维护人员共享。
 
   [Upgrade to the latest version]: ../contributing/reporting-a-bug.md#upgrade-to-latest-version
   [Remove your customizations]: ../contributing/reporting-a-bug.md#remove-customizations
 
 
-### When to use it
+### 何时使用
 
-Whenever you're [reporting a bug][reporting bugs] or have something to discuss,
-like a question or [change request][change requests], you should attach
-a small, self-contained minimal reproduction. Runnable examples help to make
-communication much more efficient, giving us maintainers more time to benefit
-more users by pushing the project forward. Minimal reproductions are mandatory
-for bug reports.
+每当你[报告bug][报告bug]或有什么要讨论的时候，
+如问题或[变更请求][变更请求]，您应附上
+一种小型、自给自足的小型繁殖体。可运行的示例有助于
+沟通更加高效，让我们的维护人员有更多时间受益
+通过推进项目来吸引更多用户。最低限度的复制是强制性的
+用于错误报告。
 
-## Configuration
+## 配置
 
 <!-- md:version 9.0.0 -->
 <!-- md:plugin [info] – built-in -->
 
-In order to get started with the built-in info plugin, just add the following
-lines to `mkdocs.yml`, and quickly [create a minimal reproduction] to share
-with us maintainers:
+为了开始使用内置的信息插件，只需添加以下内容
+行到“mkdocs.yml”，并快速[创建最小复制]进行共享
+与我们的维护人员：
 
 ``` yaml
 plugins:
   - info
 ```
 
-The info plugin is built into Material for MkDocs and doesn't need to be
-installed.
+信息插件内置于MkDocs的Material中，不需要
+安装。
 
   [info]: info.md
   [create a minimal reproduction]: ../guides/creating-a-reproduction.md
 
-### General
+### 一般的
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -74,9 +74,9 @@ The following settings are available:
 <!-- md:version 9.0.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-It's normally not necessary to specify this setting, but if you want to disable
-the plugin, use:
+使用此设置可在[构建项目]时启用或禁用插件。
+通常不需要指定此设置，但如果要禁用
+插件，使用：
 
 ``` yaml
 plugins:
@@ -93,9 +93,9 @@ plugins:
 <!-- md:version 9.0.6 -->
 <!-- md:default `false` -->
 
-Use this setting to control whether the plugin should be enabled when
-[previewing your site]. It's normally not necessary to specify this setting,
-but if you want to change this behavior, use:
+使用此设置控制在以下情况下是否应启用插件
+[预览您的网站]。通常不需要指定此设置，
+但如果你想改变这种行为，请使用：
 
 ``` yaml
 plugins:
@@ -103,9 +103,9 @@ plugins:
       enabled_on_serve: true
 ```
 
-This setting streamlines the process of creating and inspecting minimal
-reproductions, as it allows to quickly iterate on the reproduction without
-having to disable the plugin first.
+此设置简化了创建和检查最小值的过程
+复制，因为它允许快速迭代复制，而无需
+必须先禁用插件。
 
   [previewing your site]: ../creating-your-site.md#previewing-as-you-write
 
@@ -118,9 +118,9 @@ having to disable the plugin first.
 <!-- md:version 9.0.0 -->
 <!-- md:default `true` -->
 
-Use this setting to control whether the plugin should create a `.zip` file
-from the project or exit after the version check. This setting is solely
-intended for debugging the plugin itself:
+使用此设置控制插件是否应创建“.zip”文件
+从项目中退出或在版本检查后退出。此设置仅用于
+用于调试插件本身：
 
 ``` yaml
 plugins:
@@ -135,10 +135,10 @@ plugins:
 <!-- md:version 9.0.0 -->
 <!-- md:default `true` -->
 
-Use this setting to control whether the plugin should stop creating the `.zip`
-file when one of the [requirements] is not satisfied. This setting must only be
-used when [reporting a bug][reporting bugs] that is related to a customization
-[explicitly mentioned in our documentation]. You can change it with:
+使用此设置控制插件是否应停止创建`.zip`
+当其中一个[要求]未得到满足时。此设置必须仅为
+用于与自定义相关的[报告错误][报告错误]
+[在我们的文档中明确提及]。您可以通过以下方式进行更改：
 
 ``` yaml
 plugins:
@@ -146,9 +146,9 @@ plugins:
       archive_stop_on_violation: false
 ```
 
-If you're using this setting when [reporting a bug][reporting bugs], please
-explain why you think it is necessary to include customizations. If you're
-unsure, please ask us first by [creating a discussion].
+如果您在[报告错误][报告错误]时使用此设置，请
+解释为什么你认为有必要包括定制。如果你是
+不确定，请先通过[创建讨论]向我们提问。
 
   [requirements]: #how-it-works
   [explicitly mentioned in our documentation]: ?q=%22extends+base%22

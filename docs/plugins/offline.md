@@ -4,53 +4,53 @@ icon: material/connection
 ---
 
 
-# Built-in offline plugin
+# 内置离线插件
 
-[MkDocs][mkdocs] is one of the few frameworks that allow to build offline-capable
-documentation that can be directly viewed by the user – no server needed. With
-the offline plugin, you can distribute the [`site` directory][mkdocs.site_dir]
-as a downloadable `.zip` file while retaining most interactive functionality.
+[MkDocs][MkDocs]是为数不多的允许构建离线功能的框架之一
+用户可以直接查看的文档，无需服务器。具有
+离线插件，您可以分发['site`目录][mkdocs.site_dir]
+作为可下载的.zip文件，同时保留了大多数交互功能。
 
 ## Objective
 
-### How it works
+### 工作原理
 
-After [building your project], switch to the [`site` directory][mkdocs.site_dir]
-and open `index.html` in your browser – you're now viewing your documentation
-from your local file system! Most browsers will denote this by showing `file://`
-in the address bar. However, you'll realize that the site search is gone.
+[构建项目]后，切换到[`site`目录][mkdocs.site_dir]
+然后在浏览器中打开`index.html`——您现在正在查看文档
+从您的本地文件系统！大多数浏览器会通过显示`file://`
+在地址栏中。然而，你会意识到网站搜索已经消失了。
 
-Material for MkDocs offers many interactive features, some of which will not
-work from the local file system due to the restrictions of modern browsers. More
-specifically and technically, all calls to the [Fetch API] will error with a
-message like:
+MkDocs的材料提供了许多交互功能，其中一些功能不会
+由于现代浏览器的限制，无法从本地文件系统工作。更多
+具体来说，从技术上讲，所有对[Fetch API]的调用都会出现错误
+消息类似：
 
 ```
 Cross origin requests are only supported for protocol schemes: http, [...]
 ```
 
-While browsers impose those restriction for security reasons, it reduces the
-interactivity of your project. The offline plugin makes sure that site search
-keeps working by moving the search index to a JavaScript file, and leveraging
-@squidfunk's [iframe-worker] shim.
+虽然浏览器出于安全原因施加了这些限制，但它减少了
+你的项目的交互性。离线插件确保网站搜索
+通过将搜索索引移动到JavaScript文件并利用
+@squidfunk的[iframe worker]垫片。
 
-Additionally, the plugin automatically disables the [`use_directory_urls`]
-[mkdocs.use_directory_urls] setting, ensuring that users can open your
-documentation directly from the local file system.
+此外，该插件会自动禁用[`use_directory_urls`]
+[mkdocs.use_directory_urls]设置，确保用户可以打开您的
+直接从本地文件系统获取文档。
 
-There are some [limitations].
+有一些[限制]。
 
   [building your project]: ../creating-your-site.md#building-your-site
   [Fetch API]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
   [iframe-worker]: https://github.com/squidfunk/iframe-worker
   [limitations]: #limitations
 
-### When to use it
+### 何时使用
 
-As the name already indicates, the plugin should only be used when you're
-[building your project] for offline distribution. It's also good to know, that
-the offline plugin plays nicely with the following other plugins, helping to
-create even better offline-capable documentation:
+正如名称所示，该插件只应在以下情况下使用
+[构建你的项目]用于离线分发。知道这一点也很好
+离线插件与以下其他插件配合良好，有助于
+创建更好的离线文档：
 
 <div class="grid cards" markdown>
 
@@ -58,9 +58,9 @@ create even better offline-capable documentation:
 
     ---
 
-    The privacy plugin makes it easy to use external assets when building for
-    offline usage, as it automatically downloads them for distribution with
-    your documentation.
+    隐私插件使在构建时可以轻松使用外部资产
+    离线使用，因为它会自动下载它们进行分发
+    您的文档。
 
     ---
 
@@ -70,9 +70,9 @@ create even better offline-capable documentation:
 
     ---
 
-    The optimize plugin automatically identifies and optimizes all media files
-    that you reference in your project by using compression and conversion
-    techniques.
+    优化插件自动识别并优化所有媒体文件
+    通过使用压缩和转换在项目中引用
+    技术。
 
     ---
 
@@ -81,43 +81,43 @@ create even better offline-capable documentation:
 </div>
 
   [^1]:
-    You might wonder why the [privacy plugin][privacy] is necessary to build
-    truly offline-capable documentation with the offline plugin. While it's
-    certainly possible to also add support for downloading external assets to
-    the offline plugin, this functionality is already fully implemented in the
-    privacy plugin and is its very raison d'être.
+    你可能会想知道为什么需要[privacy plugin][privacy]来构建
+    使用离线插件的真正离线功能文档。虽然它是
+    当然也可以添加对下载外部资产的支持
+    离线插件，此功能已在
+    隐私插件，这是它存在的理由。
 
-    Material for MkDocs follows a modular approach for its plugin system – many
-    of the plugins work perfectly together and enhance each others
-    functionalities, allowing to solve complex problems with a few lines
-    of configuration.
+    MkDocs的材料遵循其插件系统的模块化方法——许多
+    的插件可以完美地协同工作，并相互增强
+    功能，允许用几行代码解决复杂问题
+    配置。
 
   [privacy]: privacy.md
   [optimize]: optimize.md
 
-## Configuration
+## 配置
 
 <!-- md:version 9.0.0 -->
 <!-- md:plugin [offline] – built-in -->
 
-As with all [built-in plugins], getting started with the offline plugin is
-straightforward. Just add the following lines to `mkdocs.yml`, and start
-building offline-capable documentation:
+与所有[内置插件]一样，开始使用离线插件是
+直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
+构建支持离线的文档：
 
 ``` yaml
 plugins:
   - offline
 ```
 
-The offline plugin is built into Material for MkDocs and doesn't need to be
-installed.
+离线插件内置于MkDocs的Material中，不需要
+安装。
 
   [offline]: offline.md
   [built-in plugins]: index.md
 
-### General
+### 一般的
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -126,9 +126,9 @@ The following settings are available:
 <!-- md:version 9.0.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-If you want to build online- as well as offline-capable documentation, it's a
-good idea to use an [environment variable][mkdocs.env]:
+使用此设置可在[构建项目]时启用或禁用插件。
+如果你想构建在线和离线文档，这是一个
+使用[环境变量][mkdocs.env]是个好主意：
 
 ``` yaml
 plugins:
@@ -136,11 +136,11 @@ plugins:
       enabled: !ENV [OFFLINE, false]
 ```
 
-## Limitations
+## 局限性
 
-When enabling the offline plugin, make sure to disable the following settings,
-as they make use of the [Fetch API] which will error when invoked from the local
-file system:
+启用离线插件时，请确保禁用以下设置，
+因为他们使用[Fetch API，当从本地调用时会出错
+文件系统：
 
 - [Instant loading]
 - [Site analytics]

@@ -3,31 +3,31 @@ title: Built-in meta plugin
 icon: material/file-tree
 ---
 
-# Built-in meta plugin
+# 内置元插件
 
-The meta plugin solves the problem of setting metadata (front matter) for all
-pages in a folder, i.e., a subsection of your project, which is particularly
-useful to ensure that a certain subset of pages features specific tags, uses a
-custom template, or is attributed to an author.
+元插件解决了为所有人设置元数据（前台）的问题
+文件夹中的页面，即项目的一个子部分，尤其是
+有助于确保页面的某个子集具有特定的标签，并使用
+或者归因于作者。
 
 ## Objective
 
-### How it works
+### 工作原理
 
-The plugin scans the [`docs` directory][mkdocs.docs_dir] for `.meta.yml` files,
-and recursively merges the contents of those files with the metadata (front
-matter) of all pages that are contained in the same folder and all subfolders.
-For example, if you want to add the tag <span class="md-tag">Example</span> to
-multiple pages, use:
+该插件扫描[`docs`目录][mkdocs.docs_dir]中的`.meta.yml`文件，
+并递归地将这些文件的内容与元数据（front
+内容）包含在同一文件夹和所有子文件夹中的所有页面。
+例如，如果您想将标签<span class=“md tag”>示例</span>添加到
+多个页面，使用：
 
 ``` yaml title=".meta.yml"
 tags:
   - Example
 ```
 
-Now, given the following directory layout, if you store the file in the folder
-named `example`, all pages in that folder receive the tag, while all pages
-outside of the folder remain unaffected:
+现在，给定以下目录布局，如果将文件存储在文件夹中
+名为“example”的文件夹中的所有页面都会收到标签，而所有页面
+文件夹外部不受影响：
 
 ``` { .sh .no-copy hl_lines="4-8" }
 .
@@ -42,16 +42,16 @@ outside of the folder remain unaffected:
 └─ mkdocs.yml
 ```
 
-When combining metadata, lists and dictionaries are recursively merged, which
-means you can append values to a list and add or set specific properties in a
-dictionary on arbitrary levels.
+当组合元数据时，列表和字典会递归合并
+意味着您可以将值附加到列表中，并在列表中添加或设置特定属性
+任意级别的词典。
 
-### When to use it
+### 何时使用
 
-While the plugin itself doesn't offer much functionality beyond adding and
-merging metadata, it is a perfect companion for many of the other built-in
-plugins that Material for MkDocs offers. Some of the most powerful combinations
-of the meta plugin and other built-in plugins are:
+虽然插件本身除了添加和
+合并元数据后，它是许多其他内置元数据的完美伴侣
+Material for MkDocs提供的插件。一些最强大的组合
+元插件和其他内置插件包括：
 
 <div class="grid cards" markdown>
 
@@ -123,30 +123,30 @@ of the meta plugin and other built-in plugins are:
   [exclude]: search.md#meta.search.exclude
   [boost]: search.md#meta.search.boost
 
-## Configuration
+## 配置
 
 <!-- md:version 9.6.0 -->
 <!-- md:plugin [meta] – built-in -->
 <!-- md:flag experimental -->
 
-As with all [built-in plugins], getting started with the meta plugin is
-straightforward. Just add the following lines to `mkdocs.yml`, and start
-applying metadata for multiple pages at once:
+与所有[内置插件]一样，开始使用元插件是
+直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
+一次为多个页面应用元数据：
 
 ``` yaml
 plugins:
   - meta
 ```
 
-The meta plugin is included with Material for MkDocs and doesn't need to be
-installed.
+元插件包含在MkDocs的Material中，不需要
+安装。
 
   [meta]: meta.md
   [built-in plugins]: index.md
 
-### General
+### 一般的
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -155,9 +155,9 @@ The following settings are available:
 <!-- md:version 9.6.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-It's normally not necessary to specify this setting, but if you want to disable
-the plugin, use:
+使用此设置可在[构建项目]时启用或禁用插件。
+通常不需要指定此设置，但如果要禁用
+插件，使用：
 
 ``` yaml
 plugins:
@@ -167,9 +167,9 @@ plugins:
 
   [building your project]: ../creating-your-site.md#building-your-site
 
-### Meta file
+### 元文件
 
-The following settings are available for meta files:
+以下设置可用于元文件：
 
 ---
 
@@ -178,9 +178,9 @@ The following settings are available for meta files:
 <!-- md:version 9.6.0 -->
 <!-- md:default `.meta.yml` -->
 
-Use this setting to change the meta file name the plugin will look for when
-scanning the [`docs` directory][mkdocs.docs_dir]. It's normally not necessary to
-change this setting, but if you want to change it, use:
+使用此设置更改插件在以下情况下将查找的元文件名
+扫描[文档目录][mkdocs.docs-dir]。通常没有必要
+更改此设置，但如果要更改，请使用：
 
 ``` yaml
 plugins:
@@ -188,5 +188,5 @@ plugins:
       meta_file: .meta.yml
 ```
 
-The provided path is resolved from the [`docs` directory][mkdocs.docs_dir]
-recursively.
+提供的路径是从[`docs`目录][mkdocs.docs_dir]解析的
+递归。

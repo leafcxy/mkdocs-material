@@ -3,39 +3,39 @@ title: Built-in social plugin
 icon: material/share-circle
 ---
 
-# Built-in social plugin
+# 内置社交插件
 
-The social plugin automatically and intelligently generates beautiful and highly
-customizable social cards in different [layouts][default layouts] for each page
-of your project, rendering as preview images whenever you or somebody else share
-a link to your project on social media.
+社交插件自动智能生成美丽和高度
+每个页面都有不同[布局][默认布局]的可定制社交卡
+在您或其他人共享时，将您的项目渲染为预览图像
+社交媒体上的项目链接。
 
-## Objective
+## 客观的
 
-### How it works
+### 工作原理
 
-The plugin automatically generates a customizable social card for each page
-of your project, which appears as a preview image when sharing a link to your
-project on social media, without the use of external services and just
-[a single line of configuration][configuration].
+该插件会自动为每个页面生成一张可定制的社交卡
+您的项目，当共享到您的项目的链接时，它会显示为预览图像
+项目在社交媒体上，无需使用外部服务，只需
+[单行配置][配置]。
 
-With the use of an efficient [image processing] library, the plugin allows to
-define [custom layouts] for social cards, which can be adapted to match your
-project's style and branding. While it would technically be much simpler to
-generate social cards by using a web browser and an automation framework like
-[Puppeteer][^1], it would add further liabilities to your toolchain, with the
-potential to make build pipelines more complex, much more resource intense,
-and significantly slower.
+通过使用高效的[图像处理]库，该插件允许
+为社交卡定义[自定义布局]，可以根据您的需求进行调整
+项目的风格和品牌。虽然从技术上讲
+通过使用网络浏览器和自动化框架生成社交卡，如
+[Pupeter][^1]，这会给你的工具链增加更多的责任
+有可能使管道建设更加复杂，资源更加密集，
+并且明显较慢。
 
   [^1]:
-    [GitHub wrote in their blog] that they use [Puppeteer] to generate social
-    card images for repositories, issues, commits, discussions, and basically
-    everything else that appear as preview images when shared on social media.
+    [GitHub在他们的博客中写道]他们使用[Pupeter]来生成社交媒体
+    存储库、问题、提交、讨论和基本信息的卡片图像
+    在社交媒体上分享时显示为预览图像的其他所有内容。
 
-The generated social cards are [cached] and stored in the
-[`site` directory][mkdocs.site_dir], and thus self-hosted, ensuring that your
-project doesn't depend on external services. In order to generate social cards
-images, a few [dependencies] need to be available on your system.
+生成的社交卡被[缓存]并存储在
+[`site`目录][mkdocs.site_dir]，因此是自托管的，确保您的
+该项目不依赖于外部服务。为了生成社交卡
+图像，您的系统上需要有一些[依赖项]可用。
 
   [configuration]: #configuration
   [image processing]: requirements/image-processing.md
@@ -45,16 +45,16 @@ images, a few [dependencies] need to be available on your system.
   [cached]: #caching
   [dependencies]: #configuration
 
-### When to use it
+### 何时使用
 
-There's one particular case when we don't recommend to use the plugin: when you
-build [offline-capable documentation] to offer it as a download. Otherwise, it
-always makes sense to enable the plugin, as links to your documentation shared
-on social media will appear much more appealing.
+有一种特殊情况是我们不建议使用该插件：当你
+构建[支持离线的文档]以提供下载。否则，它
+启用插件总是有意义的，因为共享了指向文档的链接
+在社交媒体上看起来会更有吸引力。
 
-Even more interestingly, the plugin can be combined with other built-in plugins
-that Material for MkDocs offers, in order to create sophisticated build
-pipelines tailored to your project:
+更有趣的是，该插件可以与其他内置插件结合使用
+MkDocs提供的材料，用于创建复杂的构建
+为您的项目量身定制的管道：
 
 <div class="grid cards" markdown>
 
@@ -62,25 +62,25 @@ pipelines tailored to your project:
 
     ---
 
-    The social plugin automatically generates beautiful and customizable
-    social cards for each post and page, showing as previews on social media.
+    社交插件会自动生成美观且可定制的内容
+    每个帖子和页面的社交卡片，在社交媒体上作为预览显示。
 
     ---
 
-    __Links to your blog render beautiful social cards when shared on social media__
+    __当在社交媒体上分享时，你博客的链接会呈现出精美的社交卡片__
 
 -   :material-file-tree: &nbsp; __[Built-in meta plugin][meta]__
 
     ---
 
-    The meta plugin can be used to [change the layout][meta.social.cards_layout]
-    for social cards or [change specific layout options]
-    [meta.social.cards_layout_options] like [background][option.background_color]
-    or [color][option.color] for a subset of pages.
+    元插件可用于[更改布局][meta.social.cards_layout]
+    用于社交卡或[更改特定布局选项]
+    [meta.social.cards_layout_options]类似于[background][option.background_color]
+    或者对于页面子集使用[color][option.color]。
 
     ---
 
-    __Your documentation can use completely different social cards per section__
+    __您的文档可以在每个部分使用完全不同的社交卡__
 
 </div>
 
@@ -88,35 +88,35 @@ pipelines tailored to your project:
   [blog]: blog.md
   [meta]: meta.md
 
-## Configuration
+## 配置
 
 <!-- md:version 8.5.0 -->
 <!-- md:plugin [social] – built-in -->
 <!-- md:flag multiple -->
 <!-- md:flag experimental -->
 
-In order to get started with the social plugin, just add the following lines to
-`mkdocs.yml`, and observe how Material for MkDocs generates beautiful social
-cards for you:
+为了开始使用社交插件，只需添加以下行即可
+`mkdocs.yml`，并观察Material for mkdocs如何生成美丽的社交媒体
+卡片给你：
 
 ``` yaml
 plugins:
   - social
 ```
 
-The social plugin is built into Material for MkDocs and doesn't need to be
-installed.
+社交插件内置于MkDocs的Material中，不需要
+安装。
 
-However, in order to generate social card images, it's necessary to install the
-dependencies for [image processing], if they're not already available on your
-system. The linked guide includes instructions for several operating systems
-and mentions some alternative environments.
+但是，为了生成社交卡图像，有必要安装
+[图像处理]的依赖关系，如果它们在您的
+系统。链接的指南包括几个操作系统的说明
+并提到了一些替代环境。
 
   [social]: social.md
 
 ### General
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -125,9 +125,9 @@ The following settings are available:
 <!-- md:version 8.5.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-If you want to disable the plugin, e.g., for local builds, you can use an
-[environment variable][mkdocs.env] in `mkdocs.yml`:
+使用此设置可在[构建项目]时启用或禁用插件。
+如果你想禁用插件，例如，对于本地构建，你可以使用
+`mkdocs.yml`中的[环境变量][mkdocs.env]：
 
 ``` yaml
 plugins:
@@ -135,7 +135,7 @@ plugins:
       enabled: !ENV [CI, false]
 ```
 
-This configuration enables the plugin only during continuous integration (CI).
+此配置仅在持续集成（CI）期间启用插件。
 
   [building your project]: ../creating-your-site.md#building-your-site
 
@@ -147,9 +147,9 @@ This configuration enables the plugin only during continuous integration (CI).
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default available CPUs - 1 -->
 
-With more CPUs available, the plugin can do more work in parallel, and thus
-complete social card generation faster. If you want to disable concurrent
-processing completely, use:
+有了更多的CPU可用，插件可以并行执行更多的工作，因此
+更快地完成社交卡生成。如果你想禁用并发
+完全处理，使用：
 
 ``` yaml
 plugins:
@@ -157,16 +157,16 @@ plugins:
       concurrency: 1
 ```
 
-By default, the plugin uses all available CPUs - 1 with a minimum of 1.
+默认情况下，该插件使用所有可用的CPU-1，最小值为1。
 
-### Caching
+### 缓存
 
-The plugin implements an [intelligent caching] mechanism, ensuring that social
-cards are only regenerated when their contents change or they're not already
-contained in the cache. If any of the variables used in a layout changes, the
-plugin detects it and regenerates the social card.
+该插件实现了[智能缓存]机制，确保社交
+卡片只有在内容发生变化或尚未更新时才会重新生成
+包含在缓存中。如果布局中使用的任何变量发生变化
+插件检测到它并重新生成社交卡。
 
-The following settings are available for caching:
+以下设置可用于缓存：
 
   [intelligent caching]: requirements/caching.md
 
@@ -178,10 +178,10 @@ The following settings are available for caching:
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `true` -->
 
-Use this setting to instruct the plugin to bypass the cache, in order to
-re-generate social cards for all pages, even though the cache may not be stale.
-It's normally not necessary to specify this setting, except for when debugging
-the plugin itself. Caching can be disabled with:
+使用此设置指示插件绕过缓存，以便
+为所有页面重新生成社交卡，即使缓存可能不会过时。
+通常不需要指定此设置，调试时除外
+插件本身。可以通过以下方式禁用缓存：
 
 ``` yaml
 plugins:
@@ -196,9 +196,9 @@ plugins:
 <!-- md:version 8.5.0 -->
 <!-- md:default `.cache/plugin/social` -->
 
-It is normally not necessary to specify this setting, except for when you want
-to change the path within your root directory where social card images are
-cached. If you want to change it, use:
+通常不需要指定此设置，除非您需要
+更改根目录中社交卡图像的路径
+缓存。如果你想更改它，请使用：
 
 ``` yaml
 plugins:
@@ -206,15 +206,15 @@ plugins:
       cache_dir: my/custom/dir
 ```
 
-If you're using [multiple instances] of the plugin, it can be a good idea to
-set different cache directories for both instances, so that they don't interfere
-with each other.
+如果你正在使用该插件的[多个实例]，这可能是一个好主意
+为两个实例设置不同的缓存目录，这样它们就不会相互干扰
+彼此。
 
   [multiple instances]: index.md#multiple-instances
 
-### Logging
+### 登录中
 
-The following settings are available for logging:
+以下设置可用于日志记录：
 
 ---
 
@@ -224,9 +224,9 @@ The following settings are available for logging:
 <!-- md:version insiders-4.40.2 -->
 <!-- md:default `true` -->
 
-Use this setting to control whether the plugin should only log errors when
-generating social cards without terminating the build, e.g., invalid references
-to icons. To terminate the build, use:
+使用此设置可控制插件是否仅在以下情况下记录错误
+在不终止构建的情况下生成社交卡，例如无效的引用
+到图标。要终止构建，请使用：
 
 ``` yaml
 plugins:
@@ -242,9 +242,9 @@ plugins:
 <!-- md:version insiders-4.40.2 -->
 <!-- md:default `warn` -->
 
-Use this setting to control the log level that the plugin should employ when
-encountering errors, which requires that the [`log`][config.log] setting is
-enabled. The following log levels are available:
+使用此设置控制插件在以下情况下应采用的日志级别
+遇到错误，这要求[`log`][config.log]设置为
+启用。以下日志级别可用：
 
 === "`warn`"
 
@@ -254,8 +254,8 @@ enabled. The following log levels are available:
           log_level: warn
     ```
 
-    Errors are reported as warnings, terminating the build in
-    [`strict`][mkdocs.strict] mode.
+    错误报告为警告，终止内置程序
+    [严格][mkdocs.strict]模式。
 
 === "`info`"
 
@@ -265,7 +265,7 @@ enabled. The following log levels are available:
           log_level: info
     ```
 
-    Errors are only reported as informational messages.
+    错误仅作为信息性消息报告。
 
 === "`ignore`"
 
@@ -275,11 +275,11 @@ enabled. The following log levels are available:
           log_level: ignore
     ```
 
-    Errors are only reported when using the `--verbose` flag.
+    只有在使用“--verbose”标志时才会报告错误。
 
-### Social cards
+### 社交卡
 
-The following settings are available for social card generation:
+以下设置可用于社交卡生成：
 
 ---
 
@@ -288,10 +288,10 @@ The following settings are available for social card generation:
 <!-- md:version 8.5.0 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable social card generation. Currently, the
-plugin's sole purpose is to generate social cards, so it's equivalent to the
-[`enabled`][config.enabled] setting, but in the future, other features might be
-added. If you want to disable social card generation, use:
+使用此设置启用或禁用社交卡生成。目前
+插件的唯一目的是生成社交卡，因此它相当于
+[`enabled'][config.enabled]设置，但将来可能会有其他功能
+补充。如果要禁用社交卡生成，请使用：
 
 ``` yaml
 plugins:
@@ -306,9 +306,9 @@ plugins:
 <!-- md:version 8.5.0 -->
 <!-- md:default `assets/images/social` -->
 
-It is normally not necessary to specify this setting, except for when you want
-to change the path within the [`site` directory][mkdocs.site_dir] where
-social cards are stored. If you want to change it, use:
+通常不需要指定此设置，除非您需要
+更改[`site`目录][mkdocs.site_dir]中的路径，其中
+存储社交卡。如果你想更改它，请使用：
 
 ``` yaml
 plugins:
@@ -316,8 +316,8 @@ plugins:
       cards_dir: my/custom/dir
 ```
 
-This configuration stores the generated images at `my/custom/dir` in the
-[`site` directory][mkdocs.site_dir].
+此配置将生成的图像存储在“my/custom/dir”中
+[站点目录][mkdocs.site_dir]。
 
 ---
 
@@ -327,9 +327,9 @@ This configuration stores the generated images at `my/custom/dir` in the
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `layouts` -->
 
-If you want to build a [custom social card layout][custom layouts], use this
-setting to change the folder where you store your custom layouts, the default
-being a folder called `layouts` in your root directory:
+如果你想构建[自定义社交卡布局][自定义布局]，请使用此
+设置以更改存储自定义布局的默认文件夹
+是根目录中名为“layouts”的文件夹：
 
 ``` yaml
 plugins:
@@ -337,15 +337,15 @@ plugins:
       cards_layout_dir: layouts
 ```
 
-The provided path is resolved from the root directory.
+提供的路径是从根目录解析的。
 
-!!! tip "Where to store custom layouts"
+!!! tip "在哪里存储自定义布局"
 
-    Our recommendation is to locate the folder outside of the
-    [`docs` directory][mkdocs.docs_dir], to make sure that your [custom layouts]
-    are not copied to the [`site` directory][mkdocs.site_dir] when
-    [building your project], e.g., by adhering to the following directory
-    layout:
+    我们的建议是将文件夹放在
+    [`docs`目录][mkdocs.docs-dir]，以确保您的[自定义布局]
+    在以下情况下，不会复制到[`site`目录][mkdocs.site_dir]
+    [构建你的项目]，例如，通过遵循以下目录
+    布局：
 
     ``` { .sh .no-copy }
     .
@@ -364,9 +364,9 @@ The provided path is resolved from the root directory.
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `default` -->
 
-The plugin ships a growing list of [`default` layouts][default layouts] for
-social cards. If you've created a [custom social card layout][custom layouts],
-you can instruct the plugin to use it exactly as one of the included layouts:
+该插件提供了越来越多的[默认布局][默认布局]列表，用于
+社交卡。如果您已经创建了[自定义社交卡布局][自定义布局]，
+您可以指示插件将其完全用作包含的布局之一：
 
 ``` yaml
 plugins:
@@ -374,14 +374,14 @@ plugins:
       cards_layout: my-custom-layout
 ```
 
-The provided path is resolved from the[
-`layouts` directory][config.cards_layout_dir].
+提供的路径从以下位置解析[
+`layouts目录][config.cadslayout_dir]。
 
-!!! tip "How custom layouts are resolved"
+!!! tip "如何解决自定义布局"
 
-    By default, the plugin will load your [custom layouts] from a folder named
-    `layouts` in your root directory. If your layout is called
-    `my-custom-layout`, the directory layout must adhere to:
+    默认情况下，插件将从名为的文件夹加载您的[自定义布局]
+    `layouts位于您的根目录中。如果您的布局被调用
+    `我的自定义布局，目录布局必须遵守：
 
     ``` { .sh .no-copy }
     .
@@ -399,9 +399,9 @@ The provided path is resolved from the[
 <!-- md:version 9.1.10 -->
 <!-- md:default none -->
 
-Use this setting to set options for the layout specified via [`cards_layout`]
-[config.cards_layout] (if the layout supports it), which allows for making
-layouts easily and entirely configurable:
+使用此设置为通过[`cards_layout`]指定的布局设置选项
+[config.cards_layout]（如果布局支持），它允许制作
+布局简单且完全可配置：
 
 ``` yaml
 plugins:
@@ -410,9 +410,9 @@ plugins:
         <option>: <value>
 ```
 
-When creating a [custom layout][custom layouts], you are completely free in
-defining which parts of your layout can be parametrized. The [`default` layouts]
-[default layouts] included with the plugin support the following options:
+在创建[自定义布局][自定义布局]时，您可以完全自由地
+定义布局的哪些部分可以参数化。[默认布局]
+插件附带的[默认布局]支持以下选项：
 
 <div class="mdx-columns" markdown>
 
@@ -438,9 +438,9 @@ defining which parts of your layout can be parametrized. The [`default` layouts]
 <!-- md:version insiders-4.35.0 -->
 <!-- md:default none -->
 
-Use this setting to enable social card generation for subsections of your
-project, e.g., when using [multiple instances] of the plugin to generate
-different social cards for different subsections:
+使用此设置为您的子部分启用社交卡生成
+项目，例如，当使用插件的[多个实例]生成
+不同子部分的不同社交卡：
 
 ``` yaml
 plugins:
@@ -449,9 +449,9 @@ plugins:
         - blog/*
 ```
 
-This configuration enables social card generation for all pages that are
-contained in the `blog` folder and its subfolders inside the [`docs` directory]
-[mkdocs.docs_dir].
+此配置允许为以下所有页面生成社交卡
+包含在[文档目录]中的博客文件夹及其子文件夹中
+[mkdocs.docs_dir]。
 
 ---
 
@@ -461,9 +461,9 @@ contained in the `blog` folder and its subfolders inside the [`docs` directory]
 <!-- md:version insiders-4.35.0 -->
 <!-- md:default none -->
 
-Use this setting to disable social card generation for subsections of your
-project, e.g., when using [multiple instances] of the plugin to generate
-different social cards for different subsections:
+使用此设置可禁用您的子部分的社交卡生成
+项目，例如，当使用插件的[多个实例]生成
+不同子部分的不同社交卡：
 
 ``` yaml
 plugins:
@@ -472,17 +472,17 @@ plugins:
         - changelog/*
 ```
 
-This configuration disables social card generation for all pages that are
-contained in the `changelog` folder and its subfolders inside the
-[`docs` directory][mkdocs.docs_dir].
+此配置禁用以下所有页面的社交卡生成
+包含在“changelog”文件夹及其子文件夹中
+[文档目录][mkdocs.docs_dir]。
 
-### Debugging
+### 调试
 
-The plugin includes a special mode for debugging layouts, which is very useful
-when creating [custom layouts], as it allows for quicker iteration and better
-understanding of composition.
+该插件包括一个用于调试布局的特殊模式，这非常有用
+在创建[自定义布局]时，因为它允许更快的迭代和更好的
+理解构图。
 
-The following settings are available for debugging:
+以下设置可用于调试：
 
 ---
 
@@ -492,10 +492,10 @@ The following settings are available for debugging:
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `false` -->
 
-Use this setting to enable a special mode for debugging your layout, which
-renders each layer with a colored outline and its `x` and `y` offsets, and
-overlays a dot grid for alignment, so it's easier to understand how the
-distinct layers of your layout are composed together:
+使用此设置启用调试布局的特殊模式
+用彩色轮廓及其“x”和“y”偏移量渲染每一层，以及
+覆盖一个点网格进行对齐，这样更容易理解
+布局的不同层组成在一起：
 
 ``` yaml
 plugins:
@@ -511,9 +511,9 @@ plugins:
 <!-- md:version insiders-4.34.1 -->
 <!-- md:default `false` -->
 
-By default, the plugin automatically disables [`debug`][config.debug] mode when
-[building your project], so you can be sure that debug overlays are never
-deployed to production. If you want to change that, use:
+默认情况下，当出现以下情况时，插件会自动禁用['debug][config.debug]模式
+[构建你的项目]，这样你就可以确保调试覆盖永远不会
+部署到生产。如果你想改变这一点，请使用：
 
 ``` yaml
 plugins:
@@ -521,8 +521,8 @@ plugins:
       debug_on_build: true
 ```
 
-It's normally not necessary to change this setting, as it's just intended to
-be a safety net.
+通常不需要更改此设置，因为它只是为了
+成为安全网。
 
 ---
 
@@ -532,9 +532,9 @@ be a safety net.
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `true` -->
 
-When [`debug`][config.debug] mode is enabled, this setting specifies whether a
-dot grid is rendered on top of all layers, to allow for better alignment. If you
-want to switch the grid off, use:
+当启用[`debug`][config.debug]模式时，此设置指定是否
+点网格渲染在所有层的顶部，以便更好地对齐。如果你
+要关闭电网，请使用：
 
 ``` yaml
 plugins:
@@ -550,9 +550,9 @@ plugins:
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `32` -->
 
-Use this setting to specify the step size of the dot grid in pixels, if enabled,
-which can be useful to create perfectly aligned layers for ideal composition.
-It you want to change it, use:
+使用此设置指定点阵的步长（以像素为单位）（如果启用），
+这可用于创建完美对齐的层以实现理想的构图。
+如果你想更改它，请使用：
 
 ``` yaml
 plugins:
@@ -568,9 +568,9 @@ plugins:
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default `grey` -->
 
-Use this setting to specify the color of the outlines that are added to each
-layer and the dot grid that is rendered on top of all layers. If you need to
-change it, use:
+使用此设置指定添加到每个轮廓的颜色
+图层和渲染在所有图层上的点网格。如果你需要
+更改它，使用：
 
 ``` yaml
 plugins:
@@ -578,20 +578,20 @@ plugins:
       debug_color: yellow
 ```
 
-In rare cases, it might be necessary to change this setting if the dot grid or
-the outlines are hard to distinguish, as the plugin will automatically adjust
-the color if not explicitly set.
+在极少数情况下，如果点网格或
+轮廓很难区分，因为插件会自动调整
+如果没有明确设置颜色。
 
-## Usage
+## 使用
 
-### Metadata
+### 元数据
 
-The plugin allows to override a subset of settings through metadata (front
-matter) in order to customize social card generation, e.g., to set [options for
-the included `default` layouts][default layouts] for a single page, or even
-[for an entire subsection] of your project by leveraging the [meta] plugin.
+该插件允许通过元数据覆盖设置的子集（front
+事宜）以定制社交卡生成，例如设置[选项
+单个页面的默认布局，甚至
+通过利用[meta]插件，您的项目的[整个子部分]。
 
-The following properties are available:
+以下属性可用：
 
   [for an entire subsection]: meta.md#how-it-works
   [meta]: meta.md
@@ -605,8 +605,8 @@ The following properties are available:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-Use this property to override the [`cards`][config.cards] setting for the given
-page:
+使用此属性覆盖给定的[`cards][config.cards]设置
+页面：
 
 ``` yaml
 ---
@@ -628,8 +628,8 @@ social:
 <!-- md:default none -->
 <!-- md:flag experimental -->
 
-Use this property to override the [`cards_layout`][config.cards_layout] setting
-for the given page:
+使用此属性覆盖[`cards_layout`][config.cards_layout]设置
+对于给定的页面：
 
 ``` yaml
 ---
@@ -650,8 +650,8 @@ social:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-Use this property to override the [`cards_layout_options`]
-[config.cards_layout_options] setting for the given page:
+使用此属性覆盖[`cards_layout_options`]
+给定页面的[config.cards_layout_options]设置：
 
 ``` yaml
 ---
@@ -665,16 +665,16 @@ social:
 ...
 ```
 
-Setting an option to `#!yaml null` resets the option.
+将选项设置为`#！yaml null会重置该选项。
 
-### Layouts
+### 布局
 
 <!-- md:sponsors -->
 <!-- md:version insiders-4.33.0 -->
 
-While it is possible and simple to build [custom layouts], the plugin ships
-several predefined layouts, all of which are prefixed with `default`. The
-following layouts are included:
+虽然构建[自定义布局]是可能且简单的，但该插件附带了
+几个预定义的布局，所有布局都以“默认”为前缀。这个
+包括以下布局：
 
 === "`default`"
 
@@ -777,15 +777,15 @@ following layouts are included:
 
     <div class="result" markdown>
 
-    This layout only shows the given background image and scales it to cover.
+    此布局仅显示给定的背景图像，并将其缩放以覆盖。
 
     </div>
 
-The [`default` layouts][default layouts] are very flexible and comfortable to
-use, as they replicate the original behavior of the plugin, sourcing default
-values for all options from other `theme` settings.
+[默认布局][默认布局]非常灵活和舒适
+当它们复制插件的原始行为时，使用默认的源代码
+其他“主题”设置中所有选项的值。
 
-The following options are available:
+以下选项可用：
 
   [Layout default]: ../assets/screenshots/social-cards.png
   [Layout default variant]: ../assets/screenshots/social-cards-variant.png
@@ -804,9 +804,9 @@ The following options are available:
 <!-- md:version 9.1.10 -->
 <!-- md:default computed -->
 
-Use this option to change the background color of the generated social card.
-The value can be set to a valid color value [supported by pillow], the imaging
-library used for card generation:
+使用此选项更改生成的社交卡的背景颜色。
+该值可以设置为有效的颜色值[枕头支持]，成像
+用于卡片生成的库：
 
 === "Hexadecimal"
 
@@ -817,8 +817,8 @@ library used for card generation:
             background_color: "#ff1493" # (1)!
     ```
 
-    1.  The following notations are supported, whereas each character after the
-        `#` must be a valid hexadecimal in the range `#!css 0-F`:
+    1.  支持以下符号，但
+        `#`必须是范围`#！css 0-F`：
 
         - `#!css #rgb` – Color (short)
         - `#!css #rgba` – Color + alpha (short)
@@ -834,8 +834,8 @@ library used for card generation:
             background_color: rgb(255, 20, 147) # (1)!
     ```
 
-    1.  The following functions are supported, listing the allowed maximum
-        values with the minimum values all being `#!css 0` or `#!css 0%`:
+    1.  支持以下功能，列出了允许的最大值
+        最小值均为“#！css 0或#！css 0%：
 
         - `#!css rgb(255, 255, 255)` – Red, green and blue
         - `#!css hsl(360, 100%, 100%)` – Hue, saturation and lightness
@@ -850,12 +850,12 @@ library used for card generation:
             background_color: deeppink # (1)!
     ```
 
-    1.  See the [`<named-color>`][named-color] CSS data type for a list of
-        supported color names. Note that some might not be available.
+    1.  请参阅[`<named color>`][named color=]CSS数据类型，以获取以下列表
+        支持的颜色名称。请注意，有些可能不可用。
 
-If this options is used together with [`background_image`]
-[option.background_image], the color is rendered on top of the image which
-allows for tinting images. If you want to remove the background color, use:
+如果此选项与[背景图片]一起使用
+[option.background_image]，颜色渲染在图像之上
+允许对图像进行着色。如果要删除背景色，请使用：
 
 ``` yaml
 plugins:
@@ -875,9 +875,9 @@ plugins:
 <!-- md:version insiders-4.33.0 -->
 <!-- md:default none -->
 
-Use this option to define a background image for the generated social card. Note
-that the image is tinted with the [`background_color`][option.background_color],
-which can also be set to `transparent`:
+使用此选项为生成的社交卡定义背景图像。注：
+图像用[背景颜色][选项.background_color]着色，
+其也可以设置为“透明”：
 
 === "Image"
 
@@ -899,7 +899,7 @@ which can also be set to `transparent`:
             background_color: "#ff149366"
     ```
 
-The provided path is resolved from the root directory.
+提供的路径是从根目录解析的。
 
 ---
 
@@ -908,9 +908,9 @@ The provided path is resolved from the root directory.
 <!-- md:version 9.1.10 -->
 <!-- md:default computed -->
 
-Use this option to change the foreground color of the generated social card.
-The value can be set to a valid color value [supported by pillow], the imaging
-library used for card generation:
+使用此选项更改生成的社交卡的前景颜色。
+该值可以设置为有效的颜色值[枕头支持]，成像
+用于卡片生成的库：
 
 === "Hexadecimal"
 
@@ -921,8 +921,8 @@ library used for card generation:
             color: "#ffffff" # (1)!
     ```
 
-    1.  The following notations are supported, whereas each character after the
-        `#` must be a valid hexadecimal in the range `#!css 0-F`:
+    1.  支持以下符号，但
+        `#`必须是范围`#！css 0-F`：
 
         - `#!css #rgb` – Color (short)
         - `#!css #rgba` – Color + alpha (short)
@@ -938,8 +938,8 @@ library used for card generation:
             color: rgb(255, 255, 255) # (1)!
     ```
 
-    1.  The following functions are supported, listing the allowed maximum
-        values with the minimum values all being `#!css 0` or `#!css 0%`:
+    1.  支持以下功能，列出了允许的最大值
+        最小值均为“#！css 0或#！css 0%：
 
         - `#!css rgb(255, 255, 255)` – Red, green and blue
         - `#!css hsl(360, 100%, 100%)` – Hue, saturation and lightness
@@ -954,8 +954,8 @@ library used for card generation:
             color: white # (1)!
     ```
 
-    1.  See the [`<named-color>`][named-color] CSS data type for a list of
-        supported color names. Note that some might not be available.
+    1.  请参阅[`<named color>`][named color=]CSS数据类型，以获取以下列表
+        支持的颜色名称。请注意，有些可能不可用。
 
 ---
 
@@ -964,9 +964,9 @@ library used for card generation:
 <!-- md:version 9.1.10 -->
 <!-- md:default computed -->
 
-Use this option to change the font family of the generated social card. The
-plugin automatically downloads the font from [Google Fonts], so the font must
-point to an existing Google Font:
+使用此选项更改生成的社交卡的字体系列。这个
+插件会自动从[Google Fonts]下载字体，因此字体必须
+指向现有的Google字体：
 
 ``` yaml
 plugins:
@@ -975,9 +975,9 @@ plugins:
         font_family: Ubuntu
 ```
 
-When you've found a font that you like on [Google Fonts], you can just copy the
-name from the font's specimen page and use it as the value for this option –
-no further configuration needed.
+当你在[谷歌字体]上找到你喜欢的字体时，你可以复制
+从字体的示例页面中选择名称，并将其用作此选项的值——
+不需要进一步的配置。
 
   [Google Fonts]: https://fonts.google.com/
 
@@ -989,9 +989,9 @@ no further configuration needed.
 <!-- md:version insiders-4.53.3 -->
 <!-- md:default none -->
 
-Use this option to change the font variant used to generate the social card.
-If the downloaded font has variants like `Condensed` or `Expanded`, you can set
-them with:
+使用此选项更改用于生成社交卡的字体变体。
+如果下载的字体有“压缩”或“扩展”等变体，您可以设置
+他们与：
 
 ``` yaml
 plugins:
@@ -1000,9 +1000,9 @@ plugins:
         font_variant: Condensed
 ```
 
-The variant is combined with the style as used in the custom layout, so the
-plugin is instructed to use combinations like `Condensed Regular` or
-`Expanded Bold`.
+该变体与自定义布局中使用的样式相结合，因此
+插件被指示使用“压缩规则”或
+`扩展粗体。
 
 ---
 
@@ -1012,9 +1012,9 @@ plugin is instructed to use combinations like `Condensed Regular` or
 <!-- md:version insiders-4.40.0 -->
 <!-- md:default computed -->
 
-Use this option to change the logo that is used in the generated social card.
-By default, the plugin uses the [`theme.logo`][theme.logo] or [`theme.icon.logo`]
-[theme.icon.logo] setting from `mkdocs.yml`. You can change it with:
+使用此选项更改生成的社交卡中使用的徽标。
+默认情况下，该插件使用[`theme.logo`][theme.logo]或[`theme.comp.logo`]
+从`mkdocs.yml`设置[theme.icon.logo]。您可以通过以下方式进行更改：
 
 ``` yaml
 plugins:
@@ -1023,7 +1023,7 @@ plugins:
         logo: layouts/logo.png
 ```
 
-The provided path is resolved from the root directory.
+提供的路径是从根目录解析的。
 
   [theme.logo]: ../setup/changing-the-logo-and-icons.md#logo-image
   [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md#logo-icon-bundled
@@ -1036,9 +1036,9 @@ The provided path is resolved from the root directory.
 <!-- md:version insiders-4.40.0 -->
 <!-- md:default computed -->
 
-Use this option to change the title of the generated social card. This overrides
-the computed page title as assigned by MkDocs, as well as the [`title`]
-[meta.title] metadata property:
+使用此选项更改生成的社交卡的标题。这将覆盖
+MkDocs分配的计算页面标题，以及[“标题”]
+[meta.title]元数据属性：
 
 ``` yaml
 plugins:
@@ -1057,9 +1057,9 @@ plugins:
 <!-- md:version insiders-4.40.0 -->
 <!-- md:default computed -->
 
-Use this option to change the description of the generated social card. This
-overrides the set [`site_description`][mkdocs.site_description], if defined, as
-well as the [`description`][meta.description] metadata property:
+使用此选项更改生成的社交卡的描述。这个
+覆盖集合[`site_description][mkdocs.site_descripting]（如果已定义），如下所示
+以及[`description][meta.description]元数据属性：
 
 ``` yaml
 plugins:
@@ -1072,13 +1072,13 @@ plugins:
 
 ---
 
-!!! question "Missing something?"
+!!! question "缺少什么？"
 
-    When setting up social cards, you might discover that you're missing
-    specific functionality – we're happy to consider adding it to the plugin!
-    You can [open a discussion] to ask a question, or create a [change request]
-    on our [issue tracker], so we can find out if it might be a good fit for
-    the plugin.
+    在设置社交卡时，你可能会发现自己错过了
+    特定功能–我们很乐意考虑将其添加到插件中！
+    您可以[展开讨论]提出问题，或创建[更改请求]
+    在我们的[问题跟踪器]上，这样我们就可以知道它是否适合
+    插件。
 
   [open a discussion]: https://github.com/squidfunk/mkdocs-material/discussions
   [change request]: ../contributing/requesting-a-change.md

@@ -3,36 +3,36 @@ title: Built-in search plugin
 icon: material/magnify
 ---
 
-# Built-in search plugin
+# 内置搜索插件
 
-The search plugin adds a search bar to the header, allowing users to search your
-documentation. It's powered by [lunr.js], a lightweight full-text search engine
-for the browser, elimininating the need for external services, and even works
-when building [offline-capable documentation].
+搜索插件在标题中添加了一个搜索栏，允许用户搜索您的
+文档。它由[lunr.js]提供支持，这是一个轻量级的全文搜索引擎
+对于浏览器来说，消除了对外部服务的需求，甚至可以工作
+在构建[支持离线的文档]时。
 
   [lunr.js]: https://lunrjs.com/
   [offline-capable documentation]: ../setup/building-for-offline-usage.md
 
-## Objective
+## 客观的
 
-### How it works
+### 工作原理
 
-The plugin scans the generated HTML and builds a search index from all pages and
-sections by extracting the section titles and contents. It preserves some inline
-formatting like code blocks and lists, but removes all other formatting, so the
-search index is as small as possible.
+该插件扫描生成的HTML，并从所有页面构建搜索索引
+通过提取章节标题和内容。它保留了一些内联
+格式类似于代码块和列表，但会删除所有其他格式，因此
+搜索索引尽可能小。
 
-When a user visits your site, the search index is shipped to the browser,
-indexed with [lunr.js] and made available for fast and simple querying – no
-server needed. This ensures that the search index is always up to date with
-your documentation, yielding accurate results.
+当用户访问您的网站时，搜索索引会被发送到浏览器，
+使用[lunr.js]进行索引，并可用于快速简单的查询-否
+需要服务器。这确保了搜索索引始终保持最新
+您的文档，产生准确的结果。
 
-### When to use it
+### 何时使用
 
-It's generally recommended to use the plugin, as interactive search functionality
-is a vital part of every good documentation. Additionally, the plugin integrates
-perfectly with several of the other [built-in plugins] that Material for MkDocs
-offers:
+通常建议使用插件作为交互式搜索功能
+是每一份好文件的重要组成部分。此外，该插件还集成了
+与MkDocs的其他几个[内置插件]完美配合
+提供：
 
 <div class="grid cards" markdown>
 
@@ -40,25 +40,25 @@ offers:
 
     ---
 
-    The offline plugin adds support for building offline-capable documentation,
-    so you can distribute the [`site` directory][mkdocs.site_dir] as a `.zip`
-    file that can be downloaded.
+    离线插件增加了对构建离线文档的支持，
+    因此，您可以将[`site`目录][mkdocs.site_dir]作为`.zip分发`
+    可以下载的文件。
 
     ---
 
-    __Your documentation can work without connectivity to the internet__
+    __您的文档可以在没有连接到互联网的情况下工作__
 
 -   :material-file-tree: &nbsp; __[Built-in meta plugin][meta]__
 
     ---
 
-    The meta plugin makes it easy to [boost][meta.search.boost] specific
-    sections in search results or to [exclude][meta.search.exclude] them
-    entirely from being indexed, giving more granular control over search.
+    元插件使[boost][meta.search.boost]特定变得容易
+    搜索结果中的部分或[排除][元.搜索.排除]它们
+    完全不被索引，从而对搜索进行更精细的控制。
 
     ---
 
-    __Simpler organization and management of search in different subsections__
+    __简化不同子部分的搜索组织和管理__
 
 </div>
 
@@ -66,29 +66,29 @@ offers:
   [meta]: meta.md
   [built-in plugins]: index.md
 
-## Configuration
+## 配置
 
 <!-- md:version 9.0.0 -->
 <!-- md:plugin [search] – built-in -->
 
-As with all [built-in plugins], getting started with the search plugin is
-straightforward. Just add the following lines to `mkdocs.yml`, and your users
-will be able to search your documentation:
+与所有[内置插件]一样，开始使用搜索插件是
+直截了当。只需将以下行添加到`mkdocs.yml`和您的用户
+将能够搜索您的文档：
 
 ``` yaml
 plugins:
   - search
 ```
 
-The search plugin is built into Material for MkDocs and doesn't need to be
-installed.
+搜索插件内置于MkDocs的Material中，不需要
+安装。
 
   [search]: search.md
   [built-in plugins]: index.md
 
-### General
+### 一般的
 
-The following settings are available:
+以下设置可用：
 
 ---
 
@@ -97,9 +97,9 @@ The following settings are available:
 <!-- md:version 9.3.2 -->
 <!-- md:default `true` -->
 
-Use this setting to enable or disable the plugin when [building your project].
-It's normally not necessary to specify this setting, but if you want to disable
-the plugin, use:
+使用此设置可在[构建项目]时启用或禁用插件。
+通常不需要指定此设置，但如果要禁用
+插件，使用：
 
 ``` yaml
 plugins:
@@ -109,9 +109,9 @@ plugins:
 
   [building your project]: ../creating-your-site.md#building-your-site
 
-### Search
+### 搜索
 
-The following settings are available for search:
+以下设置可供搜索：
 
 ---
 
@@ -120,10 +120,10 @@ The following settings are available for search:
 <!-- md:version 9.0.0 -->
 <!-- md:default computed -->
 
-Use this setting to specify the language of the search index, enabling [stemming]
-support for other languages than English. The default value is automatically
-computed from the [site language], but can be explicitly set to another language
-or even multiple languages with:
+使用此设置指定搜索索引的语言，启用[词干]
+支持英语以外的其他语言。默认值为自动
+根据[站点语言]计算，但可以显式设置为另一种语言
+甚至支持多种语言，包括：
 
 === "Set language"
 
@@ -143,21 +143,21 @@ or even multiple languages with:
             - de
     ```
 
-    1.  Be aware that including support for further languages increases the
-        base JavaScript payload by around 20kb and by another 15-30kb per
-        language, all before `gzip`.
+    1.  请注意，包括对其他语言的支持会增加
+        基础JavaScript有效负载减少约20kb，每增加15-30kb
+        语言，都在gzip之前。
 
   [stemming]: https://en.wikipedia.org/wiki/Stemming
   [site language]: ../setup/changing-the-language.md#site-language
   [lunr languages]: https://github.com/MihaiValentin/lunr-languages
 
-Language support is provided by [lunr languages], a collection of
-language-specific stemmers and stop words for [lunr.js] maintained by the
-Open Source community.
+语言支持由[lunr languages]提供，这是一个
+由[lunr.js]维护的特定于语言的词干分析器和停用词
+开源社区。
 
 ---
 
-The following languages are currently supported by [lunr languages]:
+[lunr languages]目前支持以下语言：
 
 <div class="mdx-columns" markdown>
 
@@ -191,10 +191,10 @@ The following languages are currently supported by [lunr languages]:
 
 </div>
 
-If [lunr languages] doesn't provide support for the selected [site language],
-the plugin falls back to another language that yields the best stemming results.
-If you discover that the search results are not satisfactory, you can contribute
-to [lunr languages] by adding support for your language.
+如果[lunr languages]不支持所选的[站点语言]，
+该插件退回到另一种能产生最佳词干结果的语言。
+如果你发现搜索结果不令人满意，你可以做出贡献
+通过添加对您的语言的支持，将其添加到[lunr languages]。
 
 ---
 
@@ -203,9 +203,9 @@ to [lunr languages] by adding support for your language.
 <!-- md:version 9.0.0 -->
 <!-- md:default computed -->
 
-Use this setting to specify the separator used to split words when building the
-search index on the client side. The default value is automatically computed
-from the [site language], but can also be explicitly set to another value with:
+使用此设置指定构建时用于拆分单词的分隔符
+客户端的搜索索引。默认值是自动计算的
+来自[site language]，但也可以通过以下方式显式设置为另一个值：
 
 ``` yaml
 plugins:
@@ -213,11 +213,11 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 ```
 
-Separators support [positive and negative lookahead assertions], which allows
-for rather complex expressions that yield precise control over how words are
-split when building the search index.
+分隔符支持[正向和反向前瞻断言]，这允许
+用于精确控制单词表达方式的相当复杂的表达式
+在构建搜索索引时进行拆分。
 
-Broken into its parts, this separator induces the following behavior:
+该分离器被分解为多个部分，从而引发以下行为：
 
 === "Special characters"
 
@@ -225,10 +225,10 @@ Broken into its parts, this separator induces the following behavior:
     [\s\-,:!=\[\]()"/]+
     ```
 
-    The first part of the expression inserts token boundaries for each
-    document before and after whitespace, hyphens, commas, brackets and
-    other special characters. If several of those special characters are
-    adjacent, they are treated as one.
+    表达式的第一部分为每个对象插入标记边界
+    文档前后有空格、连字符、逗号、括号和
+    其他特殊字符。如果其中几个特殊字符是
+    相邻，它们被视为一体。
 
 === "Case changes"
 
@@ -236,10 +236,10 @@ Broken into its parts, this separator induces the following behavior:
     (?!\b)(?=[A-Z][a-z])
     ```
 
-    Many programming languages have naming conventions like `PascalCase` or
-    `camelCase`. By adding this subexpression to the separator,
-    [words are split at case changes], tokenizing the word `PascalCase`
-    into `Pascal` and `Case`.
+    许多编程语言都有命名约定，如“PascalCase”或
+    `camelCase”。通过将该子表达式添加到分隔符中，
+    [单词在大小写变化时被拆分]，对单词“PascalCase”进行标记`
+    分为“Pascal”和“Case”。
 
 === "Version strings"
 
@@ -247,10 +247,10 @@ Broken into its parts, this separator induces the following behavior:
     \.(?!\d)
     ```
 
-    When adding `.` to the separator, version strings like `1.2.3` are split
-    into `1`, `2` and `3`, which makes them undiscoverable via search. When
-    using this subexpression, a small lookahead is introduced which will
-    [preserve version strings] and keep them discoverable.
+    添加“时。`对于分隔符，像“1.2.3”这样的版本字符串被拆分
+    分为“1”、“2”和“3”，这使得它们无法通过搜索发现。什么时候
+    使用这个子表达式，引入了一个小的前瞻，它将
+    [保留版本字符串]并保持它们可被发现。
 
 === "HTML/XML tags"
 
@@ -258,10 +258,10 @@ Broken into its parts, this separator induces the following behavior:
     &[lg]t;
     ```
 
-    If your documentation includes HTML/XML code examples, you may want to allow
-    users to find [specific tag names]. Unfortunately, the `<` and `>` control
-    characters are encoded in code blocks as `&lt;` and `&gt;`. Adding this
-    subexpression to the separator allows for just that.
+    如果您的文档包含HTML/XML代码示例，您可能希望允许
+    用户可以找到[特定的标签名称]。不幸的是，“<”和“>”控件
+    字符在代码块中编码为`&lt；`以及`&gt；`.添加此
+    分隔符的子表达式允许这样做。
 
   [positive and negative lookahead assertions]: https://www.regular-expressions.info/lookaround.html
   [words are split at case changes]: ?q=searchHighlight
@@ -276,10 +276,10 @@ Broken into its parts, this separator induces the following behavior:
 <!-- md:default computed -->
 <!-- md:flag experimental -->
 
-Use this setting to specify the [pipeline functions] that are used to filter and
-expand tokens after tokenizing them with the [`separator`][config.separator] and
-before adding them to the search index. The default value is automatically
-computed from the [site language], but can also be explicitly set with:
+使用此设置指定用于过滤和
+使用[`separate][config.separate]对令牌进行标记后展开令牌，以及
+在将它们添加到搜索索引之前。默认值为自动
+根据[site language]计算，但也可以显式设置为：
 
 ``` yaml
 plugins:
@@ -290,22 +290,22 @@ plugins:
         - trimmer
 ```
 
-The following pipeline functions can be used:
+可以使用以下管道功能：
 
-- `stemmer` – Stem tokens to their root form, e.g. `running` to `run`
-- `stopWordFilter` – Filter common words according, e.g. `a`, `the`, etc.
-- `trimmer` – Trim whitespace from tokens
+- `stemmer` – 茎标记到其根形式, e.g. `running` to `run`
+- `stopWordFilter` – 根据以下条件过滤常用词, e.g. `a`, `the`, etc.
+- `trimmer` – 修剪标记中的空格
 
   [pipeline functions]: https://lunrjs.com/guides/customising.html#pipeline-functions
 
-### Segmentation
+### 市场细分
 
-The plugin supports text segmentation of Chinese via [jieba], a popular
-Chinese text segmentation library. Other languages like Japanese and Korean are
-currently segmented on the client side, but we're considering to move this
-functionality into the plugin in the future.
+该插件支持通过[jieba]进行中文文本分割，这是一个流行的
+中文文本分割库。其他语言，如日语和韩语
+目前在客户端进行细分，但我们正在考虑将其转移
+未来插件的功能。
 
-The following settings are available for segmentation:
+以下设置可用于分段：
 
   [jieba]: https://pypi.org/project/jieba/
 
@@ -317,9 +317,9 @@ The following settings are available for segmentation:
 <!-- md:default none -->
 <!-- md:flag experimental -->
 
-Use this setting to specify a [custom dictionary] to be used by [jieba] for
-segmenting text, replacing the default dictionary. [jieba] comes with
-several dictionaries, which can be used with:
+使用此设置指定[jieba]使用的[自定义词典]
+分割文本，替换默认词典。[jieba]来了
+几本词典，可以与以下词典一起使用：
 
 ``` yaml
 plugins:
@@ -327,12 +327,12 @@ plugins:
       jieba_dict: dict.txt
 ```
 
-The following dictionaries are provided by [jieba]:
+以下词典由[jieba]提供：
 
 - [dict.txt.small] – 占用内存较小的词典文件
 - [dict.txt.big] – 支持繁体分词更好的词典文件
 
-The provided path is resolved from the root directory.
+提供的路径是从根目录解析的。
 
   [custom dictionary]: https://github.com/fxsjy/jieba#%E5%85%B6%E4%BB%96%E8%AF%8D%E5%85%B8
   [dict.txt.small]: https://github.com/fxsjy/jieba/raw/master/extra_dict/dict.txt.small
@@ -346,9 +346,9 @@ The provided path is resolved from the root directory.
 <!-- md:default none -->
 <!-- md:flag experimental -->
 
-Use this setting to specify an additional [user dictionary] to be used by
-[jieba] for segmenting text, augmenting the default dictionary. User
-dictionaries are ideal for tuning the segmenter:
+使用此设置指定要使用的其他[用户词典]
+[jieba]用于分割文本，扩充默认词典。用户
+字典是调整分段器的理想选择：
 
 ``` yaml
 plugins:
@@ -356,15 +356,15 @@ plugins:
       jieba_dict_user: user_dict.txt
 ```
 
-The provided path is resolved from the root directory.
+提供的路径是从根目录解析的。
 
   [user dictionary]: https://github.com/fxsjy/jieba#%E8%BD%BD%E5%85%A5%E8%AF%8D%E5%85%B8
 
-## Usage
+## 使用
 
-### Metadata
+### 元数据
 
-The following properties are available:
+以下属性可用：
 
 ---
 
@@ -374,9 +374,9 @@ The following properties are available:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-Use this property to increase or decrease the relevance of a page in the search
-results, giving more weight to them. Use values above `1` to rank up and values
-below `1` to rank down:
+使用此属性可增加或减少搜索中页面的相关性
+结果，给他们更多的权重。使用高于“1”的值进行排名
+低于“1”进行排名：
 
 === ":material-arrow-up-circle: Rank up"
 
@@ -390,7 +390,7 @@ below `1` to rank down:
     ...
     ```
 
-    1.  When boosting pages, always start with low values.
+    1.  在增强页面时，始终从低值开始。
 
 === ":material-arrow-down-circle: Rank down"
 
@@ -412,9 +412,9 @@ below `1` to rank down:
 <!-- md:flag metadata -->
 <!-- md:default none -->
 
-Use this property to exclude a page from the search results. Note that this will
-not only remove the page, but also all subsections of the page from the search
-results:
+使用此属性可从搜索结果中排除页面。请注意，这将
+不仅删除页面，还从搜索中删除页面的所有子部分
+结果：
 
 ``` yaml
 ---

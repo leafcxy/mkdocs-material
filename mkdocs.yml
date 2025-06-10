@@ -175,19 +175,19 @@ not_in_nav: |
 
 # Page tree
 nav:
-  - Home: index.md
-  - Getting started:
-    - Installation: getting-started.md
-    - Creating your site: creating-your-site.md
-    - Publishing your site: publishing-your-site.md
-    - Customization: customization.md
-    - Conventions: conventions.md
-    - Browser support: browser-support.md
-    - Enterprise feedback: enterprise-support.md
-    - Philosophy: philosophy.md
-    - Alternatives: alternatives.md
-    - License: license.md
-    - Tutorials:
+  - 主页: index.md
+  - 开始:
+    - 安装: getting-started.md
+    - 创建您的网站: creating-your-site.md
+    - 发布您的网站: publishing-your-site.md
+    - 自定义: customization.md
+    - 约定: conventions.md
+    - 浏览器支持: browser-support.md
+    - 企业反馈: enterprise-support.md
+    - 哲学: philosophy.md
+    - 选择: alternatives.md
+    - 许可证: license.md
+    - 教程:
       - tutorials/index.md
       - "Blogs":
         - tutorials/blogs/basic.md
@@ -196,98 +196,98 @@ nav:
       - "Social cards":
         - tutorials/social/basic.md
         - tutorials/social/custom.md
-    - Changelog:
+    - 修改日志:
       - changelog/index.md
-      - How to upgrade: upgrade.md
-  - Setup:
+      - 如何升级: upgrade.md
+  - 安装:
     - setup/index.md
-    - Changing the colors: setup/changing-the-colors.md
-    - Changing the fonts: setup/changing-the-fonts.md
-    - Changing the language: setup/changing-the-language.md
-    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
-    - Ensuring data privacy: setup/ensuring-data-privacy.md
-    - Setting up navigation: setup/setting-up-navigation.md
-    - Setting up site search: setup/setting-up-site-search.md
-    - Setting up site analytics: setup/setting-up-site-analytics.md
-    - Setting up social cards: setup/setting-up-social-cards.md
-    - Setting up a blog: setup/setting-up-a-blog.md
-    - Setting up tags: setup/setting-up-tags.md
-    - Setting up versioning: setup/setting-up-versioning.md
-    - Setting up the header: setup/setting-up-the-header.md
-    - Setting up the footer: setup/setting-up-the-footer.md
-    - Adding a git repository: setup/adding-a-git-repository.md
-    - Adding a comment system: setup/adding-a-comment-system.md
-    - Building an optimized site: setup/building-an-optimized-site.md
-    - Building for offline usage: setup/building-for-offline-usage.md
-    - Extensions:
+    - 更改颜色: setup/changing-the-colors.md
+    - 更改字体: setup/changing-the-fonts.md
+    - 更改语言: setup/changing-the-language.md
+    - 更改徽标和图标: setup/changing-the-logo-and-icons.md
+    - 确保数据隐私: setup/ensuring-data-privacy.md
+    - 设置导航: setup/setting-up-navigation.md
+    - 设置网站搜索: setup/setting-up-site-search.md
+    - 设置站点分析: setup/setting-up-site-analytics.md
+    - 设置社交卡: setup/setting-up-social-cards.md
+    - 建立博客: setup/setting-up-a-blog.md
+    - 设置标签: setup/setting-up-tags.md
+    - 设置版本控制: setup/setting-up-versioning.md
+    - 设置标题: setup/setting-up-the-header.md
+    - 设置页脚: setup/setting-up-the-footer.md
+    - 添加git存储库: setup/adding-a-git-repository.md
+    - 添加评论系统: setup/adding-a-comment-system.md
+    - 构建优化的网站: setup/building-an-optimized-site.md
+    - 为离线使用而构建: setup/building-for-offline-usage.md
+    - 扩展:
       - setup/extensions/index.md
       - Python Markdown: setup/extensions/python-markdown.md
-      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
-  - Plugins:
+      - Python Markdown扩展: setup/extensions/python-markdown-extensions.md
+  - 插件:
     - plugins/index.md
-    - Blog: plugins/blog.md
-    - Group: plugins/group.md
-    - Info: plugins/info.md
-    - Meta: plugins/meta.md
-    - Offline: plugins/offline.md
-    - Optimize: plugins/optimize.md
-    - Privacy: plugins/privacy.md
-    - Projects: plugins/projects.md
-    - Search: plugins/search.md
-    - Social: plugins/social.md
-    - Tags: plugins/tags.md
-    - Typeset: plugins/typeset.md
-    - Requirements:
-      - Image processing: plugins/requirements/image-processing.md
-      - Caching: plugins/requirements/caching.md
-  - Reference:
+    - 博客: plugins/blog.md
+    - 组: plugins/group.md
+    - 信息: plugins/info.md
+    - 元: plugins/meta.md
+    - 脱机的: plugins/offline.md
+    - 优化: plugins/optimize.md
+    - 隐私: plugins/privacy.md
+    - 工程: plugins/projects.md
+    - 搜索: plugins/search.md
+    - 社会的: plugins/social.md
+    - 标签: plugins/tags.md
+    - 排版: plugins/typeset.md
+    - 必要条件:
+      - 图像处理: plugins/requirements/image-processing.md
+      - 缓存: plugins/requirements/caching.md
+  - 参考:
     - reference/index.md
-    - Admonitions: reference/admonitions.md
-    - Annotations: reference/annotations.md
-    - Buttons: reference/buttons.md
-    - Code blocks: reference/code-blocks.md
-    - Content tabs: reference/content-tabs.md
-    - Data tables: reference/data-tables.md
-    - Diagrams: reference/diagrams.md
-    - Footnotes: reference/footnotes.md
-    - Formatting: reference/formatting.md
-    - Grids: reference/grids.md
-    - Icons, Emojis: reference/icons-emojis.md
-    - Images: reference/images.md
-    - Lists: reference/lists.md
-    - Math: reference/math.md
-    - Tooltips: reference/tooltips.md
-  - Insiders:
+    - 警告: reference/admonitions.md
+    - 注释: reference/annotations.md
+    - 按钮: reference/buttons.md
+    - 代码块: reference/code-blocks.md
+    - 内容选项卡: reference/content-tabs.md
+    - 数据表: reference/data-tables.md
+    - 图表: reference/diagrams.md
+    - 脚注: reference/footnotes.md
+    - 格式化: reference/formatting.md
+    - 网格: reference/grids.md
+    - 图标， 表情符号: reference/icons-emojis.md
+    - 图像: reference/images.md
+    - 列表: reference/lists.md
+    - 数学: reference/math.md
+    - 工具提示: reference/tooltips.md
+  - 内部人士:
     - insiders/index.md
-    - Why sponsor us: insiders/why-sponsor-us.md
-    - What's in it for you: insiders/benefits.md
-    - Who is sponsoring: insiders/our-sponsors.md
-    - Sponsoring tiers: insiders/sponsoring-tiers.md
-    - How to sponsor: insiders/how-to-sponsor.md
-    - Additional information:
-      - Payment and billing: insiders/payment-and-billing.md
-      - Access management: insiders/access-management.md
-      - Runtime and cancellation: insiders/runtime-and-cancellation.md
-      - Privacy: insiders/privacy.md
-      - License: insiders/license.md
-      - Support: support.md
-    - Using Insiders:
-      - Getting started: insiders/getting-started.md
-    - Changelog:
+    - 为什么赞助我们: insiders/why-sponsor-us.md
+    - 这对你有什么好处: insiders/benefits.md
+    - 谁在赞助: insiders/our-sponsors.md
+    - 赞助级别: insiders/sponsoring-tiers.md
+    - 如何赞助: insiders/how-to-sponsor.md
+    - 附加资料:
+      - 付款和账单: insiders/payment-and-billing.md
+      - 访问管理: insiders/access-management.md
+      - 运行时间和取消: insiders/runtime-and-cancellation.md
+      - 隐私: insiders/privacy.md
+      - 许可证: insiders/license.md
+      - 支持: support.md
+    - 使用内部人员:
+      - 开始: insiders/getting-started.md
+    - 修改日志:
       - insiders/changelog/index.md
-      - How to upgrade: insiders/upgrade.md
-  - Community:
-    - Contributing:
+      - 如何升级: insiders/upgrade.md
+  - 社区:
+    - 捐助:
       - contributing/index.md
-      - Reporting a bug: contributing/reporting-a-bug.md
-      - Reporting a docs issue: contributing/reporting-a-docs-issue.md
-      - Requesting a change: contributing/requesting-a-change.md
-      - Adding translations: contributing/adding-translations.md
-      - Making a pull request: contributing/making-a-pull-request.md
-      - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
-    - Guides:
-      - Creating a reproduction: guides/creating-a-reproduction.md
-    - Community experts program:
+      - 报告错误: contributing/reporting-a-bug.md
+      - 报告文档问题: contributing/reporting-a-docs-issue.md
+      - 请求更改: contributing/requesting-a-change.md
+      - 添加翻译: contributing/adding-translations.md
+      - 发出pull请求: contributing/making-a-pull-request.md
+      - 问问题: https://github.com/squidfunk/mkdocs-material/discussions
+    - 指南:
+      - 创建复制品: guides/creating-a-reproduction.md
+    - 社区专家计划:
       - insiders/community-experts-program/index.md
-  - Blog:
+  - 博客:
     - blog/index.md

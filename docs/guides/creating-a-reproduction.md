@@ -1,26 +1,26 @@
-# Creating a reproduction
+# 创建复制品
 
-A reproduction is a simplified version of a bug that demonstrates the specific
-scenario in which the bug occurred. It includes all necessary minimal settings
-and instructions and should be as simple as possible while still demonstrating
-the issue.
+复制是bug的简化版本，展示了特定的
+错误发生的场景。它包括所有必要的最低设置
+以及说明，在演示的同时应尽可能简单
+问题。
 
-## Guide
+## 指南
 
-### Environment <small>optional</small> { #environment }
+### 环境 <small>optional</small> { #environment }
 
-We recommend using a [virtual environment], which is an isolated Python runtime.
-If you are in a virtual environment, any packages that you install or upgrade
-will be local to the environment. If you run into problems, you can
-just delete and recreate the environment. It's trivial to set up:
+我们建议使用[虚拟环境]，这是一个独立的Python运行时环境。
+如果您在虚拟环境中，您安装或升级的任何软件包
+将与环境融为一体。如果你遇到问题，你可以
+只需删除并重新创建环境。设置起来很简单：
 
--   Create a new virtual environment with:
+-   使用以下工具创建新的虚拟环境：
 
     ```
     python3 -m venv venv
     ```
 
--   Activate the environment with:
+-   通过以下方式激活环境：
 
     === ":material-apple: macOS"
 
@@ -41,10 +41,10 @@ just delete and recreate the environment. It's trivial to set up:
         ```
 
 
-    Your terminal should now print `(venv)` before the prompt, which is how you
-    know that you are inside the virtual environment that you just created.
+    您的终端现在应该在提示符前打印“（venv）”，这就是您
+    知道你在刚刚创建的虚拟环境中。
 
--   Exit the environment with:
+-   使用以下命令退出环境：
 
     ```
     deactivate
@@ -52,64 +52,64 @@ just delete and recreate the environment. It's trivial to set up:
 
   [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
 
-### Minimal reproduction
+### 最小繁殖
 
-Following the instructions below, you will set up a skeleton project to create
-a reproduction. As mentioned above, we recommend using a [virtual environment],
-so create a new folder in your working directory and a new virtual environment
-inside it. Next:
+按照以下说明，您将设置一个骨架项目来创建
+复制品。如上所述，我们建议使用[虚拟环境]，
+因此，在您的工作目录和新的虚拟环境中创建一个新文件夹
+里面。下一个：
 
-1.  As mentioned in our [bug reporting guide], ensure that you're running the
-    latest version of Material for MkDocs, which might already include a fix for
-    the bug:
+1.  正如我们的[错误报告指南]中提到的，请确保您正在运行
+    最新版本的MkDocs材料，其中可能已经包含了对
+    bug：
 
     ```
     pip install --upgrade --force-reinstall mkdocs-material
     ```
 
-2.  Bootstrap a new documentation project using the `mkdocs` executable,
-    which you use as a basis for the reproduction. It's essential to create a
-    new, empty project for this:
+2.  使用`mkdocs`可执行文件启动一个新的文档项目，
+    你用它作为复制的基础。创建一个
+    为此新建空项目：
 
     ```
     mkdocs new .
     ```
 
-    Start by adding the [minimal configuration] in `mkdocs.yml`:
+    首先在`mkdocs.yml`中添加[最小配置]：
 
     ``` yaml
     theme:
       name: material
     ```
 
-3.  Now, only add the necessary settings to `mkdocs.yml` to keep the
-    reproduction minimal. If you are creating a reproduction for a rendering
-    bug, create only the necessary amount of Markdown documents. __Repeat this
-    step until the bug you want to report can be observed.__
+3.  现在，只需在`mkdocs.yml`中添加必要的设置，即可保持
+    繁殖最少。如果您正在为渲染创建复制品
+    bug，只创建必要数量的Markdown文档。__重复这个
+    逐步执行，直到可以观察到要报告的错误。__
 
-4.  As a last step, before packing everything into a `.zip` file, double-check
-    all settings and documents if they are essential to the reproduction, which
-    means that the bug does not occur when they are omitted. Remove all
-    non-essential lines and files.
+4.  作为最后一步，在将所有内容打包到“.zip”文件之前，请仔细检查
+    所有设置和文档，如果它们对复制至关重要
+    意味着当它们被省略时，错误不会发生。移除所有
+    非必要的行和文件。
 
   [bug reporting guide]: ../contributing/reporting-a-bug.md#upgrade-to-latest-version
   [minimal configuration]: ../creating-your-site.md#minimal-configuration
 
-### Creating a `.zip` file
+### 创建“.zip”文件
 
-Material for MkDocs 9.0.0 includes a new plugin solely intended to create
-reproductions for bug reports. When the built-in info plugin is enabled, MkDocs
-will add all relevant files to a `.zip`, print a summary to the terminal and
-exit. Add the following lines to `mkdocs.yml`:
+MkDocs 9.0.0的材料包括一个专门用于创建
+错误报告的复制品。启用内置信息插件后，MkDocs
+将所有相关文件添加到“.zip”中，将摘要打印到终端，然后
+出口。将以下行添加到`mkdocs.yml`中：
 
 ``` yaml
 plugins:
   - info
 ```
 
-Now, when running `mkdocs build`, a file called `example.zip` is automatically
-created, containing the minimal reproduction you can directly attach to your bug
-report.
+现在，当运行`mkdocs-build`时，会自动生成一个名为`example.zip `的文件
+已创建，包含可以直接附加到bug的最小复制
+报告。
 
 ```
 INFO     -  Started archive creation for bug report

@@ -1,21 +1,21 @@
-# Our sponsors
+# 赞助商
 
-Starting in 2020, we have managed to build a community of a few hundred sponsors
-that support us every month, for which we are immensely grateful. Without their
-financial support, Material for MkDocs wouldn't be anywhere near where it is
-today.
+从2020年开始，我们已经成功地建立了一个由几百名赞助商组成的社区
+这每月都在支持我们，对此我们深表感激。没有他们
+财政支持，MkDocs的材料不会接近它的位置
+今天。
 
 <div class="mdx-premium" markdown>
 
-## Premium sponsors
+## 高级赞助商
 
-### Gold sponsors
+### 金牌赞助商
 
 _Be our first gold sponsor!_
 
 ----
 
-### Silver sponsors
+### 银牌赞助商
 
 [![FastAPI]{ style="height: 120px" }](https://fastapi.tiangolo.com/){ target=_blank title="FastAPI" }
 [![Trendpop]{ style="height: 120px" }](https://www.trendpop.com/){ target=_blank title="Trendpop" }
@@ -26,7 +26,7 @@ _Be our first gold sponsor!_
 
 ----
 
-### Bronze sponsors
+### 铜牌赞助商
 
 [![Cirrus CI]](https://cirrus-ci.org/){ target=_blank title="Cirrus CI" }
 [![Basler]](https://docs.baslerweb.com/){ target=_blank title="Basler" }
@@ -119,15 +119,15 @@ _Be our first gold sponsor!_
 
   [sponsoring-tiers]: sponsoring-tiers.md
 
-## All sponsors
+## 所有赞助商
 
 <div class="mdx-sponsorship" data-mdx-component="sponsorship" hidden>
   <div class="mdx-sponsorship__list"></div>
   <small>
-    If you sponsor publicly, you're automatically added here with a link to
-    your profile and avatar to show your support for Material for MkDocs.
-    Alternatively, if you wish to keep your sponsorship private, you'll be a
-    silent +1. You can select visibility during checkout and change it
-    afterwards.
+    如果您公开赞助，您将自动添加到此处，并链接到
+    您的个人资料和头像，以显示您对Material for MkDocs的支持。
+    或者，如果您希望将您的赞助保密，您将成为
+    无声+1。您可以在结账时选择可见性并更改它
+    之后。
   </small>
 </div>

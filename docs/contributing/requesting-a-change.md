@@ -1,87 +1,87 @@
-# Change requests
+# 变更请求
 
-Material for MkDocs is a powerful tool for creating beautiful and functional
-documentation. With more than 20,000 users, we understand that our project
-serves a wide range of use cases, which is why we have created the following
-guide.
+MkDocs材料是一个强大的工具，用于创建美观和功能
+文档。拥有20000多名用户，我们了解我们的项目
+服务于广泛的用例，这就是为什么我们创建了以下内容
+导游。
 
 ---
 
-Put yourself in our shoes – with a project of this size, it can be challenging
-to maintain existing functionality while constantly adding new features at the
-same time. We highly value every idea or contribution from our community, and
-we kindly ask you to take the time to read the following guidelines before
-submitting your change request in our public [issue tracker]. This will help us
-better understand the proposed change and how it will benefit our community.
+设身处地为我们着想——对于如此规模的项目，这可能是一个挑战
+在保持现有功能的同时，不断添加新功能
+同时。我们高度重视社区的每一个想法或贡献，以及
+我们恳请您在之前花时间阅读以下指南
+在我们的公共[问题跟踪器]中提交您的更改请求。这将有助于我们
+更好地了解拟议的变更以及它将如何使我们的社区受益。
 
-This guide is our best effort to explain the criteria and reasoning behind our
-decisions when evaluating change requests and considering them for
-implementation.
+本指南是我们为解释我们的标准和推理所做的最大努力
+评估变更请求并考虑变更请求时的决策
+实施。
 
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
 
 !!! warning "[How we manage change requests]"
 
-    Before submitting a new idea, please take a moment to read how we manage
-    change requests
+    在提交新想法之前，请花点时间阅读我们如何管理
+    变更请求
 
 
   [How we manage change requests]: #how-we-manage-change-requests
 
-## Before creating an issue
+## 在创建问题之前
 
-Before you invest your time to fill out and submit a change request, we kindly
-ask you to do some preliminary work by answering some questions to determine if
-your idea is a good fit for Material for MkDocs and matches the project's
-[philosophy] and tone.
+在您投入时间填写和提交变更请求之前，我们敬请
+请你通过回答一些问题来做一些初步工作，以确定
+你的想法非常适合MkDocs材料，与项目相匹配
+[哲学]和语气。
 
-__Please do the following things before creating an issue.__
+__在创建问题之前，请执行以下操作。__
 
   [philosophy]: ../philosophy.md
 
-### It's not a bug, it's a feature
+### 这不是bug，这是一个特性
 
-Change requests are intended to suggest minor adjustments, ideas for new
-features, or to kindly influence the project's direction and vision. It is
-important to note that change requests are not intended for reporting bugs, as
-they're missing essential information for debugging.
+变更请求旨在建议进行细微调整，提出新的想法
+或者善意地影响项目的方向和愿景。它是
+需要注意的是，更改请求不是为了报告错误，因为
+它们缺少调试所需的重要信息。
 
-If you want to report a bug, please refer to our [bug reporting guide] instead.
+如果您想报告错误，请参阅我们的[错误报告指南]。
 
   [bug reporting guide]: reporting-a-bug.md
 
-### Look for sources of inspiration
+### 寻找灵感来源
 
-If you have seen your idea implemented in another static site generator or
-theme, make sure to collect enough information on its implementation before
-submitting, as this allows us to evaluate potential fit more quickly. Explain
-what you like and dislike about the implementation.
+如果你已经看到你的想法在另一个静态站点生成器中实现，或者
+主题，确保在实施之前收集足够的信息
+提交，因为这使我们能够更快地评估潜在的契合度。解释
+你喜欢和不喜欢这个实现。
 
-### Connect with our community
+### 与我们的社区联系
 
-Our [discussion board] is the best place to connect with our community. When
-evaluating new ideas, it's essential to seek input from other users and consider
-alternative viewpoints. This approach helps to implement new features in a way
-that benefits a large number of users.
+我们的[讨论板]是与社区联系的最佳场所。什么时候？
+在评估新想法时，必须征求其他用户的意见并加以考虑
+另一种观点。这种方法有助于以某种方式实现新功能
+这使大量用户受益。
 
 __Keep track of all <u>search terms</u> and <u>relevant links</u>, you'll need
 them in the change request.__[^1]
 
   [^1]:
-    We might be using terminology in our documentation different from yours,
-    but we mean the same. When you include the search terms and related links
-    in your change request, you help us to adjust and improve the documentation.
+    我们的文档中可能使用了与您不同的术语，
+    但我们的意思是一样的。当您包含搜索词和相关链接时
+    在您的变更请求中，您帮助我们调整和改进文档。
 
 [:octicons-comment-discussion-16:&nbsp; Start a discussion][discussion board]{ .md-button .md-button--primary }
 
   [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
 
-## Issue template
+## 问题模板
 
-Now that you have taken the time to do the necessary preliminary work and ensure
-that your idea meets our requirements, you are invited to create a change
-request. The following guide will walk you through all the necessary steps to
-help you submit a comprehensive and useful issue:
+现在你已经花时间做了必要的准备工作，并确保
+如果您的想法符合我们的要求，我们邀请您进行更改
+请求。以下指南将引导您完成所有必要的步骤
+帮助您提交一个全面而有用的问题：
 
 - [Title]
 - [Context] <small>optional</small>
@@ -99,11 +99,11 @@ help you submit a comprehensive and useful issue:
   [Visuals]: #visuals
   [Checklist]: #checklist
 
-### Title
+### 名称
 
-A good title is short and descriptive. It should be a one-sentence executive
-summary of the idea, so the potential impact and benefit for our community can
-be inferred from the title.
+一个好的标题应当简短且富有描述性。它应该是一句话的执行
+对想法进行总结，以便为我们的社区带来潜在的影响和利益
+从标题中可以推断出来。
 
 | <!-- --> | Example  |
 | -------- | -------- |
@@ -114,169 +114,169 @@ be inferred from the title.
 
 ### Context <small>optional</small> { #context }
 
-Before describing your idea, you can provide additional context for us to
-understand what you are trying to achieve. Explain the circumstances
-in which you're using Material for MkDocs, and what you _think_ might be
-relevant. Don't write about the change request here.
+在描述你的想法之前，你可以为我们提供额外的背景信息
+了解你想要实现什么。解释情况
+您在其中使用MkDocs的Material，以及您的想法可能是什么
+相关。不要在这里写更改请求。
 
-> __Why this might be helpful__: some ideas might only benefit specific
-> settings, environments, or edge cases, for example, when your documentation
-> contains thousands of documents. With a little context, change requests
-> can be prioritized more accurately.
+> __为什么这可能有帮助__: 有些想法可能只对特定的人有益
+> 设置、环境或边缘情况，例如，当您的文档
+> 包含数千个文档。有一点上下文，更改请求
+> 可以更准确地确定优先级。
 
-### Description
+### 描述
 
-Next, provide a detailed and clear description of your idea. Explain why your
-idea is relevant to Material for MkDocs and must be implemented here and not
-in one of its dependencies:[^2]
+接下来，详细而清晰地描述你的想法。解释为什么你
+这个想法与MkDocs的材料有关，必须在这里实施，而不是
+在其依赖关系之一中：[^2]
 
   [^2]:
-    Sometimes, users suggest ideas on our [issue tracker] that concern one of
-    our upstream dependencies, including [MkDocs][mkdocs], [Python Markdown],
-    [Python Markdown Extensions] or third-party plugins. It's a good idea to
-    think about whether your idea is beneficial to other themes, upstreaming
-    change requests for a bigger impact.
+    有时，用户会在我们的[问题跟踪器]上提出与以下问题之一相关的想法
+    我们的上游依赖项，包括[MkDocs][MkDocs]、[Python Markdown]、，
+    [Python Markdown扩展]或第三方插件。这是个好主意
+    想想你的想法是否对其他主题、上游有益
+    更改请求以获得更大的影响。
 
--   __Explain the <u>what</u>, not the <u>why</u>__ – don't explain
-    [the benefits of your idea][Use cases] here, we're getting there.
-    Focus on describing the proposed change request as precisely as possible.
+-   __Explain the <u>what</u>, not the <u>why</u>__ – 不要解释
+    [你的想法的好处][用例]在这里，我们正在实现。
+    专注于尽可能准确地描述拟议的变更请求。
 
--   __Keep it short and concise__ – be brief and to the point when describing
-    your idea, there is no need to over-describe it. Maintainers and future
-    users will be grateful for having to read less.
+-   __Keep it short and concise__ – 描述时要简明扼要
+    你的想法，没有必要过度描述。维护者和未来
+    用户会感激不得不少读书。
 
--   __One idea at a time__ – if you have multiple ideas that don't belong
-    together, please open separate change requests for each of those ideas.
+-   __One idea at a time__ – 如果你有多个不属于你的想法
+    请一起为每个想法单独提出更改请求。
 
 ---
 
-:material-run-fast: __Stretch goal__ – if you have a customization or another
-way to add the proposed change, you can help other users by sharing it here
-before we maintainers can add it to our code base.
+:material-run-fast: __Stretch goal__ – 如果你有定制或其他
+要添加建议的更改，您可以通过在此处共享来帮助其他用户
+在我们维护人员将其添加到我们的代码库之前。
 
-> __Why we need this__: To understand and evaluate your proposed change, we
-> need to have a clear understanding of your idea. By providing a detailed and
-> precise description, you can help save you and us time spent discussing
-> further clarification of your idea in the comments.
+> __为什么我们需要这个__: 为了了解和评估您提出的变更，我们
+> 需要清楚地了解你的想法。通过提供详细和
+> 精确的描述，可以帮助您和我们节省讨论时间
+> 在评论中进一步澄清你的想法。
 
   [Python Markdown]: https://python-markdown.github.io/extensions/
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
 
-### Related links
+### 相关链接
 
-Please provide any relevant links to issues, discussions, or documentation
-sections related to your change request. If you (or someone else) already
-discussed this idea with our community on our discussion board, please include
-the link to the discussion as well.
+请提供问题、讨论或文档的相关链接
+与您的更改请求相关的部分。如果你（或其他人）已经
+在我们的讨论板上与我们的社区讨论了这个想法，请包括
+与讨论的链接也是如此。
 
-> __Why we need this__: Related links help us gain a comprehensive
-> understanding of your change request by providing additional context.
-> Additionally, linking to previous issues and discussions allows us
-> to quickly evaluate the feedback and input already provided by our community.
+> __为什么我们需要这个__: 相关链接帮助我们获得全面
+> 通过提供额外的上下文来理解您的变更请求。
+> 此外，链接到以前的问题和讨论可以让我们
+> 快速评估我们社区已经提供的反馈和意见。
 
-### Use cases
+### 用例
 
-Explain how your change request would work from an author's and user's
-perspective – what's the expected impact, and why does it not only benefit you,
-but other users? How many of them? Furthermore, would it potentially break
-existing functionality?
+解释作者和用户的更改请求将如何处理
+观点——预期的影响是什么，为什么它不仅对你有益，
+但其他用户呢？他们有多少人？此外，它是否有可能破裂
+现有功能？
 
-> __Why we need this__: Understanding the use cases and benefits of an idea is
-> crucial in evaluating its potential impact and usefulness for the project and
-> its users. This information helps us to understand the expected value of the
-> idea and how it aligns with the goals of the project.
+> __为什么我们需要这个__: 了解一个想法的用例和好处是
+> 对于评估其对项目的潜在影响和有用性至关重要，以及
+> 其用户。这些信息有助于我们了解
+> 以及它如何与项目目标保持一致。
 
 ### Visuals <small>optional</small> { #visuals }
 
-We now have a clear and detailed description of your idea, including information
-on its potential use cases and relevant links for context. If you have any
-visuals, such as sketches, screenshots, mockups, or external assets, you may
-present them in this section.
+我们现在对你的想法有了清晰详细的描述，包括信息
+关于其潜在用例和上下文相关链接。如果你有
+视觉效果，如草图、截图、模型或外部资产，您可以
+在本节中介绍它们。
 
-__You can drag and drop the files here or include links to external assets.__
+__您可以将文件拖放到此处，也可以包含指向外部资源的链接。__
 
-Additionally, if you have seen this change, feature, or improvement used in
-other static site generators or themes, please provide an example by showcasing
-it and describing how it was implemented and incorporated.
+此外，如果您在
+其他静态网站生成器或主题，请通过展示来提供示例
+并描述了它是如何实现和整合的。
 
-> __Why this might be helpful__: Illustrations and visuals can help us
-> maintainers better understand and envision your idea. Screenshots, sketches,
-> or mockups can create an additional level of detail and clarity that text
-> alone may not be able to convey. Also, seeing how your idea has been
-> implemented in other projects can help us understand its potential impact and
-> feasibility in Material for MkDocs, which helps us maintainers evaluate and
-> triage change requests.
+> __为什么这可能有帮助__: 插图和视觉效果可以帮助我们
+> 维护人员更好地理解和设想你的想法。截图、草图、，
+> 或者模型可以为文本创造额外的细节和清晰度
+> 单独可能无法传达。另外，看看你的想法怎么样
+> 在其他项目中实施可以帮助我们了解其潜在影响和
+> MkDocs材料的可行性，这有助于我们的维护人员评估和
+> 对变更请求进行分类。
 
-### Checklist
+### 清单
 
-Thanks for following the guide and creating a high-quality change request – you
-are almost done. The checklist ensures that you have read this guide and have
-worked to your best knowledge to provide us with every piece of information to
-review your idea for Material for MkDocs.
+感谢您遵循指南并创建高质量的变更请求——您
+几乎完成了。检查表确保您已阅读本指南并
+尽您所能为我们提供每一条信息
+回顾一下你对MkDocs材料的想法。
 
-__We'll take it from here.__
+__我们从这里开始。__
 
 ---
 
-## How we manage change requests
+## 我们如何管理变更请求
 
-Change requests are submitted as issues on our public [issue tracker]. Since
-they often propose new features or enhancements, we review and manage them
-differently than bug reports.
+变更请求作为问题提交到我们的公共[问题跟踪器]上。自从
+他们经常提出新的功能或增强功能，我们会对其进行审查和管理
+与bug报告不同。
 
-To maintain clarity and ensure that our roadmap remains focused and achievable,
-we've introduced a structured process and use a dedicated [backlog] to
-track and organize change requests, and how they fit into our roadmap.
+为了保持清晰，确保我们的路线图保持重点突出且可实现，
+我们引入了一个结构化的流程，并使用了一个专用的[待办事项列表]
+跟踪和组织变更请求，以及它们如何融入我们的路线图。
 
   [backlog]: https://github.com/users/squidfunk/projects/4/views/1
 
-Here’s how we handle new change requests:
+以下是我们如何处理新的变更请求：
 
-1. We read and review the request to understand the idea.
-2. We may leave comments to clarify intent or suggest alternatives.
-3. If the idea is out of scope, we will close the request and explain why.
-4. If the idea aligns with the project's vision, we'll categorize it as a change
-request, and add it to our [backlog].
-5. In either case, we close the request to keep the issue tracker clean and
-focused on open bugs.
+1. 我们阅读并审查了请求，以了解这个想法。
+2. 我们可能会发表评论以澄清意图或提出替代方案。
+3. 如果想法超出范围，我们将关闭请求并解释原因。
+4. 如果这个想法与项目的愿景相一致，我们将把它归类为一种变化
+请求，并将其添加到我们的[待办事项列表]中。
+5. 在任何一种情况下，我们都会关闭请求以保持问题跟踪器的干净
+专注于开放的bug。
 
-> Note: While the issue may be closed, that doesn't mean it's forgotten –
-> change requests added to the project board remain part of our long-term
-> planning.
+> 注意：虽然问题可能已经解决，但这并不意味着它被遗忘了——
+> 添加到项目委员会的变更请求仍然是我们长期计划的一部分
+> 规划。
 
-__Benefits of this approach:__
-- Users get a clearer and quicker overview of known issues and bugs, as change
-requests are managed separately, giving a better idea how actively this project
-is maintained.
-- Related ideas are grouped in the backlog, allowing us to track progress more
-effectively, and to more easily see which change requests are related.
+__这种方法的好处:__
+- 随着变化，用户可以更清晰、更快地了解已知的问题和错误
+请求是分开管理的，可以更好地了解这个项目的活跃程度
+保持。
+- 相关想法被分组在待办事项列表中，使我们能够更多地跟踪进度
+并且更容易地看到哪些更改请求是相关的。
 
-## Rejected requests
+## 被拒绝的请求
 
-__Your change request got rejected? We're sorry for that.__ We understand it can
-be frustrating when your ideas don't get accepted, but as the maintainers of a
-very popular project, we always need to consider the needs of our entire
-community, sometimes forcing us to make tough decisions.
+__您的更改请求被拒绝了吗？我们对此深感抱歉。__ 我们知道它可以
+当你的想法没有被接受时，你会感到沮丧，但作为一个
+非常受欢迎的项目，我们总是需要考虑整个项目的需求
+社区，有时迫使我们做出艰难的决定。
 
-We always have to consider and balance many factors when evaluating change
-requests, and we explain the reasoning behind our decisions whenever we can.
-If you're unsure why your change request was rejected, please don't hesitate
-to ask for clarification.
+在评估变化时，我们总是要考虑和平衡许多因素
+我们会尽可能地解释我们的决定背后的原因。
+如果您不确定更改请求被拒绝的原因，请不要犹豫
+要求澄清。
 
-The following principles (in no particular order) form the basis for our
-decisions:
+以下原则（没有特别的顺序）构成了我们的基础
+决定：
 
-- [ ] Alignment with vision and tone of the project
-- [ ] Compatibility with existing features and plugins
-- [ ] Compatibility with all screen sizes and browsers
-- [ ] Effort of implementation and maintenance
-- [ ] Usefulness to the majority of users
-- [ ] Simplicity and ease of use
-- [ ] Accessibility
+- [ ] 与项目的愿景和基调保持一致
+- [ ] 与现有功能和插件的兼容性
+- [ ] 与所有屏幕尺寸和浏览器兼容
+- [ ] 实施和维护工作
+- [ ] 对大多数用户有用
+- [ ] 简单易用
+- [ ] 可访问性
 
-But that's not the end of your idea – you can always implement it on your own
-via [customization]. If you're unsure about how to do that or want to know if
-someone has already done it, feel free to get in touch with our community on
-the [discussion board].
+但这并不是你想法的终点——你总是可以自己实现它
+通过[定制]。如果你不确定如何做到这一点，或者想知道
+有人已经这样做了，请随时与我们的社区联系
+[讨论板]。
 
   [customization]: ../customization.md

@@ -1,53 +1,53 @@
-# Insiders
+# 内部人士
 
-Material for MkDocs Insiders offers an enhanced experience with early access to
-exclusive features that aren't available in the community edition. Become a
-sponsor and make use of these features directly!
+MkDocs Insider的材料提供了增强的体验，可以尽早访问
+社区版中没有的独家功能。成为一名
+赞助并直接使用这些功能！
 
-You’ve already seen the benefits of using Material for MkDocs;
-imagine what more you can achieve with Insiders. Your sponsorship helps us
-continue to innovate and improve, ensuring Material for MkDocs remains a
-cutting-edge tool. Discover how your contributions make a difference.
+您已经看到了使用Material for MkDocs的好处；
+想象一下，通过Insiders，你还能取得什么成就。您的赞助对我们有所帮助
+继续创新和改进，确保MkDocs材料保持
+尖端工具。了解您的贡献如何发挥作用。
 
 [&nbsp; Choose a sponsoring tier <span class="mdx-sponsorship-count" data-mdx-component="sponsorship-count"></span>][sponsoring-tiers]{ .md-button .md-button--primary .mdx-sponsorship-button }
 
   [sponsoring-tiers]: sponsoring-tiers.md
 
-## Additional information
+## 附加资料
 
-Explore the following section to learn more about Material for MkDocs, why
-you should sponsor us, what's in it for you, and who is sponsoring us.
+探索以下部分，了解更多关于MkDocs材料的信息，为什么
+你应该赞助我们，这对你有什么好处，谁在赞助我们。
 
 <div class="grid cards" markdown>
 
 -   :fontawesome-solid-circle-question: &nbsp;
-    __Why sponsor us__
+    __为什么赞助我们__
 
     ---
 
-    Learn how to support our goal of becoming the leading tool in documentation
+    了解如何支持我们成为文档领域领先工具的目标
 
     ---
 
     [:octicons-arrow-right-24: More information][Why sponsor us]
 
 -   :material-gift: &nbsp;
-    __What's in it for you__
+    __这对你有什么好处__
 
     ---
 
-    Discover exclusive benefits and features available only to our monthly sponsors
+    了解仅适用于我们每月赞助商的独家福利和功能
 
     ---
 
     [:octicons-arrow-right-24: More information][What's in it for you]
 
 -   :fontawesome-solid-people-group: &nbsp;
-    __Who is sponsoring__
+    __谁在赞助__
 
     ---
 
-    Get to know our awesome sponsors, financially backing Material for MkDocs
+    了解我们出色的赞助商，为MkDocs的Material提供财务支持
 
     ---
 
@@ -55,32 +55,32 @@ you should sponsor us, what's in it for you, and who is sponsoring us.
 
 </div>
 
-### Sponsoring guide
+### 赞助指南
 
-Learn how to become a sponsor of Material for MkDocs Insiders and start your
-sponsorship journey by choosing the right tier for you:
+了解如何成为MkDocs Insiders Material的赞助商，并开始您的
+通过为您选择合适的级别，您可以享受赞助之旅：
 
 <div class="grid cards" markdown>
 
 
 -   :material-animation-outline: &nbsp;
-    __Sponsoring tiers__
+    __赞助级别__
 
     ---
 
-    Find the perfect monthly sponsoring tier that fits your needs and
-    requirements
+    找到适合您需求的完美月度赞助级别
+    必要条件
 
     ---
 
     [:octicons-arrow-right-24: More information][Sponsoring tiers]
 
 -   :octicons-heart-fill-24:{ .mdx-heart } &nbsp;
-    __How to sponsor__
+    __如何赞助__
 
     ---
 
-    Follow our step-by-step guide on how to become a sponsor to get you started
+    按照我们的分步指南，了解如何成为赞助商，让您开始
 
     ---
 
@@ -88,54 +88,54 @@ sponsorship journey by choosing the right tier for you:
 
 </div>
 
-### Additional information
+### 附加资料
 
-If you require additional and detailed information about payment, billing,
-access management, and more, here is everything you need to know:
+如果您需要有关付款、账单、，
+访问管理等，以下是您需要知道的一切：
 
 <div class="grid cards" markdown>
 
 -   :material-hand-coin: &nbsp;
-    __Payment and billing__
+    __付款和账单__
 
     ---
 
-    All the information you need about payment methods and billing cycles
+    您需要的有关付款方式和计费周期的所有信息
 
     ---
 
     [:octicons-arrow-right-24: More information][Payment and billing]
 
 -   :material-key-variant: &nbsp;
-    __Access management__
+    __访问管理__
 
     ---
 
-    Learn about access management to Insiders – for individuals and
-    organizations
+    了解Insiders的访问管理——针对个人和
+    组织
 
     ---
 
     [:octicons-arrow-right-24: More information][Access management]
 
 -   :material-clock-time-three: &nbsp;
-    __Runtime and cancellation__
+    __运行时间和取消__
 
     ---
 
-    Receive information on the duration of your sponsorship and the cancellation
-    process
+    接收有关赞助期限和取消的信息
+    过程
 
     ---
 
     [:octicons-arrow-right-24: More information][Runtime and cancellation]
 
 -   :material-lock-open: &nbsp;
-    __Privacy__
+    __隐私__
 
     ---
 
-    Our commitment to your privacy – learn assurances on valuing your privacy
+    我们对您隐私的承诺-了解有关重视您隐私的保证
 
     ---
 
@@ -146,19 +146,19 @@ access management, and more, here is everything you need to know:
 
     ---
 
-    Get details on the licensing of Material for MkDocs Insiders and its requirements
+    获取MkDocs Insider材料许可及其要求的详细信息
 
     ---
 
     [:octicons-arrow-right-24: More information][License]
 
 -   :material-email: &nbsp;
-    __Support__
+    __支持__
 
     ---
 
-    Overview of our support options available, ensuring you get the information
-    you need
+    我们提供的支持选项概述，确保您获得信息
+    你需要的
 
     ---
 
@@ -166,19 +166,19 @@ access management, and more, here is everything you need to know:
 
 </div>
 
-### Using Insiders
+### 使用内部人员
 
-Once you have become a sponsor, you can start using Material for MkDocs Insiders,
-get all the information you need to get started:
+一旦你成为赞助商，你就可以开始使用MkDocs Insiders的材料，
+获取开始所需的所有信息：
 
 <div class="grid cards" markdown>
 
 -   :material-download: &nbsp;
-    __Getting started__
+    __开始__
 
     ---
 
-    Step-by-step instructions on how to install Material for MkDocs Insiders
+    如何为MkDocs Insiders安装Material的分步说明
 
     ---
 
@@ -189,7 +189,7 @@ get all the information you need to get started:
 
     ---
 
-    Review the latest changes and additions to Material for MkDocs Insiders
+    查看MkDocs内部人员材料的最新更改和补充
 
     ---
 
@@ -200,8 +200,8 @@ get all the information you need to get started:
 
     ---
 
-    Stay updated with the latest changes and improvements in the Insiders
-    edition
+    了解Insiders的最新变化和改进
+    版本
 
     ---
 
@@ -226,4 +226,4 @@ get all the information you need to get started:
 
 ----
 
-__We're looking forward to welcoming you as a sponsor!__
+__我们期待着您成为我们的赞助商！__

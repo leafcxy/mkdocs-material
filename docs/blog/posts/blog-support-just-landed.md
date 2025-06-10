@@ -11,40 +11,40 @@ links:
   - plugins/blog.md
 ---
 
-# Blog support just landed
+# 博客支持刚刚落地
 
-__Hey there! You're looking at our new blog, built with the brand new
-[built-in blog plugin]. With this plugin, you can easily build a blog alongside
-your documentation or standalone.__
+__嘿！您正在查看我们的新博客，它是用全新的
+[内置博客插件]。使用此插件，您可以轻松地在旁边构建博客
+您的文档或独立文件。__
 
-Proper support for blogging, as requested by many users over the past few years,
-was something that was desperately missing from Material for MkDocs' feature set.
-While everybody agreed that blogging support was a blind spot, it was not
-obvious whether MkDocs could be extended in a way to allow for blogging as we
-know it from [Jekyll] and friends. The [built-in blog plugin] proves that it is,
-after all, possible to build a blogging engine on top of MkDocs, in order to
-create a technical blog alongside your documentation, or as the main thing.
+根据过去几年许多用户的要求，对博客提供适当的支持，
+这是MkDocs功能集的Material中迫切缺少的东西。
+虽然每个人都同意博客支持是一个盲点，但事实并非如此
+很明显，MkDocs是否可以扩展到允许像我们这样的博客
+从[杰基尔]和朋友那里知道。[内置博客插件]证明了这一点，
+毕竟，可以在MkDocs的基础上构建一个博客引擎，以便
+在文档旁边创建一个技术博客，或者作为主要内容。
 
 <!-- more -->
 
-_This article explains how to build a standalone blog with Material for MkDocs.
-If you want to build a blog alongside your documentation, please refer to
-[the plugin's documentation][built-in blog plugin]._
+_本文解释了如何使用Material for MkDocs构建一个独立的博客。
+如果你想在你的文档旁边建立一个博客，请参阅
+[插件文档][内置博客插件]。_
 
   [built-in blog plugin]: ../../plugins/blog.md
   [Jekyll]: https://jekyllrb.com/
 
-## Quick start
+## 快速启动
 
-### Creating a standalone blog
+### 创建独立博客
 
-You can bootstrap a new project using the `mkdocs` executable:
+您可以使用`mkdocs`可执行文件引导一个新项目：
 
 ```
 mkdocs new .
 ```
 
-This will create the following structure:
+这将创建以下结构：
 
 ``` { .sh .no-copy }
 .
@@ -53,11 +53,11 @@ This will create the following structure:
 └─ mkdocs.yml
 ```
 
-#### Configuration
+#### 配置
 
-In this article, we're going to build a standalone blog, which means that the
-blog lives at the root of your project. For this reason, open `mkdocs.yml`,
-and replace its contents with:
+在本文中，我们将构建一个独立的博客，这意味着
+博客是你项目的根基。因此，打开`mkdocs.yml`，
+并将其内容替换为：
 
 ``` yaml
 site_name: My Blog
@@ -74,30 +74,30 @@ nav:
   - index.md
 ```
 
-1.  This is the important part – we're hosting the blog at the root of the
-    project, and not in a subdirectory. For more information, see the
-    [`blog_dir`][blog_dir] configuration option.
+1.  这是重要的部分——我们将博客托管在
+    项目，而不是在子目录中。有关更多信息，请参阅
+    [blog_dir][blog_dir]配置选项。
 
   [blog_dir]: ../../plugins/blog.md#config.blog_dir
 
-#### Blog setup
+#### 博客设置
 
-The blog index page lives in `docs/index.md`. This page was pre-filled by
-MkDocs with some content, so we're going to replace it with what we need to
-bootstrap the blog:
+博客索引页位于`docs/index.md`中。此页面由以下人员预先填写
+MkDocs有一些内容，所以我们将用我们需要的内容替换它
+引导博客：
 
 ``` markdown
 # Blog
 ```
 
-That's it.
+就这样
 
-### Writing your first post
+### 写你的第一篇文章
 
-Now that we have set up the [built-in blog plugin], we can start writing our
-first post. All blog posts are written with the [exact same Markdown flavor] as
-already included with Material for MkDocs. First, create a folder called `posts`
-with a file called `hello-world.md`:
+现在我们已经设置了[内置博客插件]，我们可以开始编写我们的
+第一篇帖子。所有博客文章都是用[完全相同的Markdown风格]写的
+已包含在MkDocs材料中。首先，创建一个名为“posts”的文件夹`
+有一个名为“hello world.md”的文件：
 
 ``` { .sh .no-copy }
 .
@@ -108,12 +108,12 @@ with a file called `hello-world.md`:
 └─ mkdocs.yml
 ```
 
-1.  If you'd like to arrange posts differently, you're free to do so. The URLs
-    are built from the format specified in [`post_url_format`][post slugs] and
-    the titles and dates of posts, no matter how they are organized
-    inside the `posts` directory.
+1.  如果你想以不同的方式安排帖子，你可以自由地这样做。网址
+    根据[post_url_format][post-slugs]中指定的格式构建，以及
+    帖子的标题和日期，无论它们是如何组织的
+    在“posts”目录中。
 
-Then, open up `hello-world.md`, and add the following lines:
+然后，打开“hello world.md”，并添加以下行：
 
 ``` yaml
 ---
@@ -149,20 +149,20 @@ In velit purus, dictum quis neque nec, molestie viverra risus. Nam pellentesque
 tellus id elit ultricies, vel finibus erat cursus.
 ```
 
-1.  If you mark a post as a [draft], a red marker appears next to the post date
-    on index pages. When the site is built, drafts are not included in the
-    output. [This behavior can be changed], e.g. for rendering drafts when
-    building deploy previews.
+1.  如果将帖子标记为[草稿]，则帖子日期旁边会出现一个红色标记
+    在索引页上。网站建成后，草稿不包括在
+    输出。[此行为可以更改]，例如在以下情况下渲染草稿
+    构建部署预览。
 
-When you spin up the [live preview server], you should be greeted by your first
-post! You'll also realize, that [archive] and [category] indexes have been
-automatically generated for you:
+当你启动[实时预览服务器]时，你应该会收到第一个
+帖子！你也会意识到，[归档]和[类别]索引已经
+自动为您生成：
 
   ![Blog]
 
-However, this is just the start. The [built-in blog plugin] packs a lot of
-functionality needed in day-to-day blogging. Visit the documentation of the
-plugin to learn about the following topics:
+然而，这仅仅是个开始。[内置博客插件]包含了很多
+日常博客中所需的功能。访问文档
+插件，了解以下主题：
 
 <div class="mdx-columns" markdown>
 
@@ -177,9 +177,9 @@ plugin to learn about the following topics:
 
 </div>
 
-Additionally, the [built-in blog plugin] has dozens of [configuration options]
-which allow for fine-tuning the output. You can configure post slugs, general
-behavior and much more.
+此外，[内置博客插件]有几十个[配置选项]
+这允许对输出进行微调。您可以配置post-slugs，常规
+行为和更多。
 
   [exact same Markdown flavor]: ../../reference/index.md
   [post slugs]: ../../plugins/blog.md#config.post_url_format
@@ -200,29 +200,29 @@ behavior and much more.
   [Setting defaults]: ../../setup/setting-up-a-blog.md#setting-defaults
   [configuration options]: ../../setup/setting-up-a-blog.md#configuration
 
-## What's next?
+## 接下来是什么？
 
-Getting basic blogging support out the door was quite a challenge – the
-[built-in blog plugin] is probably the biggest release this year and already
-packs a lot of functionality. However, Material for MkDocs is used in many
-different contexts, which is why we'd expect to iterate, as always.
+获得基本的博客支持是一个相当大的挑战——
+[内置博客插件]可能是今年最大的版本，而且已经
+包含许多功能。然而，MkDocs的材料被用于许多
+不同的上下文，这就是为什么我们希望像往常一样迭代。
 
-Some ideas already proposed by users:
+用户已经提出的一些想法：
 
-- __Blog series__: Authors should be able to create so called blog series and
-  assign posts to a blog series using simple identifiers. For each post that is
-  part of a series, a list with links to all other posts should be included in
-  the post's content.
+- __Blog series__: 作者应该能够创建所谓的博客系列和
+  使用简单的标识符将帖子分配给博客系列。对于每个帖子
+  作为系列文章的一部分，应包含一个包含所有其他帖子链接的列表
+  帖子的内容。
 
-- __Author indexes__: Besides [archive] and [category] indexes, authors should
-  be able to create per-author indexes, which list all posts linked to an
-  author. Additionally, a profile should be created for each author and linked
-  from posts.
+- __Author indexes__: 除了[档案]和[类别]索引外，作者还应
+  能够创建按作者的索引，列出链接到某个网站的所有帖子
+  作者此外，应为每个作者创建一个个人资料并链接
+  从帖子。
 
-- __Social share buttons__: It should be easy to share blog posts via social
-  media or other ways. For this reason, it should be possible to automatically
-  include social sharing buttons with each post.
+- __Social share buttons__: 通过社交媒体分享博客文章应该很容易
+  媒体或其他方式。因此，应该可以自动
+  每个帖子都包含社交分享按钮。
 
-What's still missing from the brand new [built-in blog plugin]? Feel free to
-share your ideas in the comments. Together, we can build one of the best modern
-engines for technical blogging!
+全新的[内置博客插件]还缺少什么？请随意
+在评论中分享你的想法。我们可以共同打造最好的现代建筑之一
+技术博客引擎！

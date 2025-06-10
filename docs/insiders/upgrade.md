@@ -1,28 +1,28 @@
-# How to upgrade
+# 如何升级
 
-When upgrading Insiders, you should always check the version of Material for
-MkDocs which makes up the first part of the version qualifier, e.g., Insiders
-`4.x.x` is currently based on `9.x.x`:
+升级Insiders时，您应该始终检查以下内容的Material版本
+MkDocs是版本限定符的第一部分，例如Insiders
+`4.x.x目前基于9.x.x：
 
 ```
 9.x.x-insiders-4.x.x
 ```
 
-If the major version increased, it's a good idea to consult the [upgrade
-guide] and go through the steps to ensure your configuration is up to date and
-all necessary changes have been made. 
+如果主版本增加了，最好咨询[升级]
+指南]并完成步骤，以确保您的配置是最新的
+所有必要的更改都已完成。
 
   [upgrade guide]: ../upgrade.md
   [list of tags]: https://github.com/squidfunk/mkdocs-material-insiders/tags
 
-Depending on how you installed and what you want to upgrade to you
-need to run different commands:
+取决于您的安装方式和要升级的内容
+需要运行不同的命令：
 
 === "pip upgrade to release"
 
-    If you installed Insiders via `pip` and you want to upgrade to a
-    specific release, pick the tag from the [list of tags] and replace 
-    the tag at the end of the URL of the command given below:
+    如果你通过pip安装了Insiders，并且想升级到
+    特定版本，从[标签列表]中选择标签并替换
+    下面给出的命令URL末尾的标签：
 
     ```
     pip install --upgrade git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.4.2-insiders-4.42.0
@@ -30,36 +30,36 @@ need to run different commands:
 
 === "pip upgrade to latest development"
 
-    If you installed Insiders via `pip` and want to upgrade to the
-    latest development version, run:
+    如果你通过pip安装了Insiders，并想升级到
+    最新开发版本，运行：
 
     ```
     pip install --upgrade --force-reinstall git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
     ```
 
-    The `--force-reinstall` option serves to make sure `pip` does, in fact,
-    install the latest development version, instead of deciding that  nothing
-    is to be done based on the version numbers.
+    “强制重新安装”选项用于确保“pip”确实，
+    安装最新的开发版本，而不是决定什么都不做
+    应根据版本号进行。
     ```
 
 === "git upgrade"
 
-    If you installed Insiders via `git`, you will first need to check
-    out the version you want to install into your workspace. After
-    this is done, you can run `pip` to install that version.
+    如果你是通过`git`安装Insiders的，你首先需要检查
+    输出要安装到工作区中的版本。之后
+    完成后，您可以运行pip来安装该版本。
 
-    First, make sure that your local clone is up-to-date with the
-    upstream repository by running `git pull`.
+    首先，确保您的本地克隆是最新的
+    通过运行“git pull”来执行上游存储库。
 
-    You can look up the tags using `git tag --sort -refname` or you
-    can consult the [list of tags]. Then, checkout the tag you want to
-    use by replacing the one given in the command below (twice)and running 
-    it from your workspace[^detached]:
+    您可以使用`git tag-sort-refname`查找标签，或者
+    可以参考[标签列表]。然后，签出您想要的标签
+    通过替换下面命令中给出的命令（两次）并运行
+    它来自您的工作区[^detached]：
       
       [^detached]:
-        The `--detach` argument serves to tell `git` that you are ok to
-        have your workspace in the [detached head] state, which is
-        perfectly fine to have here.
+        `--detach`参数用于告诉`git`您可以
+        使您的工作区处于[已分离的头部]状态，即
+        在这里吃太好了。
         
       [detached head]: https://www.git-tower.com/learn/git/faq/detached-head-when-checkout-commit/
 

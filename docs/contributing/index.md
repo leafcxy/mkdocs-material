@@ -1,35 +1,35 @@
-# Contributing
+# 捐助
 
-Material for MkDocs is an actively maintained and constantly evolving project
-serving a diverse user base with versatile backgrounds and needs. In order to
-efficiently address the requirements of all our users, evaluate change requests,
-and fix bugs, we put in a lot of work.
+MkDocs的材料是一个积极维护和不断发展的项目
+为具有多样化背景和需求的多样化用户群提供服务。为了
+高效地满足所有用户的需求，评估变更请求，
+为了修复bug，我们做了很多工作。
 
-Our ever-growing community includes many active users, who open new
-issues and discussions several times a day, evolving our [issue tracker] and
-[discussion board] into a knowledge base – an important addition to
-our [documentation] – yielding value to both new and experienced users.
+我们不断增长的社区包括许多活跃用户，他们打开新的
+每天多次进行问题和讨论，改进我们的[问题跟踪器]和
+[讨论板]变成一个知识库——一个重要的补充
+我们的[文档]——为新用户和有经验的用户带来价值。
 
   [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
   [documentation]: https://squidfunk.github.io/mkdocs-material/
 
-## How you can contribute
+## 如何做出贡献
 
-We understand that reporting bugs, raising change requests, as well as engaging
-in discussions can be time-consuming, which is why we've carefully optimized our
-issue templates and defined guidelines to improve the overall interaction
-within the project. We've invested a lot of time and effort into making our
-[issue tracker] and [discussion board] as efficient as possible.
+我们了解报告错误、提出变更请求以及参与
+在讨论中可能很耗时，这就是为什么我们仔细优化了我们的
+发布模板和定义的指导方针，以改善整体交互
+在项目中。我们投入了大量的时间和精力来制作我们的
+[问题跟踪器]和[讨论板]尽可能高效。
 
-Our goal is to ensure that our documentation, as well as issue tracker and
-discussion board, are __well-structured__, __easy to navigate__, and
-__searchable__, so you can find what you need quickly and efficiently. Thus,
-when you follow our guidelines, we can help you much faster.
+我们的目标是确保我们的文档以及问题跟踪器和
+讨论板结构良好，易于导航
+__可搜索，因此您可以快速有效地找到所需内容。因此，
+当你遵循我们的指导方针时，我们可以更快地帮助你。
 
-In this section, we guide your through our processes.
+在本节中，我们将指导您完成我们的流程。
 
-### Creating an issue
+### 创建问题
 
 <div class="grid cards" markdown>
 
@@ -38,8 +38,8 @@ In this section, we guide your through our processes.
 
     ---
 
-    Report a bug in Material for MkDocs by creating an issue with a
-    reproduction
+    通过创建问题来报告MkDocs材料中的错误
+    繁殖
 
     ---
 
@@ -50,31 +50,31 @@ In this section, we guide your through our processes.
 
     ---
 
-    Report missing information or potential inconsistencies in our
-    documentation
+    报告我们网站中缺失的信息或潜在的不一致之处
+    文档
 
     ---
 
     [:octicons-arrow-right-24: Report a docs issue][report a docs issue]
 
 -   :material-lightbulb-on-20: &nbsp;
-    __Want to submit an idea?__
+    __想提交一个想法吗？__
 
     ---
 
-    Propose a change, feature request, or suggest an improvement
+    提出更改、功能请求或改进建议
 
     ---
 
     [:octicons-arrow-right-24: Request a change][request a change]
 
 -   :material-account-question-outline: &nbsp;
-    __Have a question or need help?__
+    __有问题或需要帮助？__
 
     ---
 
-    Ask a question on our [discussion board] and get in touch with our
-    community
+    在我们的[讨论板]上提问，并与我们的
+    社区
 
     ---
 
@@ -82,27 +82,27 @@ In this section, we guide your through our processes.
 
 </div>
 
-### Contributing
+### 捐助
 
 <div class="grid cards" markdown>
 
 -   :material-translate: &nbsp;
-    __Missing support for your language?__
+    __缺少对您语言的支持？__
 
     ---
 
-    Add or improve translations for a new or already supported language
+    添加或改进新语言或已支持语言的翻译
 
     ---
 
     [:octicons-arrow-right-24: Add translations][add translations]
 
 -   :material-source-pull: &nbsp;
-    __Want to create a pull request?__
+    __想要创建pull请求吗？__
 
     ---
 
-    Learn how to create a comprehensive and useful pull request (PR)
+    学习如何创建全面且有用的拉取请求（PR）
 
     ---
 
@@ -116,154 +116,154 @@ In this section, we guide your through our processes.
   [add translations]: adding-translations.md
   [create a pull request]: making-a-pull-request.md
 
-## Checklist
+## 清单
 
-Before interacting within the project, please take a moment to consider the
-following questions. By doing so, you can ensure that you are using the correct
-issue template and that you provide all necessary information when interacting
-with our community.
+在项目内部互动之前，请花点时间考虑
+以下问题。通过这样做，您可以确保使用正确的
+问题模板，并在交互时提供所有必要的信息
+与我们的社区。
 
-!!! warning "Issues, discussions, and comments are forever"
+!!! warning "问题、讨论和评论是永恒的"
 
-    Please note that everything you write is permanent and will remain
-    for everyone to read – forever. Therefore, please always be nice and
-    constructive, follow our contribution guidelines, and comply with our
-    [Code of Conduct].
+    请注意，您所写的一切都是永久性的，并将继续存在
+    让每个人都能阅读——永远。因此，请始终保持友善
+    建设性的，遵循我们的贡献准则，并遵守我们的
+    [行为准则]。
 
-### Before creating an issue
+### 在创建问题之前
 
-- Are you using the appropriate issue template, or is there another issue
-  template that better fits the context of your request?
+- 您是否使用了适当的问题模板，或者是否存在其他问题
+  更适合您请求上下文的模板？
 
-- Have you checked if a similar bug report or change request has already been
-  created, or have you stumbled upon something that might be related?
+- 您是否检查过是否已经有类似的错误报告或更改请求
+  创建，还是你偶然发现了一些可能相关的东西？
 
-- Did your fill out every field as requested and did you provide all additional
-  information we maintainers need to comprehend your request?
+- 你是否按照要求填写了每个字段，并提供了所有额外的
+  我们维护人员需要哪些信息来理解您的请求？
 
-### Before asking a question
+### 在提问之前
 
-- Is the topic a question for our [discussion board], or is it a bug report or
-  change request that should better be raised on our [issue tracker]?
+- 该主题是我们[讨论板]的问题，还是错误报告或
+  更改请求最好在我们的[问题跟踪器]上提出？
 
-- Is there an open discussion on the topic of your request? If the answer is yes,
-  does your question match the direction of the discussion, or should you open a
-  new discussion?
+- 是否就您的请求主题进行了公开讨论？如果答案是肯定的，
+  你的问题是否符合讨论的方向，或者你应该打开一个
+  新讨论？
 
-- Did your provide our community with all the necessary information to
-  understand your question and help you quickly, or can you make it easier to
-  help you?
+- 您是否为我们的社区提供了所有必要的信息
+  理解你的问题并快速帮助你，或者你能让它更容易
+  帮你？
 
-### Before commenting
+### 评论之前
 
-- Is your comment relevant to the topic of the current page, post, issue, or
-  discussion, or is it a better idea to create a new issue or discussion?
+- 您的评论是否与当前页面、帖子、问题或
+  讨论，还是创建一个新问题或讨论是更好的主意？
 
-- Does your comment add value to the conversation? Is it constructive and
-  respectful to our community and us maintainers? Could you just use a
-  [:octicons-smiley-16: reaction][reaction] instead?
+- 你的评论是否为对话增添了价值？它是否具有建设性和
+  尊重我们的社区和我们的维护者？你能用个
+  [：octicons-smiley-16：反应][反应]？
 
   [Code of Conduct]: https://github.com/squidfunk/mkdocs-material/blob/master/CODE_OF_CONDUCT.md
   [reaction]: https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/
 
-## Rights and responsibilities
+## 权利和责任
 
-As maintainers, we are entrusted with the __responsibility__ to moderate
-communication within our community, including the authority to close, remove,
-reject, or edit issues, discussions, comments, commits, and to block users who
-__do not align__ with our contribution guidelines and our [Code of Conduct].
-This role requires us to be actively involved in maintaining the integrity and
-positive atmosphere of our community. Upholding these standards decisively
-ensures a respectful and inclusive environment for all members.
+作为维护者，我们有责任进行调解
+我们社区内的沟通，包括关闭、删除、，
+拒绝或编辑问题、讨论、评论、提交，并阻止以下用户
+__不符合我们的贡献准则和[行为准则]。
+这一角色要求我们积极参与维护诚信和
+我们社区的积极氛围。坚决维护这些标准
+确保为所有成员提供一个尊重和包容的环境。
 
 
-### Code of Conduct
+### 行为准则
 
-Our [Code of Conduct] outlines the expectation for all community members to
-treat one another with respect, employing inclusive and welcoming language. Our
-commitment is to foster a positive and supportive environment, free of
-inappropriate, offensive, or harmful behavior.
+我们的[行为准则]概述了所有社区成员的期望
+相互尊重，使用包容和欢迎的语言。我们的
+承诺是营造一个积极和支持性的环境
+不恰当的、冒犯性的或有害的行为。
 
-We take any violations seriously and will take appropriate action in response to
-uphold these values.[^1]
+我们严肃对待任何违规行为，并将采取适当行动应对
+坚持这些价值观。1.
 
   [^1]:
-    __Warning and blocking policy:__
-    Given the increasing popularity of our project and our commitment to a
-    healthy community, we've defined clear guidelines on how we proceed with
-    violations:
+    __警告和阻止策略:__
+    鉴于我们的项目越来越受欢迎，我们致力于
+    健康社区，我们已经就如何进行制定了明确的指导方针
+    违规行为：
 
-    1.1. __First warning:__ Users displaying repeated inappropriate, offensive,
-    or harmful behavior will receive a first warning. This warning serves as a
-    formal notice that their behavior is not in alignment with our community
-    standards and Code of Conduct. The first warning is permanent.
+    1.1. __第一次警告:__ 用户反复显示不恰当、冒犯性、，
+    或者有害行为将收到第一次警告。此警告用作
+    正式通知他们的行为与我们的社区不一致
+    标准和行为准则。第一个警告是永久性的。
 
-    1.2. __Second warning and opportunity for resolution:__ If the behavior
-    persists, a second warning will be issued. Upon receiving the second
-    warning, the user will be given a 5-day period for reflection, during which
-    they are encouraged to publicly explain or apologize for their actions.
-    This period is designed to offer an opportunity for openly clearing out any
-    misunderstanding.
+    1.2. __第二次警告和解决机会:__ 如果行为
+    如果持续存在，将发出第二次警告。收到第二个
+    警告，用户将有5天的时间进行反思，在此期间
+    鼓励他们公开解释或为自己的行为道歉。
+    这一时期旨在提供一个机会，公开清除任何
+    误解。
 
-    1.3. __Blocking:__ Should there be no response or improvement in behavior
-    following the second warning, we reserve the right to block the user from
-    the community and repository. Blocking is considered a last resort, used
-    only when absolutely necessary to protect the community's integrity and
-    positive atmosphere.
+    1.3. __舞台调度:__ 行为是否应该没有反应或改善
+    在第二次警告之后，我们保留阻止用户的权利
+    社区和存储库。封锁被认为是最后的手段，使用
+    只有在绝对必要的情况下才能保护社区的完整性和
+    积极的气氛。
 
-    Blocking has been an exceptionally rare necessity in our overwhelmingly
-    positive community, highlighting our preference for constructive dialogue
-    and mutual respect. It aims to protect our community members and team.
+    在我们的绝大多数地区，封锁是一种极其罕见的必要条件
+    积极的社区，突出我们对建设性对话的偏好
+    以及相互尊重。它旨在保护我们的社区成员和团队。
 
-### Incomplete issues and duplicates
+### 不完整的问题和重复
 
-We have invested significant time and effort in the setup of our contribution
-process, ensuring that we assess the essential requirements for reviewing and
-responding to issues effectively. Each field in our issue templates is
-thoughtfully designed to help us fully understand your concerns and the nature
-of your matter. We encourage all members to utilize the search function before
-submitting new issues or starting discussions to help avoid duplicates. Your
-cooperation is crucial in keeping our community's discussions constructive and
-organized.
+我们投入了大量的时间和精力来建立我们的贡献
+流程，确保我们评估审查和
+有效应对问题。我们问题模板中的每个字段都是
+精心设计，帮助我们充分了解您的担忧和性质
+关于你的事情。我们鼓励所有成员在之前使用搜索功能
+提交新问题或开始讨论，以帮助避免重复。你的
+合作对于保持我们社区的讨论具有建设性和
+有组织的。
 
-  - __Mandatory completion of issue templates:__ We need all of the information
-  required in our issue templates because it ensures that every user and
-  maintainer, regardless of their experience, can understand the content and
-  severity of your bug report or change request.
+  - __强制填写问题模板:__ 我们需要所有的信息
+  在我们的问题模板中是必需的，因为它确保了每个用户和
+  维护人员，无论他们的经验如何，都能理解内容和
+  错误报告或更改请求的严重性。
 
-  - __Closing incomplete issues:__
-  We _reserve the right to close issues lacking essential information_, such as
-  but not limited to [minimal reproductions] or those not adhering to the
-  quality standards and requirements specified in our issue templates. Such
-  issues can be reopened once the missing information has been provided.
+  - __关闭未完成的问题:__
+  我们保留解决缺乏基本信息的问题的权利，例如
+  包括但不限于[最小复制品]或不符合
+  我们的问题模板中规定的质量标准和要求。这样的
+  一旦提供了缺失的信息，就可以重新打开问题。
 
-  - __Handling duplicates:__ To maintain organized and efficient
-  communication within our [issue tracker] and [discussion board], we
-  _reserve the right to close any duplicated issues or lock duplicated
-  discussions_. Opening multiple channels to ask the same question or report the
-  same issue across different forums hinders our ability to manage and address
-  community concerns effectively. This approach is vital for efficient time
-  management, as duplicated questions can consume the time of multiple team
-  members simultaneously. Ensuring that each issue or discussion is unique and
-  progresses with new information helps us to maintain focus and support our
-  community.
+  - __处理重复项:__ 保持有序和高效
+  在我们的[问题跟踪器]和[讨论板]内进行沟通，我们
+  _保留关闭任何重复问题或锁定重复问题的权利
+  讨论。打开多个渠道问同一个问题或报告
+  不同论坛上的同一问题阻碍了我们管理和解决问题的能力
+  社区有效关注。这种方法对于高效时间至关重要
+  管理，因为重复的问题会占用多个团队的时间
+  成员同时。确保每个问题或讨论都是独一无二的
+  新信息的进展有助于我们保持专注并支持我们的
+  社区。
 
-    We further _reserve the right to immediately close discussions or issues that
-    are reopened without providing new information_ or simply because users have
-    not yet received a response to their issue/question, as the issue is marked as
-    incomplete.
+    我们进一步重申有权立即结束以下讨论或问题
+    在没有提供新信息的情况下重新打开，或者仅仅是因为用户
+    尚未收到对其问题/疑问的答复，因为该问题标记为
+    不完整。
 
-  - __Limitations of automated tools:__  While we believe in the value and
-  efficiency that automated tools bring to identifying potential issues (such
-  as those identified by Lighthouse, Accessibility tools, and others), simply
-  submitting an issue generated by these tools does not constitute a complete
-  bug report. These tools sometimes produce verbose outputs and may include
-  false positives, which necessitate a critical evaluation. You are of course
-  welcome to attach generated reports to your issue. However, this does not
-  substitute the requirement for a minimal reproduction or a thorough discussion
-  of the findings. _We reserve the right to mark these issues as incomplete and
-  close them._ This practice ensures that we are addressing genuine concerns
-  with precision and clarity, rather than navigating through extensive automated
-  outputs.
+  - __自动化工具的局限性:__  虽然我们相信价值和
+  自动化工具在识别潜在问题（如
+  如Lighthouse、Accessibility工具和其他工具所标识的），简单
+  提交这些工具生成的问题并不构成完整
+  错误报告。这些工具有时会产生冗长的输出，可能包括
+  假阳性，这需要进行严格的评估。你当然是
+  欢迎将生成的报告附加到您的问题中。然而，这并不
+  用最少的复制或彻底的讨论代替要求
+  调查结果。_我们保留将这些问题标记为不完整和
+  关闭它们。_这种做法确保我们正在解决真正的问题
+  精确而清晰，而不是通过广泛的自动化导航
+  输出。
 
   [minimal reproductions]: ../guides/creating-a-reproduction.md

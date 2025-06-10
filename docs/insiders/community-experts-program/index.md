@@ -2,114 +2,114 @@
 title: Community Experts Program
 ---
 
-# Calling for Community Experts
+# 呼吁社区专家
 
-Interested in joining the Material for MkDocs team as a Community Expert?
-We're on the lookout for individuals who are passionate about supporting our
-awesome community. In return for your valuable contributions, time, and
-insights, __you'll gain free access to the Insiders edition__.
+有兴趣作为社区专家加入MkDocs材料团队吗？
+我们正在寻找热衷于支持我们的个人
+很棒的社区。作为对您宝贵贡献、时间和
+洞察，您将免费访问Insiders版本。
 
-## Why we need you
+## 为什么我们需要你
 
-As our project and community continue to grow, so do the questions and needs of
-our users on our discussion board. Our discussion board is a vital part of our
-project, serving as a hub for our community to connect and a valuable knowledge
-base to complement our documentation.
+随着我们的项目和社区的不断发展
+我们的用户在我们的讨论板上。我们的讨论板是我们的重要组成部分
+项目，作为我们社区联系的枢纽和宝贵的知识
+以补充我们的文档。
 
-We're eager to keeping it well-maintained, organized, easy to search and address
-all queries which is why we need extra hands to keep up with the demand.
+我们渴望保持良好的维护、组织、易于搜索和寻址
+所有的疑问，这就是为什么我们需要额外的人手来满足需求。
 
-That's why we're building a team of Community Experts!
+因此，我们正在组建一支社区专家团队！
 
-## Your role
+## 您的角色
 
-As a Community Expert, your role primarily involves active participation on
-our [discussion board], where we'd expect you to be:
+作为一名社区专家，你的角色主要涉及积极参与
+我们的[讨论板]，我们希望您在那里：
 
-- Answering discussions to help users with their questions
-- Providing guidance regarding implementations
-- Sharing insights into customizations and workarounds
-- Optimizing searchability by adjusting discussion titles with relevant keywords
+- 回答讨论以帮助用户解决问题
+- 提供实施指导
+- 分享对定制和解决方案的见解
+- 通过使用相关关键字调整讨论标题来优化搜索能力
 
-## Your benefits
+## 您的福利
 
-Here is a list of the benefits we offer to our Community Experts:
+以下是我们为社区专家提供的福利列表：
 
--   __Free access to Material for MkDocs Insiders__ – Exclusive Access to all of
-    our Material for MkDocs Insiders features for _non-commercial use_.[^1]
+-   __MkDocs内部人员免费获取资料__ – 独家访问所有
+    我们为MkDocs Insider提供的材料具有非商业用途。[^1]
 
--   __Close communication with the team__ – Stay connected with us through various
-    channels, including calls and internal project management tools.
+-   __与团队密切沟通__ – 通过各种方式与我们保持联系
+    渠道，包括电话和内部项目管理工具。
 
--   __GitHub profile boost__ – Enhance your GitHub profile's visibility and
-    credibility as your activity increases, earning you valuable badges that can
-    enhance your credibility.
+-   __GitHub档案提升__ – 提高您的GitHub个人资料的可见性和
+    随着你活动的增加，你的信誉也会提高，为你赢得宝贵的徽章，这些徽章可以
+    提高你的信誉。
 
   [^1]:
-    Access to Insiders is granted to your primary account, i.e., the account
-    with which you're contributing to the project. It cannot be transferred to
-    another account. Additionally, it cannot be used for commercial purposes.
+    访问内幕人士的权限授予您的主帐户，即帐户
+    你正在为这个项目做出贡献。无法转移到
+    另一个帐户。此外，它不能用于商业目的。
 
-## Your knowledge & skills
+## 你的知识和技能
 
-To be a successful Community Expert, your skills should include the following:
+要成为一名成功的社区专家，你的技能应该包括以下方面：
 
--   __Material and MkDocs allrounder__ – You have an understanding of Material
-    for MkDocs and the MkDocs ecosystem, including many of its extensions and
-    plugins.
+-   __材料和MkDocs全能器__ – 你对材料有了解
+    用于MkDocs和MkDocs生态系统，包括其许多扩展和
+    插件。
 
--   __Great communicator__ – You enjoy helping others in a productive,
-    constructive and friendly manner and use inclusive and welcoming language.
+-   __伟大的传播者__ – 你喜欢在富有成效的工作中帮助别人，
+    以建设性和友好的态度，使用包容和欢迎的语言。
 
--   __Independent worker__ – You are self-motivated, stay up-to-date with
-    project developments, regularly check the discussion board, and respond to
-    notifications in reasonable time.
+-   __独立工作者__ – 你自我激励，随时了解最新情况
+    项目开发，定期查看讨论板，并回复
+    在合理的时间内发出通知。
 
   [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
   [documentation]: https://squidfunk.github.io/mkdocs-material/
   [contribution guides]: ../contributing/index.md
 
-## Your time commitment
+## 您的时间承诺
 
-We don't require a fixed number of hours each week; instead, we ask for a
-minimum of __five answered discussions per month[^2]__, which amounts to
-slightly more than one per week. Your active interaction within the community is
-highly valued.
+我们不需要每周固定的小时数；相反，我们要求
+每月至少有五次讨论得到答复[^2]_，相当于
+每周略多于一次。你在社区中的积极互动是
+高度重视。
 
-To do this effectively, it's best to regularly check the discussion board to see
-where you can offer help. The time you invest may vary depending on the
-complexity of the topics and questions.
+为了有效地做到这一点，最好定期查看讨论板
+在那里你可以提供帮助。您投资的时间可能因
+主题和问题的复杂性。
 
-Upon joining, you'll receive access to the Insiders' edition for as long as you
-continue to assist us. Access will be renewed every three months, allowing you
-the flexibility to continue your contributions or take a break as needed.
+加入后，您将获得Insiders版本的访问权限，只要您
+请继续协助我们。访问权限将每三个月更新一次，让您
+根据需要，您可以灵活地继续您的贡献或休息。
 
   [^2]:
-    An answered discussion is a collaborative interaction where knowledge and
-    expertise are shared, resulting in resolutions or clarifications that benefit
-    the user and our entire community. In essence, it embodies the spirit of
-    cooperation and support within our community, highlighting the power of
-    collective wisdom and the willingness to assist and uplift one another.
+    回答讨论是一种协作互动，其中知识和
+    共享专业知识，从而产生有益的解决方案或澄清
+    用户和我们的整个社区。从本质上讲，它体现了
+    我们社区内的合作与支持，突出了
+    集体智慧和相互帮助和提升的意愿。
 
-## Ready to get started?
+## 准备好开始了吗？
 
-Since we have a limited number of seats for these roles[^3], we would like to
-get to know you before you become one of our Community Experts. Here's how to
-get started:
+由于这些角色的席位有限[^3]，我们希望
+在你成为我们的社区专家之前，先了解你。以下是如何
+开始：
 
   [^3]:
-    Please note that we're currently limiting the number of seats on the
-    Community Experts program to three. We will update this page when we'll
-    expand the team, which is when we'll be accepting new applications.
+    请注意，我们目前正在限制
+    社区专家计划为三人。我们将在以下时间更新此页面
+    扩大团队，届时我们将接受新的申请。
 
-### Step 1: Get in touch
+### 第一步：联系我们
 
-Send us an email introducing yourself, sharing a bit about your background, and
-include a link to your GitHub profile. Additionally, provide links to three
-previous discussions you've answered on the discussion board, where you've
-assisted another community member.
+给我们发一封电子邮件，介绍你自己，分享一些你的背景，以及
+包含指向您的GitHub个人资料的链接。此外，提供三个链接
+您在讨论板上回答的先前讨论，您在那里
+协助另一位社区成员。
 
-Please use the following email template to reach out to us at
+请使用以下电子邮件模板联系我们
 community@squidfunk.com:
 
 ```
@@ -127,21 +127,21 @@ Answered discussions
   - Link 3:
 ```
 
-### Step 2: Evaluation
+### 第二步：评估
 
-After receiving and reviewing your application, we will get in touch with you
-to discuss everything you need to know to get started. If you get selected, we
-will set you up as a collaborator and provide you immediate access to the
-Insiders edition for three months.
+在收到并审核您的申请后，我们将与您联系
+讨论开始前你需要知道的一切。如果你被选中，我们
+将您设置为合作者，并为您提供立即访问
+内部人士版，为期三个月。
 
-### Step 3: Dive in
+### 第三步：潜入
 
-Let's get started! You can actively begin participating in five discussions per
-month. We trust you to take the lead, and we won't do strict monitoring. Simply
-ensure that you are consistently listed on the _Most Helpful_ list, located on
-the discussion board's left side, under the categories.
+让我们开始吧！您可以主动开始参与每个人的五次讨论
+月。我们相信您会带头，我们不会进行严格监控
+确保您始终列在位于以下位置的“最有帮助”列表中
+讨论板的左侧，在类别下。
 ---
 
-__Ready to join us?__
+__准备好加入我们了吗？__
 
-Sounds good? Let's give it a try!
+听起来不错？让我们试试吧！

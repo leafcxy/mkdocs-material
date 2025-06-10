@@ -1,20 +1,20 @@
-# How to sponsor
+# 如何赞助
 
-Becoming a sponsor for Material for MkDocs is a straightforward process through
-@squidfunk's [GitHub Sponsors profile]. By supporting
-the project with a monthly contribution of __$15 a month__ or more, you can sponsor
-either via an [individual] or [organizational] GitHub account.
+成为Material for MkDocs的赞助商是一个简单的过程，通过
+@squidfunk的[GitHub赞助商简介]。通过支持
+每月捐款15美元或以上的项目，你可以赞助
+通过[个人]或[组织]GitHub帐户。
 
   [GitHub Sponsors profile]: https://github.com/sponsors/squidfunk
   [individual]: access-management.md/#individuals
   [organizational]: access-management.md/#organizations
 
-## Walkthrough
+## 演练
 
-Want to become a sponsor? We will guide you through the sponsoring process below
-If you have additional questions, you can find detailed information about
-[payment and billing], [access management], [runtime and cancellation],
-[privacy], [license] and [support] on dedicated pages.
+想成为赞助商吗？我们将指导您完成以下赞助流程
+如果您还有其他问题，可以找到以下详细信息
+[支付和计费]、[访问管理]、[运行时间和取消]，
+在专用页面上显示[隐私]、[许可证]和[支持]。
 
   [payment and billing]: payment-and-billing.md
   [access management]: access-management.md
@@ -23,92 +23,92 @@ If you have additional questions, you can find detailed information about
   [license]: license.md
   [support]: ../support.md
 
-### Sponsoring tier
+### 赞助层
 
-First, it's a good idea to explore [our sponsoring tiers], as each sponsoring
-tier is designed to accommodate different levels of sponsors and includes
-dedicated benefits.
+首先，探索[我们的赞助级别]是个好主意，因为每个赞助商
+该级别旨在容纳不同级别的赞助商，包括
+专用福利。
 
-After reviewing the sponsoring tiers, it's time to choose one. Consider what you
-want to achieve and keep your requirements in mind, e.g. the number of projects
-you want to build or how many accounts you need. [Switching tiers] is possible
-at any time.
+在查看了赞助级别后，是时候选择一个了。想想你
+想要实现并牢记您的要求，例如项目的数量
+您想建立或需要多少个帐户。[切换层]是可能的
+在任何时候。
 
-Choosing a tier will take you to GitHub's sponsorship confirmation page.
+选择一个级别将带您进入GitHub的赞助确认页面。
 
   [our sponsoring tiers]: sponsoring-tiers.md
   [Switching tiers]: sponsoring-tiers.md/#switching-tiers
 
-### Sponsorship summary
+### 赞助摘要
 
-#### Payment and billing
+#### 付款和账单
 
-Next, GitHub will ask you to provide your billing information, which is required
-to process your sponsorship payment. On this page, the _Sponsorship summary_
-section displays the (possibly prorated) amount due to initiate your sponsorship.
-This amount is determined by your account's [billing cycle], which can be set to
-a monthly or yearly interval.
+接下来，GitHub会要求您提供账单信息，这是必需的
+处理您的赞助付款。在此页面上，_赞助商摘要_
+部分显示了发起赞助所需的（可能按比例分配的）金额。
+此金额由您的帐户的[计费周期]决定，可以设置为
+每月或每年的间隔。
 
   [billing cycle]: https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/changing-the-duration-of-your-billing-cycle
 
-Proceed to input your [payment information], specifically your credit card
-details. Please make sure that the used credit card is valid and will remain
-so for an extended period to help avoid any interruptions in your sponsorship.
+继续输入您的[付款信息]，特别是您的信用卡
+细节。请确保使用的信用卡有效并将保留
+因此，在较长一段时间内，以帮助避免您的赞助中断。
 
   [payment information]: payment-and-billing.md
 
-#### Privacy
+#### 隐私
 
-On this page, you can also set the visibility of your sponsorship. You have the
-option to keep your [sponsorship private or to make it public], which includes
-listing your name or organization on the list of [our sponsors] and, for
-organizations, the opportunity for [logo placement].
+在此页面上，您还可以设置赞助的可见性。你有
+选择将您的[赞助保密或公开]，其中包括
+在[我们的赞助商]名单上列出您的姓名或组织，以及
+组织，[徽标放置]的机会。
 
   [sponsorship private or to make it public]: privacy.md
   [our sponsors]: our-sponsors.md
   [logo placement]: our-sponsors.md/#premium-sponsors
 
-#### News and updates
+#### 新闻和更新
 
-Note that we rarely send out emails, and when we do, it's usually to inform you
-about significant updates or changes to the project, so it's best to keep this
-option enabled. To stay updated on the latest developments, you can check out
-our [changelog].
+请注意，我们很少发送电子邮件，当我们这样做时，通常是为了通知您
+关于项目的重大更新或更改，因此最好保留此信息
+选项已启用。要了解最新进展，您可以查看
+我们的[更新日志]。
 
   [changelog]: ../changelog/index.md
 
-#### Tax information
+#### 税务信息
 
-If you're sponsoring as an organization, it's essential to provide your country,
-region and VAT number, so we can correctly attribute your sponsorship. This is
-due to the fact that VAT is handled differently for individuals than for
-organizations.
+如果你作为一个组织赞助，那么提供你的国家是至关重要的，
+地区和增值税号码，这样我们就可以正确地为您的赞助提供属性。这是
+由于个人增值税的处理方式与个人不同
+组织。
 
-#### Confirmation
+#### 证实
 
-Before finalizing your sponsorship, take a moment to review all the details of
-your sponsorship, including the selected tier, billing information, and payment
-details.
+在敲定您的赞助之前，请花点时间查看以下所有细节
+您的赞助，包括所选级别、账单信息和付款
+细节。
 
-Then proceed to confirm your sponsorship by clicking the _Sponsor_ button.
+然后单击_Sponsor_按钮确认您的赞助。
 
-### Access management
+### 访问管理
 
-After completing the sponsorship process and your payment is successfully
-processed, you will be all set to [gain access] to the private Material for
-MkDocs Insiders repository.
+完成赞助流程并成功付款后
+处理后，您将完全设置为[访问]私人材料
+MkDocs Insiders存储库。
 
   [gain access]: access-management.md
 
 ---
 
-__Ready to become a sponsor?__
+__准备好成为赞助商了吗？__
 
 [&nbsp; Choose a sponsoring tier <span class="mdx-sponsorship-count" data-mdx-component="sponsorship-count"></span>][sponsoring-tiers]{ .md-button .md-button--primary .mdx-sponsorship-button }
 
   [sponsoring-tiers]: sponsoring-tiers.md
 
-If you still find yourself with more questions, feel free to [reach out to Kathi]
-via mail at sponsors@squidfunk.com for additional support.
+如果您仍然有更多问题，请随时[联系Kathi]
+通过邮件发送至sponsors@squidfunk.com以获得额外支持。
 
   [reach out to Kathi]: ../support.md/#sponsoring-support

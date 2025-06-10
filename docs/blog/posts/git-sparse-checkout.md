@@ -9,22 +9,22 @@ links:
   - creating-your-site.md#building-your-site
 ---
 
-# Using `git sparse-checkout` for faster documentation builds
+# 使用`git sparse checkout`实现更快的文档构建
 
-__Leveraging `git sparse-checkout` in GitHub Actions enabled us to speed up
-documentation builds in our repository, cutting checkout times from 20 to 30
-seconds to just 2 seconds.__
+__利用GitHub Actions中的“git sparse checkout”使我们能够加快速度
+文档构建在我们的存储库中，将结账时间从20缩短到30
+秒到2秒。__
 
-Developing an efficient approach to build documentation in CI workflows is
-essential, especially when working in large repositories with thousands of
-commits, like ours. Of course, we want to build documentation quickly and
-efficiently, ensuring fast and productive workflows. When using both the
-wonderful [`git-committers`][git-committers] and [`git-revision-date-localized`]
-[git-revision-date-localized] plugins to display [document contributors] and
-[dates] at the bottom of each page, we are required to set `fetch-depth: 0`,
-which resulted in checkout times of 20 to 30 seconds on our repository. By
-leveraging [`git sparse-checkout`][git sparse-checkout] within [GitHub Actions],
-check out time was brought down to 2 seconds.
+开发一种在CI工作流中构建文档的有效方法
+至关重要，尤其是在拥有数千个存储库的大型存储库中工作时
+承诺，就像我们一样。当然，我们希望快速构建文档
+高效，确保快速高效的工作流程。当同时使用时
+很棒的[git提交者][git提交者]和[git修订日期本地化]
+[git修订日期本地化]插件，用于显示[文档贡献者]和
+在每页底部的[日期]处，我们需要设置“获取深度：0”，
+这导致我们的存储库的结账时间为20到30秒。By
+在[GitHub Actions]中利用[git sparse checkout][git sparse checkout]，
+退房时间缩短到2秒。
 
   [git sparse-checkout]: https://git-scm.com/docs/git-sparse-checkout
   [GitHub Actions]: ../../publishing-your-site.md#with-github-actions
@@ -35,18 +35,18 @@ check out time was brought down to 2 seconds.
 
 <!-- more -->
 
-## A Primer
+## 底漆
 
-[`git sparse-checkout`][git sparse-checkout] allows you to check out only a
-subset of the files in a repository, making it incredibly useful for large
-repositories where a full checkout takes long and includes many files that are
-not relevant when building documentation.
+[`git sparse checkout`][git sparse checkout]只允许您签出一个
+存储库中文件的子集，使其对大型应用程序非常有用
+完整签出需要很长时间，并且包含许多文件的存储库
+在构建文档时不相关。
 
-## GitHub Actions
+## GitHub操作
 
-To enable [`git sparse-checkout`][git sparse-checkout] within [GitHub Actions]
-and ensure that you are only building the documentation that you need, add the
-following lines to your workflow file:
+在[GitHub Actions]中启用[`git sparse checkout][git sparse checkout]
+并确保您只构建所需的文档，添加
+将以下行添加到工作流文件中：
 
 ``` yaml
 - uses: actions/checkout@v4
@@ -57,15 +57,15 @@ following lines to your workflow file:
       includes
 ```
 
-[`git sparse-checkout`][git sparse-checkout] always checks out all files
-residing in the repository’s root. This means that regardless of the specified
-paths or directories for sparse checkout, the files located in the root of the
-repository will always be included in the checkout process.
+[`git sparse checkout`][git sparse checkout]始终检出所有文件
+位于存储库的根目录中。这意味着，无论指定了什么
+稀疏签出的路径或目录，位于根目录中的文件
+存储库将始终包含在签出过程中。
 
-Thus, you only need to specify the directories that are necessary for building
-documentation. In our case, we only need the `docs` and `includes` folders,
-but if you need additional directories, you can just add them to the end of the
-list. A complete example workflow for [GitHub Actions]:
+因此，您只需指定构建所需的目录
+文档。在我们的例子中，我们只需要“docs”和“includes”文件夹，
+但如果你需要额外的目录，你可以把它们添加到
+列表。[GitHub Actions]的完整示例工作流：
 
 ``` yaml hl_lines="13-18"
 name: documentation
@@ -93,8 +93,8 @@ jobs:
       - run: mkdocs gh-deploy --force
 ```
 
-## Conclusion
+## 结论
 
-That's all there is! We're super happy with the results and hope that this will
-help you to speed up your documentation builds in [GitHub Actions] as well. As
-always, feel free to share your thoughts and experiences in the comments below.
+就这些！我们对结果非常满意，并希望这将
+帮助您加快[GitHub Actions]中的文档构建速度。As
+请随时在下面的评论中分享您的想法和经验。

@@ -1,120 +1,120 @@
-# Why sponsor us
+# 为什么赞助我们
 
-Material for MkDocs is an Open Source project that is developed and maintained
-by a small team of individuals who want to devote as much time as possible to
-make it better every day. We need to rely on the financial support of
-[our awesome sponsors], who buy us the time to work on it.
+MkDocs材料是一个开发和维护的开源项目
+由一小群人组成，他们希望投入尽可能多的时间
+让它每天都变得更好。我们需要依靠财政支持
+[我们出色的赞助商]，他们为我们争取了时间。
 
   [become a monthly sponsor]: sponsoring-tier.md
   [our awesome sponsors]: our-sponsors.md
   [squidfunk's sponsor profile]: https://github.com/sponsors/squidfunk/
 
-## Who we are
+## 我们是谁
 
-While [the project was started] by @squidfunk as a personal side project, the
-[Sponsorware] model that the project adopted in 2020 allowed him to build a
-small team of amazing individuals around him, [who are now helping him] to
-maintain the project, as well as the growing list of sponsors.
+虽然[该项目是由@squidfunk作为个人副项目启动的]
+该项目在2020年采用的[赞助软件]模型使他能够构建一个
+他周围有一群了不起的人，[他们现在正在帮助他]
+维护项目，以及不断增长的赞助商名单。
 
   [the project was started]: #how-it-started
   [sponsorware]: #sponsorware
   [who are now helping him]: #where-we-are-today
 
-### How it started
+### 它是如何开始的
 
-In 2015, albeit 10 years in the industry, @squidfunk was still quite new to
-Open Source. Having just finished his latest Open Source project, he realized
-that the project was too complex to be explained in a plain README on GitHub.
-He needed a good documentation tool for this project.
+2015年，尽管@squidfunk已经在这个行业工作了10年，但它仍然是一个相当新的行业
+开源。刚刚完成了他最新的开源项目，他意识到
+该项目过于复杂，无法在GitHub上的简单README中解释。
+他需要一个好的文档工具来完成这个项目。
 
-After evaluating static site generators in general and Hugo, Sphinx and MkDocs
-in particular, he quickly decided that MkDocs seemed a good choice, as it was
-specifically aimed at technical project documentation and easy to use.
-Unfortunately, all of the available themes looked dated, and since @squidfunk
-is a very visual person, he just couldn't convince himself to call it a day.
+在评估了静态站点生成器以及Hugo、Sphinx和MkDocs之后
+特别是，他很快决定MkDocs似乎是一个不错的选择
+专门针对技术项目文档，易于使用。
+不幸的是，所有可用的主题看起来都过时了，自从@squidfunk
+他是一个非常善于视觉的人，只是无法说服自己结束这一天。
 
-He needed to build a theme.
+他需要建立一个主题。
 
-Months later, in February 2016, [the first version] of Material for MkDocs was
-released. Over the next years, @squidfunk being the sole maintainer, countless
-feature requests were implemented and bugs were fixed, allowing the project to
-gain popularity and reach almost 3,000 stars on GitHub by the end of 2019. It
-is still his most popular project to date.
+几个月后，在2016年2月，MkDocs材料的[第一版]
+释放。在接下来的几年里，@squidfunk是唯一的维护者，无数
+实现了功能请求并修复了错误，使项目能够
+到2019年底，在GitHub上获得近3000颗星。它
+至今仍是他最受欢迎的项目。
 
-As the project grew, @squidfunk started to implement feature requests that made
-sense from a general perspective, but not for his personal use. This was the
-point where the project started to shift from a personal project to a
-community-driven one, and began to feel like a secondary job. Having a primary
-job, many maintainers burn out when their side projects become successful, which
-is why @squidfunk decided to give the [Sponsorware] model a try and make
-Material for MkDocs his primary job. This turned out to be an incredible success.
+随着项目的发展，@squidfunk开始实现功能请求
+从一般的角度来看，但不是为了他个人的使用。这是
+项目开始从个人项目转变为
+社区驱动的工作，开始感觉像是一份次要的工作。拥有初级
+当他们的副项目成功时，许多维护人员会精疲力竭，这
+这就是为什么@squidfunk决定尝试一下[赞助商软件]模型
+MkDocs的主要工作材料。结果证明，这是一个令人难以置信的成功。
 
   [the first version]: https://github.com/squidfunk/mkdocs-material/releases/tag/0.1.0
 
-### Sponsorware
+### 赞助软件
 
-The Sponsorware model is simple – as a sponsor, you get early access to the
-latest and greatest features of Material for MkDocs as part of [Insiders] before
-everyone else gets to enjoy them, as you are the one making them possible with
-your financial contributions.
+赞助商软件模型很简单——作为赞助商，您可以提前访问
+作为[内部人员]的一部分，MkDocs材料的最新和最伟大的功能
+其他人都可以享受它们，因为是你让它们成为可能
+你的财务贡献。
 
-Every new feature that lands in [Insiders] is linked to a funding goal with a
-specific amount. Once this amount is reached, all of the features that are part
-of this funding goal are merged into the community edition, making them
-available to everyone. It is that simple.
+登陆[Insiders]的每个新功能都与一个资金目标相关联
+具体金额。一旦达到这个数量，所有组成部分
+这一资助目标被合并到社区版中，使其
+可供所有人使用。就是这么简单。
 
-This brand-new and still experimental approach not only helps keep the project
-vibrant and cutting-edge but also ensures it can continue to meet and exceed
-your expectations.
+这种全新的、仍在实验中的方法不仅有助于保持项目
+充满活力和前沿，但也确保它能够继续满足和超越
+您的期望。
 
   [Insiders]: index.md
 
-### Where we are today
+### 我们今天在哪里
 
-Fast forward to today, Material for MkDocs is a thriving community-supported
-and well-funded project, with over 500 sponsors and a small but growing team,
-used by international companies and organizations. The project has outgrown
-its original purpose by far, as it has become so much more than just a theme –
-a powerful documentation framework built on top of MkDocs.
+快进到今天，Material for MkDocs是一个由支持的蓬勃发展的社区
+该项目资金充足，拥有500多个赞助商和一个规模虽小但不断壮大的团队，
+国际公司和组织使用。这个项目已经超出了预期
+到目前为止，它的初衷已经远远不止是一个主题——
+基于MkDocs构建的强大文档框架。
 
-Starting in 2020 with the advent of the [Sponsorware] model, the frequency of
-releases has more than doubled, with a new release seeing the light of day on
-average every 1-2 weeks. Moreover, our team responds to issues as fast as
-possible, keeping the number of open issues low.
+从2020年开始，随着[赞助商软件]模式的出现
+发布量增加了一倍多，新版本即将发布
+平均每1-2周。此外，我们的团队能够快速响应问题
+有可能，将未解决问题的数量保持在较低水平。
 
-## Our pledge
+## 我们的誓言
 
-We're working hard to make Material for MkDocs one of the best documentation
-tools out there, ridiculously powerful, a pleasure to use and most importantly –
-free and Open Source. It is the financial contributions of our awesome sponsors,
-that allow us to do our best work.
+我们正在努力使《MkDocs材料》成为最好的文档之一
+工具，功能强大得离谱，使用起来很愉快，最重要的是——
+免费和开源。这是我们出色的赞助商的财务贡献，
+这使我们能够尽最大努力。
 
-It's a simple equation: as long as this project is funded, we can continue to
-improve it, fix bugs, and add new features. We will continue to provide the
-best possible support to our users and make sure that Material for MkDocs
-remains a tool that you love to use.
+这是一个简单的方程式：只要这个项目得到资助，我们就可以继续
+改进它，修复错误，并添加新功能。我们将继续提供
+为我们的用户提供最好的支持，并确保MkDocs的材料
+仍然是你喜欢使用的工具。
 
-If you sponsor us, your contribution helps us to pay for:
+如果您赞助我们，您的捐款将帮助我们支付：
 
-1.  __Taxes__: Since we provide a service to our sponsors, we're of course
-    legally obligated and happy to pay sales tax. This requirement applies to
-    all sponsorship contributions, aligning us with standard business practices,
-    as for the rest of the world.
+1.  __税__: 既然我们为赞助商提供服务，我们当然
+    有法律义务并愿意缴纳销售税。此要求适用于
+    所有赞助捐款，使我们符合标准商业惯例，
+    至于世界其他地区。
 
-2.  __Sponsorships__: A significant portion of our funding is redirected to
-    upstream projects. This cultivates collaboration and supports the broader
-    Open Source ecosystem. We regard those projects and their maintainers as
-    essential for the persistence of Material for MkDocs.
+2.  __赞助式广告__: A我们的大部分资金被重新定向到
+    上游项目。这促进了合作，并支持更广泛的
+    开源生态系统。我们将这些项目及其维护者视为
+    对于MkDocs材料的持久性至关重要。
 
-3.  __Team__: Our team is growing! With more funds available, we can pay more
-    individuals to help us make Material for MkDocs even better. Note that this
-    covers various aspects of the project, like the creation of new features,
-    bug resolution, support, and sponsor relations.
+3.  __团队__: 我们的团队正在成长！有了更多的资金，我们可以支付更多
+    个人帮助我们更好地制作MkDocs材料。请注意，这
+    涵盖了项目的各个方面，
+    bug解决、支持和赞助商关系。
 
-We are bootstrapped – no investors to please! If you decide to support us, you
-help us stay independent and free from outside influence. This means we can
-focus on building a solution that you love to use and keep ownership of your
-documentation project without vendor lock-in.
+我们是自力更生的——没有投资者可以取悦！如果你决定支持我们，你
+帮助我们保持独立，不受外界影响。这意味着我们可以
+专注于构建一个你喜欢使用的解决方案，并保持对自己的所有权
+没有供应商锁定的文档项目。
 
 [&nbsp; Choose a sponsoring tier <span class="mdx-sponsorship-count" data-mdx-component="sponsorship-count"></span>][sponsoring-tiers]{ .md-button .md-button--primary .mdx-sponsorship-button }
 

@@ -1,18 +1,18 @@
-# Documentation issues
+# 文件问题
 
-Our documentation is composed of more than 80 pages and includes extensive
-information on features, configurations, customizations, and much more. If you
-have found an inconsistency or see room for improvement, please follow this
-guide to submit an issue on our [issue tracker].
+我们的文档由80多页组成，包括广泛的
+有关功能、配置、自定义等的信息。如果你
+发现不一致或有改进空间，请按照以下步骤操作
+在我们的[问题跟踪器]上提交问题的指南。
 
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
 
-## Issue template
+## 问题模板
 
-Reporting a documentation issue is usually less involved than reporting a bug,
-as we don't need a [reproduction]. Please thoroughly read this guide before
-creating a new documentation issue, and provide the following information as
-part of the issue:
+报告文档问题通常比报告错误少，
+因为我们不需要复制品。请仔细阅读本指南
+创建新的文档问题，并提供以下信息
+问题的一部分：
 
 - [Title]
 - [Description]
@@ -27,11 +27,11 @@ part of the issue:
   [Proposed change]: #proposed-change
   [Checklist]: #checklist
 
-### Title
+### 名称
 
-A good title should be a short, one-sentence description of the issue, contain
-all relevant information and, in particular, keywords to simplify the search in
-our issue tracker.
+一个好的标题应该是一个简短的、一句话的问题描述，包含
+所有相关信息，特别是关键字，以简化搜索
+我们的问题跟踪器。
 
 | <!-- --> | Example  |
 | -------- | -------- |
@@ -39,53 +39,53 @@ our issue tracker.
 | :material-close:{ style="color: #EF5350" } __Unclear__ | Missing information in the docs
 | :material-close:{ style="color: #EF5350" } __Useless__ | Help
 
-### Description
+### 描述
 
-Provide a clear and concise summary of the inconsistency or issue you
-encountered in the documentation or the documentation section that needs
-improvement. Explain why you think the documentation should be adjusted and
-describe the severity of the issue:
+为您的不一致或问题提供清晰简洁的总结
+在需要的文档或文档部分中遇到
+改进。解释为什么你认为文件应该调整
+描述问题的严重性：
 
--   __Keep it short and concise__ – if the inconsistency or issue can be
-    precisely explained in one or two sentences, perfect. Maintainers and future
-    users will be grateful for having to read less.
+-   __保持简短明了__ – 如果不一致或问题可以
+    用一两句话精确解释，完美。维护人员和未来
+    用户会感激不得不少读书。
 
--   __One issue at a time__ – if you encounter several unrelated inconsistencies,
-    please create separate issues for them. Don't report them in the same issue
-    – it makes attribution difficult.
+-   __一次一个问题__ – 如果你遇到几个不相关的不一致，
+    请为他们创建单独的问题。不要在同一问题中报告它们
+    这使得归因变得困难。
 
-> __Why we need this__: describing the problem clearly and concisely is a
-> prerequisite for improving our documentation – we need to understand what's
-> wrong, so we can fix it.
+> __为什么我们需要这个__: 清晰简洁地描述问题是
+> 改进文档的先决条件——我们需要了解什么是
+> 错了，所以我们可以修复它。
 
-### Related links
+### 相关链接
 
-After you described the documentation section that needs to be adjusted above,
-we now ask you to share the link to this specific documentation section and
-other possibly related sections. Make sure to use anchor links (permanent links)
-where possible, as it simplifies discovery.
+在您描述了上面需要调整的文档部分之后，
+我们现在要求您分享此特定文档部分的链接，以及
+其他可能相关的部分。确保使用锚链接（永久链接）
+在可能的情况下，因为它简化了发现。
 
-> __Why we need this__: providing the links to the documentation help us
-> understand which sections of our documentation need to be adjusted, extended,
-> or overhauled.
+> __为什么我们需要这个__: 提供文档链接有助于我们
+> 了解我们文档的哪些部分需要调整、扩展，
+> 或彻底检修。
 
 
-### Proposed change <small>optional</small> { #proposed-change }
+### 拟议变更 <small>optional</small> { #proposed-change }
 
-Now that you have provided us with the description and links to the
-documentation sections, you can help us, maintainers, and the community by
-proposing an improvement. You can sketch out rough ideas or write a concrete
-proposal. This field is optional but very helpful.
+既然您已经向我们提供了描述和链接
+文档部分，您可以通过以下方式帮助我们、维护人员和社区
+提出改进建议。你可以草拟出粗略的想法，也可以写一个具体的想法
+建议。此字段是可选的，但非常有用。
 
-> __Why we need this__: an improvement proposal can be beneficial for other
-> users who encounter the same issue, as they offer solutions before we
-> maintainers can update the documentation.
+> __为什么我们需要这个__: 改进建议可能对其他人有益
+> 遇到同样问题的用户，因为他们在我们之前提供了解决方案
+> 维护人员可以更新文档。
 
-### Checklist
+### 清单
 
-Thanks for following the guide and providing valuable feedback for our
-documentation – you are almost done. The checklist ensures that you have read
-this guide and have worked to your best knowledge to provide us with every piece
-of information we need to improve it.
+感谢您遵循指南并为我们的
+文档——你几乎完成了。检查表确保您已阅读
+本指南，并尽您所能为我们提供每一件作品
+我们需要改进的信息。
 
-__We'll take it from here.__
+__我们从这里开始。__

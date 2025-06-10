@@ -1,56 +1,56 @@
-# Translations
+# 翻译
 
-It's unbelievable – with the help of international community contributions,
-Material for MkDocs has been translated into 60+ languages. As you can imagine,
-it's impossible for us maintainers to keep all languages up-to-date, and new
-features sometimes require new translations.
+令人难以置信的是，在国际社会的帮助下，
+MkDocs的材料已被翻译成60多种语言。正如你所想象的，
+我们维护人员不可能让所有语言都保持最新和最新
+功能有时需要新的翻译。
 
-If you would like to help us to make Material for MkDocs even more globally
-accessible and have noticed a missing translation in your language, or would
-like to add a new language, you can help us by following the steps of the guide
-below.
+如果您想帮助我们在全球范围内制作MkDocs材料
+可访问，并注意到缺少您语言的翻译，或者
+如需添加新语言，您可以按照指南中的步骤帮助我们
+在......下面
 
-## Before creating an issue
+## 在创建问题之前
 
-Translations change frequently, which is why we want to make sure that you don't
-invest your time in duplicating work. Before adding translations, please check
-the following things:
+翻译经常发生变化，这就是为什么我们希望确保您不会
+把时间花在复制工作上。在添加翻译之前，请检查
+以下事项：
 
-### Check language availability
+### 检查语言可用性
 
-With more than 60 languages, the chances are good that your language is already
-supported by Material for MkDocs. You can check if your language is available,
-or needs improvements or additional translations by inspecting the list of
-[supported languages]:
+有60多种语言，你的语言很可能已经
+由MkDocs材料支持。您可以检查您的语言是否可用，
+或需要通过检查以下列表进行改进或额外翻译
+[支持的语言]：
 
-- __Your language is already supported__ – in this case, you can check if there
-  are translations missing, and click the link underneath your language to add them, which takes 5 minutes.
+- __您的语言已受支持_ – 在这种情况下，你可以检查一下
+  如果缺少翻译，请单击您语言下方的链接进行添加，这需要5分钟的时间。
 
-- __Your language is missing__ – in that case, you can help us add support
-  for your language to Material for MkDocs! Read on, to learn how to do this.
+- __您的语言缺失__ – 在这种情况下，您可以帮助我们添加支持
+  将您的语言转换为MkDocs的材料！继续阅读，了解如何做到这一点。
 
   [supported languages]: ../setup/changing-the-language.md#site-language
 
-### Search our issue tracker
+### 搜索我们的问题跟踪器
 
-Another user might have already created an issue supplying the missing
-translations for your language that still needs to be integrated by us
-maintainers. To avoid investing your time in duplicated work, please search the
-[issue tracker] beforehand.
+另一个用户可能已经创建了一个提供缺失信息的问题
+我们仍需整合您的语言翻译
+维护人员。为了避免将时间投入到重复的工作中，请搜索
+[问题跟踪器]事先。
 
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
 
 ---
 
-At this point, when you have made sure that Material for MkDocs doesn't already
-support your language, you can add new translations for it by following the
-issue template.
+此时，当您确保MkDocs的材料尚未
+支持您的语言，您可以按照以下步骤为其添加新的翻译
+问题模板。
 
-## Issue template
+## 问题模板
 
-We have created an issue template that makes contributing translations as simple
-as possible. It is the result of our experience with 60+ language contributions
-and updates over the last couple of years, and consists of the following parts:
+我们创建了一个问题模板，使贡献翻译变得简单
+尽可能。这是我们60多种语言贡献经验的结果
+以及过去几年的更新，由以下部分组成：
 
 - [Title]
 - [Translations]
@@ -62,11 +62,11 @@ and updates over the last couple of years, and consists of the following parts:
   [Country flag]: #country-flag
   [Checklist]: #checklist
 
-### Title
+### 名称
 
-When you update an already existing language, you can just leave the title as it
-is. Adding support for a new language, replace the `...` in the pre-filled title
-with the name of your language.
+更新现有语言时，您可以保留标题不变
+是。添加对新语言的支持，请替换“”。..在预先填写的标题中
+用你的语言命名。
 
 | <!-- --> | Example  |
 | -------- | -------- |
@@ -74,52 +74,52 @@ with the name of your language.
 | :material-close:{ style="color: #EF5350" } __Unclear__ | Add translations ...
 | :material-close:{ style="color: #EF5350" } __Useless__ | Help
 
-### Translations
+### 翻译
 
-If a translation contains an :arrow_left: icon on the right side, it is missing.
-You can translate this line and remove the :arrow_left: icon. If you don't know
-how to translate specific lines, simply leave them for other contributors to
-complete. To ensure the accuracy of your translation, consider double-checking the
-context of the words by looking at our [English translations].
+如果翻译包含右侧的：arrow_light:图标，则该图标缺失。
+您可以翻译此行并删除：arrow_light:图标。如果你不知道
+如何翻译特定的行，只需将其留给其他贡献者即可
+完成。为确保翻译的准确性，请考虑仔细检查
+通过查看我们的[英文翻译]来了解单词的上下文。
 
 [English translations]: https://github.com/squidfunk/mkdocs-material/tree/master/src/partials/languages/en.html
 
-### Country flag <small>optional</small> { #country-flag }
+### 国旗 <small>optional</small> { #country-flag }
 
-For a better overview, our list of [supported languages] includes country flags
-next to the language names. You can help us select a flag for your language by
-adding the shortcode for the country flag to this field. Go to our
-[emoji search] and enter `flag` to find all available shortcodes.
+为了更好地了解情况，我们的[支持的语言]列表包括国旗
+在语言名称旁边。您可以通过以下方式帮助我们为您的语言选择旗帜
+将国旗的短代码添加到此字段中。前往我们的
+[表情符号搜索]并输入“flag”以查找所有可用的快捷方式。
 
-!!! question "What if my flag is not available?"
+!!! question "如果我的国旗不可用怎么办？"
 
-    [Twemoji] provides flag emojis for 260 countries – subdivisions of countries,
-    such as states, provinces, or regions, are not supported. If you're adding
-    translations for a subdivision, please choose the most appropriate available
-    flag.
+    [Twemoji]为260个国家/地区提供国旗表情符号，
+    不支持州、省或地区等。如果你正在添加
+    细分的翻译，请选择最合适的翻译
+    旗帜。
 
   [Twemoji]: https://github.com/jdecked/twemoji
   [emoji search]: ../reference/icons-emojis.md#search
 
-> __Why this might be helpful__: adding a country flag next to the country name
-> can be helpful for you and for others to find the language in the list of
-> supported languages faster and easier. If your country's flag is not supported
-> by [Twemoji], you can help us choose an alternative.
+> __为什么这可能有帮助__: 在国家名称旁边添加国旗
+> 可以帮助您和其他人在列表中找到该语言
+> 支持的语言更快更容易。如果贵国国旗不受支持
+> 通过[Twemoji]，您可以帮助我们选择替代方案。
 
-### Checklist
+### 清单
 
-Thanks for following the guide and helping us to add new translations to Material
-for MkDocs – you are almost done. The checklist ensures that you have read this
-guide and have worked to your best knowledge to provide us with everything we need
-to integrate your contribution.
+感谢您遵循指南并帮助我们为材料添加新的翻译
+对于MkDocs，您几乎完成了。检查表确保您已阅读此内容
+指导并尽最大努力为我们提供所需的一切
+整合你的贡献。
 
-__We'll take it from here.__
+__我们从这里开始。__
 
 ---
 
-## Attribution
+## 归因
 
-If you submit a translation using the template above, you will be __credited as
-a co-author__ in the commit, so you don't need to open a pull request. You have
-done a significant contribution to the project, making Material for MkDocs
-accessible to more people around the world. Thank you!
+如果您使用上述模板提交翻译，您将被记为
+commit中有一个co-author，所以你不需要打开pull请求。你有
+为该项目做出了重大贡献，为MkDocs制作了材料
+世界各地更多的人可以访问。非常感谢。

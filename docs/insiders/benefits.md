@@ -1,15 +1,15 @@
-# What’s in it for you
+# 这对你有什么好处
 
-Material for MkDocs Insiders is packed with additional features that are
-exclusively available to our monthly sponsors – the moment you become a sponsor,
-you'll gain __immediate access__ to all the exclusive Insiders features, ready
-for you to __start using now__.
+MkDocs Insiders的材料中包含了以下附加功能
+仅限我们的月度赞助商使用——在您成为赞助商的那一刻，
+您将立即访问所有Insiders独家功能，准备就绪
+让你现在就开始使用。
 
-## Features
+## 特征
 
-Our sponsors currently enjoy access to the following 20 additional features. New
-features are added regularly, so be sure to check back regularly to stay
-updated.
+我们的赞助商目前可以使用以下20个附加功能。新建
+功能会定期添加，因此请务必定期查看以留下来
+更新。
 
 <div class="mdx-columns" markdown>
 
@@ -36,34 +36,34 @@ updated.
 
 </div>
 
-## What's coming next
+## 接下来会发生什么
 
-> Too many ideas, too little time!
+> 太多的想法，太少的时间！
 
-Our backlog is filled with countless ideas that we came up with or that have
-been suggested by our community. We're also working to make our roadmap public.
-If you have something specific in mind, and wonder whether we've considered it,
-feel free to ask on our [discussion board].
+我们的积压工作中充满了我们提出或已经提出的无数想法
+这是我们社区的建议。我们也在努力公开我们的路线图。
+如果你有什么具体的想法，想知道我们是否考虑过，
+欢迎在我们的[讨论板]上提问。
 
   [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
 
-## Frequent releases
+## 频繁发布
 
-We’re committed to quickly addressing bugs, that come up and keeping our open
-issue count as low as possible. Both our community and Insiders editions are
-regularly updated, ensuring you have the latest features and fixes available at
-all times.
+我们致力于快速解决出现的错误，并保持我们的开放
+问题计数尽可能低。我们的社区版和Insiders版都是
+定期更新，确保您在
+所有时间。
 
-## Additional benefits
+## 额外的好处
 
-As a premium sponsors, you'll enjoy additional benefits that are not available
-to our individual sponsors. When sponsoring our work on one of our [commercial
-tiers] starting at [$125 a month], you'll get additional benefits that we offer
-for enterprises:
+作为高级赞助商，您将享受不可用的额外福利
+致我们的个人赞助商。当赞助我们的[商业]工作时
+从每月125美元起，您将获得我们提供的额外福利
+对于企业：
 
-- [Prioritized] bug reports to keep your projects running smoothly
-- Logo placement and backlink on our site for increased visibility
-- Private support via email for any questions to our maintainers
+- [优先]错误报告，以保持项目顺利运行
+- 在我们的网站上放置徽标和反向链接，以提高知名度
+- 通过电子邮件向我们的维护人员提供私人支持，以解决任何问题
 
   [commercial tiers]: sponsoring-tiers.md/#commercial-use
   [$125 a month]: sponsoring-tiers.md/#the-organization
@@ -72,9 +72,9 @@ for enterprises:
 
 ----
 
-Interested in supporting us? Together, let’s continue to make Material for
-MkDocs an even more powerful tool for everyone. We’re excited for what the
-future holds!
+有兴趣支持我们吗？让我们一起继续为
+MkDocs对每个人来说都是一个更强大的工具。我们对什么感到兴奋
+未来掌握！
 
 [:octicons-heart-fill-24:{ .mdx-heart } &nbsp; Show your support <span class="mdx-sponsorship-count" data-mdx-component="sponsorship-count"></span>][sponsoring tiers]{ .md-button .md-button--primary .mdx-sponsorship-button }
 
@@ -154,12 +154,12 @@ used them for a while.
   [Tags plugin: shadow tags]: ../setup/setting-up-tags.md#shadow-tags
   [Tags plugin: advanced settings]: ../setup/setting-up-tags.md#advanced-settings
 
-### Goals completed
+### 已完成的目标
 
-This section celebrates the milestones we’ve achieved thanks to our incredible
-sponsors. Those features were once part of Material for MkDocs Insiders, and
-therefore only available to our sponsors, and are now generally available to
-be used by all users.
+本节庆祝我们取得的里程碑，这要归功于我们令人难以置信的
+赞助商。这些功能曾经是MkDocs Insiders材料的一部分
+因此，仅适用于我们的赞助商，现在通常可用于
+供所有用户使用。
 
 #### $ 16,000 – Chipotle
 

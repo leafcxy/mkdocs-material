@@ -2,24 +2,24 @@
 title: Getting started with Insiders
 ---
 
-# Getting started with Insiders
+# 开始与Insiders合作
 
-Material for MkDocs Insiders is a compatible drop-in replacement for Material
-for MkDocs, and can be installed similarly using [`pip`][pip],
-[`docker`][docker] or [`git`][git]. Note that in order to access the Insiders
-repository, you need to [become an eligible sponsor] of @squidfunk on GitHub.
+MkDocs Insiders的材料是材料的兼容直接替代品
+对于MkDocs，可以使用[`pip`][pip]进行类似的安装，
+〔docker〕〔docker〕或〔git〕〔git〕。请注意，为了访问内部人员
+在GitHub上，你需要[成为@squidfunk的合格赞助商]。
 
   [pip]: #with-pip
   [docker]: #with-docker
   [git]: #with-git
   [become an eligible sponsor]: how-to-sponsor.md
 
-## Requirements
+## 必要条件
 
-After you've been added to the list of collaborators and accepted the
-repository invitation, the next step is to create a [personal access token] for
-your GitHub account in order to access the Insiders repository programmatically
-(from the command line or GitHub Actions workflows):
+在您被添加到合作者列表并接受后
+存储库邀请，下一步是为创建一个[个人访问令牌]
+您的GitHub帐户，以便以编程方式访问Insiders存储库
+（来自命令行或GitHub Actions工作流）：
 
 1.  Go to https://github.com/settings/tokens
 2.  Click on [Generate a new token]
@@ -30,26 +30,26 @@ your GitHub account in order to access the Insiders repository programmatically
   [Generate a new token]: https://github.com/settings/tokens/new
   [scopes]: https://docs.github.com/en/developers/apps/scopes-for-oauth-apps#available-scopes
 
-Some of the instructions below require that the `GH_TOKEN` environment
-variable is set to the value of the personal access token you
-generated in the previous step. Note that the personal access token
-must be kept secret at all times, as it allows the owner to access
-your private repositories.
+以下一些说明要求“GH_TOKEN”环境
+变量设置为您的个人访问令牌的值
+在前面的步骤中生成的。请注意，个人访问令牌
+必须始终保密，因为它允许所有者访问
+您的私人存储库。
 
-## Installation
+## 安装
 
-### with pip
+### 使用pip
 
-Material for MkDocs Insiders can be installed with `pip`. You will
-normally want to install the latest release but can also install a
-specific older release or even the latest development version.
-Make sure you have the `GH_TOKEN` variable set as instructed above.
+MkDocs Insider的材料可以用pip安装。你会
+通常希望安装最新版本，但也可以安装
+特定的旧版本，甚至最新的开发版本。
+确保按照上述指示设置了“GH_TOKEN”变量。
 
 === "Specific release"
 
-    Pick the corresponding tag from the [list of tags] for the Insiders
-    repository. In the `pip` command below, replace the tag at the
-    end of the URL with the one you want.
+    从[标签列表]中为Insiders选择相应的标签
+    存储库。在下面的`pip `命令中，替换
+    用您想要的URL结尾。
 
     ``` sh
     pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.4.2-insiders-4.42.0
@@ -63,12 +63,12 @@ Make sure you have the `GH_TOKEN` variable set as instructed above.
 
 [list of tags]: https://github.com/squidfunk/mkdocs-material-insiders/tags
 
-### with docker
+### 使用docker
 
-In case you want to use Material for MkDocs Insiders from within Docker, some
-additional steps are necessary. While we cannot provide a hosted Docker image
-for Insiders[^2], [GitHub Container Registry] allows for simple and
-comfortable self-hosting:
+如果你想在Docker中为MkDocs Insider使用Material
+需要额外的步骤。虽然我们无法提供托管的Docker镜像
+对于内部人员[^2]，[GitHub容器注册表]允许简单和
+舒适的自托管：
 
 1.  [Fork the Insiders repository]
 2.  Enable [GitHub Actions] on your fork[^3]
@@ -83,50 +83,50 @@ comfortable self-hosting:
 5.  [Create a new release] to build and publish the Docker image
 6.  Install [Pull App] on your fork to stay in-sync with upstream
 
-The [`build`][build] workflow is automatically run when a new tag
-(release) is created. When a new Insiders version is released on the upstream
-repository, the [Pull App] will create a pull request with the changes and
-pull in the new tag, which is picked up by the [`build`][build] workflow
-that builds and publishes the Docker image automatically to your private
-registry.
+当有新标记时，[`build`][build]工作流会自动运行
+（release）已创建。当新的Insiders版本在上游发布时
+在仓库中，[Pull App]将创建一个包含更改的Pull请求
+拉入新标签，该标签由[`build][build]工作流获取
+自动构建Docker镜像并将其发布到您的私有
+注册表。
 
-Now, you should be able to pull the Docker image from your private registry:
+现在，您应该能够从私有注册表中提取Docker映像：
 
 ```
 docker login -u ${GH_USERNAME} -p ${GHCR_TOKEN} ghcr.io
 docker pull ghcr.io/${GH_USERNAME}/mkdocs-material-insiders
 ```
 
-Should you wish to add additional plugins to the insiders container image, follow the steps
-outlined in the [Getting Started guide](../getting-started.md#with-docker).
+如果您希望在内部人员容器映像中添加其他插件，请按照以下步骤操作
+在[入门指南]中概述（../geting-Started.md#with docker）。
 
   [^2]:
-    Earlier, Insiders provided a dedicated Docker image which was available to
-    all sponsors. On March 21, 2021, the image was deprecated for the reasons
-    outlined and discussed in #2442. It was removed on June 1, 2021.
+    早些时候，Insiders提供了一个专门的Docker镜像，可供
+    所有赞助商。2021年3月21日，该图像因以下原因被弃用
+    在#2442中进行了概述和讨论。它于2021年6月1日被删除。
 
   [^3]:
-    When forking a repository, GitHub will disable all workflows. While this
-    is a reasonable default setting, you need to enable GitHub Actions to be
-    able to automatically build and publish a Docker image on
-    [GitHub Container Registry].
+    分叉存储库时，GitHub将禁用所有工作流。虽然这个
+    是一个合理的默认设置，您需要启用GitHub Actions
+    能够在上自动构建和发布Docker镜像
+    [GitHub容器注册表]。
 
   [^4]:
-    While you could just add the `write:packages` scope to the personal access
-    token created to access the Insiders repository, it's safer to create a
-    dedicated token which you'll only use for publishing the Docker image.
+    虽然你可以将“write:packages”范围添加到个人访问中
+    创建令牌以访问Insiders存储库，创建令牌更安全
+    专用令牌，您将仅用于发布Docker映像。
 
-### with git
+### 使用git
 
-Of course, you can use Material for MkDocs Insiders directly from `git`:
+当然，您可以直接从“git”使用MkDocs Insider的材料：
 
 ```
 git clone git@github.com:squidfunk/mkdocs-material-insiders.git mkdocs-material
 ```
 
-The theme will reside in the folder `mkdocs-material/material`. When cloning
-from `git`, the theme must be installed, so MkDocs can find the built-in
-plugins:
+主题将位于“mkdocs material/material”文件夹中。克隆时
+从`git `开始，必须安装主题，这样MkDocs才能找到内置的
+插件：
 
 ```
 pip install -e mkdocs-material
@@ -141,12 +141,12 @@ pip install -e mkdocs-material
   [Pull App]: https://github.com/apps/pull
   [build]: https://github.com/squidfunk/mkdocs-material-insiders/blob/master/.github/workflows/build.yml
 
-## Built-in plugins
+## 内置插件
 
-When you're using built-in plugins that are solely available via Insiders,
-outside contributors won't be able to build your documentation project on their
-local machine. This is the reason why we developed the [built-in group plugin]
-that allows to conditionally load plugins:
+当你使用仅通过Insiders提供的内置插件时，
+外部贡献者将无法在他们的基础上构建您的文档项目
+本地机器。这就是我们开发[内置组插件]的原因
+允许有条件地加载插件：
 
 ``` yaml
 plugins:
@@ -168,7 +168,7 @@ plugins:
         - privacy
 ```
 
-Of course, you can also enable both groups with:
+当然，您也可以通过以下方式启用这两个组：
 
 ``` shell
 CI=true INSIDERS=true mkdocs build

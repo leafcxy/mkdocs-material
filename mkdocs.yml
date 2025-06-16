@@ -1,24 +1,6 @@
-# Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
+# Copyright (c) 2016-2025 leafcxy <cxy1337@gmail.com>
 
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to
-# deal in the Software without restriction, including without limitation the
-# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-# sell copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-# IN THE SOFTWARE.
-
-# Project information
+# 项目信息
 site_name: Material for MkDocs
 site_url: https://leafcxy.github.io/mkdocs-material/
 site_author: leafcxy
@@ -26,20 +8,20 @@ site_description: >-
   用Markdown编写文档,并在
   分钟-可搜索、可定制,支持60多种语言,适用于所有设备
 
-# Repository
+# 仓库
 repo_name: leafcxy/mkdocs-material
 repo_url: https://github.com/leafcxy/mkdocs-material
 
-# Copyright
+# 版权
 copyright: Copyright &copy; 2016 - 2025 leafcxy
 
-# Configuration
+# 配置
 theme:
   name: material
   custom_dir: overrides
   language: zh
   features:
-    - announce.dismiss
+    # - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -92,7 +74,7 @@ theme:
   icon:
     logo: logo
 
-# Plugins
+# 插件
 plugins:
   - blog
   - search
@@ -117,7 +99,7 @@ plugins:
 #   - overrides/hooks/shortcodes.py
 #   - overrides/hooks/translations.py
 
-# Additional configuration
+# 附加配置
 extra:
   status:
     new: Recently added
@@ -132,7 +114,7 @@ extra:
       link: https://t.me/leafcxybot
       name: telegram
 
-# Extensions
+# 扩展
 markdown_extensions:
   - abbr
   - admonition
@@ -185,7 +167,7 @@ markdown_extensions:
 not_in_nav: |
   /tutorials/**/*.md
 
-# Page tree
+# 页面树
 nav:
   - 主页: index.md
   - 开始:

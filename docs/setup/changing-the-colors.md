@@ -6,7 +6,7 @@
 通过使用[CSS变量][自定义颜色]来适应您的品牌标识。
 
   [color palette]: http://www.materialui.co/colors
-  [custom colors]: #custom-colors
+  [custom colors]: #_11
 
 ## 配置
 
@@ -229,7 +229,7 @@ theme:
   [palette.scheme]: #color-scheme
   [palette.primary]: #primary-color
   [palette.accent]: #accent-color
-  [icon search]: ../reference/icons-emojis.md#search
+  [icon search]: ../reference/icons-emojis.md#_2
   [tooltip]: ../reference/tooltips.md
 
 ### 系统偏好

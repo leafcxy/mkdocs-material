@@ -108,7 +108,7 @@ extra:
           name: squidfunk on Fosstodon
     ```
 
-  [icon search]: ../reference/icons-emojis.md#search
+  [icon search]: ../reference/icons-emojis.md#_2
   [rel=me]: https://docs.joinmastodon.org/user/profile/#verification
 
 ### 版权声明

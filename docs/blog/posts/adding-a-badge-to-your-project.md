@@ -1,5 +1,5 @@
 ---
-title: Adding a badge to your project
+title: 在项目中添加徽章
 date: 2023-11-30
 authors: [squidfunk]
 slug: adding-a-badge-to-your-project
@@ -10,7 +10,7 @@ categories:
   - General
 ---
 
-# Adding a :simple-materialformkdocs: badge to your project
+# 在项目中添加徽章:simple-materialformkdocs:
 
 __你喜欢使用MkDocs的Material吗？分享爱！您现在可以添加
 项目README的徽章，显示您的项目是用
@@ -20,7 +20,7 @@ MkDocs徽标的材料刚刚添加到[Simple Icons]中，该图标由
 [Shields.io]在徽章中包含徽标。我们为您生成了一个徽章
 您可以添加到项目的README中：
 
-[![Material for MkDocs][badge]](#usage)
+[![Material for MkDocs][badge]](#_2)
 
 <!-- more -->
 

@@ -74,7 +74,7 @@ extra_javascript:
     `document$` 是一个[RxJS Observable]，你可以调用`subscribe()`
     方法任意次数附加不同的功能。
 
-  [instant loading]: setup/setting-up-navigation.md/#instant-loading
+  [instant loading]: setup/setting-up-navigation.md/#_3
   [RxJS Observable]: https://rxjs.dev/api/index/class/Observable
 
 ## 扩展主题
@@ -250,7 +250,7 @@ Material for MkDocs基于[TypeScript]、[RxJS]和[SASS]构建，以及
 直接在主题的源代码中重新编译它。
 
   [^1]:
-    之前<!-- md:version 7.0.0 -->构建基于Webpack，结果
+    之前`version 7.0.0`构建基于Webpack，结果
     由于与加载器和
     插件。因此，我们决定将Webpack替换为更精简的解决方案
     现在基于[RxJS]作为应用程序本身。这使得
@@ -292,7 +292,7 @@ Material for MkDocs基于[TypeScript]、[RxJS]和[SASS]构建，以及
         git clone git@github.com:squidfunk/mkdocs-material-insiders.git
         ```
 
-    [as described in the Insiders documentation]: insiders/getting-started.md#requirements
+    [as described in the Insiders documentation]: insiders/getting-started.md#_1
 
 接下来，创建一个新的[Python virtual environment][venv]，然后
 [activate][venv-activate]它：

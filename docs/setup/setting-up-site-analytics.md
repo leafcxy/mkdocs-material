@@ -262,7 +262,7 @@ hide:
         跨多个存储库的自定义集成。
 
   [theme extension]: ../customization.md#extending-the-theme
-  [instant loading]: setting-up-navigation.md#instant-loading
+  [instant loading]: setting-up-navigation.md#_3
 
 ### 自定义网站反馈
 

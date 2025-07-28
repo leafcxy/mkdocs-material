@@ -44,7 +44,7 @@ icons _可用于定制主题的特定部分和/或
           </div>
         </div>
 
-  [icon search]: ../reference/icons-emojis.md#search
+  [icon search]: ../reference/icons-emojis.md#_2
 
 通常，标题和侧边栏中的徽标链接到
 文档，与“site_url”相同。此行为可以更改

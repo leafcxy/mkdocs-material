@@ -1,5 +1,5 @@
 ---
-title: Built-in blog plugin
+title: 内置博客插件
 icon: material/newspaper-variant-outline
 ---
 
@@ -133,10 +133,10 @@ MkDocs的Material框架，因为它具有出色的技术写作能力
 
 ## 配置
 
-<!-- md:version 9.2.0 -->
-<!-- md:plugin [blog] – built-in -->
-<!-- md:flag multiple -->
-<!-- md:flag experimental -->
+`version 9.2.0`
+`plugin [blog] – built-in`
+`flag multiple`
+`flag experimental`
 
 与所有[内置插件]一样，开始使用博客插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，您就可以
@@ -188,10 +188,10 @@ nav:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `true` -->
+`version 9.2.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
@@ -207,10 +207,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.blog_dir -->
+#### `setting config.blog_dir`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `blog` -->
+`version 9.2.0`
+`md:default _blog_`
 
 使用此设置更改您的博客在
 [文档目录][mkdocs.docs_dir]。路径包含在生成的
@@ -1664,7 +1664,7 @@ pin: true
       - plugins/search.md # (1)!
       - Insiders:
         - insiders/how-to-sponsor.md
-        - insiders/getting-started.md#requirements
+        - insiders/getting-started.md#_1
     ---
 
     # Post title

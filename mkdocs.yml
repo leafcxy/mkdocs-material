@@ -22,8 +22,8 @@ theme:
   language: zh
   features:
     # - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.code.select
@@ -45,7 +45,7 @@ theme:
     - navigation.tracking
     - search.highlight
     - search.share
-    - search.suggest
+    # - search.suggest
     - toc.follow
     # - toc.integrate
   palette:
@@ -156,10 +156,10 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      # combine_header_slug: true
+      # slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

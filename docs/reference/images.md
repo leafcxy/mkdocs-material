@@ -56,7 +56,7 @@ plugins:
 [配置选项][glightbox选项]。
 
   [glightbox]: https://github.com/blueswen/mkdocs-glightbox
-  [glightbox options]: https://github.com/blueswen/mkdocs-glightbox#usage
+  [glightbox options]: https://github.com/blueswen/mkdocs-glightbox#_4
 
 ## 使用
 

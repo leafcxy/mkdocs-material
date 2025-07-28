@@ -63,5 +63,4 @@ Material for MkDocs竭尽全力支持尽可能大的范围
   可以通过一些额外的努力来缓解。
 - :fontawesome-brands-internet-explorer: __Internet Explorer__ - 没有支持，
   主要是由于缺少对[custom properties]的支持。最后一个版本
-  MkDocs支持Internet Explorer的材料是
-  <!-- md:version 4.6.3 -->.
+  MkDocs支持Internet Explorer的材料是`4.6.3`

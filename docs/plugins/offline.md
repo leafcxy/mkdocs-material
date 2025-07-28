@@ -147,7 +147,7 @@ plugins:
 - [Versioning]
 - [Comment systems]
 
-  [Instant loading]: ../setup/setting-up-navigation.md#instant-loading
+  [Instant loading]: ../setup/setting-up-navigation.md#_3
   [Site analytics]: ../setup/setting-up-site-analytics.md
   [Versioning]: ../setup/setting-up-versioning.md
   [Comment systems]: ../setup/adding-a-comment-system.md

@@ -94,7 +94,7 @@ theme:
 - :fontawesome-brands-bitbucket: – `fontawesome/brands/bitbucket`
 - :fontawesome-solid-trash: – `fontawesome/solid/trash`
 
-  [icon search]: ../reference/icons-emojis.md#search
+  [icon search]: ../reference/icons-emojis.md#_2
 
 #### 代码操作
 

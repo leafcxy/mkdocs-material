@@ -103,7 +103,7 @@ theme:
 
   [custom icon]: ../setup/changing-the-logo-and-icons.md#additional-icons
   [supported types]: #supported-types
-  [icon search]: icons-emojis.md#search
+  [icon search]: icons-emojis.md#_2
 
 ## 使用
 

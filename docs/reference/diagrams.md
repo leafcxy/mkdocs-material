@@ -42,7 +42,7 @@ markdown_extensions:
     图表。有关此原因的更多信息，请参阅[其他图表]部分
     目前尚未对所有图表实现。
 
-  [instant loading]: ../setup/setting-up-navigation.md#instant-loading
+  [instant loading]: ../setup/setting-up-navigation.md#_3
   [additional style sheets]: ../customization.md#additional-css
   [other diagrams]: #other-diagram-types
 

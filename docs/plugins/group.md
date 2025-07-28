@@ -1,5 +1,5 @@
 ---
-title: Built-in group plugin
+title: 内置群组插件
 icon: material/format-list-group
 ---
 

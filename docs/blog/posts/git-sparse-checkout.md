@@ -5,8 +5,8 @@ categories:
   - Build
   - Performance
 links:
-  - publishing-your-site.md#with-github-actions
-  - creating-your-site.md#building-your-site
+  - publishing-your-site.md#_1
+  - creating-your-site.md#_1
 ---
 
 # 使用`git sparse checkout`实现更快的文档构建

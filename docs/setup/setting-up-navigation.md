@@ -5,9 +5,9 @@
 导航元素的行为，包括[tabs]和[sections]，以及一个
 其旗舰功能包括：[即时加载]。
 
-  [tabs]: #navigation-tabs
-  [sections]: #navigation-sections
-  [instant loading]: #instant-loading
+  [tabs]: #_9
+  [sections]: #_11
+  [instant loading]: #_3
 
 可以在[页脚]以及使用
 [标签插件]。[blog插件]还设置了额外的导航。

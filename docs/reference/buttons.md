@@ -81,4 +81,4 @@ CSS类选择器。
 </div>
 
   [icon syntax]: icons-emojis.md#using-icons
-  [icon search]: icons-emojis.md#search
+  [icon search]: icons-emojis.md#_2

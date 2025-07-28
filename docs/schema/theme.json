@@ -623,12 +623,12 @@
           },
           {
             "title": "Navigation sections",
-            "markdownDescription": "https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections",
+            "markdownDescription": "https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#_11",
             "const": "navigation.sections"
           },
           {
             "title": "Navigation tabs",
-            "markdownDescription": "https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs",
+            "markdownDescription": "https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#_9",
             "const": "navigation.tabs"
           },
           {

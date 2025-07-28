@@ -98,7 +98,7 @@ theme:
 
     [![Linked content tabs disabled]][Linked content tabs disabled]
 
-  [instant loading]: ../setup/setting-up-navigation.md#instant-loading
+  [instant loading]: ../setup/setting-up-navigation.md#_3
   [Linked content tabs enabled]: ../assets/screenshots/content-tabs-link.png
   [Linked content tabs disabled]: ../assets/screenshots/content-tabs.png
 

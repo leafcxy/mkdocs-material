@@ -68,7 +68,7 @@ theme:
 - :material-plus-circle-outline: - `material/plus-circle-outline`
 
   [custom icon]: ../setup/changing-the-logo-and-icons.md#additional-icons
-  [icon search]: icons-emojis.md#search
+  [icon search]: icons-emojis.md#_2
 
 ## 使用
 

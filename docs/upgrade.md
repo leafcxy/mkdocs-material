@@ -877,8 +877,8 @@ https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
         - instant
     ```
 
-  [tabs]: setup/setting-up-navigation.md#navigation-tabs
-  [instant loading]: setup/setting-up-navigation.md#instant-loading
+  [tabs]: setup/setting-up-navigation.md#_9
+  [instant loading]: setup/setting-up-navigation.md#_3
 
 ### 对`*.html`文件的更改{ data-search-exclude }
 
@@ -1117,8 +1117,8 @@ https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
 - 由于不再支持Internet Explorer，减少了HTML和CSS的占用空间
 - 一些UI元素（警告、表格等）略有改进
 
-  [CSS variables]: setup/changing-the-colors.md#custom-colors
-  [icon integration]: reference/icons-emojis.md#search
+  [CSS variables]: setup/changing-the-colors.md#_11
+  [icon integration]: reference/icons-emojis.md#_2
   [prebuilt search indexes]: plugins/search.md
 
 ### 更改 `mkdocs.yml`

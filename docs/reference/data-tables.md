@@ -181,7 +181,7 @@ markdown_extensions:
 </script>
 
   [tablesort]: http://tristen.ca/tablesort/demo/
-  [instant loading]: ../setup/setting-up-navigation.md#instant-loading
+  [instant loading]: ../setup/setting-up-navigation.md#_3
 
 ### 从文件导入表
 

@@ -326,7 +326,7 @@ used them for a while.
 - [x] [Table of contents in navigation]
 - [x] [Header hides on scroll]
 
-  [Navigation sections]: ../setup/setting-up-navigation.md#navigation-sections
+  [Navigation sections]: ../setup/setting-up-navigation.md#_11
   [Navigation expansion]: ../setup/setting-up-navigation.md#navigation-expansion
   [Hiding the sidebars]: ../setup/setting-up-navigation.md#hiding-the-sidebars
   [Table of contents in navigation]: ../setup/setting-up-navigation.md#navigation-integration

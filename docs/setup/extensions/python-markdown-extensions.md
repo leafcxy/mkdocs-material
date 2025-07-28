@@ -86,7 +86,7 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [MathJax]: https://www.mathjax.org/
   [KaTeX]: https://github.com/Khan/KaTeX
   [additional JavaScript]: ../../customization.md#additional-javascript
-  [instant loading]: ../setting-up-navigation.md#instant-loading
+  [instant loading]: ../setting-up-navigation.md#_3
   [Using block syntax]: ../../reference/math.md#using-block-syntax
   [Using inline block syntax]: ../../reference/math.md#using-inline-block-syntax
 

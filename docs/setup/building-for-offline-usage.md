@@ -48,7 +48,7 @@ MkDocs的材料提供了许多交互功能，其中一些功能不会
 配置设置：[即时加载]，[站点分析]，[git仓库]，
 [版本控制]和[评论系统]。
 
-  [Instant loading]: setting-up-navigation.md#instant-loading
+  [Instant loading]: setting-up-navigation.md#_3
   [Site analytics]: setting-up-site-analytics.md
   [Versioning]: setting-up-versioning.md
   [Git repository]: adding-a-git-repository.md

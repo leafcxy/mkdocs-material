@@ -99,7 +99,7 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
     旗帜。
 
   [Twemoji]: https://github.com/jdecked/twemoji
-  [emoji search]: ../reference/icons-emojis.md#search
+  [emoji search]: ../reference/icons-emojis.md#_2
 
 > __为什么这可能有帮助__: 在国家名称旁边添加国旗
 > 可以帮助您和其他人在列表中找到该语言

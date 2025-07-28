@@ -125,7 +125,7 @@ extra:
     ```
 
   [custom icon]: changing-the-logo-and-icons.md#additional-icons
-  [icon search]: ../reference/icons-emojis.md#search
+  [icon search]: ../reference/icons-emojis.md#_2
 
 ## 使用
 

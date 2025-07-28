@@ -22,8 +22,8 @@ MkDocs Material的核心是一个开放和支持性的社区，致力于
 因此，[our discussion board]和[our issue tracker]是否对
 整个社区。
 
-  [our discussion board]: #discussion-board
-  [our issue tracker]: #issue-tracker
+  [our discussion board]: #_4
+  [our issue tracker]: #_5
 
 
 ### 讨论板

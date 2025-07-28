@@ -88,8 +88,8 @@ icon: material/emoticon-happy # (1)!
     </div>
 
   [Insiders]: ../insiders/index.md
-  [icon search]: icons-emojis.md#search
-  [navigation tabs]: ../setup/setting-up-navigation.md#navigation-tabs
+  [icon search]: icons-emojis.md#_2
+  [navigation tabs]: ../setup/setting-up-navigation.md#_9
 
 ### 设置页面状态`
 

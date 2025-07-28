@@ -8,7 +8,7 @@ categories:
   - Search
 links:
   - blog/posts/search-better-faster-smaller.md
-  - setup/setting-up-site-search.md#search-exclusion
+  - setup/setting-up-site-search.md#_9
   - insiders/how-to-sponsor.md
 ---
 
@@ -103,7 +103,7 @@ plugins:
 通过前面的内容以及[属性列表]。请注意，它没有
 替换[mkdocs excluded search]插件，但对其进行补充。
 
-  [search exclusion]: ../../setup/setting-up-site-search.md#search-exclusion
+  [search exclusion]: ../../setup/setting-up-site-search.md#_9
   [Attribute Lists]: ../../setup/extensions/python-markdown.md#attribute-lists
 
 ### 不包括页面

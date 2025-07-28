@@ -72,7 +72,7 @@ HTML、SVG、MathML。要在项目中使用MathJax，请添加以下行
 - [Arithmatex]
 
   [Arithmatex]: ../setup/extensions/python-markdown-extensions.md#arithmatex
-  [instant loading]: ../setup/setting-up-navigation.md#instant-loading
+  [instant loading]: ../setup/setting-up-navigation.md#_3
 
 <script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>

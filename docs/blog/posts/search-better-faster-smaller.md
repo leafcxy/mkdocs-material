@@ -179,7 +179,7 @@ const index$ = document.forms.namedItem("search")
     之前<！--md:版本5.0.0-->，在主目录中进行搜索
     线程锁定了浏览器，使其无法使用。这个问题是
     第一次报告于904年，经过一番反复，修复并发布于
-    <!-- md:version 5.0.0 -->.
+    `version 5.0.0`.
 
 1.  __将部分与页面链接__: 解析搜索索引，每个
     该部分链接到其父页面。父页面本身为_not
@@ -597,7 +597,7 @@ _我们才刚刚开始触及新可能性的表面
 费用只需支付一次。
 
   [KJV Markdown]: https://github.com/arleym/kjv-markdown
-  [instant loading]: ../../setup/setting-up-navigation.md#instant-loading
+  [instant loading]: ../../setup/setting-up-navigation.md#_3
 
 ### 用户界面
 

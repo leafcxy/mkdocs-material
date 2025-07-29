@@ -12,7 +12,7 @@ icon: material/format-title
 
 ---
 
-<!-- md:sponsors --> __Sponsors only__ – 此插件当前保留给
+`sponsors` __Sponsors only__ – 此插件当前保留给
 [our awesome sponsors].
 
   [our awesome sponsors]: ../insiders/index.md
@@ -44,10 +44,10 @@ MkDocs的材料使用此信息来呈现
 
 ## 配置
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.27.0 -->
-<!-- md:plugin [typeset] – built-in -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.27.0`
+`plugin [typeset] – built-in`
+`flag experimental`
 
 与所有[内置插件]一样，开始使用排版插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，并观察
@@ -70,11 +70,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.27.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.27.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用

@@ -9,8 +9,8 @@ MkDocs材料支持国际化（i18n），并提供
 
 ### 网站语言
 
-<!-- md:version 1.12.0 -->
-<!-- md:default `en` -->
+`version 1.12.0`
+`default _en_`
 
 您可以在`mkdocs.yml`中设置网站语言：
 
@@ -48,8 +48,8 @@ theme:
 
 ### 站点语言选择器
 
-<!-- md:version 7.0.0 -->
-<!-- md:default none -->
+`version 7.0.0`
+`default none`
 
 如果您的文档有多种语言版本，请使用语言选择器
 指向这些语言的内容可以添加到标题中。替代语言
@@ -72,21 +72,21 @@ extra:
 
 以下属性适用于每种备用语言：
 
-<!-- md:option alternate.name -->
+`option alternate.name`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性的值在语言选择器中用作
     语言的名称，并且必须设置为非空字符串。
 
-<!-- md:option alternate.link -->
+`option alternate.link`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性必须设置为绝对链接，该链接也可能指向
     不一定用MkDocs生成的另一个域或子域。
 
-<!-- md:option alternate.lang -->
+`option alternate.lang`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性必须包含[ISO 639-1语言代码]，用于
     链接的hreflang属性，通过搜索提高可发现性
     发动机。
@@ -99,9 +99,9 @@ extra:
 
 #### 停留在页面上
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.47.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.47.0`
+`flag experimental`
 
 [内部人员]改善了在语言之间切换时的用户体验。，
 如果语言“en”和“de”包含具有相同路径名的页面，则用户将
@@ -131,8 +131,8 @@ extra:
 
 ### 方向性
 
-<!-- md:version 2.5.0 -->
-<!-- md:default computed -->
+`version 2.5.0`
+`default computed`
 
 虽然许多语言都是从左到右阅读“ltr”，但MkDocs的材料也是如此
 支持“rtl”（从右到左）方向性，这是从

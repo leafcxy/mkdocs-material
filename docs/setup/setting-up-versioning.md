@@ -11,9 +11,9 @@ MkDocs，即[mike]。部署新版本时，您的旧版本
 
 ### 版本控制
 
-<!-- md:version 7.0.0 -->
-<!-- md:utility [mike] -->
-<!-- md:demo example-versioning -->
+`version 7.0.0`
+`utility [mike]`
+`demo example-versioning`
 
 [mike]使部署项目文档的多个版本变得容易。
 它与Material for MkDocs原生集成，可以通过以下方式启用
@@ -70,8 +70,8 @@ MkDocs默认实现了这种行为，但有一些注意事项：
 
 ### 版本警告
 
-<!-- md:version 8.0.0 -->
-<!-- md:flag customization -->
+`version 8.0.0`
+`flag customization`
 
 如果您正在使用版本控制，您可能希望在用户
 访问除最新版本之外的任何其他版本。使用[主题扩展]，
@@ -132,8 +132,8 @@ extra:
 
 ### 版本别名
 
-<!-- md:version 9.5.23 -->
-<!-- md:default `false` -->
+`version 9.5.23`
+`default _false_`
 
 如果您正在使用别名进行版本控制，并希望显示版本别名
 除了版本号，您还可以通过设置别名来启用此功能`

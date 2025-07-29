@@ -45,8 +45,8 @@ markdown_extensions: # (1)!
 
 ### 使用卡片网格
 
-<!-- md:version 9.5.0 -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`flag experimental`
 
 卡片网格用一张漂亮的悬浮卡片包裹每个网格项目
 悬停。它们有两种稍微不同的语法：[list]和[block syntax]，
@@ -225,8 +225,8 @@ elements_，如[通用网格]一节所述。只需添加“卡”`
 
 ### 使用通用网格
 
-<!-- md:version 9.5.0 -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`flag experimental`
 
 通用网格允许在网格中排列任意块元素，包括
 [警告]、[代码块]、[内容选项卡]等。只需包裹一组积木

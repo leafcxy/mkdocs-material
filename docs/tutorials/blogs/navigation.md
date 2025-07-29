@@ -327,7 +327,7 @@ MkDocs。当然，Insider Edition也支持这一点，但也提供
 可以突出作者的贡献，并提供额外的
 关于他们的信息。
 
-!!! example "添加作者页面 <!-- md:sponsors -->"
+!!! example "添加作者页面 `sponsors`"
 
     首先，您需要在`mkdocs.yml`中启用作者配置文件：
 

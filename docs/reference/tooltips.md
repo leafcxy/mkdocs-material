@@ -34,8 +34,8 @@ markdown_extensions:
 
 ### 改进的工具提示
 
-<!-- md:version 9.5.0 -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`flag experimental`
 
 启用改进的工具提示后，MkDocs材质将取代浏览器的
 使用漂亮的小工具提示渲染“title”属性的逻辑。

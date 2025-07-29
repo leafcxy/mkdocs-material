@@ -45,8 +45,8 @@ info插件是一个专门用于创建自包含的实用程序
 
 ## 配置
 
-<!-- md:version 9.0.0 -->
-<!-- md:plugin [info] – built-in -->
+`version 9.0.0`
+`plugin [info] – built-in`
 
 为了开始使用内置的信息插件，只需添加以下内容
 行到“mkdocs.yml”，并快速[创建最小复制]进行共享
@@ -69,10 +69,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.0.0 -->
-<!-- md:default `true` -->
+`version 9.0.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
@@ -88,10 +88,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled_on_serve -->
+#### `setting config.enabled_on_serve`
 
-<!-- md:version 9.0.6 -->
-<!-- md:default `false` -->
+`version 9.0.6`
+`default _false_`
 
 使用此设置控制在以下情况下是否应启用插件
 [预览您的网站]。通常不需要指定此设置，
@@ -113,10 +113,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive -->
+#### `setting config.archive`
 
-<!-- md:version 9.0.0 -->
-<!-- md:default `true` -->
+`version 9.0.0`
+`default _true_`
 
 使用此设置控制插件是否应创建“.zip”文件
 从项目中退出或在版本检查后退出。此设置仅用于
@@ -130,10 +130,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_stop_on_violation -->
+#### `setting config.archive_stop_on_violation`
 
-<!-- md:version 9.0.0 -->
-<!-- md:default `true` -->
+`version 9.0.0`
+`default _true_`
 
 使用此设置控制插件是否应停止创建`.zip`
 当其中一个[要求]未得到满足时。此设置必须仅为

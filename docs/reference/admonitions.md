@@ -34,7 +34,7 @@ markdown_extensions:
 
 ### 警告图标
 
-<!-- md:version 8.3.0 -->
+`version 8.3.0`
 
 每种支持的警告类型都有一个不同的图标，可以更改
 任何与主题捆绑在一起的图标，甚至是[自定义图标]。添加以下内容
@@ -324,7 +324,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
     类型限定符现在都已弃用，并将在下一个主要版本中删除
     版本。这也将在升级指南中提及。
 
-<!-- md:option type:note -->
+`option type:note`
 
 :   !!! note
 
@@ -332,7 +332,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:abstract -->
+`option type:abstract`
 
 :   !!! abstract
 
@@ -340,7 +340,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:info -->
+`option type:info`
 
 :   !!! info
 
@@ -348,7 +348,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:tip -->
+`option type:tip`
 
 :   !!! tip
 
@@ -356,7 +356,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:success -->
+`option type:success`
 
 :   !!! success
 
@@ -364,7 +364,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:question -->
+`option type:question`
 
 :   !!! question
 
@@ -372,7 +372,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:warning -->
+`option type:warning`
 
 :   !!! warning
 
@@ -380,7 +380,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:failure -->
+`option type:failure`
 
 :   !!! failure
 
@@ -388,7 +388,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:danger -->
+`option type:danger`
 
 :   !!! danger
 
@@ -396,7 +396,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:bug -->
+`option type:bug`
 
 :   !!! bug
 
@@ -404,7 +404,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:example -->
+`option type:example`
 
 :   !!! example
 
@@ -412,7 +412,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-<!-- md:option type:quote -->
+`option type:quote`
 
 :   !!! quote
 

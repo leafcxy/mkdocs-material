@@ -28,9 +28,9 @@ markdown_extensions:
 
 ### 脚注工具提示
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.51.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.51.0`
+`flag experimental`
 
 [Insiders]允许将脚注呈现为内联工具提示，以便用户可以阅读
 脚注没有脱离文档的上下文。脚注工具提示可以

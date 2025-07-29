@@ -11,8 +11,8 @@
 
 ### 内置离线插件
 
-<!-- md:version 9.0.0 -->
-<!-- md:plugin [offline] – built-in -->
+`version 9.0.0`
+`plugin [offline] – built-in`
 
 内置的离线插件确保[网站搜索]在您
 将[站点目录]的内容作为下载分发。只需添加

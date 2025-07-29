@@ -10,8 +10,8 @@
 
 ### 导航
 
-<!-- md:version 9.0.0 -->
-<!-- md:feature -->
+`version 9.0.0`
+`feature`
 
 页脚可以包含指向当前页面上一页和下一页的链接。
 如果要启用此行为，请在`mkdocs.yml`中添加以下行：
@@ -24,8 +24,8 @@ theme:
 
 ### 社交链接
 
-<!-- md:version 1.0.0 -->
-<!-- md:default none -->
+`version 1.0.0`
+`default none`
 
 社交链接作为版权声明的一部分显示在版权声明旁边
 项目文档的页脚。在`mkdocs.yml`中添加社交链接列表
@@ -51,9 +51,9 @@ extra:
 
 每个链接都有以下属性：
 
-<!-- md:option social.icon -->
+`option social.icon`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性必须包含指向与主题绑定的任何图标的有效路径，
     否则构建将不会成功。一些流行的选择：
 
@@ -70,9 +70,9 @@ extra:
     * :fontawesome-brands-discord: – `fontawesome/brands/discord`
     * :fontawesome-brands-pied-piper-alt: – `fontawesome/brands/pied-piper-alt`
 
-<!-- md:option social.link -->
+`option social.link`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性必须设置为包含URI的相对或绝对URL
     方案。支持所有URI方案，包括“mailto”和“bitcoin”：
 
@@ -94,9 +94,9 @@ extra:
               link: mailto:<email-address>
         ```
 
-<!-- md:option social.name -->
+`option social.name`
 
-:   <!-- md:default _domain name from_ `link`_, if available_ -->
+:   `default _domain name from__link__, if available_`
     此属性用作链接的“title”属性，可以设置为
     可辨别的名称，以提高可访问性：
 
@@ -113,8 +113,8 @@ extra:
 
 ### 版权声明
 
-<!-- md:version 0.1.0 -->
-<!-- md:default none -->
+`version 0.1.0`
+`default none`
 
 自定义版权横幅可以作为页脚的一部分呈现，即
 显示在社交链接旁边。它可以被定义为“mkdocs.yml”的一部分：
@@ -125,8 +125,8 @@ copyright: Copyright &copy; 2016 - 2020 Martin Donath
 
 ### 发电机通知
 
-<!-- md:version 7.3.0 -->
-<!-- md:default `true` -->
+`version 7.3.0`
+`default _true_`
 
 页脚显示了一个_Made with Material for MkDocs_通知，表示如何
 该网站已生成。可以通过以下选项删除通知
@@ -174,8 +174,8 @@ hide:
 
 ### 自定义版权
 
-<!-- md:version 8.0.0 -->
-<!-- md:flag customization -->
+`version 8.0.0`
+`flag customization`
 
 In order to customize and override the [copyright notice], [extend the theme]
 and [override the `copyright.html` partial][overriding partials], which normally

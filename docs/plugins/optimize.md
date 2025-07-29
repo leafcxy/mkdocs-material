@@ -12,7 +12,7 @@ icon: material/rabbit
 
 ---
 
-<!-- md:sponsors --> __Sponsors only__ – this plugin is currently reserved to
+`sponsors` __Sponsors only__ – this plugin is currently reserved to
 [our awesome sponsors].
 
   [building your project]: ../creating-your-site.md#building-your-site
@@ -83,11 +83,11 @@ MkDocs提供的材料，以创建复杂的
 
 ## 配置
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:plugin [optimize] – built-in -->
-<!-- md:flag multiple -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.29.0`
+`plugin [optimize] – built-in`
+`flag multiple`
+`flag experimental`
 
 与所有[内置插件]一样，开始使用优化插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，并观察如何
@@ -116,11 +116,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
@@ -136,11 +136,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.concurrency -->
+#### `setting config.concurrency`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default available CPUs - 1 -->
+`sponsors`
+`version insiders-4.29.0`
+`default available CPUs - 1`
 
 有了更多的CPU可用，插件可以并行执行更多的工作，因此
 更快地完成媒体文件优化。如果你想禁用并发
@@ -167,11 +167,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache -->
+#### `setting config.cache`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置指示插件绕过缓存，以便
 重新优化所有媒体文件，即使缓存可能不会过时。it is 的常用口语形式
@@ -186,11 +186,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache_dir -->
+#### `setting config.cache_dir`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `.cache/plugin/optimize` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _.cache/plugin/optimize_`
 
 通常不需要指定此设置，除非您需要
 更改根目录中缓存媒体文件的路径。
@@ -222,11 +222,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize -->
+#### `setting config.optimize`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.41.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.41.0`
+`default _true_`
 
 使用此设置启用或禁用媒体文件优化。目前，
 该插件的唯一目的是优化媒体文件，因此它相当于
@@ -241,11 +241,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_png -->
+#### `setting config.optimize_png`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置启用或禁用“.png”文件的优化。it is 的常用口语形式
 通常不需要指定此设置，但如果要禁用
@@ -259,11 +259,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_png_speed -->
+#### `setting config.optimize_png_speed`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `3` of `1-10` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _3_ of _1-10_`
 
 使用此设置指定[pngquant]应用的速度/质量折衷
 优化.png文件时。数字越低，攻击性越强
@@ -289,11 +289,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_png_strip -->
+#### `setting config.optimize_png_strip`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置指定[pngquant]是否应删除可选元数据
 来自不需要显示图像的.png文件，例如[EXIF]。
@@ -309,11 +309,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_jpg -->
+#### `setting config.optimize_jpg`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置启用或禁用“.jpg”文件的优化。it is 的常用口语形式
 通常不需要指定此设置，但如果要禁用
@@ -327,11 +327,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_jpg_quality -->
+#### `setting config.optimize_jpg_quality`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `60` of `0-100` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _60_ of _0-100_`
 
 使用此设置指定[Phillow]在以下情况下应用的图像质量
 优化.jpg文件。如果图像看起来模糊，最好
@@ -345,11 +345,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_jpg_progressive -->
+#### `setting config.optimize_jpg_progressive`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置指定[Phillow]是否应使用渐进编码
 优化.jpg文件时，在慢速连接上渲染速度更快。如果你想要我
@@ -365,11 +365,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_include -->
+#### `setting config.optimize_include`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.41.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.41.0`
+`default none`
 
 使用此设置可为特定目录启用媒体文件优化
 例如，当使用插件的[多个实例]进行优化时
@@ -388,11 +388,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.optimize_exclude -->
+#### `setting config.optimize_exclude`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.41.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.41.0`
+`default none`
 
 使用此设置可禁用特定目录的媒体文件优化
 例如，当使用插件的[多个实例]进行优化时
@@ -415,11 +415,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.print_gain -->
+#### `setting config.print_gain`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置控制插件是否应打印字节数
 优化每个文件后获得。如果要禁用此行为，请使用：
@@ -432,11 +432,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.print_gain_summary -->
+#### `setting config.print_gain_summary`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.29.0`
+`default _true_`
 
 使用此设置控制插件是否应打印
 优化所有文件后获得的字节数。如果你想禁用此行为，

@@ -60,9 +60,9 @@ icon: material/tag-text
 
 ## 配置
 
-<!-- md:version 8.2.0 -->
-<!-- md:plugin [tags] – built-in -->
-<!-- md:flag multiple -->
+`version 8.2.0`
+`plugin [tags] – built-in`
+`flag multiple`
 
 与所有[内置插件]一样，开始使用标签插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始使用
@@ -84,10 +84,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.1.7 -->
-<!-- md:default `true` -->
+`version 9.1.7`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
@@ -107,10 +107,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags -->
+#### `setting config.tags`
 
-<!-- md:version 9.3.2 -->
-<!-- md:default `true` -->
+`version 9.3.2`
+`default _true_`
 
 使用此设置启用或禁用标记的呈现。插件仍然
 从所有页面中提取标签，例如，用于[导出标签]而不呈现它们。
@@ -129,10 +129,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_file -->
+#### `setting config.tags_file`
 
-<!-- md:version 8.2.0 -->
-<!-- md:default none -->
+`version 8.2.0`
+`default none`
 
 !!! warning "此设置已弃用"
 
@@ -166,10 +166,10 @@ mkdocs.yml的一节。此设置不是必需的，您应该只使用它
 
 ---
 
-#### <!-- md:setting config.tags_slugify -->
+#### `setting config.tags_slugify`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default [`pymdownx.slugs.slugify`][pymdownx.slugs.slugify] -->
+`version 9.6.0`
+`default [_pymdownx.slugs.slugify_][pymdownx.slugs.slugify]`
 
 使用此设置更改生成与URL兼容的slug的功能
 从帖子标题。默认情况下，['slugify][pymdownx.slugs.slugify]函数
@@ -192,10 +192,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_slugify_separator -->
+#### `setting config.tags_slugify_separator`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `-` -->
+`version 9.6.0`
+`default _-_ `
 
 使用此设置更改传递给slugif的分隔符
 函数设置为[tags_slugify][config.tags_slugif]的一部分。虽然默认
@@ -209,10 +209,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_slugify_format -->
+#### `setting config.tags_slugify_format`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `tag:{slug}` -->
+`version 9.6.0`
+`default _tag:{slug}_`
 
 使用此设置更改生成标记时使用的格式字符串
 蛞蝓。最好在标签slug前加一个字符串，使它们
@@ -230,12 +230,12 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_hierarchy -->
+#### `setting config.tags_hierarchy`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default `false` -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.48.0`
+`default _false_`
+`flag experimental`
 
 使用此设置启用对标签层次结构（嵌套标签。，
 `foo/bar`）。如果您打算创建标签的分层列表，可以
@@ -249,12 +249,12 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_hierarchy_separator -->
+#### `setting config.tags_hierarchy_separator`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default `/` -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.48.0`
+`default _/_`
+`flag experimental`
 
 使用此设置更改创建标记时使用的分隔符
 等级制度。默认情况下，标签之间用正斜杠“/”分隔，但
@@ -268,10 +268,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_sort_by -->
+#### `setting config.tags_sort_by`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `material.plugins.tags.tag_name` -->
+`version 9.6.0`
+`default _material.plugins.tags.tag_name_`
 
 使用此设置可指定用于比较标记的自定义函数。默认情况下，
 标签比较区分大小写，但您可以使用`tagname_casefold`
@@ -289,10 +289,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_sort_reverse -->
+#### `setting config.tags_sort_reverse`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `false` -->
+`version 9.6.0`
+`default _false_`
 
 使用此设置可反转比较时标签的排序顺序
 他们。默认情况下，标签按升序排序，但您可以反转
@@ -306,10 +306,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_name_property -->
+#### `setting config.tags_name_property`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default [`tags`][meta.tags] -->
+`version 9.6.0`
+`default [_tags_][meta.tags]`
 
 使用此设置可更改所使用的前端属性的名称
 插件。通常不需要更改此设置，但如果你愿意
@@ -323,10 +323,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_name_variable -->
+#### `setting config.tags_name_variable`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `tags` -->
+`version 9.6.0`
+`default _tags_`
 
 使用此设置可更改所使用的模板变量的名称
 插件。通常不需要更改此设置，但如果你愿意
@@ -340,10 +340,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.tags_allowed -->
+#### `setting config.tags_allowed`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default none -->
+`version 9.6.0`
+`default none`
 
 该插件允许根据预定义的列表检查标签，以便捕获
 拼写错误或确保标签不是随意添加的。指定您的标签
@@ -368,10 +368,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings -->
+#### `setting config.listings`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `true` -->
+`version 9.6.0`
+`default _true_`
 
 使用此设置启用或禁用列表。通常不需要
 更改此设置，因为列表完全由内联注释创建，但是
@@ -390,10 +390,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings_map -->
+#### `setting config.listings_map`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default none -->
+`version 9.6.0`
+`default none`
 
 使用此定义列表配置，然后可以在列表中引用
 具有自定义标识符。共享配置是一个好主意，尤其是
@@ -420,10 +420,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings_sort_by -->
+#### `setting config.listings_sort_by`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `material.plugins.tags.item_title` -->
+`version 9.6.0`
+`default _material.plugins.tags.item_title_`
 
 使用此设置可指定用于比较列表项的自定义函数。By
 默认情况下，项目按标题排序，但您可以更改排序
@@ -451,10 +451,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings_sort_reverse -->
+#### `setting config.listings_sort_reverse`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `false` -->
+`version 9.6.0`
+`default _false_`
 
 使用此设置可反转比较时项目的排序顺序
 他们。默认情况下，项目按升序排序，但您可以颠倒顺序
@@ -468,10 +468,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings_tags_sort_by -->
+#### `setting config.listings_tags_sort_by`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `material.plugins.tags.tag_name` -->
+`version 9.6.0`
+`default _material.plugins.tags.tag_name_`
 
 使用此设置可指定用于比较列表中标记的自定义函数。靠近
 默认情况下，标记比较区分大小写，但您可以使用`tagname_casefold`
@@ -489,10 +489,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings_tags_sort_reverse -->
+#### `setting config.listings_tags_sort_reverse`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `false` -->
+`version 9.6.0`
+`default _false_`
 
 使用此设置可反转比较时标签的排序顺序
 他们。默认情况下，标签按升序排序，但您可以反转
@@ -506,10 +506,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings_directive -->
+#### `setting config.listings_directive`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `material/tags` -->
+`version 9.6.0`
+`default _material/tags_`
 
 使用此设置更改插件将查找的指令的名称
 在处理页面时。如果你想使用比以下指令更短的指令
@@ -529,11 +529,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.listings_toc -->
+#### `setting config.listings_toc`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.48.0`
+`default _true_`
 
 使用此设置启用或禁用目录中显示的标记。
 如果您不希望标签显示在目录中，可以禁用此功能
@@ -551,11 +551,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.shadow -->
+#### `setting config.shadow`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default `false` -->
+`sponsors`
+`version insiders-4.48.0`
+`default _false_`
 
 使用此设置指定插件是否应在
 在[构建项目]时，在页面和列表中，这可能对
@@ -579,11 +579,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.shadow_on_serve -->
+#### `setting config.shadow_on_serve`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.48.0`
+`default _true_`
 
 使用此设置控制插件是否应在
 在[预览您的网站]时，您可以在页面和列表中查看。如果你不想包括
@@ -599,11 +599,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.shadow_tags -->
+#### `setting config.shadow_tags`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.48.0`
+`default none`
 
 该插件允许指定一个预定义的阴影标签列表，这些标签可以
 通过使用['shadow][config.shadow]将其包含在构建中或从构建中排除
@@ -619,11 +619,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.shadow_tags_prefix -->
+#### `setting config.shadow_tags_prefix`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.48.0`
+`default none`
 
 使用此设置指定一个字符串作为每个标记的前缀。
 如果标记以此字符串开头，则标记为影子标记。一个常见的
@@ -637,11 +637,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.shadow_tags_suffix -->
+#### `setting config.shadow_tags_suffix`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.48.0`
+`default none`
 
 使用此设置指定一个字符串作为每个标记的后缀。
 如果标记以此字符串结尾，则标记为影子标记。一种选择
@@ -660,11 +660,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.export -->
+#### `setting config.export`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.49.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.49.0`
+`default _true_`
 
 使用此设置控制插件是否创建“tags.json”文件
 在您的[`site`目录][mkdocs.site_dir]中，然后可以由以下用户使用
@@ -678,11 +678,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.export_file -->
+#### `setting config.export_file`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.49.0 -->
-<!-- md:default `tags.json` -->
+`sponsors`
+`version insiders-4.49.0`
+`default _tags.json_`
 
 使用此设置更改导出标记所在的文件路径
 存储。通常不需要更改此设置，但如果需要，
@@ -698,11 +698,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.export_only -->
+#### `setting config.export_only`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.49.0 -->
-<!-- md:default `false` -->
+`sponsors`
+`version insiders-4.49.0`
+`default _false_`
 
 提供此设置仅是为了方便禁用标签的呈现
 以及具有单个设置的列表（例如通过使用环境变量），
@@ -725,11 +725,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting meta.tags -->
+#### `setting meta.tags`
 
-<!-- md:version 8.2.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`version 8.2.0`
+`flag metadata`
+`default none`
 
 使用此属性将页面与一个或多个标记相关联，使页面
 出现在生成的标签索引中。标签被定义为字符串列表
@@ -761,10 +761,10 @@ tags:
 
 ---
 
-#### <!-- md:setting listing.scope -->
+#### `setting listing.scope`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `false` -->
+`version 9.6.0`
+`default _false_`
 
 此设置指定列表是否应仅考虑以下页面
 在页面文档的当前小节中，该列表是
@@ -794,11 +794,11 @@ tags:
 
 ---
 
-#### <!-- md:setting listing.shadow -->
+#### `setting listing.shadow`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.49.0 -->
-<!-- md:default computed -->
+`sponsors`
+`version insiders-4.49.0`
+`default computed`
 
 此设置指定列表是否应包含阴影标记
 允许覆盖每个列表上的全局[“shadow”][config.shadow]设置
@@ -828,11 +828,11 @@ tags:
 
 ---
 
-#### <!-- md:setting listing.toc -->
+#### `setting listing.toc`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:default [`listings_toc`][config.listings_toc] -->
+`sponsors`
+`version insiders-4.48.0`
+`default [_listings_toc_][config.listings_toc]`
 
 此设置指定列表是否应呈现表内的标记
 内容，允许覆盖全局[`listings_toc`][config.listings_to]
@@ -862,10 +862,10 @@ tags:
 
 ---
 
-#### <!-- md:setting listing.include -->
+#### `setting listing.include`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default none -->
+`version 9.6.0`
+`default none`
 
 使用此设置指定列表中应包含哪些标记。每个
 包含此设置中的标记的页面列在
@@ -899,10 +899,10 @@ tags:
 
 ---
 
-#### <!-- md:setting listing.exclude -->
+#### `setting listing.exclude`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default none -->
+`version 9.6.0`
+`default none`
 
 使用此设置指定应从列表中排除哪些标记。每个
 包含此设置中的标记的页面被排除在外

@@ -9,7 +9,7 @@ categories:
   - Search
 links:
   - blog/posts/search-better-faster-smaller.md
-  - plugins/search.md#_12
+  - plugins/search.md#_8
   - insiders/how-to-sponsor.md
 ---
 

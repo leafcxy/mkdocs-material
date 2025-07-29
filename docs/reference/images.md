@@ -34,8 +34,8 @@ markdown_extensions:
 
 ### 灯箱
 
-<!-- md:version 0.1.0 -->
-<!-- md:plugin [glightbox] -->
+`version 0.1.0`
+`plugin [glightbox]`
 
 如果您想在文档中添加图像缩放功能
 [glightbox]插件是一个很好的选择，因为它完美地集成了
@@ -166,7 +166,7 @@ Image caption
 
 ### 亮暗模式
 
-<!-- md:version 8.1.1 -->
+`version 8.1.1`
 
 如果您添加了[调色板切换]并希望显示不同的图像
 浅色和深色配色方案，您可以附加“仅浅色”或“仅深色”`

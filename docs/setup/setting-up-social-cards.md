@@ -34,10 +34,10 @@ Social card of our [formatting] reference
 
 ### 内置社交插件
 
-<!-- md:version 8.5.0 -->
-<!-- md:plugin -->
-<!-- md:flag experimental -->
-<!-- md:demo create-social-cards -->
+`version 8.5.0`
+`plugin`
+`flag experimental`
+`demo create-social-cards`
 
 内置的社交插件会自动生成自定义预览图像
 每一页。安装所有[图像处理依赖项]并添加
@@ -127,9 +127,9 @@ plugins:
 
 ### 更改布局
 
-<!-- md:version insiders-4.37.0 -->
-<!-- md:flag metadata -->
-<!-- md:flag experimental -->
+`version insiders-4.37.0`
+`flag metadata`
+`flag experimental`
 
 如果你想对单个页面使用不同的布局（例如你的着陆
 页面），您可以将“社会”前沿属性与
@@ -154,9 +154,9 @@ social:
 
 ### Parametrizing the layout
 
-<!-- md:version insiders-4.37.0 -->
-<!-- md:flag metadata -->
-<!-- md:flag experimental -->
+`version insiders-4.37.0`
+`flag metadata`
+`flag experimental`
 
 除了更改整个布局外，您还可以覆盖布局的所有选项
 暴露。这意味着您可以使用自定义前件对社交卡进行参数化
@@ -181,9 +181,9 @@ social:
 
 ### 禁用社交卡
 
-<!-- md:version insiders-4.37.0 -->
-<!-- md:flag metadata -->
-<!-- md:flag experimental -->
+`version insiders-4.37.0`
+`flag metadata`
+`flag experimental`
 
 如果您想禁用页面的社交卡，只需将以下内容添加到
 Markdown文档的首页：
@@ -200,9 +200,9 @@ social:
 
 ## 自定义
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.33.0`
+`flag experimental`
 
 [内部人士]对[内置社交插件]进行了彻底的重写
 介绍了一种基于YAML和.NET的全新布局系统
@@ -318,8 +318,8 @@ mkdocs.yml中的模式。左上角显示了图层索引和偏移量，即
 
 #### 起源
 
-<!-- md:version insiders-4.35.0 -->
-<!-- md:flag experimental -->
+`version insiders-4.35.0`
+`flag experimental`
 
 “x”和“y”值的“原点”可以更改，因此该层为
 与布局的边缘或角落对齐，例如右下角

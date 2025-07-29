@@ -12,7 +12,7 @@ Insiders Edition允许您为社交卡定义自定义布局
 作为您添加或以其他方式修改的基础。在本教程中，您将
 使用默认布局作为基础。
 
-!!! example "复制默认布局以进行自定义 <!-- md:sponsors -->"
+!!! example "复制默认布局以进行自定义 `sponsors`"
 
     从安装的Material复制默认社交卡布局
     将MkDocs添加到新目录`layouts`。以下说明假设您
@@ -53,7 +53,7 @@ Insiders Edition允许您为社交卡定义自定义布局
 将最新版本的版本号添加到页眉中（确实如此
 不需要从Markdown内容中解析出来）：
 
-!!! example "定义发布数据 <!-- md:sponsors -->"
+!!! example "定义发布数据 `sponsors`"
 
     创建一个包含以下内容的页面`docs/changelog.md`：
 

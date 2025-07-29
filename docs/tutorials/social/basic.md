@@ -108,7 +108,7 @@ Markdown文件的结构。每个页面都有一个对应的PNG文件
 
 ## 其他布局和样式
 
-<!-- md:sponsors -->
+`sponsors`
 
 Insiders Edition提供了额外的布局以及以下选项
 为不同（类型）的页面配置不同的样式。
@@ -169,7 +169,7 @@ Insiders Edition为社交媒体提供了许多额外的布局
 
 ## Per-page设置
 
-<!-- md:sponsors -->
+`sponsors`
 
 使用Insiders Edition，您可以自定义每个卡的布局
 通过在页眉中添加设置来创建页面。你有效地做到了这一点

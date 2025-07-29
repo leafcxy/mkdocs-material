@@ -11,8 +11,8 @@ MkDocs的材料使更改项目的字体变得容易
 
 ### 常规字体
 
-<!-- md:version 0.1.2 -->
-<!-- md:default [`Roboto`][Roboto] -->
+`version 0.1.2`
+`default [_Roboto_][Roboto]`
 
 常规字体用于所有正文、标题和基本内容
 所有不需要等宽的东西。它可以设置为任何
@@ -30,8 +30,8 @@ theme:
 
 ### 等宽字体
 
-<!-- md:version 0.1.2 -->
-<!-- md:default [`Roboto Mono`][Roboto Mono] -->
+`version 0.1.2`
+`default [_Roboto Mono_][Roboto Mono]`
 
 _monospace font_用于代码块，可以单独配置。
 就像常规字体一样，它可以设置为任何有效的[谷歌字体]
@@ -49,8 +49,8 @@ theme:
 
 ### 自动加载
 
-<!-- md:version 1.0.0 -->
-<!-- md:default none -->
+`version 1.0.0`
+`default none`
 
 如果你想阻止从[谷歌字体]加载字体，例如。
 要遵守[数据隐私]规定，并退回到系统字体，请添加

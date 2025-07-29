@@ -11,8 +11,8 @@ MkDocs的材料增加了对带有标签的页面分类的一流支持，
 
 ### 内置标签插件
 
-<!-- md:version 8.2.0 -->
-<!-- md:plugin -->
+`version 8.2.0`
+`plugin`
 
 内置的标签插件增加了对任何带有标签的页面进行分类的能力
 作为页面首页的一部分。为了添加对标签的支持，请添加
@@ -29,9 +29,9 @@ plugins:
 
 #### 高级设置
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.48.0`
+`flag experimental`
 
 以下高级设置目前保留给我们的[赞助商]
 [内部人士]。它们完全是可选的，只会添加额外的功能
@@ -48,9 +48,9 @@ plugins:
 
 ### 标记图标和标识符
 
-<!-- md:version 8.5.0 -->
-<!-- md:flag experimental -->
-<!-- md:example tags-with-icons -->
+`version 8.5.0`
+`flag experimental`
+`example tags-with-icons`
 
 每个标签都可以与一个图标相关联，然后在标签内呈现。
 在将图标分配给标签之前，将每个标签与唯一的标识符相关联，
@@ -131,8 +131,8 @@ extra:
 
 ### 添加标签
 
-<!-- md:version 8.2.0 -->
-<!-- md:example tags -->
+`version 8.2.0`
+`example tags`
 
 启用[内置标签插件]后，可以为文档添加标签
 带有前体“标签”属性。在a的顶部添加以下行
@@ -175,8 +175,8 @@ tags:
 
 ### 添加标签索引
 
-<!-- md:version 8.2.0 -->
-<!-- md:example tags -->
+`version 8.2.0`
+`example tags`
 
 [内置标签插件]允许定义一个文件来呈现标签索引，
 该页面可以是“导航”部分的任何页面。为了添加标签索引，
@@ -211,8 +211,8 @@ tags:
 
 #### 可配置列表
 
-<!-- md:version 9.6.0 -->
-<!-- md:flag experimental -->
+`version 9.6.0`
+`flag experimental`
 
 列表可以在`mkdocs.yml`中配置，也可以直接在
 您在Markdown文档中放置的标记。一些例子：
@@ -252,9 +252,9 @@ tags:
 
 #### 范围列表
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.48.0`
+`flag experimental`
 
 如果您的文档很大，您可能需要考虑使用范围列表
 其将仅包括处于同一级别或低于该页面的页面
@@ -283,9 +283,9 @@ plugins:
 
 #### 阴影标签
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.48.0`
+`flag experimental`
 
 影子标签是专门用于组织的标签，可以
 包含或排除使用简单标志进行渲染。它们可以列举出来
@@ -308,9 +308,9 @@ plugins:
 
 #### 嵌套标签
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.48.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.48.0`
+`flag experimental`
 
 [Insiders]提供对嵌套标签的支持。这个
 [标签层次分隔符][配置标签层次分隔器]允许创建

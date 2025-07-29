@@ -9,8 +9,8 @@
 
 ### 存储库
 
-<!-- md:version 0.1.0 -->
-<!-- md:default none -->
+`version 0.1.0`
+`default none`
 
 为了在您的项目中显示指向项目存储库的链接
 documentation，将`mkdocs.yml`中的[`repo_url`][repo_url]设置为以下内容的公共url
@@ -44,8 +44,8 @@ repo_url: https://github.com/squidfunk/mkdocs-material
 
 #### 存储库名称
 
-<!-- md:version 0.1.0 -->
-<!-- md:default _automatically set to_ `GitHub`, `GitLab` _or_ `Bitbucket` -->
+`version 0.1.0`
+`default _automatically set to_ _GitHub_, _GitLab_ _or_ _Bitbucket_`
 
 MkDocs将通过检查URL来推断源提供者，并尝试设置
 _存储库名称_自动。如果要自定义名称，请设置
@@ -59,8 +59,8 @@ repo_name: squidfunk/mkdocs-material
 
 #### 存储库图标
 
-<!-- md:version 5.0.0 -->
-<!-- md:default computed -->
+`version 5.0.0`
+`default computed`
 
 虽然默认存储库图标是通用的git图标，但可以将其设置为
 通过引用中的有效图标路径与主题捆绑在一起的任何图标
@@ -98,8 +98,8 @@ theme:
 
 #### 代码操作
 
-<!-- md:version 9.0.0 -->
-<!-- md:feature -->
+`version 9.0.0`
+`feature`
 
 如果[存储库URL]指向有效的[GitHub]、[GitLab]或[Bitbucket]
 存储库中，[MkDocs]提供了一个名为[`edit_uri`][edit_uri]的设置
@@ -170,8 +170,8 @@ theme:
 
 #### 文件日期
 
-<!-- md:version 4.6.0 -->
-<!-- md:plugin [git-revision-date-localized] -->
+`version 4.6.0`
+`plugin [git-revision-date-localized]`
 
 [git修订日期本地化]插件增加了对添加日期的支持
 最后更新和创建每页底部的文档。安装它
@@ -191,9 +191,9 @@ plugins:
 
 支持以下配置选项：
 
-<!-- md:option git-revision-date-localized.enabled -->
+`option git-revision-date-localized.enabled`
 
-:   <!-- md:default `true` --> 此选项指定是否
+:   `default _true_` 此选项指定是否
     在构建项目时启用该插件。如果你想切换
     关闭插件，例如对于本地构建，使用[环境变量]：
 
@@ -203,9 +203,9 @@ plugins:
           enabled: !ENV [CI, false]
     ```
 
-<!-- md:option git-revision-date-localized.type -->
+`option git-revision-date-localized.type`
 
-:   <!-- md:default `date` --> 日期格式为
+:   `default _date_` 日期格式为
     显示。有效值为“date”、“datetime”、“iso_date”、“iso _datetime”`
     以及“timeago”：
 
@@ -215,9 +215,9 @@ plugins:
           type: date
     ```
 
-<!-- md:option git-revision-date-localized.enable_creation_date -->
+`option git-revision-date-localized.enable_creation_date`
 
-:   <!-- md:default `false` --> 启用显示
+:   `default _false_` 启用显示
     与上次更新页面旁边的页面关联的文件的创建日期
     页面底部的日期：
 
@@ -233,9 +233,9 @@ plugins:
         获取代码时的CI设置。有关更多信息，请参见
         [git修订日期本地化]。
 
-<!-- md:option git-revision-date-localized.fallback_to_build_date -->
+`option git-revision-date-localized.fallback_to_build_date`
 
-:   <!-- md:default `false` --> 允许回退到
+:   `default _false_` 允许回退到
     执行mkdocs-build的时间。在以下情况下可以用作后备
     构建是在git存储库之外执行的：
 
@@ -253,9 +253,9 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
 
 #### 文档贡献者
 
-<!-- md:version 9.5.0 -->
-<!-- md:plugin [git-committers] -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`plugin [git-committers]`
+`flag experimental`
 
 [git committers][^2]插件呈现所有贡献者的GitHub头像，
 链接到每个页面底部的GitHub配置文件。一如既往，它可以
@@ -282,9 +282,9 @@ plugins:
 
 支持以下配置选项：
 
-<!-- md:option git-committers.enabled -->
+`option git-committers.enabled`
 
-:   <!-- md:default `true` --> 此选项指定是否
+:   `default _true_` 此选项指定是否
     在构建项目时启用该插件。如果你想切换
     关闭插件，例如对于本地构建，使用[环境变量]：
 
@@ -294,9 +294,9 @@ plugins:
           enabled: !ENV [CI, false]
     ```
 
-<!-- md:option git-committers.repository -->
+`option git-committers.repository`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性必须设置为包含您的存储库的slug
     文档。slug必须遵循“<username>/<repository>”模式：
 
@@ -306,9 +306,9 @@ plugins:
           repository: squidfunk/mkdocs-material
     ```
 
-<!-- md:option git-committers.branch -->
+`option git-committers.branch`
 
-:   <!-- md:default `master` --> 此属性应设置为
+:   `default _master_` 此属性应设置为
     从中检索贡献者的存储库分支。要使用“main”分支：
 
     ``` yaml
@@ -328,9 +328,9 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
 
 #### 文档作者
 
-<!-- md:version 9.5.0 -->
-<!-- md:plugin [git-authors] -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`plugin [git-authors]`
+`flag experimental`
 
 [git authors]插件是轻量级的替代品
 [git committers]插件，从git中提取文档的作者以显示

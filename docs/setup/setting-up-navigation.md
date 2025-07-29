@@ -20,8 +20,8 @@
 
 ### 即时加载
 
-<!-- md:version 5.0.0 -->
-<!-- md:feature -->
+`version 5.0.0`
+`feature`
 
 启用即时加载后，将单击所有内部链接
 在没有完全重新加载页面的情况下，通过[XHR]拦截和发送。添加
@@ -52,10 +52,10 @@ theme:
 
 #### 即时预取
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.36.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.36.0`
+`feature`
+`flag experimental`
 
 即时预取是一种新的实验性功能，它将开始获取
 一旦用户将鼠标悬停在链接上，页面就会自动弹出。这将减少感知负载
@@ -71,9 +71,9 @@ theme:
 
 #### 进度指示器
 
-<!-- md:version 9.4.3 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`version 9.4.3`
+`feature`
+`flag experimental`
 
 为了在使用时在慢速连接上提供更好的用户体验
 即时导航，可以启用进度指示器。它将在
@@ -93,10 +93,10 @@ theme:
 
 ### 即时预览
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.52.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.52.0`
+`feature`
+`flag experimental`
 
 即时预览是一种全新的功能，允许用户预览另一个
 无需导航到文档的网站。它们对
@@ -125,10 +125,10 @@ theme:
 
 #### 自动预览
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.53.0 -->
-<!-- md:extension -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.53.0`
+`extension`
+`flag experimental`
 
 使用即时预览的推荐方法是使用Markdown
 MkDocs材料中包含的扩展，因为它允许您启用
@@ -204,8 +204,8 @@ theme:
 
 ### 锚点跟踪
 
-<!-- md:version 8.0.0 -->
-<!-- md:feature -->
+`version 8.0.0`
+`feature`
 
 启用锚点跟踪后，地址栏中的URL会自动
 使用目录中突出显示的活动锚点进行更新。添加
@@ -219,8 +219,8 @@ theme:
 
 ### 导航选项卡
 
-<!-- md:version 1.1.0 -->
-<!-- md:feature -->
+`version 1.1.0`
+`feature`
 
 启用选项卡后，顶级部分将在下面的菜单层中呈现
 高于1220px的视口标题，但在移动设备上保持不变。[^1]添加
@@ -254,8 +254,8 @@ theme:
 
 #### 粘性导航标签
 
-<!-- md:version 7.3.0 -->
-<!-- md:feature -->
+`version 7.3.0`
+`feature`
 
 启用粘性标签后，导航标签将锁定在标题下方
 向下滚动时始终可见。只需添加以下两个功能
@@ -281,8 +281,8 @@ theme:
 
 ### 导航部分
 
-<!-- md:version 6.2.0 -->
-<!-- md:feature -->
+`version 6.2.0`
+`feature`
 
 启用分区后，顶级分区将在
 侧边栏用于显示1220px以上的视口，但在移动设备上保持不变。添加
@@ -311,8 +311,8 @@ theme:
 
 ### 导航扩展
 
-<!-- md:version 6.2.0 -->
-<!-- md:feature -->
+`version 6.2.0`
+`feature`
 
 启用扩展后，左侧边栏将展开所有可折叠的内容
 默认情况下为子节，因此用户不必手动打开子节。
@@ -337,10 +337,10 @@ theme:
 
 ### Navigation path <small>Breadcrumbs</small> { id=navigation-path }
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.28.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.28.0`
+`feature`
+`flag experimental`
 
 当导航路径被激活时，上面会呈现面包屑导航
 每个页面的标题，这可能会让访问您的网站的用户更容易定位
@@ -366,9 +366,9 @@ theme:
 
 ### 导航修剪
 
-<!-- md:version 9.2.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`version 9.2.0`
+`feature`
+`flag experimental`
 
 启用修剪后，只有可见的导航项才会包含在
 渲染HTML，将构建网站的大小减少33%或更多。添加
@@ -393,8 +393,8 @@ theme:
 
 ### 章节索引页
 
-<!-- md:version 7.3.0 -->
-<!-- md:feature -->
+`version 7.3.0`
+`feature`
 
 启用节索引页后，文档可以直接附加到
 部分，这对于提供概述页面特别有用。添加
@@ -441,9 +441,9 @@ nav:
 
 #### 锚跟踪
 
-<!-- md:version 8.5.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`version 8.5.0`
+`feature`
+`flag experimental`
 
 当启用[目录]的锚点跟踪时，侧边栏为
 自动滚动，以便活动锚点始终可见。添加
@@ -457,8 +457,8 @@ theme:
 
 #### 导航集成
 
-<!-- md:version 6.2.0 -->
-<!-- md:feature -->
+`version 6.2.0`
+`feature`
 
 当启用[目录]的导航集成时，它总是
 呈现为左侧导航侧边栏的一部分。添加以下行
@@ -489,8 +489,8 @@ theme:
 
 ### 返回顶部按钮
 
-<!-- md:version 7.1.0 -->
-<!-- md:feature -->
+`version 7.1.0`
+`feature`
 
 当用户向下滚动后开始时，可以显示一个返回顶部按钮
 再次向上滚动。它被渲染在标题的正下方。添加
@@ -506,8 +506,8 @@ theme:
 
 ### 隐藏侧边栏
 
-<!-- md:version 6.2.0 -->
-<!-- md:flag metadata -->
+`version 6.2.0`
+`flag metadata`
 
 文档的导航和/或目录侧栏可以隐藏
 具有前体“隐藏”属性。在a的顶部添加以下行
@@ -542,9 +542,9 @@ hide:
 
 ### 隐藏导航路径
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.28.0 -->
-<!-- md:flag metadata -->
+`sponsors`
+`version insiders-4.28.0`
+`flag metadata`
 
 虽然[导航路径]显示在主标题上方，但有时
 可能需要为特定页面隐藏它，这可以通过以下方式实现
@@ -569,7 +569,7 @@ hide:
 MkDocs的材料包括几个键盘快捷键，使其成为可能
 通过键盘浏览项目文档。有两种模式：
 
-<!-- md:option mode:search -->
+`option mode:search`
 
 :   当_search聚焦时，此模式处于活动状态。它提供了几个关键
     绑定使搜索可通过键盘访问和导航：
@@ -578,7 +578,7 @@ MkDocs的材料包括几个键盘快捷键，使其成为可能
     * ++esc++ , ++tab++ : close search dialog
     * ++enter++ : follow selected result
 
-<!-- md:option mode:global -->
+`option mode:global`
 
 :   当_search未聚焦且没有其他模式时，此模式处于活动状态
     易受键盘输入影响的聚焦元件。以下按键

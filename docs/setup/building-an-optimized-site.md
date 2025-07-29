@@ -11,10 +11,10 @@ further useful automatic optimization techniques.
 
 ### 内置项目插件
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:plugin [projects] – built-in -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.38.0`
+`plugin [projects] – built-in`
+`flag experimental`
 
 内置的项目插件允许将文档拆分为多个
 不同的MkDocs项目，__同时构建它们__和
@@ -44,8 +44,8 @@ plugins:
 
 #### 范围
 
-<!-- md:version 8.0.0 -->
-<!-- md:default none -->
+`version 8.0.0`
+`default none`
 
 可能有一个用例，你想共享用户级设置，比如
 所选的[调色板]或所有项目的[cookie同意]。着手做
@@ -89,10 +89,10 @@ extra:
 
 ### 内置优化插件
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.29.0 -->
-<!-- md:plugin [optimize] – built-in -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.29.0`
+`plugin [optimize] – built-in`
+`flag experimental`
 
 内置的优化插件会自动识别和优化所有媒体
 使用压缩和转换技术将文件作为构建的一部分。添加

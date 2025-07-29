@@ -68,8 +68,8 @@ icon: material/magnify
 
 ## 配置
 
-<!-- md:version 9.0.0 -->
-<!-- md:plugin [search] – built-in -->
+`version 9.0.0`
+`plugin [search] – built-in`
 
 与所有[内置插件]一样，开始使用搜索插件是
 直截了当。只需将以下行添加到`mkdocs.yml`和您的用户
@@ -92,10 +92,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.3.2 -->
-<!-- md:default `true` -->
+`version 9.3.2`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
@@ -115,10 +115,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.lang -->
+#### `setting config.lang`
 
-<!-- md:version 9.0.0 -->
-<!-- md:default computed -->
+`version 9.0.0`
+`default computed`
 
 使用此设置指定搜索索引的语言，启用[词干]
 支持英语以外的其他语言。默认值为自动
@@ -198,10 +198,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.separator -->
+#### `setting config.separator`
 
-<!-- md:version 9.0.0 -->
-<!-- md:default computed -->
+`version 9.0.0`
+`default computed`
 
 使用此设置指定构建时用于拆分单词的分隔符
 客户端的搜索索引。默认值是自动计算的
@@ -270,11 +270,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.pipeline -->
+#### `setting config.pipeline`
 
-<!-- md:version 9.0.0 -->
-<!-- md:default computed -->
-<!-- md:flag experimental -->
+`version 9.0.0`
+`default computed`
+`flag experimental`
 
 使用此设置指定用于过滤和
 使用[`separate][config.separate]对令牌进行标记后展开令牌，以及
@@ -311,11 +311,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.jieba_dict -->
+#### `setting config.jieba_dict`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default none -->
-<!-- md:flag experimental -->
+`version 9.2.0`
+`default none`
+`flag experimental`
 
 使用此设置指定[jieba]使用的[自定义词典]
 分割文本，替换默认词典。[jieba]来了
@@ -340,11 +340,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.jieba_dict_user -->
+#### `setting config.jieba_dict_user`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default none -->
-<!-- md:flag experimental -->
+`version 9.2.0`
+`default none`
+`flag experimental`
 
 使用此设置指定要使用的其他[用户词典]
 [jieba]用于分割文本，扩充默认词典。用户
@@ -368,11 +368,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting meta.search.boost -->
+#### `setting meta.search.boost`
 
-<!-- md:version 8.3.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`version 8.3.0`
+`flag metadata`
+`default none`
 
 使用此属性可增加或减少搜索中页面的相关性
 结果，给他们更多的权重。使用高于“1”的值进行排名
@@ -406,11 +406,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting meta.search.exclude -->
+#### `setting meta.search.exclude`
 
-<!-- md:version 9.0.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`version 9.0.0`
+`flag metadata`
+`default none`
 
 使用此属性可从搜索结果中排除页面。请注意，这将
 不仅删除页面，还从搜索中删除页面的所有子部分

@@ -32,8 +32,8 @@ markdown_extensions:
 
 ### 锚链接
 
-<!-- md:version 9.5.0 -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`flag experimental`
 
 为了链接到内容选项卡并更容易地共享它们，锚链接是
 自动添加到每个内容选项卡中，您可以通过右键单击或
@@ -72,8 +72,8 @@ markdown_extensions:
 
 ### 链接内容选项卡
 
-<!-- md:version 8.3.0 -->
-<!-- md:feature -->
+`version 8.3.0`
+`feature`
 
 启用后，整个文档站点上的所有内容选项卡都将
 当用户单击选项卡时，链接并切换到同一标签。添加

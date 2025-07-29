@@ -36,10 +36,10 @@ if and only if组已启用，这意味着插件不会添加任何
 
 ## 配置
 
-<!-- md:version 9.3.0 -->
-<!-- md:plugin [group] – built-in -->
-<!-- md:flag multiple -->
-<!-- md:flag experimental -->
+`version 9.3.0`
+`plugin [group] – built-in`
+`flag multiple`
+`flag experimental`
 
 与所有[内置插件]一样，开始使用组插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
@@ -62,10 +62,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.3.0 -->
-<!-- md:default `false` -->
+`version 9.3.0`
+`default _false_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 该插件的行为与所有其他内置插件不同——它是
@@ -101,10 +101,10 @@ CI=true mkdocs build
 
 ---
 
-#### <!-- md:setting config.plugins -->
+#### `setting config.plugins`
 
-<!-- md:version 9.3.0 -->
-<!-- md:default none -->
+`version 9.3.0`
+`default none`
 
 使用此设置列出属于该组的插件。语法是
 与[`plugins][mkdocs.plugins]设置完全相同，因此您可以

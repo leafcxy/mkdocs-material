@@ -12,7 +12,7 @@ icon: material/folder-open
 
 ---
 
-<!-- md:sponsors --> __Sponsors only__ – this plugin is currently reserved to
+`sponsors` __Sponsors only__ – this plugin is currently reserved to
 [our awesome sponsors].
 
   [our awesome sponsors]: ../insiders/index.md
@@ -70,10 +70,10 @@ icon: material/folder-open
 
 ## 配置
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:plugin [projects] – built-in -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.38.0`
+`plugin [projects] – built-in`
+`flag experimental`
 
 为了开始使用项目插件，只需添加以下行
 将主项目拆分为几个不同的项目
@@ -95,11 +95,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.38.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
@@ -117,11 +117,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.concurrency -->
+#### `setting config.concurrency`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:default available CPUs - 1 -->
+`sponsors`
+`version insiders-4.38.0`
+`default available CPUs - 1`
 
 有了更多的CPU可用，插件可以并行执行更多的工作，因此
 更快地构建项目。如果你想完全禁用并发处理，
@@ -148,11 +148,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache -->
+#### `setting config.cache`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.38.0`
+`default _true_`
 
 使用此设置指示插件绕过缓存，以便
 重建所有项目，即使缓存可能没有过时。通常不会
@@ -167,11 +167,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache_dir -->
+#### `setting config.cache_dir`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:default `.cache/plugin/projects` -->
+`sponsors`
+`version insiders-4.38.0`
+`default _.cache/plugin/projects_`
 
 通常不需要指定此设置，除非您需要
 更改根目录中缓存元数据的路径。
@@ -189,11 +189,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.log -->
+#### `setting config.log`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.47.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.47.0`
+`default _true_`
 
 使用此设置控制插件是否应显示来自的日志消息
 在构建网站时进行项目。虽然不被推荐，但您可以禁用
@@ -207,11 +207,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.log_level -->
+#### `setting config.log_level`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.47.0 -->
-<!-- md:default `info` -->
+`sponsors`
+`version insiders-4.47.0`
+`default _info_`
 
 使用此设置控制插件在以下情况下应采用的日志级别
 遇到错误，这要求[`log`][config.log]设置为
@@ -264,11 +264,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.projects -->
+#### `setting config.projects`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.38.0`
+`default _true_`
 
 使用此设置启用或禁用项目生成。目前
 插件的唯一目的是构建项目，因此它相当于
@@ -283,11 +283,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.projects_dir -->
+#### `setting config.projects_dir`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.38.0 -->
-<!-- md:default `projects` -->
+`sponsors`
+`version insiders-4.38.0`
+`default _projects_`
 
 使用此设置可以更改项目所在的文件夹。它是
 通常不需要更改此设置，但如果要重命名
@@ -307,11 +307,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.projects_config_files -->
+#### `setting config.projects_config_files`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.42.0 -->
-<!-- md:default `*/mkdocs.yml` -->
+`sponsors`
+`version insiders-4.42.0`
+`default _*/mkdocs.yml_`
 
 使用此设置更改配置文件的位置或名称
 插件将在扫描[项目目录]时查找
@@ -356,11 +356,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.projects_config_transform -->
+#### `setting config.projects_config_transform`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.42.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.42.0`
+`default none`
 
 使用此设置转换从读取的每个项目的配置
 `mkdocs.yml`在构建之前，允许调整配置
@@ -412,11 +412,11 @@ export PYTHONPATH=.
 
 ---
 
-#### <!-- md:setting config.hoisting -->
+#### `setting config.hoisting`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.39.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.39.0`
+`default _true_`
 
 使用此设置启用或禁用将主题文件提升到主目录
 项目。如果禁用此设置，每个项目都会收到

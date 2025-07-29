@@ -97,8 +97,8 @@ Cross origin requests are only supported for protocol schemes: http, [...]
 
 ## 配置
 
-<!-- md:version 9.0.0 -->
-<!-- md:plugin [offline] – built-in -->
+`version 9.0.0`
+`plugin [offline] – built-in`
 
 与所有[内置插件]一样，开始使用离线插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
@@ -121,10 +121,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.0.0 -->
-<!-- md:default `true` -->
+`version 9.0.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 如果你想构建在线和离线文档，这是一个

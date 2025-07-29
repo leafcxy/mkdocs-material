@@ -59,8 +59,8 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor. # (1)!
 
 ### 设置页面图标`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag experimental -->
+`version 9.2.0`
+`flag experimental`
 
 可以为每个页面分配一个图标，然后将其呈现为
 导航侧边栏以及[导航选项卡]（如果启用）。使用正面
@@ -93,9 +93,9 @@ icon: material/emoticon-happy # (1)!
 
 ### 设置页面状态`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag experimental -->
-<!-- md:example page-status -->
+`version 9.2.0`
+`flag experimental`
+`example page-status`
 
 可以为每个页面分配一个状态，然后将其显示为
 导航侧边栏。首先，通过以下方式将状态标识符与描述相关联
@@ -144,8 +144,8 @@ status: new
 
 ### 设置页面的副标题`
 
-<!-- md:version 9.6.0 -->
-<!-- md:flag experimental -->
+`version 9.6.0`
+`flag experimental`
 
 每页都可以定义一个副标题，然后将其作为标题的一部分呈现在标题下方
 通过使用前体“字幕”属性，对导航侧边栏进行修改，以及

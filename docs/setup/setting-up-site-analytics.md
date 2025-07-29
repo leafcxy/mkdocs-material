@@ -13,8 +13,8 @@ MkDocs与[Google Analytics]原生集成，并提供可定制的
 
 ### 谷歌分析
 
-<!-- md:version 7.1.8 -->
-<!-- md:default none -->
+`version 7.1.8`
+`default none`
 
 Material for MkDocs与Google Analytics 4原生集成[^1]。如果你
 已设置Google Analytics并拥有属性，请通过添加
@@ -48,8 +48,8 @@ extra:
 
 ### 这个页面有用吗？
 
-<!-- md:version 8.4.0 -->
-<!-- md:default none -->
+`version 8.4.0`
+`default none`
 
 可以在每个页面的底部包括一个简单的[反馈小部件]，
 鼓励用户即时反馈页面是否有用。
@@ -141,9 +141,9 @@ extra:
 
 以下属性适用于每种评级：
 
-<!-- md:option analytics.feedback.ratings.icon -->
+`option analytics.feedback.ratings.icon`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性必须指向引用[任何捆绑的图标]的有效图标路径
     使用[自定义图标]主题，否则构建将无法成功。一些流行
     组合：
@@ -152,24 +152,24 @@ extra:
     * :material-thumb-up-outline: + :material-thumb-down-outline: – `material/thumb-up-outline` + `material/thumb-down-outline`
     * :material-heart: + :material-heart-broken: – `material/heart` + `material/heart-broken`
 
-<!-- md:option analytics.feedback.ratings.name -->
+`option analytics.feedback.ratings.name`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性的值显示在用户交互上（即键盘焦点
     或鼠标悬停），解释图标后面的评级含义。
 
-<!-- md:option analytics.feedback.ratings.data -->
+`option analytics.feedback.ratings.data`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性的值作为数据值与自定义事件一起发送
     传输到谷歌分析[^3]（或任何自定义集成）。
 
   [^3]:
     请注意，对于Google Analytics，数据值必须是整数。
 
-<!-- md:option analytics.feedback.ratings.note -->
+`option analytics.feedback.ratings.note`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性的值在用户选择评级后显示。
     它可能包含任意HTML标签，这对于询问
     用户可以通过表单为当前页面提供更详细的反馈。

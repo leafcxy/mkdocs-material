@@ -46,8 +46,8 @@ JavaScript语法高亮显示。
 
 ### 代码复制按钮
 
-<!-- md:version 9.0.0 -->
-<!-- md:feature -->
+`version 9.0.0`
+`feature`
 
 代码块可以自动在右侧呈现一个按钮，以允许
 用户将代码块的内容复制到剪贴板。添加以下内容
@@ -86,9 +86,9 @@ theme:
 
 ### 代码选择按钮
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.32.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.32.0`
+`flag experimental`
 
 代码块可以包括一个按钮，允许通过以下方式选择行范围
 用户，这非常适合链接到代码块的特定子部分。这允许用户动态应用[行突出显示]。添加以下内容
@@ -126,8 +126,8 @@ theme:
 
 ### 代码注释
 
-<!-- md:version 8.0.0 -->
-<!-- md:feature -->
+`version 8.0.0`
+`feature`
 
 代码注释提供了一种舒适友好的方式来附加任意
 通过在代码块中添加数字标记，将内容添加到代码块的特定部分
@@ -163,9 +163,9 @@ theme:
 
 #### 定制选择器
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.32.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.32.0`
+`flag experimental`
 
 通常，代码注释只能[放置在注释中]，因为注释可以
 被认为可以安全放置。然而，有时可能需要放置
@@ -291,8 +291,8 @@ theme:
 
 #### 删除评论
 
-<!-- md:version 8.5.0 -->
-<!-- md:flag experimental -->
+`version 8.5.0`
+`flag experimental`
 
 如果你想去掉代码注释周围的注释字符，
 只需添加一个`！`在代码注释的右括号之后：

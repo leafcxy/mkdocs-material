@@ -19,10 +19,10 @@ __查看我们的[blog]，它是用新的[内置博客插件]创建的！__
 
 ### 内置博客插件
 
-<!-- md:version 9.2.0 -->
-<!-- md:plugin -->
-<!-- md:flag experimental -->
-<!-- md:demo create-blog -->
+`version 9.2.0`
+`plugin`
+`flag experimental`
+`demo create-blog`
 
 内置的博客插件增加了从以下文件夹构建博客的支持
 帖子，用日期和其他结构化数据注释。首先，添加
@@ -52,8 +52,8 @@ nav:
 
 #### 高级设置
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.44.0 -->
+`sponsors`
+`version insiders-4.44.0`
 
 以下高级设置目前保留给我们的[赞助商]
 [内部人士]。它们完全是可选的，不会影响
@@ -86,8 +86,8 @@ nav:
 
 ### RSS
 
-<!-- md:version 9.2.0 -->
-<!-- md:plugin [rss] -->
+`version 9.2.0`
+`plugin [rss]`
 
 [内置博客插件]与[RSS插件][RSS]无缝集成，
 它提供了一种简单的方法，可以将RSS提要添加到您的博客（或整个博客）中
@@ -118,9 +118,9 @@ plugins:
 
 支持以下配置选项：
 
-<!-- md:option rss.enabled -->
+`option rss.enabled`
 
-:   <!-- md:default `true` --> 此选项指定是否
+:   `default _true_` 此选项指定是否
     在构建项目时启用该插件。如果你想加快速度
     在本地构建中，您可以使用[环境变量][mkdocs.env]：
 
@@ -130,9 +130,9 @@ plugins:
           enabled: !ENV [CI, false]
     ```
 
-<!-- md:option rss.match_path -->
+`option rss.match_path`
 
-:   <!-- md:default `.*` --> 此选项指定了
+:   `default _.*_` 此选项指定了
     页面应该包含在提要中。例如，只包括博客
     在提要中的帖子中，使用以下正则表达式：
 
@@ -142,9 +142,9 @@ plugins:
           match_path: blog/posts/.*
     ```
 
-<!-- md:option rss.date_from_meta -->
+`option rss.date_from_meta`
 
-:   <!-- md:default none --> 此选项指定了
+:   `default none` 此选项指定了
     front matter属性应用作页面的创建日期
     饲料。建议使用`date`属性：
 
@@ -155,9 +155,9 @@ plugins:
             as_creation: date
     ```
 
-<!-- md:option rss.categories -->
+`option rss.categories`
 
-:   <!-- md:default none --> 此选项指定了
+:   `default none` 此选项指定了
     前体属性作为提要的一部分用作类别。如果你
     使用[categories]和[tags]，用以下行添加它们：
 
@@ -169,9 +169,9 @@ plugins:
             - tags
     ```
 
-<!-- md:option rss.comments_path -->
+`option rss.comments_path`
 
-:   <!-- md:default none --> 此选项指定锚点
+:   `default none` 此选项指定锚点
     在那里可以找到帖子或页面的评论。如果你已经整合了
     [评论系统]，添加以下行：
 
@@ -359,9 +359,9 @@ authors:
 
 #### 添加作者资料
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.46.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.46.0`
+`flag experimental`
 
 如果你想为每个作者添加一个专用页面，你可以启用作者
 通过设置[`authors_profiles][authors_profiles]配置来配置配置文件
@@ -448,8 +448,8 @@ slug: hello-world
 
 #### 添加相关链接
 
-<!-- md:version 9.6.0 -->
-<!-- md:flag experimental -->
+`version 9.6.0`
+`flag experimental`
 
 相关链接提供了突出添加更多阅读内容的完美方式_
 左侧边栏中包含的帖子部分，指导用户
@@ -521,9 +521,9 @@ plugin]确保所有帖子和帖子资产之间的链接
 
 #### 固定帖子
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.53.0 -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.53.0`
+`flag experimental`
 
 如果你想把一篇文章固定在索引页的顶部，以及存档
 以及它所属的类别索引，您可以使用front matter的`pin`属性：
@@ -578,9 +578,9 @@ readtime: 15
 
 #### 设置默认值
 
-<!-- md:version 9.6.0 -->
-<!-- md:plugin [meta][built-in meta plugin] – built-in -->
-<!-- md:flag experimental -->
+`version 9.6.0`
+`plugin [meta][built-in meta plugin] – built-in`
+`flag experimental`
 
 如果你有很多帖子，那么定义上述所有内容可能会觉得多余
 对于每个帖子。幸运的是，[内置元插件]允许设置默认前端
@@ -644,8 +644,8 @@ nav:
 
 ### 自定义索引页
 
-<!-- md:version 9.6.0 -->
-<!-- md:flag experimental -->
+`version 9.6.0`
+`flag experimental`
 
 如果您想将自定义内容添加到自动生成的[存档]和
 [类别]索引，例如在列表之前添加类别描述

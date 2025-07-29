@@ -16,8 +16,8 @@ Material for MkDocs提供了一个出色的客户端搜索实现，
 
 ### 内置搜索插件
 
-<!-- md:version 0.1.0 -->
-<!-- md:plugin -->
+`version 0.1.0`
+`plugin`
 
 内置的搜索插件与Material for MkDocs无缝集成，
 使用[lunr]和[lunr语言]添加多语言客户端搜索。it is 的常用口语形式
@@ -38,9 +38,9 @@ plugins:
 
 ### 搜索建议
 
-<!-- md:version 7.2.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`version 7.2.0`
+`feature`
+`flag experimental`
 
 启用搜索建议后，搜索将显示最有可能的
 最后一个单词的完成，可以用++右箭头++键接受。
@@ -59,9 +59,9 @@ theme:
 
 ### 搜索突出显示
 
-<!-- md:version 7.2.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`version 7.2.0`
+`feature`
+`flag experimental`
 
 当启用搜索突出显示并且用户点击搜索结果时，
 点击链接后，Material for MkDocs将突出显示所有事件。
@@ -80,8 +80,8 @@ theme:
 
 ### 搜索共享
 
-<!-- md:version 7.2.0 -->
-<!-- md:feature -->
+`version 7.2.0`
+`feature`
 
 当搜索共享被激活时，一个：material share变体：共享按钮是
 在重置按钮旁边呈现，允许深度链接到当前
@@ -100,8 +100,8 @@ theme:
 
 ### 搜索增强
 
-<!-- md:version 8.3.0 -->
-<!-- md:flag metadata -->
+`version 8.3.0`
+`flag metadata`
 
 页面可以在搜索中使用“search.boost”属性进行增强，
 这将使他们排名更高。在a的顶部添加以下行
@@ -136,9 +136,9 @@ Markdown文件：
 
 ### 搜索排除
 
-<!-- md:version 9.0.0 -->
-<!-- md:flag metadata -->
-<!-- md:flag experimental -->
+`version 9.0.0`
+`flag metadata`
+`flag experimental`
 
 可以使用“search.exclude”作为标题将页面排除在搜索之外`
 属性，将其从索引中删除。在a的顶部添加以下行

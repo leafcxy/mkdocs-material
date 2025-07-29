@@ -11,8 +11,8 @@ icons _可用于定制主题的特定部分和/或
 
 ### 标志
 
-<!-- md:version 0.1.0 -->
-<!-- md:default `material/library` -->
+`version 0.1.0`
+`default _material/library_`
 
 徽标可以更改为用户提供的图像（任何类型，包括“*.png”和
 `*.svg），或与主题捆绑在一起的任何图标。
@@ -57,8 +57,8 @@ extra:
 
 ### 图标
 
-<!-- md:version 0.1.0 -->
-<!-- md:default [`assets/images/favicon.png`][Favicon default] -->
+`version 0.1.0`
+`default [_assets/images/favicon.png_][Favicon default]`
 
 favicon可以更改为指向用户提供的图像的路径
 必须位于“文档”文件夹中。将以下行添加到`mkdocs.yml`中：

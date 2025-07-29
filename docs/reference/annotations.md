@@ -33,7 +33,7 @@ markdown_extensions:
 
 ### 注释图标
 
-<!-- md:version 9.2.0 -->
+`version 9.2.0`
 
 注释图标可以更改为与主题绑定的任何图标，甚至
 a[自定义图标]，例如指向材质/右箭头圆圈：。只需添加以下内容
@@ -74,8 +74,8 @@ theme:
 
 ### 使用注释
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag experimental -->
+`version 9.2.0`
+`flag experimental`
 
 注释由两部分组成：一个标记，可以放置在
 一个标记有“注释”类的块，以及位于下面列表中的内容

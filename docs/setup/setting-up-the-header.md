@@ -12,8 +12,8 @@ Material for MkDocs标题可以定制，以显示公告栏
 
 ### 自动隐藏
 
-<!-- md:version 6.2.0 -->
-<!-- md:feature -->
+`version 6.2.0`
+`feature`
 
 启用自动隐藏后，当
 用户滚动超过某个阈值，为内容留下更多空间。添加
@@ -27,8 +27,8 @@ theme:
 
 ### 公告栏
 
-<!-- md:version 5.0.0 -->
-<!-- md:flag customization -->
+`version 5.0.0`
+`flag customization`
 
 MkDocs的材料包括一个公告栏，这是一个完美的地方
 向用户显示项目新闻或其他重要信息。当用户
@@ -49,9 +49,9 @@ block][overriding blocks]，默认为空：
 
 #### 标记为已读
 
-<!-- md:version 8.4.0 -->
-<!-- md:feature -->
-<!-- md:flag experimental -->
+`version 8.4.0`
+`feature`
+`flag experimental`
 
 为了呈现可标记为已阅读的临时公告
 用户，可以包括一个按钮来取消当前的公告。添加

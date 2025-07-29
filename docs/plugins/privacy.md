@@ -99,10 +99,10 @@ MkDocs提供的材料，用于创建复杂的构建
 
 ## 配置
 
-<!-- md:version 9.5.0 -->
-<!-- md:plugin [privacy] – built-in -->
-<!-- md:flag multiple -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`plugin [privacy] – built-in`
+`flag multiple`
+`flag experimental`
 
 与所有[内置插件]一样，开始使用隐私插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
@@ -125,10 +125,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.5.0 -->
-<!-- md:default `true` -->
+`version 9.5.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
@@ -144,10 +144,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.concurrency -->
+#### `setting config.concurrency`
 
-<!-- md:version 9.5.0 -->
-<!-- md:default available CPUs - 1 -->
+`version 9.5.0`
+`default available CPUs - 1`
 
 有了更多的CPU可用，插件可以并行执行更多的工作，因此
 更快地完成外部资产的处理。如果你想禁用并发
@@ -174,10 +174,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache -->
+#### `setting config.cache`
 
-<!-- md:version 9.5.0 -->
-<!-- md:default `true` -->
+`version 9.5.0`
+`default _true_`
 
 使用此设置指示插件绕过缓存，以便
 重新安排所有外部资产的下载，即使缓存可能不是
@@ -192,10 +192,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache_dir -->
+#### `setting config.cache_dir`
 
-<!-- md:version 9.5.0 -->
-<!-- md:default `.cache/plugin/privacy` -->
+`version 9.5.0`
+`default _.cache/plugin/privacy_`
 
 通常不需要指定此设置，除非您需要
 更改根目录中下载副本的路径
@@ -219,11 +219,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.log -->
+#### `setting config.log`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.50.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.50.0`
+`default _true_`
 
 使用此设置可控制插件在以下情况下是否应显示日志消息
 构建您的网站。虽然不建议使用，但您可以通过以下方式禁用日志记录：
@@ -236,11 +236,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.log_level -->
+#### `setting config.log_level`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.50.0 -->
-<!-- md:default `info` -->
+`sponsors`
+`version insiders-4.50.0`
+`default _info_`
 
 使用此设置控制插件在以下情况下应采用的日志级别
 遇到错误，这要求[`log`][config.log]设置为
@@ -297,10 +297,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.assets -->
+#### `setting config.assets`
 
-<!-- md:version 9.5.0 -->
-<!-- md:default `true` -->
+`version 9.5.0`
+`default _true_`
 
 使用此设置控制插件是否应下载外部
 资产。如果你只想让插件处理[外部链接]，你可以禁用
@@ -316,10 +316,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.assets_fetch -->
+#### `setting config.assets_fetch`
 
-<!-- md:version 9.5.0 -->
-<!-- md:default `true` -->
+`version 9.5.0`
+`default _true_`
 
 使用此设置控制插件是应该下载还是只报告
 当遇到外部资产时。如果您已经自行托管所有外部
@@ -334,10 +334,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.assets_fetch_dir -->
+#### `setting config.assets_fetch_dir`
 
-<!-- md:version 9.5.0 -->
-<!-- md:default `assets/external` -->
+`version 9.5.0`
+`default _assets/external_`
 
 通常不需要指定此设置，除非您需要
 更改[`site`目录][mkdocs.site_dir]中的路径，其中
@@ -354,11 +354,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.assets_include -->
+#### `setting config.assets_include`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.37.0`
+`default none`
 
 使用此设置启用特定来源的外部资产下载，
 例如，当使用插件的[多个实例]来微调处理时
@@ -373,11 +373,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.assets_exclude -->
+#### `setting config.assets_exclude`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.37.0`
+`default none`
 
 使用此设置可禁用下载特定来源的外部资源，
 例如，当使用插件的[多个实例]来微调处理时
@@ -413,11 +413,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.links -->
+#### `setting config.links`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.37.0`
+`default _true_`
 
 使用此设置指示插件解析和处理外部链接
 对它们进行注释以[提高安全性]，或自动添加其他
@@ -434,11 +434,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.links_attr_map -->
+#### `setting config.links_attr_map`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.37.0`
+`default none`
 
 使用此设置指定应添加到的其他属性
 例如，外部链接，将`target=“_blank”`添加到所有外部链接中
@@ -453,11 +453,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.links_noopener -->
+#### `setting config.links_noopener`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.37.0`
+`default _true_`
 
 通常不建议更改此设置，因为它会自动更改
 使用`rel=“noopener”`为在新窗口中打开的外部链接添加注释

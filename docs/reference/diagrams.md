@@ -13,7 +13,7 @@ icon: material/graph-outline
 
 ## 配置
 
-<!-- md:version 8.2.0 -->
+`version 8.2.0`
 
 此配置支持[Meamaid.js]图表的原生支持。材料
 对于MkDocs，当页面

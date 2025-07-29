@@ -90,10 +90,10 @@ MkDocs提供的材料，用于创建复杂的构建
 
 ## 配置
 
-<!-- md:version 8.5.0 -->
-<!-- md:plugin [social] – built-in -->
-<!-- md:flag multiple -->
-<!-- md:flag experimental -->
+`version 8.5.0`
+`plugin [social] – built-in`
+`flag multiple`
+`flag experimental`
 
 为了开始使用社交插件，只需添加以下行即可
 `mkdocs.yml`，并观察Material for mkdocs如何生成美丽的社交媒体
@@ -120,10 +120,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 8.5.0 -->
-<!-- md:default `true` -->
+`version 8.5.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
@@ -141,11 +141,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.concurrency -->
+#### `setting config.concurrency`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default available CPUs - 1 -->
+`sponsors`
+`version insiders-4.33.0`
+`default available CPUs - 1`
 
 有了更多的CPU可用，插件可以并行执行更多的工作，因此
 更快地完成社交卡生成。如果你想禁用并发
@@ -172,11 +172,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache -->
+#### `setting config.cache`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.33.0`
+`default _true_`
 
 使用此设置指示插件绕过缓存，以便
 为所有页面重新生成社交卡，即使缓存可能不会过时。
@@ -191,10 +191,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cache_dir -->
+#### `setting config.cache_dir`
 
-<!-- md:version 8.5.0 -->
-<!-- md:default `.cache/plugin/social` -->
+`version 8.5.0`
+`default _.cache/plugin/social_`
 
 通常不需要指定此设置，除非您需要
 更改根目录中社交卡图像的路径
@@ -218,11 +218,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.log -->
+#### `setting config.log`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.40.2 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.40.2`
+`default _true_`
 
 使用此设置可控制插件是否仅在以下情况下记录错误
 在不终止构建的情况下生成社交卡，例如无效的引用
@@ -236,11 +236,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.log_level -->
+#### `setting config.log_level`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.40.2 -->
-<!-- md:default `warn` -->
+`sponsors`
+`version insiders-4.40.2`
+`default _warn_`
 
 使用此设置控制插件在以下情况下应采用的日志级别
 遇到错误，这要求[`log`][config.log]设置为
@@ -283,10 +283,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cards -->
+#### `setting config.cards`
 
-<!-- md:version 8.5.0 -->
-<!-- md:default `true` -->
+`version 8.5.0`
+`default _true_`
 
 使用此设置启用或禁用社交卡生成。目前
 插件的唯一目的是生成社交卡，因此它相当于
@@ -301,10 +301,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cards_dir -->
+#### `setting config.cards_dir`
 
-<!-- md:version 8.5.0 -->
-<!-- md:default `assets/images/social` -->
+`version 8.5.0`
+`default _assets/images/social_`
 
 通常不需要指定此设置，除非您需要
 更改[`site`目录][mkdocs.site_dir]中的路径，其中
@@ -321,11 +321,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cards_layout_dir -->
+#### `setting config.cards_layout_dir`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default `layouts` -->
+`sponsors`
+`version insiders-4.33.0`
+`default _layouts_`
 
 如果你想构建[自定义社交卡布局][自定义布局]，请使用此
 设置以更改存储自定义布局的默认文件夹
@@ -358,11 +358,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cards_layout -->
+#### `setting config.cards_layout`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default `default` -->
+`sponsors`
+`version insiders-4.33.0`
+`default _default_`
 
 该插件提供了越来越多的[默认布局][默认布局]列表，用于
 社交卡。如果您已经创建了[自定义社交卡布局][自定义布局]，
@@ -394,10 +394,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cards_layout_options -->
+#### `setting config.cards_layout_options`
 
-<!-- md:version 9.1.10 -->
-<!-- md:default none -->
+`version 9.1.10`
+`default none`
 
 使用此设置为通过[`cards_layout`]指定的布局设置选项
 [config.cards_layout]（如果布局支持），它允许制作
@@ -432,11 +432,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cards_include -->
+#### `setting config.cards_include`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.35.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.35.0`
+`default none`
 
 使用此设置为您的子部分启用社交卡生成
 项目，例如，当使用插件的[多个实例]生成
@@ -455,11 +455,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.cards_exclude -->
+#### `setting config.cards_exclude`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.35.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.35.0`
+`default none`
 
 使用此设置可禁用您的子部分的社交卡生成
 项目，例如，当使用插件的[多个实例]生成
@@ -486,11 +486,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.debug -->
+#### `setting config.debug`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default `false` -->
+`sponsors`
+`version insiders-4.33.0`
+`default _false_`
 
 使用此设置启用调试布局的特殊模式
 用彩色轮廓及其“x”和“y”偏移量渲染每一层，以及
@@ -505,11 +505,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.debug_on_build -->
+#### `setting config.debug_on_build`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.34.1 -->
-<!-- md:default `false` -->
+`sponsors`
+`version insiders-4.34.1`
+`default _false_`
 
 默认情况下，当出现以下情况时，插件会自动禁用['debug][config.debug]模式
 [构建你的项目]，这样你就可以确保调试覆盖永远不会
@@ -526,11 +526,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.debug_grid -->
+#### `setting config.debug_grid`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.33.0`
+`default _true_`
 
 当启用[`debug`][config.debug]模式时，此设置指定是否
 点网格渲染在所有层的顶部，以便更好地对齐。如果你
@@ -544,11 +544,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.debug_grid_step -->
+#### `setting config.debug_grid_step`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default `32` -->
+`sponsors`
+`version insiders-4.33.0`
+`default _32_`
 
 使用此设置指定点阵的步长（以像素为单位）（如果启用），
 这可用于创建完美对齐的层以实现理想的构图。
@@ -562,11 +562,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.debug_color -->
+#### `setting config.debug_color`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default `grey` -->
+`sponsors`
+`version insiders-4.33.0`
+`default _grey_`
 
 使用此设置指定添加到每个轮廓的颜色
 图层和渲染在所有图层上的点网格。如果你需要
@@ -598,12 +598,12 @@ plugins:
 
 ---
 
-#### <!-- md:setting meta.social.cards -->
+#### `setting meta.social.cards`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.37.0`
+`flag metadata`
+`default none`
 
 使用此属性覆盖给定的[`cards][config.cards]设置
 页面：
@@ -620,13 +620,13 @@ social:
 
 ---
 
-#### <!-- md:setting meta.social.cards_layout -->
+#### `setting meta.social.cards_layout`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.37.0`
+`flag metadata`
+`default none`
+`flag experimental`
 
 使用此属性覆盖[`cards_layout`][config.cards_layout]设置
 对于给定的页面：
@@ -643,12 +643,12 @@ social:
 
 ---
 
-#### <!-- md:setting meta.social.cards_layout_options -->
+#### `setting meta.social.cards_layout_options`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.37.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.37.0`
+`flag metadata`
+`default none`
 
 使用此属性覆盖[`cards_layout_options`]
 给定页面的[config.cards_layout_options]设置：
@@ -669,8 +669,8 @@ social:
 
 ### 布局
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
+`sponsors`
+`version insiders-4.33.0`
 
 虽然构建[自定义布局]是可能且简单的，但该插件附带了
 几个预定义的布局，所有布局都以“默认”为前缀。这个
@@ -691,10 +691,10 @@ social:
     This layout sets the following defaults:
 
     - [`background_color`][option.background_color]
-      – <!-- md:default [`theme.palette.primary`][primary color] -->
+      – `default [_theme.palette.primary_][primary color]`
 
     - [`font_family`][option.font_family]
-      – <!-- md:default [`theme.font.text`][font] -->
+      – `default [_theme.font.text_][font]`
 
     </div>
 
@@ -713,10 +713,10 @@ social:
     This layout includes the [page icon] and sets the following defaults:
 
     - [`background_color`][option.background_color]
-      – <!-- md:default [`theme.palette.primary`][primary color] -->
+      – `default [_theme.palette.primary_][primary color]`
 
     - [`font_family`][option.font_family]
-      – <!-- md:default [`theme.font.text`][font] -->
+      – `default [_theme.font.text_][font]`
 
     </div>
 
@@ -735,10 +735,10 @@ social:
     This layout sets the following defaults:
 
     - [`background_color`][option.background_color]
-      – <!-- md:default [`theme.palette.accent`][accent color] -->
+      – `default [_theme.palette.accent_][accent color]`
 
     - [`font_family`][option.font_family]
-      – <!-- md:default [`theme.font.text`][font] -->
+      – `default [_theme.font.text_][font]`
 
     </div>
 
@@ -757,10 +757,10 @@ social:
     This layout sets the following defaults:
 
     - [`color`][option.background_color]
-      – <!-- md:default [`theme.palette.primary`][primary color] -->
+      – `default [_theme.palette.primary_][primary color]`
 
     - [`font_family`][option.font_family]
-      – <!-- md:default [`theme.font.text`][font] -->
+      – `default [_theme.font.text_][font]`
 
     </div>
 
@@ -799,10 +799,10 @@ social:
 
 ---
 
-#### <!-- md:setting option.background_color -->
+#### `setting option.background_color`
 
-<!-- md:version 9.1.10 -->
-<!-- md:default computed -->
+`version 9.1.10`
+`default computed`
 
 使用此选项更改生成的社交卡的背景颜色。
 该值可以设置为有效的颜色值[枕头支持]，成像
@@ -869,11 +869,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting option.background_image -->
+#### `setting option.background_image`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.33.0 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.33.0`
+`default none`
 
 使用此选项为生成的社交卡定义背景图像。注：
 图像用[背景颜色][选项.background_color]着色，
@@ -903,10 +903,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting option.color -->
+#### `setting option.color`
 
-<!-- md:version 9.1.10 -->
-<!-- md:default computed -->
+`version 9.1.10`
+`default computed`
 
 使用此选项更改生成的社交卡的前景颜色。
 该值可以设置为有效的颜色值[枕头支持]，成像
@@ -959,10 +959,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting option.font_family -->
+#### `setting option.font_family`
 
-<!-- md:version 9.1.10 -->
-<!-- md:default computed -->
+`version 9.1.10`
+`default computed`
 
 使用此选项更改生成的社交卡的字体系列。这个
 插件会自动从[Google Fonts]下载字体，因此字体必须
@@ -983,11 +983,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting option.font_variant -->
+#### `setting option.font_variant`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.53.3 -->
-<!-- md:default none -->
+`sponsors`
+`version insiders-4.53.3`
+`default none`
 
 使用此选项更改用于生成社交卡的字体变体。
 如果下载的字体有“压缩”或“扩展”等变体，您可以设置
@@ -1006,11 +1006,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting option.logo -->
+#### `setting option.logo`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.40.0 -->
-<!-- md:default computed -->
+`sponsors`
+`version insiders-4.40.0`
+`default computed`
 
 使用此选项更改生成的社交卡中使用的徽标。
 默认情况下，该插件使用[`theme.logo`][theme.logo]或[`theme.comp.logo`]
@@ -1030,11 +1030,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting option.title -->
+#### `setting option.title`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.40.0 -->
-<!-- md:default computed -->
+`sponsors`
+`version insiders-4.40.0`
+`default computed`
 
 使用此选项更改生成的社交卡的标题。这将覆盖
 MkDocs分配的计算页面标题，以及[“标题”]
@@ -1051,11 +1051,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting option.description -->
+#### `setting option.description`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.40.0 -->
-<!-- md:default computed -->
+`sponsors`
+`version insiders-4.40.0`
+`default computed`
 
 使用此选项更改生成的社交卡的描述。这个
 覆盖集合[`site_description][mkdocs.site_descripting]（如果已定义），如下所示

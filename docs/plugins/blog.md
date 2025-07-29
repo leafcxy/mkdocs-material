@@ -210,7 +210,7 @@ plugins:
 #### `setting config.blog_dir`
 
 `version 9.2.0`
-`md:default _blog_`
+`default _blog_`
 
 使用此设置更改您的博客在
 [文档目录][mkdocs.docs_dir]。路径包含在生成的
@@ -236,10 +236,10 @@ URL作为所有帖子和视图的前缀。您可以通过以下方式进行更�
 
 ---
 
-#### <!-- md:setting config.blog_toc -->
+#### `setting config.blog_toc`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `false` -->
+`version 9.2.0`
+`default _false_`
 
 使用此设置可利用目录在中显示帖子标题
 意见。如果你的帖子摘录很长，这可能会很有用。如果你想要我
@@ -257,10 +257,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_dir -->
+#### setting config.post_dir
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `{blog}/posts` -->
+`version 9.2.0`
+`default _{blog}/posts_`
 
 使用此设置更改帖子所在的文件夹。它是
 通常不需要更改此设置，但如果要重命名
@@ -284,10 +284,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_date_format -->
+#### `setting config.post_date_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `long` -->
+`version 9.2.0`
+`default _long_`
 
 使用此设置可更改帖子的日期格式。此插件使用[babel]
 以配置的[站点语言]呈现日期。你可以用babel
@@ -334,10 +334,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_url_date_format -->
+#### `setting config.post_url_date_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `yyyy/MM/dd` -->
+`version 9.2.0`
+`default _yyyy/MM/dd_`
 
 使用此设置可更改帖子URL中使用的日期格式。格式字符串
 必须遵循[babel]的[pattern语法]，并且不应包含空格。
@@ -373,10 +373,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_url_format -->
+#### `setting config.post_url_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `{date}/{slug}` -->
+`version 9.2.0`
+`default _{date}/{slug}_`
 
 使用此设置更改生成帖子时使用的格式字符串
 URL。您可以自由组合占位符，并用斜线或其他符号将其连接起来
@@ -411,10 +411,10 @@ URL。您可以自由组合占位符，并用斜线或其他符号将其连接�
 
 ---
 
-#### <!-- md:setting config.post_url_max_categories -->
+#### `setting config.post_url_max_categories`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `1` -->
+`version 9.2.0`
+`default _1_`
 
 使用此设置为中包含的类别数量设置上限
 如果“类别”占位符是[“post_url_format”]的一部分，则发布url
@@ -431,10 +431,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_slugify -->
+#### `setting config.post_slugify`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default [`pymdownx.slugs.slugify`][pymdownx.slugs.slugify] -->
+`version 9.2.0`
+`default [_pymdownx.slugs.slugify_][pymdownx.slugs.slugify]`
 
 使用此设置更改生成与URL兼容的slug的功能
 从帖子标题。默认情况下，['slugify][pymdownx.slugs.slugify]函数
@@ -457,10 +457,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_slugify_separator -->
+#### `setting config.post_slugify_separator`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `-` -->
+`version 9.2.0`
+`default _-_ `
 
 使用此设置更改传递给slugif的分隔符
 函数集为[`post_slugify`]的一部分[config.post_slugify]。虽然默认
@@ -474,10 +474,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_excerpt -->
+#### `setting config.post_excerpt`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `optional` -->
+`version 9.2.0`
+`default _optional_`
 
 默认情况下，插件会制作[帖子摘录]（../setup/setup-a-blog.md#添加摘录）
 可选。当一篇帖子没有定义摘录时，视图包括整个帖子。
@@ -505,10 +505,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_excerpt_max_authors -->
+#### `setting config.post_excerpt_max_authors`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `1` -->
+`version 9.2.0`
+`default _1_`
 
 使用此设置为中呈现的作者数量设置上限
 发布摘录。虽然每篇文章可能由多位作者撰写，但这种设置
@@ -535,10 +535,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_excerpt_max_categories -->
+#### `setting config.post_excerpt_max_categories`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `5` -->
+`version 9.2.0`
+`default _5_`
 
 使用此设置为中呈现的类别数量设置上限
 发布摘录。虽然每个帖子可能被分配到多个类别，但这
@@ -565,10 +565,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_excerpt_separator -->
+#### `setting config.post_excerpt_separator`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default <code>&lt;!-- more --&gt;</code> -->
+`version 9.2.0`
+`default <code>&lt;!-- more --&gt;</code>`
 
 使用此设置设置插件将在帖子中查找的分隔符
 生成帖子摘录时的内容。所有内容__before _分隔符为
@@ -584,10 +584,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_readtime -->
+#### `setting config.post_readtime`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `true` -->
+`version 9.2.0`
+`default _true_`
 
 使用此设置控制插件是否应自动计算
 帖子的阅读时间，然后以帖子摘录的形式呈现，以及
@@ -609,10 +609,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.post_readtime_words_per_minute -->
+#### `setting config.post_readtime_words_per_minute`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `265` -->
+`version 9.2.0`
+`default _265_`
 
 使用此设置更改读者应阅读的字数
 在计算帖子的阅读时间时，每分钟。如果你想微调
@@ -635,10 +635,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive -->
+#### `setting config.archive`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `true` -->
+`version 9.2.0`
+`default _true_`
 
 使用此设置启用或禁用存档页面。存档页面显示所有
 按相反顺序发布特定时间间隔（例如年、月等）的帖子。如果你
@@ -652,10 +652,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_name -->
+#### `setting config.archive_name`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default computed -->
+`version 9.2.0`
+`default computed`
 
 使用此设置更改插件添加到的存档部分的标题
 导航。如果省略此设置，则其来源于翻译。
@@ -669,10 +669,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_date_format -->
+#### `setting config.archive_date_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `yyyy` -->
+`version 9.2.0`
+`default _yyyy_`
 
 使用此设置可更改用于存档页面标题的日期格式。这个
 格式字符串必须遵循[babel]的[模式语法]。一些流行的选择：
@@ -698,10 +698,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_url_date_format -->
+#### `setting config.archive_url_date_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `yyyy` -->
+`version 9.2.0`
+`default _yyyy_`
 
 使用此设置可更改用于存档页面URL的日期格式
 格式字符串必须遵循[babel]的[pattern语法]，并且不应包含
@@ -725,10 +725,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_url_format -->
+#### `setting config.archive_url_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `archive/{date}` -->
+`version 9.2.0`
+`default _archive/{date}_`
 
 使用此设置更改生成时使用的格式字符串
 存档页面URL。您可以自由组合占位符，并将其与
@@ -756,11 +756,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_pagination -->
+#### `setting config.archive_pagination`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.44.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.44.0`
+`default _true_`
 
 使用此设置可启用或禁用存档页面的分页。价值
 此设置的值继承自[`pagination][config.pagination]，除非它是
@@ -774,11 +774,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_pagination_per_page -->
+#### `setting config.archive_pagination_per_page`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.44.0 -->
-<!-- md:default `10` -->
+`sponsors`
+`version insiders-4.44.0`
+`default _10_`
 
 使用此设置可更改每个存档页面呈现的帖子数量。这个
 此设置的值继承自[“pagination_per_page”]
@@ -792,10 +792,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.archive_toc -->
+#### `setting config.archive_toc`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `false` -->
+`version 9.2.0`
+`default _false_`
 
 使用此设置可利用目录显示所有帖子的标题
 存档页面。此设置的值继承自[`blog_toc`]
@@ -813,10 +813,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories -->
+#### `setting config.categories`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `true` -->
+`version 9.2.0`
+`default _true_`
 
 使用此设置启用或禁用类别页面。类别页面显示所有
 按时间倒序排列特定类别的帖子。如果你想
@@ -830,10 +830,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_name -->
+#### `setting config.categories_name`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default computed -->
+`version 9.2.0`
+`default computed`
 
 使用此设置更改插件添加到的类别部分的标题
 导航。如果省略此设置，则其来源于翻译。
@@ -847,10 +847,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_url_format -->
+#### `setting config.categories_url_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `category/{slug}` -->
+`version 9.2.0`
+`default _category/{slug}_`
 
 使用此设置更改生成时使用的格式字符串
 类别页面URL。您可以自由组合占位符，并将其与
@@ -878,10 +878,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_slugify -->
+#### `setting config.categories_slugify`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default [`pymdownx.slugs.slugify`][pymdownx.slugs.slugify] -->
+`version 9.2.0`
+`default [_pymdownx.slugs.slugify_][pymdownx.slugs.slugify]`
 
 使用此设置更改生成与URL兼容的slug的功能
 从类别。默认情况下，['slugify][pymdownx.slugs.slugify]函数
@@ -901,10 +901,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_slugify_separator -->
+#### `setting config.categories_slugify_separator`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `-` -->
+`version 9.2.0`
+`default _-_ `
 
 使用此设置更改传递给slugif的分隔符
 函数集为[类别_插件]的一部分[配置.类别_插件]。与…同时
@@ -918,11 +918,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_sort_by -->
+#### `setting config.categories_sort_by`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.45.0 -->
-<!-- md:default `material.plugins.blog.view_name` -->
+`sponsors`
+`version insiders-4.45.0`
+`default _material.plugins.blog.view_name_`
 
 使用此设置可指定用于排序类别的自定义函数。给
 例如，如果你想按类别包含的帖子数量对类别进行排序，
@@ -940,11 +940,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_sort_reverse -->
+#### `setting config.categories_sort_reverse`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.45.0 -->
-<!-- md:default `false` -->
+`sponsors`
+`version insiders-4.45.0`
+`default _false_`
 
 使用此设置可颠倒类别的排序顺序。By
 默认情况下，类别按升序排序，但您可以颠倒顺序
@@ -958,10 +958,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_allowed -->
+#### `setting config.categories_allowed`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default none -->
+`version 9.2.0`
+`default none`
 
 该插件允许根据预定义列表检查类别，以便
 捕捉拼写错误或确保类别不是任意添加的。指定
@@ -981,11 +981,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_pagination -->
+#### `setting config.categories_pagination`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.44.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.44.0`
+`default _true_`
 
 使用此设置可启用或禁用类别页面的分页。价值
 此设置的值继承自[`pagination][config.pagination]，除非它是
@@ -999,11 +999,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_pagination_per_page -->
+#### `setting config.categories_pagination_per_page`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.44.0 -->
-<!-- md:default `10` -->
+`sponsors`
+`version insiders-4.44.0`
+`default _10_`
 
 使用此设置可更改每个类别页面呈现的帖子数量。这个
 此设置的值继承自[“pagination_per_page”]
@@ -1017,10 +1017,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.categories_toc -->
+#### `setting config.categories_toc`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `false` -->
+`version 9.2.0`
+`default _false_`
 
 使用此设置可利用目录显示所有帖子的标题
 类别页面。此设置的值继承自[`blog_toc`]
@@ -1038,10 +1038,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.authors -->
+#### `setting config.authors`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `true` -->
+`version 9.2.0`
+`default _true_`
 
 使用此设置启用或禁用文章作者。如果启用了该设置，
 该插件将查找一个名为[`.orges.yml`][config.authors_file]的文件
@@ -1055,10 +1055,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.authors_file -->
+#### `setting config.authors_file`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `{blog}/.authors.yml` -->
+`version 9.2.0`
+`default _{blog}/.authors.yml_`
 
 使用此设置可更改其中包含作者信息的文件的路径
 你的帖子驻留。通常不需要更改此设置，但如果
@@ -1100,11 +1100,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.authors_profiles -->
+#### `setting config.authors_profiles`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.46.0 -->
-<!-- md:default `false` -->
+`sponsors`
+`version insiders-4.46.0`
+`default _false_`
 
 使用此设置启用或禁用自动生成的作者配置文件。
 作者简介按时间倒序显示作者的所有帖子。
@@ -1118,11 +1118,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.authors_profiles_name -->
+#### `setting config.authors_profiles_name`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.46.0 -->
-<!-- md:default computed -->
+`sponsors`
+`version insiders-4.46.0`
+`default computed`
 
 使用此设置更改插件添加到的作者部分的标题
 导航。如果省略此设置，则其来源于翻译。
@@ -1136,11 +1136,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.authors_profiles_url_format -->
+#### `setting config.authors_profiles_url_format`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.46.0 -->
-<!-- md:default `author/{slug}` -->
+`sponsors`
+`version insiders-4.46.0`
+`default _author/{slug}_`
 
 使用此设置更改生成时使用的格式字符串
 作者配置文件URL。您可以自由组合占位符，并将其与
@@ -1169,11 +1169,11 @@ The following placeholders are available:
 
 ---
 
-#### <!-- md:setting config.authors_profiles_pagination -->
+#### `setting config.authors_profiles_pagination`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.46.0 -->
-<!-- md:default `true` -->
+`sponsors`
+`version insiders-4.46.0`
+`default _true_`
 
 使用此设置可启用或禁用作者配置文件的分页。价值
 此设置的值继承自[`pagination][config.pagination]，除非它是
@@ -1187,11 +1187,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.authors_profiles_pagination_per_page -->
+#### `setting config.authors_profiles_pagination_per_page`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.46.0 -->
-<!-- md:default `10` -->
+`sponsors`
+`version insiders-4.46.0`
+`default _10_`
 
 使用此设置可更改每个存档页面呈现的帖子数量。这个
 此设置的值继承自[“pagination_per_page”]
@@ -1205,11 +1205,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.authors_profiles_toc -->
+#### `setting config.authors_profiles_toc`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.46.0 -->
-<!-- md:default `false` -->
+`sponsors`
+`version insiders-4.46.0`
+`default _false_`
 
 使用此设置可利用目录显示所有帖子的标题
 作者简介。此设置的值继承自[`blog_toc`]
@@ -1227,10 +1227,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.pagination -->
+#### `setting config.pagination`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `true` -->
+`version 9.2.0`
+`default _true_`
 
 使用此设置在视图生成的页面中启用或禁用分页
 按逆时间顺序显示帖子或帖子子集。如果你想要我
@@ -1244,10 +1244,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.pagination_per_page -->
+#### `setting config.pagination_per_page`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `10` -->
+`version 9.2.0`
+`default _10_`
 
 使用此设置可更改每页呈现的帖子数量。如果你有
 相当长的帖子摘录，减少帖子数量可能是个好主意
@@ -1261,10 +1261,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.pagination_url_format -->
+#### `setting config.pagination_url_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `page/{page}` -->
+`version 9.2.0`
+`default _page/{page}_`
 
 使用此设置更改生成时使用的格式字符串
 分页视图URL。您可以自由组合占位符，并用
@@ -1292,10 +1292,10 @@ The following placeholders are available:
 
 ---
 
-#### <!-- md:setting config.pagination_format -->
+#### `setting config.pagination_format`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `~2~` -->
+`version 9.2.0`
+`default _~2~_`
 
 使用此设置更改生成时使用的格式字符串
 分页视图URL。您可以自由组合占位符，并用
@@ -1344,10 +1344,10 @@ The following placeholders are supported by [paginate]:
 
 ---
 
-#### <!-- md:setting config.pagination_if_single_page -->
+#### `setting config.pagination_if_single_page`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `false` -->
+`version 9.2.0`
+`default _false_`
 
 使用此设置可控制是否应自动禁用分页
 当视图仅由单个页面组成时。如果你想一直渲染
@@ -1361,10 +1361,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.pagination_keep_content -->
+#### `setting config.pagination_keep_content`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `false` -->
+`version 9.2.0`
+`default _false_`
 
 使用此设置启用或禁用内容的持久性，即如果分页
 视图还应显示其包含的视图的内容。如果你愿意
@@ -1382,10 +1382,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.draft -->
+#### `setting config.draft`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `false` -->
+`version 9.2.0`
+`default _false_`
 
 渲染[草稿帖子][元草稿]在部署预览中很有用。使用这个
 设置以指定插件在以下情况下是否应包含标记为草稿的帖子
@@ -1409,10 +1409,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.draft_on_serve -->
+#### `setting config.draft_on_serve`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `true` -->
+`version 9.2.0`
+`default _true_`
 
 使用此设置控制插件是否应包含标记为的帖子
 [预览网站]时的草稿。如果你不想包括草稿帖子
@@ -1428,10 +1428,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.draft_if_future_date -->
+#### `setting config.draft_if_future_date`
 
-<!-- md:version 9.2.0 -->
-<!-- md:default `false` -->
+`version 9.2.0`
+`default _false_`
 
 该插件可以自动将带有未来日期的帖子标记为草稿。当
 日期已过今天，当
@@ -1456,11 +1456,11 @@ plugins:
 
 ---
 
-#### <!-- md:setting meta.authors -->
+#### `setting meta.authors`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`version 9.2.0`
+`flag metadata`
+`default none`
 
 使用此属性通过提供以下列表将帖子与[作者]相关联
 标识符如[`authors_file][config.authors_file]中所定义。如果A
@@ -1483,11 +1483,11 @@ authors:
 
 ---
 
-#### <!-- md:setting meta.categories -->
+#### `setting meta.categories`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`version 9.2.0`
+`flag metadata`
+`default none`
 
 使用此属性将帖子与一个或多个[类别][类别]相关联，
 使帖子成为生成的类别页面的一部分。类别已定义
@@ -1510,11 +1510,11 @@ categories:
 
 ---
 
-#### <!-- md:setting meta.date -->
+#### `setting meta.date`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag metadata -->
-<!-- md:flag required -->
+`version 9.2.0`
+`flag metadata`
+`flag required`
 
 使用此属性指定帖子的日期。注意，该属性是必需的，
 这意味着构建在未设置时失败。其他日期可以通过以下方式设置
@@ -1572,11 +1572,11 @@ categories:
 
 ---
 
-#### <!-- md:setting meta.draft -->
+#### `setting meta.draft`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
+`version 9.2.0`
+`flag metadata`
+`default none`
 
 使用此属性将帖子标记为草稿。该插件允许包含或
 使用[构建项目]时排除标记为草稿的帖子
@@ -1593,13 +1593,13 @@ draft: true
 
 ---
 
-#### <!-- md:setting meta.pin -->
+#### `setting meta.pin`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.53.0 -->
-<!-- md:flag metadata -->
-<!-- md:default `false` -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.53.0`
+`flag metadata`
+`default _false_`
+`flag experimental`
 
 使用此属性将柱子固定到视图的顶部。如果有多个帖子
 固定后，固定的帖子按降序排列，出现在所有帖子之前
@@ -1616,13 +1616,13 @@ pin: true
 
 ---
 
-#### <!-- md:setting meta.links -->
+#### `setting meta.links`
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.23.0 -->
-<!-- md:flag metadata -->
-<!-- md:default none -->
-<!-- md:flag experimental -->
+`sponsors`
+`version insiders-4.23.0`
+`flag metadata`
+`default none`
+`flag experimental`
 
 使用此属性定义在侧边栏中呈现的链接列表
 一篇帖子。该属性遵循与中的[`nav`][mkdocs.nav]相同的语法
@@ -1680,11 +1680,11 @@ pin: true
 
 ---
 
-#### <!-- md:setting meta.readtime -->
+#### `setting meta.readtime`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag metadata -->
-<!-- md:default computed -->
+`version 9.2.0`
+`flag metadata`
+`default computed`
 
 使用此属性显式设置帖子的阅读时间（分钟）。什么时候？
 启用[`post_readtime`][config.post_readtime]后，插件将计算
@@ -1701,11 +1701,11 @@ readtime: 15
 
 ---
 
-#### <!-- md:setting meta.slug -->
+#### `setting meta.slug`
 
-<!-- md:version 9.2.0 -->
-<!-- md:flag metadata -->
-<!-- md:default computed -->
+`version 9.2.0`
+`flag metadata`
+`default computed`
 
 使用此属性可以显式设置帖子的slug。默认情况下，slug
 帖子由[`post_slugify][config.post_sluglify]自动计算

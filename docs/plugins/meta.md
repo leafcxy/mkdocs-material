@@ -125,9 +125,9 @@ Material for MkDocs提供的插件。一些最强大的组合
 
 ## 配置
 
-<!-- md:version 9.6.0 -->
-<!-- md:plugin [meta] – built-in -->
-<!-- md:flag experimental -->
+`version 9.6.0`
+`plugin [meta] – built-in`
+`flag experimental`
 
 与所有[内置插件]一样，开始使用元插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
@@ -150,10 +150,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.enabled -->
+#### `setting config.enabled`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `true` -->
+`version 9.6.0`
+`default _true_`
 
 使用此设置可在[构建项目]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
@@ -173,10 +173,10 @@ plugins:
 
 ---
 
-#### <!-- md:setting config.meta_file -->
+#### `setting config.meta_file`
 
-<!-- md:version 9.6.0 -->
-<!-- md:default `.meta.yml` -->
+`version 9.6.0`
+`default _.meta.yml_`
 
 使用此设置更改插件在以下情况下将查找的元文件名
 扫描[文档目录][mkdocs.docs-dir]。通常没有必要

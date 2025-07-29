@@ -13,10 +13,10 @@ MkDocs的材料使遵守数据隐私法规变得非常容易，
 
 ### Cookie同意
 
-<!-- md:version 8.4.0 -->
-<!-- md:default none -->
-<!-- md:flag experimental -->
-<!-- md:example cookie-consent -->
+`version 8.4.0`
+`default none`
+`flag experimental`
+`example cookie-consent`
 
 MkDocs的材料附带了一份本地和可扩展的cookie同意书
 在向第三方发送请求之前征求用户的同意。添加
@@ -38,21 +38,21 @@ extra:
 
 以下属性可用：
 
-<!-- md:option consent.title -->
+`option consent.title`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性设置cookie同意的标题，该标题在
     必须设置为非空字符串。
 
-<!-- md:option consent.description -->
+`option consent.description`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性设置cookie同意的描述，如下所示
     并且可以包括原始HTML（例如到服务条款的链接）。
 
-<!-- md:option consent.cookies -->
+`option consent.cookies`
 
-:   <!-- md:default none --> 此属性允许添加自定义
+:   `default none` 此属性允许添加自定义
     Cookie或更改内置Cookie的初始“已检查”状态和名称。
     目前，内置了以下Cookie：
 
@@ -101,9 +101,9 @@ extra:
     自动包含一个设置，供用户禁用。[自定义Cookie]
     可以从JavaScript中使用。
 
-<!-- md:option consent.actions -->
+`option consent.actions`
 
-:   <!-- md:default `[accept, manage]` --> 此属性定义
+:   `default _[accept, manage]_` 此属性定义
     显示哪些按钮以及以何种顺序显示，例如允许用户接受
     Cookie和管理设置：
 
@@ -147,9 +147,9 @@ copyright: >
 
 ### 内置隐私插件
 
-<!-- md:version 9.5.0 -->
-<!-- md:plugin [privacy][built-in privacy plugin] -->
-<!-- md:flag experimental -->
+`version 9.5.0`
+`plugin [privacy][built-in privacy plugin]`
+`flag experimental`
 
 内置的隐私插件会自动将外部资产识别为一部分
 构建过程，并下载所有资产，以实现非常简单的自托管。添加
@@ -281,8 +281,8 @@ plugins:
 
 #### 高级设置
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.50.0 -->
+`sponsors`
+`version insiders-4.50.0`
 
 以下高级设置目前保留给我们的[赞助商]
 [内部人士]。它们完全是可选的，不会影响
@@ -301,8 +301,8 @@ plugins:
 
 ### 自定义Cookie
 
-<!-- md:version 8.4.0 -->
-<!-- md:example custom-cookies -->
+`version 8.4.0`
+`example custom-cookies`
 
 如果您自定义了[cookie同意]并添加了“自定义”cookie，则用户
 系统将提示您接受或拒绝您的自定义cookie。一旦用户接受

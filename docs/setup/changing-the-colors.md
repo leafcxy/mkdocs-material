@@ -14,8 +14,8 @@
 
 #### 配色方案
 
-<!-- md:version 5.2.0 -->
-<!-- md:default `default` -->
+`version 5.2.0`
+`default _default_`
 
 MkDocs的材质支持两种配色方案：一种是__light模式__，它只是
 称为“默认”，以及一个名为“板岩”的__dark模式。配色方案
@@ -52,8 +52,8 @@ theme:
 
 #### 原色
 
-<!-- md:version 0.2.0 -->
-<!-- md:default `indigo` -->
+`version 0.2.0`
+`default _indigo_`
 
 主色用于标题、侧边栏、文本链接和几个
 其他组件。要更改原色，请设置以下值
@@ -107,8 +107,8 @@ theme:
 
 #### 重点色
 
-<!-- md:version 0.2.0 -->
-<!-- md:default `indigo` -->
+`version 0.2.0`
+`default _indigo_`
 
 强调色用于表示可以交互的元素，例如。
 悬停的链接、按钮和滚动条。可以在`mkdocs.yml`中通过以下方式进行更改
@@ -164,9 +164,9 @@ theme:
 
 ### 调色板切换
 
-<!-- md:version 7.1.0 -->
-<!-- md:default none -->
-<!-- md:example color-palette-toggle -->
+`version 7.1.0`
+`default none`
+`example color-palette-toggle`
 
 提供浅色和深色调色板使您的文档令人愉快
 在一天中的不同时间阅读，因此用户可以相应地进行选择。添加
@@ -208,9 +208,9 @@ theme:
 
 必须为每个切换设置以下属性：
 
-<!-- md:option palette.toggle.icon -->
+`option palette.toggle.icon`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性必须指向引用任何捆绑图标的有效图标路径
     主题，否则构建将不会成功。一些流行的组合：
 
@@ -220,9 +220,9 @@ theme:
     * :material-eye: + :material-eye-outline: – `material/eye` + `material/eye-outline`
     * :material-lightbulb: + :material-lightbulb-outline: – `material/lightbulb` + `material/lightbulb-outline`
 
-<!-- md:option palette.toggle.name -->
+`option palette.toggle.name`
 
-:   <!-- md:default none --> <!-- md:flag required -->
+:   `default none` `flag required`
     此属性用作切换的“title”属性，应设置为
     一个可辨别的名称，以提高可访问性。它被渲染为[工具提示]。
 
@@ -234,9 +234,9 @@ theme:
 
 ### 系统偏好
 
-<!-- md:version 7.1.0 -->
-<!-- md:default none -->
-<!-- md:example color-palette-system-preference -->
+`version 7.1.0`
+`default none`
+`example color-palette-system-preference`
 
 每个调色板都可以链接到用户对光线的系统偏好
 通过使用媒体查询来显示深色外观。只需在旁边添加一个“media”属性
@@ -267,9 +267,9 @@ theme:
 
 #### 自动亮/暗模式
 
-<!-- md:version 9.5.0 -->
-<!-- md:flag experimental -->
-<!-- md:example color-palette-system-preference -->
+`version 9.5.0`
+`flag experimental`
+`example color-palette-system-preference`
 
 较新的操作系统允许在亮暗之间自动切换
 白天和晚上出现。MkDocs的材料增加了对
@@ -315,8 +315,8 @@ MkDocs的材料现在将在每次操作时更改调色板
 
 ### 自定义颜色
 
-<!-- md:version 5.0.0 -->
-<!-- md:example custom-colors -->
+`version 5.0.0`
+`example custom-colors`
 
 MkDocs的材质使用[CSS变量]实现颜色（自定义
 属性）。如果你想自定义调色板之外的颜色（例如

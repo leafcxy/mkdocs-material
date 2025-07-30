@@ -122,7 +122,7 @@ theme:
     ```
     ````
 
-  [line highlighting]: #highlighting-specific-lines
+  [line highlighting]: 
 
 ### 代码注释
 
@@ -159,7 +159,7 @@ theme:
     请注意，必须先出现的语言简码现在也必须是
     前缀为`。`.
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
 
 #### 定制选择器
 
@@ -198,7 +198,7 @@ extra:
 1.  :man_raising_hand：我是一个代码注释！我可以包含__格式的“代码”
     text__、图像、。..基本上任何可以用Markdown写的东西。
 
-  [placed in comments]: #adding-annotations
+  [placed in comments]: 
   [s2]: https://github.com/squidfunk/mkdocs-material/blob/87d5ca487b9d9ab95c41ee72813149d214048693/src/assets/stylesheets/main/extensions/pymdownx/_highlight.scss#L45
 
 ## 使用
@@ -403,7 +403,7 @@ def bubble_sort(items):
 
     </div>
 
-  [Adding line numbers]: #adding-line-numbers
+  [Adding line numbers]: 
 
 ### 突出显示内联代码块
 

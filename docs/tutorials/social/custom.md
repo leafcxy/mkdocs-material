@@ -136,7 +136,7 @@ Insiders Edition允许您为社交卡定义自定义布局
 ## 接下来是什么？
 
 如果你还没有博客，为什么不看看
-[blog tutorials](../index.md#blogs)并学习如何设置？社会
+[blog tutorials](../index.md)并学习如何设置？社会
 插件将帮助您吸引人们对您在社交媒体上发布的帖子的关注。
 
 查看我们为您准备的[other tutorials](../index.md)。

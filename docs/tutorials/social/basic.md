@@ -204,4 +204,4 @@ Insiders Edition为社交媒体提供了许多额外的布局
 社交卡片对于博客文章特别有用。如果你有博客，
 您只需打开两个插件即可创建社交卡
 为你最新的博客帖子做广告。如果你还没有，但想
-到，为什么不看看[blog tutorials](../index.md#blogs)呢？
+到，为什么不看看[blog tutorials](../index.md)呢？

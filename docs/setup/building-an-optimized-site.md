@@ -5,7 +5,7 @@ on search engines, load fast (even on slow networks), and work perfectly without
 JavaScript. Additionally, the [built-in optimize plugin] adds support for
 further useful automatic optimization techniques.
 
-  [built-in optimize plugin]: #built-in-optimize-plugin
+  [built-in optimize plugin]: 
 
 ## 配置
 
@@ -83,9 +83,9 @@ extra:
     - [Color palette][color palette]
 
   [Scope support]: https://github.com/squidfunk/mkdocs-material/releases/tag/8.0.0
-  [cookie consent]: ../setup/ensuring-data-privacy.md#cookie-consent
+  [cookie consent]: ../setup/ensuring-data-privacy.md
   [Linking of content tabs, i.e. active tab]: ../reference/content-tabs.md
-  [color palette]: ../setup/changing-the-colors.md#color-palette
+  [color palette]: ../setup/changing-the-colors.md
 
 ### 内置优化插件
 

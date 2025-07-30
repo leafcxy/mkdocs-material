@@ -29,8 +29,8 @@ markdown_extensions:
 - [Adding a glossary]
 
   [Abbreviations]: https://python-markdown.github.io/extensions/abbreviations/
-  [Adding abbreviations]: ../../reference/tooltips.md#adding-abbreviations
-  [Adding a glossary]: ../../reference/tooltips.md#adding-a-glossary
+  [Adding abbreviations]: ../../reference/tooltips.md
+  [Adding a glossary]: ../../reference/tooltips.md
 
 ### 告诫
 
@@ -54,10 +54,10 @@ markdown_extensions:
 - [Supported types]
 
   [Admonition]: https://python-markdown.github.io/extensions/admonition/
-  [Adding admonitions]: ../../reference/admonitions.md#usage
-  [Changing the title]: ../../reference/admonitions.md#changing-the-title
-  [Removing the title]: ../../reference/admonitions.md#removing-the-title
-  [Supported types]: ../../reference/admonitions.md#supported-types
+  [Adding admonitions]: ../../reference/admonitions.md
+  [Changing the title]: ../../reference/admonitions.md
+  [Removing the title]: ../../reference/admonitions.md
+  [Supported types]: ../../reference/admonitions.md
 
 ### 属性列表
 
@@ -87,12 +87,12 @@ markdown_extensions:
   [Attribute Lists]: https://python-markdown.github.io/extensions/attr_list/
   [Attribute Lists limitations]: https://python-markdown.github.io/extensions/attr_list/#limitations
   [Using grids]: ../../reference/grids.md#using-grids
-  [Adding buttons]: ../../reference/buttons.md#adding-buttons
-  [Adding tooltips]: ../../reference/tooltips.md#adding-tooltips
-  [Using icons with colors]: ../../reference/icons-emojis.md#with-colors
-  [Using icons with animations]: ../../reference/icons-emojis.md#with-animations
-  [Image alignment]: ../../reference/images.md#image-alignment
-  [Image lazy-loading]: ../../reference/images.md#image-lazy-loading
+  [Adding buttons]: ../../reference/buttons.md
+  [Adding tooltips]: ../../reference/tooltips.md
+  [Using icons with colors]: ../../reference/icons-emojis.md
+  [Using icons with animations]: ../../reference/icons-emojis.md
+  [Image alignment]: ../../reference/images.md
+  [Image lazy-loading]: ../../reference/images.md
 
 ### 定义列表
 
@@ -114,7 +114,7 @@ markdown_extensions:
 
   [Definition Lists]: https://python-markdown.github.io/extensions/definition_lists/
   [description lists]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
-  [Using definition lists]: ../../reference/lists.md#using-definition-lists
+  [Using definition lists]: ../../reference/lists.md
 
 ### 脚注
 
@@ -135,8 +135,8 @@ markdown_extensions:
 - [Adding footnote content]
 
   [Footnotes]: https://python-markdown.github.io/extensions/footnotes/
-  [Adding footnote references]: ../../reference/footnotes.md#adding-footnote-references
-  [Adding footnote content]: ../../reference/footnotes.md#adding-footnote-content
+  [Adding footnote references]: ../../reference/footnotes.md
+  [Adding footnote content]: ../../reference/footnotes.md
 
 ### HTML中的Markdown
 
@@ -165,9 +165,9 @@ markdown_extensions:
 - [Image captions]
 
   [Markdown in HTML]: https://python-markdown.github.io/extensions/md_in_html/
-  [Using annotations]: ../../reference/annotations.md#usage
-  [Using grids]: ../../reference/grids.md#usage
-  [Image captions]: ../../reference/images.md#image-captions
+  [Using annotations]: ../../reference/annotations.md
+  [Using grids]: ../../reference/grids.md
+  [Image captions]: ../../reference/images.md
 
 ### 目录
 
@@ -288,7 +288,7 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
 他们的风险由你自己承担。
 
   [Table of Contents]: https://python-markdown.github.io/extensions/toc/
-  [site language]: ../changing-the-language.md#site-language
+  [site language]: ../changing-the-language.md
   [Slugs]: https://facelessuser.github.io/pymdown-extensions/extras/slugs/
 
 ### Tables
@@ -311,8 +311,8 @@ markdown_extensions:
 - [Column alignment]
 
   [Tables]: https://python-markdown.github.io/extensions/tables/
-  [Using data tables]: ../../reference/data-tables.md#usage
-  [Column alignment]: ../../reference/data-tables.md#column-alignment
+  [Using data tables]: ../../reference/data-tables.md
+  [Column alignment]: ../../reference/data-tables.md
 
 ## 被取代的扩展
 

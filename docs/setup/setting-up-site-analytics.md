@@ -6,8 +6,8 @@ MkDocs与[Google Analytics]原生集成，并提供可定制的
 [cookie consent]和[feedback widget]。
 
   [Google Analytics]: https://developers.google.com/analytics
-  [cookie consent]: ensuring-data-privacy.md#cookie-consent
-  [feedback widget]: #was-this-page-helpful
+  [cookie consent]: ensuring-data-privacy.md
+  [feedback widget]: 
 
 ## 配置
 
@@ -194,7 +194,7 @@ extra:
     GitHub问题的替代方案是[Google Forms]。
 
   [feedback widget]: #feedback
-  [analytics]: #google-analytics
+  [analytics]: 
   [feedback report]: ../assets/screenshots/feedback-report.png
   [custom feedback integration]: #custom-site-feedback
   [custom icons]: https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons
@@ -261,7 +261,7 @@ hide:
         定制集成。如果你正在分享，这尤其有用
         跨多个存储库的自定义集成。
 
-  [theme extension]: ../customization.md#extending-the-theme
+  [theme extension]: ../customization.md
   [instant loading]: setting-up-navigation.md#_3
 
 ### 自定义网站反馈
@@ -317,4 +317,4 @@ hide:
 &nbsp;
 { #feedback style="margin: 0; height: 0" }
 
-  [additional JavaScript]: ../customization.md#additional-javascript
+  [additional JavaScript]: ../customization.md

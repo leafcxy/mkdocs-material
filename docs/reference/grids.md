@@ -31,8 +31,8 @@ markdown_extensions: # (1)!
 
   [icons and emojis]: icons-emojis.md
   [configured separately]: icons-emojis.md#configuration
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
-  [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
+  [Markdown in HTML]: ../setup/extensions/python-markdown.md
 
 ## 使用
 
@@ -52,8 +52,8 @@ markdown_extensions: # (1)!
 悬停。它们有两种稍微不同的语法：[list]和[block syntax]，
 添加对不同用例的支持。
 
-  [list]: #list-syntax
-  [block syntax]: #block-syntax
+  [list]: 
+  [block syntax]: 
 
 #### 列表语法
 
@@ -177,7 +177,7 @@ markdown_extensions: # (1)!
   [customization]: ../customization.md
   [license]: ../license.md
   [GitHub]: https://github.com/squidfunk/mkdocs-material
-  [hiding both sidebars]: ../setup/setting-up-navigation.md#hiding-the-sidebars
+  [hiding both sidebars]: ../setup/setting-up-navigation.md
 
 #### 块语法
 

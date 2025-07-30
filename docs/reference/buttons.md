@@ -23,7 +23,7 @@ markdown_extensions:
 
 - [Attribute Lists]
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
 
 ## 使用
 
@@ -43,7 +43,7 @@ markdown_extensions:
 
 </div>
 
-  [primary color]: ../setup/changing-the-colors.md#primary-color
+  [primary color]: ../setup/changing-the-colors.md
   [accent color]: ../setup/changing-the-colors.md#accent-color
   [Demo]: javascript:alert$.next("Demo")
 
@@ -80,5 +80,5 @@ CSS类选择器。
 
 </div>
 
-  [icon syntax]: icons-emojis.md#using-icons
+  [icon syntax]: icons-emojis.md
   [icon search]: icons-emojis.md#_2

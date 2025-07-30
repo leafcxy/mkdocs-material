@@ -107,7 +107,7 @@ comments: true
 [built-in meta plugin].
 
   [Giscus GitHub App]: https://github.com/apps/giscus
-  [theme extension]: ../customization.md#extending-the-theme
+  [theme extension]: ../customization.md
   [comments]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/comments.html
-  [overriding partials]: ../customization.md#overriding-partials
+  [overriding partials]: ../customization.md
   [built-in meta plugin]: ../plugins/meta.md

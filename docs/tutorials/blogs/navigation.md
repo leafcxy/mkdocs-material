@@ -56,7 +56,7 @@ __所需时间:__ 通常为30分钟
     本教程的其余部分假设您正在将博客与
     更宽的网站。
 
-[Setting up a blog]: ../../setup/setting-up-a-blog.md#blog-only
+[Setting up a blog]: ../../setup/setting-up-a-blog.md
 
 !!! tip "添加页面"
 

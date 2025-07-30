@@ -78,7 +78,7 @@ nav:
     项目，而不是在子目录中。有关更多信息，请参阅
     [blog_dir][blog_dir]配置选项。
 
-  [blog_dir]: ../../plugins/blog.md#config.blog_dir
+  [blog_dir]: ../../plugins/blog.md#setting-configblog_dir
 
 #### 博客设置
 
@@ -182,7 +182,7 @@ tellus id elit ultricies, vel finibus erat cursus.
 行为和更多。
 
   [exact same Markdown flavor]: ../../reference/index.md
-  [post slugs]: ../../plugins/blog.md#config.post_url_format
+  [post slugs]: ../../plugins/blog.md
   [draft]: ../../plugins/blog.md#meta.draft
   [This behavior can be changed]: ../../plugins/blog.md#config.draft
   [live preview server]: ../../creating-your-site.md#previewing-as-you-write
@@ -190,14 +190,14 @@ tellus id elit ultricies, vel finibus erat cursus.
   [category]: ../../plugins/blog.md#config.categories
   [Blog]: blog-support-just-landed/blog.png
   [Blog post]: blog-support-just-landed/blog-post.png
-  [Adding an excerpt]: ../../setup/setting-up-a-blog.md#adding-an-excerpt
-  [Adding authors]: ../../setup/setting-up-a-blog.md#adding-authors
-  [Adding categories]: ../../setup/setting-up-a-blog.md#adding-categories
-  [Adding tags]: ../../setup/setting-up-a-blog.md#adding-tags
-  [Adding related links]: ../../setup/setting-up-a-blog.md#adding-related-links
-  [Linking from and to posts]: ../../setup/setting-up-a-blog.md#linking-from-and-to-posts
-  [Setting the reading time]: ../../setup/setting-up-a-blog.md#setting-the-reading-time
-  [Setting defaults]: ../../setup/setting-up-a-blog.md#setting-defaults
+  [Adding an excerpt]: ../../setup/setting-up-a-blog.md
+  [Adding authors]: ../../setup/setting-up-a-blog.md
+  [Adding categories]: ../../setup/setting-up-a-blog.md
+  [Adding tags]: ../../setup/setting-up-a-blog.md
+  [Adding related links]: ../../setup/setting-up-a-blog.md
+  [Linking from and to posts]: ../../setup/setting-up-a-blog.md
+  [Setting the reading time]: ../../setup/setting-up-a-blog.md
+  [Setting defaults]: ../../setup/setting-up-a-blog.md
   [configuration options]: ../../setup/setting-up-a-blog.md#configuration
 
 ## 接下来是什么？

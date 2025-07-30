@@ -65,10 +65,10 @@ markdown_extensions:
 
     如需了解更多信息，请[参阅扩展指南][取消订阅]。
 
-  [tab_1]: #anchor-links--or-even-me
-  [tab_2]: ../publishing-your-site.md#with-github-actions-insiders
+  [tab_1]: 
+  [tab_2]: ../publishing-your-site.md
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [slugification]: ../setup/extensions/python-markdown-extensions.md#+pymdownx.tabbed.slugify
+  [slugification]: ../setup/extensions/python-markdown-extensions.md
 
 ### 链接内容选项卡
 

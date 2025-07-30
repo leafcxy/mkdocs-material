@@ -125,7 +125,7 @@ extra:
 确保一个别名与[默认版本]匹配，因为这是用户所在的位置
 重定向到。
 
-  [theme extension]: ../customization.md#extending-the-theme
+  [theme extension]: ../customization.md
   [overriding blocks]: ../customization.md#overriding-blocks
   [Version warning preview]: ../assets/screenshots/version-warning.png
   [default version]: #setting-a-default-version

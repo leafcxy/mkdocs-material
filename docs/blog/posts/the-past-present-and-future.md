@@ -160,40 +160,40 @@ Material中添加了38个新功能，这绝对令人兴奋
 __55次，“mkdocs材料内幕人士”被运送了72次。
 
   [Insiders]: ../../insiders/index.md
-  [Admonition inline blocks]: ../../reference/admonitions.md#inline-blocks
-  [Advanced search highlighting]: search-better-faster-smaller.md#accurate-highlighting
-  [Anchor tracking]: ../../setup/setting-up-navigation.md#anchor-tracking
-  [Back-to-top button]: ../../setup/setting-up-navigation.md#back-to-top-button
-  [Boosting pages in search]: ../../setup/setting-up-site-search.md#search-boosting
+  [Admonition inline blocks]: ../../reference/admonitions.md
+  [Advanced search highlighting]: search-better-faster-smaller.md
+  [Anchor tracking]: ../../setup/setting-up-navigation.md
+  [Back-to-top button]: ../../setup/setting-up-navigation.md
+  [Boosting pages in search]: ../../setup/setting-up-site-search.md
   [Brand new search plugin]: search-better-faster-smaller.md
-  [Code annotations]: ../../reference/code-blocks.md#adding-annotations
-  [Code annotations: strip comments]: ../../reference/code-blocks.md#stripping-comments
-  [Code block titles]: ../../reference/code-blocks.md#adding-a-title
-  [Code block line anchors]: ../../setup/extensions/python-markdown-extensions.md#+pymdownx.highlight.anchor_linenums
-  [Color palette toggle]: ../../setup/changing-the-colors.md#color-palette-toggle
+  [Code annotations]: ../../reference/code-blocks.md
+  [Code annotations: strip comments]: ../../reference/code-blocks.md
+  [Code block titles]: ../../reference/code-blocks.md
+  [Code block line anchors]: ../../setup/extensions/python-markdown-extensions.md
+  [Color palette toggle]: ../../setup/changing-the-colors.md
   [Content tabs: improved support]: ../../reference/content-tabs.md
-  [Content tabs: auto-linking]: ../../reference/content-tabs.md#linked-content-tabs
-  [Cookie consent]: ../../setup/ensuring-data-privacy.md#cookie-consent
-  [Custom admonition icons]: ../../reference/admonitions.md#admonition-icons
-  [Dark mode support for images]: ../../reference/images.md#light-and-dark-mode
-  [Dismissable announcement bar]: ../../setup/setting-up-the-header.md#mark-as-read
-  [Excluding content from search]: ../../setup/setting-up-site-search.md#search-exclusion
+  [Content tabs: auto-linking]: ../../reference/content-tabs.md
+  [Cookie consent]: ../../setup/ensuring-data-privacy.md
+  [Custom admonition icons]: ../../reference/admonitions.md
+  [Dark mode support for images]: ../../reference/images.md
+  [Dismissable announcement bar]: ../../setup/setting-up-the-header.md
+  [Excluding content from search]: ../../setup/setting-up-site-search.md
   [Mermaid.js integration]: ../../reference/diagrams.md
-  [Navigation icons]: ../../reference/index.md#setting-the-page-icon
-  [Remove generator notice]: ../../setup/setting-up-the-footer.md#generator-notice
-  [Rich search previews]: search-better-faster-smaller.md#rich-search-previews
-  [Search highlighting]: ../../setup/setting-up-site-search.md#search-highlighting
-  [Search sharing]: ../../setup/setting-up-site-search.md#search-sharing
-  [Search suggestions]: ../../setup/setting-up-site-search.md#search-suggestions
-  [Section index pages]: ../../setup/setting-up-navigation.md#section-index-pages
-  [Site language selection]: ../../setup/changing-the-language.md#site-language-selector
+  [Navigation icons]: ../../reference/index.md
+  [Remove generator notice]: ../../setup/setting-up-the-footer.md
+  [Rich search previews]: search-better-faster-smaller.md
+  [Search highlighting]: ../../setup/setting-up-site-search.md
+  [Search sharing]: ../../setup/setting-up-site-search.md
+  [Search suggestions]: ../../setup/setting-up-site-search.md
+  [Section index pages]: ../../setup/setting-up-navigation.md
+  [Site language selection]: ../../setup/changing-the-language.md
   [Social cards]: ../../setup/setting-up-social-cards.md
-  [Sticky navigation tabs]: ../../setup/setting-up-navigation.md#sticky-navigation-tabs
+  [Sticky navigation tabs]: ../../setup/setting-up-navigation.md
   [Tags with search integration]: ../../setup/setting-up-tags.md
-  [Tokenizer with lookahead]: search-better-faster-smaller.md#tokenizer-lookahead
-  [Versioning]: ../../setup/setting-up-versioning.md#versioning
-  [Version warning]: ../../setup/setting-up-versioning.md#version-warning
-  [Was this page helpful?]: ../../setup/setting-up-site-analytics.md#was-this-page-helpful
+  [Tokenizer with lookahead]: search-better-faster-smaller.md
+  [Versioning]: ../../setup/setting-up-versioning.md
+  [Version warning]: ../../setup/setting-up-versioning.md
+  [Was this page helpful?]: ../../setup/setting-up-site-analytics.md
   [changelog]: ../../changelog/index.md
 
 ### 基金

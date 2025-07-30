@@ -70,9 +70,9 @@ markdown_extensions:
   [FontAwesome]: https://fontawesome.com/search?m=free
   [Octicons]: https://octicons.github.com/
   [Simple Icons]: https://simpleicons.org/
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
   [Emoji]: ../setup/extensions/python-markdown-extensions.md#emoji
-  [Emoji with custom icons]: ../setup/extensions/python-markdown-extensions.md#+pymdownx.emoji.options.custom_icons
+  [Emoji with custom icons]: ../setup/extensions/python-markdown-extensions.md
 
 ## 使用
 
@@ -152,7 +152,7 @@ markdown_extensions:
 
 </div>
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
   [inline styles]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style
   [additional style sheet]: ../customization.md#additional-css
 
@@ -197,7 +197,7 @@ markdown_extensions:
 
 </div>
 
-  [colors]: #with-colors
+  [colors]: 
   [animations]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 
 ### 侧边栏中的图标和表情符号：微笑：smile:
@@ -235,5 +235,5 @@ Markdown和HTML格式。
 
 这正是Material for MkDocs在其模板中所做的。
 
-  [extending the theme]: ../customization.md#extending-the-theme
+  [extending the theme]: ../customization.md
   [include]: https://jinja.palletsprojects.com/en/2.11.x/templates/#include

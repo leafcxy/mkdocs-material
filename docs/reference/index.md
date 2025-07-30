@@ -185,7 +185,7 @@ template: custom.html
     template: custom.html
     ```
 
-  [theme extension]: ../customization.md#extending-the-theme
+  [theme extension]: ../customization.md
   [built-in meta plugin]: ../plugins/meta.md
 
 ## 自定义
@@ -230,5 +230,5 @@ template: custom.html
 [`description][description]来设置值。请注意，在这种情况下
 模板定义了一个“else”分支，如果没有给出，它将设置默认值。
 
-  [title]: #setting-the-page-title
-  [description]: #setting-the-page-description
+  [title]: 
+  [description]: #_1

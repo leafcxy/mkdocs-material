@@ -21,11 +21,11 @@
 - [Checklist]
 
   [reproduction]: ../guides/creating-a-reproduction.md
-  [Title]: #title
-  [Description]: #description
-  [Related links]: #related-links
+  [Title]: 
+  [Description]: #_1
+  [Related links]: 
   [Proposed change]: #proposed-change
-  [Checklist]: #checklist
+  [Checklist]: 
 
 ### 名称
 

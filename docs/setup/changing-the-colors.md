@@ -227,7 +227,7 @@ theme:
     一个可辨别的名称，以提高可访问性。它被渲染为[工具提示]。
 
   [palette.scheme]: #color-scheme
-  [palette.primary]: #primary-color
+  [palette.primary]: 
   [palette.accent]: #accent-color
   [icon search]: ../reference/icons-emojis.md#_2
   [tooltip]: ../reference/tooltips.md

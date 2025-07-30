@@ -5,7 +5,7 @@ MkDocs的材料增加了对带有标签的页面分类的一流支持，
 通过搜索和专用的[tags index]。如果您的文档很大，请标记
 可以帮助更快地发现相关信息。
 
-  [tags index]: #adding-a-tags-index
+  [tags index]: 
 
 ## 配置
 
@@ -44,7 +44,7 @@ plugins:
 
   [Insiders]: ../insiders/index.md
   [config.listings_layout]: ../plugins/tags.md#config.listings_layout
-  [config.listings_toc]: ../plugins/tags.md#config.listings_toc
+  [config.listings_toc]: ../plugins/tags.md
 
 ### 标记图标和标识符
 
@@ -205,9 +205,9 @@ tags:
 对于任意数量的标签索引（列表）、[范围列表]，
 [阴影标签]、[嵌套标签]等等。
 
-  [scoped listings]: #scoped-listings
-  [shadow tags]: #shadow-tags
-  [nested tags]: #nested-tags
+  [scoped listings]: 
+  [shadow tags]: 
+  [nested tags]: 
 
 #### 可配置列表
 
@@ -303,8 +303,8 @@ plugins:
 [`shadow`][config.shadow]设置已启用，禁用时将被排除。
 这是使用标签进行结构化的绝佳机会。
 
-  [config.shadow]: ../plugins/tags.md#config.shadow
-  [config.shadow_tags]: ../plugins/tags.md#config.shadow_tags
+  [config.shadow]: ../plugins/tags.md
+  [config.shadow_tags]: ../plugins/tags.md
 
 #### 嵌套标签
 

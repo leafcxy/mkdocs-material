@@ -39,7 +39,7 @@ icon: material/share-circle
 
   [configuration]: #configuration
   [image processing]: requirements/image-processing.md
-  [custom layouts]: ../setup/setting-up-social-cards.md#customization
+  [custom layouts]: ../setup/setting-up-social-cards.md
   [Puppeteer]: https://github.com/puppeteer/puppeteer
   [GitHub wrote in their blog]: https://github.blog/2021-06-22-framework-building-open-graph-images/
   [cached]: #caching
@@ -792,10 +792,10 @@ social:
   [Layout default accent]: ../assets/screenshots/social-cards-accent.png
   [Layout default invert]: ../assets/screenshots/social-cards-invert.png
 
-  [primary color]: ../setup/changing-the-colors.md#primary-color
-  [page icon]: ../reference/index.md#setting-the-page-icon
+  [primary color]: ../setup/changing-the-colors.md
+  [page icon]: ../reference/index.md
   [accent color]: ../setup/changing-the-colors.md#accent-color
-  [font]: ../setup/changing-the-fonts.md#regular-font
+  [font]: ../setup/changing-the-fonts.md
 
 ---
 
@@ -1025,8 +1025,8 @@ plugins:
 
 提供的路径是从根目录解析的。
 
-  [theme.logo]: ../setup/changing-the-logo-and-icons.md#logo-image
-  [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md#logo-icon-bundled
+  [theme.logo]: ../setup/changing-the-logo-and-icons.md
+  [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md
 
 ---
 
@@ -1047,7 +1047,7 @@ plugins:
         title: My custom title
 ```
 
-  [meta.title]: ../reference/index.md#setting-the-page-title
+  [meta.title]: ../reference/index.md
 
 ---
 
@@ -1068,7 +1068,7 @@ plugins:
         description: My custom description
 ```
 
-  [meta.description]: ../reference/index.md#setting-the-page-description
+  [meta.description]: ../reference/index.md
 
 ---
 

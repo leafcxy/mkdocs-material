@@ -85,10 +85,10 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [Arithmatex documentation on KaTeX]: https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/#loading-katex
   [MathJax]: https://www.mathjax.org/
   [KaTeX]: https://github.com/Khan/KaTeX
-  [additional JavaScript]: ../../customization.md#additional-javascript
+  [additional JavaScript]: ../../customization.md
   [instant loading]: ../setting-up-navigation.md#_3
-  [Using block syntax]: ../../reference/math.md#using-block-syntax
-  [Using inline block syntax]: ../../reference/math.md#using-inline-block-syntax
+  [Using block syntax]: ../../reference/math.md
+  [Using inline block syntax]: ../../reference/math.md
 
 ### BetterEm
 
@@ -157,8 +157,8 @@ MkDocs，因为它们只影响Markdown解析阶段。参见[注意事项]，[标
   [Caret]: https://facelessuser.github.io/pymdown-extensions/extensions/caret/
   [Mark]: https://facelessuser.github.io/pymdown-extensions/extensions/mark/
   [Tilde]: https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
-  [Highlighting text]: ../../reference/formatting.md#highlighting-text
-  [Sub- and superscripts]: ../../reference/formatting.md#sub-and-superscripts
+  [Highlighting text]: ../../reference/formatting.md
+  [Sub- and superscripts]: ../../reference/formatting.md
 
 ### Critic
 
@@ -212,7 +212,7 @@ markdown_extensions:
 
   [Critic]: https://facelessuser.github.io/pymdown-extensions/extensions/critic/
   [Critic Markup]: https://github.com/CriticMarkup/CriticMarkup-toolkit
-  [Highlighting changes]: ../../reference/formatting.md#highlighting-changes
+  [Highlighting changes]: ../../reference/formatting.md
 
 ### Details
 
@@ -233,8 +233,8 @@ markdown_extensions:
 - [Collapsible blocks]
 
   [Details]: https://facelessuser.github.io/pymdown-extensions/extensions/details/
-  [Admonition]: python-markdown.md#admonition
-  [Collapsible blocks]: ../../reference/admonitions.md#collapsible-blocks
+  [Admonition]: python-markdown.md
+  [Collapsible blocks]: ../../reference/admonitions.md
 
 ### Emoji
 
@@ -310,9 +310,9 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [Emoji]: https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
   [Emoji index]: https://facelessuser.github.io/pymdown-extensions/extensions/emoji/#default-emoji-indexes
   [icon customization guide]: ../changing-the-logo-and-icons.md#additional-icons
-  [Using emojis]: ../../reference/icons-emojis.md#using-emojis
-  [Using icons]: ../../reference/icons-emojis.md#using-icons
-  [Using icons in templates]: ../../reference/icons-emojis.md#using-icons-in-templates
+  [Using emojis]: ../../reference/icons-emojis.md
+  [Using icons]: ../../reference/icons-emojis.md
+  [Using icons in templates]: ../../reference/icons-emojis.md
 
 ### Highlight
 
@@ -489,12 +489,12 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [Pygments]: https://pygments.org
   [additional style sheet]: ../../customization.md#additional-css
   [Highlight.js]: https://highlightjs.org/
-  [title]: ../../reference/code-blocks.md#adding-a-title
-  [Adding line numbers]: ../../reference/code-blocks.md#adding-line-numbers
-  [Using code blocks]: ../../reference/code-blocks.md#usage
-  [Adding a title]: ../../reference/code-blocks.md#adding-a-title
-  [Highlighting specific lines]: ../../reference/code-blocks.md#highlighting-specific-lines
-  [Custom syntax theme]: ../../reference/code-blocks.md#custom-syntax-theme
+  [title]: ../../reference/code-blocks.md
+  [Adding line numbers]: ../../reference/code-blocks.md
+  [Using code blocks]: ../../reference/code-blocks.md
+  [Adding a title]: ../../reference/code-blocks.md
+  [Highlighting specific lines]: ../../reference/code-blocks.md
+  [Custom syntax theme]: ../../reference/code-blocks.md
 
 ### InlineHilite
 
@@ -523,7 +523,7 @@ MkDocs，因为它们只影响Markdown解析阶段。唯一的例外是
   [InlineHilite]: https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
   [InlineHilite options]: https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/#options
   [pymdownx.highlight]: #highlight
-  [Highlighting inline code blocks]: ../../reference/code-blocks.md#highlighting-inline-code-blocks
+  [Highlighting inline code blocks]: ../../reference/code-blocks.md
 
 ### Keys
 
@@ -549,7 +549,7 @@ MkDocs，因为它们只影响Markdown解析阶段。唯一的例外是
 
   [Keys]: https://facelessuser.github.io/pymdown-extensions/extensions/keys/
   [Keys options]: https://facelessuser.github.io/pymdown-extensions/extensions/keys/#options
-  [Adding keyboard keys]: ../../reference/formatting.md#adding-keyboard-keys
+  [Adding keyboard keys]: ../../reference/formatting.md
 
 ### SmartSymbols
 
@@ -595,8 +595,8 @@ MkDocs，因为它们只影响Markdown解析阶段。请参阅[片段
 - [Embedding external files]
 
   [Snippets]: https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
-  [Adding a glossary]: ../../reference/tooltips.md#adding-a-glossary
-  [Embedding external files]: ../../reference/code-blocks.md#embedding-external-files
+  [Adding a glossary]: ../../reference/tooltips.md
+  [Embedding external files]: ../../reference/code-blocks.md
 
 ### SuperFences
 
@@ -652,13 +652,13 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [Fenced Code Blocks]: python-markdown.md#fenced-code-blocks
   [Mermaid.js]: https://mermaid-js.github.io/mermaid/
   [diagrams]: ../../reference/diagrams.md
-  [Using annotations]: ../../reference/annotations.md#usage
-  [Using content tabs]: ../../reference/content-tabs.md#usage
-  [Using flowcharts]: ../../reference/diagrams.md#using-flowcharts
-  [Using sequence diagrams]: ../../reference/diagrams.md#using-sequence-diagrams
-  [Using state diagrams]: ../../reference/diagrams.md#using-state-diagrams
-  [Using class diagrams]: ../../reference/diagrams.md#using-class-diagrams
-  [Using entity-relationship diagrams]: ../../reference/diagrams.md#using-entity-relationship-diagrams
+  [Using annotations]: ../../reference/annotations.md
+  [Using content tabs]: ../../reference/content-tabs.md
+  [Using flowcharts]: ../../reference/diagrams.md
+  [Using sequence diagrams]: ../../reference/diagrams.md
+  [Using state diagrams]: ../../reference/diagrams.md
+  [Using class diagrams]: ../../reference/diagrams.md
+  [Using entity-relationship diagrams]: ../../reference/diagrams.md
 
 ### Tabbed
 
@@ -741,9 +741,9 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [alternate style]: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/#alternate-style
   [combine_header_slug style]: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/#tab-ids
   [better behavior on mobile viewports]: https://x.com/squidfunk/status/1424740370596958214
-  [Grouping code blocks]: ../../reference/content-tabs.md#grouping-code-blocks
-  [Grouping other content]: ../../reference/content-tabs.md#grouping-other-content
-  [Embedded content]: ../../reference/content-tabs.md#embedded-content
+  [Grouping code blocks]: ../../reference/content-tabs.md
+  [Grouping other content]: ../../reference/content-tabs.md
+  [Embedded content]: ../../reference/content-tabs.md
   [Slugs]: https://facelessuser.github.io/pymdown-extensions/extras/slugs/
 
 ### Tasklist
@@ -798,4 +798,4 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [Tasklist]: https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
   [GitHub Flavored Markdown]: https://github.github.com/gfm/
   [Tasklist specification]: https://github.github.com/gfm/#task-list-items-extension-
-  [Using task lists]: ../../reference/lists.md#using-task-lists
+  [Using task lists]: ../../reference/lists.md

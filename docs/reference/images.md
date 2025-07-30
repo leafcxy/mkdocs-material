@@ -28,8 +28,8 @@ markdown_extensions:
 - [Markdown in HTML]
 - [Caption]
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
-  [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
+  [Markdown in HTML]: ../setup/extensions/python-markdown.md
   [Caption]: ../setup/extensions/python-markdown-extensions.md#caption
 
 ### 灯箱
@@ -116,7 +116,7 @@ plugins:
     在Material for MkDocs生成的网站之外查看。
 
   [align]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#deprecated_attributes
-  [image captions]: #image-captions
+  [image captions]: 
 
 ### 图片标题
 
@@ -212,7 +212,7 @@ Image caption
     记住要改#！css“自定义灯光”`和`#！css“自定义深色”
     你的计划名称。
 
-  [color palette toggle]: ../setup/changing-the-colors.md#color-palette-toggle
+  [color palette toggle]: ../setup/changing-the-colors.md
   [Zelda light world]: ../assets/images/zelda-light-world.png#only-light
   [Zelda dark world]: ../assets/images/zelda-dark-world.png#only-dark
   [color schemes]: ../setup/changing-the-colors.md#color-scheme

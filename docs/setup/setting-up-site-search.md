@@ -194,7 +194,7 @@ search:
     }
     ```
 
-  [Attribute Lists]: extensions/python-markdown.md#attribute-lists
+  [Attribute Lists]: extensions/python-markdown.md
 
 #### 不包括区块
 

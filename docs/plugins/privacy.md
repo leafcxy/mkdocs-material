@@ -312,7 +312,7 @@ plugins:
       assets: false
 ```
 
-  [external links]: #external-links
+  [external links]: 
 
 ---
 

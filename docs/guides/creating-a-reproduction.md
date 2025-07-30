@@ -93,7 +93,7 @@
     非必要的行和文件。
 
   [bug reporting guide]: ../contributing/reporting-a-bug.md#upgrade-to-latest-version
-  [minimal configuration]: ../creating-your-site.md#minimal-configuration
+  [minimal configuration]: ../creating-your-site.md
 
 ### 创建“.zip”文件
 

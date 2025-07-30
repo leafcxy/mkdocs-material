@@ -44,7 +44,7 @@ block][overriding blocks]，默认为空：
 {% endblock %}
 ```
 
-  [extend the theme]: ../customization.md#extending-the-theme
+  [extend the theme]: ../customization.md
   [overriding blocks]: ../customization.md#overriding-blocks
 
 #### 标记为已读

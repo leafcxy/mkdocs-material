@@ -132,9 +132,9 @@ GitHub施加的限制。如果在此期间未接受邀请
 向组织提供MkDocs Insiders存储库的材料，提供途径
 团队协作。
 
-  [fork]: #forking
+  [fork]: 
   [clone]: #cloning
-  [mirror]: #mirroring
+  [mirror]: 
   [individual]: #individuals
 
 ### 外部合作者

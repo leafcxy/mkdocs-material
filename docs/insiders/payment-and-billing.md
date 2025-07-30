@@ -50,7 +50,7 @@ GitHub赞助商在以下时间通过电子邮件自动发出并发送付款收�
   [15]: https://github.com/sponsors/squidfunk/sponsorships?tier_id=210638
   [125]: https://github.com/sponsors/squidfunk/sponsorships?tier_id=210643
   [non-commercial use]: sponsoring-tiers.md/#non-commercial-use
-  [commercial use]: sponsoring-tiers.md/#commercial-use
+  [commercial use]: sponsoring-tiers.md/
 
 ## 自由出入
 

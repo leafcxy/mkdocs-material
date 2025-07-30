@@ -24,7 +24,7 @@ markdown_extensions:
 
 - [Footnotes]
 
-  [Footnotes]: ../setup/extensions/python-markdown.md#footnotes
+  [Footnotes]: ../setup/extensions/python-markdown.md
 
 ### 脚注工具提示
 

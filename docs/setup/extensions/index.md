@@ -45,25 +45,25 @@ Markdown是一种非常小的语言，有一种参考实现，称为
 
 </div>
 
-  [Abbreviations]: python-markdown.md#abbreviations
-  [Admonition]: python-markdown.md#admonition
+  [Abbreviations]: python-markdown.md
+  [Admonition]: python-markdown.md
   [Arithmatex]: python-markdown-extensions.md#arithmatex
-  [Attribute Lists]: python-markdown.md#attribute-lists
+  [Attribute Lists]: python-markdown.md
   [BetterEm]: python-markdown-extensions.md#betterem
   [Caret, Mark & Tilde]: python-markdown-extensions.md#caret-mark-tilde
   [Critic]: python-markdown-extensions.md#critic
-  [Definition Lists]: python-markdown.md#definition-lists
+  [Definition Lists]: python-markdown.md
   [Details]: python-markdown-extensions.md#details
   [Emoji]: python-markdown-extensions.md#emoji
-  [Footnotes]: python-markdown.md#footnotes
+  [Footnotes]: python-markdown.md
   [Highlight]: python-markdown-extensions.md#highlight
   [Keys]: python-markdown-extensions.md#keys
-  [Markdown in HTML]: python-markdown.md#markdown-in-html
+  [Markdown in HTML]: python-markdown.md
   [SmartSymbols]: python-markdown-extensions.md#smartsymbols
   [Snippets]: python-markdown-extensions.md#snippets
   [SuperFences]: python-markdown-extensions.md#superfences
   [Tabbed]: python-markdown-extensions.md#tabbed
-  [Table of Contents]: python-markdown.md#table-of-contents
+  [Table of Contents]: python-markdown.md
   [Tables]: python-markdown.md#tables
   [Tasklist]: python-markdown-extensions.md#tasklist
 

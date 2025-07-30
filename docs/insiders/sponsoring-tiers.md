@@ -30,7 +30,7 @@
 
   [monthly sponsoring tier]: #monthly-sponsoring
   [non-commercial]: #non-commercial-use
-  [commercial]: #commercial-use
+  [commercial]: 
   [upgrade or downgrade]: #switching-tiers
 
 ## 每月赞助

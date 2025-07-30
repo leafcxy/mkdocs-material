@@ -181,7 +181,7 @@ In order to customize and override the [copyright notice], [extend the theme]
 and [override the `copyright.html` partial][overriding partials], which normally
 includes the `copyright` property set in `mkdocs.yml`.
 
-  [copyright notice]: #copyright-notice
-  [generator notice]: #generator-notice
-  [extend the theme]: ../customization.md#extending-the-theme
-  [overriding partials]: ../customization.md#overriding-partials
+  [copyright notice]: 
+  [generator notice]: 
+  [extend the theme]: ../customization.md
+  [overriding partials]: ../customization.md

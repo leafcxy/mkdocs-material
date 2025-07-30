@@ -110,18 +110,18 @@ Material for MkDocs提供的插件。一些最强大的组合
 </div>
 
   [social]: social.md
-  [change the layout]: social.md#meta.social.cards_layout
-  [change specific layout options]: social.md#meta.social.cards_layout_options
-  [background]: social.md#option.background_color
-  [color]: social.md#option.color
+  [change the layout]: social.md
+  [change specific layout options]: social.md
+  [background]: social.md
+  [color]: social.md
   [blog]: blog.md
-  [authors]: blog.md#meta.authors
-  [categories]: blog.md#meta.categories
+  [authors]: blog.md
+  [categories]: blog.md
   [tags]: tags.md
-  [specific tags]: tags.md#meta.tags
+  [specific tags]: tags.md
   [search]: search.md
-  [exclude]: search.md#meta.search.exclude
-  [boost]: search.md#meta.search.boost
+  [exclude]: search.md
+  [boost]: search.md
 
 ## 配置
 

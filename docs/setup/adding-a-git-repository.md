@@ -165,7 +165,7 @@ theme:
 所有相关[贡献者]或[作者]的链接。
 
   [date of last update and creation]: #document-dates
-  [contributors]: #document-contributors
+  [contributors]: 
   [authors]: #document-authors
 
 #### 文件日期

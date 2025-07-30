@@ -10,7 +10,7 @@ MkDocs的材质定义了数据表的默认样式——这是一种很好的方�
 [附加JavaScript]。
 
   [sortable tables]: #sortable-tables
-  [additional JavaScript]: ../customization.md#additional-javascript
+  [additional JavaScript]: ../customization.md
 
 ## 配置
 

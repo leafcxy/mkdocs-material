@@ -28,7 +28,7 @@ markdown_extensions:
 - [Details]
 - [SuperFences]
 
-  [Admonition]: ../setup/extensions/python-markdown.md#admonition
+  [Admonition]: ../setup/extensions/python-markdown.md
   [Details]: ../setup/extensions/python-markdown-extensions.md#details
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
 
@@ -102,7 +102,7 @@ theme:
         ```
 
   [custom icon]: ../setup/changing-the-logo-and-icons.md#additional-icons
-  [supported types]: #supported-types
+  [supported types]: 
   [icon search]: icons-emojis.md#_2
 
 ## 使用
@@ -129,7 +129,7 @@ theme:
 
 </div>
 
-  [type qualifier]: #supported-types
+  [type qualifier]: 
 
 ### 更改标题
 
@@ -214,7 +214,7 @@ theme:
 </div>
 
   [changing the title]: #changing-the-title
-  [collapsible blocks]: #collapsible-blocks
+  [collapsible blocks]: 
 
 ### 可折叠砌块
 

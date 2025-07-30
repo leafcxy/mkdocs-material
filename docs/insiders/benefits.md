@@ -65,7 +65,7 @@ MkDocs Insiders的材料中包含了以下附加功能
 - 在我们的网站上放置徽标和反向链接，以提高知名度
 - 通过电子邮件向我们的维护人员提供私人支持，以解决任何问题
 
-  [commercial tiers]: sponsoring-tiers.md/#commercial-use
+  [commercial tiers]: sponsoring-tiers.md/
   [$125 a month]: sponsoring-tiers.md/#the-organization
   [list of premium sponsors]: https://github.com/squidfunk/mkdocs-material#user-content-premium-sponsors
   [Prioritized]: ../support.md/#prioritized-support
@@ -78,7 +78,7 @@ MkDocs对每个人来说都是一个更强大的工具。我们对什么感到�
 
 [:octicons-heart-fill-24:{ .mdx-heart } &nbsp; Show your support <span class="mdx-sponsorship-count" data-mdx-component="sponsorship-count"></span>][sponsoring tiers]{ .md-button .md-button--primary .mdx-sponsorship-button }
 
-  [sponsoring tiers]: sponsoring-tiers.md#commercial-use
+  [sponsoring tiers]: sponsoring-tiers.md
 
 <div data-mdx-component="sponsorship"></div>
 
@@ -105,10 +105,10 @@ used them for a while.
 
   [Optimize plugin]: ../plugins/optimize.md
   [Navigation path]: ../setup/setting-up-navigation.md#navigation-path
-  [Blog plugin: advanced settings]: ../setup/setting-up-a-blog.md#advanced-settings
-  [Blog plugin: author profiles]: ../setup/setting-up-a-blog.md#adding-author-profiles
-  [Blog plugin: pinned posts]: ../setup/setting-up-a-blog.md#pinning-a-post
-  [Instant prefetching]: ../setup/setting-up-navigation.md#instant-prefetching
+  [Blog plugin: advanced settings]: ../setup/setting-up-a-blog.md
+  [Blog plugin: author profiles]: ../setup/setting-up-a-blog.md
+  [Blog plugin: pinned posts]: ../setup/setting-up-a-blog.md
+  [Instant prefetching]: ../setup/setting-up-navigation.md
 
 #### $ 20,000 – Jalapeño
 
@@ -120,9 +120,9 @@ used them for a while.
 - [ ] to be announced
 
   [Typeset plugin]: ../plugins/typeset.md
-  [Footnote tooltips]: ../reference/footnotes.md#footnote-tooltips
-  [Privacy plugin: external links]: ../plugins/privacy.md#external-links
-  [Privacy plugin: advanced settings]: ../setup/ensuring-data-privacy.md#advanced-settings
+  [Footnote tooltips]: ../reference/footnotes.md
+  [Privacy plugin: external links]: ../plugins/privacy.md
+  [Privacy plugin: advanced settings]: ../setup/ensuring-data-privacy.md
 
 #### $ 22,000 – Habanero Orange
 
@@ -133,12 +133,12 @@ used them for a while.
 - [x] [Code annotations: custom selectors]
 - [x] [Stay on page when switching languages]
 
-  [Instant previews]: ../setup/setting-up-navigation.md#instant-previews
-  [Social plugin: custom layouts]: ../setup/setting-up-social-cards.md#customization
-  [Social plugin: background images]: ../plugins/social.md#option.background_image
-  [Code range selection]: ../reference/code-blocks.md#code-selection-button
-  [Code annotations: custom selectors]: ../reference/code-blocks.md#custom-selectors
-  [Stay on page when switching languages]: ../setup/changing-the-language.md#stay-on-page
+  [Instant previews]: ../setup/setting-up-navigation.md
+  [Social plugin: custom layouts]: ../setup/setting-up-social-cards.md
+  [Social plugin: background images]: ../plugins/social.md
+  [Code range selection]: ../reference/code-blocks.md
+  [Code annotations: custom selectors]: ../reference/code-blocks.md
+  [Stay on page when switching languages]: ../setup/changing-the-language.md
 
 #### $ 24,000 – Blockpaprika
 
@@ -150,9 +150,9 @@ used them for a while.
 - [ ] to be announced
 
   [Projects plugin]: ../plugins/projects.md
-  [Tags plugin: nested tags]: ../setup/setting-up-tags.md#nested-tags
-  [Tags plugin: shadow tags]: ../setup/setting-up-tags.md#shadow-tags
-  [Tags plugin: advanced settings]: ../setup/setting-up-tags.md#advanced-settings
+  [Tags plugin: nested tags]: ../setup/setting-up-tags.md
+  [Tags plugin: shadow tags]: ../setup/setting-up-tags.md
+  [Tags plugin: advanced settings]: ../setup/setting-up-tags.md
 
 ### 已完成的目标
 
@@ -171,12 +171,12 @@ used them for a while.
 - [x] [Navigation subtitles]
 
   [Meta plugin]: ../plugins/meta.md
-  [Blog plugin: related links]: ../setup/setting-up-a-blog.md#adding-related-links
-  [Blog plugin: custom index pages]: ../setup/setting-up-a-blog.md#custom-index-pages
-  [Tags plugin: configurable listings]: ../setup/setting-up-tags.md#configurable-listings
-  [Tags plugin: allow list]: ../plugins/tags.md#config.tags_allowed
-  [custom sorting]: ../plugins/tags.md#config.tags_sort_by
-  [Navigation subtitles]: ../reference/index.md#setting-the-page-subtitle
+  [Blog plugin: related links]: ../setup/setting-up-a-blog.md
+  [Blog plugin: custom index pages]: ../setup/setting-up-a-blog.md
+  [Tags plugin: configurable listings]: ../setup/setting-up-tags.md
+  [Tags plugin: allow list]: ../plugins/tags.md
+  [custom sorting]: ../plugins/tags.md
+  [Navigation subtitles]: ../reference/index.md
 
 #### $ 14,000 – Goat's Horn
 
@@ -187,12 +187,12 @@ used them for a while.
 - [x] [Automatic light / dark mode]
 - [x] [Document contributors]
 
-  [Privacy plugin]: ../setup/ensuring-data-privacy.md#built-in-privacy-plugin
+  [Privacy plugin]: ../setup/ensuring-data-privacy.md
   [Card grids]: ../reference/grids.md
   [Tooltips]: ../reference/tooltips.md
-  [Content tabs: anchor links]: ../reference/content-tabs.md#anchor-links
-  [Automatic light / dark mode]: ../setup/changing-the-colors.md#automatic-light-dark-mode
-  [Document contributors]: ../setup/adding-a-git-repository.md#document-contributors
+  [Content tabs: anchor links]: ../reference/content-tabs.md
+  [Automatic light / dark mode]: ../setup/changing-the-colors.md
+  [Document contributors]: ../setup/adding-a-git-repository.md
 
 #### $ 12,000 – Piri Piri
 
@@ -206,9 +206,9 @@ used them for a while.
   [Blog plugin]: ../setup/setting-up-a-blog.md
   [Chinese search support]: ../blog/posts/chinese-search-support.md
   [Annotations]: ../reference/annotations.md
-  [Navigation icons]: ../reference/index.md#setting-the-page-icon
-  [Navigation pruning]: ../setup/setting-up-navigation.md#navigation-pruning
-  [Navigation status]: ../reference/index.md#setting-the-page-status
+  [Navigation icons]: ../reference/index.md
+  [Navigation pruning]: ../setup/setting-up-navigation.md
+  [Navigation status]: ../reference/index.md
 
 #### $ 10,000 – Carolina Reaper
 
@@ -220,10 +220,10 @@ used them for a while.
 - [x] [Offline plugin]
 
   [Brand new search plugin]: ../blog/posts/search-better-faster-smaller.md
-  [Rich search previews]: ../blog/posts/search-better-faster-smaller.md#rich-search-previews
-  [Tokenizer with lookahead]: ../blog/posts/search-better-faster-smaller.md#tokenizer-lookahead
-  [Advanced search highlighting]: ../blog/posts/search-better-faster-smaller.md#accurate-highlighting
-  [Excluding content from search]: ../setup/setting-up-site-search.md#search-exclusion
+  [Rich search previews]: ../blog/posts/search-better-faster-smaller.md
+  [Tokenizer with lookahead]: ../blog/posts/search-better-faster-smaller.md
+  [Advanced search highlighting]: ../blog/posts/search-better-faster-smaller.md
+  [Excluding content from search]: ../setup/setting-up-site-search.md
   [Offline plugin]: ../setup/building-for-offline-usage.md
 
 #### $ 8,000 – Scotch Bonnet
@@ -236,9 +236,9 @@ used them for a while.
 - [x] Sidebars automatically scroll to active item
 
   [Social cards]: ../setup/setting-up-social-cards.md
-  [Code annotations: strip comments]: ../reference/code-blocks.md#stripping-comments
-  [Tag icons]: ../setup/setting-up-tags.md#tag-icons-and-identifiers
-  [Table of contents anchor following]: ../setup/setting-up-navigation.md#anchor-following
+  [Code annotations: strip comments]: ../reference/code-blocks.md
+  [Tag icons]: ../setup/setting-up-tags.md
+  [Table of contents anchor following]: ../setup/setting-up-navigation.md
 
 #### $ 7,000 – Royal Gold
 
@@ -246,9 +246,9 @@ used them for a while.
 - [x] [Was this page helpful?]
 - [x] [Dismissable announcement bar]
 
-  [Cookie consent]: ../setup/ensuring-data-privacy.md#cookie-consent
-  [Was this page helpful?]: ../setup/setting-up-site-analytics.md#was-this-page-helpful
-  [Dismissable announcement bar]: ../setup/setting-up-the-header.md#mark-as-read
+  [Cookie consent]: ../setup/ensuring-data-privacy.md
+  [Was this page helpful?]: ../setup/setting-up-site-analytics.md
+  [Dismissable announcement bar]: ../setup/setting-up-the-header.md
 
 #### $ 6,000 – Trinidad Scorpion
 
@@ -256,9 +256,9 @@ used them for a while.
 - [x] [Custom admonition icons]
 - [x] [Linking content tabs]
 
-  [Boosting pages in search]: ../setup/setting-up-site-search.md#search-boosting
-  [Custom admonition icons]: ../reference/admonitions.md#admonition-icons
-  [Linking content tabs]: ../reference/content-tabs.md#linked-content-tabs
+  [Boosting pages in search]: ../setup/setting-up-site-search.md
+  [Custom admonition icons]: ../reference/admonitions.md
+  [Linking content tabs]: ../reference/content-tabs.md
 
 #### $ 5,000 – Aji Panca
 
@@ -275,9 +275,9 @@ used them for a while.
 - [x] [Code annotations]
 - [x] [Version warning]
 
-  [Anchor tracking]: ../setup/setting-up-navigation.md#anchor-tracking
-  [Code annotations]: ../reference/code-blocks.md#adding-annotations
-  [Version warning]: ../setup/setting-up-versioning.md#version-warning
+  [Anchor tracking]: ../setup/setting-up-navigation.md
+  [Code annotations]: ../reference/code-blocks.md
+  [Version warning]: ../setup/setting-up-versioning.md
 
 #### $ 3,000 – Caribbean Red
 
@@ -285,9 +285,9 @@ used them for a while.
 - [x] [Section index pages]
 - [x] [Remove generator notice]
 
-  [Sticky navigation tabs]: ../setup/setting-up-navigation.md#sticky-navigation-tabs
-  [Section index pages]: ../setup/setting-up-navigation.md#section-index-pages
-  [Remove generator notice]: ../setup/setting-up-the-footer.md#generator-notice
+  [Sticky navigation tabs]: ../setup/setting-up-navigation.md
+  [Section index pages]: ../setup/setting-up-navigation.md
+  [Remove generator notice]: ../setup/setting-up-the-footer.md
 
 #### $ 2,500 – Biquinho Vermelho
 
@@ -295,9 +295,9 @@ used them for a while.
 - [x] [Search highlighting]
 - [x] [Search sharing]
 
-  [Search suggestions]: ../setup/setting-up-site-search.md#search-suggestions
-  [Search highlighting]: ../setup/setting-up-site-search.md#search-highlighting
-  [Search sharing]: ../setup/setting-up-site-search.md#search-sharing
+  [Search suggestions]: ../setup/setting-up-site-search.md
+  [Search highlighting]: ../setup/setting-up-site-search.md
+  [Search sharing]: ../setup/setting-up-site-search.md
 
 #### $ 2,000 – Black Pearl
 
@@ -305,8 +305,8 @@ used them for a while.
 - [x] [Color palette toggle]
 - [x] [Back-to-top button]
 
-  [Color palette toggle]: ../setup/changing-the-colors.md#color-palette-toggle
-  [Back-to-top button]: ../setup/setting-up-navigation.md#back-to-top-button
+  [Color palette toggle]: ../setup/changing-the-colors.md
+  [Back-to-top button]: ../setup/setting-up-navigation.md
 
 #### $ 1,500 – Bhut Jolokia
 
@@ -314,9 +314,9 @@ used them for a while.
 - [x] [Site language selection]
 - [x] [Versioning]
 
-  [Admonition inline blocks]: ../reference/admonitions.md#inline-blocks
-  [Site language selection]: ../setup/changing-the-language.md#site-language-selector
-  [Versioning]: ../setup/setting-up-versioning.md#versioning
+  [Admonition inline blocks]: ../reference/admonitions.md
+  [Site language selection]: ../setup/changing-the-language.md
+  [Versioning]: ../setup/setting-up-versioning.md
 
 #### $ 1,000 – Prairie Fire
 
@@ -327,10 +327,10 @@ used them for a while.
 - [x] [Header hides on scroll]
 
   [Navigation sections]: ../setup/setting-up-navigation.md#_11
-  [Navigation expansion]: ../setup/setting-up-navigation.md#navigation-expansion
-  [Hiding the sidebars]: ../setup/setting-up-navigation.md#hiding-the-sidebars
-  [Table of contents in navigation]: ../setup/setting-up-navigation.md#navigation-integration
-  [Header hides on scroll]: ../setup/setting-up-the-header.md#automatic-hiding
+  [Navigation expansion]: ../setup/setting-up-navigation.md
+  [Hiding the sidebars]: ../setup/setting-up-navigation.md
+  [Table of contents in navigation]: ../setup/setting-up-navigation.md
+  [Header hides on scroll]: ../setup/setting-up-the-header.md
 
 #### $ 500 – Madame Jeanette
 

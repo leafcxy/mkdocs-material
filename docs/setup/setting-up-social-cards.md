@@ -26,7 +26,7 @@ Social card of our [formatting] reference
 </figure>
 
   [default layouts]: ../plugins/social.md#layouts
-  [custom layouts]: #customization
+  [custom layouts]: 
   [formatting]: ../reference/formatting.md
   [Layout default variant]: ../assets/screenshots/social-cards-variant.png
 
@@ -74,11 +74,11 @@ plugins:
 [`description`][更改description]属性，其优先级高于
 默认值，或使用：
 
-- [`cards_layout_options.title`](../plugins/social.md#option.title)
-- [`cards_layout_options.description`](../plugins/social.md#option.description)
+- [`cards_layout_options.title`](../plugins/social.md)
+- [`cards_layout_options.description`](../plugins/social.md)
 
-  [Changing the title]: ../reference/index.md#setting-the-page-title
-  [Changing the description]: ../reference/index.md#setting-the-page-description
+  [Changing the title]: ../reference/index.md
+  [Changing the description]: ../reference/index.md
 
 ### 选择字体
 
@@ -123,7 +123,7 @@ plugins:
             font_family: Noto Sans KR
     ```
 
-  [font]: changing-the-fonts.md#regular-font
+  [font]: changing-the-fonts.md
 
 ### 更改布局
 
@@ -133,7 +133,7 @@ plugins:
 
 如果你想对单个页面使用不同的布局（例如你的着陆
 页面），您可以将“社会”前沿属性与
-[`cards_layout`]（../plugins/social.md#meta.social.cards_layout）键，与
+[`cards_layout`]（../plugins/social.md）键，与
 在`mkdocs.yml`中：
 
 ``` yaml
@@ -161,7 +161,7 @@ social:
 除了更改整个布局外，您还可以覆盖布局的所有选项
 暴露。这意味着您可以使用自定义前件对社交卡进行参数化
 属性，如标签、日期、作者或任何你能想到的东西。
-只需定义[`cards_layout_options`]（../plugins/social.md#meta.social.cards_layout _options）：
+只需定义[`cards_layout_options`]（../plugins/social.md）：
 
 ``` yaml
 ---
@@ -314,7 +314,7 @@ mkdocs.yml中的模式。左上角显示了图层索引和偏移量，即
 可用于对齐和构图。
 
   [Layer size]: ../assets/screenshots/social-cards-layer-size.png
-  [debug]: ../plugins/social.md#debugging
+  [debug]: ../plugins/social.md
 
 #### 起源
 

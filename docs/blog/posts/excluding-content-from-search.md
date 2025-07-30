@@ -81,7 +81,7 @@ plugins:
     - 由于排除模式支持使用通配符，因此不同的作者
       可能会在没有任何即时反馈的情况下覆盖彼此的模式，因为
       该插件只报告排除的文档数量，而不是what_
-      已被排除在外。1.
+      已被排除在外。[^1].
 
   [^1]:
     当日志级别设置为“DEBUG”时，插件将准确报告
@@ -104,7 +104,7 @@ plugins:
 替换[mkdocs excluded search]插件，但对其进行补充。
 
   [search exclusion]: ../../setup/setting-up-site-search.md#_9
-  [Attribute Lists]: ../../setup/extensions/python-markdown.md#attribute-lists
+  [Attribute Lists]: ../../setup/extensions/python-markdown.md
 
 ### 不包括页面
 

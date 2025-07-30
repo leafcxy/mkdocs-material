@@ -27,8 +27,8 @@ markdown_extensions:
 - [Markdown in HTML]
 - [SuperFences]
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
-  [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
+  [Markdown in HTML]: ../setup/extensions/python-markdown.md
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
 
 ### 注释图标
@@ -162,7 +162,7 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 </div>
 
   [admonitions]: admonitions.md
-  [inline blocks]: admonitions.md#inline-blocks
+  [inline blocks]: admonitions.md
 
 #### 在内容选项卡中
 
@@ -242,5 +242,5 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
     is very tricky to get right. This might be fixed in the future.
 
   [limitations]: https://python-markdown.github.io/extensions/attr_list/#limitations
-  [code blocks follow different semantics]: code-blocks.md#adding-annotations
+  [code blocks follow different semantics]: code-blocks.md
   [data tables]: data-tables.md

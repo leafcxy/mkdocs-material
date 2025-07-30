@@ -5,9 +5,9 @@ MkDocs的材料使遵守数据隐私法规变得非常容易，
 用户在设置[分析]之前。此外，外部资产可以是
 自动下载[自托管]。
 
-  [cookie consent]: #cookie-consent
+  [cookie consent]: 
   [analytics]: setting-up-site-analytics.md
-  [self-hosting]: #built-in-privacy-plugin
+  [self-hosting]: 
 
 ## 配置
 
@@ -143,7 +143,7 @@ copyright: >
   <a href="#__consent">Change cookie settings</a>
 ```
 
-  [copyright notice]: setting-up-the-footer.md#copyright-notice
+  [copyright notice]: setting-up-the-footer.md
 
 ### 内置隐私插件
 
@@ -202,7 +202,7 @@ plugins:
     GDPR有一些[技术限制]。
 
   [Google Fonts]: changing-the-fonts.md
-  [regular font]: changing-the-fonts.md#regular-font
+  [regular font]: changing-the-fonts.md
   [example]: #example
   [built-in optimize plugin]: ../plugins/optimize.md
   [technical limitations]: ../plugins/privacy.md#limitations
@@ -294,8 +294,8 @@ plugins:
 随着我们发现新的用例，我们将在此处添加更多设置。
 
   [Insiders]: ../insiders/index.md
-  [config.log]: ../plugins/privacy.md#config.log
-  [config.log_level]: ../plugins/privacy.md#config.log_level
+  [config.log]: ../plugins/privacy.md
+  [config.log_level]: ../plugins/privacy.md
 
 ## 自定义
 
@@ -334,5 +334,5 @@ plugins:
       - javascripts/consent.js
     ```
 
-  [additional JavaScript]: ../customization.md#additional-javascript
+  [additional JavaScript]: ../customization.md
   [changes the settings]: #change-cookie-settings

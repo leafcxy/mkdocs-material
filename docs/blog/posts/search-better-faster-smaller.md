@@ -293,9 +293,9 @@ const index$ = document.forms.namedItem("search")
   搜索体验速度提高了95%，这对
   大型文档项目。
 
-  [rich search previews]: #rich-search-previews
-  [lookahead tokenization]: #tokenizer-lookahead
-  [more accurate highlighting]: #accurate-highlighting
+  [rich search previews]: 
+  [lookahead tokenization]: 
+  [more accurate highlighting]: 
   [slightly better UX]: #user-interface
 
 ### 丰富的搜索预览
@@ -459,7 +459,7 @@ const index$ = document.forms.namedItem("search")
 
 正在搜索[：octicons-search-24:searchHighlight][q=searchHighlight]
 现在，我们将讨论“搜索突出显示”功能标志
-这也表明，现在它甚至可以正确地用于搜索查询。5.
+这也表明，现在它甚至可以正确地用于搜索查询。[^5].
 
   [^5]:
     以前，由于以下原因，搜索查询没有正确标记
@@ -510,7 +510,7 @@ _我们才刚刚开始触及新可能性的表面
 突出显示是搜索过程的最后一步，涉及
 突出显示给定搜索结果中出现的所有搜索词。对于a
 长时间以来，突出显示是通过动态生成来实现的
-[正则表达式]。6.
+[正则表达式]。[^6].
 
 这种方法在日语或日语等非空白语言中存在一些问题
 中文[^3]，因为它只有在突出显示的术语位于单词边界时才有效。
@@ -546,7 +546,7 @@ _我们才刚刚开始触及新可能性的表面
 
   [regular expressions]: https://github.com/squidfunk/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/highlighter/index.ts#L61-L91
   [dedicated segmenter]: http://chasen.org/~taku/software/TinySegmenter/
-  [new tokenization approach]: #tokenizer-lookahead
+  [new tokenization approach]: 
   [case changes]: #case-changes
   [version numbers]: #version-numbers
   [HTML/XML tags]: #htmlxml-tags

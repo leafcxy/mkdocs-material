@@ -148,7 +148,7 @@ plugins:
         语言，都在gzip之前。
 
   [stemming]: https://en.wikipedia.org/wiki/Stemming
-  [site language]: ../setup/changing-the-language.md#site-language
+  [site language]: ../setup/changing-the-language.md
   [lunr languages]: https://github.com/MihaiValentin/lunr-languages
 
 语言支持由[lunr languages]提供，这是一个

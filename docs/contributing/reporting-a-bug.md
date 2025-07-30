@@ -60,8 +60,8 @@ __如果你遇到问题，不要羞于在我们的[讨论板]上寻求帮助
   [upgrade guide]: ../upgrade.md
   [Customizations]: ../customization.md
   [additional CSS]: ../customization.md#additional-css
-  [JavaScript]: ../customization.md#additional-javascript
-  [theme extension]: ../customization.md#extending-the-theme
+  [JavaScript]: ../customization.md
+  [theme extension]: ../customization.md
   [theme.custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
   [hooks]: https://www.mkdocs.org/user-guide/configuration/#hooks
   [extra_css]: https://www.mkdocs.org/user-guide/configuration/#extra_css
@@ -83,7 +83,7 @@ __如果你遇到问题，不要羞于在我们的[讨论板]上寻求帮助
 
 1.  [搜索我们的文档]并查找可能的相关章节
     与你的问题有关。如果找到，请确保已配置
-    一切正常。1.
+    一切正常。[^1].
 
   [^1]:
     在向`mkdocs.yml`添加行时，请确保保留了
@@ -132,14 +132,14 @@ them in the bug report.__[^2]
 - [Browser] <small>optional</small>
 - [Checklist]
 
-  [Title]: #title
+  [Title]: 
   [Context]: #context
-  [Bug description]: #bug-description
-  [Related links]: #related-links
-  [Reproduction]: #reproduction
-  [Steps to reproduce]: #steps-to-reproduce
+  [Bug description]: 
+  [Related links]: 
+  [Reproduction]: #_1
+  [Steps to reproduce]: 
   [Browser]: #browser
-  [Checklist]: #checklist
+  [Checklist]: 
 
 ### 名称
 

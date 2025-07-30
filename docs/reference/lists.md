@@ -27,7 +27,7 @@ markdown_extensions:
 - [Definition Lists]
 - [Tasklist]
 
-  [Definition Lists]: ../setup/extensions/python-markdown.md#definition-lists
+  [Definition Lists]: ../setup/extensions/python-markdown.md
   [Tasklist]: ../setup/extensions/python-markdown-extensions.md#tasklist
 
 ## 使用

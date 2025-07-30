@@ -88,7 +88,7 @@ theme:
 
 | Icon name    | Purpose                                                                       |
 |:-------------|:------------------------------------------------------------------------------|
-| `logo`       | See [Logo](#logo)                                                             |
+| `logo`       | See [Logo]()                                                             |
 | `menu`       | Open drawer                                                                   |
 | `alternate`  | Change language                                                               |
 | `search`     | Search icon                                                                   |
@@ -98,8 +98,8 @@ theme:
 | `edit`       | Edit current page                                                             |
 | `view`       | View page source                                                              |
 | `repo`       | Repository icon                                                               |
-| `admonition` | See [Admonition icons](../reference/admonitions.md#admonition-icons)          |
-| `tag`        | See [Tag icons and identifiers](setting-up-tags.md#tag-icons-and-identifiers) |
+| `admonition` | See [Admonition icons](../reference/admonitions.md)          |
+| `tag`        | See [Tag icons and identifiers](setting-up-tags.md) |
 | `previous`   | Previous page in footer, hide search on mobile                                |
 | `next`       | Next page in footer                                                           |
 
@@ -160,7 +160,7 @@ Markdown文件以及任何地方的图标都可以在`mkdocs.yml`中使用。
 
 有关图标使用的更多说明，请参阅[图标参考]。
 
-  [extend the theme]: ../customization.md#extending-the-theme
+  [extend the theme]: ../customization.md
   [custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
   [Bootstrap]: https://icons.getbootstrap.com/
-  [icon reference]: ../reference/icons-emojis.md#using-icons
+  [icon reference]: ../reference/icons-emojis.md

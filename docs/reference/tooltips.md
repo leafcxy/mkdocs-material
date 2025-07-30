@@ -28,8 +28,8 @@ markdown_extensions:
 - [Attribute Lists]
 - [Snippets]
 
-  [Abbreviations]: ../setup/extensions/python-markdown.md#abbreviations
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Abbreviations]: ../setup/extensions/python-markdown.md
+  [Attribute Lists]: ../setup/extensions/python-markdown.md
   [Snippets]: ../setup/extensions/python-markdown-extensions.md#snippets
 
 ### 改进的工具提示

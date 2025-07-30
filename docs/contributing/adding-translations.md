@@ -29,7 +29,7 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
 - __您的语言缺失__ – 在这种情况下，您可以帮助我们添加支持
   将您的语言转换为MkDocs的材料！继续阅读，了解如何做到这一点。
 
-  [supported languages]: ../setup/changing-the-language.md#site-language
+  [supported languages]: ../setup/changing-the-language.md
 
 ### 搜索我们的问题跟踪器
 
@@ -57,10 +57,10 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
 - [Country flag] <small>optional</small>
 - [Checklist]
 
-  [Title]: #title
-  [Translations]: #translations
+  [Title]: 
+  [Translations]: #_1
   [Country flag]: #country-flag
-  [Checklist]: #checklist
+  [Checklist]: 
 
 ### 名称
 

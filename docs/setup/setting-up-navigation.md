@@ -111,7 +111,7 @@ theme:
 
 <div class="result" markdown>
 
-[Attribute Lists](extensions/python-markdown.md#attribute-lists){ data-preview }
+[Attribute Lists](extensions/python-markdown.md){ data-preview }
 
 </div>
 
@@ -389,7 +389,7 @@ theme:
 导航修剪将用指向第一个部分的链接替换所有可扩展部分
 该部分的页面（或部分索引页面）。
 
-  [navigation.expand]: #navigation-expansion
+  [navigation.expand]: 
 
 ### 章节索引页
 
@@ -434,7 +434,7 @@ nav:
 
   [Section index pages enabled]: ../assets/screenshots/navigation-index-on.png
   [Section index pages disabled]: ../assets/screenshots/navigation-index-off.png
-  [toc.integrate]: #navigation-integration
+  [toc.integrate]: 
   [index pages]: https://www.mkdocs.org/user-guide/writing-your-docs/#index-pages
 
 ### 目录
@@ -482,10 +482,10 @@ theme:
 
     [![Navigation integration disabled]][Navigation integration disabled]
 
-  [table of contents]: extensions/python-markdown.md#table-of-contents
+  [table of contents]: extensions/python-markdown.md
   [Navigation integration enabled]: ../assets/screenshots/toc-integrate.png
   [Navigation integration disabled]: ../assets/screenshots/navigation-tabs.png
-  [navigation.indexes]: #section-index-pages
+  [navigation.indexes]: 
 
 ### 返回顶部按钮
 
@@ -614,7 +614,7 @@ JavaScript]，您可以订阅“keyboard$”可观察对象并附加
       - javascripts/shortcuts.js
     ```
 
-  [additional JavaScript]: ../customization.md#additional-javascript
+  [additional JavaScript]: ../customization.md
 
 ### 内容区域宽度
 

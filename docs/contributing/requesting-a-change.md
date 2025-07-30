@@ -26,7 +26,7 @@ MkDocs材料是一个强大的工具，用于创建美观和功能
     变更请求
 
 
-  [How we manage change requests]: #how-we-manage-change-requests
+  [How we manage change requests]: 
 
 ## 在创建问题之前
 
@@ -91,13 +91,13 @@ them in the change request.__[^1]
 - [Visuals] <small>optional</small>
 - [Checklist]
 
-  [Title]: #title
+  [Title]: 
   [Context]: #context
-  [Description]: #description
-  [Related links]: #related-links
-  [Use cases]: #use-cases
+  [Description]: #_1
+  [Related links]: 
+  [Use cases]: 
   [Visuals]: #visuals
-  [Checklist]: #checklist
+  [Checklist]: 
 
 ### 名称
 

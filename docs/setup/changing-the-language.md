@@ -42,7 +42,7 @@ theme:
     您的语言不在列表中，请单击此处[添加新语言]。
 
   [single language per document]: https://www.w3.org/International/questions/qa-html-language-declarations.en#attributes
-  [language selector]: #site-language-selector
+  [language selector]: 
   [Unicode-aware slug function]: extensions/python-markdown.md#+toc.slugify
   [add a new language]: https://github.com/squidfunk/mkdocs-material/issues/new?template=04-add-a-translation.yml&title=Add+translations+for+...
 
@@ -203,6 +203,6 @@ theme:
       language: custom
     ```
 
-  [theme extension]: ../customization.md#extending-the-theme
+  [theme extension]: ../customization.md
   [translations]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/
   [list of available languages]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/

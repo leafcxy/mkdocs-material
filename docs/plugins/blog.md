@@ -11,7 +11,7 @@ icon: material/newspaper-variant-outline
 [类别]页面，可配置[分页]等等。
 
   [archive]: #archive
-  [category]: #categories
+  [category]: 
   [pagination]: #pagination
 
 ## 客观的
@@ -180,7 +180,7 @@ nav:
 [blog_dir][config.blog_dir]。这意味着您可以命名博客导航
 输入任何你喜欢的东西：“博客”或“新闻”，或者“提示”。
 
-[navigation section with an index page]: ../setup/setting-up-navigation.md#section-index-pages
+[navigation section with an index page]: ../setup/setting-up-navigation.md
 
 ### 一般的
 
@@ -329,7 +329,7 @@ plugins:
 其他语言。
 
   [babel]: https://pypi.org/project/Babel/
-  [site language]: ../setup/changing-the-language.md#site-language
+  [site language]: ../setup/changing-the-language.md
   [pattern syntax]: https://babel.pocoo.org/en/latest/dates.html#pattern-syntax
 
 ---
@@ -1676,7 +1676,7 @@ pin: true
 
 所有相关链接都是从[`docs`目录][mkdocs.docs_dir]解析的。
 
-  [subtitle]: ../reference/index.md#setting-the-page-subtitle
+  [subtitle]: ../reference/index.md
 
 ---
 

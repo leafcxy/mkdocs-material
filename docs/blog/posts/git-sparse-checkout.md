@@ -30,7 +30,7 @@ __利用GitHub Actions中的“git sparse checkout”使我们能够加快速度
   [GitHub Actions]: ../../publishing-your-site.md#with-github-actions
   [git-revision-date-localized]: https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
   [git-committers]: https://github.com/ojacques/mkdocs-git-committers-plugin-2
-  [document contributors]: ../../setup/adding-a-git-repository.md#document-contributors
+  [document contributors]: ../../setup/adding-a-git-repository.md
   [dates]: ../../setup/adding-a-git-repository.md#document-dates
 
 <!-- more -->

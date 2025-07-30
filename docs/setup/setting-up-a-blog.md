@@ -10,8 +10,8 @@ MkDocs的材料使构建博客变得非常容易，无论是作为sidecar还是
 __查看我们的[blog]，它是用新的[内置博客插件]创建的！__
 
   [archive]: ../plugins/blog.md#archive
-  [category]: ../plugins/blog.md#categories
-  [post slugs]: ../plugins/blog.md#config.post_url_format
+  [category]: ../plugins/blog.md
+  [post slugs]: ../plugins/blog.md
   [pagination]: ../plugins/blog.md#pagination
   [blog]: ../blog/index.md
 
@@ -75,14 +75,14 @@ nav:
   [built-in plugins]: ../insiders/getting-started.md#built-in-plugins
   [start writing your first post]: #writing-your-first-post
 
-  [config.archive_pagination]: ../plugins/blog.md#config.archive_pagination
-  [config.archive_pagination_per_page]: ../plugins/blog.md#config.archive_pagination_per_page
-  [config.categories_sort_by]: ../plugins/blog.md#config.categories_sort_by
-  [config.categories_sort_reverse]: ../plugins/blog.md#config.categories_sort_reverse
-  [config.categories_pagination]: ../plugins/blog.md#config.categories_pagination
-  [config.categories_pagination_per_page]: ../plugins/blog.md#config.categories_pagination_per_page
-  [config.authors_profiles_pagination]: ../plugins/blog.md#config.authors_profiles_pagination
-  [config.authors_profiles_pagination_per_page]: ../plugins/blog.md#config.authors_profiles_pagination_per_page
+  [config.archive_pagination]: ../plugins/blog.md
+  [config.archive_pagination_per_page]: ../plugins/blog.md
+  [config.categories_sort_by]: ../plugins/blog.md
+  [config.categories_sort_reverse]: ../plugins/blog.md
+  [config.categories_pagination]: ../plugins/blog.md
+  [config.categories_pagination_per_page]: ../plugins/blog.md
+  [config.authors_profiles_pagination]: ../plugins/blog.md
+  [config.authors_profiles_pagination_per_page]: ../plugins/blog.md
 
 ### RSS
 
@@ -189,8 +189,8 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
 自行承担风险。
 
   [rss]: https://guts.github.io/mkdocs-rss-plugin/
-  [categories]: ../plugins/blog.md#categories
-  [tags]: setting-up-tags.md#built-in-tags-plugin
+  [categories]: ../plugins/blog.md
+  [tags]: setting-up-tags.md
   [comment system]: adding-a-comment-system.md
   [necessary metadata]: https://guts.github.io/mkdocs-rss-plugin/configuration/#integration
   [theme extension]: ../customization.md
@@ -355,7 +355,7 @@ authors:
 ```
 
   [authors]: ../plugins/blog.md#authors
-  [authors_file]: ../plugins/blog.md#config.authors_file
+  [authors_file]: ../plugins/blog.md
 
 #### 添加作者资料
 
@@ -379,7 +379,7 @@ plugins:
 页面的内容。
 
   [authors_profiles]: ../plugins/blog.md#config.authors_profiles
-  [custom index pages]: #custom-index-pages
+  [custom index pages]: 
 
 #### 添加类别
 
@@ -431,7 +431,7 @@ tags:
 与他们的头衔相关联。
 
   [built-in tags plugin]: ../plugins/tags.md
-  [tags index]: setting-up-tags.md#adding-a-tags-index
+  [tags index]: setting-up-tags.md
 
 #### 更换蛞蝓
 
@@ -495,7 +495,7 @@ links:
 请注意，所有链接都必须与[`docs_dir`][mkdocs.docs_dir]相关，如下所示
 [nav][mkdocs.nav]设置也是如此。
 
-  [subtitle]: ../reference/index.md#setting-the-page-subtitle
+  [subtitle]: ../reference/index.md
 
 #### 链接到帖子
 
@@ -689,11 +689,11 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
 
 属于该类别的所有帖子摘录都会自动附加。
 
-  [add the category]: #adding-categories
-  [page description]: ../reference/index.md#setting-the-page-description
-  [categories_url_format]: ../plugins/blog.md#config.categories_url_format
-  [categories_slugify]: ../plugins/blog.md#config.categories_slugify
-  [blog_dir]: ../plugins/blog.md#config.blog_dir
+  [add the category]: 
+  [page description]: ../reference/index.md
+  [categories_url_format]: ../plugins/blog.md
+  [categories_slugify]: ../plugins/blog.md
+  [blog_dir]: ../plugins/blog.md
 
 ### 覆盖模板
 
@@ -706,7 +706,7 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
 - [`blog.html`][blog.html] – Template for blog, archive and category index
 - [`blog-post.html`][blog-post.html] – Template for blog post
 
-  [theme extension]: ../customization.md#extending-the-theme
+  [theme extension]: ../customization.md
 
   [blog.html]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/blog.html
   [blog-post.html]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/blog-post.html

@@ -162,7 +162,7 @@ mkdocs.yml的一节。此设置不是必需的，您应该只使用它
 
 </div>
 
-  [listings]: ../setup/setting-up-tags.md#adding-a-tags-index
+  [listings]: ../setup/setting-up-tags.md
 
 ---
 

@@ -9,7 +9,7 @@ MkDocs Insiders的材料是材料的兼容直接替代品
 〔docker〕〔docker〕或〔git〕〔git〕。请注意，为了访问内部人员
 在GitHub上，你需要[成为@squidfunk的合格赞助商]。
 
-  [pip]: #with-pip
+  [pip]: 
   [docker]: #with-docker
   [git]: #with-git
   [become an eligible sponsor]: how-to-sponsor.md

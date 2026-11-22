@@ -3,14 +3,14 @@
 清晰简洁的导航结构是良好项目的重要方面
 文档。MkDocs的材料提供了多种配置选项
 导航元素的行为，包括[tabs]和[sections]，以及一个
-其旗舰功能包括：[即时加载]。
+其旗舰功能包括：[即时加载][instant loading]。
 
-  [tabs]: #_9
-  [sections]: #_11
-  [instant loading]: #_3
+  [tabs]: #navigation-tabs
+  [sections]: #navigation-sections
+  [instant loading]: #instant-loading
 
-可以在[页脚]以及使用
-[标签插件]。[blog插件]还设置了额外的导航。
+可以在[页脚][in the footer]以及使用
+[标签插件][tags plugin]。[blog插件][blog plugin]还设置了额外的导航。
 
 [in the footer]: setting-up-the-footer.md#navigation
 [tags plugin]: ../plugins/tags.md
@@ -18,7 +18,7 @@
 
 ## 配置
 
-### 即时加载
+### 即时加载 <span id="instant-loading"></span>
 
 `version 5.0.0`
 `feature`
@@ -50,7 +50,7 @@ theme:
 
   [XHR]: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
 
-#### 即时预取
+#### 即时预取 <span id="instant-prefetching"></span>
 
 `sponsors`
 `version insiders-4.36.0`
@@ -91,7 +91,7 @@ theme:
 400ms，因此快速连接永远不会在更好的时刻显示出来
 经验。
 
-### 即时预览
+### 即时预览 <span id="instant-previews"></span>
 
 `sponsors`
 `version insiders-4.52.0`
@@ -202,7 +202,7 @@ theme:
     site_url: https://example.com
     ```
 
-### 锚点跟踪
+### 锚点跟踪 <span id="anchor-tracking"></span>
 
 `version 8.0.0`
 `feature`
@@ -217,7 +217,7 @@ theme:
     - navigation.tracking
 ```
 
-### 导航选项卡
+### 导航选项卡 <span id="navigation-tabs"></span>
 
 `version 1.1.0`
 `feature`
@@ -252,7 +252,7 @@ theme:
   [Navigation tabs enabled]: ../assets/screenshots/navigation-tabs.png
   [Navigation tabs disabled]: ../assets/screenshots/navigation.png
 
-#### 粘性导航标签
+#### 粘性导航标签 <span id="sticky-navigation-tabs"></span>
 
 `version 7.3.0`
 `feature`
@@ -279,7 +279,7 @@ theme:
   [Sticky navigation tabs enabled]: ../assets/screenshots/navigation-tabs-sticky.png
   [Sticky navigation tabs disabled]: ../assets/screenshots/navigation-tabs-collapsed.png
 
-### 导航部分
+### 导航部分 <span id="navigation-sections"></span>
 
 `version 6.2.0`
 `feature`
@@ -305,11 +305,11 @@ theme:
   [Navigation sections enabled]: ../assets/screenshots/navigation-sections.png
   [Navigation sections disabled]: ../assets/screenshots/navigation.png
 
-两个功能标志，[`navigation.tabs'][tabs]和
-[`navigation.sections][sections]可以相互组合。如果两者都有
+两个功能标志，[`navigation.tabs`][tabs]和
+[`navigation.sections`][sections]可以相互组合。如果两者都有
 功能标志已启用，将为级别2导航项呈现部分。
 
-### 导航扩展
+### 导航扩展 { #navigation-expansion }
 
 `version 6.2.0`
 `feature`
@@ -364,7 +364,7 @@ theme:
   [Navigation path enabled]: ../assets/screenshots/navigation-path-on.png
   [Navigation path disabled]: ../assets/screenshots/navigation-path-off.png
 
-### 导航修剪
+### 导航修剪 <span id="navigation-pruning"></span>
 
 `version 9.2.0`
 `feature`
@@ -380,18 +380,16 @@ theme:
     - navigation.prune # (1)!
 ```
 
-1.  此功能标志与不兼容
-    [`navigation.explod][navigation.expland]，因为导航扩展需要
-    完整的导航结构。
+1.  此功能与 [`navigation.expand`][navigation.expand] 不兼容，因为展开导航需要完整的导航结构。
 
 此功能标志对于拥有100多个甚至更多用户的文档网站特别有用
 1000多个页面，因为导航占HTML的很大一部分。
 导航修剪将用指向第一个部分的链接替换所有可扩展部分
 该部分的页面（或部分索引页面）。
 
-  [navigation.expand]: 
+  [navigation.expand]: #navigation-expansion
 
-### 章节索引页
+### 章节索引页 { #section-index-pages }
 
 `version 7.3.0`
 `feature`
@@ -406,8 +404,7 @@ theme:
     - navigation.indexes # (1)!
 ```
 
-1.  此功能标志与[toc.integrate][toc.integre]不兼容，
-    由于缺少空间，部分无法承载目录。
+1.  此功能与 [`toc.integrate`][toc.integrate] 不兼容，因为导航分区没有足够的空间显示目录。
 
 === "With section index pages"
 
@@ -430,22 +427,22 @@ nav:
     - Page n: section/page-n.md
 ```
 
-1.  MkDocs还将名为“README.md”的文件视为[索引页]。
+1.  MkDocs还将名为“README.md”的文件视为[索引页][index pages]。
 
   [Section index pages enabled]: ../assets/screenshots/navigation-index-on.png
   [Section index pages disabled]: ../assets/screenshots/navigation-index-off.png
-  [toc.integrate]: 
+  [toc.integrate]: #navigation-integration
   [index pages]: https://www.mkdocs.org/user-guide/writing-your-docs/#index-pages
 
 ### 目录
 
-#### 锚跟踪
+#### 锚跟踪 <span id="anchor-following"></span>
 
 `version 8.5.0`
 `feature`
 `flag experimental`
 
-当启用[目录]的锚点跟踪时，侧边栏为
+当启用[目录][table of contents]的锚点跟踪时，侧边栏为
 自动滚动，以便活动锚点始终可见。添加
 将以下行转换为`mkdocs.yml`：
 
@@ -455,12 +452,12 @@ theme:
     - toc.follow
 ```
 
-#### 导航集成
+#### 导航集成 { #navigation-integration }
 
 `version 6.2.0`
 `feature`
 
-当启用[目录]的导航集成时，它总是
+当启用[目录][table of contents]的导航集成时，它总是
 呈现为左侧导航侧边栏的一部分。添加以下行
 转到`mkdocs.yml`：
 
@@ -470,9 +467,7 @@ theme:
     - toc.integrate # (1)!
 ```
 
-1.  此功能标志与不兼容
-    [`navigation.indexs`][navigation.index]，因为节不能承载
-    由于缺少空间，目录。
+1.  此功能与 [`navigation.indexes`][navigation.indexes] 不兼容，因为导航分区没有足够的空间显示目录。
 
 === "With navigation integration"
 
@@ -482,12 +477,12 @@ theme:
 
     [![Navigation integration disabled]][Navigation integration disabled]
 
-  [table of contents]: extensions/python-markdown.md
+  [table of contents]: extensions/python-markdown.md#table-of-contents
   [Navigation integration enabled]: ../assets/screenshots/toc-integrate.png
   [Navigation integration disabled]: ../assets/screenshots/navigation-tabs.png
-  [navigation.indexes]: 
+  [navigation.indexes]: #section-index-pages
 
-### 返回顶部按钮
+### 返回顶部按钮 <span id="back-to-top-button"></span>
 
 `version 7.1.0`
 `feature`
@@ -504,7 +499,7 @@ theme:
 
 ## 使用
 
-### 隐藏侧边栏
+### 隐藏侧边栏 <span id="hiding-the-sidebars"></span>
 
 `version 6.2.0`
 `flag metadata`
@@ -546,7 +541,7 @@ hide:
 `version insiders-4.28.0`
 `flag metadata`
 
-虽然[导航路径]显示在主标题上方，但有时
+虽然[导航路径][navigation path]显示在主标题上方，但有时
 可能需要为特定页面隐藏它，这可以通过以下方式实现
 front matter的“hide”属性：
 
@@ -614,7 +609,7 @@ JavaScript]，您可以订阅“keyboard$”可观察对象并附加
       - javascripts/shortcuts.js
     ```
 
-  [additional JavaScript]: ../customization.md
+  [additional JavaScript]: ../customization.md#additional-javascript
 
 ### 内容区域宽度
 
@@ -624,7 +619,7 @@ JavaScript]，您可以订阅“keyboard$”可观察对象并附加
 希望增加内容区域的整体宽度，甚至使其
 延伸到整个可用空间。
 
-这可以通过[附加样式表]和几行代码轻松实现
+这可以通过[附加样式表][additional style sheet]和几行代码轻松实现
 CSS：
 
 === ":octicons-file-code-16: `docs/stylesheets/extra.css`"

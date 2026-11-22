@@ -13,7 +13,7 @@ MkDocs是让它看起来很漂亮的一个很好的起点。然而，正如你
 
   [MkDocs]: https://www.mkdocs.org
 
-### 添加CSS
+### 添加CSS <span id="additional-css"></span>
 
 如果你想调整一些颜色或改变某些元素的间距，
 您可以在单独的样式表中执行此操作。最简单的方法是创建一个
@@ -34,7 +34,7 @@ extra_css:
   - stylesheets/extra.css
 ```
 
-### 添加JavaScript
+### 添加JavaScript <span id="additional-javascript"></span>
 
 如果你想集成另一个语法高亮显示或添加一些自定义逻辑
 你的主题，在`docs`目录中创建一个新的JavaScript文件：
@@ -74,10 +74,10 @@ extra_javascript:
     `document$` 是一个[RxJS Observable]，你可以调用`subscribe()`
     方法任意次数附加不同的功能。
 
-  [instant loading]: setup/setting-up-navigation.md/#_3
+  [instant loading]: setup/setting-up-navigation.md#instant-loading
   [RxJS Observable]: https://rxjs.dev/api/index/class/Observable
 
-## 扩展主题
+## 扩展主题 <span id="extending-the-theme"></span>
 
 如果你想更改HTML源代码（例如添加或删除某些部分），你可以
 扩展主题。MkDocs支持[theme extension]，这是一种简单的覆盖方式
@@ -162,7 +162,7 @@ theme:
   [custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
   [name]: https://www.mkdocs.org/user-guide/configuration/#name
 
-### Overriding部分
+### Overriding部分 <span id="overriding-partials"></span>
 
 为了覆盖一个部分，我们可以用同名文件替换它
 以及“override”目录中的位置。例如，替换原来的
@@ -260,7 +260,7 @@ Material for MkDocs基于[TypeScript]、[RxJS]和[SASS]构建，以及
   [RxJS]: https://github.com/ReactiveX/rxjs
   [SASS]: https://sass-lang.com
 
-### 环境设置
+### 环境设置 <span id="environment-setup"></span>
 
 首先，克隆您要处理的版本的存储库。如果
 如果要克隆Insiders存储库，您需要成为
@@ -278,7 +278,7 @@ Material for MkDocs基于[TypeScript]、[RxJS]和[SASS]构建，以及
 === "Insiders"
 
     您需要有一个GitHub访问令牌
-    [as described in the Insiders documentation]，并在`$GH_TOKEN`中提供
+    （[参见 Insiders 文档][as described in the Insiders documentation]），并在`$GH_TOKEN`中提供
     变量。
 
     ``` sh
@@ -292,7 +292,7 @@ Material for MkDocs基于[TypeScript]、[RxJS]和[SASS]构建，以及
         git clone git@github.com:squidfunk/mkdocs-material-insiders.git
         ```
 
-    [as described in the Insiders documentation]: insiders/getting-started.md#_1
+  [as described in the Insiders documentation]: insiders/getting-started.md#requirements
 
 接下来，创建一个新的[Python virtual environment][venv]，然后
 [activate][venv-activate]它：
@@ -338,7 +338,7 @@ source venv/bin/activate
     此外, 您需要系统安装`cairo`和`pngquant`库, 
     如[image processing]要求指南中所述。
 
-    [image processing]: plugins/requirements/image-processing.md
+  [image processing]: plugins/requirements/image-processing.md
 
 
 最后，将[Node.js]LTS版本安装到Python虚拟环境中

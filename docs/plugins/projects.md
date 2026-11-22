@@ -40,16 +40,16 @@ icon: material/folder-open
 ```
 
 该插件最有用和最有趣的功能之一是它允许
-从主项目中[预览您的网站]，同时仍然可以预览
+从主项目中[预览您的网站][previewing your site]，同时仍然可以预览
 并单独构建每个项目。这对于以下情况特别有用
 多语言项目。
 
-如果在[预览您的网站]时更改了其中一个项目中的文件
+如果在[预览您的网站][previewing your site]时更改了其中一个项目中的文件
 插件仅重建此项目，并确保MkDocs也会重新加载
 相关文件。这也为拆分您的
 将主项目拆分为多个项目，以获得更好的编辑体验。
 
-有一些[限制]，但我们正在努力消除它们。
+有一些[限制][limitations]，但我们正在努力消除它们。
 
   [previewing your site]: ../creating-your-site.md#previewing-as-you-write
   [limitations]: #limitations
@@ -57,9 +57,9 @@ icon: material/folder-open
 ### 何时使用
 
 该插件的出现是因为我们需要一个方便且可扩展的
-构建我们的[示例]存储库的方法，该存储库具有许多自包含的特性
+构建我们的[示例][examples]存储库的方法，该存储库具有许多自包含的特性
 以及用户可以在以下情况下下载和使用的可运行项目
-启动一个新项目或[创建复制品]。
+启动一个新项目或[创建复制品][creating a reproduction]。
 
 当你想创建一个多语言项目，或者有一个非常大的现有项目时
 在项目中，您可能会考虑使用该插件，因为它可以进行管理、编辑
@@ -72,7 +72,7 @@ icon: material/folder-open
 
 `sponsors`
 `version insiders-4.38.0`
-`plugin [projects] – built-in`
+插件：[projects]（内置）
 `flag experimental`
 
 为了开始使用项目插件，只需添加以下行
@@ -95,13 +95,13 @@ plugins:
 
 ---
 
-#### `setting config.enabled`
+#### `setting config.enabled` <span id="config.enabled"></span>
 
 `sponsors`
 `version insiders-4.38.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
 `mkdocs.yml`中的[环境变量][mkdocs.env]：
 
@@ -137,7 +137,7 @@ plugins:
 
 ### 缓存
 
-该插件实现了[智能缓存]机制，确保
+该插件实现了[智能缓存][intelligent caching]机制，确保
 只有当项目内容发生变化时，才会重建项目。虽然最初的构建可能
 花点时间，使用缓存是个好主意，因为它会加快连续运行的速度
 建筑。
@@ -189,7 +189,7 @@ plugins:
 
 ---
 
-#### `setting config.log`
+#### `setting config.log` <span id="config.log"></span>
 
 `sponsors`
 `version insiders-4.47.0`
@@ -272,7 +272,7 @@ plugins:
 
 使用此设置启用或禁用项目生成。目前
 插件的唯一目的是构建项目，因此它相当于
-[`enabled'][config.enabled]设置，但将来可能会有其他功能
+[`enabled`][config.enabled]设置，但将来可能会有其他功能
 补充。如果要禁用项目构建，请使用：
 
 ``` yaml
@@ -283,7 +283,7 @@ plugins:
 
 ---
 
-#### `setting config.projects_dir`
+#### `setting config.projects_dir` <span id="config.projects_dir"></span>
 
 `sponsors`
 `version insiders-4.38.0`
@@ -314,8 +314,8 @@ plugins:
 `default _*/mkdocs.yml_`
 
 使用此设置更改配置文件的位置或名称
-插件将在扫描[项目目录]时查找
-[配置项目目录]。当出现以下情况时，可能需要调整此设置
+插件将在扫描[项目目录][mkdocs.docs_dir]时查找
+[配置项目目录][config.projects_dir]。当出现以下情况时，可能需要调整此设置
 配置文件位于项目的子目录中，例如。
 `docs/mkdocs.yml`：
 
@@ -351,8 +351,7 @@ plugins:
     └─ mkdocs.yml
     ```
 
-提供的路径是从[“projects”目录]解析的
-[配置项目目录]。
+路径相对于[配置的 `projects` 目录][config.projects_dir]解析。
 
 ---
 
@@ -384,13 +383,12 @@ export PYTHONPATH=.
 
 !!! tip "如何定义配置转换函数"
 
-    [`python/name`][python name]标签由[PyYAML]提供，必须指向
-    在Python的[模块搜索路径]中找到一个有效的模块和函数名。
+    [`python/name`][python-name]标签由[PyYAML]提供，必须指向
+    在Python的[模块搜索路径][module search path]中找到一个有效的模块和函数名。
     插件将“project”和顶级“config”对象传递给
     功能。
 
-    例如，我们可以继承[`use_directory_urls`]
-    从顶层开始为所有项目设置[mkdocs.use_directory_urls]
+    例如，可以让所有项目继承顶层的 [`use_directory_urls`][mkdocs.use_directory_urls] 设置
     配置：
 
     ``` py title="projects/__init__.py"
@@ -432,7 +430,7 @@ plugins:
 更快地加载项目的网站，因为文件与
 所有项目都可以进行重复数据删除。
 
-### 局限性
+### 局限性 <span id="limitations"></span>
 
 该插件是MkDocs Material的最新补充之一，这意味着它
 它相当年轻，有一些局限性。我们正在努力移除它们，并且
@@ -445,3 +443,7 @@ plugins:
 
 - __单独的搜索索引和站点地图__: 目前，这些项目完全
   分开，这意味着它们将有单独的搜索索引和站点地图。
+
+  [config.enabled]: #config.enabled
+  [config.log]: #config.log
+  [config.projects_dir]: #config.projects_dir

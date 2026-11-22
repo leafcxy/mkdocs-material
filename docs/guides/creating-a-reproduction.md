@@ -9,7 +9,7 @@
 
 ### 环境 <small>optional</small> { #environment }
 
-我们建议使用[虚拟环境]，这是一个独立的Python运行时环境。
+我们建议使用[虚拟环境][virtual environment]，这是一个独立的Python运行时环境。
 如果您在虚拟环境中，您安装或升级的任何软件包
 将与环境融为一体。如果你遇到问题，你可以
 只需删除并重新创建环境。设置起来很简单：
@@ -55,11 +55,11 @@
 ### 最小繁殖
 
 按照以下说明，您将设置一个骨架项目来创建
-复制品。如上所述，我们建议使用[虚拟环境]，
+复制品。如上所述，我们建议使用[虚拟环境][virtual environment]，
 因此，在您的工作目录和新的虚拟环境中创建一个新文件夹
 里面。下一个：
 
-1.  正如我们的[错误报告指南]中提到的，请确保您正在运行
+1.  正如我们的[错误报告指南][bug reporting guide]中提到的，请确保您正在运行
     最新版本的MkDocs材料，其中可能已经包含了对
     bug：
 
@@ -75,7 +75,7 @@
     mkdocs new .
     ```
 
-    首先在`mkdocs.yml`中添加[最小配置]：
+    首先在`mkdocs.yml`中添加[最小配置][minimal configuration]：
 
     ``` yaml
     theme:
@@ -93,7 +93,7 @@
     非必要的行和文件。
 
   [bug reporting guide]: ../contributing/reporting-a-bug.md#upgrade-to-latest-version
-  [minimal configuration]: ../creating-your-site.md
+  [minimal configuration]: ../creating-your-site.md#minimal-configuration
 
 ### 创建“.zip”文件
 

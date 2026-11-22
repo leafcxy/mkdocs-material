@@ -3,11 +3,11 @@
 如果您的文档与源代码有关，MkDocs材料提供
 作为项目存储库的一部分显示信息的能力
 静态站点，包括星和叉。此外
-可以显示[上次更新和创建日期]以及[贡献者]。
+可以显示[上次更新和创建日期][date of last update and creation]以及[贡献者][contributors]。
 
 ## 配置
 
-### 存储库
+### 存储库 <span id="repository"></span>
 
 `version 0.1.0`
 `default none`
@@ -29,11 +29,11 @@ repo_url: https://github.com/squidfunk/mkdocs-material
 
   [^1]:
     遗憾的是，GitHub只提供了一个API端点来获取[最新
-    release]-不是最新标签。因此，请确保[创建一个版本]（而不是
+    release]-不是最新标签。因此，请确保[创建一个版本][create a release]（而不是
     预发布），用于在编号旁边显示您要显示的最新标签
     星星和叉子。对于GitLab，虽然可以获得[标签列表
-    按更新时间排序]，则使用[等效API端点]。所以，一定要
-    您还可以[为GitLab存储库创建一个版本]。
+    按更新时间排序]，则使用[等效API端点][equivalent API endpoint]。所以，一定要
+    您还可以[为GitLab存储库创建一个版本][create a release for GitLab repositories]。
 
   [repo_url]: https://www.mkdocs.org/user-guide/configuration/#repo_url
   [latest release]: https://docs.github.com/en/rest/reference/releases#get-the-latest-release
@@ -72,7 +72,7 @@ theme:
     repo: fontawesome/brands/git-alt # (1)!
 ```
 
-1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -94,14 +94,14 @@ theme:
 - :fontawesome-brands-bitbucket: – `fontawesome/brands/bitbucket`
 - :fontawesome-solid-trash: – `fontawesome/solid/trash`
 
-  [icon search]: ../reference/icons-emojis.md#_2
+  [icon search]: ../reference/icons-emojis.md#search
 
 #### 代码操作
 
 `version 9.0.0`
 `feature`
 
-如果[存储库URL]指向有效的[GitHub]、[GitLab]或[Bitbucket]
+如果[存储库URL][repository URL]指向有效的[GitHub]、[GitLab]或[Bitbucket]
 存储库中，[MkDocs]提供了一个名为[`edit_uri`][edit_uri]的设置
 解析到承载文档的子文件夹。
 
@@ -140,7 +140,7 @@ theme:
     view: material/eye
 ```
 
-1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -161,19 +161,19 @@ theme:
 ### 修订
 
 以下插件与Material for MkDocs完全集成，允许
-用于显示文档的[上次更新和创建日期]，以及
-所有相关[贡献者]或[作者]的链接。
+用于显示文档的[上次更新和创建日期][date of last update and creation]，以及
+所有相关[贡献者][contributors]或[作者][authors]的链接。
 
   [date of last update and creation]: #document-dates
-  [contributors]: 
+  [contributors]: #document-contributors
   [authors]: #document-authors
 
-#### 文件日期
+#### 文件日期 <span id="document-dates"></span>
 
 `version 4.6.0`
-`plugin [git-revision-date-localized]`
+插件：[git-revision-date-localized]
 
-[git修订日期本地化]插件增加了对添加日期的支持
+[git修订日期本地化][git-revision-date-localized]插件增加了对添加日期的支持
 最后更新和创建每页底部的文档。安装它
 使用`pip `：
 
@@ -195,7 +195,7 @@ plugins:
 
 :   `default _true_` 此选项指定是否
     在构建项目时启用该插件。如果你想切换
-    关闭插件，例如对于本地构建，使用[环境变量]：
+    关闭插件，例如对于本地构建，使用[环境变量][mkdocs.env]：
 
     ``` yaml
     plugins:
@@ -231,7 +231,7 @@ plugins:
 
         如果您通过CI系统进行部署，可能需要调整您的
         获取代码时的CI设置。有关更多信息，请参见
-        [git修订日期本地化]。
+        [git修订日期本地化][git-revision-date-localized]。
 
 `option git-revision-date-localized.fallback_to_build_date`
 
@@ -251,10 +251,10 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
 
   [git-revision-date-localized]: https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
 
-#### 文档贡献者
+#### 文档贡献者 <span id="document-contributors"></span>
 
 `version 9.5.0`
-`plugin [git-committers]`
+插件：[git-committers]
 `flag experimental`
 
 [git committers][^2]插件呈现所有贡献者的GitHub头像，
@@ -262,7 +262,7 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
 使用`pip `进行安装：
 
   [^2]:
-    我们目前建议使用[git committers]插件的一个分支，因为它
+    我们目前建议使用[git committers][git-committers]插件的一个分支，因为它
     包含许多尚未合并回的改进
     原始插件。更多信息请参见byrnesee/mkdocs git committers插件#12
     信息。
@@ -286,7 +286,7 @@ plugins:
 
 :   `default _true_` 此选项指定是否
     在构建项目时启用该插件。如果你想切换
-    关闭插件，例如对于本地构建，使用[环境变量]：
+    关闭插件，例如对于本地构建，使用[环境变量][mkdocs.env]：
 
     ``` yaml
     plugins:
@@ -326,18 +326,18 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
   [environment variable]: https://www.mkdocs.org/user-guide/configuration/#environment-variables
   [rate limits]: https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting
 
-#### 文档作者
+#### 文档作者 <span id="document-authors"></span>
 
 `version 9.5.0`
-`plugin [git-authors]`
+插件：[git-authors]
 `flag experimental`
 
-[git authors]插件是轻量级的替代品
-[git committers]插件，从git中提取文档的作者以显示
+[git authors][git-authors]插件是轻量级的替代品
+[git committers][git-committers]插件，从git中提取文档的作者以显示
 它们位于每页的底部。
 
-MkDocs的材料为[git作者]提供了深度集成。这意味着
-[自定义覆盖](https://timvink.github.io/mkdocs-git-authors-plugin/usage.html#mkdocs-材料主题）
+MkDocs的材料为[git作者][git-authors]提供了深度集成。这意味着
+[自定义覆盖](https://timvink.github.io/mkdocs-git-authors-plugin/usage.html#mkdocs-material-theme)
 并且添加了额外的样式（如漂亮的图标）。
 只需使用`pip `进行安装：
 

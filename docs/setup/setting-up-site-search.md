@@ -20,7 +20,7 @@ Material for MkDocs提供了一个出色的客户端搜索实现，
 `plugin`
 
 内置的搜索插件与Material for MkDocs无缝集成，
-使用[lunr]和[lunr语言]添加多语言客户端搜索。it is 的常用口语形式
+使用[lunr]和[lunr语言][lunr-languages]添加多语言客户端搜索。it is 的常用口语形式
 默认情况下启用，但当其他插件出现时，必须重新添加到“mkdocs.yml”中
 使用：
 
@@ -36,7 +36,7 @@ plugins:
   [lunr]: https://lunrjs.com
   [lunr-languages]: https://github.com/MihaiValentin/lunr-languages
 
-### 搜索建议
+### 搜索建议 <span id="search-suggestions"></span>
 
 `version 7.2.0`
 `feature`
@@ -57,7 +57,7 @@ theme:
 
   [Search suggestions example]: ?q=search+su
 
-### 搜索突出显示
+### 搜索突出显示 <span id="search-highlighting"></span>
 
 `version 7.2.0`
 `feature`
@@ -78,7 +78,7 @@ theme:
 
   [Search highlighting example]: ../reference/code-blocks.md?h=code+blocks
 
-### 搜索共享
+### 搜索共享 <span id="search-sharing"></span>
 
 `version 7.2.0`
 `feature`
@@ -98,7 +98,7 @@ theme:
 
 ## 使用
 
-### 搜索增强
+### 搜索增强 <span id="search-boosting"></span>
 
 `version 8.3.0`
 `flag metadata`
@@ -134,7 +134,7 @@ Markdown文件：
     ...
     ```
 
-### 搜索排除
+### 搜索排除 <span id="_9"></span> { #search-exclusion }
 
 `version 9.0.0`
 `flag metadata`
@@ -154,7 +154,7 @@ search:
 ...
 ```
 
-#### 不包括章节
+#### 不包括章节 { #_10 }
 
 启用[Attribute Lists]时，可以排除页面的特定部分
 通过在Markdown后添加“数据搜索排除”语法来进行搜索
@@ -194,9 +194,9 @@ search:
     }
     ```
 
-  [Attribute Lists]: extensions/python-markdown.md
+  [Attribute Lists]: extensions/python-markdown.md#attribute-lists
 
-#### 不包括区块
+#### 不包括区块 { #_11 }
 
 启用[Attribute Lists]时，可以排除页面的特定部分
 通过在Markdown后添加“数据搜索排除”语法来进行搜索

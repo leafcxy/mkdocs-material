@@ -27,7 +27,7 @@ markdown_extensions:
 - [Definition Lists]
 - [Tasklist]
 
-  [Definition Lists]: ../setup/extensions/python-markdown.md
+  [Definition Lists]: ../setup/extensions/python-markdown.md#definition-lists
   [Tasklist]: ../setup/extensions/python-markdown-extensions.md#tasklist
 
 ## 使用
@@ -102,9 +102,9 @@ markdown_extensions:
 
 </div>
 
-### 使用定义列表
+### 使用定义列表 <span id="using-definition-lists"></span>
 
-启用[定义列表]时，任意键值对的列表，例如
+启用[定义列表][Definition Lists]时，任意键值对的列表，例如
 函数或模块的参数可以用简单的语法枚举：
 
 ``` markdown title="Definition list"
@@ -141,7 +141,7 @@ markdown_extensions:
 
 </div>
 
-### 使用任务列表
+### 使用任务列表 <span id="using-task-lists"></span>
 
 启用[Tasklist]后，无序列表项可以前缀为“[]”
 呈现一个未选中的复选框或“[x]”来呈现一个复选框，允许

@@ -7,11 +7,11 @@ icon: material/newspaper-variant-outline
 
 博客插件使构建博客变得非常容易，无论是作为sidecar还是
 您的文档或作为主要内容。在插件运行期间，专注于您的内容
-完成所有繁重的工作，生成所有最新帖子的视图，[存档]和
-[类别]页面，可配置[分页]等等。
+完成所有繁重的工作，生成所有最新帖子的视图，[存档][archive]和
+[类别][category]页面，可配置[分页][pagination]等等。
 
   [archive]: #archive
-  [category]: 
+  [category]: #categories
   [pagination]: #pagination
 
 ## 客观的
@@ -25,8 +25,8 @@ icon: material/newspaper-variant-outline
 
   [^1]:
     视图是自动生成的页面，即
-    您的博客列出了所有最新帖子，以及[存档]和[类别]
-    通过[元数据]列出与其关联的所有帖子的页面
+    您的博客列出了所有最新帖子，以及[存档][archive]和[类别][category]
+    通过[元数据][metadata]列出与其关联的所有帖子的页面
     时间顺序。
 
 ``` { .sh .no-copy }
@@ -40,20 +40,20 @@ icon: material/newspaper-variant-outline
 
 [`blog`目录][config.blog_dir]中的`index.md`文件是条目
 指向你的博客——一个按时间倒序列出所有帖子的分页视图
-订单。除此之外，该插件还支持自动创建[存档]和
+订单。除此之外，该插件还支持自动创建[存档][archive]和
 [category]页面列出了某个时间间隔或类别的帖子子集。
 
 [Post url][config.Post_url_format]是完全可配置的，无论是否
 您是否希望您的URL包含帖子的日期。始终呈现日期
-以项目的[站点语言]的区域设置显示。就像在其他
-静态博客框架、帖子可以用各种[元数据]进行注释，
-允许与其他[内置插件]轻松集成，例如
-[社交]和[标签]插件。
+以项目的[站点语言][site language]的区域设置显示。就像在其他
+静态博客框架、帖子可以用各种[元数据][metadata]进行注释，
+允许与其他[内置插件][built-in plugins]轻松集成，例如
+[社交][social]和[标签][tags]插件。
 
 帖子可以组织在嵌套文件夹中，目录布局适合您的
 根据特定需求，可以使用该材料的所有组件和语法
-MkDocs提供，包括[警告]、[注释]、[代码块]，
-[内容选项卡]、[图表]、[图标]、[数学]等。
+MkDocs提供，包括[警告][admonitions]、[注释][annotations]、[代码块][code blocks]，
+[内容选项卡][content tabs]、[图表][diagrams]、[图标][icons]、[数学][math]等。
 
   [metadata]: #metadata
   [built-in plugins]: index.md
@@ -80,7 +80,7 @@ MkDocs的Material框架，因为它具有出色的技术写作能力
 
     ---
 
-    元插件使将[元数据]应用于帖子子集变得容易，
+    元插件使将[元数据][metadata]应用于帖子子集变得容易，
     包括作者、标签、类别、草稿状态以及社交卡
     布局。
 
@@ -134,11 +134,11 @@ MkDocs的Material框架，因为它具有出色的技术写作能力
 ## 配置
 
 `version 9.2.0`
-`plugin [blog] – built-in`
+插件：[blog]（内置）
 `flag multiple`
 `flag experimental`
 
-与所有[内置插件]一样，开始使用博客插件是
+与所有[内置插件][built-in plugins]一样，开始使用博客插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，您就可以
 开始写你的第一篇文章：
 
@@ -156,7 +156,7 @@ plugins:
 ### 导航
 
 如果您的`mkdocs.yml`中没有配置站点导航，那么有
-无需更多操作。博客[存档]和[类别]页面将自动
+无需更多操作。博客[存档][archive]和[类别][category]页面将自动
 显示在自动生成的导航下方。
 
 如果您确实定义了导航结构，则需要指定
@@ -174,13 +174,13 @@ nav:
     - blog/index.md
 ```
 
-[存档]和[类别]页面将显示在该部分中
+[存档][archive]和[类别][category]页面将显示在该部分中
 博客部分页面下方的子部分。在这种情况下，他们会出现
 在`index.md`之后。“index.md”文件的路径必须匹配
 [blog_dir][config.blog_dir]。这意味着您可以命名博客导航
 输入任何你喜欢的东西：“博客”或“新闻”，或者“提示”。
 
-[navigation section with an index page]: ../setup/setting-up-navigation.md
+[navigation section with an index page]: ../setup/setting-up-navigation.md#section-index-pages
 
 ### 一般的
 
@@ -193,7 +193,7 @@ nav:
 `version 9.2.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
 插件，使用：
 
@@ -207,7 +207,7 @@ plugins:
 
 ---
 
-#### `setting config.blog_dir`
+#### `setting config.blog_dir` <span id="config.blog_dir"></span>
 
 `version 9.2.0`
 `default _blog_`
@@ -236,7 +236,7 @@ URL作为所有帖子和视图的前缀。您可以通过以下方式进行更�
 
 ---
 
-#### `setting config.blog_toc`
+#### `setting config.blog_toc` <span id="config.blog_toc"></span>
 
 `version 9.2.0`
 `default _false_`
@@ -257,7 +257,7 @@ plugins:
 
 ---
 
-#### setting config.post_dir
+#### setting config.post_dir <span id="config.post_dir"></span>
 
 `version 9.2.0`
 `default _{blog}/posts_`
@@ -290,8 +290,8 @@ plugins:
 `default _long_`
 
 使用此设置可更改帖子的日期格式。此插件使用[babel]
-以配置的[站点语言]呈现日期。你可以用babel
-[模式语法]或以下简码：
+以配置的[站点语言][site language]呈现日期。你可以用babel
+[模式语法][pattern syntax]或以下简码：
 
 === "Monday, January 31, 2024"
 
@@ -325,22 +325,22 @@ plugins:
           post_date_format: short
     ```
 
-请注意，根据[网站语言]的不同，结果可能会有所不同
+请注意，根据[网站语言][site language]的不同，结果可能会有所不同
 其他语言。
 
   [babel]: https://pypi.org/project/Babel/
-  [site language]: ../setup/changing-the-language.md
+  [site language]: ../setup/changing-the-language.md#site-language
   [pattern syntax]: https://babel.pocoo.org/en/latest/dates.html#pattern-syntax
 
 ---
 
-#### `setting config.post_url_date_format`
+#### `setting config.post_url_date_format` <span id="config.post_url_date_format"></span>
 
 `version 9.2.0`
 `default _yyyy/MM/dd_`
 
 使用此设置可更改帖子URL中使用的日期格式。格式字符串
-必须遵循[babel]的[pattern语法]，并且不应包含空格。
+必须遵循[babel]的[pattern语法][pattern syntax]，并且不应包含空格。
 一些流行的选择：
 
 === ":material-link: blog/2024/01/31/:material-dots-horizontal:/"
@@ -369,11 +369,11 @@ plugins:
 
 如果你想从帖子URL中删除日期，例如，当你的博客功能
 主要是常青内容，您可以从
-[`post_url_format`][config.post_url_fformat]格式字符串。
+[`post_url_format`][config.post_url_format]格式字符串。
 
 ---
 
-#### `setting config.post_url_format`
+#### `setting config.post_url_format` <span id="config.post_url_format"></span>
 
 `version 9.2.0`
 `default _{date}/{slug}_`
@@ -417,7 +417,7 @@ URL。您可以自由组合占位符，并用斜线或其他符号将其连接�
 `default _1_`
 
 使用此设置为中包含的类别数量设置上限
-如果“类别”占位符是[“post_url_format”]的一部分，则发布url
+如果“类别”占位符是[`post_url_format`][config.post_url_format]的一部分，则发布url
 [config.post_url_format]，帖子定义了类别：
 
 ``` yaml
@@ -431,14 +431,14 @@ plugins:
 
 ---
 
-#### `setting config.post_slugify`
+#### `setting config.post_slugify` <span id="config.post_slugify"></span>
 
 `version 9.2.0`
-`default [_pymdownx.slugs.slugify_][pymdownx.slugs.slugify]`
+默认值：[`pymdownx.slugs.slugify`][pymdownx.slugs.slugify]
 
 使用此设置更改生成与URL兼容的slug的功能
-从帖子标题。默认情况下，['slugify][pymdownx.slugs.slugify]函数
-[Python Markdown扩展]的用法如下：
+从帖子标题。默认情况下，[`slugify`][pymdownx.slugs.slugify]函数
+[Python Markdown扩展][Python Markdown Extensions]的用法如下：
 
 ``` yaml
 plugins:
@@ -463,7 +463,7 @@ plugins:
 `default _-_ `
 
 使用此设置更改传递给slugif的分隔符
-函数集为[`post_slugify`]的一部分[config.post_slugify]。虽然默认
+函数集为[`post_slugify`][config.post_slugify]的一部分[config.post_slugify]。虽然默认
 是连字符，可以设置为任何字符串，例如“_”：
 
 ``` yaml
@@ -479,7 +479,7 @@ plugins:
 `version 9.2.0`
 `default _optional_`
 
-默认情况下，插件会制作[帖子摘录]（../setup/setup-a-blog.md#添加摘录）
+默认情况下，插件会制作[帖子摘录](../setup/setting-up-a-blog.md#adding-an-excerpt)
 可选。当一篇帖子没有定义摘录时，视图包括整个帖子。
 此设置可用于制作所需的帖子摘录：
 
@@ -565,7 +565,7 @@ plugins:
 
 ---
 
-#### `setting config.post_excerpt_separator`
+#### `setting config.post_excerpt_separator` <span id="config.post_excerpt_separator"></span>
 
 `version 9.2.0`
 `default <code>&lt;!-- more --&gt;</code>`
@@ -584,7 +584,7 @@ plugins:
 
 ---
 
-#### `setting config.post_readtime`
+#### `setting config.post_readtime` <span id="config.post_readtime"></span>
 
 `version 9.2.0`
 `default _true_`
@@ -625,17 +625,17 @@ plugins:
 ```
 
 每分钟265个单词的阅读时间被认为是
-[成年人的平均阅读时间]。
+[成年人的平均阅读时间][average reading time of an adult]。
 
   [average reading time of an adult]: https://help.medium.com/hc/en-us/articles/214991667-Read-time
 
-### 档案
+### 档案 <span id="archive"></span>
 
 以下设置可用于存档页面：
 
 ---
 
-#### `setting config.archive`
+#### `setting config.archive` <span id="config.archive"></span>
 
 `version 9.2.0`
 `default _true_`
@@ -675,7 +675,7 @@ plugins:
 `default _yyyy_`
 
 使用此设置可更改用于存档页面标题的日期格式。这个
-格式字符串必须遵循[babel]的[模式语法]。一些流行的选择：
+格式字符串必须遵循[babel]的[模式语法][pattern syntax]。一些流行的选择：
 
 === "2024"
 
@@ -693,18 +693,18 @@ plugins:
           archive_date_format: MMMM yyyy
     ```
 
-请注意，根据[网站语言]的不同，结果可能会有所不同
+请注意，根据[网站语言][site language]的不同，结果可能会有所不同
 其他语言。
 
 ---
 
-#### `setting config.archive_url_date_format`
+#### `setting config.archive_url_date_format` <span id="config.archive_url_date_format"></span>
 
 `version 9.2.0`
 `default _yyyy_`
 
 使用此设置可更改用于存档页面URL的日期格式
-格式字符串必须遵循[babel]的[pattern语法]，并且不应包含
+格式字符串必须遵循[babel]的[pattern语法][pattern syntax]，并且不应包含
 空白。一些流行的选择：
 
 === ":material-link: blog/archive/2024/"
@@ -756,14 +756,14 @@ plugins:
 
 ---
 
-#### `setting config.archive_pagination`
+#### `setting config.archive_pagination` { #config.archive_pagination }
 
 `sponsors`
 `version insiders-4.44.0`
 `default _true_`
 
 使用此设置可启用或禁用存档页面的分页。价值
-此设置的值继承自[`pagination][config.pagination]，除非它是
+此设置的值继承自[`pagination`][config.pagination]，除非它是
 明确设置。要禁用分页，请使用：
 
 ``` yaml
@@ -774,15 +774,15 @@ plugins:
 
 ---
 
-#### `setting config.archive_pagination_per_page`
+#### `setting config.archive_pagination_per_page` { #config.archive_pagination_per_page }
 
 `sponsors`
 `version insiders-4.44.0`
 `default _10_`
 
 使用此设置可更改每个存档页面呈现的帖子数量。这个
-此设置的值继承自[“pagination_per_page”]
-[config.pagion_per_page]，除非明确设置。要更改它，请使用：
+此设置的值继承自[`pagination_per_page`][config.pagination_per_page]
+[config.pagion_per_page][config.pagination_per_page]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -798,7 +798,7 @@ plugins:
 `default _false_`
 
 使用此设置可利用目录显示所有帖子的标题
-存档页面。此设置的值继承自[`blog_toc`]
+存档页面。此设置的值继承自[`blog_toc`][config.blog_toc]
 [config.blog_toc]，除非明确设置。要更改它，请使用
 
 ``` yaml
@@ -807,13 +807,13 @@ plugins:
       archive_toc: true
 ```
 
-### 类别
+### 类别 <span id="categories"></span>
 
 以下设置可用于类别页面：
 
 ---
 
-#### `setting config.categories`
+#### `setting config.categories` <span id="config.categories"></span>
 
 `version 9.2.0`
 `default _true_`
@@ -847,7 +847,7 @@ plugins:
 
 ---
 
-#### `setting config.categories_url_format`
+#### `setting config.categories_url_format` <span id="config.categories_url_format"></span>
 
 `version 9.2.0`
 `default _category/{slug}_`
@@ -874,18 +874,18 @@ plugins:
 
 以下占位符可用：
 
-- `slug `–类别，用[`categories_slugify`][config.categories_shugify]分隔
+- `slug `–类别，用[`categories_slugify`][config.categories_slugify]分隔
 
 ---
 
-#### `setting config.categories_slugify`
+#### `setting config.categories_slugify` <span id="config.categories_slugify"></span>
 
 `version 9.2.0`
-`default [_pymdownx.slugs.slugify_][pymdownx.slugs.slugify]`
+默认值：[`pymdownx.slugs.slugify`][pymdownx.slugs.slugify]
 
 使用此设置更改生成与URL兼容的slug的功能
-从类别。默认情况下，['slugify][pymdownx.slugs.slugify]函数
-[Python Markdown扩展]的用法如下：
+从类别。默认情况下，[`slugify`][pymdownx.slugs.slugify]函数
+[Python Markdown扩展][Python Markdown Extensions]的用法如下：
 
 ``` yaml
 plugins:
@@ -907,7 +907,7 @@ plugins:
 `default _-_ `
 
 使用此设置更改传递给slugif的分隔符
-函数集为[类别_插件]的一部分[配置.类别_插件]。与…同时
+函数集为[`categories_slugify`][config.categories_slugify]的一部分[配置.类别_插件][config.categories_slugify]。与…同时
 默认值是连字符，可以设置为任何字符串，例如“_”：
 
 ``` yaml
@@ -918,7 +918,7 @@ plugins:
 
 ---
 
-#### `setting config.categories_sort_by`
+#### `setting config.categories_sort_by` { #config.categories_sort_by }
 
 `sponsors`
 `version insiders-4.45.0`
@@ -934,13 +934,13 @@ plugins:
       categories_sort_by: !!python/name:material.plugins.blog.view_post_count
 ```
 
-别忘了启用[`categories_sort_reverse][config.categories_sort _reverse]。
+别忘了启用[`categories_sort_reverse`][config.categories_sort_reverse]。
 您可以定义自己的比较函数，该函数必须返回一些值
 可以在排序时进行比较，即字符串或数字。
 
 ---
 
-#### `setting config.categories_sort_reverse`
+#### `setting config.categories_sort_reverse` { #config.categories_sort_reverse }
 
 `sponsors`
 `version insiders-4.45.0`
@@ -958,7 +958,7 @@ plugins:
 
 ---
 
-#### `setting config.categories_allowed`
+#### `setting config.categories_allowed` <span id="config.categories_allowed"></span>
 
 `version 9.2.0`
 `default none`
@@ -976,19 +976,19 @@ plugins:
 ```
 
 如果帖子引用的类别不属于
-这个列表。可以使用[“类别”]将帖子分配到类别中
-[meta.classes]元数据属性。
+这个列表。可以使用[`categories`][meta.categories]将帖子分配到类别中
+[meta.classes][meta.categories]元数据属性。
 
 ---
 
-#### `setting config.categories_pagination`
+#### `setting config.categories_pagination` { #config.categories_pagination }
 
 `sponsors`
 `version insiders-4.44.0`
 `default _true_`
 
 使用此设置可启用或禁用类别页面的分页。价值
-此设置的值继承自[`pagination][config.pagination]，除非它是
+此设置的值继承自[`pagination`][config.pagination]，除非它是
 明确设置。要禁用分页，请使用：
 
 ``` yaml
@@ -999,15 +999,15 @@ plugins:
 
 ---
 
-#### `setting config.categories_pagination_per_page`
+#### `setting config.categories_pagination_per_page` { #config.categories_pagination_per_page }
 
 `sponsors`
 `version insiders-4.44.0`
 `default _10_`
 
 使用此设置可更改每个类别页面呈现的帖子数量。这个
-此设置的值继承自[“pagination_per_page”]
-[config.pagion_per_page]，除非明确设置。要更改它，请使用：
+此设置的值继承自[`pagination_per_page`][config.pagination_per_page]
+[config.pagion_per_page][config.pagination_per_page]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -1023,7 +1023,7 @@ plugins:
 `default _false_`
 
 使用此设置可利用目录显示所有帖子的标题
-类别页面。此设置的值继承自[`blog_toc`]
+类别页面。此设置的值继承自[`blog_toc`][config.blog_toc]
 [config.blog_toc]，除非明确设置。要更改它，请使用：
 
 ``` yaml
@@ -1032,7 +1032,7 @@ plugins:
       categories_toc: true
 ```
 
-### 作者
+### 作者 <span id="authors"></span>
 
 作者可以使用以下设置：
 
@@ -1044,7 +1044,7 @@ plugins:
 `default _true_`
 
 使用此设置启用或禁用文章作者。如果启用了该设置，
-该插件将查找一个名为[`.orges.yml`][config.authors_file]的文件
+该插件将查找一个名为[`.authors.yml`][config.authors_file]的文件
 在帖子和视图中呈现作者。通过以下方式禁用此行为：
 
 ``` yaml
@@ -1053,9 +1053,11 @@ plugins:
       authors: false
 ```
 
+  [config.authors_file]: #config.authors_file
+
 ---
 
-#### `setting config.authors_file`
+#### `setting config.authors_file` { #config.authors_file }
 
 `version 9.2.0`
 `default _{blog}/.authors.yml_`
@@ -1092,15 +1094,15 @@ plugins:
 
     请注意，“<author>”必须设置为用于关联作者的标识符
     带有帖子，例如GitHub用户名“squidfunk”。此标识符可以
-    然后在[作者][元作者]元数据属性中使用
+    然后在[作者][authors]元数据属性中使用
     一篇帖子。支持多个作者。例如，请参见
-    [我们博客使用的`.orges.yml`文件][.orges.ymml]。
+    [我们博客使用的 `.authors.yml` 文件][.authors.yml]。
 
   [.authors.yml]: https://github.com/squidfunk/mkdocs-material/blob/master/docs/blog/.authors.yml
 
 ---
 
-#### `setting config.authors_profiles`
+#### `setting config.authors_profiles` <span id="config.authors_profiles"></span>
 
 `sponsors`
 `version insiders-4.46.0`
@@ -1164,19 +1166,19 @@ plugins:
 
 The following placeholders are available:
 
-- `slug` – 来自[`authors_file][config.authors_file]的作者段符或标识符
-- `name` – 来自[`authors_file][config.authors_file]的作者名称
+- `slug` – 来自[`authors_file`][config.authors_file]的作者段符或标识符
+- `name` – 来自[`authors_file`][config.authors_file]的作者名称
 
 ---
 
-#### `setting config.authors_profiles_pagination`
+#### `setting config.authors_profiles_pagination` { #config.authors_profiles_pagination }
 
 `sponsors`
 `version insiders-4.46.0`
 `default _true_`
 
 使用此设置可启用或禁用作者配置文件的分页。价值
-此设置的值继承自[`pagination][config.pagination]，除非它是
+此设置的值继承自[`pagination`][config.pagination]，除非它是
 明确设置。要禁用分页，请使用：
 
 ``` yaml
@@ -1187,15 +1189,15 @@ plugins:
 
 ---
 
-#### `setting config.authors_profiles_pagination_per_page`
+#### `setting config.authors_profiles_pagination_per_page` { #config.authors_profiles_pagination_per_page }
 
 `sponsors`
 `version insiders-4.46.0`
 `default _10_`
 
 使用此设置可更改每个存档页面呈现的帖子数量。这个
-此设置的值继承自[“pagination_per_page”]
-[config.pagion_per_page]，除非明确设置。要更改它，请使用：
+此设置的值继承自[`pagination_per_page`][config.pagination_per_page]
+[config.pagion_per_page][config.pagination_per_page]，除非明确设置。要更改它，请使用：
 
 ``` yaml
 plugins:
@@ -1212,7 +1214,7 @@ plugins:
 `default _false_`
 
 使用此设置可利用目录显示所有帖子的标题
-作者简介。此设置的值继承自[`blog_toc`]
+作者简介。此设置的值继承自[`blog_toc`][config.blog_toc]
 [config.blog_toc]，除非明确设置。要更改它，请使用：
 
 ``` yaml
@@ -1221,13 +1223,13 @@ plugins:
       authors_profiles_toc: true
 ```
 
-### 分页
+### 分页 <span id="pagination"></span>
 
 以下设置可用于分页：
 
 ---
 
-#### `setting config.pagination`
+#### `setting config.pagination` <span id="config.pagination"></span>
 
 `version 9.2.0`
 `default _true_`
@@ -1244,7 +1246,7 @@ plugins:
 
 ---
 
-#### `setting config.pagination_per_page`
+#### `setting config.pagination_per_page` <span id="config.pagination_per_page"></span>
 
 `version 9.2.0`
 `default _10_`
@@ -1382,14 +1384,14 @@ plugins:
 
 ---
 
-#### `setting config.draft`
+#### `setting config.draft` <span id="config.draft"></span>
 
 `version 9.2.0`
 `default _false_`
 
-渲染[草稿帖子][元草稿]在部署预览中很有用。使用这个
+渲染[草稿帖子][meta.draft]在部署预览中很有用。使用这个
 设置以指定插件在以下情况下是否应包含标记为草稿的帖子
-[构建您的项目]：
+[构建您的项目][building your project]：
 
 === "Render drafts"
 
@@ -1415,7 +1417,7 @@ plugins:
 `default _true_`
 
 使用此设置控制插件是否应包含标记为的帖子
-[预览网站]时的草稿。如果你不想包括草稿帖子
+[预览网站][previewing your site]时的草稿。如果你不想包括草稿帖子
 预览时，使用：
 
 ``` yaml
@@ -1435,7 +1437,7 @@ plugins:
 
 该插件可以自动将带有未来日期的帖子标记为草稿。当
 日期已过今天，当
-[构建你的项目]，除非明确标记为草稿：
+[构建你的项目][building your project]，除非明确标记为草稿：
 
 ``` yaml
 plugins:
@@ -1445,7 +1447,7 @@ plugins:
 
 ## 使用
 
-### 元数据
+### 元数据 <span id="metadata"></span>
 
 帖子可以定义一些元数据属性，指定插件的方式
 呈现它们，在哪些视图中集成它们，以及它们如何链接到
@@ -1456,14 +1458,14 @@ plugins:
 
 ---
 
-#### `setting meta.authors`
+#### `setting meta.authors` <span id="meta.authors"></span>
 
 `version 9.2.0`
 `flag metadata`
 `default none`
 
-使用此属性通过提供以下列表将帖子与[作者]相关联
-标识符如[`authors_file][config.authors_file]中所定义。如果A
+使用此属性通过提供以下列表将帖子与[作者][authors]相关联
+标识符如[`authors_file`][config.authors_file]中所定义。如果A
 无法解析作者，插件将终止并显示错误：
 
 ``` yaml
@@ -1483,13 +1485,13 @@ authors:
 
 ---
 
-#### `setting meta.categories`
+#### `setting meta.categories` <span id="meta.categories"></span>
 
 `version 9.2.0`
 `flag metadata`
 `default none`
 
-使用此属性将帖子与一个或多个[类别][类别]相关联，
+使用此属性将帖子与一个或多个[类别][category]相关联，
 使帖子成为生成的类别页面的一部分。类别已定义
 作为字符串列表（允许使用空格）：
 
@@ -1506,7 +1508,7 @@ categories:
 
 如果你想防止为帖子分配类别时出现意外拼写错误，你
 可以使用以下命令在“mkdocs.yml”中设置预定义的允许类别列表
-[`categories_allowed][config.categories_alowed]设置。
+[`categories_allowed`][config.categories_allowed]设置。
 
 ---
 
@@ -1560,7 +1562,7 @@ categories:
     ```
 
     1.  博客插件验证所有日期，并允许使用
-        模板中的[babel]的[模式语法]。当使用主题扩展时，
+        模板中的[babel]的[模式语法][pattern syntax]。当使用主题扩展时，
         作者可以将自定义日期添加到模板中。
 
         这是在#5733中首次提出的要求。
@@ -1572,15 +1574,15 @@ categories:
 
 ---
 
-#### `setting meta.draft`
+#### `setting meta.draft` <span id="meta.draft"></span>
 
 `version 9.2.0`
 `flag metadata`
 `default none`
 
 使用此属性将帖子标记为草稿。该插件允许包含或
-使用[构建项目]时排除标记为草稿的帖子
-[草稿][配置草稿]设置。将帖子标记为草稿：
+使用[构建项目][building your project]时排除标记为草稿的帖子
+[草稿][config.draft]设置。将帖子标记为草稿：
 
 ``` yaml
 ---
@@ -1664,7 +1666,7 @@ pin: true
       - plugins/search.md # (1)!
       - Insiders:
         - insiders/how-to-sponsor.md
-        - insiders/getting-started.md#_1
+        - insiders/getting-started.md#requirements
     ---
 
     # Post title
@@ -1672,11 +1674,11 @@ pin: true
     ```
 
     1.  如果链接定义了锚点，则插件会从以下位置解析锚点
-        链接页面，并将锚点标题设置为[字幕]。
+        链接页面，并将锚点标题设置为[字幕][subtitle]。
 
 所有相关链接都是从[`docs`目录][mkdocs.docs_dir]解析的。
 
-  [subtitle]: ../reference/index.md
+  [subtitle]: ../reference/index.md#setting-the-page-subtitle
 
 ---
 
@@ -1701,14 +1703,14 @@ readtime: 15
 
 ---
 
-#### `setting meta.slug`
+#### `setting meta.slug` <span id="meta.slug"></span>
 
 `version 9.2.0`
 `flag metadata`
 `default computed`
 
 使用此属性可以显式设置帖子的slug。默认情况下，slug
-帖子由[`post_slugify][config.post_sluglify]自动计算
+帖子由[`post_slugify`][config.post_slugify]自动计算
 可以用以下命令覆盖帖子标题中的函数：
 
 ``` yaml
@@ -1728,10 +1730,29 @@ Slugs are passed to [`post_url_format`][config.post_url_format].
 
     在设置博客或从其他博客框架迁移时，您
     可能会发现您缺少特定功能–我们很乐意
-    考虑将其添加到插件中！你可以[展开讨论]
-    在我们的[问题跟踪器]上提出问题或创建[更改请求]，因此我们
+    考虑将其添加到插件中！你可以[展开讨论][open a discussion]
+    在我们的[问题跟踪器][issue tracker]上提出问题或创建[更改请求][change request]，因此我们
     可以找出它是否适合该插件。
 
   [open a discussion]: https://github.com/squidfunk/mkdocs-material/discussions
   [change request]: ../contributing/requesting-a-change.md
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
+
+  [config.archive_url_date_format]: #config.archive_url_date_format
+  [config.blog_dir]: #config.blog_dir
+  [config.blog_toc]: #config.blog_toc
+  [config.categories_slugify]: #config.categories_slugify
+  [config.pagination]: #config.pagination
+  [config.post_dir]: #config.post_dir
+  [config.post_readtime]: #config.post_readtime
+  [config.post_slugify]: #config.post_slugify
+  [config.post_url_date_format]: #config.post_url_date_format
+  [config.post_url_format]: #config.post_url_format
+  [meta.slug]: #meta.slug
+
+  [config.categories_allowed]: #config.categories_allowed
+  [config.categories_sort_reverse]: #config.categories_sort_reverse
+  [config.draft]: #config.draft
+  [config.pagination_per_page]: #config.pagination_per_page
+  [meta.categories]: #meta.categories
+  [meta.draft]: #meta.draft

@@ -1,9 +1,9 @@
 # 如何赞助
 
 成为Material for MkDocs的赞助商是一个简单的过程，通过
-@squidfunk的[GitHub赞助商简介]。通过支持
+@squidfunk的[GitHub赞助商简介][GitHub Sponsors profile]。通过支持
 每月捐款15美元或以上的项目，你可以赞助
-通过[个人]或[组织]GitHub帐户。
+通过[个人][individual]或[组织][organizational]GitHub帐户。
 
   [GitHub Sponsors profile]: https://github.com/sponsors/squidfunk
   [individual]: access-management.md/#individuals
@@ -13,8 +13,8 @@
 
 想成为赞助商吗？我们将指导您完成以下赞助流程
 如果您还有其他问题，可以找到以下详细信息
-[支付和计费]、[访问管理]、[运行时间和取消]，
-在专用页面上显示[隐私]、[许可证]和[支持]。
+[支付和计费][payment and billing]、[访问管理][access management]、[运行时间和取消][runtime and cancellation]，
+在专用页面上显示[隐私][privacy]、[许可证][license]和[支持][support]。
 
   [payment and billing]: payment-and-billing.md
   [access management]: access-management.md
@@ -25,13 +25,13 @@
 
 ### 赞助层
 
-首先，探索[我们的赞助级别]是个好主意，因为每个赞助商
+首先，探索[我们的赞助级别][our sponsoring tiers]是个好主意，因为每个赞助商
 该级别旨在容纳不同级别的赞助商，包括
 专用福利。
 
 在查看了赞助级别后，是时候选择一个了。想想你
 想要实现并牢记您的要求，例如项目的数量
-您想建立或需要多少个帐户。[切换层]是可能的
+您想建立或需要多少个帐户。[切换层][Switching tiers]是可能的
 在任何时候。
 
 选择一个级别将带您进入GitHub的赞助确认页面。
@@ -46,12 +46,12 @@
 接下来，GitHub会要求您提供账单信息，这是必需的
 处理您的赞助付款。在此页面上，_赞助商摘要_
 部分显示了发起赞助所需的（可能按比例分配的）金额。
-此金额由您的帐户的[计费周期]决定，可以设置为
+此金额由您的帐户的[计费周期][billing cycle]决定，可以设置为
 每月或每年的间隔。
 
   [billing cycle]: https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/changing-the-duration-of-your-billing-cycle
 
-继续输入您的[付款信息]，特别是您的信用卡
+继续输入您的[付款信息][payment information]，特别是您的信用卡
 细节。请确保使用的信用卡有效并将保留
 因此，在较长一段时间内，以帮助避免您的赞助中断。
 
@@ -60,9 +60,9 @@
 #### 隐私
 
 在此页面上，您还可以设置赞助的可见性。你有
-选择将您的[赞助保密或公开]，其中包括
-在[我们的赞助商]名单上列出您的姓名或组织，以及
-组织，[徽标放置]的机会。
+选择将您的[赞助保密或公开][sponsorship private or to make it public]，其中包括
+在[我们的赞助商][our sponsors]名单上列出您的姓名或组织，以及
+组织，[徽标放置][logo placement]的机会。
 
   [sponsorship private or to make it public]: privacy.md
   [our sponsors]: our-sponsors.md
@@ -73,7 +73,7 @@
 请注意，我们很少发送电子邮件，当我们这样做时，通常是为了通知您
 关于项目的重大更新或更改，因此最好保留此信息
 选项已启用。要了解最新进展，您可以查看
-我们的[更新日志]。
+我们的[更新日志][changelog]。
 
   [changelog]: ../changelog/index.md
 
@@ -95,7 +95,7 @@
 ### 访问管理
 
 完成赞助流程并成功付款后
-处理后，您将完全设置为[访问]私人材料
+处理后，您将完全设置为[访问][gain access]私人材料
 MkDocs Insiders存储库。
 
   [gain access]: access-management.md
@@ -108,7 +108,7 @@ __准备好成为赞助商了吗？__
 
   [sponsoring-tiers]: sponsoring-tiers.md
 
-如果您仍然有更多问题，请随时[联系Kathi]
+如果您仍然有更多问题，请随时[联系Kathi][reach out to Kathi]
 通过邮件发送至sponsors@squidfunk.com以获得额外支持。
 
   [reach out to Kathi]: ../support.md/#sponsoring-support

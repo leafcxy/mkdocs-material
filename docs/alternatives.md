@@ -9,7 +9,7 @@
 
 Facebook的[Docusaurus]是一个非常受欢迎的文档生成器，也是一个很好的
 如果您或您的公司已经在使用[React]构建您的网站，请选择。
-它将生成一个从根本上不同的[单页应用程序]
+它将生成一个从根本上不同的[单页应用程序][single page application]
 从为您生成的Material for MkDocs网站。
 
 __优势__
@@ -61,7 +61,7 @@ __挑战__
 
 ## Sphinx
 
-[Shinx]是一个专门针对以下对象的替代静态站点生成器
+[Shinx][Sphinx]是一个专门针对以下对象的替代静态站点生成器
 生成参考文档，提供以下强大功能
 缺少MkDocs。它使用[reStructured text]，一种类似于Markdown的格式，
 一些用户发现更难使用。

@@ -1,14 +1,11 @@
 ---
-title: Built-in social plugin
+title: 内置社交插件
 icon: material/share-circle
 ---
 
 # 内置社交插件
 
-社交插件自动智能生成美丽和高度
-每个页面都有不同[布局][默认布局]的可定制社交卡
-在您或其他人共享时，将您的项目渲染为预览图像
-社交媒体上的项目链接。
+社交插件会为项目中的每个页面自动生成可定制的社交卡，并提供多种[布局][default layouts]。当你或其他人在社交媒体上分享项目链接时，社交卡会显示为链接的预览图。
 
 ## 客观的
 
@@ -17,29 +14,26 @@ icon: material/share-circle
 该插件会自动为每个页面生成一张可定制的社交卡
 您的项目，当共享到您的项目的链接时，它会显示为预览图像
 项目在社交媒体上，无需使用外部服务，只需
-[单行配置][配置]。
+[单行配置][configuration]。
 
-通过使用高效的[图像处理]库，该插件允许
-为社交卡定义[自定义布局]，可以根据您的需求进行调整
+通过使用高效的[图像处理][image processing]库，该插件允许
+为社交卡定义[自定义布局][custom layouts]，可以根据您的需求进行调整
 项目的风格和品牌。虽然从技术上讲
 通过使用网络浏览器和自动化框架生成社交卡，如
-[Pupeter][^1]，这会给你的工具链增加更多的责任
+[Puppeteer][^1]，这会给你的工具链增加更多的责任
 有可能使管道建设更加复杂，资源更加密集，
 并且明显较慢。
 
   [^1]:
-    [GitHub在他们的博客中写道]他们使用[Pupeter]来生成社交媒体
+    [GitHub在他们的博客中写道][GitHub wrote in their blog]他们使用[Puppeteer]来生成社交媒体
     存储库、问题、提交、讨论和基本信息的卡片图像
     在社交媒体上分享时显示为预览图像的其他所有内容。
 
-生成的社交卡被[缓存]并存储在
-[`site`目录][mkdocs.site_dir]，因此是自托管的，确保您的
-该项目不依赖于外部服务。为了生成社交卡
-图像，您的系统上需要有一些[依赖项]可用。
+生成的社交卡会被缓存并保存到 [`site` 目录][mkdocs.site_dir]，可随站点一起托管，无需依赖外部服务。要生成社交卡，系统需要安装相关的[依赖项][dependencies]。
 
   [configuration]: #configuration
   [image processing]: requirements/image-processing.md
-  [custom layouts]: ../setup/setting-up-social-cards.md
+  [custom layouts]: ../setup/setting-up-social-cards.md#customization
   [Puppeteer]: https://github.com/puppeteer/puppeteer
   [GitHub wrote in their blog]: https://github.blog/2021-06-22-framework-building-open-graph-images/
   [cached]: #caching
@@ -48,7 +42,7 @@ icon: material/share-circle
 ### 何时使用
 
 有一种特殊情况是我们不建议使用该插件：当你
-构建[支持离线的文档]以提供下载。否则，它
+构建[支持离线的文档][offline-capable documentation]以提供下载。否则，它
 启用插件总是有意义的，因为共享了指向文档的链接
 在社交媒体上看起来会更有吸引力。
 
@@ -74,8 +68,7 @@ MkDocs提供的材料，用于创建复杂的构建
     ---
 
     元插件可用于[更改布局][meta.social.cards_layout]
-    用于社交卡或[更改特定布局选项]
-    [meta.social.cards_layout_options]类似于[background][option.background_color]
+    用于社交卡或[更改特定布局选项][meta.social.cards_layout_options]类似于[background][option.background_color]
     或者对于页面子集使用[color][option.color]。
 
     ---
@@ -88,10 +81,10 @@ MkDocs提供的材料，用于创建复杂的构建
   [blog]: blog.md
   [meta]: meta.md
 
-## 配置
+## 配置 { #configuration }
 
 `version 8.5.0`
-`plugin [social] – built-in`
+插件：[social]（内置）
 `flag multiple`
 `flag experimental`
 
@@ -108,7 +101,7 @@ plugins:
 安装。
 
 但是，为了生成社交卡图像，有必要安装
-[图像处理]的依赖关系，如果它们在您的
+[图像处理][image processing]的依赖关系，如果它们在您的
 系统。链接的指南包括几个操作系统的说明
 并提到了一些替代环境。
 
@@ -120,12 +113,12 @@ plugins:
 
 ---
 
-#### `setting config.enabled`
+#### `setting config.enabled` <span id="config.enabled"></span>
 
 `version 8.5.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
 `mkdocs.yml`中的[环境变量][mkdocs.env]：
 
@@ -161,7 +154,7 @@ plugins:
 
 ### 缓存
 
-该插件实现了[智能缓存]机制，确保社交
+该插件实现了[智能缓存][intelligent caching]机制，确保社交
 卡片只有在内容发生变化或尚未更新时才会重新生成
 包含在缓存中。如果布局中使用的任何变量发生变化
 插件检测到它并重新生成社交卡。
@@ -206,7 +199,7 @@ plugins:
       cache_dir: my/custom/dir
 ```
 
-如果你正在使用该插件的[多个实例]，这可能是一个好主意
+如果你正在使用该插件的[多个实例][multiple instances]，这可能是一个好主意
 为两个实例设置不同的缓存目录，这样它们就不会相互干扰
 彼此。
 
@@ -218,7 +211,7 @@ plugins:
 
 ---
 
-#### `setting config.log`
+#### `setting config.log` <span id="config.log"></span>
 
 `sponsors`
 `version insiders-4.40.2`
@@ -283,14 +276,14 @@ plugins:
 
 ---
 
-#### `setting config.cards`
+#### `setting config.cards` <span id="config.cards"></span>
 
 `version 8.5.0`
 `default _true_`
 
 使用此设置启用或禁用社交卡生成。目前
 插件的唯一目的是生成社交卡，因此它相当于
-[`enabled'][config.enabled]设置，但将来可能会有其他功能
+[`enabled`][config.enabled]设置，但将来可能会有其他功能
 补充。如果要禁用社交卡生成，请使用：
 
 ``` yaml
@@ -321,13 +314,13 @@ plugins:
 
 ---
 
-#### `setting config.cards_layout_dir`
+#### `setting config.cards_layout_dir` <span id="config.cards_layout_dir"></span>
 
 `sponsors`
 `version insiders-4.33.0`
 `default _layouts_`
 
-如果你想构建[自定义社交卡布局][自定义布局]，请使用此
+如果你想构建[自定义社交卡布局][custom layouts]，请使用此
 设置以更改存储自定义布局的默认文件夹
 是根目录中名为“layouts”的文件夹：
 
@@ -342,9 +335,9 @@ plugins:
 !!! tip "在哪里存储自定义布局"
 
     我们的建议是将文件夹放在
-    [`docs`目录][mkdocs.docs-dir]，以确保您的[自定义布局]
+    [`docs`目录][mkdocs.docs_dir]，以确保您的[自定义布局][custom layouts]
     在以下情况下，不会复制到[`site`目录][mkdocs.site_dir]
-    [构建你的项目]，例如，通过遵循以下目录
+    [构建你的项目][building your project]，例如，通过遵循以下目录
     布局：
 
     ``` { .sh .no-copy }
@@ -358,14 +351,14 @@ plugins:
 
 ---
 
-#### `setting config.cards_layout`
+#### `setting config.cards_layout` <span id="config.cards_layout"></span>
 
 `sponsors`
 `version insiders-4.33.0`
 `default _default_`
 
 该插件提供了越来越多的[默认布局][默认布局]列表，用于
-社交卡。如果您已经创建了[自定义社交卡布局][自定义布局]，
+社交卡。如果您已经创建了[自定义社交卡布局][custom layouts]，
 您可以指示插件将其完全用作包含的布局之一：
 
 ``` yaml
@@ -375,11 +368,11 @@ plugins:
 ```
 
 提供的路径从以下位置解析[
-`layouts目录][config.cadslayout_dir]。
+[`layouts` 目录][config.cards_layout_dir]。
 
 !!! tip "如何解决自定义布局"
 
-    默认情况下，插件将从名为的文件夹加载您的[自定义布局]
+    默认情况下，插件将从名为的文件夹加载您的[自定义布局][custom layouts]
     `layouts位于您的根目录中。如果您的布局被调用
     `我的自定义布局，目录布局必须遵守：
 
@@ -394,13 +387,12 @@ plugins:
 
 ---
 
-#### `setting config.cards_layout_options`
+#### `setting config.cards_layout_options` <span id="config.cards_layout_options"></span>
 
 `version 9.1.10`
 `default none`
 
-使用此设置为通过[`cards_layout`]指定的布局设置选项
-[config.cards_layout]（如果布局支持），它允许制作
+使用此设置为由 [`cards_layout`][config.cards_layout] 指定的布局设置选项（如果布局支持），它允许制作
 布局简单且完全可配置：
 
 ``` yaml
@@ -410,7 +402,7 @@ plugins:
         <option>: <value>
 ```
 
-在创建[自定义布局][自定义布局]时，您可以完全自由地
+在创建[自定义布局][custom layouts]时，您可以完全自由地
 定义布局的哪些部分可以参数化。[默认布局]
 插件附带的[默认布局]支持以下选项：
 
@@ -429,6 +421,7 @@ plugins:
 
 
   [default layouts]: #layouts
+  [默认布局]: #layouts
 
 ---
 
@@ -439,7 +432,7 @@ plugins:
 `default none`
 
 使用此设置为您的子部分启用社交卡生成
-项目，例如，当使用插件的[多个实例]生成
+项目，例如，当使用插件的[多个实例][multiple instances]生成
 不同子部分的不同社交卡：
 
 ``` yaml
@@ -450,7 +443,7 @@ plugins:
 ```
 
 此配置允许为以下所有页面生成社交卡
-包含在[文档目录]中的博客文件夹及其子文件夹中
+包含在[文档目录][mkdocs.docs_dir]中的博客文件夹及其子文件夹中
 [mkdocs.docs_dir]。
 
 ---
@@ -462,7 +455,7 @@ plugins:
 `default none`
 
 使用此设置可禁用您的子部分的社交卡生成
-项目，例如，当使用插件的[多个实例]生成
+项目，例如，当使用插件的[多个实例][multiple instances]生成
 不同子部分的不同社交卡：
 
 ``` yaml
@@ -476,17 +469,17 @@ plugins:
 包含在“changelog”文件夹及其子文件夹中
 [文档目录][mkdocs.docs_dir]。
 
-### 调试
+### 调试 <span id="debugging"></span>
 
 该插件包括一个用于调试布局的特殊模式，这非常有用
-在创建[自定义布局]时，因为它允许更快的迭代和更好的
+在创建[自定义布局][custom layouts]时，因为它允许更快的迭代和更好的
 理解构图。
 
 以下设置可用于调试：
 
 ---
 
-#### `setting config.debug`
+#### `setting config.debug` <span id="config.debug"></span>
 
 `sponsors`
 `version insiders-4.33.0`
@@ -511,8 +504,8 @@ plugins:
 `version insiders-4.34.1`
 `default _false_`
 
-默认情况下，当出现以下情况时，插件会自动禁用['debug][config.debug]模式
-[构建你的项目]，这样你就可以确保调试覆盖永远不会
+默认情况下，当出现以下情况时，插件会自动禁用[`debug`][config.debug]模式
+[构建你的项目][building your project]，这样你就可以确保调试覆盖永远不会
 部署到生产。如果你想改变这一点，请使用：
 
 ``` yaml
@@ -589,7 +582,7 @@ plugins:
 该插件允许通过元数据覆盖设置的子集（front
 事宜）以定制社交卡生成，例如设置[选项
 单个页面的默认布局，甚至
-通过利用[meta]插件，您的项目的[整个子部分]。
+通过利用[meta]插件，您的项目的[整个子部分][for an entire subsection]。
 
 以下属性可用：
 
@@ -605,7 +598,7 @@ plugins:
 `flag metadata`
 `default none`
 
-使用此属性覆盖给定的[`cards][config.cards]设置
+使用此属性覆盖给定的[`cards`][config.cards]设置
 页面：
 
 ``` yaml
@@ -620,7 +613,7 @@ social:
 
 ---
 
-#### `setting meta.social.cards_layout`
+#### `setting meta.social.cards_layout` <span id="meta.social.cards_layout"></span>
 
 `sponsors`
 `version insiders-4.37.0`
@@ -643,15 +636,14 @@ social:
 
 ---
 
-#### `setting meta.social.cards_layout_options`
+#### `setting meta.social.cards_layout_options` <span id="meta.social.cards_layout_options"></span>
 
 `sponsors`
 `version insiders-4.37.0`
 `flag metadata`
 `default none`
 
-使用此属性覆盖[`cards_layout_options`]
-给定页面的[config.cards_layout_options]设置：
+使用此属性为当前页面覆盖 [`cards_layout_options`][config.cards_layout_options] 设置：
 
 ``` yaml
 ---
@@ -667,12 +659,12 @@ social:
 
 将选项设置为`#！yaml null会重置该选项。
 
-### 布局
+### 布局 { #layouts }
 
 `sponsors`
 `version insiders-4.33.0`
 
-虽然构建[自定义布局]是可能且简单的，但该插件附带了
+虽然构建[自定义布局][custom layouts]是可能且简单的，但该插件附带了
 几个预定义的布局，所有布局都以“默认”为前缀。这个
 包括以下布局：
 
@@ -691,10 +683,10 @@ social:
     This layout sets the following defaults:
 
     - [`background_color`][option.background_color]
-      – `default [_theme.palette.primary_][primary color]`
+      – 默认值：[`theme.palette.primary`][primary color]
 
     - [`font_family`][option.font_family]
-      – `default [_theme.font.text_][font]`
+      – 默认值：[`theme.font.text`][font]
 
     </div>
 
@@ -713,10 +705,10 @@ social:
     This layout includes the [page icon] and sets the following defaults:
 
     - [`background_color`][option.background_color]
-      – `default [_theme.palette.primary_][primary color]`
+      – 默认值：[`theme.palette.primary`][primary color]
 
     - [`font_family`][option.font_family]
-      – `default [_theme.font.text_][font]`
+      – 默认值：[`theme.font.text`][font]
 
     </div>
 
@@ -735,10 +727,10 @@ social:
     This layout sets the following defaults:
 
     - [`background_color`][option.background_color]
-      – `default [_theme.palette.accent_][accent color]`
+      – 默认值：[`theme.palette.accent`][accent color]
 
     - [`font_family`][option.font_family]
-      – `default [_theme.font.text_][font]`
+      – 默认值：[`theme.font.text`][font]
 
     </div>
 
@@ -757,10 +749,10 @@ social:
     This layout sets the following defaults:
 
     - [`color`][option.background_color]
-      – `default [_theme.palette.primary_][primary color]`
+      – 默认值：[`theme.palette.primary`][primary color]
 
     - [`font_family`][option.font_family]
-      – `default [_theme.font.text_][font]`
+      – 默认值：[`theme.font.text`][font]
 
     </div>
 
@@ -792,20 +784,20 @@ social:
   [Layout default accent]: ../assets/screenshots/social-cards-accent.png
   [Layout default invert]: ../assets/screenshots/social-cards-invert.png
 
-  [primary color]: ../setup/changing-the-colors.md
-  [page icon]: ../reference/index.md
+  [primary color]: ../setup/changing-the-colors.md#primary-color
+  [page icon]: ../reference/index.md#setting-the-page-icon
   [accent color]: ../setup/changing-the-colors.md#accent-color
-  [font]: ../setup/changing-the-fonts.md
+  [font]: ../setup/changing-the-fonts.md#regular-font
 
 ---
 
-#### `setting option.background_color`
+#### `setting option.background_color` <span id="option.background_color"></span>
 
 `version 9.1.10`
 `default computed`
 
 使用此选项更改生成的社交卡的背景颜色。
-该值可以设置为有效的颜色值[枕头支持]，成像
+该值可以设置为有效的颜色值[枕头支持][supported by pillow]，成像
 用于卡片生成的库：
 
 === "Hexadecimal"
@@ -850,11 +842,10 @@ social:
             background_color: deeppink # (1)!
     ```
 
-    1.  请参阅[`<named color>`][named color=]CSS数据类型，以获取以下列表
+    1.  请参阅[`<named color>`][named-color]CSS数据类型，以获取以下列表
         支持的颜色名称。请注意，有些可能不可用。
 
-如果此选项与[背景图片]一起使用
-[option.background_image]，颜色渲染在图像之上
+如果此选项与[背景图片][option.background_image]一起使用，颜色渲染在图像之上
 允许对图像进行着色。如果要删除背景色，请使用：
 
 ``` yaml
@@ -869,14 +860,14 @@ plugins:
 
 ---
 
-#### `setting option.background_image`
+#### `setting option.background_image` <span id="option.background_image"></span>
 
 `sponsors`
 `version insiders-4.33.0`
 `default none`
 
 使用此选项为生成的社交卡定义背景图像。注：
-图像用[背景颜色][选项.background_color]着色，
+图像用[背景颜色][option.background_color]着色，
 其也可以设置为“透明”：
 
 === "Image"
@@ -903,13 +894,13 @@ plugins:
 
 ---
 
-#### `setting option.color`
+#### `setting option.color` <span id="option.color"></span>
 
 `version 9.1.10`
 `default computed`
 
 使用此选项更改生成的社交卡的前景颜色。
-该值可以设置为有效的颜色值[枕头支持]，成像
+该值可以设置为有效的颜色值[枕头支持][supported by pillow]，成像
 用于卡片生成的库：
 
 === "Hexadecimal"
@@ -954,12 +945,12 @@ plugins:
             color: white # (1)!
     ```
 
-    1.  请参阅[`<named color>`][named color=]CSS数据类型，以获取以下列表
+    1.  请参阅[`<named color>`][named-color]CSS数据类型，以获取以下列表
         支持的颜色名称。请注意，有些可能不可用。
 
 ---
 
-#### `setting option.font_family`
+#### `setting option.font_family` <span id="option.font_family"></span>
 
 `version 9.1.10`
 `default computed`
@@ -975,7 +966,7 @@ plugins:
         font_family: Ubuntu
 ```
 
-当你在[谷歌字体]上找到你喜欢的字体时，你可以复制
+当你在[谷歌字体][Google Fonts]上找到你喜欢的字体时，你可以复制
 从字体的示例页面中选择名称，并将其用作此选项的值——
 不需要进一步的配置。
 
@@ -983,7 +974,7 @@ plugins:
 
 ---
 
-#### `setting option.font_variant`
+#### `setting option.font_variant` <span id="option.font_variant"></span>
 
 `sponsors`
 `version insiders-4.53.3`
@@ -1006,15 +997,15 @@ plugins:
 
 ---
 
-#### `setting option.logo`
+#### `setting option.logo` <span id="option.logo"></span>
 
 `sponsors`
 `version insiders-4.40.0`
 `default computed`
 
 使用此选项更改生成的社交卡中使用的徽标。
-默认情况下，该插件使用[`theme.logo`][theme.logo]或[`theme.comp.logo`]
-从`mkdocs.yml`设置[theme.icon.logo]。您可以通过以下方式进行更改：
+默认情况下，该插件使用[`theme.logo`][theme.logo]或[`theme.icon.logo`][theme.icon.logo]
+在 `mkdocs.yml` 中设置的徽标。您可以通过以下方式进行更改：
 
 ``` yaml
 plugins:
@@ -1025,20 +1016,19 @@ plugins:
 
 提供的路径是从根目录解析的。
 
-  [theme.logo]: ../setup/changing-the-logo-and-icons.md
-  [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md
+  [theme.logo]: ../setup/changing-the-logo-and-icons.md#__tabbed_1_1
+  [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md#__tabbed_1_2
 
 ---
 
-#### `setting option.title`
+#### `setting option.title` <span id="option.title"></span>
 
 `sponsors`
 `version insiders-4.40.0`
 `default computed`
 
 使用此选项更改生成的社交卡的标题。这将覆盖
-MkDocs分配的计算页面标题，以及[“标题”]
-[meta.title]元数据属性：
+MkDocs分配的计算页面标题，以及[`title`][meta.title]元数据属性：
 
 ``` yaml
 plugins:
@@ -1047,19 +1037,19 @@ plugins:
         title: My custom title
 ```
 
-  [meta.title]: ../reference/index.md
+  [meta.title]: ../reference/index.md#setting-the-page-title
 
 ---
 
-#### `setting option.description`
+#### `setting option.description` <span id="option.description"></span>
 
 `sponsors`
 `version insiders-4.40.0`
 `default computed`
 
 使用此选项更改生成的社交卡的描述。这个
-覆盖集合[`site_description][mkdocs.site_descripting]（如果已定义），如下所示
-以及[`description][meta.description]元数据属性：
+覆盖集合[`site_description`][mkdocs.site_description]（如果已定义），如下所示
+以及[`description`][meta.description]元数据属性：
 
 ``` yaml
 plugins:
@@ -1068,7 +1058,7 @@ plugins:
         description: My custom description
 ```
 
-  [meta.description]: ../reference/index.md
+  [meta.description]: ../reference/index.md#setting-the-page-description
 
 ---
 
@@ -1076,10 +1066,29 @@ plugins:
 
     在设置社交卡时，你可能会发现自己错过了
     特定功能–我们很乐意考虑将其添加到插件中！
-    您可以[展开讨论]提出问题，或创建[更改请求]
-    在我们的[问题跟踪器]上，这样我们就可以知道它是否适合
+    您可以[展开讨论][open a discussion]提出问题，或创建[更改请求][change request]
+    在我们的[问题跟踪器][issue tracker]上，这样我们就可以知道它是否适合
     插件。
 
   [open a discussion]: https://github.com/squidfunk/mkdocs-material/discussions
   [change request]: ../contributing/requesting-a-change.md
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
+
+  [config.cards]: #config.cards
+  [config.cards_layout]: #config.cards_layout
+  [config.cards_layout_options]: #config.cards_layout_options
+  [config.debug]: #config.debug
+  [config.enabled]: #config.enabled
+  [config.log]: #config.log
+  [meta.social.cards_layout]: #meta.social.cards_layout
+  [meta.social.cards_layout_options]: #meta.social.cards_layout_options
+  [option.background_color]: #option.background_color
+  [option.background_image]: #option.background_image
+  [option.color]: #option.color
+  [option.description]: #option.description
+  [option.font_family]: #option.font_family
+  [option.font_variant]: #option.font_variant
+  [option.logo]: #option.logo
+  [option.title]: #option.title
+
+  [config.cards_layout_dir]: #config.cards_layout_dir

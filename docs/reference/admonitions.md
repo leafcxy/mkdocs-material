@@ -28,16 +28,16 @@ markdown_extensions:
 - [Details]
 - [SuperFences]
 
-  [Admonition]: ../setup/extensions/python-markdown.md
+  [Admonition]: ../setup/extensions/python-markdown.md#admonition
   [Details]: ../setup/extensions/python-markdown-extensions.md#details
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
 
-### 警告图标
+### 警告图标 <span id="admonition-icons"></span>
 
 `version 8.3.0`
 
 每种支持的警告类型都有一个不同的图标，可以更改
-任何与主题捆绑在一起的图标，甚至是[自定义图标]。添加以下内容
+任何与主题捆绑在一起的图标，甚至是[自定义图标][custom icon]。添加以下内容
 指向`mkdocs.yml`的行：
 
 ``` yaml
@@ -47,7 +47,7 @@ theme:
       <type>: <icon> # (1)!
 ```
 
-1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -102,13 +102,13 @@ theme:
         ```
 
   [custom icon]: ../setup/changing-the-logo-and-icons.md#additional-icons
-  [supported types]: 
-  [icon search]: icons-emojis.md#_2
+  [supported types]: #supported-types
+  [icon search]: icons-emojis.md#search
 
-## 使用
+## 使用 <span id="usage"></span>
 
 警告遵循一个简单的语法：块以`！！！开头！！！`，然后是a
-用作[类型限定符]的单个关键字。该块的内容如下
+用作[类型限定符][type qualifier]的单个关键字。该块的内容如下
 下一行，缩进四个空格：
 
 ``` markdown title="Admonition"
@@ -129,9 +129,9 @@ theme:
 
 </div>
 
-  [type qualifier]: 
+  [type qualifier]: #supported-types
 
-### 更改标题
+### 更改标题 <span id="changing-the-title"></span>
 
 默认情况下，标题将等于标题中的类型限定符。然而，它
 可以通过添加包含有效Markdown的引号字符串（包括
@@ -189,11 +189,11 @@ theme:
         massa, nec semper lorem quam in massa.
 </div>
 
-### 删除标题
+### 删除标题 <span id="removing-the-title"></span>
 
-与[更改标题]类似，图标和标题可以通过以下方式完全省略
+与[更改标题][changing the title]类似，图标和标题可以通过以下方式完全省略
 在类型限定符后直接添加空字符串。请注意，这将
-不适用于[可折叠块]：
+不适用于[可折叠块][collapsible blocks]：
 
 ``` markdown title="Admonition without title"
 !!! note ""
@@ -214,11 +214,11 @@ theme:
 </div>
 
   [changing the title]: #changing-the-title
-  [collapsible blocks]: 
+  [collapsible blocks]: #collapsible-blocks
 
-### 可折叠砌块
+### 可折叠砌块 <span id="collapsible-blocks"></span>
 
-启用[详细信息]并以“？？”开头警告块时？？？`相反
+启用[详细信息][Details]并以“？？”开头警告块时？？？`相反
 的！！！`，警告被呈现为一个带有小切换的可扩展块
 在右侧：
 
@@ -260,7 +260,7 @@ Adding a `+` after the `???` token renders the block expanded:
 
 </div>
 
-### 内联块
+### 内联块 <span id="inline-blocks"></span>
 
 警告也可以呈现为内联块（例如，用于侧边栏），放置
 使用“inline”+“end”修饰符将它们向右移动，或使用
@@ -311,7 +311,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
 没有足够的空间在块旁边显示警告，警告
 将拉伸到视口的整个宽度，例如在移动视口上。
 
-### 支持的类型
+### 支持的类型 <span id="supported-types"></span>
 
 以下是Material为MkDocs提供的类型限定符列表，而
 默认类型，也就是未知类型限定符的回退，是`note`[^1]：
@@ -319,7 +319,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
   [^1]:
     以前，一些支持的类型定义了多个限定符。
     例如，作者可以使用“summary”或“tldr”作为替代限定词
-    呈现[抽象]（#+类型：抽象）警告。随着这一增长
+    呈现[`abstract`](#+type:abstract)警告。随着这一增长
     MkDocs材料附带的CSS大小，额外
     类型限定符现在都已弃用，并将在下一个主要版本中删除
     版本。这也将在升级指南中提及。
@@ -332,7 +332,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-`option type:abstract`
+`option type:abstract` <span id="+type:abstract"></span>
 
 :   !!! abstract
 
@@ -434,7 +434,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
     massa, nec semper lorem quam in massa.
 
 如果要恢复此外观，请将以下CSS添加到
-[附加样式表]：
+[附加样式表][additional style sheet]：
 
 <style>
   .md-typeset .admonition.classic {
@@ -462,9 +462,7 @@ __重要事项__: 使用内联修饰符_must_的警告必须声明
 
 ### 自定义警告
 
-如果你想添加自定义警告类型，你只需要一种颜色和
-`*.svg图标。从[`.icons`][custom-icons]文件夹复制图标的代码
-并将以下CSS添加到[附加样式表]中：
+要添加自定义警告类型，需要指定颜色和 `*.svg` 图标。先从 [`.icons` 目录][custom icons]复制图标的 SVG，再将以下 CSS 添加到[附加样式表][additional style sheet]中：
 
 <style>
   :root {

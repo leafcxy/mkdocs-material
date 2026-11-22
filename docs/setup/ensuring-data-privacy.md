@@ -1,17 +1,17 @@
 # 确保数据隐私
 
 MkDocs的材料使遵守数据隐私法规变得非常容易，
-因为它提供了一种原生的[cookie同意]解决方案，以寻求明确的同意
-用户在设置[分析]之前。此外，外部资产可以是
-自动下载[自托管]。
+因为它提供了一种原生的[cookie同意][cookie consent]解决方案，以寻求明确的同意
+用户在设置[分析][analytics]之前。此外，外部资产可以是
+自动下载[自托管][self-hosting]。
 
-  [cookie consent]: 
+  [cookie consent]: #cookie-consent
   [analytics]: setting-up-site-analytics.md
-  [self-hosting]: 
+  [self-hosting]: #built-in-privacy-plugin
 
 ## 配置
 
-### Cookie同意
+### Cookie同意 <span id="cookie-consent"></span>
 
 `version 8.4.0`
 `default none`
@@ -98,7 +98,7 @@ extra:
             不会被触发。
 
     如果Google Analytics是通过`mkdocs.yml`配置的，则cookie同意将
-    自动包含一个设置，供用户禁用。[自定义Cookie]
+    自动包含一个设置，供用户禁用。[自定义Cookie][Custom cookies]
     可以从JavaScript中使用。
 
 `option consent.actions`
@@ -131,10 +131,10 @@ extra:
   [Custom cookies]: #custom-cookies
   [Cookie consent enabled]: ../assets/screenshots/consent.png
 
-#### 更改cookie设置
+#### 更改cookie设置 <span id="change-cookie-settings"></span>
 
 为了遵守GDPR，用户必须能够更改其cookie设置
-在任何时候。这可以通过在您的[版权声明]中添加一个简单的链接来实现
+在任何时候。这可以通过在您的[版权声明][copyright notice]中添加一个简单的链接来实现
 在`mkdocs.yml`中：
 
 ``` yaml
@@ -143,12 +143,12 @@ copyright: >
   <a href="#__consent">Change cookie settings</a>
 ```
 
-  [copyright notice]: setting-up-the-footer.md
+  [copyright notice]: setting-up-the-footer.md#copyright-notice
 
-### 内置隐私插件
+### 内置隐私插件 <span id="built-in-privacy-plugin"></span>
 
 `version 9.5.0`
-`plugin [privacy][built-in privacy plugin]`
+插件：[privacy][built-in privacy plugin]
 `flag experimental`
 
 内置的隐私插件会自动将外部资产识别为一部分
@@ -160,19 +160,19 @@ plugins:
   - privacy
 ```
 
-有关所有设置的列表，请参阅[插件文档]。
+有关所有设置的列表，请参阅[插件文档][plugin documentation]。
 
   [plugin documentation]: ../plugins/privacy.md
 
 !!! tip "在外部托管图像并自动优化它们"
 
-    此选项使[内置隐私插件]成为
+    此选项使[内置隐私插件][built-in privacy plugin]成为
     当你想在git存储库之外托管图像等资产时
     在另一个位置，以保持它们的新鲜感和存储库的精简。
 
     此外，截至<！--md：内部版本-4.30.0-->
     内置的隐私插件被完全重写，现在工作得很好
-    使用[内置优化插件]，这意味着外部资产
+    使用[内置优化插件][built-in optimize plugin]，这意味着外部资产
     可以通过与您的其他部分相同的优化管道传递
     文档。这意味着您可以存储和编辑未优化的文件
     在您的存储库之外，让这两个插件构建一个高度
@@ -180,7 +180,7 @@ plugins:
 
     如果你想实现单独的管道，即优化一些图像
     与其他图片不同，或者从下载中排除某些图片，您可以
-    使用[内置隐私插件]的多个实例。
+    使用[内置隐私插件][built-in privacy plugin]的多个实例。
 
 !!! question "为什么Material for MkDocs不能按设计捆绑所有资产？"
 
@@ -189,30 +189,31 @@ plugins:
     可用于呈现文档的不同字体。大部分
     字体包含多个权重，并被拆分为不同的字符集
     为了保持下载大小较小，浏览器只下载
-    真的需要。对于Roboto，我们的默认[常规字体]，这将导致[42
-    `*总共.woff2`个文件][示例]。
+    真的需要。对于Roboto，我们的默认[常规字体][regular font]，这意味着字体有[共 42 个 `.woff2` 文件][example]。
 
     如果MkDocs的材料将捆绑所有字体文件，下载大小将
     数百兆字节，减缓了自动构建的速度。此外，
     作者可能会添加外部资产，如第三方脚本或样式表
     需要记住，这将被定义为进一步的本地资产。
 
-    这就是[内置隐私插件]存在的原因——它自动化了
+    这就是[内置隐私插件][built-in privacy plugin]存在的原因——它自动化了
     手动下载所有外部资产以确保合规性的过程
-    GDPR有一些[技术限制]。
+    GDPR有一些[技术限制][technical limitations]。
 
   [Google Fonts]: changing-the-fonts.md
-  [regular font]: changing-the-fonts.md
+  [regular font]: changing-the-fonts.md#regular-font
   [example]: #example
   [built-in optimize plugin]: ../plugins/optimize.md
   [technical limitations]: ../plugins/privacy.md#limitations
 
+<span id="example"></span>
+
 ??? example "展开以检查示例"
 
-    对于官方文档，[内置隐私插件]下载
+    对于官方文档，[内置隐私插件][built-in privacy plugin]下载
     以下资源：
 
-    ``` { .sh .no-copy #example }
+    ``` { .sh .no-copy }
     .
     └─ assets/external/
        ├─ unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
@@ -279,13 +280,12 @@ plugins:
   [built-in privacy plugin]: ../plugins/privacy.md
   [preconnect]: https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch
 
-#### 高级设置
+#### 高级设置 <span id="advanced-settings"></span>
 
 `sponsors`
 `version insiders-4.50.0`
 
-以下高级设置目前保留给我们的[赞助商]
-[内部人士]。它们完全是可选的，不会影响
+以下高级设置目前保留给我们的[Insiders 赞助商][Insiders]。它们完全是可选的，不会影响
 博客，但可能有助于自定义：
 
 - [`log`][config.log]
@@ -294,20 +294,20 @@ plugins:
 随着我们发现新的用例，我们将在此处添加更多设置。
 
   [Insiders]: ../insiders/index.md
-  [config.log]: ../plugins/privacy.md
-  [config.log_level]: ../plugins/privacy.md
+  [config.log]: ../plugins/privacy.md#config.log
+  [config.log_level]: ../plugins/privacy.md#config.log_level
 
 ## 自定义
 
-### 自定义Cookie
+### 自定义Cookie <span id="custom-cookies"></span>
 
 `version 8.4.0`
 `example custom-cookies`
 
-如果您自定义了[cookie同意]并添加了“自定义”cookie，则用户
+如果您自定义了[cookie同意][cookie consent]并添加了“自定义”cookie，则用户
 系统将提示您接受或拒绝您的自定义cookie。一旦用户接受
-或者拒绝cookie同意，或者[更改设置]，页面将重新加载[^1]。
-使用[附加JavaScript]查询结果：
+或者拒绝cookie同意，或者[更改设置][changes the settings]，页面将重新加载[^1]。
+使用[附加JavaScript][additional JavaScript]查询结果：
 
   [^1]:
     我们重新加载页面，使与自定义Cookie的互操作更简单。如果材料
@@ -334,5 +334,5 @@ plugins:
       - javascripts/consent.js
     ```
 
-  [additional JavaScript]: ../customization.md
+  [additional JavaScript]: ../customization.md#additional-javascript
   [changes the settings]: #change-cookie-settings

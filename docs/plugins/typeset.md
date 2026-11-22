@@ -21,7 +21,7 @@ icon: material/format-title
 
 ### 工作原理
 
-在[构建项目]时，MkDocs从标题和
+在[构建项目][building your project]时，MkDocs从标题和
 删除原始格式。这通常是有用的，也是一个好主意，因为
 此信息可供可能有问题的其他插件使用
 当传递HTML而不是纯文本时。
@@ -46,10 +46,10 @@ MkDocs的材料使用此信息来呈现
 
 `sponsors`
 `version insiders-4.27.0`
-`plugin [typeset] – built-in`
+插件：[typeset]（内置）
 `flag experimental`
 
-与所有[内置插件]一样，开始使用排版插件是
+与所有[内置插件][built-in plugins]一样，开始使用排版插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，并观察
 丰富的导航和目录：
 
@@ -76,7 +76,7 @@ plugins:
 `version insiders-4.27.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
 插件，使用：
 

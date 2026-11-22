@@ -20,11 +20,11 @@ MkDocs徽标的材料刚刚添加到[Simple Icons]中，该图标由
 [Shields.io]在徽章中包含徽标。我们为您生成了一个徽章
 您可以添加到项目的README中：
 
-[![Material for MkDocs][badge]](#_2)
+[![Material for MkDocs][badge]](#usage)
 
 <!-- more -->
 
-## 使用
+## 使用 { #usage }
 
 只需复制以下代码片段并将其粘贴到项目的`README.md`中：
 

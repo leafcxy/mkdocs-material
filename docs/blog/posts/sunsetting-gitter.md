@@ -9,11 +9,11 @@ categories:
 
 __当我们开始围绕MkDocs的Material组建一个团队时，我们决定
 日落，并于2023年10月13日存档我们的[Gitter]频道，以支持
-[GitHub讨论]。__
+[GitHub讨论][GitHub discussions]。__
 
 作为我们努力改进材料维护流程的一部分
 为了支持社区，我们审查了不同文档的使用情况
-沟通渠道。目前，[Gitter]和[GitHub讨论]
+沟通渠道。目前，[Gitter]和[GitHub讨论][GitHub discussions]
 允许向社区寻求支持，讨论想法和问题。在the
 过去几周，我们开始质疑这种重复是否是最好的
 我们项目的兴趣。这篇文章解释了我们决定背后的基本原理。
@@ -52,7 +52,7 @@ __当我们开始围绕MkDocs的Material组建一个团队时，我们决定
 
 ## GitHub讨论
 
-值得庆幸的是，[GitHub讨论]出现了，并继续发展成为一个
+值得庆幸的是，[GitHub讨论][GitHub discussions]出现了，并继续发展成为一个
 更好的选择，消除了Gitter的许多限制，并提供
 增强功能：
 
@@ -77,7 +77,7 @@ __当我们开始围绕MkDocs的Material组建一个团队时，我们决定
 
 Sunsetting[Gitter]是朝着创建更高效、用户友好、，
 丰富了社区互动。通过整合沟通
-[GitHub讨论]，我们寻求减轻信息的碎片化，
+[GitHub讨论][GitHub discussions]，我们寻求减轻信息的碎片化，
 简化用户体验，加强我们社区内的联系。
 
 这种集中的方法使我们能够提供一致、快速和高质量的服务

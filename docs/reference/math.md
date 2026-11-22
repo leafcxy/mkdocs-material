@@ -72,7 +72,7 @@ HTML、SVG、MathML。要在项目中使用MathJax，请添加以下行
 - [Arithmatex]
 
   [Arithmatex]: ../setup/extensions/python-markdown-extensions.md#arithmatex
-  [instant loading]: ../setup/setting-up-navigation.md#_3
+  [instant loading]: ../setup/setting-up-navigation.md#instant-loading
 
 <script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
@@ -131,7 +131,7 @@ HTML、SVG、MathML。要在项目中使用MathJax，请添加以下行
 
 ## 使用
 
-### 使用块语法
+### 使用块语法 <span id="using-block-syntax"></span>
 
 块必须用`#！乳胶$$。..$$或#！单独使用乳胶
 线：
@@ -150,7 +150,7 @@ $$
 
 </div>
 
-### 使用内联块语法
+### 使用内联块语法 <span id="using-inline-block-syntax"></span>
 
 Inline blocks must be enclosed in `#!latex $...$` or `#!latex \(...\)`:
 

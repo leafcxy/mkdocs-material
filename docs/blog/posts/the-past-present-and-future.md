@@ -108,7 +108,7 @@ Material中添加了38个新功能，这绝对令人兴奋
 对于整个2021年的MkDocs来说——这是每9.6天一次的新功能——
 这之所以成为可能，是因为资金状况不断改善。
 以下是按字母顺序列出的所有功能，其中一些
-作为[内部人士]的一部分，仍然仅供赞助商使用：
+作为[内部人士][Insiders]的一部分，仍然仅供赞助商使用：
 
 <div class="mdx-columns" markdown>
 
@@ -160,40 +160,40 @@ Material中添加了38个新功能，这绝对令人兴奋
 __55次，“mkdocs材料内幕人士”被运送了72次。
 
   [Insiders]: ../../insiders/index.md
-  [Admonition inline blocks]: ../../reference/admonitions.md
-  [Advanced search highlighting]: search-better-faster-smaller.md
-  [Anchor tracking]: ../../setup/setting-up-navigation.md
-  [Back-to-top button]: ../../setup/setting-up-navigation.md
-  [Boosting pages in search]: ../../setup/setting-up-site-search.md
+  [Admonition inline blocks]: ../../reference/admonitions.md#inline-blocks
+  [Advanced search highlighting]: search-better-faster-smaller.md#accurate-highlighting
+  [Anchor tracking]: ../../setup/setting-up-navigation.md#anchor-tracking
+  [Back-to-top button]: ../../setup/setting-up-navigation.md#back-to-top-button
+  [Boosting pages in search]: ../../setup/setting-up-site-search.md#search-boosting
   [Brand new search plugin]: search-better-faster-smaller.md
-  [Code annotations]: ../../reference/code-blocks.md
-  [Code annotations: strip comments]: ../../reference/code-blocks.md
-  [Code block titles]: ../../reference/code-blocks.md
-  [Code block line anchors]: ../../setup/extensions/python-markdown-extensions.md
-  [Color palette toggle]: ../../setup/changing-the-colors.md
+  [Code annotations]: ../../reference/code-blocks.md#adding-annotations
+  [Code annotations: strip comments]: ../../reference/code-blocks.md#stripping-comments
+  [Code block titles]: ../../reference/code-blocks.md#adding-a-title
+  [Code block line anchors]: ../../setup/extensions/python-markdown-extensions.md#+pymdownx.highlight.anchor_linenums
+  [Color palette toggle]: ../../setup/changing-the-colors.md#color-palette-toggle
   [Content tabs: improved support]: ../../reference/content-tabs.md
-  [Content tabs: auto-linking]: ../../reference/content-tabs.md
-  [Cookie consent]: ../../setup/ensuring-data-privacy.md
-  [Custom admonition icons]: ../../reference/admonitions.md
-  [Dark mode support for images]: ../../reference/images.md
-  [Dismissable announcement bar]: ../../setup/setting-up-the-header.md
-  [Excluding content from search]: ../../setup/setting-up-site-search.md
+  [Content tabs: auto-linking]: ../../reference/content-tabs.md#linked-content-tabs
+  [Cookie consent]: ../../setup/ensuring-data-privacy.md#cookie-consent
+  [Custom admonition icons]: ../../reference/admonitions.md#admonition-icons
+  [Dark mode support for images]: ../../reference/images.md#light-and-dark-mode
+  [Dismissable announcement bar]: ../../setup/setting-up-the-header.md#mark-as-read
+  [Excluding content from search]: ../../setup/setting-up-site-search.md#search-exclusion
   [Mermaid.js integration]: ../../reference/diagrams.md
-  [Navigation icons]: ../../reference/index.md
-  [Remove generator notice]: ../../setup/setting-up-the-footer.md
-  [Rich search previews]: search-better-faster-smaller.md
-  [Search highlighting]: ../../setup/setting-up-site-search.md
-  [Search sharing]: ../../setup/setting-up-site-search.md
-  [Search suggestions]: ../../setup/setting-up-site-search.md
-  [Section index pages]: ../../setup/setting-up-navigation.md
-  [Site language selection]: ../../setup/changing-the-language.md
+  [Navigation icons]: ../../reference/index.md#setting-the-page-icon
+  [Remove generator notice]: ../../setup/setting-up-the-footer.md#generator-notice
+  [Rich search previews]: search-better-faster-smaller.md#rich-search-previews
+  [Search highlighting]: ../../setup/setting-up-site-search.md#search-highlighting
+  [Search sharing]: ../../setup/setting-up-site-search.md#search-sharing
+  [Search suggestions]: ../../setup/setting-up-site-search.md#search-suggestions
+  [Section index pages]: ../../setup/setting-up-navigation.md#section-index-pages
+  [Site language selection]: ../../setup/changing-the-language.md#site-language-selector
   [Social cards]: ../../setup/setting-up-social-cards.md
-  [Sticky navigation tabs]: ../../setup/setting-up-navigation.md
+  [Sticky navigation tabs]: ../../setup/setting-up-navigation.md#sticky-navigation-tabs
   [Tags with search integration]: ../../setup/setting-up-tags.md
-  [Tokenizer with lookahead]: search-better-faster-smaller.md
-  [Versioning]: ../../setup/setting-up-versioning.md
-  [Version warning]: ../../setup/setting-up-versioning.md
-  [Was this page helpful?]: ../../setup/setting-up-site-analytics.md
+  [Tokenizer with lookahead]: search-better-faster-smaller.md#tokenizer-lookahead
+  [Versioning]: ../../setup/setting-up-versioning.md#versioning
+  [Version warning]: ../../setup/setting-up-versioning.md#version-warning
+  [Was this page helpful?]: ../../setup/setting-up-site-analytics.md#was-this-page-helpful
   [changelog]: ../../changelog/index.md
 
 ### 基金
@@ -208,7 +208,7 @@ $50,000.与去年相比，__资金收入增长了617%__
   [Funding]: the-past-present-and-future/funding.png
 
 我提供这些数字只是为了履行我做出的透明度承诺
-感谢我的[出色的赞助商]，并表明有可能使现有的公开赛
+感谢我的[出色的赞助商][awesome sponsors]，并表明有可能使现有的公开赛
 通过遵循精心设计的发布策略，源项目是可持续的。
 
 您可以在[Insiders]指南中了解该策略。
@@ -222,12 +222,12 @@ $50,000.与去年相比，__资金收入增长了617%__
 技术写作更加舒适灵活。以下是摘录
 2022年将出现的功能：
 
-- __Instant previews__: [即时预览]将呈现特定的页面部分
+- __Instant previews__: [即时预览][Instant previews]将呈现特定的页面部分
   当鼠标悬停在内部链接上时，在工具提示内，这将允许实现
   比如词汇表。进一步支持改进术语表功能
   也将进行调查。
 
-- __Text annotations__: 作为[代码注释]的逻辑进程
+- __Text annotations__: 作为[代码注释][Code annotations]的逻辑进程
   如果在2021年添加，作者将能够为纯文本添加注释，
   为副业内容提供了绝佳的机会。当然，文本注释
   将与代码注释一样易于使用。
@@ -238,13 +238,13 @@ $50,000.与去年相比，__资金收入增长了617%__
   巨大的导航层次结构。
 
 - __Navigation status badge__: 作为最近添加的
-  [导航图标][导航图标]支持，状态将归因于
+  [导航图标][Navigation icons]支持，状态将归因于
   每个页面，允许在导航树中用图标标记一个页面
   ：材料警报decagram：__new__或：材料垃圾桶：__deprecated__。
   还将支持自定义状态类型。
 
 - __Card grids__: 作为技术写作工具包中的另一个组件，
-  [卡片网格]将允许在网格中排列内容，这尤其是
+  [卡片网格][card grids]将允许在网格中排列内容，这尤其是
   对于概述页面很有用。它们将允许排列任意内容，
   包括代码块、警告等。
 

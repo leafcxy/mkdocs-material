@@ -4,9 +4,9 @@ icon: material/image-sync-outline
 
 # 图像处理
 
-一些[内置插件]依赖于外部库来获得高效的图像
-处理，最值得注意的是生成[社交卡]的[社交]插件，以及
-用于应用[图像优化]的[optimization]插件。本指南解释了如何
+一些[内置插件][built-in plugins]依赖于外部库来获得高效的图像
+处理，最值得注意的是生成[社交卡][social cards]的[社交][social]插件，以及
+用于应用[图像优化][image optimization]的[optimization][optimize]插件。本指南解释了如何
 在不同的环境中安装这些库。
 
   [built-in plugins]: ../index.md
@@ -18,7 +18,7 @@ icon: material/image-sync-outline
 ## 依赖关系
 
 用于图像处理的库是完全可选的，只需要
-如果你想使用[社交]插件或[优化]插件，请安装。这个
+如果你想使用[社交][social]插件或[优化][optimize]插件，请安装。这个
 库列在“图像”附加项下：
 
 ```
@@ -35,9 +35,9 @@ pip install "mkdocs-material[imaging]"
 
 ### 开罗图形
 
-[Cairo Graphics]是[Phillow]的图形库和依赖项
-MkDocs的材料用于生成[社交卡]和执行
-[图像优化]。请参阅以下部分，了解如何安装
+[Cairo Graphics]是[Phillow][Pillow]的图形库和依赖项
+MkDocs的材料用于生成[社交卡][social cards]和执行
+[图像优化][image optimization]。请参阅以下部分，了解如何安装
 [Cairo Graphics]及其对您系统的依赖性：
 
 === ":material-apple: macOS"
@@ -88,7 +88,7 @@ MkDocs的材料用于生成[社交卡]和执行
         zypper install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
         ```
 
-以下环境附带了预装的[Caroo Graphics]版本：
+以下环境附带了预装的[Caroo Graphics][Cairo Graphics]版本：
 
 - [x] No installation needed in [Docker image]
 - [x] No installation needed in [GitHub Actions] (Ubuntu)
@@ -104,7 +104,7 @@ MkDocs的材料用于生成[社交卡]和执行
 ### pngquant
 
 [pngquant]是一个优秀的有损PNG压缩库
-[内置优化插件]的依赖关系。请参阅以下部分
+[内置优化插件][built-in optimize plugin]的依赖关系。请参阅以下部分
 解释了如何安装[pngquant]系统：
 
 === ":material-apple: macOS"
@@ -163,8 +163,8 @@ cannot load library 'libcairo.2.dylib': error 0x7e.  Additionally, ctypes.util.f
 cannot load library 'libcairo-2.dll': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo-2.dll'
 ```
 
-这意味着安装了[`cairosvg`][PyPi-cairosvg]包，但
-基础[`cairocffi`][PyPi-cairocffi]依赖项无法[找到][cffi dopen]
+这意味着安装了[`cairosvg`][PyPi CairoSVG]包，但
+基础[`cairocffi`][PyPi CairoCFFI]依赖项无法[找到][cffi-dopen]
 已安装的库。根据操作系统，库查找
 过程不同：
 
@@ -176,21 +176,21 @@ cannot load library 'libcairo-2.dll': error 0x7e.  Additionally, ctypes.util.fin
 === ":material-apple: macOS"
 
     在macOS上，库查找会检查[dyld][osx-dyld]中定义的路径内部。
-    此外，每个库“名称”都在[三个变体][查找库macOS]中检查
+    此外，每个库“名称”都在[三个变体][find-library-macOS]中检查
     使用`libname.dylib`、`name.dylib `和`name.framework/name`格式。
 
     [Homebrew]应将所有需要的变量设置为指向已安装的
     库目录，但如果没有发生这种情况，您可以使用调试脚本
     下面查看查找的路径。
 
-    一个[已知的解决方法][cffi问题]是直接添加Homebrew库路径
+    一个[已知的解决方法][cffi-issue]是直接添加Homebrew库路径
     在运行MkDocs之前：
 
     ```bash
     export DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib
     ```
 
-    查看[cairo lookup macos.py的源代码]
+    查看[cairo lookup macos.py的源代码][cairo-lookup-macos.py]
 
     ```bash title="Python Debug macOS Script"
     curl "https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/includes/debug/cairo-lookup-macos.py" | python -
@@ -200,7 +200,7 @@ cannot load library 'libcairo-2.dll': error 0x7e.  Additionally, ctypes.util.fin
 
     在Windows上，库查找检查中定义的路径内部
     环境变量“PATH”。此外，还会检查每个库的“名称”
-    在[两种变体][查找库窗口]中，使用“name”和“name.dll”格式。
+    在[两种变体][find-library-Windows]中，使用“name”和“name.dll”格式。
 
     [UCRT64]环境的默认二进制和共享库路径
     [MSYS2]是使用上述命令安装软件包的：
@@ -222,7 +222,7 @@ cannot load library 'libcairo-2.dll': error 0x7e.  Additionally, ctypes.util.fin
     $env:Path -split ';'
     ```
 
-    查看[cairo查找窗口.py]的源代码
+    查看[cairo查找窗口.py][cairo-lookup-windows.py]的源代码
 
     ```powershell title="PowerShell - Python Debug Windows Script"
     (Invoke-WebRequest "https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/includes/debug/cairo-lookup-windows.py").Content | python -
@@ -230,10 +230,10 @@ cannot load library 'libcairo-2.dll': error 0x7e.  Additionally, ctypes.util.fin
 
 === ":material-linux: Linux"
 
-    在Linux上，库查找可以[差异很大][查找库Linux]
+    在Linux上，库查找可以[差异很大][find-library-Linux]
     取决于已安装的分发。适用于经过测试的Ubuntu和Manjaro
     系统Python运行shell命令来检查哪些库在
-    在[`gcc][ubuntu-gcc]/`cc`编译器中的[`ldconfig][ubuntu ldconfig]，以及
+    在[`gcc`][ubuntu-gcc]/`cc`编译器中的[`ldconfig`][ubuntu-ldconfig]，以及
     在[ld][ubuntu-ld]中。
 
     您可以使用绝对值扩展“LD_LIBRARY_PATH”环境变量
@@ -250,7 +250,7 @@ cannot load library 'libcairo-2.dll': error 0x7e.  Additionally, ctypes.util.fin
     图书馆。您可以查看源代码以了解具体命令是什么
     在库查找期间在您的系统上执行。
 
-    查看[cairo-lookup linux.py的源代码]
+    查看[cairo-lookup linux.py的源代码][cairo-lookup-linux.py]
 
     ```bash title="Python Debug Linux Script"
     curl "https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/includes/debug/cairo-lookup-linux.py" | python -

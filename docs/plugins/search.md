@@ -8,7 +8,7 @@ icon: material/magnify
 搜索插件在标题中添加了一个搜索栏，允许用户搜索您的
 文档。它由[lunr.js]提供支持，这是一个轻量级的全文搜索引擎
 对于浏览器来说，消除了对外部服务的需求，甚至可以工作
-在构建[支持离线的文档]时。
+在构建[支持离线的文档][offline-capable documentation]时。
 
   [lunr.js]: https://lunrjs.com/
   [offline-capable documentation]: ../setup/building-for-offline-usage.md
@@ -31,7 +31,7 @@ icon: material/magnify
 
 通常建议使用插件作为交互式搜索功能
 是每一份好文件的重要组成部分。此外，该插件还集成了
-与MkDocs的其他几个[内置插件]完美配合
+与MkDocs的其他几个[内置插件][built-in plugins]完美配合
 提供：
 
 <div class="grid cards" markdown>
@@ -53,7 +53,7 @@ icon: material/magnify
     ---
 
     元插件使[boost][meta.search.boost]特定变得容易
-    搜索结果中的部分或[排除][元.搜索.排除]它们
+    搜索结果中的部分或[排除][meta.search.exclude]它们
     完全不被索引，从而对搜索进行更精细的控制。
 
     ---
@@ -69,9 +69,9 @@ icon: material/magnify
 ## 配置
 
 `version 9.0.0`
-`plugin [search] – built-in`
+插件：[search]（内置）
 
-与所有[内置插件]一样，开始使用搜索插件是
+与所有[内置插件][built-in plugins]一样，开始使用搜索插件是
 直截了当。只需将以下行添加到`mkdocs.yml`和您的用户
 将能够搜索您的文档：
 
@@ -97,7 +97,7 @@ plugins:
 `version 9.3.2`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
 插件，使用：
 
@@ -115,14 +115,14 @@ plugins:
 
 ---
 
-#### `setting config.lang`
+#### `setting config.lang` <span id="config.lang"></span>
 
 `version 9.0.0`
 `default computed`
 
-使用此设置指定搜索索引的语言，启用[词干]
+使用此设置指定搜索索引的语言，启用[词干][stemming]
 支持英语以外的其他语言。默认值为自动
-根据[站点语言]计算，但可以显式设置为另一种语言
+根据[站点语言][site language]计算，但可以显式设置为另一种语言
 甚至支持多种语言，包括：
 
 === "Set language"
@@ -148,7 +148,7 @@ plugins:
         语言，都在gzip之前。
 
   [stemming]: https://en.wikipedia.org/wiki/Stemming
-  [site language]: ../setup/changing-the-language.md
+  [site language]: ../setup/changing-the-language.md#site-language
   [lunr languages]: https://github.com/MihaiValentin/lunr-languages
 
 语言支持由[lunr languages]提供，这是一个
@@ -191,14 +191,14 @@ plugins:
 
 </div>
 
-如果[lunr languages]不支持所选的[站点语言]，
+如果[lunr languages]不支持所选的[站点语言][site language]，
 该插件退回到另一种能产生最佳词干结果的语言。
 如果你发现搜索结果不令人满意，你可以做出贡献
 通过添加对您的语言的支持，将其添加到[lunr languages]。
 
 ---
 
-#### `setting config.separator`
+#### `setting config.separator` <span id="config.separator"></span>
 
 `version 9.0.0`
 `default computed`
@@ -213,7 +213,7 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 ```
 
-分隔符支持[正向和反向前瞻断言]，这允许
+分隔符支持[正向和反向前瞻断言][positive and negative lookahead assertions]，这允许
 用于精确控制单词表达方式的相当复杂的表达式
 在构建搜索索引时进行拆分。
 
@@ -236,10 +236,7 @@ plugins:
     (?!\b)(?=[A-Z][a-z])
     ```
 
-    许多编程语言都有命名约定，如“PascalCase”或
-    `camelCase”。通过将该子表达式添加到分隔符中，
-    [单词在大小写变化时被拆分]，对单词“PascalCase”进行标记`
-    分为“Pascal”和“Case”。
+    许多编程语言采用 `PascalCase` 或 `camelCase` 命名。将此子表达式添加到分隔符后，搜索会[按大小写变化拆分单词][words are split at case changes]，例如把 `PascalCase` 拆成 `Pascal` 和 `Case`。
 
 === "Version strings"
 
@@ -250,7 +247,7 @@ plugins:
     添加“时。`对于分隔符，像“1.2.3”这样的版本字符串被拆分
     分为“1”、“2”和“3”，这使得它们无法通过搜索发现。什么时候
     使用这个子表达式，引入了一个小的前瞻，它将
-    [保留版本字符串]并保持它们可被发现。
+    [保留版本字符串][preserve version strings]并保持它们可被发现。
 
 === "HTML/XML tags"
 
@@ -259,7 +256,7 @@ plugins:
     ```
 
     如果您的文档包含HTML/XML代码示例，您可能希望允许
-    用户可以找到[特定的标签名称]。不幸的是，“<”和“>”控件
+    用户可以找到[特定的标签名称][specific tag names]。不幸的是，“<”和“>”控件
     字符在代码块中编码为`&lt；`以及`&gt；`.添加此
     分隔符的子表达式允许这样做。
 
@@ -277,7 +274,7 @@ plugins:
 `flag experimental`
 
 使用此设置指定用于过滤和
-使用[`separate][config.separate]对令牌进行标记后展开令牌，以及
+使用[`separator`][config.separator]对令牌进行标记后展开令牌，以及
 在将它们添加到搜索索引之前。默认值为自动
 根据[site language]计算，但也可以显式设置为：
 
@@ -298,7 +295,7 @@ plugins:
 
   [pipeline functions]: https://lunrjs.com/guides/customising.html#pipeline-functions
 
-### 市场细分
+### 中文分词 <span id="_8"></span> { #segmentation }
 
 该插件支持通过[jieba]进行中文文本分割，这是一个流行的
 中文文本分割库。其他语言，如日语和韩语
@@ -317,7 +314,7 @@ plugins:
 `default none`
 `flag experimental`
 
-使用此设置指定[jieba]使用的[自定义词典]
+使用此设置指定[jieba]使用的[自定义词典][custom dictionary]
 分割文本，替换默认词典。[jieba]来了
 几本词典，可以与以下词典一起使用：
 
@@ -346,7 +343,7 @@ plugins:
 `default none`
 `flag experimental`
 
-使用此设置指定要使用的其他[用户词典]
+使用此设置指定要使用的其他[用户词典][user dictionary]
 [jieba]用于分割文本，扩充默认词典。用户
 字典是调整分段器的理想选择：
 
@@ -360,15 +357,15 @@ plugins:
 
   [user dictionary]: https://github.com/fxsjy/jieba#%E8%BD%BD%E5%85%A5%E8%AF%8D%E5%85%B8
 
-## 使用
+## 使用 { #_9 }
 
-### 元数据
+### 元数据 { #_10 }
 
 以下属性可用：
 
 ---
 
-#### `setting meta.search.boost`
+#### `setting meta.search.boost` <span id="meta.search.boost"></span>
 
 `version 8.3.0`
 `flag metadata`
@@ -406,7 +403,7 @@ plugins:
 
 ---
 
-#### `setting meta.search.exclude`
+#### `setting meta.search.exclude` <span id="meta.search.exclude"></span>
 
 `version 9.0.0`
 `flag metadata`
@@ -425,3 +422,8 @@ search:
 # Page title
 ...
 ```
+
+  [meta.search.boost]: #meta.search.boost
+
+  [config.separator]: #config.separator
+  [meta.search.exclude]: #meta.search.exclude

@@ -9,10 +9,10 @@ MkDocs，即[mike]。部署新版本时，您的旧版本
 
 ## 配置
 
-### 版本控制
+### 版本控制 <span id="versioning"></span>
 
 `version 7.0.0`
-`utility [mike]`
+工具：[mike]
 `demo example-versioning`
 
 [mike]使部署项目文档的多个版本变得容易。
@@ -62,20 +62,20 @@ extra:
 到与他们之前查看的页面对应的页面。材料Material for
 MkDocs默认实现了这种行为，但有一些注意事项：
 
-- 必须在`mkdocs.yml`中正确设置[`site_url][mkdocs.site_url]。
-  请参阅[“发布新版本”]（#Publishing-a-new-version）部分
+- 必须在`mkdocs.yml`中正确设置[`site_url`][mkdocs.site_url]。
+  请参阅[发布新版本](#publishing-a-new-version)部分
   举个例子。
 - 重定向是通过JavaScript进行的，无法知道你在哪个页面
   将提前重定向到。
 
-### 版本警告
+### 版本警告 <span id="version-warning"></span>
 
 `version 8.0.0`
 `flag customization`
 
 如果您正在使用版本控制，您可能希望在用户
-访问除最新版本之外的任何其他版本。使用[主题扩展]，
-你可以[覆盖过时的块][覆盖块]：
+访问除最新版本之外的任何其他版本。使用[主题扩展][theme extension]，
+你可以[覆盖过时的块][overriding blocks]：
 
 ``` html
 {% extends "base.html" %}
@@ -122,10 +122,10 @@ extra:
     现在，每个具有“稳定”和“开发”别名的版本都不会
     显示版本警告。
 
-确保一个别名与[默认版本]匹配，因为这是用户所在的位置
+确保一个别名与[默认版本][default version]匹配，因为这是用户所在的位置
 重定向到。
 
-  [theme extension]: ../customization.md
+  [theme extension]: ../customization.md#extending-the-theme
   [overriding blocks]: ../customization.md#overriding-blocks
   [Version warning preview]: ../assets/screenshots/version-warning.png
   [default version]: #setting-a-default-version
@@ -151,7 +151,7 @@ extra:
 最好查阅 [mike's documentation][mike]，让自己熟悉一下
 它的力学。
 
-### 发布新版本
+### 发布新版本 <span id="publishing-a-new-version"></span>
 
 如果要发布项目文档的新版本，请选择
 版本标识符，并使用以下命令将别名集更新为默认版本：
@@ -173,7 +173,7 @@ site_url: 'https://docs.example.com/'  # Trailing slash is recommended
 - _docs.example.com/0.2/_
 - ...
 
-### 设置默认版本
+### 设置默认版本 <span id="setting-a-default-version"></span>
 
 当从[mike]开始时，一个好主意是将别名设置为默认版本，
 例如“最新”，发布新版本时，始终将别名更新为

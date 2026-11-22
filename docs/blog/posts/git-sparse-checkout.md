@@ -5,8 +5,8 @@ categories:
   - Build
   - Performance
 links:
-  - publishing-your-site.md#_1
-  - creating-your-site.md#_1
+  - publishing-your-site.md#with-github-actions
+  - creating-your-site.md#building-your-site
 ---
 
 # 使用`git sparse checkout`实现更快的文档构建
@@ -19,32 +19,32 @@ __利用GitHub Actions中的“git sparse checkout”使我们能够加快速度
 至关重要，尤其是在拥有数千个存储库的大型存储库中工作时
 承诺，就像我们一样。当然，我们希望快速构建文档
 高效，确保快速高效的工作流程。当同时使用时
-很棒的[git提交者][git提交者]和[git修订日期本地化]
-[git修订日期本地化]插件，用于显示[文档贡献者]和
-在每页底部的[日期]处，我们需要设置“获取深度：0”，
+很棒的[git提交者][git-committers]和[git修订日期本地化][git-revision-date-localized]
+[git修订日期本地化][git-revision-date-localized]插件，用于显示[文档贡献者][document contributors]和
+在每页底部的[日期][dates]处，我们需要设置“获取深度：0”，
 这导致我们的存储库的结账时间为20到30秒。By
-在[GitHub Actions]中利用[git sparse checkout][git sparse checkout]，
+在[GitHub Actions]中利用[git sparse checkout][git sparse-checkout]，
 退房时间缩短到2秒。
 
   [git sparse-checkout]: https://git-scm.com/docs/git-sparse-checkout
   [GitHub Actions]: ../../publishing-your-site.md#with-github-actions
   [git-revision-date-localized]: https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
   [git-committers]: https://github.com/ojacques/mkdocs-git-committers-plugin-2
-  [document contributors]: ../../setup/adding-a-git-repository.md
+  [document contributors]: ../../setup/adding-a-git-repository.md#document-contributors
   [dates]: ../../setup/adding-a-git-repository.md#document-dates
 
 <!-- more -->
 
 ## 底漆
 
-[`git sparse checkout`][git sparse checkout]只允许您签出一个
+[`git sparse checkout`][git sparse-checkout]只允许您签出一个
 存储库中文件的子集，使其对大型应用程序非常有用
 完整签出需要很长时间，并且包含许多文件的存储库
 在构建文档时不相关。
 
 ## GitHub操作
 
-在[GitHub Actions]中启用[`git sparse checkout][git sparse checkout]
+在[GitHub Actions]中启用[`git sparse checkout`][git sparse-checkout]
 并确保您只构建所需的文档，添加
 将以下行添加到工作流文件中：
 
@@ -57,7 +57,7 @@ __利用GitHub Actions中的“git sparse checkout”使我们能够加快速度
       includes
 ```
 
-[`git sparse checkout`][git sparse checkout]始终检出所有文件
+[`git sparse checkout`][git sparse-checkout]始终检出所有文件
 位于存储库的根目录中。这意味着，无论指定了什么
 稀疏签出的路径或目录，位于根目录中的文件
 存储库将始终包含在签出过程中。

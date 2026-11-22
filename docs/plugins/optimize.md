@@ -6,7 +6,7 @@ icon: material/rabbit
 # 内置优化插件
 
 当发生以下情况时，优化插件会自动识别并优化所有媒体文件
-[构建你的项目]通过使用常见的压缩和转换技术。
+[构建你的项目][building your project]通过使用常见的压缩和转换技术。
 因此，您的网站加载速度明显更快，并在以下方面产生更好的排名
 搜索引擎。
 
@@ -26,14 +26,14 @@ icon: material/rabbit
 资产，自动优化它们以减少最终的规模
 [站点目录][mkdocs.site_dir]。这会使您的加载时间更快
 为用户提供更少的字节数，以及更小的下载量
-[支持离线的文档]。
+[支持离线的文档][offline-capable documentation]。
 
-优化后的图像被[智能缓存][智能缓存]，这就是为什么
+优化后的图像被[智能缓存][intelligent caching]，这就是为什么
 该插件将仅优化自上次构建以来更改的媒体文件。
 这使得更换或更新图像成为可能，而无需担心
 优化它们，甚至更糟糕的是，忘记这样做。
 
-为了优化媒体文件，需要提供一些[依赖关系]
+为了优化媒体文件，需要提供一些[依赖关系][dependencies]
 你的系统。
 
   [offline-capable documentation]: ../setup/building-for-offline-usage.md
@@ -57,8 +57,7 @@ MkDocs提供的材料，以创建复杂的
     ---
 
     隐私插件使使用未优化的外部资产变得容易
-    在将它们复制到[`site`目录]之前，先将它们添加到优化插件中
-    [mkdocs.site_dir]。
+    在将它们复制到 [`site` 目录][mkdocs.site_dir]之前，先将它们交给优化插件处理。
 
     ---
 
@@ -81,15 +80,15 @@ MkDocs提供的材料，以创建复杂的
   [privacy]: privacy.md
   [offline]: offline.md
 
-## 配置
+## 配置 <span id="configuration"></span>
 
 `sponsors`
 `version insiders-4.29.0`
-`plugin [optimize] – built-in`
+插件：[optimize]（内置）
 `flag multiple`
 `flag experimental`
 
-与所有[内置插件]一样，开始使用优化插件是
+与所有[内置插件][built-in plugins]一样，开始使用优化插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，并观察如何
 媒体文件会自动优化：
 
@@ -102,7 +101,7 @@ plugins:
 安装。
 
 但是，为了优化所有媒体文件，有必要安装
-[图像处理]的依赖关系，如果它们在您的
+[图像处理][image processing]的依赖关系，如果它们在您的
 系统。链接的指南包括几个操作系统的说明
 并提到了一些替代环境。
 
@@ -116,13 +115,13 @@ plugins:
 
 ---
 
-#### `setting config.enabled`
+#### `setting config.enabled` <span id="config.enabled"></span>
 
 `sponsors`
 `version insiders-4.29.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
 `mkdocs.yml`中的[环境变量][mkdocs.env]：
 
@@ -156,7 +155,7 @@ plugins:
 
 ### 缓存
 
-该插件实现了一种[智能缓存]机制，确保媒体
+该插件实现了一种[智能缓存][intelligent caching]机制，确保媒体
 只有当文件或资源的内容满足以下条件时，才会通过优化管道传递文件或资源
 改变。如果您更换或更新图像，插件会检测到它并进行更新
 媒体文件的优化版本。
@@ -202,7 +201,7 @@ plugins:
       cache_dir: my/custom/dir
 ```
 
-如果你正在使用该插件的[多个实例]，这可能是一个好主意
+如果你正在使用该插件的[多个实例][multiple instances]，这可能是一个好主意
 为两个实例设置不同的缓存目录，这样它们就不会相互干扰
 彼此。
 
@@ -213,7 +212,7 @@ plugins:
 文档通常使用屏幕截图或图表来更好地
 事物的可视化，这两者都是优化的主要候选者。
 该插件使用[pngquant]自动优化“.png”文件的图像，
-[Phillow]用于“.jpg”文件。
+[Phillow][Pillow]用于“.jpg”文件。
 
 以下设置可用于优化：
 
@@ -230,7 +229,7 @@ plugins:
 
 使用此设置启用或禁用媒体文件优化。目前，
 该插件的唯一目的是优化媒体文件，因此它相当于
-[`enabled'][config.enabled]设置，但在不久的将来，其他功能
+[`enabled`][config.enabled]设置，但在不久的将来，其他功能
 可以添加。如果要禁用优化，请使用：
 
 ``` yaml
@@ -333,7 +332,7 @@ plugins:
 `version insiders-4.29.0`
 `default _60_ of _0-100_`
 
-使用此设置指定[Phillow]在以下情况下应用的图像质量
+使用此设置指定[Phillow][Pillow]在以下情况下应用的图像质量
 优化.jpg文件。如果图像看起来模糊，最好
 微调并更改此设置：
 
@@ -351,7 +350,7 @@ plugins:
 `version insiders-4.29.0`
 `default _true_`
 
-使用此设置指定[Phillow]是否应使用渐进编码
+使用此设置指定[Phillow][Pillow]是否应使用渐进编码
 优化.jpg文件时，在慢速连接上渲染速度更快。如果你想要我
 要禁用渐进编码，请使用：
 
@@ -372,7 +371,7 @@ plugins:
 `default none`
 
 使用此设置可为特定目录启用媒体文件优化
-例如，当使用插件的[多个实例]进行优化时
+例如，当使用插件的[多个实例][multiple instances]进行优化时
 媒体文件不同：
 
 ``` yaml
@@ -383,7 +382,7 @@ plugins:
 ```
 
 此配置可优化包含的所有媒体文件
-在[文档目录]中的“截图”文件夹及其子文件夹中
+在[文档目录][mkdocs.docs_dir]中的“截图”文件夹及其子文件夹中
 [mkdocs.docs_dir]。
 
 ---
@@ -395,7 +394,7 @@ plugins:
 `default none`
 
 使用此设置可禁用特定目录的媒体文件优化
-例如，当使用插件的[多个实例]进行优化时
+例如，当使用插件的[多个实例][multiple instances]进行优化时
 媒体文件不同：
 
 ``` yaml
@@ -406,7 +405,7 @@ plugins:
 ```
 
 此配置禁用所包含的所有媒体文件的优化
-在[文档目录]中的“vendor”文件夹及其子文件夹中
+在[文档目录][mkdocs.docs_dir]中的“vendor”文件夹及其子文件夹中
 [mkdocs.docs_dir]。
 
 ### Reporting
@@ -447,3 +446,5 @@ plugins:
   - optimize:
       print_gain_summary: false
 ```
+
+  [config.enabled]: #config.enabled

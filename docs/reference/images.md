@@ -28,14 +28,14 @@ markdown_extensions:
 - [Markdown in HTML]
 - [Caption]
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md
-  [Markdown in HTML]: ../setup/extensions/python-markdown.md
+  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
   [Caption]: ../setup/extensions/python-markdown-extensions.md#caption
 
 ### 灯箱
 
 `version 0.1.0`
-`plugin [glightbox]`
+插件：[glightbox]
 
 如果您想在文档中添加图像缩放功能
 [glightbox]插件是一个很好的选择，因为它完美地集成了
@@ -53,16 +53,16 @@ plugins:
 ```
 
 我们建议您查看可用的
-[配置选项][glightbox选项]。
+[配置选项][glightbox options]。
 
   [glightbox]: https://github.com/blueswen/mkdocs-glightbox
   [glightbox options]: https://github.com/blueswen/mkdocs-glightbox#_4
 
 ## 使用
 
-### 图像对齐
+### 图像对齐 <span id="image-alignment"></span>
 
-启用[属性列表]后，可以通过添加
+启用[属性列表][Attribute Lists]后，可以通过添加
 通过“align”属性指定相应的对齐方向，即“align=left”或
 `align=right：
 
@@ -103,9 +103,9 @@ plugins:
 
 ??? question "为什么没有中心对齐？"
 
-    [对齐][对齐]属性不允许居中对齐，这
+    [对齐][align]属性不允许居中对齐，这
     这就是为什么MkDocs材料不支持此选项的原因。[^1]相反，
-    可以使用[image titles]语法，因为字幕是可选的。
+    可以使用[image titles][image captions]语法，因为字幕是可选的。
 
   [^1]:
     您可能还意识到['alig`][align]属性已经
@@ -116,12 +116,12 @@ plugins:
     在Material for MkDocs生成的网站之外查看。
 
   [align]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#deprecated_attributes
-  [image captions]: 
+  [image captions]: #image-captions
 
-### 图片标题
+### 图片标题 <span id="image-captions"></span>
 
 遗憾的是，Markdown语法不提供对图像标题的原生支持，
-但总是可以使用带有文字的[HTML中的Markdown]扩展名
+但总是可以使用带有文字的[HTML中的Markdown][Markdown in HTML]扩展名
 `figure和figcaption标签：
 
 ``` html title="Image with caption"
@@ -148,9 +148,9 @@ Image caption
 ///
 ```
 
-### 图像延迟加载
+### 图像延迟加载 <span id="image-lazy-loading"></span>
 
-现代浏览器提供[对延迟加载图像的原生支持][延迟加载]
+现代浏览器提供[对延迟加载图像的原生支持][lazy-loading]
 通过`loading=lazy `指令，该指令在中降级为渴望加载
 不支持的浏览器：
 
@@ -164,11 +164,11 @@ Image caption
 
   [lazy-loading]: https://caniuse.com/#feat=loading-lazy-attr
 
-### 亮暗模式
+### 亮暗模式 <span id="light-and-dark-mode"></span>
 
 `version 8.1.1`
 
-如果您添加了[调色板切换]并希望显示不同的图像
+如果您添加了[调色板切换][color palette toggle]并希望显示不同的图像
 浅色和深色配色方案，您可以附加“仅浅色”或“仅深色”`
 哈希片段到图像URL：
 
@@ -184,10 +184,10 @@ Image caption
 
 </div>
 
-!!! warning "使用[自定义配色方案]时的要求"
+!!! warning "使用[自定义配色方案][custom color schemes]时的要求"
 
-    内置的[配色方案]定义了上述哈希片段，但
-    如果你使用[自定义配色方案]，你还必须添加
+    内置的[配色方案][color schemes]定义了上述哈希片段，但
+    如果你使用[自定义配色方案][custom color schemes]，你还必须添加
     根据它是灯还是灯，在你的方案中跟随选择器
     暗方案：
 
@@ -212,7 +212,7 @@ Image caption
     记住要改#！css“自定义灯光”`和`#！css“自定义深色”
     你的计划名称。
 
-  [color palette toggle]: ../setup/changing-the-colors.md
+  [color palette toggle]: ../setup/changing-the-colors.md#color-palette-toggle
   [Zelda light world]: ../assets/images/zelda-light-world.png#only-light
   [Zelda dark world]: ../assets/images/zelda-dark-world.png#only-dark
   [color schemes]: ../setup/changing-the-colors.md#color-scheme

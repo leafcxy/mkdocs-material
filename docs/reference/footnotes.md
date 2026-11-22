@@ -24,9 +24,9 @@ markdown_extensions:
 
 - [Footnotes]
 
-  [Footnotes]: ../setup/extensions/python-markdown.md
+  [Footnotes]: ../setup/extensions/python-markdown.md#footnotes
 
-### 脚注工具提示
+### 脚注工具提示 <span id="footnote-tooltips"></span>
 
 `sponsors`
 `version insiders-4.51.0`
@@ -50,7 +50,7 @@ __我们的文档__上启用了脚注工具提示，所以要尝试一下，你
 
 ## 使用
 
-### 添加脚注引用
+### 添加脚注引用 <span id="adding-footnote-references"></span>
 
 脚注引用必须括在方括号内，并且必须以
 插入符号“^”，后面紧跟一个任意标识符，类似于
@@ -66,7 +66,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 
 </div>
 
-### 添加脚注内容
+### 添加脚注内容 <span id="adding-footnote-content"></span>
 
 脚注内容必须使用与引用相同的标识符声明。
 它可以插入文档中的任意位置，并且始终

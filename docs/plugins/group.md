@@ -8,7 +8,7 @@ icon: material/format-list-group
 组插件允许将插件有条件地分组到逻辑单元中
 使用以下命令为特定环境启用或禁用它们
 [环境变量][mkdocs.env]，例如，仅启用
-在持续集成（CI）期间[构建项目]时使用插件。
+在持续集成（CI）期间[构建项目][building your project]时使用插件。
 
   [building your project]: ../creating-your-site.md#building-your-site
 
@@ -22,7 +22,7 @@ if and only if组已启用，这意味着插件不会添加任何
 仅在启用组时才需要安装。
 
 属于该组的插件以相同的顺序执行，就像
-它们是在[`plugins][mkdocs.plugins]列表的顶层定义的。
+它们是在[`plugins`][mkdocs.plugins]列表的顶层定义的。
 因此，秩序得以保留和确定。
 
 ### 何时使用
@@ -37,11 +37,11 @@ if and only if组已启用，这意味着插件不会添加任何
 ## 配置
 
 `version 9.3.0`
-`plugin [group] – built-in`
+插件：[group]（内置）
 `flag multiple`
 `flag experimental`
 
-与所有[内置插件]一样，开始使用组插件是
+与所有[内置插件][built-in plugins]一样，开始使用组插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
 将插件拆分为逻辑单元：
 
@@ -67,7 +67,7 @@ plugins:
 `version 9.3.0`
 `default _false_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 该插件的行为与所有其他内置插件不同——它是
 默认禁用__。要启用组，请使用：
 
@@ -90,7 +90,7 @@ plugins:
 环境变量，因为它消除了为提供默认值的需要
 环境变量。
 
-现在，在[构建项目]时，您可以通过设置
+现在，在[构建项目][building your project]时，您可以通过设置
 [环境变量][mkdocs.env]：
 
 ``` sh
@@ -107,7 +107,7 @@ CI=true mkdocs build
 `default none`
 
 使用此设置列出属于该组的插件。语法是
-与[`plugins][mkdocs.plugins]设置完全相同，因此您可以
+与[`plugins`][mkdocs.plugins]设置完全相同，因此您可以
 只需复制您要分组的插件列表，例如：
 
 ``` yaml

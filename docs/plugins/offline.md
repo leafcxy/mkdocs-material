@@ -15,7 +15,7 @@ icon: material/connection
 
 ### 工作原理
 
-[构建项目]后，切换到[`site`目录][mkdocs.site_dir]
+[构建项目][building your project]后，切换到[`site`目录][mkdocs.site_dir]
 然后在浏览器中打开`index.html`——您现在正在查看文档
 从您的本地文件系统！大多数浏览器会通过显示`file://`
 在地址栏中。然而，你会意识到网站搜索已经消失了。
@@ -32,13 +32,12 @@ Cross origin requests are only supported for protocol schemes: http, [...]
 虽然浏览器出于安全原因施加了这些限制，但它减少了
 你的项目的交互性。离线插件确保网站搜索
 通过将搜索索引移动到JavaScript文件并利用
-@squidfunk的[iframe worker]垫片。
+@squidfunk的[iframe worker][iframe-worker]垫片。
 
-此外，该插件会自动禁用[`use_directory_urls`]
-[mkdocs.use_directory_urls]设置，确保用户可以打开您的
+此外，该插件会自动禁用[`use_directory_urls`][mkdocs.use_directory_urls] 设置，确保用户可以打开您的
 直接从本地文件系统获取文档。
 
-有一些[限制]。
+有一些[限制][limitations]。
 
   [building your project]: ../creating-your-site.md#building-your-site
   [Fetch API]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
@@ -48,7 +47,7 @@ Cross origin requests are only supported for protocol schemes: http, [...]
 ### 何时使用
 
 正如名称所示，该插件只应在以下情况下使用
-[构建你的项目]用于离线分发。知道这一点也很好
+[构建你的项目][building your project]用于离线分发。知道这一点也很好
 离线插件与以下其他插件配合良好，有助于
 创建更好的离线文档：
 
@@ -98,9 +97,9 @@ Cross origin requests are only supported for protocol schemes: http, [...]
 ## 配置
 
 `version 9.0.0`
-`plugin [offline] – built-in`
+插件：[offline]（内置）
 
-与所有[内置插件]一样，开始使用离线插件是
+与所有[内置插件][built-in plugins]一样，开始使用离线插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
 构建支持离线的文档：
 
@@ -126,7 +125,7 @@ plugins:
 `version 9.0.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 如果你想构建在线和离线文档，这是一个
 使用[环境变量][mkdocs.env]是个好主意：
 
@@ -136,7 +135,7 @@ plugins:
       enabled: !ENV [OFFLINE, false]
 ```
 
-## 局限性
+## 局限性 <span id="limitations"></span>
 
 启用离线插件时，请确保禁用以下设置，
 因为他们使用[Fetch API，当从本地调用时会出错
@@ -147,7 +146,7 @@ plugins:
 - [Versioning]
 - [Comment systems]
 
-  [Instant loading]: ../setup/setting-up-navigation.md#_3
+  [Instant loading]: ../setup/setting-up-navigation.md#instant-loading
   [Site analytics]: ../setup/setting-up-site-analytics.md
   [Versioning]: ../setup/setting-up-versioning.md
   [Comment systems]: ../setup/adding-a-comment-system.md

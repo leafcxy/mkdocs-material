@@ -7,7 +7,7 @@ MkDocs材料支持国际化（i18n），并提供
 
 ## 配置
 
-### 网站语言
+### 网站语言 <span id="site-language"></span>
 
 `version 1.12.0`
 `default _en_`
@@ -19,12 +19,12 @@ theme:
   language: en # (1)!
 ```
 
-1.  HTML5只允许设置[每个文档一种语言]，这就是为什么
+1.  HTML5只允许设置[每个文档一种语言][single language per document]，这就是为什么
     MkDocs的材料仅支持为
     整个项目，即每个“mkdocs.yml”一个。
 
     构建多语言文档的最简单方法是创建一个
-    按语言将项目放在子文件夹中，然后使用[语言选择器]
+    按语言将项目放在子文件夹中，然后使用[语言选择器][language selector]
     将这些项目联系起来。
 
 支持以下语言：
@@ -32,21 +32,21 @@ theme:
 <!-- hooks/translations.py -->
 
 请注意，由于某种方式，某些语言会产生不可读的锚链接
-默认的slug函数有效。考虑使用[Unicode感知的slug函数]。
+默认的slug函数有效。考虑使用[Unicode感知的slug函数][Unicode-aware slug function]。
 
 !!! tip "翻译缺失？帮帮我们，只需要5分钟"
 
     MkDocs的材料依赖于外部贡献来添加和更新
     它支持60多种语言的翻译。如果你的语言
     显示缺少某些翻译，请单击链接添加它们。如果
-    您的语言不在列表中，请单击此处[添加新语言]。
+    您的语言不在列表中，请单击此处[添加新语言][add a new language]。
 
   [single language per document]: https://www.w3.org/International/questions/qa-html-language-declarations.en#attributes
-  [language selector]: 
+  [language selector]: #site-language-selector
   [Unicode-aware slug function]: extensions/python-markdown.md#+toc.slugify
   [add a new language]: https://github.com/squidfunk/mkdocs-material/issues/new?template=04-add-a-translation.yml&title=Add+translations+for+...
 
-### 站点语言选择器
+### 站点语言选择器 <span id="site-language-selector"></span>
 
 `version 7.0.0`
 `default none`
@@ -67,7 +67,7 @@ extra:
 ```
 
 1.  请注意，这必须是一个绝对链接。如果它包含域部分，它是
-    按定义使用。否则，['site_url][site_url]的域部分为
+    按定义使用。否则，[`site_url`][site_url]的域部分为
     在“mkdocs.yml”中设置的内容将添加到链接之前。
 
 以下属性适用于每种备用语言：
@@ -87,7 +87,7 @@ extra:
 `option alternate.lang`
 
 :   `default none` `flag required`
-    此属性必须包含[ISO 639-1语言代码]，用于
+    此属性必须包含[ISO 639-1语言代码][ISO 639-1 language code]，用于
     链接的hreflang属性，通过搜索提高可发现性
     发动机。
 
@@ -97,13 +97,13 @@ extra:
   [ISO 639-1 language code]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   [Language selector preview]: ../assets/screenshots/language-selection.png
 
-#### 停留在页面上
+#### 停留在页面上 <span id="stay-on-page"></span>
 
 `sponsors`
 `version insiders-4.47.0`
 `flag experimental`
 
-[内部人员]改善了在语言之间切换时的用户体验。，
+[内部人员][Insiders]改善了在语言之间切换时的用户体验。，
 如果语言“en”和“de”包含具有相同路径名的页面，则用户将
 停留在当前页面：
 
@@ -167,8 +167,8 @@ theme:
 ### 自定义翻译
 
 如果你想为一种语言定制一些翻译，只需按照以下步骤操作
-关于[主题扩展]的指南，并在“覆盖”中创建一个新的部分`
-文件夹。然后，导入该语言的[翻译]作为后备，并且仅
+关于[主题扩展][theme extension]的指南，并在“覆盖”中创建一个新的部分`
+文件夹。然后，导入该语言的[翻译][translations]作为后备，并且仅
 调整要覆盖的内容：
 
 === ":octicons-file-code-16: `overrides/partials/languages/custom.html`"
@@ -203,6 +203,6 @@ theme:
       language: custom
     ```
 
-  [theme extension]: ../customization.md
+  [theme extension]: ../customization.md#extending-the-theme
   [translations]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/
   [list of available languages]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/languages/

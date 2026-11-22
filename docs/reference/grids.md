@@ -21,8 +21,8 @@ markdown_extensions: # (1)!
   - md_in_html
 ```
 
-1.  请注意，下面列出的一些示例使用了[图标和表情符号]
-    必须[单独配置]。
+1.  请注意，下面列出的一些示例使用了[图标和表情符号][icons and emojis]
+    必须[单独配置][configured separately]。
 
 请参阅其他配置选项：
 
@@ -31,19 +31,19 @@ markdown_extensions: # (1)!
 
   [icons and emojis]: icons-emojis.md
   [configured separately]: icons-emojis.md#configuration
-  [Attribute Lists]: ../setup/extensions/python-markdown.md
-  [Markdown in HTML]: ../setup/extensions/python-markdown.md
+  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
 
-## 使用
+## 使用 <span id="usage"></span>
 
-网格有两种类型：[卡片网格]，它将每个元素包裹在一张卡片中
-悬停时悬浮，以及[通用网格]，允许排列任意块
+网格有两种类型：[卡片网格][card grids]，它将每个元素包裹在一张卡片中
+悬停时悬浮，以及[通用网格][generic grids]，允许排列任意块
 矩形形状的元素。
 
   [card grids]: #using-card-grids
   [generic grids]: #using-generic-grids
 
-### 使用卡片网格
+### 使用卡片网格 <span id="using-card-grids"></span>
 
 `version 9.5.0`
 `flag experimental`
@@ -52,12 +52,12 @@ markdown_extensions: # (1)!
 悬停。它们有两种稍微不同的语法：[list]和[block syntax]，
 添加对不同用例的支持。
 
-  [list]: 
-  [block syntax]: 
+  [list]: #list-syntax
+  [block syntax]: #block-syntax
 
-#### 列表语法
+#### 列表语法 <span id="list-syntax"></span>
 
-列表语法本质上是[卡片网格]的快捷方式，由
+列表语法本质上是[卡片网格][card grids]的快捷方式，由
 无序（或有序）列表，由一个带有“网格”和“卡片”的“div”包裹`
 类别：
 
@@ -168,7 +168,7 @@ markdown_extensions: # (1)!
 如果没有足够的空间来渲染彼此相邻的网格项
 将拉伸到视口的整个宽度，例如在移动视口上。如果
 有更多可用空间，网格将以3个或更多项目呈现，例如。
-当[隐藏两个侧边栏]时。
+当[隐藏两个侧边栏][hiding both sidebars]时。
 
   [mkdocs-material]: https://pypistats.org/packages/mkdocs-material
   [pip]: ../getting-started.md#with-pip
@@ -177,12 +177,12 @@ markdown_extensions: # (1)!
   [customization]: ../customization.md
   [license]: ../license.md
   [GitHub]: https://github.com/squidfunk/mkdocs-material
-  [hiding both sidebars]: ../setup/setting-up-navigation.md
+  [hiding both sidebars]: ../setup/setting-up-navigation.md#hiding-the-sidebars
 
-#### 块语法
+#### 块语法 <span id="block-syntax"></span>
 
 块语法允许将卡片与其他卡片一起排列在网格中
-elements_，如[通用网格]一节所述。只需添加“卡”`
+elements_，如[通用网格][generic grids]一节所述。只需添加“卡”`
 类到“网格”内的任何块元素：
 
 ``` html title="Card grid, blocks"
@@ -223,13 +223,13 @@ elements_，如[通用网格]一节所述。只需添加“卡”`
 显示了卡网格现在如何与其他也会拉伸的元素混合
 到电网。
 
-### 使用通用网格
+### 使用通用网格 <span id="using-generic-grids"></span>
 
 `version 9.5.0`
 `flag experimental`
 
 通用网格允许在网格中排列任意块元素，包括
-[警告]、[代码块]、[内容选项卡]等。只需包裹一组积木
+[警告][admonitions]、[代码块][code blocks]、[内容选项卡][content tabs]等。只需包裹一组积木
 通过在`grid `类中使用`div`：
 
 ```` html title="Generic grid"

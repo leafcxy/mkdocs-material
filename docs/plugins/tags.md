@@ -14,7 +14,7 @@ icon: material/tag-text
 
 ### 工作原理
 
-该插件扫描所有页面的[`tags][meta.tags]元数据属性
+该插件扫描所有页面的[`tags`][meta.tags]元数据属性
 生成标签索引，这是标签及其所在页面的倒排列表
 标签索引可以位于[`nav`][mkdocs.nav]中的任何位置，
 允许在向项目添加标签时具有最大的灵活性。
@@ -24,7 +24,7 @@ icon: material/tag-text
 如果要向项目添加一个或多个标记索引
 插件是一个完美的选择，因为它使这个过程变得简单得可笑。
 此外，它与其他几个完美集成
-[内置插件]Material for MkDocs提供：
+[内置插件][built-in plugins]Material for MkDocs提供：
 
 <div class="grid cards" markdown>
 
@@ -61,10 +61,10 @@ icon: material/tag-text
 ## 配置
 
 `version 8.2.0`
-`plugin [tags] – built-in`
+插件：[tags]（内置）
 `flag multiple`
 
-与所有[内置插件]一样，开始使用标签插件是
+与所有[内置插件][built-in plugins]一样，开始使用标签插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始使用
 [tags][meta.tags]用于对页面进行分类：
 
@@ -89,7 +89,7 @@ plugins:
 `version 9.1.7`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
 插件，使用：
 
@@ -107,13 +107,13 @@ plugins:
 
 ---
 
-#### `setting config.tags`
+#### `setting config.tags` <span id="config.tags"></span>
 
 `version 9.3.2`
 `default _true_`
 
 使用此设置启用或禁用标记的呈现。插件仍然
-从所有页面中提取标签，例如，用于[导出标签]而不呈现它们。
+从所有页面中提取标签，例如，用于[导出标签][exporting tags]而不呈现它们。
 可以通过以下方式禁用渲染：
 
 ``` yaml
@@ -122,7 +122,7 @@ plugins:
       tags: false
 ```
 
-如果[`export_only][config.export_orly]，此设置将自动禁用
+如果[`export_only`][config.export_only]，此设置将自动禁用
 已启用。
 
   [exporting tags]: #export
@@ -138,7 +138,7 @@ plugins:
 
     版本<！--md:version 9.6.0-->，此设置已弃用，因为
     版本对标签插件进行了彻底的重写，这要多得多
-    比以前的版本强大。标签[列表]可以在任何页面上使用
+    比以前的版本强大。标签[列表][listings]可以在任何页面上使用
     现在。
 
 <div style="opacity: 0.5" markdown>
@@ -162,18 +162,18 @@ mkdocs.yml的一节。此设置不是必需的，您应该只使用它
 
 </div>
 
-  [listings]: ../setup/setting-up-tags.md
+  [listings]: ../setup/setting-up-tags.md#adding-a-tags-index
 
 ---
 
-#### `setting config.tags_slugify`
+#### `setting config.tags_slugify` <span id="config.tags_slugify"></span>
 
 `version 9.6.0`
-`default [_pymdownx.slugs.slugify_][pymdownx.slugs.slugify]`
+默认值：[`pymdownx.slugs.slugify`][pymdownx.slugs.slugify]
 
 使用此设置更改生成与URL兼容的slug的功能
-从帖子标题。默认情况下，['slugify][pymdownx.slugs.slugify]函数
-[Python Markdown扩展]的用法如下：
+从帖子标题。默认情况下，[`slugify`][pymdownx.slugs.slugify]函数
+[Python Markdown扩展][Python Markdown Extensions]的用法如下：
 
 ``` yaml
 plugins:
@@ -198,7 +198,7 @@ plugins:
 `default _-_ `
 
 使用此设置更改传递给slugif的分隔符
-函数设置为[tags_slugify][config.tags_slugif]的一部分。虽然默认
+函数设置为[tags_slugify][config.tags_slugify]的一部分。虽然默认
 是连字符，可以设置为任何字符串，例如“_”：
 
 ``` yaml
@@ -214,9 +214,7 @@ plugins:
 `version 9.6.0`
 `default _tag:{slug}_`
 
-使用此设置更改生成标记时使用的格式字符串
-蛞蝓。最好在标签slug前加一个字符串，使它们
-唯一，默认值为：
+此设置用于更改生成标签路径片段（slug）时使用的格式字符串。建议为标签的 slug 加上前缀，避免与其他路径片段冲突。默认值如下：
 
 ``` yaml
 plugins:
@@ -249,7 +247,7 @@ plugins:
 
 ---
 
-#### `setting config.tags_hierarchy_separator`
+#### `setting config.tags_hierarchy_separator` <span id="config.tags_hierarchy_separator"></span>
 
 `sponsors`
 `version insiders-4.48.0`
@@ -268,7 +266,7 @@ plugins:
 
 ---
 
-#### `setting config.tags_sort_by`
+#### `setting config.tags_sort_by` <span id="config.tags_sort_by"></span>
 
 `version 9.6.0`
 `default _material.plugins.tags.tag_name_`
@@ -285,7 +283,7 @@ plugins:
 
 您还可以定义自己的比较函数，该函数必须返回一个字符串
 或表示标签的数字，用于排序，并在
-[`tags_sort_by`][config.tags_sord_by]。
+[`tags_sort_by`][config.tags_sort_by]。
 
 ---
 
@@ -309,7 +307,7 @@ plugins:
 #### `setting config.tags_name_property`
 
 `version 9.6.0`
-`default [_tags_][meta.tags]`
+默认值：[`tags`][meta.tags]
 
 使用此设置可更改所使用的前端属性的名称
 插件。通常不需要更改此设置，但如果你愿意
@@ -340,7 +338,7 @@ plugins:
 
 ---
 
-#### `setting config.tags_allowed`
+#### `setting config.tags_allowed` <span id="config.tags_allowed"></span>
 
 `version 9.6.0`
 `default none`
@@ -359,7 +357,7 @@ plugins:
 ```
 
 如果页面引用的标签不是
-这个列表。可以使用[`tags][meta.tags]将页面分配给标签
+这个列表。可以使用[`tags`][meta.tags]将页面分配给标签
 元数据属性。
 
 ### 列表
@@ -368,7 +366,7 @@ plugins:
 
 ---
 
-#### `setting config.listings`
+#### `setting config.listings` <span id="config.listings"></span>
 
 `version 9.6.0`
 `default _true_`
@@ -383,7 +381,7 @@ plugins:
       listings: false
 ```
 
-如果[`export_only][config.export_orly]，此设置将自动禁用
+如果[`export_only`][config.export_only]，此设置将自动禁用
 已启用。
 
   [exporting tags]: #export
@@ -414,13 +412,13 @@ plugins:
 <!-- material/tags custom-id -->
 ```
 
-有关所有可用设置的列表，请参阅[列表部分]。
+有关所有可用设置的列表，请参阅[列表部分][listings section]。
 
   [listings section]: #listing-configuration
 
 ---
 
-#### `setting config.listings_sort_by`
+#### `setting config.listings_sort_by` <span id="config.listings_sort_by"></span>
 
 `version 9.6.0`
 `default _material.plugins.tags.item_title_`
@@ -447,7 +445,7 @@ plugins:
 
 您还可以定义自己的比较函数，该函数必须返回一个字符串
 或表示项目的数字，用于排序，并在
-[`listings_sort_by][config.listings_sport_by]。
+[`listings_sort_by`][config.listings_sort_by]。
 
 ---
 
@@ -485,7 +483,7 @@ plugins:
 
 您还可以定义自己的比较函数，该函数必须返回一个字符串
 或表示标签的数字，用于排序，并在
-[`tags_sort_by`][config.tags_sord_by]。
+[`tags_sort_by`][config.tags_sort_by]。
 
 ---
 
@@ -529,7 +527,7 @@ plugins:
 
 ---
 
-#### `setting config.listings_toc`
+#### `setting config.listings_toc` <span id="config.listings_toc"></span>
 
 `sponsors`
 `version insiders-4.48.0`
@@ -551,14 +549,14 @@ plugins:
 
 ---
 
-#### `setting config.shadow`
+#### `setting config.shadow` <span id="config.shadow"></span>
 
 `sponsors`
 `version insiders-4.48.0`
 `default _false_`
 
 使用此设置指定插件是否应在
-在[构建项目]时，在页面和列表中，这可能对
+在[构建项目][building your project]时，在页面和列表中，这可能对
 部署预览：
 
 === "Show shadow tags"
@@ -586,7 +584,7 @@ plugins:
 `default _true_`
 
 使用此设置控制插件是否应在
-在[预览您的网站]时，您可以在页面和列表中查看。如果你不想包括
+在[预览您的网站][previewing your site]时，您可以在页面和列表中查看。如果你不想包括
 预览时，请使用：
 
 ``` yaml
@@ -599,14 +597,14 @@ plugins:
 
 ---
 
-#### `setting config.shadow_tags`
+#### `setting config.shadow_tags` <span id="config.shadow_tags"></span>
 
 `sponsors`
 `version insiders-4.48.0`
 `default none`
 
 该插件允许指定一个预定义的阴影标签列表，这些标签可以
-通过使用['shadow][config.shadow]将其包含在构建中或从构建中排除
+通过使用[`shadow`][config.shadow]将其包含在构建中或从构建中排除
 设置。阴影标记必须指定为列表：
 
 ``` yaml
@@ -654,7 +652,7 @@ plugins:
       shadow_tags_suffix: Internal
 ```
 
-### 出口
+### 出口 <span id="export"></span>
 
 以下设置可用于导出：
 
@@ -698,7 +696,7 @@ plugins:
 
 ---
 
-#### `setting config.export_only`
+#### `setting config.export_only` <span id="config.export_only"></span>
 
 `sponsors`
 `version insiders-4.49.0`
@@ -714,8 +712,8 @@ plugins:
       export_only: true
 ```
 
-这将自动禁用[标签][配置标签]和
-[列表][配置列表]设置。
+这将自动禁用[标签][config.tags]和
+[列表][config.listings]设置。
 
 ## 使用
 
@@ -725,7 +723,7 @@ plugins:
 
 ---
 
-#### `setting meta.tags`
+#### `setting meta.tags` <span id="meta.tags"></span>
 
 `version 8.2.0`
 `flag metadata`
@@ -749,9 +747,9 @@ tags:
 
 如果你想在为页面分配标签时防止意外拼写错误，你可以
 使用以下命令在`mkdocs.yml`中设置预定义的允许标签列表
-[标签允许][配置标签允许]设置。
+[标签允许][config.tags_allowed]设置。
 
-### 列出配置
+### 列出配置 <span id="listing-configuration"></span>
 
 列表配置控制哪些标签包含在列表中或从列表中排除
 列表以及列表是否仅包括当前范围内的页面。
@@ -832,10 +830,10 @@ tags:
 
 `sponsors`
 `version insiders-4.48.0`
-`default [_listings_toc_][config.listings_toc]`
+默认值：[`listings_toc`][config.listings_toc]
 
 此设置指定列表是否应呈现表内的标记
-内容，允许覆盖全局[`listings_toc`][config.listings_to]
+内容，允许覆盖全局[`listings_toc`][config.listings_toc]
 按每个列表设置：
 
 === "Inline usage"
@@ -939,3 +937,15 @@ tags:
 由于MkDocs架构，标签插件的实现很棘手。
 值得注意的是，标记列表标记不能出现在代码块中。技术方面
 详细信息，请参阅#8114。
+
+  [config.listings_toc]: #config.listings_toc
+  [config.shadow]: #config.shadow
+  [config.tags_slugify]: #config.tags_slugify
+  [meta.tags]: #meta.tags
+
+  [config.export_only]: #config.export_only
+  [config.listings]: #config.listings
+  [config.listings_sort_by]: #config.listings_sort_by
+  [config.tags]: #config.tags
+  [config.tags_allowed]: #config.tags_allowed
+  [config.tags_sort_by]: #config.tags_sort_by

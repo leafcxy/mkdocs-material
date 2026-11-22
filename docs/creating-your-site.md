@@ -35,7 +35,7 @@ mkdocs new .
 
 ## 配置
 
-### 最小配置
+### 最小配置 <span id="minimal-configuration"></span>
 
 只需设置`site_name`并将以下行添加到`mkdocs.yml`中即可启用主题：
 
@@ -84,7 +84,7 @@ theme:
             }
             ```
 
-            1.  如果您计划使用[图标和表情符号]，则此设置是必要的，
+            1.  如果您计划使用[图标和表情符号][icons and emojis]，则此设置是必要的，
                 或者Visual Studio代码将在某些行上显示错误。
 
     === "Other"
@@ -189,7 +189,7 @@ Material for MkDocs有许多配置选项。设置部分
 [blog-template]: https://github.com/mkdocs-material/create-blog
 [social-cards-template]: https://github.com/mkdocs-material/create-social-cards
 
-## 写作时预览
+## 写作时预览 <span id="previewing-as-you-write"></span>
 
 MkDocs包括一个实时预览服务器，因此您可以在使用时预览您的更改
 写你的文件。服务器将在以下情况下自动重建站点
@@ -201,7 +201,7 @@ mkdocs serve # (1)!
 
 1.  如果您有一个大型文档项目，可能需要几分钟的时间，直到
     MkDocs已重建所有页面供您预览。如果你只感兴趣
-    在当前页面中，[`--dirtyreload`][--dirtyleroad]标志将使
+    在当前页面中，[`--dirtyreload`][--dirtyreload]标志将使
     重建速度更快：
 
     ```
@@ -230,7 +230,7 @@ mkdocs serve # (1)!
   [live preview]: http://localhost:8000
   [Creating your site]: assets/screenshots/creating-your-site.png
 
-## 构建您的网站
+## 构建您的网站 <span id="_7"></span> { #building-your-site }
 
 编辑完成后，您可以从Markdown构建一个静态网站
 文件包含：

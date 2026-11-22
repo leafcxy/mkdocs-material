@@ -12,7 +12,7 @@ icon: material/file-tree
 
 ## Objective
 
-### 工作原理
+### 工作原理 <span id="how-it-works"></span>
 
 该插件扫描[`docs`目录][mkdocs.docs_dir]中的`.meta.yml`文件，
 并递归地将这些文件的内容与元数据（front
@@ -110,26 +110,26 @@ Material for MkDocs提供的插件。一些最强大的组合
 </div>
 
   [social]: social.md
-  [change the layout]: social.md
-  [change specific layout options]: social.md
-  [background]: social.md
-  [color]: social.md
+  [change the layout]: social.md#meta.social.cards_layout
+  [change specific layout options]: social.md#meta.social.cards_layout_options
+  [background]: social.md#option.background_color
+  [color]: social.md#option.color
   [blog]: blog.md
-  [authors]: blog.md
-  [categories]: blog.md
+  [authors]: blog.md#meta.authors
+  [categories]: blog.md#meta.categories
   [tags]: tags.md
-  [specific tags]: tags.md
+  [specific tags]: tags.md#meta.tags
   [search]: search.md
-  [exclude]: search.md
-  [boost]: search.md
+  [exclude]: search.md#meta.search.exclude
+  [boost]: search.md#meta.search.boost
 
 ## 配置
 
 `version 9.6.0`
-`plugin [meta] – built-in`
+插件：[meta]（内置）
 `flag experimental`
 
-与所有[内置插件]一样，开始使用元插件是
+与所有[内置插件][built-in plugins]一样，开始使用元插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
 一次为多个页面应用元数据：
 
@@ -155,7 +155,7 @@ plugins:
 `version 9.6.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 通常不需要指定此设置，但如果要禁用
 插件，使用：
 
@@ -179,7 +179,7 @@ plugins:
 `default _.meta.yml_`
 
 使用此设置更改插件在以下情况下将查找的元文件名
-扫描[文档目录][mkdocs.docs-dir]。通常没有必要
+扫描[文档目录][mkdocs.docs_dir]。通常没有必要
 更改此设置，但如果要更改，请使用：
 
 ``` yaml

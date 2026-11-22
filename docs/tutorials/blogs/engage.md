@@ -32,7 +32,7 @@ RSS提要允许用户订阅博客，以便在以下情况下收到通知
     ```
 
     重要的是要有“site_name”、“site_description”和
-    `site_url`设置配置为[基本博客教程中的说明]。
+    `site_url`设置配置为[基本博客教程中的说明][instructed in the basic blog tutorial]。
     RSS插件利用这些信息来构建提要，因此
     确定您已经配置了它们。
 

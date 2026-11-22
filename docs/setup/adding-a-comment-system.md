@@ -1,7 +1,7 @@
 # 添加评论系统
 
 MkDocs材料允许轻松添加您的第三方评论系统
-使用[主题扩展]选择任何页面的页脚。例如，
+使用[主题扩展][theme extension]选择任何页面的页脚。例如，
 我们将整合[Giscus]，它是开源的、免费的，并使用GitHub
 讨论作为后端。
 
@@ -13,7 +13,7 @@ MkDocs材料允许轻松添加您的第三方评论系统
 
 在使用[Giscus]之前，您需要完成以下步骤：
 
-1.  __安装[Giscus GitHub应用程序]__并授予对存储库的访问权限
+1.  __安装[Giscus GitHub应用程序][Giscus GitHub App]__并授予对存储库的访问权限
     这应该作为GitHub讨论的主题。请注意，这可能是
     存储库与您的文档不同。
 2.  __访问[Giscus]并通过其配置工具生成snippet__
@@ -39,8 +39,8 @@ MkDocs材料允许轻松添加您的第三方评论系统
     ```
 
 [`comments.html`][comments]部分（默认为空）是
-添加由[Giscus]生成的代码段。遵循[主题扩展]的指南
-和[覆盖`comments.html`部分][覆盖部分]：
+添加由[Giscus]生成的代码段。遵循[主题扩展][theme extension]的指南
+和[覆盖`comments.html`部分][overriding partials]：
 
 ``` html hl_lines="3"
 {% if page.meta.comments %}
@@ -107,7 +107,7 @@ comments: true
 [built-in meta plugin].
 
   [Giscus GitHub App]: https://github.com/apps/giscus
-  [theme extension]: ../customization.md
+  [theme extension]: ../customization.md#extending-the-theme
   [comments]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/comments.html
-  [overriding partials]: ../customization.md
+  [overriding partials]: ../customization.md#overriding-partials
   [built-in meta plugin]: ../plugins/meta.md

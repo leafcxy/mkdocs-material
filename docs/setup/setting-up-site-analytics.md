@@ -3,15 +3,15 @@
 与网络上提供的任何其他服务一样，了解您的项目
 文档的实际使用可能是成功的关键因素。材料用于
 MkDocs与[Google Analytics]原生集成，并提供可定制的
-[cookie consent]和[feedback widget]。
+[Cookie 同意][cookie consent]和[反馈组件][feedback widget setup]。
 
   [Google Analytics]: https://developers.google.com/analytics
-  [cookie consent]: ensuring-data-privacy.md
-  [feedback widget]: 
+  [cookie consent]: ensuring-data-privacy.md#cookie-consent
+  [feedback widget setup]: #was-this-page-helpful
 
 ## 配置
 
-### 谷歌分析
+### 谷歌分析 <span id="google-analytics"></span>
 
 `version 7.1.8`
 `default none`
@@ -34,7 +34,7 @@ extra:
 
 ??? question "如何衡量网站搜索使用情况？"
 
-    除了页面浏览量和事件外，还可以更好地跟踪[网站搜索]
+    除了页面浏览量和事件外，还可以更好地跟踪[网站搜索][site search]
     了解人们如何使用您的文档以及他们希望找到什么。
     为了启用站点搜索跟踪，需要执行以下步骤：
 
@@ -46,12 +46,12 @@ extra:
 
   [site search]: setting-up-site-search.md
 
-### 这个页面有用吗？
+### 这个页面有用吗？ <span id="was-this-page-helpful"></span>
 
 `version 8.4.0`
 `default none`
 
-可以在每个页面的底部包括一个简单的[反馈小部件]，
+可以在每个页面的底部包括一个简单的[反馈小部件][feedback widget]，
 鼓励用户即时反馈页面是否有用。
 将以下行添加到`mkdocs.yml`中：
 
@@ -76,7 +76,7 @@ extra:
 
 1.  此功能与[Google Analytics][Analytics]原生集成，
     这就是为什么“提供者”和“财产”也是必需的。然而，它也是
-    可以提供[自定义反馈集成]。
+    可以提供[自定义反馈集成][custom feedback integration]。
 
 2.  您可以在用户之后显示的注释中添加任意HTML标签
     提交反馈，例如链接到反馈表单。
@@ -84,7 +84,7 @@ extra:
 “title”和“ratings”这两个属性都是必需的。请注意，这是允许的
 定义两个以上的评级，例如实现1-5星评级。自从
 反馈小部件将数据发送到第三方服务，当然，它是原生的
-与[cookie同意]功能集成[^2]。
+与[cookie同意][cookie consent]功能集成[^2]。
 
   [^2]:
     如果用户不接受“分析”cookie，则反馈小部件为
@@ -93,7 +93,7 @@ extra:
 ??? question "如何可视化收集到的反馈评级？"
 
     要可视化反馈评级，您需要创建一个自定义报告
-    [谷歌分析]，它将快速显示最差和最好的评分
+    [谷歌分析][Google Analytics]，它将快速显示最差和最好的评分
     项目文档的页面。
 
     1.  转到您的谷歌分析仪表板__
@@ -144,8 +144,7 @@ extra:
 `option analytics.feedback.ratings.icon`
 
 :   `default none` `flag required`
-    此属性必须指向引用[任何捆绑的图标]的有效图标路径
-    使用[自定义图标]主题，否则构建将无法成功。一些流行
+    此属性必须指向有效的图标路径，指向[主题自带的图标][custom icons]，否则构建将无法成功。一些流行
     组合：
 
     * :material-emoticon-happy-outline: + :material-emoticon-sad-outline: – `material/emoticon-happy-outline` + `material/emoticon-sad-outline`
@@ -194,7 +193,7 @@ extra:
     GitHub问题的替代方案是[Google Forms]。
 
   [feedback widget]: #feedback
-  [analytics]: 
+  [analytics]: #google-analytics
   [feedback report]: ../assets/screenshots/feedback-report.png
   [custom feedback integration]: #custom-site-feedback
   [custom icons]: https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons
@@ -204,7 +203,7 @@ extra:
 
 ### 隐藏反馈小部件
 
-[反馈小部件]可以隐藏在带有“hide”字样的文档中`
+[反馈小部件][feedback widget]可以隐藏在带有“hide”字样的文档中`
 财产。在Markdown文件的顶部添加以下行：
 
 ``` yaml
@@ -222,7 +221,7 @@ hide:
 ### 自定义站点分析
 
 为了整合另一家提供
-基于JavaScript的跟踪解决方案，只需按照[主题扩展]的指南进行操作
+基于JavaScript的跟踪解决方案，只需按照[主题扩展][theme extension]的指南进行操作
 并在“override”文件夹中创建一个新的分部。该部分的名称为
 用于通过`mkdocs.yml`配置自定义集成：
 
@@ -244,7 +243,7 @@ hide:
 
     1.  例如，该变量接收在“mkdocs.yml”中设置的值，
         “foobar”代表“财产”。
-    2.  如果你使用的是[即时加载]，你可以使用“位置”$`
+    2.  如果你使用的是[即时加载][instant loading]，你可以使用“位置”$`
         observable用于监听导航事件，该事件始终发出
         当前“URL”。
 
@@ -261,14 +260,14 @@ hide:
         定制集成。如果你正在分享，这尤其有用
         跨多个存储库的自定义集成。
 
-  [theme extension]: ../customization.md
-  [instant loading]: setting-up-navigation.md#_3
+  [theme extension]: ../customization.md#extending-the-theme
+  [instant loading]: setting-up-navigation.md#instant-loading
 
-### 自定义网站反馈
+### 自定义网站反馈 <span id="custom-site-feedback"></span>
 
 自定义反馈小部件集成只需要处理以下事件
 由用户在某些帮助下与反馈小部件交互生成
-[附加JavaScript]：
+[附加JavaScript][additional JavaScript]：
 
 === ":octicons-file-code-16: `docs/javascripts/feedback.js`"
 
@@ -317,4 +316,4 @@ hide:
 &nbsp;
 { #feedback style="margin: 0; height: 0" }
 
-  [additional JavaScript]: ../customization.md
+  [additional JavaScript]: ../customization.md#additional-javascript

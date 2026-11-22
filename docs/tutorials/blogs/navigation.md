@@ -56,7 +56,7 @@ __所需时间:__ 通常为30分钟
     本教程的其余部分假设您正在将博客与
     更宽的网站。
 
-[Setting up a blog]: ../../setup/setting-up-a-blog.md
+[Setting up a blog]: ../../setup/setting-up-a-blog.md#blog-only
 
 !!! tip "添加页面"
 
@@ -294,7 +294,7 @@ MkDocs。当然，Insider Edition也支持这一点，但也提供
 
 !!! example "创建作者信息"
 
-    创建一个文件`docs/blog/.orges.yml`，其中包含以下内容：
+    创建一个文件`docs/blog/.authors.yml`，其中包含以下内容：
 
     ```yaml
     authors:
@@ -432,23 +432,15 @@ MkDocs。当然，Insider Edition也支持这一点，但也提供
         # ...
     ```
 
-## 定制蛞蝓
+## 自定义 URL 路径片段（slug）
 
-如果出于某种原因，您对Material for MkDocs方式不满意
-将标题转换为slugs，您可以创建自己的slugify函数，或者
-可以手动为特定帖子定义一个slug。
+如果想更改 Material for MkDocs 从标题生成 slug 的方式，可以自定义 `slugify` 函数，也可以为某篇文章手动指定 `slug`。
 
-!!! example "Slugify功能"
+!!! example "自定义 slugify 函数"
 
-    要定义自己的slugify函数，您需要编写一个Python函数
-    在给定来自的额外参数的情况下，将文本转换为slug
-    配置。你还需要编写一个函数来返回
-    功能。
+    编写一个 Python 函数，将文本和配置传入的额外参数转换为 slug。还需要编写一个工厂函数，返回实际负责转换的函数。
 
-    假设你想定义两个可以切换的slugify函数。
-    第一个函数返回一个类似于默认slugify函数的slug
-    生产。第二个将结果切割成文字并返回
-    基于最多五个的蛞蝓：
+    以下示例提供两种可切换的行为：第一种生成与默认规则类似的 slug，第二种只保留前五个词：
 
     ```python
     import re, functools, unicodedata
@@ -474,9 +466,7 @@ MkDocs。当然，Insider Edition也支持这一点，但也提供
             return functools.partial(_make_slug_short, **kwargs)
         return functools.partial(_make_slug, **kwargs)
     ```
-    将此代码保存在`ext/slugs.py `中，并添加一个（空）`__init__.py`
-    文件，以指示该目录是一个模块。现在您可以配置
-    您的自定义slugify代码如下：
+    将代码保存到 `ext/slugs.py`，并在同一目录添加一个空的 `__init__.py` 文件。然后在 `mkdocs.yml` 中配置自定义的 `slugify` 函数：
 
     ```yaml hl_lines="4-6"
     plugins:
@@ -487,19 +477,13 @@ MkDocs。当然，Insider Edition也支持这一点，但也提供
             short: true
     ```
 
-    将博客文章的标题改为五个字以上，并观察
-    slugify函数如何缩短URL。将“short”属性更改为
-    `false，你可以再次关闭它。
+    将博客文章的标题改成包含五个以上以空格分隔的词，观察 `slugify` 函数如何缩短 URL。将 `short` 改为 `false` 可关闭这一行为。
 
-如果你只想对一篇博客文章施加影响，你可以定义
-通过在帖子的标题中手动指定它。请注意，这是指
-作为最后的选择。为每个帖子手动指定一个自定义slug
-乏味。
+如果只想更改一篇博客文章的 URL，可以在文章的前置元数据中手动设置 `slug`。不必为每篇文章都手动设置。
 
-!!! example "手动定义slug"
+!!! example "手动设置 slug"
 
-    例如，如果你想让蛞蝓变成“ny-eve”而不是“something”
-    漫长的“新年快乐夜”，你可以添加以下内容：
+    例如，要用 `ny-eve` 代替由标题自动生成的较长路径片段，可以添加以下内容：
 
     ```hl_lines="7"
     ---

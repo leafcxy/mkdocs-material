@@ -12,10 +12,10 @@
 ### 内置离线插件
 
 `version 9.0.0`
-`plugin [offline] – built-in`
+插件：[offline]（内置）
 
-内置的离线插件确保[网站搜索]在您
-将[站点目录]的内容作为下载分发。只需添加
+内置的离线插件确保[网站搜索][site search]在您
+将[站点目录][site directory]的内容作为下载分发。只需添加
 将以下行添加到`mkdocs.yml`：
 
 ``` yaml
@@ -23,14 +23,14 @@ plugins:
   - offline
 ```
 
-有关所有设置的列表，请参阅[插件文档]。
+有关所有设置的列表，请参阅[插件文档][plugin documentation]。
 
   [offline]: ../plugins/offline.md
   [plugin documentation]: ../plugins/offline.md
 
 !!! tip "自动捆绑所有外部资产"
 
-    [内置隐私插件]使使用外部资产变得容易
+    [内置隐私插件][built-in privacy plugin]使使用外部资产变得容易
     在构建离线使用的文档时，因为它会自动
     下载所有外部资产，并将其与您的文档一起分发。
 
@@ -45,10 +45,10 @@ MkDocs的材料提供了许多交互功能，其中一些功能不会
 使用“fetch”API的功能将出错。
 
 因此，在构建离线使用时，请确保禁用以下功能
-配置设置：[即时加载]，[站点分析]，[git仓库]，
-[版本控制]和[评论系统]。
+配置设置：[即时加载][Instant loading]，[站点分析][Site analytics]，[git仓库][Git repository]，
+[版本控制][Versioning]和[评论系统][Comment systems]。
 
-  [Instant loading]: setting-up-navigation.md#_3
+  [Instant loading]: setting-up-navigation.md#instant-loading
   [Site analytics]: setting-up-site-analytics.md
   [Versioning]: setting-up-versioning.md
   [Git repository]: adding-a-git-repository.md

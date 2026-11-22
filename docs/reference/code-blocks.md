@@ -6,7 +6,7 @@ icon: material/code-json
 
 代码块和示例是技术项目的重要组成部分
 文档。MkDocs的材料提供了不同的语法设置方法
-在构建时使用[Pygges]或
+在构建时使用[Pygges][Pygments]或
 在运行时使用JavaScript语法高亮显示。
 
   [Pygments]: https://pygments.org
@@ -29,7 +29,7 @@ markdown_extensions:
 ```
 
 以下部分讨论了如何使用不同的语法突出显示功能
-使用[Pygges]，推荐的高亮显示，因此在使用时不适用
+使用[Pygges][Pygments]，推荐的高亮显示，因此在使用时不适用
 JavaScript语法高亮显示。
 
 请参阅其他配置选项：
@@ -63,7 +63,7 @@ theme:
 
     如果您不想全局启用代码复制按钮，可以启用它们
     对于特定的代码块，使用基于
-    [属性列表]扩展名：
+    [属性列表][Attribute Lists]扩展名：
 
     ```` yaml
     ``` { .yaml .copy }
@@ -84,14 +84,14 @@ theme:
     要启用或禁用复制按钮而不突出显示语法，您可以
     使用“.text”语言短代码，它不会突出显示任何内容。
 
-### 代码选择按钮
+### 代码选择按钮 <span id="code-selection-button"></span>
 
 `sponsors`
 `version insiders-4.32.0`
 `flag experimental`
 
 代码块可以包括一个按钮，允许通过以下方式选择行范围
-用户，这非常适合链接到代码块的特定子部分。这允许用户动态应用[行突出显示]。添加以下内容
+用户，这非常适合链接到代码块的特定子部分。这允许用户动态应用[行突出显示][line highlighting]。添加以下内容
 要全局启用`mkdocs.yml`：
 
 ``` yaml
@@ -104,7 +104,7 @@ theme:
 
     如果不想全局启用代码选择按钮，可以启用
     通过使用基于以下内容的略有不同的语法，将它们用于特定的代码块
-    [属性列表]扩展：
+    [属性列表][Attribute Lists]扩展：
 
     ```` yaml
     ``` { .yaml .select }
@@ -122,7 +122,7 @@ theme:
     ```
     ````
 
-  [line highlighting]: 
+  [line highlighting]: #highlighting-specific-lines
 
 ### 代码注释
 
@@ -148,7 +148,7 @@ theme:
     如果你不想全局启用代码注释，因为你不想
     与自动内联行为一样，您可以为特定对象启用它们
     基于
-    [属性列表]扩展名：
+    [属性列表][Attribute Lists]扩展名：
 
     ```` yaml
     ``` { .yaml .annotate }
@@ -159,15 +159,15 @@ theme:
     请注意，必须先出现的语言简码现在也必须是
     前缀为`。`.
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md
+  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
 
-#### 定制选择器
+#### 定制选择器 <span id="custom-selectors"></span>
 
 `sponsors`
 `version insiders-4.32.0`
 `flag experimental`
 
-通常，代码注释只能[放置在注释中]，因为注释可以
+通常，代码注释只能[放置在注释中][placed in comments]，因为注释可以
 被认为可以安全放置。然而，有时可能需要放置
 代码块中不允许注释的部分的注释，例如
 串。
@@ -180,7 +180,7 @@ extra:
     json: [.s2] # (1)!
 ```
 
-1.  [`.s2`][s2]是[Pygges]为双引号生成的词素名称
+1.  [`.s2`][s2]是[Pygges][Pygments]为双引号生成的词素名称
     串。如果你想在另一个词位中使用代码注释，而不是
     注释、检查代码块并确定需要添加哪个词素
     添加到附加选择器列表中。
@@ -198,14 +198,14 @@ extra:
 1.  :man_raising_hand：我是一个代码注释！我可以包含__格式的“代码”
     text__、图像、。..基本上任何可以用Markdown写的东西。
 
-  [placed in comments]: 
+  [placed in comments]: #adding-annotations
   [s2]: https://github.com/squidfunk/mkdocs-material/blob/87d5ca487b9d9ab95c41ee72813149d214048693/src/assets/stylesheets/main/extensions/pymdownx/_highlight.scss#L45
 
-## 使用
+## 使用 <span id="usage"></span>
 
 代码块必须用两个单独的行括起来，其中包含三个回溯符。
 要为这些块添加语法高亮显示，请直接添加语言简码
-在开放块之后。请参阅[可用词法分析器列表]以查找
+在开放块之后。请参阅[可用词法分析器列表][list of available lexers]以查找
 给定语言的简码：
 
 ```` markdown title="Code block"
@@ -224,7 +224,7 @@ import tensorflow as tf
 
   [list of available lexers]: https://pygments.org/docs/lexers/
 
-### 添加标题
+### 添加标题 <span id="adding-a-title"></span>
 
 为了提供额外的上下文，可以在代码中添加自定义标题
 直接在短代码后使用`title=“<custom-title>”`选项进行阻止，
@@ -252,14 +252,14 @@ def bubble_sort(items):
 
 </div>
 
-### 添加注释
+### 添加注释 <span id="adding-annotations"></span>
 
 代码注释可以放置在代码块中的任何位置
 可以放置块的语言，例如JavaScript的“#！js//。..以及
 `#！js/*。..*/`，用于`#！yaml#。..等[^1]：
 
   [^1]:
-    代码注释需要用[Pyggments]突出显示语法——它们是
+    代码注释需要用[Pygments]突出显示语法——它们是
     目前与JavaScript语法高亮显示或语言不兼容
     他们的语法中没有注释。然而，我们正在积极工作
     关于支持定义代码注释的替代方法，允许
@@ -289,7 +289,7 @@ theme:
 
 </div>
 
-#### 删除评论
+#### 删除评论 <span id="stripping-comments"></span>
 
 `version 8.5.0`
 `flag experimental`
@@ -319,7 +319,7 @@ theme:
 评论。如果要添加多个代码注释，则不能添加注释
 由于技术原因被剥离。
 
-### 添加行号
+### 添加行号 <span id="adding-line-numbers"></span>
 
 可以使用`linenums=“<start>”将行号添加到代码块中`
 选项直接位于短代码之后，而“<start>”表示开始
@@ -348,12 +348,12 @@ def bubble_sort(items):
 
 </div>
 
-### 突出显示特定线条
+### 突出显示特定线条 <span id="highlighting-specific-lines"></span>
 
 通过将行号传递给`hl_lines，可以突出显示特定行`
 参数放在语言简码之后。请注意，行计数开始
 在“1”处，无论作为部分指定的起始行号如何
-[`linenums`][添加行号]：
+[`linenums`][Adding line numbers]：
 
 === "Lines"
 
@@ -403,13 +403,13 @@ def bubble_sort(items):
 
     </div>
 
-  [Adding line numbers]: 
+  [Adding line numbers]: #adding-line-numbers
 
-### 突出显示内联代码块
+### 突出显示内联代码块 <span id="highlighting-inline-code-blocks"></span>
 
 启用[InlineHilite]后，可以对内联应用语法高亮显示
 通过在代码块前加上shebang（即“#！`，紧接着
-相应的[语言简码][可用词法分析器列表]。
+相应的[语言简码][list of available lexers]。
 
 ``` markdown title="Inline code block"
 The `#!python range()` function is used to generate a sequence of numbers.
@@ -421,10 +421,10 @@ The `#!python range()` function is used to generate a sequence of numbers.
 
 </div>
 
-### 嵌入外部文件
+### 嵌入外部文件 <span id="embedding-external-files"></span>
 
 启用[Snippets]时，来自其他文件（包括源文件）的内容
-可以直接使用[`--8<--`符号][Snippets符号]嵌入
+可以直接使用[`--8<--`符号][Snippets notation]嵌入
 在代码块内：
 
 ```` markdown title="Code block with external content"
@@ -445,11 +445,10 @@ last 4 years
 
 ## 自定义
 
-### 自定义语法主题
+### 自定义语法主题 <span id="custom-syntax-theme"></span>
 
-如果使用[Pyggments]，MkDocs的材料提供了[代码块样式]
-[颜色]，采用定制且均衡的调色板构建，效果良好
-两种[配色方案]都同样好：
+如果使用[Pygments]，MkDocs的材料提供了[代码块样式][colors]，采用定制且均衡的调色板构建，效果良好
+两种[配色方案][color schemes]都同样好：
 
 - :material-checkbox-blank-circle:{ style="color: var(--md-code-hl-number-color) " } `--md-code-hl-number-color`
 - :material-checkbox-blank-circle:{ style="color: var(--md-code-hl-special-color) " } `--md-code-hl-special-color`
@@ -471,8 +470,8 @@ Code block foreground, background and line highlight colors are defined via:
 - :material-checkbox-blank-circle:{ style="color: var(--md-code-hl-color) " } `--md-code-hl-color`
 
 假设您想更改“#”的颜色！js“字符串”`。虽然有
-有几种[类型的字符串标记]，它们使用相同的颜色。您可以分配
-使用[附加样式表]添加新颜色：
+有几种[类型的字符串标记][types of string tokens]，它们使用相同的颜色。您可以分配
+使用[附加样式表][additional style sheet]添加新颜色：
 
 === ":octicons-file-code-16: `docs/stylesheets/extra.css`"
 
@@ -490,8 +489,8 @@ Code block foreground, background and line highlight colors are defined via:
     ```
 
 如果你想调整特定类型的字符串，例如“#！js的backticks，你
-可以在[语法主题定义]中查找特定的CSS类名，以及
-将其作为[附加样式表]的一部分覆盖：
+可以在[语法主题定义][syntax theme definition]中查找特定的CSS类名，以及
+将其作为[附加样式表][additional style sheet]的一部分覆盖：
 
 === ":octicons-file-code-16: `docs/stylesheets/extra.css`"
 
@@ -518,7 +517,7 @@ Code block foreground, background and line highlight colors are defined via:
 
 如果你的代码注释中托管了大量内容，它可以是
 通过添加以下内容来增加工具提示的宽度是个好主意
-[附加样式表]：
+[附加样式表][additional style sheet]：
 
 === ":octicons-file-code-16: `docs/stylesheets/extra.css`"
 

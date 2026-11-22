@@ -1,18 +1,18 @@
 # 更改颜色
 
 作为任何适当的材料设计实施，MkDocs材料支持
-谷歌的原始[调色板]，可以通过以下方式轻松配置
+谷歌的原始[调色板][color palette]，可以通过以下方式轻松配置
 `mkdocs.yml`。此外，颜色可以通过几行CSS进行定制
-通过使用[CSS变量][自定义颜色]来适应您的品牌标识。
+通过使用[CSS变量][custom colors]来适应您的品牌标识。
 
   [color palette]: http://www.materialui.co/colors
-  [custom colors]: #_11
+  [custom colors]: #custom-colors
 
 ## 配置
 
-### 调色板
+### 调色板 <span id="color-palette"></span>
 
-#### 配色方案
+#### 配色方案 <span id="color-scheme"></span>
 
 `version 5.2.0`
 `default _default_`
@@ -50,7 +50,7 @@ theme:
   })
 </script>
 
-#### 原色
+#### 原色 <span id="primary-color"></span>
 
 `version 0.2.0`
 `default _indigo_`
@@ -103,9 +103,9 @@ theme:
   })
 </script>
 
-请参阅下面的指南，了解如何设置[自定义颜色]。
+请参阅下面的指南，了解如何设置[自定义颜色][custom colors]。
 
-#### 重点色
+#### 重点色 <span id="accent-color"></span>
 
 `version 0.2.0`
 `default _indigo_`
@@ -160,9 +160,9 @@ theme:
   })
 </script>
 
-请参阅下面的指南，了解如何设置[自定义颜色]。
+请参阅下面的指南，了解如何设置[自定义颜色][custom colors]。
 
-### 调色板切换
+### 调色板切换 <span id="color-palette-toggle"></span>
 
 `version 7.1.0`
 `default none`
@@ -191,7 +191,7 @@ theme:
 
 1.  请注意，“theme.palette”设置现在被定义为列表。
 
-2.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+2.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -203,8 +203,8 @@ theme:
     </div>
 
 此配置将在搜索栏旁边呈现调色板切换。
-请注意，您还可以为[`primary][palette.primary]定义单独的设置
-以及每个调色板的[重音][调色板.重音]。
+请注意，您还可以为[`primary`][palette.primary]定义单独的设置
+以及每个调色板的[重音][palette.accent]。
 
 必须为每个切换设置以下属性：
 
@@ -224,12 +224,12 @@ theme:
 
 :   `default none` `flag required`
     此属性用作切换的“title”属性，应设置为
-    一个可辨别的名称，以提高可访问性。它被渲染为[工具提示]。
+    一个可辨别的名称，以提高可访问性。它被渲染为[工具提示][tooltip]。
 
   [palette.scheme]: #color-scheme
-  [palette.primary]: 
+  [palette.primary]: #primary-color
   [palette.accent]: #accent-color
-  [icon search]: ../reference/icons-emojis.md#_2
+  [icon search]: ../reference/icons-emojis.md#search
   [tooltip]: ../reference/tooltips.md
 
 ### 系统偏好
@@ -265,7 +265,7 @@ theme:
 其定义的顺序。匹配的第一个媒体查询选择
 默认调色板。
 
-#### 自动亮/暗模式
+#### 自动亮/暗模式 <span id="automatic-light-dark-mode"></span>
 
 `version 9.5.0`
 `flag experimental`
@@ -301,7 +301,7 @@ theme:
         name: Switch to system preference
 ```
 
-1.  您还可以为[`primary][palette.primary]和
+1.  您还可以为[`primary`][palette.primary]和
     每个调色板都有不同的颜色，即不同的颜色
     亮暗模式。
 
@@ -313,17 +313,17 @@ MkDocs的材料现在将在每次操作时更改调色板
 
 ## 自定义
 
-### 自定义颜色
+### 自定义颜色 <span id="custom-colors"></span>
 
 `version 5.0.0`
 `example custom-colors`
 
-MkDocs的材质使用[CSS变量]实现颜色（自定义
+MkDocs的材质使用[CSS变量][CSS variables]实现颜色（自定义
 属性）。如果你想自定义调色板之外的颜色（例如
-使用您的品牌特定颜色），您可以添加[附加样式表]，然后
+使用您的品牌特定颜色），您可以添加[附加样式表][additional style sheet]，然后
 调整CSS变量的值。
 
-首先，设置[`primary][palette.primary]或[`speech][paletter.speech]值
+首先，设置[`primary`][palette.primary]或[`scheme`][palette.scheme]值
 在`mkdocs.yml`到`custom`中，向要定义的主题发出信号
 自定义颜色，例如，当你想覆盖“原色”时：
 
@@ -354,19 +354,19 @@ add:
       - stylesheets/extra.css
     ```
 
-有关所有CSS变量的列表，请参阅包含[color-definitions]的文件。
+有关所有CSS变量的列表，请参阅包含[color-definitions][color definitions]的文件。
 
   [CSS variables]: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
   [color definitions]: https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/_colors.scss
   [additional style sheet]: ../customization.md#additional-css
 
 
-### 自定义配色方案
+### 自定义配色方案 <span id="custom-color-schemes"></span>
 
 除了覆盖特定颜色外，您还可以创建自己的命名配色方案
 通过将定义包装在`[data-md配色方案=“…”]中`
-[属性选择器]，然后您可以通过`mkdocs.yml`进行设置，如下所述
-在[配色方案][调色板.方案]部分：
+[属性选择器][attribute selector]，然后您可以通过`mkdocs.yml`进行设置，如下所述
+在[配色方案][palette.scheme]部分：
 
 === ":octicons-file-code-16: `docs/stylesheets/extra.css`"
 
@@ -398,6 +398,6 @@ color函数，并从`-md-hue` CSS变量推断其颜色。你
 }
 ```
 
-1.  “色调”值必须在“[0，360]”范围内`
+1.  “色调”值必须在`[0, 360]` 范围内
 
   [attribute selector]: https://www.w3.org/TR/selectors-4/#attribute-selectors

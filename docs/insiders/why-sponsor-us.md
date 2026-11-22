@@ -3,24 +3,24 @@
 MkDocs材料是一个开发和维护的开源项目
 由一小群人组成，他们希望投入尽可能多的时间
 让它每天都变得更好。我们需要依靠财政支持
-[我们出色的赞助商]，他们为我们争取了时间。
+[我们出色的赞助商][our awesome sponsors]，他们为我们争取了时间。
 
-  [become a monthly sponsor]: sponsoring-tier.md
+  [become a monthly sponsor]: sponsoring-tiers.md#monthly-sponsoring
   [our awesome sponsors]: our-sponsors.md
   [squidfunk's sponsor profile]: https://github.com/sponsors/squidfunk/
 
 ## 我们是谁
 
-虽然[该项目是由@squidfunk作为个人副项目启动的]
-该项目在2020年采用的[赞助软件]模型使他能够构建一个
-他周围有一群了不起的人，[他们现在正在帮助他]
+虽然[该项目是由@squidfunk作为个人副项目启动的][the project was started]
+该项目在2020年采用的[赞助软件][sponsorware]模型使他能够构建一个
+他周围有一群了不起的人，[他们现在正在帮助他][who are now helping him]
 维护项目，以及不断增长的赞助商名单。
 
   [the project was started]: #how-it-started
   [sponsorware]: #sponsorware
   [who are now helping him]: #where-we-are-today
 
-### 它是如何开始的
+### 它是如何开始的 <span id="how-it-started"></span>
 
 2015年，尽管@squidfunk已经在这个行业工作了10年，但它仍然是一个相当新的行业
 开源。刚刚完成了他最新的开源项目，他意识到
@@ -35,7 +35,7 @@ MkDocs材料是一个开发和维护的开源项目
 
 他需要建立一个主题。
 
-几个月后，在2016年2月，MkDocs材料的[第一版]
+几个月后，在2016年2月，MkDocs材料的[第一版][the first version]
 释放。在接下来的几年里，@squidfunk是唯一的维护者，无数
 实现了功能请求并修复了错误，使项目能够
 到2019年底，在GitHub上获得近3000颗星。它
@@ -46,15 +46,15 @@ MkDocs材料是一个开发和维护的开源项目
 项目开始从个人项目转变为
 社区驱动的工作，开始感觉像是一份次要的工作。拥有初级
 当他们的副项目成功时，许多维护人员会精疲力竭，这
-这就是为什么@squidfunk决定尝试一下[赞助商软件]模型
+这就是为什么@squidfunk决定尝试一下[赞助商软件][sponsorware]模型
 MkDocs的主要工作材料。结果证明，这是一个令人难以置信的成功。
 
   [the first version]: https://github.com/squidfunk/mkdocs-material/releases/tag/0.1.0
 
-### 赞助软件
+### 赞助软件 <span id="sponsorware"></span>
 
 赞助商软件模型很简单——作为赞助商，您可以提前访问
-作为[内部人员]的一部分，MkDocs材料的最新和最伟大的功能
+作为[内部人员][Insiders]的一部分，MkDocs材料的最新和最伟大的功能
 其他人都可以享受它们，因为是你让它们成为可能
 你的财务贡献。
 
@@ -69,7 +69,7 @@ MkDocs的主要工作材料。结果证明，这是一个令人难以置信的�
 
   [Insiders]: index.md
 
-### 我们今天在哪里
+### 我们今天在哪里 <span id="where-we-are-today"></span>
 
 快进到今天，Material for MkDocs是一个由支持的蓬勃发展的社区
 该项目资金充足，拥有500多个赞助商和一个规模虽小但不断壮大的团队，
@@ -77,7 +77,7 @@ MkDocs的主要工作材料。结果证明，这是一个令人难以置信的�
 到目前为止，它的初衷已经远远不止是一个主题——
 基于MkDocs构建的强大文档框架。
 
-从2020年开始，随着[赞助商软件]模式的出现
+从2020年开始，随着[赞助商软件][sponsorware]模式的出现
 发布量增加了一倍多，新版本即将发布
 平均每1-2周。此外，我们的团队能够快速响应问题
 有可能，将未解决问题的数量保持在较低水平。

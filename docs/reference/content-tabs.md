@@ -30,7 +30,7 @@ markdown_extensions:
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
   [Tabbed]: ../setup/extensions/python-markdown-extensions.md#tabbed
 
-### 锚链接
+### 锚链接 <span id="anchor-links"></span>
 
 `version 9.5.0`
 `flag experimental`
@@ -51,7 +51,7 @@ markdown_extensions:
 
 !!! tip "可读锚链接"
 
-    [Python Markdown扩展]9.6增加了对[slugification]的支持
+    [Python Markdown扩展][Python Markdown Extensions]9.6增加了对[slugification]的支持
     内容标签，它可以生成更美观、更易读的锚链接。
     使用以下行启用slugify功能：
 
@@ -63,14 +63,14 @@ markdown_extensions:
               case: lower
     ```
 
-    如需了解更多信息，请[参阅扩展指南][取消订阅]。
+    如需了解更多信息，请[参阅扩展指南][slugification]。
 
-  [tab_1]: 
-  [tab_2]: ../publishing-your-site.md
+  [tab_1]: #__tabbed_1_3
+  [tab_2]: ../publishing-your-site.md#__tabbed_1_2
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [slugification]: ../setup/extensions/python-markdown-extensions.md
+  [slugification]: ../setup/extensions/python-markdown-extensions.md#+pymdownx.tabbed.slugify
 
-### 链接内容选项卡
+### 链接内容选项卡 <span id="linked-content-tabs"></span>
 
 `version 8.3.0`
 `feature`
@@ -88,7 +88,7 @@ theme:
 内容选项卡是基于其标签链接的，而不是偏移。这意味着所有
 当用户单击内容选项卡时，具有相同标签的选项卡将被激活
 无论集装箱内的顺序如何。此外，此功能完全
-与[即时加载]集成，并在页面加载过程中保持不变。
+与[即时加载][instant loading]集成，并在页面加载过程中保持不变。
 
 === "Feature enabled"
 
@@ -98,13 +98,13 @@ theme:
 
     [![Linked content tabs disabled]][Linked content tabs disabled]
 
-  [instant loading]: ../setup/setting-up-navigation.md#_3
+  [instant loading]: ../setup/setting-up-navigation.md#instant-loading
   [Linked content tabs enabled]: ../assets/screenshots/content-tabs-link.png
   [Linked content tabs disabled]: ../assets/screenshots/content-tabs.png
 
-## 使用
+## 使用 <span id="usage"></span>
 
-### 分组代码块
+### 分组代码块 <span id="grouping-code-blocks"></span>
 
 代码块是要分组的主要目标之一，可以考虑
 内容选项卡的一种特殊情况，因为具有单个代码块的选项卡总是
@@ -160,7 +160,7 @@ theme:
 
 </div>
 
-### 分组其他内容
+### 分组其他内容 <span id="grouping-other-content"></span>
 
 当内容选项卡包含多个代码块时，将使用以下方式呈现
 水平间距。垂直间距永远不会增加，但可以实现
@@ -196,11 +196,11 @@ theme:
 
 </div>
 
-### 嵌入式内容
+### 嵌入式内容 <span id="embedded-content"></span>
 
 启用[SuperFences]后，内容选项卡可以包含任意嵌套
 内容，包括其他内容选项卡，可以嵌套在其他块中，如
-[警告]或blockquotes：
+[警告][admonitions]或blockquotes：
 
 ``` title="警告中的内容选项卡"
 !!! example

@@ -13,8 +13,8 @@ MkDocs的材料最初是[MkDocs][MkDocs]的主题，但后来
 
 - **模块化：**内置插件设计为模块化，因此它们可以
   易于组合以实现复杂的管道。例如
-  [离线]、[优化]和[隐私]插件可以一起使用来构建
-  真正的[离线功能文档]。
+  [离线][offline]、[优化][optimize]和[隐私][privacy]插件可以一起使用来构建
+  真正的[离线功能文档][offline-capable documentation]。
 
 - **互操作性：**内置插件的设计与
   可能，因此它们可以与其他插件结合使用，包括
@@ -27,7 +27,7 @@ MkDocs的材料最初是[MkDocs][MkDocs]的主题，但后来
   数千页。
 
   [mkdocs]: https://www.mkdocs.org/
-  [design principles]: ../design-principles.md
+  [design principles]: ../philosophy.md#design-principles
   [offline-capable documentation]: ../setup/building-for-offline-usage.md
 
 ## Categories
@@ -147,7 +147,7 @@ MkDocs的材料最初是[MkDocs][MkDocs]的主题，但后来
 
     ---
 
-    离线插件增加了对构建[离线功能文档]的支持，
+    离线插件增加了对构建[离线功能文档][offline-capable documentation]的支持，
     因此，您可以将[`site`目录][mkdocs.site_dir]作为`.zip分发`
     可以下载的文件。
 
@@ -228,7 +228,7 @@ MkDocs的材料最初是[MkDocs][MkDocs]的主题，但后来
 
 ## 结构
 
-### 多个实例
+### 多个实例 <span id="multiple-instances"></span>
 
 几个内置插件支持多个实例，这意味着
 它们可以在同一配置文件中多次使用，从而允许

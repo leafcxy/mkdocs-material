@@ -9,12 +9,12 @@ MkDocs的材料支持大量的[Python Markdown]扩展，
 
 ## 支持的扩展
 
-### 缩写
+### 缩写 <span id="abbreviations"></span>
 
 `version 1.0.0`
-`extension [abbr][Abbreviations]`
+扩展：[abbr][Abbreviations]
 
-[缩写]扩展增加了向
+[缩写][Abbreviations]扩展增加了向
 元素，通过用`abbr`标签包裹它。只有纯文本（无标记）
 支持。通过`mkdocs.yml`启用它：
 
@@ -29,13 +29,13 @@ markdown_extensions:
 - [Adding a glossary]
 
   [Abbreviations]: https://python-markdown.github.io/extensions/abbreviations/
-  [Adding abbreviations]: ../../reference/tooltips.md
-  [Adding a glossary]: ../../reference/tooltips.md
+  [Adding abbreviations]: ../../reference/tooltips.md#adding-abbreviations
+  [Adding a glossary]: ../../reference/tooltips.md#adding-a-glossary
 
-### 告诫
+### 告诫 <span id="admonition"></span>
 
 `version 0.1.0`
-`extension [admonition][Admonition]`
+扩展：[admonition][Admonition]
 
 [Admonition]扩展增加了对警告的支持，通常称为
 _call-outs_，可以使用简单的语法在Markdown中定义。使能够
@@ -54,18 +54,18 @@ markdown_extensions:
 - [Supported types]
 
   [Admonition]: https://python-markdown.github.io/extensions/admonition/
-  [Adding admonitions]: ../../reference/admonitions.md
-  [Changing the title]: ../../reference/admonitions.md
-  [Removing the title]: ../../reference/admonitions.md
-  [Supported types]: ../../reference/admonitions.md
+  [Adding admonitions]: ../../reference/admonitions.md#usage
+  [Changing the title]: ../../reference/admonitions.md#changing-the-title
+  [Removing the title]: ../../reference/admonitions.md#removing-the-title
+  [Supported types]: ../../reference/admonitions.md#supported-types
 
-### 属性列表
+### 属性列表 <span id="attribute-lists"></span>
 
 `version 0.1.0`
-`extension [attr_list][Attribute Lists]`
+扩展：[attr_list][Attribute Lists]
 
 [Attribute Lists]扩展允许添加HTML属性和CSS类
-到[几乎所有][属性列表限制]Markdown内联和块级别
+到[几乎所有][Attribute Lists limitations]Markdown内联和块级别
 具有特殊语法的元素。通过`mkdocs.yml`启用它：
 
 ``` yaml
@@ -87,20 +87,20 @@ markdown_extensions:
   [Attribute Lists]: https://python-markdown.github.io/extensions/attr_list/
   [Attribute Lists limitations]: https://python-markdown.github.io/extensions/attr_list/#limitations
   [Using grids]: ../../reference/grids.md#using-grids
-  [Adding buttons]: ../../reference/buttons.md
-  [Adding tooltips]: ../../reference/tooltips.md
-  [Using icons with colors]: ../../reference/icons-emojis.md
-  [Using icons with animations]: ../../reference/icons-emojis.md
-  [Image alignment]: ../../reference/images.md
-  [Image lazy-loading]: ../../reference/images.md
+  [Adding buttons]: ../../reference/buttons.md#adding-buttons
+  [Adding tooltips]: ../../reference/tooltips.md#adding-tooltips
+  [Using icons with colors]: ../../reference/icons-emojis.md#with-colors
+  [Using icons with animations]: ../../reference/icons-emojis.md#with-animations
+  [Image alignment]: ../../reference/images.md#image-alignment
+  [Image lazy-loading]: ../../reference/images.md#image-lazy-loading
 
-### 定义列表
+### 定义列表 <span id="definition-lists"></span>
 
 `version 1.1.0`
-`extension [def_list][Definition Lists]`
+扩展：[def_list][Definition Lists]
 
 [Definition Lists]扩展增加了添加定义列表的能力（更多
-通常称为[描述列表]-HTML中的“dl”）通过Markdown转换为
+通常称为[描述列表][description lists]-HTML中的“dl”）通过Markdown转换为
 文件。通过`mkdocs.yml`启用它：
 
 ``` yaml
@@ -114,12 +114,12 @@ markdown_extensions:
 
   [Definition Lists]: https://python-markdown.github.io/extensions/definition_lists/
   [description lists]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
-  [Using definition lists]: ../../reference/lists.md
+  [Using definition lists]: ../../reference/lists.md#using-definition-lists
 
-### 脚注
+### 脚注 <span id="footnotes"></span>
 
 `version 1.0.0`
-`extension [footnotes][Footnotes]`
+扩展：[footnotes][Footnotes]
 
 [Footnotes]扩展允许定义内联脚注，然后
 在文档的所有Markdown内容下方呈现。通过`mkdocs.yml`启用它：
@@ -135,13 +135,13 @@ markdown_extensions:
 - [Adding footnote content]
 
   [Footnotes]: https://python-markdown.github.io/extensions/footnotes/
-  [Adding footnote references]: ../../reference/footnotes.md
-  [Adding footnote content]: ../../reference/footnotes.md
+  [Adding footnote references]: ../../reference/footnotes.md#adding-footnote-references
+  [Adding footnote content]: ../../reference/footnotes.md#adding-footnote-content
 
-### HTML中的Markdown
+### HTML中的Markdown <span id="markdown-in-html"></span>
 
 `version 0.1.0`
-`extension [md_in_html][Markdown in HTML]`
+扩展：[md_in_html][Markdown in HTML]
 
 [Markdown in HTML]扩展允许在HTML中编写Markdown，
 这对于用自定义元素包装Markdown内容非常有用。启用它
@@ -165,16 +165,16 @@ markdown_extensions:
 - [Image captions]
 
   [Markdown in HTML]: https://python-markdown.github.io/extensions/md_in_html/
-  [Using annotations]: ../../reference/annotations.md
-  [Using grids]: ../../reference/grids.md
-  [Image captions]: ../../reference/images.md
+  [Using annotations]: ../../reference/annotations.md#usage
+  [Using grids]: ../../reference/grids.md#usage
+  [Image captions]: ../../reference/images.md#image-captions
 
-### 目录
+### 目录 <span id="table-of-contents"></span>
 
 `version 0.1.0`
-`extension [toc][Table of Contents]`
+扩展：[toc][Table of Contents]
 
-[目录]扩展会自动生成目录
+[目录][Table of Contents]扩展会自动生成目录
 从文档中，MkDocs的材料将作为结果的一部分呈现
 页面。通过`mkdocs.yml`启用它：
 
@@ -191,7 +191,7 @@ markdown_extensions:
 :   `version 7.3.5` `default computed` –
     此选项在右侧导航中设置目录的标题
     侧边栏，通常自动来源于以下内容的翻译
-    在`mkdocs.yml`中设置的[站点语言]：
+    在`mkdocs.yml`中设置的[站点语言][site language]：
 
     ``` yaml
     markdown_extensions:
@@ -235,7 +235,7 @@ markdown_extensions:
           permalink_title: Anchor link to this section for reference
     ```
 
-`option toc.slugify`
+`option toc.slugify` <span id="+toc.slugify"></span>
 
 :   `default _toc.slugify_` 此选项允许
     slug功能的定制。对于某些语言，默认值可能不是
@@ -288,13 +288,13 @@ MkDocs的材料，这就是为什么它们可能会产生意想不到的结果�
 他们的风险由你自己承担。
 
   [Table of Contents]: https://python-markdown.github.io/extensions/toc/
-  [site language]: ../changing-the-language.md
+  [site language]: ../changing-the-language.md#site-language
   [Slugs]: https://facelessuser.github.io/pymdown-extensions/extras/slugs/
 
 ### Tables
 
 `version 0.1.0`
-`extension [tables][Tables]`
+扩展：[tables][Tables]
 
 [Tables]扩展通过使用
 简单的语法。通过`mkdocs.yml`启用它（尽管它应该通过以下方式启用
@@ -311,8 +311,8 @@ markdown_extensions:
 - [Column alignment]
 
   [Tables]: https://python-markdown.github.io/extensions/tables/
-  [Using data tables]: ../../reference/data-tables.md
-  [Column alignment]: ../../reference/data-tables.md
+  [Using data tables]: ../../reference/data-tables.md#usage
+  [Column alignment]: ../../reference/data-tables.md#column-alignment
 
 ## 被取代的扩展
 
@@ -323,9 +323,9 @@ markdown_extensions:
 ### Fenced Code Blocks
 
 `version 0.1.0`
-`extension [fenced_code_blocks][Fenced Code Blocks]`
+扩展：[fenced_code_blocks][Fenced Code Blocks]
 
-被[超级围栏]取代。这个扩展可能仍然有效，但
+被[超级围栏][SuperFences]取代。这个扩展可能仍然有效，但
 [SuperFences]扩展在许多方面都是优越的，因为它允许任意
 嵌套，因此建议。
 
@@ -335,11 +335,11 @@ markdown_extensions:
 ### CodeHilite
 
 `version 0.1.0`
-`extension [codehilite][CodeHilite]`
+扩展：[codehilite][CodeHilite]
 
-被[突出显示]取代。对CodeHilite的支持已于年终止
+被[突出显示][Highlight]取代。对CodeHilite的支持已于年终止
 <！--md:version6.0.0-->，因为[Highlight]与其他工具有更好的集成
-基本扩展，如[超级围栏]和[内联Hilite]。
+基本扩展，如[超级围栏][SuperFences]和[内联Hilite][InlineHilite]。
 
   [CodeHilite]: https://python-markdown.github.io/extensions/code_hilite/
   [CodeHilite support]: https://github.com/squidfunk/mkdocs-material/releases/tag/0.1.0

@@ -27,8 +27,8 @@ markdown_extensions:
 - [Markdown in HTML]
 - [SuperFences]
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md
-  [Markdown in HTML]: ../setup/extensions/python-markdown.md
+  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
+  [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
   [SuperFences]: ../setup/extensions/python-markdown-extensions.md#superfences
 
 ### 注释图标
@@ -36,7 +36,7 @@ markdown_extensions:
 `version 9.2.0`
 
 注释图标可以更改为与主题绑定的任何图标，甚至
-a[自定义图标]，例如指向材质/右箭头圆圈：。只需添加以下内容
+a[自定义图标][custom icon]，例如指向材质/右箭头圆圈：。只需添加以下内容
 指向`mkdocs.yml`的行：
 
 ``` yaml
@@ -45,7 +45,7 @@ theme:
     annotation: material/arrow-right-circle # (1)!
 ```
 
-1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -68,9 +68,9 @@ theme:
 - :material-plus-circle-outline: - `material/plus-circle-outline`
 
   [custom icon]: ../setup/changing-the-logo-and-icons.md#additional-icons
-  [icon search]: icons-emojis.md#_2
+  [icon search]: icons-emojis.md#search
 
-## 使用
+## 使用 <span id="usage"></span>
 
 ### 使用注释
 
@@ -133,9 +133,9 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 
 #### 警告
 
-[警告]的标题和正文也可以通过添加注释来承载注释
+[警告][admonitions]的标题和正文也可以通过添加注释来承载注释
 `在类型限定符后注释修饰符，类似于
-[内联块]工作：
+[内联块][inline blocks]工作：
 
 ``` markdown title="Admonition with annotations"
 !!! note annotate "Phasellus posuere in sem ut cursus (1)"
@@ -162,7 +162,7 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 </div>
 
   [admonitions]: admonitions.md
-  [inline blocks]: admonitions.md
+  [inline blocks]: admonitions.md#inline-blocks
 
 #### 在内容选项卡中
 
@@ -206,7 +206,7 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 #### 在其他方面
 
 [Attribute Lists]扩展是向添加注释的关键要素
-大多数元素，但它有一些[局限性]。然而，总是有可能
+大多数元素，但它有一些[局限性][limitations]。然而，总是有可能
 利用HTML中的Markdown扩展名将任意元素包装成
 `div与`comment`类：
 
@@ -233,7 +233,7 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 
 使用此技巧，还可以将注释添加到blockquotes、列表和许多其他文件中
 [Attribute Lists]扩展不支持的其他元素。
-此外，请注意[代码块遵循不同的语义]。
+此外，请注意[代码块遵循不同的语义][code blocks follow different semantics]。
 
 !!! warning "Known limitations"
 
@@ -242,5 +242,5 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
     is very tricky to get right. This might be fixed in the future.
 
   [limitations]: https://python-markdown.github.io/extensions/attr_list/#limitations
-  [code blocks follow different semantics]: code-blocks.md
+  [code blocks follow different semantics]: code-blocks.md#adding-annotations
   [data tables]: data-tables.md

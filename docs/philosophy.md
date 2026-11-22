@@ -7,7 +7,7 @@
 
   [conventions]: conventions.md
 
-## 设计原则
+## 设计原则 <span id="design-principles"></span>
 
 - **It's just Markdown**: 专注于文档的内容，并在几分钟内创建一个专业的静态网站。无需了解HTML、CSS或JavaScript——让Material for MkDocs为您完成繁重的工作。
 

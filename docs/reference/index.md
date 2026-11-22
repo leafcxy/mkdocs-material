@@ -9,11 +9,11 @@ MkDocs的材料包含了许多强大的功能，使技术
 
 ## 使用
 
-### 设置页面标题`
+### 设置页面标题` <span id="setting-the-page-title"></span>
 
 每个页面都有一个指定的标题，用于导航侧边栏，用于
-[社交卡]和其他地方。而MkDocs试图自动
-在[四步过程]中确定页面的标题，标题也可以是
+[社交卡][social cards]和其他地方。而MkDocs试图自动
+在[四步过程][four step process]中确定页面的标题，标题也可以是
 用front matter的`title`属性显式设置：
 
 ``` yaml
@@ -25,9 +25,9 @@ title: Lorem ipsum dolor sit amet # (1)!
 ...
 ```
 
-1.  此行在HTML文档的内部设置[`title][title]
-    将生成的页面的['head][head]设置为给定值。请注意
-    站点标题通过[`site_name][site_name]设置，并附加一个
+1.  此行在HTML文档的内部设置[`title`][title]
+    将生成的页面的[`head`][head]设置为给定值。请注意
+    站点标题通过[`site_name`][site_name]设置，并附加一个
     冲撞
 
   [social cards]: ../setup/setting-up-social-cards.md
@@ -36,11 +36,11 @@ title: Lorem ipsum dolor sit amet # (1)!
   [head]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
   [site_name]: https://www.mkdocs.org/user-guide/configuration/#site_name
 
-### 设置页面描述`
+### 设置页面描述` <span id="setting-the-page-description"></span>
 
 Markdown文件可以包含添加到以下“meta”标签中的描述
-页面，也用于[社交卡]。设定一个好主意
-如果满足以下条件，则将`mkdocs.yml`中的['site_description][site_description]作为回退值
+页面，也用于[社交卡][social cards]。设定一个好主意
+如果满足以下条件，则将`mkdocs.yml`中的[`site_description`][site_description]作为回退值
 作者没有明确定义Markdown文件的描述：
 
 ``` yaml
@@ -57,13 +57,13 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor. # (1)!
 
   [site_description]: https://www.mkdocs.org/user-guide/configuration/#site_description
 
-### 设置页面图标`
+### 设置页面图标` <span id="setting-the-page-icon"></span>
 
 `version 9.2.0`
 `flag experimental`
 
 可以为每个页面分配一个图标，然后将其呈现为
-导航侧边栏以及[导航选项卡]（如果启用）。使用正面
+导航侧边栏以及[导航选项卡][navigation tabs]（如果启用）。使用正面
 matter `icon`属性引用图标，在
 Markdown文件的顶部：
 
@@ -76,7 +76,7 @@ icon: material/emoticon-happy # (1)!
 ...
 ```
 
-1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -88,10 +88,10 @@ icon: material/emoticon-happy # (1)!
     </div>
 
   [Insiders]: ../insiders/index.md
-  [icon search]: icons-emojis.md#_2
-  [navigation tabs]: ../setup/setting-up-navigation.md#_9
+  [icon search]: icons-emojis.md#search
+  [navigation tabs]: ../setup/setting-up-navigation.md#navigation-tabs
 
-### 设置页面状态`
+### 设置页面状态` <span id="setting-the-page-status"></span>
 
 `version 9.2.0`
 `flag experimental`
@@ -142,7 +142,7 @@ status: new
 
 [example for a custom page status]: https://mkdocs-material.github.io/examples/page-status/
 
-### 设置页面的副标题`
+### 设置页面的副标题` <span id="setting-the-page-subtitle"></span>
 
 `version 9.6.0`
 `flag experimental`
@@ -162,7 +162,7 @@ subtitle: Nullam urna elit, malesuada eget finibus ut, ac tortor
 
 ### 设置页面模板`
 
-如果您使用[主题扩展]并在
+如果您使用[主题扩展][theme extension]并在
 `override目录，您可以为特定页面启用它。添加以下内容
 Markdown文件顶部的行：
 
@@ -177,7 +177,7 @@ template: custom.html
 
 ??? question "如何为整个文件夹设置页面模板？"
 
-    借助[内置元插件]，您可以设置自定义模板
+    借助[内置元插件][built-in meta plugin]，您可以设置自定义模板
     对于整个部分和所有嵌套页面，通过创建一个`.meta.yml`文件
     在相应的文件夹中，包含以下内容：
 
@@ -185,7 +185,7 @@ template: custom.html
     template: custom.html
     ```
 
-  [theme extension]: ../customization.md
+  [theme extension]: ../customization.md#extending-the-theme
   [built-in meta plugin]: ../plugins/meta.md
 
 ## 自定义
@@ -194,9 +194,7 @@ template: custom.html
 
 #### :material-check-all: 在所有页面上
 
-为了在文档中添加自定义的“meta”标签，您可以[扩展主题
-][主题扩展]和[覆盖'extrahead'块][覆盖块]，
-例如，通过“robots”属性为搜索引擎添加索引策略：
+要为文档添加自定义 `meta` 标签，可以[扩展主题][theme extension]并[覆盖 `extrahead` 块][overriding blocks]。例如，通过 `robots` 属性指定搜索引擎的索引策略：
 
 ``` html
 {% extends "base.html" %}
@@ -226,9 +224,9 @@ template: custom.html
 {% endblock %}
 ```
 
-你现在可以像[`title][title]一样使用`robots`
-[`description][description]来设置值。请注意，在这种情况下
+你现在可以像[`title`][title]一样使用`robots`
+[`description`][description]来设置值。请注意，在这种情况下
 模板定义了一个“else”分支，如果没有给出，它将设置默认值。
 
-  [title]: 
-  [description]: #_1
+  [title]: #setting-the-page-title
+  [description]: #setting-the-page-description

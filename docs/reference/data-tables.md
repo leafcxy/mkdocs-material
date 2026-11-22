@@ -6,11 +6,11 @@ icon: material/table-edit
 
 MkDocs的材质定义了数据表的默认样式——这是一种很好的方式
 在项目文档中呈现表格数据。此外，定制
-例如[可排序表]可以通过第三方库和一些
-[附加JavaScript]。
+例如[可排序表][sortable tables]可以通过第三方库和一些
+[附加JavaScript][additional JavaScript]。
 
   [sortable tables]: #sortable-tables
-  [additional JavaScript]: ../customization.md
+  [additional JavaScript]: ../customization.md#additional-javascript
 
 ## 配置
 
@@ -28,7 +28,7 @@ markdown_extensions:
 
   [Tables]: ../setup/extensions/python-markdown.md#tables
 
-## 使用
+## 使用 <span id="usage"></span>
 
 数据表可以在项目文档的任何位置使用，并且可以
 包含任意Markdown，包括内联代码块，以及[图标和
@@ -54,10 +54,10 @@ markdown_extensions:
 
   [icons and emojis]: icons-emojis.md
 
-### 列对齐
+### 列对齐 <span id="column-alignment"></span>
 
 如果你想将特定列与“左”、“中”或“右”对齐，你
-可以使用[常规Markdown语法]在开头放置“：”字符
+可以使用[常规Markdown语法][regular Markdown syntax]在开头放置“：”字符
 和/或分隔器的末端。
 
 === "Left"
@@ -124,11 +124,11 @@ markdown_extensions:
 
 ## 自定义
 
-### 可排序表
+### 可排序表 <span id="sortable-tables"></span>
 
 如果你想让数据表可排序，你可以添加[tablesort]，它是
 与Material for MkDocs原生集成，也可与[instant
-通过[附加JavaScript]加载]：
+通过[附加JavaScript][additional JavaScript]加载]：
 
 === ":octicons-file-code-16: `docs/javascripts/tablesort.js`"
 
@@ -170,9 +170,8 @@ markdown_extensions:
 
 </div>
 
-请注意，[tableort]提供了其他比较实现，如
-数字、文件大小、日期和月份名称。请参阅[表格文档]
-[表格]了解更多信息。
+请注意，[tablesort]提供了其他比较实现，如
+数字、文件大小、日期和月份名称。请参阅[tablesort 文档][tablesort]了解更多信息。
 
 <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
 <script>
@@ -181,11 +180,11 @@ markdown_extensions:
 </script>
 
   [tablesort]: http://tristen.ca/tablesort/demo/
-  [instant loading]: ../setup/setting-up-navigation.md#_3
+  [instant loading]: ../setup/setting-up-navigation.md#instant-loading
 
 ### 从文件导入表
 
-插件[mkdocs表阅读器插件][表阅读器文档]允许您
+插件[mkdocs表阅读器插件][table-reader-docs]允许您
 从CSV或Excel文件导入数据。
 
   [table-reader-docs]: https://timvink.github.io/mkdocs-table-reader-plugin/

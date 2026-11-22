@@ -6,7 +6,7 @@ icon: material/format-font
 
 MkDocs的材料为可以使用的几个HTML元素提供了支持
 突出显示文档的某些部分或应用特定格式。另外，
-支持[批评标记]，增加了显示建议更改的能力
+支持[批评标记][Critic Markup]，增加了显示建议更改的能力
 对于一份文件。
 
   [Critic Markup]: https://github.com/CriticMarkup/CriticMarkup-toolkit
@@ -38,7 +38,7 @@ markdown_extensions:
 
 ## 使用
 
-### 突出显示更改
+### 突出显示更改 <span id="highlighting-changes"></span>
 
 启用[Critic]后，可以使用[Critic Markup]，这增加了以下功能
 突出显示建议的更改，并在文档中添加内联注释：
@@ -76,7 +76,7 @@ Text can be <del class="critic">deleted</del> and replacement text
 
 </div>
 
-### 突出显示文本
+### 突出显示文本 <span id="highlighting-text"></span>
 
 When [Caret, Mark & Tilde] are enabled, text can be highlighted with a simple
 syntax, which is more convenient that directly using the corresponding
@@ -100,7 +100,7 @@ syntax, which is more convenient that directly using the corresponding
   [ins]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
   [del]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
 
-### 副标题和上标
+### 副标题和上标 <span id="sub-and-superscripts"></span>
 
 When [Caret & Tilde][Caret, Mark & Tilde] are enabled, text can be sub- and
 superscripted with a simple syntax, which is more convenient than directly
@@ -121,7 +121,7 @@ using the corresponding [`sub`][sub] and [`sup`][sup] HTML tags:
   [sub]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
   [sup]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
 
-### 添加键盘按键
+### 添加键盘按键 <span id="adding-keyboard-keys"></span>
 
 When [Keys] is enabled, keyboard keys can be rendered with a simple syntax.
 Consult the [Python Markdown Extensions] documentation to learn about all

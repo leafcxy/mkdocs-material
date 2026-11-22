@@ -1,6 +1,6 @@
 # 拉取请求
 
-您可以通过发出[拉取请求]为MkDocs的材料做出贡献
+您可以通过发出[拉取请求][pull request]为MkDocs的材料做出贡献
 将由维护人员审查，并在以下情况下集成到主存储库中
 所做的更改已获得批准。您可以贡献错误修复、更改
 文档或您开发的新功能。
@@ -11,14 +11,14 @@
 
     在决定花精力做出改变和创造吸引力之前
     请求，请讨论您打算做什么。如果您正在回复
-    如果你认为可能是一个bug，请先发布一份[bug报告]。如果你
-    打算处理文档，创建[文档问题]。如果你
-    想要开发新功能，请创建[更改请求]。
+    如果你认为可能是一个bug，请先发布一份[bug报告][bug report]。如果你
+    打算处理文档，创建[文档问题][documentation issue]。如果你
+    想要开发新功能，请创建[更改请求][change request]。
 
     记住给出的指导，让别人给你建议。可能是这样
     对于你所感知和想要解决的问题，有更简单的解决方案。
     也许你想要实现的目标已经可以通过以下方式实现
-    配置或[定制]。
+    配置或[定制][customization]。
 
 [bug report]: reporting-a-bug.md
 [documentation issue]: reporting-a-docs-issue.md
@@ -86,7 +86,7 @@ sequenceDiagram
 ```
 
 1. 第一步是为MkDocs创建一个Material分支
-   存储库，无论是[mkdocs material]还是[mkdocsmaterial insider]
+   存储库，无论是[mkdocs material][mkdocs-material]还是[mkdocsmaterial insider][mkdocs-material-insiders]
    （仅限赞助商使用）。这为您提供了一个存储库
    可以将更改推送到。请注意，不可能有多个fork
    在任何时间点访问给定的存储库。所以，你创建的叉子将是
@@ -142,7 +142,7 @@ sequenceDiagram
     一定要确保这些变化不会破坏建筑
     MkDocs材料文档，您可以在“文档”中找到`
     文件夹。您可能还想确保以下相关示例
-    [示例存储库]仍然构建良好。
+    [示例存储库][examples repository]仍然构建良好。
 
 [mkdocs-material]: https://github.com/squidfunk/mkdocs-material
 [mkdocs-material-insiders]: https://github.com/squidfunk/mkdocs-material-insiders/
@@ -243,7 +243,7 @@ GitHub上的仓库。这是为了让你在GitHub上有一个存储库
 您可以将更改推送到（只有维护者和合作者有写权限
 到原始存储库）。
 
-如果你想对以下内容进行更改，请分叉[公共版本的存储库]
+如果你想对以下内容进行更改，请分叉[公共版本的存储库][repository for the public version]
 公共版本中的代码，或者如果您想对
 文档。通过以下方式更改存储库的名称是个好主意
 附加“-fork”，这样遇到它的人就知道他们已经找到了
@@ -253,8 +253,8 @@ GitHub上的仓库。这是为了让你在GitHub上有一个存储库
 [repository for the public version]: https://github.com/squidfunk/mkdocs-material
 
 为了对仅在Insiders版本中可用的功能进行更改，
-fork[内部人员存储库]。请注意，分叉将是一个私有存储库。
-请尊重[内幕人士计划条款]和
+fork[内部人员存储库][the Insiders repository]。请注意，分叉将是一个私有存储库。
+请尊重[内幕人士计划条款][terms of the Insiders program]和
 用于维护和开发MkDocs材料的赞助软件方法。
 
 [the Insiders repository]: https://github.com/squidfunk/mkdocs-material-insiders/
@@ -331,21 +331,19 @@ push pull upstream master
 
 在提交任何更改之前，您应该确保它们按预期工作
 并且不会产生任何意外的副作用。你至少应该测试一下
-这三个[烟雾测试]：
+这三个[烟雾测试][smoke tests]：
 
-- MkDocs本身的材料文件。如果您设置并运行
-  [设置说明]中概述的开发环境
-  开发环境]，“mkdocs-serve”应持续运行
+- Material for MkDocs 自身的文档。按照[设置开发环境的说明][instructions for setting up the development environment]配置并启动环境后，`mkdocs serve` 应持续
   构建文档。检查是否没有错误消息，理想情况下，
   无（新）警告。
 
 - 对代表问题的项目进行测试，或对新开发项目进行测试
   功能。如果您已经提交了错误报告并创建了
-  a[最小复制]。如果你正在开发一个新功能，那么你可能需要
+  a[最小复制][minimal reproduction]。如果你正在开发一个新功能，那么你可能需要
   构建一个项目作为测试套件。它可以兼作文档
   展示了新功能的工作原理。
 
-- 使用[MkDocs示例材料]中的相关示例进行测试
+- 使用[MkDocs示例材料][Material for MkDocs Examples]中的相关示例进行测试
   存储库。请注意，要一次性构建所有示例，您需要这些项目
   来自Insiders的插件，但您始终可以单独构建示例
   使用公共版本。
@@ -354,9 +352,9 @@ push pull upstream master
 [minimal reproduction]: https://squidfunk.github.io/mkdocs-material/guides/creating-a-reproduction/
 [Material for MkDocs Examples]: https://github.com/mkdocs-material/examples
 
-- 理想情况下，还可以在[示例存储库]中测试示例。如果你是
+- 理想情况下，还可以在[示例存储库][examples repository]中测试示例。如果你是
 在制作MkDocs的Insiders版材料时，您可以简单地开始
-在顶层构建，[projects插件]将构建所有示例
+在顶层构建，[projects插件][projects plugin]将构建所有示例
 为你。如果你使用的是公共版本，你需要构建每个
 单独的子项目。我们意识到，这是一个不断增长的收藏
 示例，您可能希望优先考虑与主题最相关的示例

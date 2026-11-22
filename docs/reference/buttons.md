@@ -23,15 +23,15 @@ markdown_extensions:
 
 - [Attribute Lists]
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md
+  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
 
 ## 使用
 
-### 添加按钮
+### 添加按钮 <span id="adding-buttons"></span>
 
 为了将链接呈现为按钮，请在其后面加上花括号并添加
 `.md按钮`类选择器。该按钮将接收所选内容
-[原色]和[强调色]（如果激活）。
+[原色][primary color]和[强调色][accent color]（如果激活）。
 
 ``` markdown title="Button"
 [Subscribe to our newsletter](#){ .md-button }
@@ -43,13 +43,13 @@ markdown_extensions:
 
 </div>
 
-  [primary color]: ../setup/changing-the-colors.md
+  [primary color]: ../setup/changing-the-colors.md#primary-color
   [accent color]: ../setup/changing-the-colors.md#accent-color
   [Demo]: javascript:alert$.next("Demo")
 
 ### 添加主按钮
 
-如果你想显示一个填充的主按钮（如[登录页面]上）
+如果你想显示一个填充的主按钮（如[登录页面][landing page]上）
 MkDocs的Material），添加“.md按钮”和“.md”按钮--主`
 CSS类选择器。
 
@@ -67,8 +67,8 @@ CSS类选择器。
 
 ### 添加图标按钮
 
-当然，可以使用[icon语法]将图标添加到所有类型的按钮中
-以及任何有效的图标短代码，只需通过我们的[图标搜索]按键即可轻松找到。
+当然，可以使用[icon语法][icon syntax]将图标添加到所有类型的按钮中
+以及任何有效的图标短代码，只需通过我们的[图标搜索][icon search]按键即可轻松找到。
 
 ``` markdown title="Button with icon"
 [Send :fontawesome-solid-paper-plane:](#){ .md-button }
@@ -80,5 +80,5 @@ CSS类选择器。
 
 </div>
 
-  [icon syntax]: icons-emojis.md
-  [icon search]: icons-emojis.md#_2
+  [icon syntax]: icons-emojis.md#using-icons
+  [icon search]: icons-emojis.md#search

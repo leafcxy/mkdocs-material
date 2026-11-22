@@ -77,7 +77,7 @@ https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
 
 模板经历了一系列更改。如果你有定制
 带有主题扩展的MkDocs材料，一定要包含最新的
-更改模板。一个好的起点是[检查差异]。
+更改模板。一个好的起点是[检查差异][inspect the diff]。
 
 ！！！警告“升级后内置插件不工作？”
 
@@ -150,9 +150,7 @@ https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
 
 #### `pymdownx.superfences`
 
-必须从[custom fence][SuperFences]中删除`*-experimental`后缀
-类属性，用于将代码块定位为[diagrams]
-使用[Meamaid.js]：
+如果用 [SuperFences] 自定义围栏来渲染 [Mermaid.js] [图表][diagrams]，请从围栏的 `class` 值中移除 `-experimental` 后缀：
 
 === "8.x"
 
@@ -877,8 +875,8 @@ https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
         - instant
     ```
 
-  [tabs]: setup/setting-up-navigation.md#_9
-  [instant loading]: setup/setting-up-navigation.md#_3
+  [tabs]: setup/setting-up-navigation.md#navigation-tabs
+  [instant loading]: setup/setting-up-navigation.md#instant-loading
 
 ### 对`*.html`文件的更改{ data-search-exclude }
 
@@ -1117,8 +1115,8 @@ https://github.com/.../issues/new/?title=[Feedback]+{title}+-+{url}
 - 由于不再支持Internet Explorer，减少了HTML和CSS的占用空间
 - 一些UI元素（警告、表格等）略有改进
 
-  [CSS variables]: setup/changing-the-colors.md#_11
-  [icon integration]: reference/icons-emojis.md#_2
+  [CSS variables]: setup/changing-the-colors.md#custom-colors
+  [icon integration]: reference/icons-emojis.md#search
   [prebuilt search indexes]: plugins/search.md
 
 ### 更改 `mkdocs.yml`

@@ -8,18 +8,18 @@
 ## 选择一个层级
 
 选择合适的赞助级别取决于您的需求以及您打算如何
-使用MkDocs内部人员的材料。我们的级别分为[非商业]
-和[商业]用途：
+使用MkDocs内部人员的材料。我们的级别分为[非商业][non-commercial]
+和[商业][commercial]用途：
 
   - __非商业层__: 适用于个人、开源项目、，
     学术用途
   - __商业层__: 专为任何规模的组织和企业设计
 
-每个[每月赞助级别]都根据您的需求提供一系列福利。
+每个[每月赞助级别][monthly sponsoring tier]都根据您的需求提供一系列福利。
 好处包括访问我们的私人MkDocs Insiders材料库，
 优先处理错误报告等，具体取决于
 您打算使用它构建的项目[^1]和所需的合作者。
-请记住，您始终可以[升级或降级]您的
+请记住，您始终可以[升级或降级][upgrade or downgrade]您的
 任何时候的赞助级别。
 
   [^1]:
@@ -30,16 +30,16 @@
 
   [monthly sponsoring tier]: #monthly-sponsoring
   [non-commercial]: #non-commercial-use
-  [commercial]: 
+  [commercial]: #commercial-use
   [upgrade or downgrade]: #switching-tiers
 
-## 每月赞助
+## 每月赞助 <span id="monthly-sponsoring"></span>
 
 每月赞助级别为您提供访问我们私人材料的权限
 MkDocs Insiders存储库。您的财务贡献支持了正在进行的
 开发Insiders和社区版。
 
-### 非商业用途
+### 非商业用途 <span id="non-commercial-use"></span>
 
 非商业用途本质上是指“个人使用”。这包括个人
 将Insiders版本用于个人或纯非商业开源
@@ -84,7 +84,7 @@ __Rewards:__
 
 ---
 
-### 商业用途
+### 商业用途 <span id="commercial-use"></span>
 
 商业用途是指将我们的软件用于商业或营利目的
 目的。这包括公司或其他组织的任何使用，无论是
@@ -211,17 +211,17 @@ __热门话题有:__
 一次性捐款，无论规模大小，都不会被授予
 由于技术限制，内部人士。
 
-## 切换层
+## 切换层 <span id="switching-tiers"></span>
 
-您可以轻松地在不同的赞助级别之间切换——[升级]或
-[降级]——随时。只需访问@squidfunk
-[GitHub赞助商简介]并调整您的赞助级别选择。一次
+您可以轻松地在不同的赞助级别之间切换——[升级][upgrade]或
+[降级][downgrade]——随时。只需访问@squidfunk
+[GitHub赞助商简介][GitHub Sponsors profile]并调整您的赞助级别选择。一次
 你已经做出了改变，你将立即在新的级别上赞助。
 
 如果您超过当前赞助限额内的项目数量，我们
 敬请您将赞助升级到更高级别以保留
 MkDocs内部人员访问材料。该更改立即生效，
-金额根据您的[计费周期]按比例分配。
+金额根据您的[计费周期][billing cycle]按比例分配。
 
   [upgrade]: https://docs.github.com/en/billing/managing-billing-for-github-sponsors/upgrading-a-sponsorship
   [downgrade]: https://docs.github.com/en/billing/managing-billing-for-github-sponsors/downgrading-a-sponsorship

@@ -5,8 +5,11 @@ site_name: Material for MkDocs
 site_url: https://leafcxy.github.io/mkdocs-material/
 site_author: leafcxy
 site_description: >-
-  用Markdown编写文档,并在
-  分钟-可搜索、可定制,支持60多种语言,适用于所有设备
+  用 Markdown 编写文档，几分钟即可发布站点。支持搜索和定制，提供 60 多种语言界面，适配各种设备。
+
+validation:
+  links:
+    anchors: warn
 
 # 仓库
 repo_name: leafcxy/mkdocs-material
@@ -130,9 +133,9 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  # - pymdownx.emoji:
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -147,14 +150,14 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
+      check_paths: true
       auto_append:
         - includes/mkdocs.md
-  - pymdownx.superfences
-  # - pymdownx.superfences:
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
       # combine_header_slug: true

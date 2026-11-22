@@ -5,7 +5,7 @@ title: Extensions
 # 扩展
 
 Markdown是一种非常小的语言，有一种参考实现，称为
-[约翰·格鲁伯的Markdown]。[Python Markdown]和[Python Markdown扩展]
+[约翰·格鲁伯的Markdown][John Gruber's Markdown]。[Python Markdown]和[Python Markdown扩展][Python Markdown Extensions]
 是两个增强Markdown写作体验的包，增加了有用的
 技术写作的语法扩展。
 
@@ -45,25 +45,25 @@ Markdown是一种非常小的语言，有一种参考实现，称为
 
 </div>
 
-  [Abbreviations]: python-markdown.md
-  [Admonition]: python-markdown.md
+  [Abbreviations]: python-markdown.md#abbreviations
+  [Admonition]: python-markdown.md#admonition
   [Arithmatex]: python-markdown-extensions.md#arithmatex
-  [Attribute Lists]: python-markdown.md
+  [Attribute Lists]: python-markdown.md#attribute-lists
   [BetterEm]: python-markdown-extensions.md#betterem
   [Caret, Mark & Tilde]: python-markdown-extensions.md#caret-mark-tilde
   [Critic]: python-markdown-extensions.md#critic
-  [Definition Lists]: python-markdown.md
+  [Definition Lists]: python-markdown.md#definition-lists
   [Details]: python-markdown-extensions.md#details
   [Emoji]: python-markdown-extensions.md#emoji
-  [Footnotes]: python-markdown.md
+  [Footnotes]: python-markdown.md#footnotes
   [Highlight]: python-markdown-extensions.md#highlight
   [Keys]: python-markdown-extensions.md#keys
-  [Markdown in HTML]: python-markdown.md
+  [Markdown in HTML]: python-markdown.md#markdown-in-html
   [SmartSymbols]: python-markdown-extensions.md#smartsymbols
   [Snippets]: python-markdown-extensions.md#snippets
   [SuperFences]: python-markdown-extensions.md#superfences
   [Tabbed]: python-markdown-extensions.md#tabbed
-  [Table of Contents]: python-markdown.md
+  [Table of Contents]: python-markdown.md#table-of-contents
   [Tables]: python-markdown.md#tables
   [Tasklist]: python-markdown-extensions.md#tasklist
 
@@ -78,7 +78,7 @@ Markdown是一种非常小的语言，有一种参考实现，称为
 ### 最小配置
 
 当您使用Material时，此配置是一个很好的起点
-首次使用MkDocs。最好的办法是探索[参考]，以及
+首次使用MkDocs。最好的办法是探索[参考][reference]，以及
 逐步添加您想要使用的内容：
 
 ``` yaml

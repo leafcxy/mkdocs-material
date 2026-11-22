@@ -9,20 +9,20 @@ categories:
   - Search
 links:
   - blog/posts/search-better-faster-smaller.md
-  - plugins/search.md#_8
+  - plugins/search.md#segmentation
   - insiders/how-to-sponsor.md
 ---
 
 # Chinese search support – 中文搜索​支持
 
-__内部人士为[内置搜索]添加了实验性的中文支持
-插件]–一个长期以来被要求的功能
+__Insiders 为[内置搜索插件][built-in search plugin]添加了实验性的中文支持，
+这是用户期待已久的功能
 中国用户数量。__
 
 仅次于美国和德国的第三大原产国
-MkDocs用户的材料是中国。长期以来，[内置搜索插件]
+MkDocs用户的材料是中国。长期以来，[内置搜索插件][built-in search plugin]
 不允许对汉字进行适当的分割，主要是因为
-[lunr语言]中缺少用于搜索标记化和
+[lunr语言][lunr-languages]中缺少用于搜索标记化和
 堵塞。Insiders最新版本增加了期待已久的中文支持
 对于内置的搜索插件，这是许多用户所要求的。
 
@@ -49,10 +49,10 @@ MkDocs材料的中文支持由[jieba]提供
 pip install jieba
 ```
 
-仅当您指定了[`separator][separator]时，才需要执行下一步
-在`mkdocs.yml`中配置。文本用[零宽度空白]分割
+仅当您指定了[`separator`][separator]时，才需要执行下一步
+在`mkdocs.yml`中配置。文本用[零宽度空白][zero-width whitespace]分割
 字符，因此它在搜索模式中呈现完全相同的结果。调整
-`mkdocs.yml`使得[分隔符][分隔符]包括`\u200b`
+`mkdocs.yml`使得[分隔符][separator]包括`\u200b`
 字符：
 
 ``` yaml
@@ -74,7 +74,7 @@ plugins:
 
 请注意，这是一个实验性功能，而我@squidfunk不是
 精通中文（还吗？）。如果你发现一个bug或认为有什么可以
-已改进，请[打开一个问题]。
+已改进，请[打开一个问题][open an issue]。
 
   [jieba]: https://pypi.org/project/jieba/
   [zero-width whitespace]: https://en.wikipedia.org/wiki/Zero-width_space

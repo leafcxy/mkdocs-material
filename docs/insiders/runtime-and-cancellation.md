@@ -8,8 +8,7 @@
 ## 运行时
 
 只要每月或每年订阅，赞助仍然有效
-有效，仅在您取消赞助或您的[付款]时到期
-方法过期]。
+有效，仅在您取消赞助或您的[付款方式失效][payment method expires]时到期。
 
   [payment method expires]: #automatic-cancellation
 
@@ -29,7 +28,7 @@
 要降级或取消您的赞助，请按照[分步指南
 来自GitHub。如果您使用组织帐户赞助，请确保
 您取消了该特定账户下的赞助，因为
-[合作者和赞助商的账户可能不同]。
+[合作者和赞助商的账户可能不同][collaborator and sponsor accounts may differ]。
 
   [step-by-step guide from GitHub]: https://docs.github.com/en/billing/managing-billing-for-github-sponsors/downgrading-a-sponsorship#canceling-a-sponsorship
   [collaborator and sponsor accounts may differ]: access-management.md/#collaborators
@@ -50,7 +49,7 @@
 
   [GitHub will automatically delete your private fork]: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/removing-a-collaborator-from-a-personal-repository#deleting-forks-of-private-repositories
 
-### 自动取消
+### 自动取消 <span id="automatic-cancellation"></span>
 
 如果您的信用卡到期，GitHub将自动取消您的赞助
 并删除你作为合作者的身份。定期检查您的付款方式

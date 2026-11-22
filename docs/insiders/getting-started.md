@@ -7,17 +7,17 @@ title: Getting started with Insiders
 MkDocs Insiders的材料是材料的兼容直接替代品
 对于MkDocs，可以使用[`pip`][pip]进行类似的安装，
 〔docker〕〔docker〕或〔git〕〔git〕。请注意，为了访问内部人员
-在GitHub上，你需要[成为@squidfunk的合格赞助商]。
+在GitHub上，你需要[成为@squidfunk的合格赞助商][become an eligible sponsor]。
 
-  [pip]: 
+  [pip]: #with-pip
   [docker]: #with-docker
   [git]: #with-git
   [become an eligible sponsor]: how-to-sponsor.md
 
-## 必要条件
+## 必要条件 <span id="requirements"></span>
 
 在您被添加到合作者列表并接受后
-存储库邀请，下一步是为创建一个[个人访问令牌]
+存储库邀请，下一步是为创建一个[个人访问令牌][personal access token]
 您的GitHub帐户，以便以编程方式访问Insiders存储库
 （来自命令行或GitHub Actions工作流）：
 
@@ -38,7 +38,7 @@ MkDocs Insiders的材料是材料的兼容直接替代品
 
 ## 安装
 
-### 使用pip
+### 使用pip <span id="with-pip"></span>
 
 MkDocs Insider的材料可以用pip安装。你会
 通常希望安装最新版本，但也可以安装
@@ -47,7 +47,7 @@ MkDocs Insider的材料可以用pip安装。你会
 
 === "Specific release"
 
-    从[标签列表]中为Insiders选择相应的标签
+    从[标签列表][list of tags]中为Insiders选择相应的标签
     存储库。在下面的`pip `命令中，替换
     用您想要的URL结尾。
 
@@ -67,7 +67,7 @@ MkDocs Insider的材料可以用pip安装。你会
 
 如果你想在Docker中为MkDocs Insider使用Material
 需要额外的步骤。虽然我们无法提供托管的Docker镜像
-对于内部人员[^2]，[GitHub容器注册表]允许简单和
+对于内部人员[^2]，[GitHub容器注册表][GitHub Container Registry]允许简单和
 舒适的自托管：
 
 1.  [Fork the Insiders repository]
@@ -86,7 +86,7 @@ MkDocs Insider的材料可以用pip安装。你会
 当有新标记时，[`build`][build]工作流会自动运行
 （release）已创建。当新的Insiders版本在上游发布时
 在仓库中，[Pull App]将创建一个包含更改的Pull请求
-拉入新标签，该标签由[`build][build]工作流获取
+拉入新标签，该标签由[`build`][build]工作流获取
 自动构建Docker镜像并将其发布到您的私有
 注册表。
 
@@ -98,7 +98,7 @@ docker pull ghcr.io/${GH_USERNAME}/mkdocs-material-insiders
 ```
 
 如果您希望在内部人员容器映像中添加其他插件，请按照以下步骤操作
-在[入门指南]中概述（../geting-Started.md#with docker）。
+请参阅[入门指南中的 Docker 说明](../getting-started.md#with-docker)。
 
   [^2]:
     早些时候，Insiders提供了一个专门的Docker镜像，可供
@@ -109,7 +109,7 @@ docker pull ghcr.io/${GH_USERNAME}/mkdocs-material-insiders
     分叉存储库时，GitHub将禁用所有工作流。虽然这个
     是一个合理的默认设置，您需要启用GitHub Actions
     能够在上自动构建和发布Docker镜像
-    [GitHub容器注册表]。
+    [GitHub容器注册表][GitHub Container Registry]。
 
   [^4]:
     虽然你可以将“write:packages”范围添加到个人访问中
@@ -145,7 +145,7 @@ pip install -e mkdocs-material
 
 当你使用仅通过Insiders提供的内置插件时，
 外部贡献者将无法在他们的基础上构建您的文档项目
-本地机器。这就是我们开发[内置组插件]的原因
+本地机器。这就是我们开发[内置组插件][built-in group plugin]的原因
 允许有条件地加载插件：
 
 ``` yaml

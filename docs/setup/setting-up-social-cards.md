@@ -1,9 +1,6 @@
 # 设置社交卡
 
-MkDocs的材料可以自动为您创建漂亮的社交卡
-文档，在社交媒体平台上显示为链接预览。你
-可以从多个[预先设计的布局][默认布局]中选择或创建
-[自定义布局]以匹配您独特的风格和品牌。
+Material for MkDocs 可以为文档自动生成社交卡，在社交媒体平台上显示为链接预览。你可以选择[预设布局][default layouts]，也可以创建符合项目风格和品牌的[自定义布局][custom layouts]。
 
 ---
 
@@ -26,7 +23,7 @@ Social card of our [formatting] reference
 </figure>
 
   [default layouts]: ../plugins/social.md#layouts
-  [custom layouts]: 
+  [custom layouts]: #customization
   [formatting]: ../reference/formatting.md
   [Layout default variant]: ../assets/screenshots/social-cards-variant.png
 
@@ -40,7 +37,7 @@ Social card of our [formatting] reference
 `demo create-social-cards`
 
 内置的社交插件会自动生成自定义预览图像
-每一页。安装所有[图像处理依赖项]并添加
+每一页。安装所有[图像处理依赖项][dependencies for image processing]并添加
 将以下行转换为`mkdocs.yml`：
 
 ``` yaml
@@ -48,7 +45,7 @@ plugins:
   - social
 ```
 
-有关所有设置的列表，请参阅[插件文档]。
+有关所有设置的列表，请参阅[插件文档][plugin documentation]。
 
   [plugin documentation]: ../plugins/social.md
 
@@ -57,7 +54,7 @@ plugins:
     请注意，使用社交插件时必须设置[`site_url`][site_url]，
     否则生成的卡将无法正确链接。社交媒体服务
     像X和Facebook一样，要求社交预览指向绝对
-    URL，插件只能在设置['site_URL][site_URL]时计算。
+    URL，插件只能在设置[`site_URL`][site_url]时计算。
     例子：
 
     ``` yaml
@@ -70,21 +67,21 @@ plugins:
 ## 使用
 
 如果你想调整社交卡的标题或设置自定义描述，
-您可以设置标题[更改标题]和
-[`description`][更改description]属性，其优先级高于
+您可以设置标题[更改标题][Changing the title]和
+[`description`][Changing the description]属性，其优先级高于
 默认值，或使用：
 
 - [`cards_layout_options.title`](../plugins/social.md)
 - [`cards_layout_options.description`](../plugins/social.md)
 
-  [Changing the title]: ../reference/index.md
-  [Changing the description]: ../reference/index.md
+  [Changing the title]: ../reference/index.md#setting-the-page-title
+  [Changing the description]: ../reference/index.md#setting-the-page-description
 
 ### 选择字体
 
 某些字体不包含CJK字符，例如
 [默认字体，`Roboto`][font]。如果您的“site_name”、“site_description”或
-页面标题包含CJK字符，请从[谷歌字体]中选择另一种字体
+页面标题包含CJK字符，请从[谷歌字体][Google Fonts]中选择另一种字体
 带有CJK字符，例如“Noto Sans”字体家族中的一个字符：
 
 === "Chinese (Simplified)"
@@ -123,7 +120,7 @@ plugins:
             font_family: Noto Sans KR
     ```
 
-  [font]: changing-the-fonts.md
+  [font]: changing-the-fonts.md#regular-font
 
 ### 更改布局
 
@@ -133,7 +130,7 @@ plugins:
 
 如果你想对单个页面使用不同的布局（例如你的着陆
 页面），您可以将“社会”前沿属性与
-[`cards_layout`]（../plugins/social.md）键，与
+[`cards_layout`](../plugins/social.md#meta.social.cards_layout)键，与
 在`mkdocs.yml`中：
 
 ``` yaml
@@ -148,11 +145,11 @@ social:
 
 您可以将这些更改应用于文档的整个子树，例如。，
 为您的博客和API参考生成不同的社交卡，方法是使用
-[内置元插件]。
+[内置元插件][built-in meta plugin]。
 
   [built-in meta plugin]: ../plugins/meta.md
 
-### Parametrizing the layout
+### 配置布局参数 <span id="parametrizing-the-layout"></span>
 
 `version insiders-4.37.0`
 `flag metadata`
@@ -161,7 +158,7 @@ social:
 除了更改整个布局外，您还可以覆盖布局的所有选项
 暴露。这意味着您可以使用自定义前件对社交卡进行参数化
 属性，如标签、日期、作者或任何你能想到的东西。
-只需定义[`cards_layout_options`]（../plugins/social.md）：
+只需定义[`cards_layout_options`](../plugins/social.md#meta.social.cards_layout_options)：
 
 ``` yaml
 ---
@@ -177,7 +174,7 @@ social:
 
 您可以将这些更改应用于文档的整个子树，例如。，
 为您的博客和API参考生成不同的社交卡，方法是使用
-[内置元插件]。
+[内置元插件][built-in meta plugin]。
 
 ### 禁用社交卡
 
@@ -198,15 +195,15 @@ social:
 ...
 ```
 
-## 自定义
+## 自定义 { #customization }
 
 `sponsors`
 `version insiders-4.33.0`
 `flag experimental`
 
-[内部人士]对[内置社交插件]进行了彻底的重写
+[内部人士][Insiders]对[内置社交插件][built-in social plugin]进行了彻底的重写
 介绍了一种基于YAML和.NET的全新布局系统
-[Jinja模板]–MkDocs的Material引擎用于HTML
+[Jinja模板][Jinja templates]–MkDocs的Material引擎用于HTML
 模板–允许创建复杂的自定义布局：
 
 <div class="mdx-social">
@@ -256,7 +253,7 @@ social:
 缓存以确保它们仅在内容更改时重新生成。
 
 布局是用YAML语法编写的。在开始创建自定义布局之前，
-[研究预先设计的布局]是个好主意（链接到[内部人士]
+[研究预先设计的布局][study the pre-designed layouts]是个好主意（链接到[内部人士][Insiders]
 存储库），以便更好地了解它们是如何工作的。然后，
 创建一个新布局并在`mkdocs.yml`中引用它：
 
@@ -277,7 +274,7 @@ social:
           debug: true
     ```
 
-请注意，应省略“.yml”文件扩展名。接下来，运行`mkdocs-serve`，
+请注意，应省略“.yml”文件扩展名。接下来，运行`mkdocs serve`，
 并查看如何用生成的卡填充“.cache”目录。打开
 编辑器中的任何卡片，这样你就可以立即看到你的更改。因为我们
 没有定义任何层，这些卡是透明的。
@@ -309,12 +306,12 @@ layers:
 
 ![Layer size]
 
-层轮廓和网格是可见的，因为我们启用了['debug][debug]
+层轮廓和网格是可见的，因为我们启用了[`debug`][debug]
 mkdocs.yml中的模式。左上角显示了图层索引和偏移量，即
 可用于对齐和构图。
 
   [Layer size]: ../assets/screenshots/social-cards-layer-size.png
-  [debug]: ../plugins/social.md
+  [debug]: ../plugins/social.md#debugging
 
 #### 起源
 
@@ -386,7 +383,7 @@ layers:
           color: "#4051b5ee" # (1)!
     ```
 
-    1.  颜色值可以设置为[CSS颜色关键字]，或3、4、6或8
+    1.  颜色值可以设置为[CSS 颜色关键字](https://developer.mozilla.org/zh-CN/docs/Web/CSS/named-color)，或3、4、6或8
         字母HEX颜色代码，允许半透明层。
 
     ![Layer background]
@@ -402,7 +399,7 @@ layers:
 ### 字体排版
 
 现在，我们可以添加来自Markdown文件的动态排版——这是
-[内置社交插件]的实际存在理由。[Jinja模板]是
+[内置社交插件][built-in social plugin]的实际存在理由。[Jinja模板][Jinja templates]是
 用于呈现文本字符串，然后将其添加到图像中：
 
 ``` yaml
@@ -422,7 +419,7 @@ layers:
         style: Bold
 ```
 
-1.  以下变量可用于[Jinja模板]：
+1.  以下变量可用于[Jinja模板][Jinja templates]：
 
     - [`config.*`][config variable]
     - [`page.*`][page variable]
@@ -447,6 +444,7 @@ layers:
 
   [config variable]: https://www.mkdocs.org/dev-guide/themes/#config
   [page variable]: https://www.mkdocs.org/dev-guide/themes/#page
+  [layout options]: #parametrizing-the-layout
   [Layer typography]: ../assets/screenshots/social-cards-layer-typography.png
 
 #### 溢流
@@ -493,8 +491,7 @@ layers:
 
 #### 对齐
 
-文本可以与图层的所有角和边对齐。例如，如果我们
-想要将文本对齐到层的中间，我们可以将`align`设置为`start-center`，这将呈现为：
+文本可以与图层的各个角和边对齐。例如，要让文本在起始侧对齐并在垂直方向居中，可以将 `align` 设为 `start center`，效果如下：
 
 ![Layer typography align]
 
@@ -517,7 +514,7 @@ layers:
 
 #### Font
 
-[内置社交插件]与[谷歌字体]集成，并将
+[内置社交插件][built-in social plugin]与[谷歌字体][Google Fonts]集成，并将
 自动为您下载字体文件。`font`属性接受
 `family和style属性，其中family必须设置为
 将字体和“样式”转换为支持的字体样式之一。例如，设置
@@ -540,16 +537,13 @@ layers:
     └─ Thin Italic.ttf
 ```
 
-在这种情况下，作者可以使用“粗体”或“中斜体”作为“风格”。如果
-图层中指定的字体样式不是字体族的一部分
-font总是回退到“常规”，并在['debug][debug]中打印警告
-模式，因为“常规”包含在所有字体系列中。
+这里可以将 `style` 设为 `Bold` 或 `Medium Italic`。如果所选字体没有指定的样式，插件会回退到 `Regular`，并在 [`debug` 模式][debug]下打印警告。
 
 ### 图标
 
 作者可以利用Material附带的全系列图标
 MkDocs，甚至通过使用主题扩展和浏览来提供自定义图标
-[附加图标]指南中描述的过程。图标甚至可以
+[附加图标][additional icons]指南中描述的过程。图标甚至可以
 使用`color`属性着色：
 
 ``` yaml
@@ -594,7 +588,7 @@ layers:
 
 ### 标签
 
-新的[内置社交插件]为元标签提供了完全的灵活性
+新的[内置社交插件][built-in social plugin]为元标签提供了完全的灵活性
 添加到您的网站，这是指导X等服务所必需的
 或者不知道如何显示你的社交卡。所有默认布局都使用以下内容
 标签集，您可以将其复制到布局中并进行调整：
@@ -629,7 +623,7 @@ tags:
   twitter:image: "{{ image.url }}"
 ```
 
-请注意，此示例使用[YAML锚点]来减少重复。这个
+请注意，此示例使用[YAML锚点][YAML anchors]来减少重复。这个
 `definitions属性仅用于定义别名
 然后可以用锚点引用。
 

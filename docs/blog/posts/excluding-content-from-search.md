@@ -8,7 +8,7 @@ categories:
   - Search
 links:
   - blog/posts/search-better-faster-smaller.md
-  - setup/setting-up-site-search.md#_9
+  - setup/setting-up-site-search.md#search-exclusion
   - insiders/how-to-sponsor.md
 ---
 
@@ -19,7 +19,7 @@ __最新的Insiders版本带来了三种新的简单排除方法
 精细控制。__
 
 两周前，Material for MkDocs Insiders发布了一个全新的搜索
-插件]，带来了[可用性的巨大改进]，但也提高了[速度
+插件]，带来了[可用性的巨大改进][massive improvements in usability]，但也提高了[速度
 以及搜索索引的大小。有趣的是，如前所述
 在博客文章中，我们只是触及了现在可能实现的表面。这
 发布带来了一些有用的功能，增强了写作体验，
@@ -30,7 +30,7 @@ Markdown文件应该通过内置的搜索功能进行索引。
 
 _以下部分讨论了排除页面和
 搜索索引中的部分。如果你想立即了解什么是新的，
-跳到[紧接着的部分][新增内容]。_
+跳到[紧接着的部分][what's new]。_
 
   [brand new search plugin]: search-better-faster-smaller.md
   [massive improvements in usability]: search-better-faster-smaller.md#whats-new
@@ -39,9 +39,9 @@ _以下部分讨论了排除页面和
 
 ## 现有技术
 
-MkDocs拥有丰富而蓬勃发展的[插件]生态系统，而且它没有
+MkDocs拥有丰富而蓬勃发展的[插件][plugins]生态系统，而且它没有
 令人惊讶的是，@chrieke已经有了一个很棒的插件来排除特定的
-Markdown文件的部分–[mkdocs excluded search]插件。这可能是
+Markdown文件的部分–[mkdocs excluded search][mkdocs-exclude-search]插件。这可能是
 安装有：
 
 ```
@@ -96,15 +96,15 @@ plugins:
   [plugins]: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
   [mkdocs-exclude-search]: https://github.com/chrieke/mkdocs-exclude-search
 
-## 有什么新鲜事吗？
+## 有什么新鲜事吗？ <span id="whats-new"></span>
 
 最新的Insiders版本为[__排除页面，
 实现了从搜索索引中删除部分和块
-通过前面的内容以及[属性列表]。请注意，它没有
-替换[mkdocs excluded search]插件，但对其进行补充。
+通过前面的内容以及[属性列表][Attribute Lists]。请注意，它没有
+替换[mkdocs excluded search][mkdocs-exclude-search]插件，但对其进行补充。
 
-  [search exclusion]: ../../setup/setting-up-site-search.md#_9
-  [Attribute Lists]: ../../setup/extensions/python-markdown.md
+  [search exclusion]: ../../setup/setting-up-site-search.md#search-exclusion
+  [Attribute Lists]: ../../setup/extensions/python-markdown.md#attribute-lists
 
 ### 不包括页面
 
@@ -125,7 +125,7 @@ search:
 
 ### 不包括章节
 
-如果要排除某个部分，作者可以使用[属性列表]
+如果要排除某个部分，作者可以使用[属性列表][Attribute Lists]
 在a末尾添加一个名为“数据搜索排除”的__pragma__的扩展
 标题。该语法不包含在最终的HTML中，因为搜索语法是
 在页面呈现之前由搜索插件过滤：
@@ -167,7 +167,7 @@ search:
 ### 不包括区块
 
 如果需要更细粒度的控制，可以添加__pragma__
-任何正式的[块级元素]或[内联级元素]
+任何正式的[块级元素][block-level element]或[内联级元素][inline-level element]
 由[Attribute Lists]扩展支持：
 
 === ":octicons-file-code-16: `docs/page.md`"
@@ -203,5 +203,5 @@ search:
 
 最新版本提供了三种简单的方法来更精确地控制发生了什么
 它补充了已经非常强大的搜索索引
-[mkdocs excluded search]插件，允许采用新的方法来塑造
+[mkdocs excluded search][mkdocs-exclude-search]插件，允许采用新的方法来塑造
 搜索索引的类型、结构、大小和内容。

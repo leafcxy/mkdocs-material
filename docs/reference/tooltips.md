@@ -28,11 +28,11 @@ markdown_extensions:
 - [Attribute Lists]
 - [Snippets]
 
-  [Abbreviations]: ../setup/extensions/python-markdown.md
-  [Attribute Lists]: ../setup/extensions/python-markdown.md
+  [Abbreviations]: ../setup/extensions/python-markdown.md#abbreviations
+  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
   [Snippets]: ../setup/extensions/python-markdown-extensions.md#snippets
 
-### 改进的工具提示
+### 改进的工具提示 <span id="improved-tooltips"></span>
 
 `version 9.5.0`
 `flag experimental`
@@ -55,10 +55,10 @@ theme:
 
 ## 使用
 
-### 添加工具提示
+### 添加工具提示 <span id="adding-tooltips"></span>
 
 Markdown语法允许为每个链接指定一个“标题”，这将
-启用[改进的工具提示]时，渲染为漂亮的工具提示。添加a
+启用[改进的工具提示][improved tooltips]时，渲染为漂亮的工具提示。添加a
 工具提示指向包含以下行的链接：
 
 ``` markdown title="Link with tooltip, inline syntax"
@@ -101,10 +101,10 @@ extension:
   [Markdown syntax]: https://daringfireball.net/projects/markdown/syntax#link
   [improved tooltips]: #improved-tooltips
 
-### 添加缩写
+### 添加缩写 <span id="adding-abbreviations"></span>
 
 缩写可以通过使用类似于URL和
-[脚注]，以“*”开头，紧随其后的是术语或
+[脚注][footnotes]，以“*”开头，紧随其后的是术语或
 首字母缩略词应放在方括号内：
 
 ``` markdown title="Text with abbreviations"
@@ -125,10 +125,10 @@ The HTML specification is maintained by the W3C.
 
   [footnotes]: footnotes.md
 
-### 添加术语表
+### 添加术语表 <span id="adding-a-glossary"></span>
 
 [Snippets]扩展可用于通过移动来实现简单的术语表
-专用文件[^1]中的所有缩写，以及[自动附加]此文件到所有
+专用文件[^1]中的所有缩写，以及[自动附加][auto-append]此文件到所有
 具有以下配置的页面：
 
   [^1]:
@@ -159,7 +159,7 @@ The HTML specification is maintained by the W3C.
 
     当使用“docs”文件夹之外的专用文件时，将父目录添加到列表中
     “watch”文件夹，以便在更新术语表文件时，项目会自动
-    运行`mkdocs-serve`时重新加载。
+    运行`mkdocs serve`时重新加载。
 
     ```` yaml
     watch:

@@ -8,7 +8,7 @@
 
 ## 配置
 
-### 导航
+### 导航 <span id="navigation"></span>
 
 `version 9.0.0`
 `feature`
@@ -38,7 +38,7 @@ extra:
       link: https://fosstodon.org/@squidfunk
 ```
 
-1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -108,10 +108,10 @@ extra:
           name: squidfunk on Fosstodon
     ```
 
-  [icon search]: ../reference/icons-emojis.md#_2
+  [icon search]: ../reference/icons-emojis.md#search
   [rel=me]: https://docs.joinmastodon.org/user/profile/#verification
 
-### 版权声明
+### 版权声明 <span id="copyright-notice"></span>
 
 `version 0.1.0`
 `default none`
@@ -123,21 +123,19 @@ extra:
 copyright: Copyright &copy; 2016 - 2020 Martin Donath
 ```
 
-### 发电机通知
+### 站点生成工具署名 <span id="generator-notice"></span>
 
 `version 7.3.0`
 `default _true_`
 
-页脚显示了一个_Made with Material for MkDocs_通知，表示如何
-该网站已生成。可以通过以下选项删除通知
-通过`mkdocs.yml`：
+页脚显示 *Made with Material for MkDocs*，用来注明站点使用的生成工具。如需隐藏这条署名，请在 `mkdocs.yml` 中设置：
 
 ``` yaml
 extra:
   generator: false
 ```
 
-!!! info "请在删除发电机通知之前阅读此内容"
+!!! info "请在删除站点生成工具署名之前阅读此内容"
 
     页脚中微妙的__Made with Material for MkDocs__提示是
     这个项目如此受欢迎的原因，因为它告诉用户
@@ -181,7 +179,7 @@ In order to customize and override the [copyright notice], [extend the theme]
 and [override the `copyright.html` partial][overriding partials], which normally
 includes the `copyright` property set in `mkdocs.yml`.
 
-  [copyright notice]: 
-  [generator notice]: 
-  [extend the theme]: ../customization.md
-  [overriding partials]: ../customization.md
+  [copyright notice]: #copyright-notice
+  [generator notice]: #generator-notice
+  [extend the theme]: ../customization.md#extending-the-theme
+  [overriding partials]: ../customization.md#overriding-partials

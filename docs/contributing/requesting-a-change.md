@@ -11,7 +11,7 @@ MkDocs材料是一个强大的工具，用于创建美观和功能
 在保持现有功能的同时，不断添加新功能
 同时。我们高度重视社区的每一个想法或贡献，以及
 我们恳请您在之前花时间阅读以下指南
-在我们的公共[问题跟踪器]中提交您的更改请求。这将有助于我们
+在我们的公共[问题跟踪器][issue tracker]中提交您的更改请求。这将有助于我们
 更好地了解拟议的变更以及它将如何使我们的社区受益。
 
 本指南是我们为解释我们的标准和推理所做的最大努力
@@ -26,14 +26,14 @@ MkDocs材料是一个强大的工具，用于创建美观和功能
     变更请求
 
 
-  [How we manage change requests]: 
+  [How we manage change requests]: #how-we-manage-change-requests
 
 ## 在创建问题之前
 
 在您投入时间填写和提交变更请求之前，我们敬请
 请你通过回答一些问题来做一些初步工作，以确定
 你的想法非常适合MkDocs材料，与项目相匹配
-[哲学]和语气。
+[哲学][philosophy]和语气。
 
 __在创建问题之前，请执行以下操作。__
 
@@ -46,7 +46,7 @@ __在创建问题之前，请执行以下操作。__
 需要注意的是，更改请求不是为了报告错误，因为
 它们缺少调试所需的重要信息。
 
-如果您想报告错误，请参阅我们的[错误报告指南]。
+如果您想报告错误，请参阅我们的[错误报告指南][bug reporting guide]。
 
   [bug reporting guide]: reporting-a-bug.md
 
@@ -59,7 +59,7 @@ __在创建问题之前，请执行以下操作。__
 
 ### 与我们的社区联系
 
-我们的[讨论板]是与社区联系的最佳场所。什么时候？
+我们的[讨论板][discussion board]是与社区联系的最佳场所。什么时候？
 在评估新想法时，必须征求其他用户的意见并加以考虑
 另一种观点。这种方法有助于以某种方式实现新功能
 这使大量用户受益。
@@ -91,15 +91,15 @@ them in the change request.__[^1]
 - [Visuals] <small>optional</small>
 - [Checklist]
 
-  [Title]: 
+  [Title]: #title
   [Context]: #context
-  [Description]: #_1
-  [Related links]: 
-  [Use cases]: 
+  [Description]: #description
+  [Related links]: #related-links
+  [Use cases]: #use-cases
   [Visuals]: #visuals
-  [Checklist]: 
+  [Checklist]: #checklist
 
-### 名称
+### 名称 <span id="title"></span>
 
 一个好的标题应当简短且富有描述性。它应该是一句话的执行
 对想法进行总结，以便为我们的社区带来潜在的影响和利益
@@ -124,21 +124,21 @@ them in the change request.__[^1]
 > 包含数千个文档。有一点上下文，更改请求
 > 可以更准确地确定优先级。
 
-### 描述
+### 描述 <span id="description"></span>
 
 接下来，详细而清晰地描述你的想法。解释为什么你
 这个想法与MkDocs的材料有关，必须在这里实施，而不是
 在其依赖关系之一中：[^2]
 
   [^2]:
-    有时，用户会在我们的[问题跟踪器]上提出与以下问题之一相关的想法
+    有时，用户会在我们的[问题跟踪器][issue tracker]上提出与以下问题之一相关的想法
     我们的上游依赖项，包括[MkDocs][MkDocs]、[Python Markdown]、，
-    [Python Markdown扩展]或第三方插件。这是个好主意
+    [Python Markdown扩展][Python Markdown Extensions]或第三方插件。这是个好主意
     想想你的想法是否对其他主题、上游有益
     更改请求以获得更大的影响。
 
 -   __Explain the <u>what</u>, not the <u>why</u>__ – 不要解释
-    [你的想法的好处][用例]在这里，我们正在实现。
+    [你的想法的好处][Use cases]在这里，我们正在实现。
     专注于尽可能准确地描述拟议的变更请求。
 
 -   __Keep it short and concise__ – 描述时要简明扼要
@@ -162,7 +162,7 @@ them in the change request.__[^1]
   [Python Markdown]: https://python-markdown.github.io/extensions/
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
 
-### 相关链接
+### 相关链接 <span id="related-links"></span>
 
 请提供问题、讨论或文档的相关链接
 与您的更改请求相关的部分。如果你（或其他人）已经
@@ -174,7 +174,7 @@ them in the change request.__[^1]
 > 此外，链接到以前的问题和讨论可以让我们
 > 快速评估我们社区已经提供的反馈和意见。
 
-### 用例
+### 用例 <span id="use-cases"></span>
 
 解释作者和用户的更改请求将如何处理
 观点——预期的影响是什么，为什么它不仅对你有益，
@@ -207,7 +207,7 @@ __您可以将文件拖放到此处，也可以包含指向外部资源的链接
 > MkDocs材料的可行性，这有助于我们的维护人员评估和
 > 对变更请求进行分类。
 
-### 清单
+### 清单 <span id="checklist"></span>
 
 感谢您遵循指南并创建高质量的变更请求——您
 几乎完成了。检查表确保您已阅读本指南并
@@ -218,14 +218,14 @@ __我们从这里开始。__
 
 ---
 
-## 我们如何管理变更请求
+## 我们如何管理变更请求 <span id="how-we-manage-change-requests"></span>
 
-变更请求作为问题提交到我们的公共[问题跟踪器]上。自从
+变更请求作为问题提交到我们的公共[问题跟踪器][issue tracker]上。自从
 他们经常提出新的功能或增强功能，我们会对其进行审查和管理
 与bug报告不同。
 
 为了保持清晰，确保我们的路线图保持重点突出且可实现，
-我们引入了一个结构化的流程，并使用了一个专用的[待办事项列表]
+我们引入了一个结构化的流程，并使用了一个专用的[待办事项列表][backlog]
 跟踪和组织变更请求，以及它们如何融入我们的路线图。
 
   [backlog]: https://github.com/users/squidfunk/projects/4/views/1
@@ -236,7 +236,7 @@ __我们从这里开始。__
 2. 我们可能会发表评论以澄清意图或提出替代方案。
 3. 如果想法超出范围，我们将关闭请求并解释原因。
 4. 如果这个想法与项目的愿景相一致，我们将把它归类为一种变化
-请求，并将其添加到我们的[待办事项列表]中。
+请求，并将其添加到我们的[待办事项列表][backlog]中。
 5. 在任何一种情况下，我们都会关闭请求以保持问题跟踪器的干净
 专注于开放的bug。
 
@@ -275,8 +275,8 @@ __您的更改请求被拒绝了吗？我们对此深感抱歉。__ 我们知道
 - [ ] 可访问性
 
 但这并不是你想法的终点——你总是可以自己实现它
-通过[定制]。如果你不确定如何做到这一点，或者想知道
+通过[定制][customization]。如果你不确定如何做到这一点，或者想知道
 有人已经这样做了，请随时与我们的社区联系
-[讨论板]。
+[讨论板][discussion board]。
 
   [customization]: ../customization.md

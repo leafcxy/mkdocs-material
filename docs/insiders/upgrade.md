@@ -8,8 +8,7 @@ MkDocs是版本限定符的第一部分，例如Insiders
 9.x.x-insiders-4.x.x
 ```
 
-如果主版本增加了，最好咨询[升级]
-指南]并完成步骤，以确保您的配置是最新的
+如果主版本增加了，最好咨询[升级指南][upgrade guide]并完成步骤，以确保您的配置是最新的
 所有必要的更改都已完成。
 
   [upgrade guide]: ../upgrade.md
@@ -21,7 +20,7 @@ MkDocs是版本限定符的第一部分，例如Insiders
 === "pip upgrade to release"
 
     如果你通过pip安装了Insiders，并且想升级到
-    特定版本，从[标签列表]中选择标签并替换
+    特定版本，从[标签列表][list of tags]中选择标签并替换
     下面给出的命令URL末尾的标签：
 
     ```

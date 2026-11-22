@@ -21,7 +21,7 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
 有60多种语言，你的语言很可能已经
 由MkDocs材料支持。您可以检查您的语言是否可用，
 或需要通过检查以下列表进行改进或额外翻译
-[支持的语言]：
+[支持的语言][supported languages]：
 
 - __您的语言已受支持_ – 在这种情况下，你可以检查一下
   如果缺少翻译，请单击您语言下方的链接进行添加，这需要5分钟的时间。
@@ -29,14 +29,14 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
 - __您的语言缺失__ – 在这种情况下，您可以帮助我们添加支持
   将您的语言转换为MkDocs的材料！继续阅读，了解如何做到这一点。
 
-  [supported languages]: ../setup/changing-the-language.md
+  [supported languages]: ../setup/changing-the-language.md#site-language
 
 ### 搜索我们的问题跟踪器
 
 另一个用户可能已经创建了一个提供缺失信息的问题
 我们仍需整合您的语言翻译
 维护人员。为了避免将时间投入到重复的工作中，请搜索
-[问题跟踪器]事先。
+[问题跟踪器][issue tracker]事先。
 
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
 
@@ -57,12 +57,12 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
 - [Country flag] <small>optional</small>
 - [Checklist]
 
-  [Title]: 
-  [Translations]: #_1
+  [Title]: #title
+  [Translations]: #translations
   [Country flag]: #country-flag
-  [Checklist]: 
+  [Checklist]: #checklist
 
-### 名称
+### 名称 <span id="title"></span>
 
 更新现有语言时，您可以保留标题不变
 是。添加对新语言的支持，请替换“”。..在预先填写的标题中
@@ -74,22 +74,22 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
 | :material-close:{ style="color: #EF5350" } __Unclear__ | Add translations ...
 | :material-close:{ style="color: #EF5350" } __Useless__ | Help
 
-### 翻译
+### 翻译 <span id="translations"></span>
 
 如果翻译包含右侧的：arrow_light:图标，则该图标缺失。
 您可以翻译此行并删除：arrow_light:图标。如果你不知道
 如何翻译特定的行，只需将其留给其他贡献者即可
 完成。为确保翻译的准确性，请考虑仔细检查
-通过查看我们的[英文翻译]来了解单词的上下文。
+通过查看我们的[英文翻译][English translations]来了解单词的上下文。
 
 [English translations]: https://github.com/squidfunk/mkdocs-material/tree/master/src/partials/languages/en.html
 
 ### 国旗 <small>optional</small> { #country-flag }
 
-为了更好地了解情况，我们的[支持的语言]列表包括国旗
+为了更好地了解情况，我们的[支持的语言][supported languages]列表包括国旗
 在语言名称旁边。您可以通过以下方式帮助我们为您的语言选择旗帜
 将国旗的短代码添加到此字段中。前往我们的
-[表情符号搜索]并输入“flag”以查找所有可用的快捷方式。
+[表情符号搜索][emoji search]并输入“flag”以查找所有可用的快捷方式。
 
 !!! question "如果我的国旗不可用怎么办？"
 
@@ -99,14 +99,14 @@ MkDocs的材料已被翻译成60多种语言。正如你所想象的，
     旗帜。
 
   [Twemoji]: https://github.com/jdecked/twemoji
-  [emoji search]: ../reference/icons-emojis.md#_2
+  [emoji search]: ../reference/icons-emojis.md#search
 
 > __为什么这可能有帮助__: 在国家名称旁边添加国旗
 > 可以帮助您和其他人在列表中找到该语言
 > 支持的语言更快更容易。如果贵国国旗不受支持
 > 通过[Twemoji]，您可以帮助我们选择替代方案。
 
-### 清单
+### 清单 <span id="checklist"></span>
 
 感谢您遵循指南并帮助我们为材料添加新的翻译
 对于MkDocs，您几乎完成了。检查表确保您已阅读此内容

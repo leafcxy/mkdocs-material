@@ -10,7 +10,7 @@ Material for MkDocs标题可以定制，以显示公告栏
 
 ## 配置
 
-### 自动隐藏
+### 自动隐藏 <span id="automatic-hiding"></span>
 
 `version 6.2.0`
 `feature`
@@ -44,10 +44,10 @@ block][overriding blocks]，默认为空：
 {% endblock %}
 ```
 
-  [extend the theme]: ../customization.md
+  [extend the theme]: ../customization.md#extending-the-theme
   [overriding blocks]: ../customization.md#overriding-blocks
 
-#### 标记为已读
+#### 标记为已读 <span id="mark-as-read"></span>
 
 `version 8.4.0`
 `feature`

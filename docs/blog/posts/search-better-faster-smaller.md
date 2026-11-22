@@ -20,7 +20,7 @@ __这是我们如何设法完全重建客户端搜索的故事，
 同时变小。__
 
 MkDocs的材料搜索是迄今为止最好、最受欢迎的搜索之一
-资产：[多语言]，[离线功能]，最重要的是：全部
+资产：[多语言][multilingual]，[离线功能][offline-capable]，最重要的是：全部
 客户端_。它提供了一种解决方案，可以增强文档用户的能力
 立即找到他们正在寻找的东西，而不必担心管理问题
 额外的服务器。然而即使已经进行了几次迭代，
@@ -33,7 +33,7 @@ MkDocs的材料搜索是迄今为止最好、最受欢迎的搜索之一
 
 _下一节将讨论当前搜索的架构和问题
 实施。如果您想立即了解新内容，请跳到
-[紧接着的部分][有什么新消息]。_
+[紧接着的部分][what's new]。_
 
   [search]: ../../setup/setting-up-site-search.md
   [multilingual]: ../../plugins/search.md#config.lang
@@ -42,10 +42,10 @@ _下一节将讨论当前搜索的架构和问题
 
 ## 结构
 
-MkDocs的材料使用[lunr]和[lunr语言]来实现
+MkDocs的材料使用[lunr]和[lunr语言][lunr-languages]来实现
 其客户端搜索功能。加载文档页面时
 JavaScript可用，搜索索引由
-[内置搜索插件]在构建过程中被请求
+[内置搜索插件][built-in search plugin]在构建过程中被请求
 服务器：
 
 ``` ts
@@ -60,7 +60,7 @@ const index$ = document.forms.namedItem("search")
   [lunr-languages]: https://github.com/MihaiValentin/lunr-languages
   [built-in search plugin]: ../../plugins/search.md
 
-### 搜索索引
+### 搜索索引 <span id="search-index"></span>
 
 搜索索引包括所有页面的精简版本。让我们采取一个
 查看一个示例，以准确理解搜索索引包含的内容
@@ -164,7 +164,7 @@ const index$ = document.forms.namedItem("search")
 
 不难看出，实施一个好的
 主题作者的搜索体验，这就是为什么MkDocs材料（最多
-现在）做了一些[猴子补丁]，以便能够渲染得稍微多一些
+现在）做了一些[猴子补丁][monkey patching]，以便能够渲染得稍微多一些
 有意义的搜索预览。
 
   [monkey patching]: https://github.com/squidfunk/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/document/index.ts#L68-L71
@@ -187,9 +187,9 @@ const index$ = document.forms.namedItem("search")
     留下来。链接是必要的，因为搜索结果是按页面分组的。
 
 2.  __符号化__: 每个部分的“title”和“text”值被拆分
-    使用中配置的[分隔符][分隔符]将令牌转换为
+    使用中配置的[分隔符][separator]将令牌转换为
     `mkdocs.yml`。标记化本身是通过以下方式进行的
-    [lunr的默认标记器][默认标记器]，这不允许
+    [lunr的默认标记器][default tokenizer]，这不允许
     前置或跨越多个字符的分隔符。
 
     > 为什么这很重要，很重要？我们稍后会看到我们还有多少
@@ -202,7 +202,7 @@ const index$ = document.forms.namedItem("search")
     主线。
 
 现在，这基本上就是搜索工作者的工作方式。当然，有一点
-涉及更多的魔法，例如，搜索结果被[后处理]和[重新缩放]到
+涉及更多的魔法，例如，搜索结果被[后处理][post-processed]和[重新缩放][rescored]到
 解释了[lunr]的一些缺点，但总的来说，数据就是这样得到的
 进入和退出索引。
 
@@ -221,7 +221,7 @@ const index$ = document.forms.namedItem("search")
 这就是当前搜索预览生成不足的地方，因为一些
 搜索预览似乎不包括任何搜索的出现
 条款。这是由于搜索预览[在
-最多320个字符][截断]，如下图所示：
+最多 320 个字符][truncated]，如下图所示：
 
 <figure markdown>
 
@@ -277,33 +277,33 @@ const index$ = document.forms.namedItem("search")
     以便快速评估相关性。如果单词出现是代码的一部分
     块，它应该被呈现为代码块。
 
-## 有什么新鲜事吗？
+## 有什么新鲜事吗？ <span id="whats-new"></span>
 
 在我们对问题空间有了扎实的理解之后，在我们潜水之前
 深入我们新的搜索实现的内部，看看是哪一个
 它已经解决的问题，快速概述哪些功能和改进
 它带来了：
 
-- __Better__: 支持[丰富的搜索预览]，保留结构
+- __Better__: 支持[丰富的搜索预览][rich search previews]，保留结构
   代码块、内联代码和列表的信息，因此它们被呈现
-  按原样，以及[前瞻标记化]、[更准确的突出显示]，以及
-  改进了typeahead的稳定性。此外，还有[稍微好一点的用户体验]。
+  按原样，以及[前瞻标记化][lookahead tokenization]、[更准确的突出显示][more accurate highlighting]，以及
+  改进了typeahead的稳定性。此外，还有[稍微好一点的用户体验][slightly better UX]。
 - __Faster__ and __smaller__: up的搜索索引大小显著减小
   由于提取和施工技术的改进，这一比例降至48%，导致
   搜索体验速度提高了95%，这对
   大型文档项目。
 
-  [rich search previews]: 
-  [lookahead tokenization]: 
-  [more accurate highlighting]: 
+  [rich search previews]: #rich-search-previews
+  [lookahead tokenization]: #tokenizer-lookahead
+  [more accurate highlighting]: #accurate-highlighting
   [slightly better UX]: #user-interface
 
-### 丰富的搜索预览
+### 丰富的搜索预览 <span id="rich-search-previews"></span>
 
 当我们从头开始重建搜索插件时，我们重新设计了
 用于内联保存代码块结构信息的搜索索引
 代码，以及无序和有序列表。使用以下示例
-[搜索索引]部分，如下所示：
+[搜索索引][search index]部分，如下所示：
 
 === "Now"
 
@@ -408,10 +408,10 @@ const index$ = document.forms.namedItem("search")
   [search preview now]: search-better-faster-smaller/search-preview-now.png
   [search preview before]: search-better-faster-smaller/search-preview-before.png
 
-### Tokenizer展望
+### Tokenizer展望 <span id="tokenizer-lookahead"></span>
 
-[lunr]的[默认标记器]使用正则表达式来分割给定的
-通过将每个字符与[分隔符][分隔符]进行匹配，得到字符串
+[lunr]的[默认标记器][default tokenizer]使用正则表达式来分割给定的
+通过将每个字符与[分隔符][separator]进行匹配，得到字符串
 在`mkdocs.yml`中定义。这不允许基于更复杂的分离器
 前瞻性或多个字符。
 
@@ -429,16 +429,16 @@ const index$ = document.forms.namedItem("search")
 解释正则表达式的其余部分。[^4]
 
   [^4]:
-    一个有趣的事实：搜索的[分隔符][分隔符][默认值]
-    正如它所暗示的那样，插件为“[\s\-]+”总是有点令人恼火
+    一个有趣的事实：搜索的[分隔符][separator][默认值][default value]
+    正如它所暗示的那样，插件为`[\s\-]+`总是有点令人恼火
     多个字符可以被视为分隔符。然而
     `+`这是完全无关的，因为正则表达式组涉及
     从未支持多个字符
-    [lunr的默认标记器][默认标记器]。
+    [lunr的默认标记器][default tokenizer]。
 
   [default value]: https://www.mkdocs.org/user-guide/configuration/#separator
 
-#### 案例变更
+#### 案例变更 <span id="case-changes"></span>
 
 许多编程语言使用“PascalCase”或“camelCase”命名约定。
 当用户搜索“案例”一词时，很自然地会期望
@@ -450,7 +450,7 @@ const index$ = document.forms.namedItem("search")
 ```
 
 这个正则表达式是负前瞻（'\b'。，
-不是单词边界）和正向前瞻（[a-Z][a-Z]，即大写
+不是单词边界）和正向前瞻（`[A-Z][a-z]`，即大写
 字符后跟小写字符），并具有以下行为：
 
 - `PascalCase` :octicons-arrow-right-24: `Pascal`, `Case`
@@ -470,7 +470,7 @@ const index$ = document.forms.namedItem("search")
 
   [q=searchHighlight]: ?q=searchHighlight
 
-#### 版本号
+#### 版本号 <span id="version-numbers"></span>
 
 索引版本号是另一个可以用小程序解决的问题
 向前看。通常，”。`应被视为分隔词的分隔符，如
@@ -505,16 +505,16 @@ _我们才刚刚开始触及新可能性的表面
 代币化者展望未来。如果你发现了其他有用的表达方式，你
 受邀在评论区分享。_
 
-### 准确突出显示
+### 准确突出显示 <span id="accurate-highlighting"></span>
 
 突出显示是搜索过程的最后一步，涉及
 突出显示给定搜索结果中出现的所有搜索词。对于a
 长时间以来，突出显示是通过动态生成来实现的
-[正则表达式]。[^6].
+[正则表达式][regular expressions]。[^6].
 
 这种方法在日语或日语等非空白语言中存在一些问题
 中文[^3]，因为它只有在突出显示的术语位于单词边界时才有效。
-然而，亚洲语言使用[专用分段器]进行标记
+然而，亚洲语言使用[专用分段器][dedicated segmenter]进行标记
 不能用正则表达式建模。
 
   [^6]:
@@ -524,13 +524,13 @@ _我们才刚刚开始触及新可能性的表面
     正则表达式“（^|<separater>）（search | highlight）”，仅匹配
     在单词边界。
 
-现在，作为[新标记化方法]的直接结果，我们的新搜索
+现在，作为[新标记化方法][new tokenization approach]的直接结果，我们的新搜索
 实现使用标记位置来突出显示__，使其与
 强大的代币化：
 
 1.  __单词边界__: 由于新的荧光笔使用标记位置，单词
     边界等于令牌边界。这意味着更复杂的情况
-    标记化（例如，[案例更改]、[版本号]、[HTML/XML标签]），
+    标记化（例如，[案例更改][case changes]、[版本号][version numbers]、[HTML/XML标签][HTML/XML tags]），
     现在都准确地突出显示了。
 
 2.  __情境感知__: 由于新的搜索索引保留了一些
@@ -546,7 +546,7 @@ _我们才刚刚开始触及新可能性的表面
 
   [regular expressions]: https://github.com/squidfunk/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/highlighter/index.ts#L61-L91
   [dedicated segmenter]: http://chasen.org/~taku/software/TinySegmenter/
-  [new tokenization approach]: 
+  [new tokenization approach]: #tokenizer-lookahead
   [case changes]: #case-changes
   [version numbers]: #version-numbers
   [HTML/XML tags]: #htmlxml-tags
@@ -592,14 +592,14 @@ _我们才刚刚开始触及新可能性的表面
 尤其适用于大型文档项目。
 
 使用新的客户端搜索，1、3听起来可能仍然很长时间
-与[即时加载]一起，仅在初始位置创建搜索索引
+与[即时加载][instant loading]一起，仅在初始位置创建搜索索引
 页面加载。导航时，搜索索引会跨页面保留，因此
 费用只需支付一次。
 
   [KJV Markdown]: https://github.com/arleym/kjv-markdown
-  [instant loading]: ../../setup/setting-up-navigation.md#_3
+  [instant loading]: ../../setup/setting-up-navigation.md#instant-loading
 
-### 用户界面
+### 用户界面 <span id="user-interface"></span>
 
 此外，还进行了一些小的改进，最突出的是
 __此页面上的更多结果__按钮，该按钮现在位于搜索的顶部
@@ -624,7 +624,7 @@ __此页面上的更多结果__按钮，该按钮现在位于搜索的顶部
 
 如果你已经走到了这一步，感谢你对材料的时间和兴趣
 对于MkDocs！这是我决定写的第一篇博客文章
-简短的[推特调查]让我关注。欢迎您发表评论
+简短的Twitter 调查让我关注。欢迎您发表评论
 分享您使用新搜索实现的经验。
 
   [X survey]: https://x.com/squidfunk/status/1434477478823743488

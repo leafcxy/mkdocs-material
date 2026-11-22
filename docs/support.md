@@ -8,7 +8,7 @@ MkDocs Material的核心是一个开放和支持性的社区，致力于
 为了简化沟通，并引导您找到最合适的
 支持渠道，我们在下面概述了我们的支持结构。
 
-## 赞助支持
+## 赞助支持 <span id="sponsoring-support"></span>
 
 如果您对Insiders有疑问或正在考虑成为赞助商，
 @katharinalisalin是来帮忙的。她处理所有非技术
@@ -22,11 +22,11 @@ MkDocs Material的核心是一个开放和支持性的社区，致力于
 因此，[our discussion board]和[our issue tracker]是否对
 整个社区。
 
-  [our discussion board]: #_4
-  [our issue tracker]: #_5
+  [our discussion board]: #discussion-board
+  [our issue tracker]: #issue-tracker
 
 
-### 讨论板
+### 讨论板 <span id="discussion-board"></span>
 
 我们的[discussion board]是技术人员的主要联系点
 讨论，由我们的社区和我们的[Community Experts]支持。我们
@@ -39,7 +39,7 @@ MkDocs Material的核心是一个开放和支持性的社区，致力于
   [Community Experts]: insiders/community-experts-program/index.md
   [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
 
-### 问题追踪
+### 问题追踪 <span id="issue-tracker"></span>
 
 对于[reporting bugs]或提交[change requests]，我们的[issue tracker]提供
 一个透明的社区贡献平台。我们鼓励报告错误
@@ -59,7 +59,7 @@ MkDocs Material的核心是一个开放和支持性的社区，致力于
   [public issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
   [fair use policy]: ./insiders/license.md/#fair-use-policy
 
-### 优先支持
+### 优先支持 <span id="prioritized-support"></span>
 
 “本组织”级别或更高级别的组织赞助商有权
 优先bug支持。虽然我们不能保证立即解决

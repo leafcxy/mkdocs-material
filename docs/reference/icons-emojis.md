@@ -5,14 +5,14 @@ icon: material/emoticon-happy-outline
 # 图标， 表情符号
 
 Material for MkDocs的最佳功能之一是可以使用[更多
-项目中有10000多个图标[图标搜索]和数千个表情符号
+项目中有10000多个图标[图标搜索][icon search]和数千个表情符号
 文档几乎不需要额外的工作。此外，[自定义图标
 可以添加]并在“mkdocs.yml”、文档和模板中使用。
 
   [icon search]: #search
   [custom icons can be added]: ../setup/changing-the-logo-and-icons.md#additional-icons
 
-## 搜索
+## 搜索 <span id="search"></span>
 
 <div class="mdx-iconsearch" data-mdx-component="iconsearch">
   <input
@@ -39,10 +39,10 @@ Material for MkDocs的最佳功能之一是可以使用[更多
   shortcode to copy it to your clipboard.
 </small>
 
-## 配置
+## 配置 <span id="configuration"></span>
 
 此配置允许使用简单的图标和表情符号
-可以通过[图标搜索]发现的短代码。添加以下内容
+可以通过[图标搜索][icon search]发现的短代码。添加以下内容
 指向`mkdocs.yml`的行：
 
 ``` yaml
@@ -72,11 +72,11 @@ markdown_extensions:
   [Simple Icons]: https://simpleicons.org/
   [Attribute Lists]: ../setup/extensions/python-markdown.md
   [Emoji]: ../setup/extensions/python-markdown-extensions.md#emoji
-  [Emoji with custom icons]: ../setup/extensions/python-markdown-extensions.md
+  [Emoji with custom icons]: ../setup/extensions/python-markdown-extensions.md#+pymdownx.emoji.options.custom_icons
 
 ## 使用
 
-### 使用表情符号
+### 使用表情符号 <span id="using-emojis"></span>
 
 通过添加表情符号的短代码，可以将表情符号集成到Markdown中
 在两个冒号之间。如果你正在使用[Twemoji]（推荐），你可以查找
@@ -94,11 +94,11 @@ markdown_extensions:
   [Twemoji]: https://github.com/jdecked/twemoji
   [Emojipedia]: https://emojipedia.org/twitter/
 
-### 使用图标
+### 使用图标 <span id="using-icons"></span>
 
 启用[Emoji]后，可以通过引用使用类似于表情符号的图标
 指向与主题捆绑在一起的任何图标的有效路径，这些图标位于
-[图标][自定义图标]目录，并将“/”替换为“-”：
+[图标][custom icons]目录，并将“/”替换为“-”：
 
 ``` title="Icon"
 :fontawesome-regular-face-laugh-wink:
@@ -112,11 +112,11 @@ markdown_extensions:
 
   [custom icons]: https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons
 
-#### 有颜色
+#### 有颜色 <span id="with-colors"></span>
 
-启用[属性列表]后，可以通过以下方式将自定义CSS类添加到图标中
+启用[属性列表][Attribute Lists]后，可以通过以下方式将自定义CSS类添加到图标中
 在图标后添加特殊语法。HTML允许使用[inline
-样式]，始终建议添加[附加样式表]并移动
+样式]，始终建议添加[附加样式表][additional style sheet]并移动
 声明到专用CSS类中：
 
 <style>
@@ -152,14 +152,14 @@ markdown_extensions:
 
 </div>
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md
+  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
   [inline styles]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style
   [additional style sheet]: ../customization.md#additional-css
 
-#### 带动画
+#### 带动画 <span id="with-animations"></span>
 
-与添加[颜色]类似，通过以下方式为图标添加[动画]也很容易
-使用[附加样式表]，定义“@keyframes”规则并添加
+与添加[颜色][colors]类似，通过以下方式为图标添加[动画][animations]也很容易
+使用[附加样式表][additional style sheet]，定义“@keyframes”规则并添加
 图标专用CSS类：
 
 === ":octicons-file-code-16: `docs/stylesheets/extra.css`"
@@ -197,12 +197,12 @@ markdown_extensions:
 
 </div>
 
-  [colors]: 
+  [colors]: #with-colors
   [animations]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 
 ### 侧边栏中的图标和表情符号：微笑：smile:
 
-借助[内置排版插件]，您可以使用图标和表情符号
+借助[内置排版插件][built-in typeset plugin]，您可以使用图标和表情符号
 在标题中，这些标题将在侧栏中呈现。插件保留
 Markdown和HTML格式。
 
@@ -210,10 +210,10 @@ Markdown和HTML格式。
 
 ## 自定义
 
-### 在模板中使用图标
+### 在模板中使用图标 <span id="using-icons-in-templates"></span>
 
-当你用片段或块来[扩展主题]时，你可以简单地
-使用Jinja的[与主题捆绑的][图标搜索]引用任何图标
+当你用片段或块来[扩展主题][extending the theme]时，你可以简单地
+使用Jinja的[与主题捆绑的][icon search]引用任何图标
 [include][include]函数，并用.tweemoji CSS类包裹它：
 
 ``` html
@@ -222,7 +222,7 @@ Markdown和HTML格式。
 </span>
 ```
 
-1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
     单击短代码将其复制到剪贴板：
 
     <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -235,5 +235,5 @@ Markdown和HTML格式。
 
 这正是Material for MkDocs在其模板中所做的。
 
-  [extending the theme]: ../customization.md
+  [extending the theme]: ../customization.md#extending-the-theme
   [include]: https://jinja.palletsprojects.com/en/2.11.x/templates/#include

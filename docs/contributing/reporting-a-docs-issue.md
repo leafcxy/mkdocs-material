@@ -3,7 +3,7 @@
 我们的文档由80多页组成，包括广泛的
 有关功能、配置、自定义等的信息。如果你
 发现不一致或有改进空间，请按照以下步骤操作
-在我们的[问题跟踪器]上提交问题的指南。
+在我们的[问题跟踪器][issue tracker]上提交问题的指南。
 
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
 
@@ -21,13 +21,13 @@
 - [Checklist]
 
   [reproduction]: ../guides/creating-a-reproduction.md
-  [Title]: 
-  [Description]: #_1
-  [Related links]: 
+  [Title]: #title
+  [Description]: #description
+  [Related links]: #related-links
   [Proposed change]: #proposed-change
-  [Checklist]: 
+  [Checklist]: #checklist
 
-### 名称
+### 名称 <span id="title"></span>
 
 一个好的标题应该是一个简短的、一句话的问题描述，包含
 所有相关信息，特别是关键字，以简化搜索
@@ -39,7 +39,7 @@
 | :material-close:{ style="color: #EF5350" } __Unclear__ | Missing information in the docs
 | :material-close:{ style="color: #EF5350" } __Useless__ | Help
 
-### 描述
+### 描述 <span id="description"></span>
 
 为您的不一致或问题提供清晰简洁的总结
 在需要的文档或文档部分中遇到
@@ -58,7 +58,7 @@
 > 改进文档的先决条件——我们需要了解什么是
 > 错了，所以我们可以修复它。
 
-### 相关链接
+### 相关链接 <span id="related-links"></span>
 
 在您描述了上面需要调整的文档部分之后，
 我们现在要求您分享此特定文档部分的链接，以及
@@ -81,7 +81,7 @@
 > 遇到同样问题的用户，因为他们在我们之前提供了解决方案
 > 维护人员可以更新文档。
 
-### 清单
+### 清单 <span id="checklist"></span>
 
 感谢您遵循指南并为我们的
 文档——你几乎完成了。检查表确保您已阅读

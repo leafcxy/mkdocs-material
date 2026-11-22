@@ -7,7 +7,7 @@
 
 <div class="mdx-premium" markdown>
 
-## 高级赞助商
+## 高级赞助商 <span id="premium-sponsors"></span>
 
 ### 金牌赞助商
 

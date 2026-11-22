@@ -3,20 +3,18 @@
 安装MkDocs材料时，您可以立即访问8000多个
 icons _可用于定制主题的特定部分和/或
 在Markdown中编写文档时。不够？您还可以添加
-[附加图标]只需最小的努力。
+[附加图标][additional icons]只需最小的努力。
 
   [additional icons]: #additional-icons
 
 ## 配置
 
-### 标志
+### 标志 <span id="logo"></span>
 
 `version 0.1.0`
 `default _material/library_`
 
-徽标可以更改为用户提供的图像（任何类型，包括“*.png”和
-`*.svg），或与主题捆绑在一起的任何图标。
-将以下行添加到`mkdocs.yml`中：
+徽标可以使用 `docs` 目录中的自定义图像（例如 `*.png` 或 `*.svg`），也可以使用主题自带的任意图标。将以下配置添加到 `mkdocs.yml`：
 
 === ":octicons-image-16: Image"
 
@@ -44,7 +42,7 @@ icons _可用于定制主题的特定部分和/或
           </div>
         </div>
 
-  [icon search]: ../reference/icons-emojis.md#_2
+  [icon search]: ../reference/icons-emojis.md#search
 
 通常，标题和侧边栏中的徽标链接到
 文档，与“site_url”相同。此行为可以更改
@@ -58,10 +56,9 @@ extra:
 ### 图标
 
 `version 0.1.0`
-`default [_assets/images/favicon.png_][Favicon default]`
+默认值：[`assets/images/favicon.png`][Favicon default]
 
-favicon可以更改为指向用户提供的图像的路径
-必须位于“文档”文件夹中。将以下行添加到`mkdocs.yml`中：
+网站图标可以使用 `docs` 目录中的自定义图像。将图像相对于 `docs` 的路径添加到 `mkdocs.yml`：
 
 ``` yaml
 theme:
@@ -88,7 +85,7 @@ theme:
 
 | Icon name    | Purpose                                                                       |
 |:-------------|:------------------------------------------------------------------------------|
-| `logo`       | See [Logo]()                                                             |
+| `logo`       | 参见[徽标](#logo)                                                             |
 | `menu`       | Open drawer                                                                   |
 | `alternate`  | Change language                                                               |
 | `search`     | Search icon                                                                   |
@@ -107,10 +104,9 @@ theme:
 
 ## 自定义
 
-### 其他图标
+### 其他图标 <span id="additional-icons"></span>
 
-为了使用自定义图标，[扩展主题]并创建一个名为的新文件夹
-`要用于覆盖的[custom_dir][custom_dir]中的.icons。
+要使用自定义图标，请先[扩展主题][extend the theme]，然后在 [`custom_dir`][custom_dir] 指定的覆盖目录中创建 `.icons` 文件夹。
 接下来，将您的`*.svg`图标添加到`.icons`文件夹的子文件夹中。比如说
 您下载并解压缩了[Bootstrap]图标集，并希望将其添加到
 您的项目文档。项目的结构应该如下：
@@ -140,9 +136,7 @@ markdown_extensions:
 Markdown文件以及任何地方的图标都可以在`mkdocs.yml`中使用。
 但是，请注意，语法略有不同：
 
-- __在configuration__中使用图标：采用`*.svg`图标文件的路径
-  从“.icons”文件夹开始，删除文件扩展名，例如for
-  `.icons/bootstrap/信封纸.svg，使用：
+- __在配置中使用图标__：使用相对于 `.icons` 目录的路径，并去掉 `.svg` 扩展名。例如，`.icons/bootstrap/envelope-paper.svg` 对应的配置是：
 
     ``` yaml
     theme:
@@ -158,9 +152,9 @@ Markdown文件以及任何地方的图标都可以在`mkdocs.yml`中使用。
     :bootstrap-envelope-paper:
     ```
 
-有关图标使用的更多说明，请参阅[图标参考]。
+有关图标使用的更多说明，请参阅[图标参考][icon reference]。
 
-  [extend the theme]: ../customization.md
+  [extend the theme]: ../customization.md#extending-the-theme
   [custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
   [Bootstrap]: https://icons.getbootstrap.com/
-  [icon reference]: ../reference/icons-emojis.md
+  [icon reference]: ../reference/icons-emojis.md#using-icons

@@ -3,7 +3,7 @@
 MkDocs的材料是一个积极维护的项目，我们不断努力
 改善。对于如此规模和复杂性的项目，可能会出现错误。如果你
 如果您发现了一个错误，您可以通过在我们的
-公共[问题跟踪器]，遵循本指南。
+公共[问题跟踪器][issue tracker]，遵循本指南。
 
   [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
 
@@ -16,11 +16,11 @@ MkDocs的材料是一个积极维护的项目，我们不断努力
 
 __但首先，在创建问题之前，请执行以下操作。__
 
-### U升级至最新版本
+### U升级至最新版本 <span id="upgrade-to-latest-version"></span>
 
 您发现的错误很可能已经在后续版本中得到修复
 版本。因此，在报告问题之前，请确保您正在运行
-MkDocs材料的[最新版本]。请参阅我们的[升级指南]
+MkDocs材料的[最新版本][latest version]。请参阅我们的[升级指南][upgrade guide]
 了解如何升级到最新版本。
 
 !!! warning "Bug修复不是向后移植的"
@@ -29,10 +29,10 @@ MkDocs材料的[最新版本]。请参阅我们的[升级指南]
     MkDocs的材料将被处理。此外为了减少重复工作，
     修复程序不能向后移植到早期版本。
 
-### 删除自定义项
+### 删除自定义项 <span id="remove-customizations"></span>
 
-如果您正在使用[自定义]，如[附加CSS]、[JavaScript]或
-[主题扩展]，请在报告错误之前将其从`mkdocs.yml`中删除。
+如果您正在使用[自定义][Customizations]，如[附加CSS][additional CSS]、[JavaScript]或
+[主题扩展][theme extension]，请在报告错误之前将其从`mkdocs.yml`中删除。
 我们无法为可能隐藏在您的覆盖中的错误提供官方支持，因此
 确保从`mkdocs.yml`中省略以下设置：
 
@@ -53,15 +53,15 @@ MkDocs材料的[最新版本]。请参阅我们的[升级指南]
     我们的文档明确提到]，当然，我们鼓励您
     报告它。
 
-__如果你遇到问题，不要羞于在我们的[讨论板]上寻求帮助
+__如果你遇到问题，不要羞于在我们的[讨论板][discussion board]上寻求帮助
 问题。__
 
   [latest version]: ../changelog/index.md
   [upgrade guide]: ../upgrade.md
   [Customizations]: ../customization.md
   [additional CSS]: ../customization.md#additional-css
-  [JavaScript]: ../customization.md
-  [theme extension]: ../customization.md
+  [JavaScript]: ../customization.md#additional-javascript
+  [theme extension]: ../customization.md#extending-the-theme
   [theme.custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
   [hooks]: https://www.mkdocs.org/user-guide/configuration/#hooks
   [extra_css]: https://www.mkdocs.org/user-guide/configuration/#extra_css
@@ -70,7 +70,7 @@ __如果你遇到问题，不要羞于在我们的[讨论板]上寻求帮助
   [StackOverflow]: https://stackoverflow.com
   [that our documentation explicitly mentions]: ?q="extends+base"
 
-### 搜索解决方案
+### 搜索解决方案 <span id="search-for-solutions"></span>
 
 在这个阶段，我们知道问题在最新版本中仍然存在
 不是由您的任何自定义造成的。然而，问题可能源于
@@ -81,7 +81,7 @@ __如果你遇到问题，不要羞于在我们的[讨论板]上寻求帮助
 另一个已报告或已结束的问题或讨论，您可以节省时间
 我们和你自己做一些研究：
 
-1.  [搜索我们的文档]并查找可能的相关章节
+1.  [搜索我们的文档][Search our documentation]并查找可能的相关章节
     与你的问题有关。如果找到，请确保已配置
     一切正常。[^1].
 
@@ -91,11 +91,11 @@ __如果你遇到问题，不要羞于在我们的[讨论板]上寻求帮助
     空白敏感语言。许多报道的问题被证明是
     配置错误。
 
-1.  [搜索我们的问题跟踪器][问题跟踪器]，因为其他用户可能已经
+1.  [搜索我们的问题跟踪器][issue tracker]，因为其他用户可能已经
     已经报告了同样的问题，甚至可能有已知的解决方法
     或者修复它。因此，不需要创建新问题。
 
-2.  [搜索我们的讨论板][讨论板]了解其他用户
+2.  [搜索我们的讨论板][discussion board]了解其他用户
     我们正在努力解决类似的问题，并与我们的伟大团队合作
     社区寻求解决方案。这里解决了很多问题。
 
@@ -132,16 +132,16 @@ them in the bug report.__[^2]
 - [Browser] <small>optional</small>
 - [Checklist]
 
-  [Title]: 
+  [Title]: #title
   [Context]: #context
-  [Bug description]: 
-  [Related links]: 
-  [Reproduction]: #_1
-  [Steps to reproduce]: 
+  [Bug description]: #bug-description
+  [Related links]: #related-links
+  [Reproduction]: #reproduction
+  [Steps to reproduce]: #steps-to-reproduce
   [Browser]: #browser
-  [Checklist]: 
+  [Checklist]: #checklist
 
-### 名称
+### 名称 <span id="title"></span>
 
 一个好的标题应当简短且富有描述性。它应该是一句话的执行
 问题摘要，即您要报告的错误的影响和严重程度
@@ -165,7 +165,7 @@ them in the bug report.__[^2]
 > 例如，当您的文档包含
 > 数千份文件。
 
-### Bug描述
+### Bug描述 <span id="bug-description"></span>
 
 现在，针对您要报告的错误。提供清晰、专注、具体和
 您遇到的错误的简明摘要。解释为什么你认为这是一个bug
@@ -173,16 +173,16 @@ them in the bug report.__[^2]
 依赖性。[^3]坚持以下原则：
 
   [^3]:
-    有时，用户会在我们的[问题跟踪器]上报告由以下原因引起的错误
+    有时，用户会在我们的[问题跟踪器][issue tracker]上报告由以下原因引起的错误
     我们的上游依赖项，包括[MkDocs]、[Python Markdown]，
-    [Python Markdown扩展]或第三方插件。一个好的经验法则是
-    将[`theme.name][theme.name]更改为`mkdocs`或`readthedocs`，然后
+    [Python Markdown扩展][Python Markdown Extensions]或第三方插件。一个好的经验法则是
+    将[`theme.name`][theme.name]更改为`mkdocs`或`readthedocs`，然后
     检查问题是否仍然存在。如果是这样，问题可能不是
     与MkDocs材料相关，应向上游报告。当在
-    如有疑问，请使用我们的[讨论板]寻求帮助。
+    如有疑问，请使用我们的[讨论板][discussion board]寻求帮助。
 
 -   __Explain the <u>what</u>, not the <u>how</u>__ – 不要解释
-    [如何重现错误][重现步骤]在这里，我们到了那里。
+    [如何重现错误][Steps to reproduce]在这里，我们到了那里。
     集中精力尽可能清楚地阐明问题及其影响。
 
 -   __Keep it short and concise__ – 如果这个bug可以用一个词来精确解释
@@ -208,14 +208,14 @@ them in the bug report.__[^2]
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
   [theme.name]: https://www.mkdocs.org/user-guide/configuration/#theme
 
-### 相关链接
+### 相关链接 <span id="related-links"></span>
 
 当然，在报告错误之前，您已经阅读了我们的文档和
-[找不到有效的解决方案][搜索解决方案]。请分享链接
+[找不到有效的解决方案][search for solutions]。请分享链接
 我们文档中可能与该错误相关的所有部分，因为它
 帮助我们逐步改进它。
 
-此外，由于您搜索了我们的[问题跟踪器]和[讨论板]
+此外，由于您搜索了我们的[问题跟踪器][issue tracker]和[讨论板][discussion board]
 在报告问题之前，可能已经发现了几个问题或
 讨论，也包括这些。每个问题或讨论的链接都会创建
 反向链接，为我们的维护人员和其他用户提供未来的指导。
@@ -223,7 +223,7 @@ them in the bug report.__[^2]
 ---
 
 :material-run-fast: __Stretch goal__ – 如果你也包括搜索词，你
-当你为你的问题[寻找解决方案][寻找解决方案]时，你
+当你为你的问题[寻找解决方案][search for solutions]时，你
 使我们的维护人员更容易改进文档。
 
 > __Why we need this__: 相关链接帮助我们更好地了解您的身份
@@ -232,7 +232,7 @@ them in the bug report.__[^2]
 
   [search for solutions]: #search-for-solutions
 
-### 生殖
+### 问题复现 <span id="reproduction"></span>
 
 最小限度的复制是每一份写得很好的bug报告的核心，因为
 它允许我们的维护人员立即重新创建必要的条件
@@ -257,7 +257,7 @@ them in the bug report.__[^2]
     虽然我们知道在开发人员中包含链接是一种很好的做法
     对于带有错误报告的存储库，我们目前不支持
     过程。原因是复制，这是自动的
-    由[内置信息插件]生成的包含所有必要的
+    由[内置信息插件][built-in info plugin]生成的包含所有必要的
     经常被遗忘的环境信息。
 
     此外，还有许多MkDocs材料的非技术用户
@@ -266,7 +266,7 @@ them in the bug report.__[^2]
   [Create reproduction]: ../guides/creating-a-reproduction.md
   [built-in info plugin]: ../plugins/info.md
 
-### 重现步骤
+### 重现步骤 <span id="steps-to-reproduce"></span>
 
 此时，您为我们提供了足够的信息来了解该错误
 并为我们提供了一个可以运行和检查的复制品。然而，当
@@ -287,7 +287,7 @@ bug在行动。
 如果你报告的bug只发生在一个或多个特定浏览器中，
 我们需要知道哪些浏览器受到了影响。此字段是可选的，因为它是
 仅当您报告的错误不涉及崩溃时才相关
-[预览]或[构建]您的网站。
+[预览][previewing]或[构建][building]您的网站。
 
 ---
 
@@ -303,7 +303,7 @@ bug。如果它消失了，那是由于延期造成的。
   [previewing]: http://localhost:8000/mkdocs-material/creating-your-site/#previewing-as-you-write
   [building]: http://localhost:8000/mkdocs-material/creating-your-site/#building-your-site
 
-### 清单
+### 清单 <span id="checklist"></span>
 
 感谢您遵循指南并创建了一个高质量和完整的bug
 报告——你快完成了。检查表确保您已阅读本指南

@@ -24,7 +24,7 @@ title: Community Experts Program
 ## 您的角色
 
 作为一名社区专家，你的角色主要涉及积极参与
-我们的[讨论板]，我们希望您在那里：
+我们的[讨论板][discussion board]，我们希望您在那里：
 
 - 回答讨论以帮助用户解决问题
 - 提供实施指导
@@ -67,7 +67,7 @@ title: Community Experts Program
 
   [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
   [documentation]: https://squidfunk.github.io/mkdocs-material/
-  [contribution guides]: ../contributing/index.md
+  [contribution guides]: ../../contributing/index.md
 
 ## 您的时间承诺
 
@@ -91,7 +91,7 @@ title: Community Experts Program
     我们社区内的合作与支持，突出了
     集体智慧和相互帮助和提升的意愿。
 
-## 准备好开始了吗？
+## 准备好开始了吗？ <span id="ready-to-get-started"></span>
 
 由于这些角色的席位有限[^3]，我们希望
 在你成为我们的社区专家之前，先了解你。以下是如何

@@ -5,11 +5,11 @@ MkDocs的材料增加了对带有标签的页面分类的一流支持，
 通过搜索和专用的[tags index]。如果您的文档很大，请标记
 可以帮助更快地发现相关信息。
 
-  [tags index]: 
+  [tags index]: #adding-a-tags-index
 
 ## 配置
 
-### 内置标签插件
+### 内置标签插件 <span id="built-in-tags-plugin"></span>
 
 `version 8.2.0`
 `plugin`
@@ -23,18 +23,17 @@ plugins:
   - tags
 ```
 
-有关所有设置的列表，请参阅[插件文档]。
+有关所有设置的列表，请参阅[插件文档][plugin documentation]。
 
   [plugin documentation]: ../plugins/tags.md
 
-#### 高级设置
+#### 高级设置 <span id="advanced-settings"></span>
 
 `sponsors`
 `version insiders-4.48.0`
 `flag experimental`
 
-以下高级设置目前保留给我们的[赞助商]
-[内部人士]。它们完全是可选的，只会添加额外的功能
+以下高级设置目前保留给我们的[Insiders 赞助商][Insiders]。它们完全是可选的，只会添加额外的功能
 标签插件：
 
 <!-- - [`listings_layout`][config.listings_layout] -->
@@ -44,9 +43,9 @@ plugins:
 
   [Insiders]: ../insiders/index.md
   [config.listings_layout]: ../plugins/tags.md#config.listings_layout
-  [config.listings_toc]: ../plugins/tags.md
+  [config.listings_toc]: ../plugins/tags.md#config.listings_toc
 
-### 标记图标和标识符
+### 标记图标和标识符 <span id="tag-icons-and-identifiers"></span>
 
 `version 8.5.0`
 `flag experimental`
@@ -75,7 +74,7 @@ extra:
     标识符可以在标签之间重复使用。未明确标注的标签
     关联将使用默认标记图标，即：材料磅：
 
-接下来，每个标识符都可以通过以下方式与图标相关联，甚至是[自定义图标]
+接下来，每个标识符都可以通过以下方式与图标相关联，甚至是[自定义图标][custom icon]
 在`theme.icon`配置下的`mkdocs.yml`中添加以下行
 设置：
 
@@ -88,7 +87,7 @@ extra:
           <identifier>: <icon> # (1)!
     ```
 
-    1.  输入几个关键字，使用我们的[图标搜索]找到完美的图标，然后
+    1.  输入几个关键字，使用我们的[图标搜索][icon search]找到完美的图标，然后
         单击短代码将其复制到剪贴板：
 
         <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -125,7 +124,7 @@ extra:
     ```
 
   [custom icon]: changing-the-logo-and-icons.md#additional-icons
-  [icon search]: ../reference/icons-emojis.md#_2
+  [icon search]: ../reference/icons-emojis.md#search
 
 ## 使用
 
@@ -134,7 +133,7 @@ extra:
 `version 8.2.0`
 `example tags`
 
-启用[内置标签插件]后，可以为文档添加标签
+启用[内置标签插件][built-in tags plugin]后，可以为文档添加标签
 带有前体“标签”属性。在a的顶部添加以下行
 Markdown文件：
 
@@ -154,7 +153,7 @@ tags:
 
 ??? question "如何为整个文件夹设置标签？"
 
-    借助[内置元插件]，您可以确保标签
+    借助[内置元插件][built-in meta plugin]，您可以确保标签
     通过创建`.meta.yml为整个节和所有嵌套页面设置`
     相应文件夹中的文件，内容如下：
 
@@ -173,12 +172,12 @@ tags:
   [built-in tags plugin]: ../plugins/tags.md
   [built-in meta plugin]: ../plugins/meta.md
 
-### 添加标签索引
+### 添加标签索引 <span id="adding-a-tags-index"></span>
 
 `version 8.2.0`
 `example tags`
 
-[内置标签插件]允许定义一个文件来呈现标签索引，
+[内置标签插件][built-in tags plugin]允许定义一个文件来呈现标签索引，
 该页面可以是“导航”部分的任何页面。为了添加标签索引，
 创建一个页面，例如`tags.md`：
 
@@ -200,16 +199,16 @@ tags:
 
 ### 高级功能
 
-[内部人士]对标签插件进行了彻底的重写，这是无限的
+[内部人士][Insiders]对标签插件进行了彻底的重写，这是无限的
 比社区版中的当前版本更强大。它允许
-对于任意数量的标签索引（列表）、[范围列表]，
-[阴影标签]、[嵌套标签]等等。
+对于任意数量的标签索引（列表）、[范围列表][scoped listings]，
+[阴影标签][shadow tags]、[嵌套标签][nested tags]等等。
 
-  [scoped listings]: 
-  [shadow tags]: 
-  [nested tags]: 
+  [scoped listings]: #scoped-listings
+  [shadow tags]: #shadow-tags
+  [nested tags]: #nested-tags
 
-#### 可配置列表
+#### 可配置列表 <span id="configurable-listings"></span>
 
 `version 9.6.0`
 `flag experimental`
@@ -246,11 +245,11 @@ tags:
     <!-- material/tags { toc: false } -->
     ```
 
-有关所有选项，请参阅[列表配置]。
+有关所有选项，请参阅[列表配置][listing configuration]。
 
   [listing configuration]: ../plugins/tags.md#listing-configuration
 
-#### 范围列表
+#### 范围列表 <span id="scoped-listings"></span>
 
 `sponsors`
 `version insiders-4.48.0`
@@ -281,7 +280,7 @@ plugins:
 <!-- material/tags scoped -->
 ```
 
-#### 阴影标签
+#### 阴影标签 <span id="shadow-tags"></span>
 
 `sponsors`
 `version insiders-4.48.0`
@@ -303,17 +302,17 @@ plugins:
 [`shadow`][config.shadow]设置已启用，禁用时将被排除。
 这是使用标签进行结构化的绝佳机会。
 
-  [config.shadow]: ../plugins/tags.md
-  [config.shadow_tags]: ../plugins/tags.md
+  [config.shadow]: ../plugins/tags.md#config.shadow
+  [config.shadow_tags]: ../plugins/tags.md#config.shadow_tags
 
-#### 嵌套标签
+#### 嵌套标签 <span id="nested-tags"></span>
 
 `sponsors`
 `version insiders-4.48.0`
 `flag experimental`
 
 [Insiders]提供对嵌套标签的支持。这个
-[标签层次分隔符][配置标签层次分隔器]允许创建
+[标签层次分隔符][config.tags_hierarchy_separator]允许创建
 标签的层次结构，例如“Foo/Bar”。嵌套标签将呈现为子标签
 父标签的：
 

@@ -37,12 +37,12 @@ icon: material/shield-account
 - 扫描脚本以获取更多脚本、样式表和JSON文件
 - 扫描样式表以查找图像和web字体
 
-此外，在以下情况下，使用[`preconnect][preconnect]等提示来减少延迟
+此外，在以下情况下，使用[`preconnect`][preconnect]等提示来减少延迟
 请求的外部资产将从输出中删除，因为它们不是
 自托管时需要。插件完成工作后，您的项目
 将无需请求外部服务。
 
-有一些[限制]。
+有一些[限制][limitations]。
 
   [preconnect]: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect
   [limitations]: #limitations
@@ -52,12 +52,11 @@ icon: material/shield-account
 该插件的开发是为了符合2018年欧洲
 __《通用数据保护条例》（GDPR）尽可能简单，同时
 保持Material for MkDocs提供的灵活性和强大功能，如
-例如，它与[谷歌字体]的紧密集成。
+例如，它与[谷歌字体][Google Fonts]的紧密集成。
 
 但是，这只是开始。例如，如果你的项目包括很多
 图像，启用插件可以将它们移出存储库，如
-插件将自动下载并将其存储在['site`目录]中
-[构建项目]时使用[mkdocs.site_dir]。
+插件会在[构建项目][building your project]时自动下载这些资源，并将其保存到 [`site` 目录][mkdocs.site_dir]。
 
 更有趣的是，该插件可以与其他内置插件结合使用
 MkDocs提供的材料，用于创建复杂的构建
@@ -81,7 +80,7 @@ MkDocs提供的材料，用于创建复杂的构建
 
     ---
 
-    离线插件增加了对构建[离线功能文档]的支持，
+    离线插件增加了对构建[离线功能文档][offline-capable documentation]的支持，
     因此，您可以将[`site`目录][mkdocs.site_dir]作为`.zip分发`
     可以下载的文件。
 
@@ -100,11 +99,11 @@ MkDocs提供的材料，用于创建复杂的构建
 ## 配置
 
 `version 9.5.0`
-`plugin [privacy] – built-in`
+插件：[privacy]（内置）
 `flag multiple`
 `flag experimental`
 
-与所有[内置插件]一样，开始使用隐私插件是
+与所有[内置插件][built-in plugins]一样，开始使用隐私插件是
 直截了当。只需将以下行添加到`mkdocs.yml`中，然后开始
 轻松自托管外部资产：
 
@@ -130,7 +129,7 @@ plugins:
 `version 9.5.0`
 `default _true_`
 
-使用此设置可在[构建项目]时启用或禁用插件。
+使用此设置可在[构建项目][building your project]时启用或禁用插件。
 如果你想禁用插件，例如，对于本地构建，你可以使用
 `mkdocs.yml`中的[环境变量][mkdocs.env]：
 
@@ -163,7 +162,7 @@ plugins:
 
 ### 缓存
 
-该插件实现了[智能缓存]机制，确保外部
+该插件实现了[智能缓存][intelligent caching]机制，确保外部
 只有当资产尚未包含在缓存中时，才会下载它们。
 虽然初始构建可能需要一些时间，但使用缓存是个好主意，
 因为它将加速连续构建。
@@ -207,7 +206,7 @@ plugins:
       cache_dir: my/custom/dir
 ```
 
-如果你正在使用该插件的[多个实例]，这可能是一个好主意
+如果你正在使用该插件的[多个实例][multiple instances]，这可能是一个好主意
 为两个实例设置不同的缓存目录，这样它们就不会相互干扰
 彼此。
 
@@ -219,7 +218,7 @@ plugins:
 
 ---
 
-#### `setting config.log`
+#### `setting config.log` <span id="config.log"></span>
 
 `sponsors`
 `version insiders-4.50.0`
@@ -236,7 +235,7 @@ plugins:
 
 ---
 
-#### `setting config.log_level`
+#### `setting config.log_level` <span id="config.log_level"></span>
 
 `sponsors`
 `version insiders-4.50.0`
@@ -303,7 +302,7 @@ plugins:
 `default _true_`
 
 使用此设置控制插件是否应下载外部
-资产。如果你只想让插件处理[外部链接]，你可以禁用
+资产。如果你只想让插件处理[外部链接][external links]，你可以禁用
 通过以下方式处理外部资产：
 
 ``` yaml
@@ -312,7 +311,7 @@ plugins:
       assets: false
 ```
 
-  [external links]: 
+  [external links]: #external-links
 
 ---
 
@@ -361,7 +360,7 @@ plugins:
 `default none`
 
 使用此设置启用特定来源的外部资产下载，
-例如，当使用插件的[多个实例]来微调处理时
+例如，当使用插件的[多个实例][multiple instances]来微调处理时
 不同来源的外部资产：
 
 ``` yaml
@@ -380,7 +379,7 @@ plugins:
 `default none`
 
 使用此设置可禁用下载特定来源的外部资源，
-例如，当使用插件的[多个实例]来微调处理时
+例如，当使用插件的[多个实例][multiple instances]来微调处理时
 不同来源的外部资产：
 
 ``` yaml
@@ -393,9 +392,9 @@ plugins:
 
 1.  [MathJax]加载用于数学内容排版的web字体
     通过相对URL，因此不能由
-    隐私插件。[MathJax可以自托管]。
+    隐私插件。[MathJax可以自托管][MathJax can be self-hosted]。
 
-    我们建议将Giscus]用作[评论系统]，它使用了一种技术
+    我们建议将Giscus]用作[评论系统][comment system]，它使用了一种技术
     称为代码拆分，只加载必要的代码
     通过相对URL实现。Giscus也可以自托管。
 
@@ -407,7 +406,7 @@ plugins:
 
 ---
 
-### 外部链接
+### 外部链接 <span id="external-links"></span>
 
 以下设置可用于外部链接：
 
@@ -420,7 +419,7 @@ plugins:
 `default _true_`
 
 使用此设置指示插件解析和处理外部链接
-对它们进行注释以[提高安全性]，或自动添加其他
+对它们进行注释以[提高安全性][improved security]，或自动添加其他
 外部链接的属性。如果你想禁用外部处理
 链接，使用：
 
@@ -461,7 +460,7 @@ plugins:
 
 通常不建议更改此设置，因为它会自动更改
 使用`rel=“noopener”`为在新窗口中打开的外部链接添加注释
-[提高安全性]：
+[提高安全性][improved security]：
 
 ``` yaml
 plugins:
@@ -469,7 +468,7 @@ plugins:
       links_noopener: true
 ```
 
-## 局限性
+## 局限性 <span id="limitations"></span>
 
 ### 简化动态网址
 
@@ -492,7 +491,7 @@ const url ="https://example.com/script.js"
 默认情况下，不会扫描嵌入的HTML文件（例如iframe中的文件）以查找外部
 资产。这是MkDocs的一个局限性，因为它认为“.html”文件是
 模板，必须明确列在
-[`extra_templates][mkdocs.extra_template]。因此，自行托管外部资产
+[`extra_templates`][mkdocs.extra_templates]。因此，自行托管外部资产
 嵌入式HTML文件：
 
 ``` yaml
@@ -502,3 +501,5 @@ extra_templates:
 
 请注意，`iframe.html `的路径是相对于
 [`docs_dir`][mkdocs.docs_dir]目录。
+
+  [config.log]: #config.log

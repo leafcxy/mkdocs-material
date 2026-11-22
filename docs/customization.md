@@ -233,7 +233,7 @@ MkDocs现在将在渲染主题时使用新的片段。这是可以做到的
 | `footer`          | Wraps the footer with navigation and copyright  |
 | `header`          | Wraps the fixed header bar                      |
 | `hero`            | Wraps the hero teaser (if available)            |
-| `htmltitle`       | Wraps the `<title>` tag                         |
+| `htmltitle`       | Wraps the HTML `title` element                  |
 | `libs`            | Wraps the JavaScript libraries (header)         |
 | `outdated`        | Wraps the version warning                       |
 | `scripts`         | Wraps the JavaScript application (footer)       |
